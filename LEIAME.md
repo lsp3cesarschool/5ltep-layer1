@@ -228,6 +228,19 @@ modelo. Esquemas vindos do modelo só chegam como `suggested`, por pull request.
 `defusedxml`; o texto que vai para uma issue é neutralizado; o painel escapa tudo o que mostra. O Ollama
 é uma versão fixa, com checksum verificado.
 
+## Rede e cortesia com o portal
+
+Todo pedido passa por uma única sessão com conexões reaproveitadas (*keep-alive*) que identifica o projeto
+(User-Agent com o endereço do repositório), com **15 s para abrir uma conexão e 120 s para ler a resposta**,
+e até quatro tentativas com esperas crescentes. O levantamento lê quatro conjuntos ao mesmo tempo; os
+arquivos são baixados um de cada vez.
+
+Lição do portal do Recife (01/10/2026): visto dos runners do GitHub, o portal às vezes recusa conexões
+*novas*. Com uma conexão por pedido e o mesmo limite de 120 s para conectar e para ler, cada recusa custava
+cerca de nove minutos de novas tentativas, e o primeiro levantamento leu 68 de 223 conjuntos em 1 h 48 min.
+Reaproveitar conexões e desistir rápido de uma conexão recusada levou o levantamento inteiro a 3,5 minutos,
+sem nenhum pedido com falha.
+
 ## Princípios FAIR e replicabilidade
 
 - **Localizável / Acessível:** código, esquemas, resultados e resumos são públicos, versionados no Git,
