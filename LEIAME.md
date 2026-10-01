@@ -203,6 +203,11 @@ Eles ficam em `findings` de `results/layer1_summary.json` e no painel *Achados d
 | `drift` | eventos de deriva até agora, observados e declarados |
 | `findings` | os achados de documentação |
 
+`results/history.json` guarda uma linha compacta por execução semanal (totais, níveis, conformidade,
+arquivos consertados ou quebrados, novos ou removidos, deriva), e cada arquivo lembra se estava conforme nas
+suas últimas 12 validações: o *Progresso ao longo do tempo* do painel sai daí, e a Camada 5 pode lê-lo para
+acompanhar todas as camadas no tempo.
+
 Maturidade e conformidade ficam separadas de propósito: um portal pode documentar pouco e estar
 conforme onde documenta, ou o contrário.
 

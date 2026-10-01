@@ -197,6 +197,10 @@ They are in `findings` of `results/layer1_summary.json` and in the *Documentatio
 | `drift` | drift events so far, observed and declared |
 | `findings` | the documentation findings |
 
+`results/history.json` keeps one compact row per weekly run (totals, levels, conformance, files fixed or
+broken, new or removed, drift), and each file remembers whether it conformed in its last 12 validations:
+the dashboard's *Progress over time* is drawn from it, and Layer 5 can read it to follow every layer over time.
+
 Maturity and conformance are kept apart on purpose: a portal can document little and conform well
 where it documents, or the reverse.
 
