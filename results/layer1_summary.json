@@ -5,8 +5,8 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-01T20:24:54+00:00",
- "census_at": "2026-10-01T20:21:56+00:00",
+ "generated_at": "2026-10-01T20:41:17+00:00",
+ "census_at": "2026-10-01T20:38:17+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,

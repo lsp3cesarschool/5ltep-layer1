@@ -5,8 +5,8 @@
    "name": "IBAMA",
    "title": "IBAMA open data portal (Dados Abertos IBAMA)"
   },
-  "generated_at": "2026-10-01T20:24:54+00:00",
-  "census_at": "2026-10-01T20:21:56+00:00",
+  "generated_at": "2026-10-01T20:41:17+00:00",
+  "census_at": "2026-10-01T20:38:17+00:00",
   "datasets": {
    "total": 79,
    "with_tables": 77,
@@ -394,7 +394,12 @@
      "name": "Autorização Ambiental para o Transporte ...",
      "level": 1,
      "url": "https://dadosabertos.ibama.gov.br/dados/AATIPP/autorizacao_empresa/DF/2016.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/autorizacao-ambiental-para-o-transporte-interestadual-de-produtos-perigosos-aatipp/resource/d5c0fa8b-b522-446a-a281-15f587783935"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:10:24+00:00",
      "rows": 218881,
@@ -514,7 +519,12 @@
      "name": "Conversões de Produtos Florestais",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/DOF/DOFConversoes/DOFConversoes_csv.zip",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/dof-conversoes-de-produtos-florestais/resource/5f9d395c-41ec-4b8d-a0c0-3ad1a5b9192a"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:11:52+00:00",
      "rows": 6013573,
@@ -626,7 +636,12 @@
      "name": "DOF - Transportes de Produtos Florestais",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/DOF/DOFTransportes/DOFTransportes_csv.zip",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/dof-transportes-de-produtos-florestais/resource/f89e36de-38a6-41b0-8c46-556cbbb28895"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:15:42+00:00",
      "rows": 57138487,
@@ -796,7 +811,12 @@
      "name": "Detalhes de Trechos e Veículos de Transportes ...",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/DOF/DOFTrechos/csv.zip",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/resource/21e21d34-b71c-4f41-8ad3-ee5743fb8e00"
+     },
      "status": "not-tabular",
      "validated_at": "2026-10-01T19:36:04+00:00",
      "rows": null,
@@ -1220,7 +1240,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/89425df8-37fc-45b8-9983-50f3f9b423f1/resource/f245368c-dcb6-46c9-ae17-635876ec5fac/download/metadados-termo-de-notificacao.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-notificacao/resource/f245368c-dcb6-46c9-ae17-635876ec5fac"
     }
    ],
    "tables": [
@@ -1234,7 +1256,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/89425df8-37fc-45b8-9983-50f3f9b423f1/resource/f245368c-dcb6-46c9-ae17-635876ec5fac/download/metadados-termo-de-notificacao.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-notificacao/resource/f245368c-dcb6-46c9-ae17-635876ec5fac"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:16+00:00",
@@ -1369,7 +1393,12 @@
      "name": "Termo de apreensão",
      "level": 1,
      "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_apreensao/apreensao/apreensao_csv.zip",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/3364a902-067a-469a-bd9a-b865d234eed9"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:33+00:00",
      "rows": 157955,
@@ -1401,7 +1430,12 @@
      "name": "Termo de apreensão – bem apreendido",
      "level": 1,
      "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_apreensao/bem/bem_csv.zip",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/beab1a59-3fd2-4e00-871d-0d2052ef2425"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:36+00:00",
      "rows": 150683,
@@ -1433,7 +1467,12 @@
      "name": "Termo de apreensão – espécime apreendido",
      "level": 1,
      "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_apreensao/especime/especime_csv.zip",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/081627a0-d158-44a8-88b0-600929e93526"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:37+00:00",
      "rows": 153897,
@@ -1465,7 +1504,12 @@
      "name": "Termo de apreensão – anexos",
      "level": 1,
      "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_apreensao/anexo/anexo_csv.zip",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/10869c00-3e91-4da2-99a9-e73c976a9af6"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:38+00:00",
      "rows": 24960,
@@ -1497,7 +1541,12 @@
      "name": "Termo de apreensão - enquadramento",
      "level": 1,
      "url": "https://dadosabertos.ibama.gov.br/dados/AIE_MOB/termo_apreensao/enquadramento/enquadramento_csv.zip",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/4d0993b3-3fc3-4708-b617-7e86485dbb99"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:38+00:00",
      "rows": 128366,
@@ -1531,7 +1580,12 @@
      "name": "Termo de apreensão - enquadramento complementar",
      "level": 1,
      "url": "https://dadosabertos.ibama.gov.br/dados/AIE_MOB/termo_apreensao/enquadramentocomplementar/enquadramentocomplementar_csv.zip",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/497ac942-f584-415c-bed8-a5bb09f97463"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:39+00:00",
      "rows": 5607,
@@ -1579,7 +1633,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/49e2db1d-3b84-4556-9c87-e5b0dbd9e6a6/resource/b845ac81-fd3a-4282-9150-454f65e38558/download/metadados-termo-de-demolicao.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-demolicao/resource/b845ac81-fd3a-4282-9150-454f65e38558"
     },
     {
      "name": "Metadados - Termo de demolição - enquadramento",
@@ -1587,7 +1643,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/49e2db1d-3b84-4556-9c87-e5b0dbd9e6a6/resource/7804331e-c35f-4d74-b8c9-0bb4c3af2063/download/metadados-termo-de-demolicao-enquadramento.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-demolicao/resource/7804331e-c35f-4d74-b8c9-0bb4c3af2063"
     },
     {
      "name": "Metadados - Termo de demolição - enquadramento complementar",
@@ -1595,7 +1653,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/49e2db1d-3b84-4556-9c87-e5b0dbd9e6a6/resource/88b602a1-6be2-49c7-94a7-51593c18b527/download/metadados-termo-de-demolicao-enquadramento-complementar.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-demolicao/resource/88b602a1-6be2-49c7-94a7-51593c18b527"
     }
    ],
    "tables": [
@@ -1609,7 +1669,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/49e2db1d-3b84-4556-9c87-e5b0dbd9e6a6/resource/b845ac81-fd3a-4282-9150-454f65e38558/download/metadados-termo-de-demolicao.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-demolicao/resource/b845ac81-fd3a-4282-9150-454f65e38558"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:39+00:00",
@@ -1666,7 +1728,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/49e2db1d-3b84-4556-9c87-e5b0dbd9e6a6/resource/7804331e-c35f-4d74-b8c9-0bb4c3af2063/download/metadados-termo-de-demolicao-enquadramento.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-demolicao/resource/7804331e-c35f-4d74-b8c9-0bb4c3af2063"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:42+00:00",
@@ -1712,7 +1776,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/49e2db1d-3b84-4556-9c87-e5b0dbd9e6a6/resource/88b602a1-6be2-49c7-94a7-51593c18b527/download/metadados-termo-de-demolicao-enquadramento-complementar.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-demolicao/resource/88b602a1-6be2-49c7-94a7-51593c18b527"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:43+00:00",
@@ -1759,7 +1825,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/1b8b34b2-abf9-449f-8c94-fe4ee95231ec/download/metadados-termo-de-destruicao-ou-inutilizacao.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/1b8b34b2-abf9-449f-8c94-fe4ee95231ec"
     },
     {
      "name": "Metadados - Bem destruído",
@@ -1767,7 +1835,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/aa04d97f-0501-4d66-a3ef-6c36bdf9c0ef/download/metadados-termo-de-destruicao-ou-inutilizacao-bem-destruido.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/aa04d97f-0501-4d66-a3ef-6c36bdf9c0ef"
     },
     {
      "name": "Metadados - Enquadramento legal",
@@ -1775,7 +1845,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/2697f6c9-662d-4580-b594-5fc779ff26d2/download/metadados-termo-de-destruicao-enquadramento-legal-atualizado.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/2697f6c9-662d-4580-b594-5fc779ff26d2"
     },
     {
      "name": "Metadados - Enquadramento legal complementar",
@@ -1783,7 +1855,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/28a48305-7abb-4d5f-a03b-f95ec29b3044/download/metadados-termo-de-destruicao-enquadramento-legal-complementar.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/28a48305-7abb-4d5f-a03b-f95ec29b3044"
     },
     {
      "name": "Metadados - Espécime apreendido",
@@ -1791,7 +1865,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/935e4f69-8820-4e2b-a102-cc7d71d03c67/download/metadados-termo-de-destruicao-ou-inutilizacao-especime-apreendido.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/935e4f69-8820-4e2b-a102-cc7d71d03c67"
     }
    ],
    "tables": [
@@ -1805,7 +1881,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/1b8b34b2-abf9-449f-8c94-fe4ee95231ec/download/metadados-termo-de-destruicao-ou-inutilizacao.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/1b8b34b2-abf9-449f-8c94-fe4ee95231ec"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:44+00:00",
@@ -1860,7 +1938,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/aa04d97f-0501-4d66-a3ef-6c36bdf9c0ef/download/metadados-termo-de-destruicao-ou-inutilizacao-bem-destruido.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/aa04d97f-0501-4d66-a3ef-6c36bdf9c0ef"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:48+00:00",
@@ -1898,7 +1978,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/2697f6c9-662d-4580-b594-5fc779ff26d2/download/metadados-termo-de-destruicao-enquadramento-legal-atualizado.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/2697f6c9-662d-4580-b594-5fc779ff26d2"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:50+00:00",
@@ -1947,7 +2029,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/28a48305-7abb-4d5f-a03b-f95ec29b3044/download/metadados-termo-de-destruicao-enquadramento-legal-complementar.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/28a48305-7abb-4d5f-a03b-f95ec29b3044"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:52+00:00",
@@ -1989,7 +2073,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/935e4f69-8820-4e2b-a102-cc7d71d03c67/download/metadados-termo-de-destruicao-ou-inutilizacao-especime-apreendido.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/935e4f69-8820-4e2b-a102-cc7d71d03c67"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:53+00:00",
@@ -2040,7 +2126,12 @@
      "name": "Termo de destruição ou inutilização (série A e B)",
      "level": 1,
      "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_destruicao_a_b/destruicao.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b/resource/2f335d4d-6707-4862-995d-f2fb6c7dd052"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:55+00:00",
      "rows": 69,
@@ -2072,7 +2163,12 @@
      "name": "Bem destruído",
      "level": 1,
      "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_destruicao_a_b/bem.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b/resource/92f92021-28df-42b7-bbbb-a4f77b3a078e"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:55+00:00",
      "rows": 178,
@@ -2104,7 +2200,12 @@
      "name": "Espécime destruído",
      "level": 1,
      "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_destruicao_a_b/especime.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b/resource/0224f6a5-1f51-4a64-a8c4-f34729f04285"
+     },
      "status": "empty",
      "validated_at": "2026-10-01T19:38:55+00:00",
      "rows": 0,
@@ -2133,7 +2234,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/4d9ade45-f802-443d-b5b7-d4eac667b241/download/metadados_termo-de-doacao.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/4d9ade45-f802-443d-b5b7-d4eac667b241"
     },
     {
      "name": "Metadados - Bem doado",
@@ -2141,7 +2244,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/b3a63bc2-5fe2-4af0-9e7e-ec23194f32d3/download/metadados-termo-de-doacao-bem-doado.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/b3a63bc2-5fe2-4af0-9e7e-ec23194f32d3"
     },
     {
      "name": "Metadados - Espécime doado",
@@ -2149,7 +2254,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/40fb572d-2b9e-43e2-b961-e0f8c113f741/download/metadados_termo-de-doacao-especime-doado.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/40fb572d-2b9e-43e2-b961-e0f8c113f741"
     },
     {
      "name": "Metadados - Enquadramento legal",
@@ -2157,7 +2264,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/ce02732e-25ba-4266-adb7-3d5701fa8ce6/download/metadados_termo-de-doacao-enquadramento-legal.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/ce02732e-25ba-4266-adb7-3d5701fa8ce6"
     },
     {
      "name": "Metadados - Enquadramento legal complementar",
@@ -2165,7 +2274,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/10231548-29df-4c15-acf9-3cf8a88224a9/download/metadados_termo-de-doacao-enquadramento-legal-complementar.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/10231548-29df-4c15-acf9-3cf8a88224a9"
     }
    ],
    "tables": [
@@ -2179,7 +2290,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/4d9ade45-f802-443d-b5b7-d4eac667b241/download/metadados_termo-de-doacao.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/4d9ade45-f802-443d-b5b7-d4eac667b241"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:38:56+00:00",
@@ -2237,7 +2350,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/b3a63bc2-5fe2-4af0-9e7e-ec23194f32d3/download/metadados-termo-de-doacao-bem-doado.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/b3a63bc2-5fe2-4af0-9e7e-ec23194f32d3"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:00+00:00",
@@ -2279,7 +2394,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/40fb572d-2b9e-43e2-b961-e0f8c113f741/download/metadados_termo-de-doacao-especime-doado.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/40fb572d-2b9e-43e2-b961-e0f8c113f741"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:02+00:00",
@@ -2325,7 +2442,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/ce02732e-25ba-4266-adb7-3d5701fa8ce6/download/metadados_termo-de-doacao-enquadramento-legal.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/ce02732e-25ba-4266-adb7-3d5701fa8ce6"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:05+00:00",
@@ -2380,7 +2499,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/10231548-29df-4c15-acf9-3cf8a88224a9/download/metadados_termo-de-doacao-enquadramento-legal-complementar.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/10231548-29df-4c15-acf9-3cf8a88224a9"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:07+00:00",
@@ -2431,7 +2552,12 @@
      "name": "Termos de embargo",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_EMBARGO/termo_de_embargo.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/8f88b43e-287a-470b-a730-db440f9e37fa"
+     },
      "status": "error",
      "validated_at": null,
      "rows": null,
@@ -2450,7 +2576,12 @@
      "name": "Termos de embargo - itens",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_ITENS/termo_embargo_itens.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/aba90ea8-e2f3-431e-a0cc-1ae24773843b"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:10+00:00",
      "rows": 48782,
@@ -2482,7 +2613,12 @@
      "name": "Termos de embargo - coordenadas geográficas",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_COORDENADAS/termo_de_embargo_coordenadas.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/90d17ce7-6a9b-4bfb-804c-6d52e43af264"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:13+00:00",
      "rows": 128498,
@@ -2516,7 +2652,12 @@
      "name": "Termos de embargo - anexos",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_ANEXO/termo_de_embargo_anexo.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/3360882c-a038-4129-a1f0-7013af37926a"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:17+00:00",
      "rows": 15909,
@@ -2554,7 +2695,12 @@
      "name": "Termos de embargo - decisões judiciais",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_DECISAO/termo_embargo_decisao.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/0a4284aa-e142-4d6d-823f-9958f26c829e"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:19+00:00",
      "rows": 474,
@@ -2586,7 +2732,12 @@
      "name": "Termos de embargo - enquadramento",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_ENQUADRAMENTO/termo_de_embargo_enquadramento.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/ccdbf737-0fbf-4547-adf6-267204aa4413"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:20+00:00",
      "rows": 150404,
@@ -2618,7 +2769,12 @@
      "name": "Termos de embargo - enquadramento complementar",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_ENQUADRAMENTO_COMPLEMENTAR/termo_de_embargo_enquadramento_complementar.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/21347475-cd71-41de-a677-f0fbaa8c02b2"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:23+00:00",
      "rows": 14646,
@@ -2652,7 +2808,12 @@
      "name": "Termos de embargo - histórico",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_HISTORICO/termo_embargo_historico.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/04f7998d-58e1-4717-85f5-401dc9994b19"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:25+00:00",
      "rows": 502193,
@@ -2696,7 +2857,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/085200d6-333c-46f0-bf76-062b32a6fa91/resource/b65f7723-4c24-4916-9e8d-1cb4b4ea2e7a/download/metadados_termo_de_incineracao.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-incineracao/resource/b65f7723-4c24-4916-9e8d-1cb4b4ea2e7a"
     },
     {
      "name": "Metadados - Termo de incineração - Bem incinerado",
@@ -2704,7 +2867,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/085200d6-333c-46f0-bf76-062b32a6fa91/resource/f62b4046-cc0b-4976-8121-2193682c21f8/download/metadados_bem_incinerado.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-incineracao/resource/f62b4046-cc0b-4976-8121-2193682c21f8"
     },
     {
      "name": "Metadados - Termo de incineração - Espécime incinerado",
@@ -2712,7 +2877,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/085200d6-333c-46f0-bf76-062b32a6fa91/resource/d8d89c00-6e3d-4d73-9eba-69c5fe70e506/download/metadados_especime_incinerado.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-incineracao/resource/d8d89c00-6e3d-4d73-9eba-69c5fe70e506"
     }
    ],
    "tables": [
@@ -2726,7 +2893,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/085200d6-333c-46f0-bf76-062b32a6fa91/resource/b65f7723-4c24-4916-9e8d-1cb4b4ea2e7a/download/metadados_termo_de_incineracao.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-incineracao/resource/b65f7723-4c24-4916-9e8d-1cb4b4ea2e7a"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:52+00:00",
@@ -2778,7 +2947,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/085200d6-333c-46f0-bf76-062b32a6fa91/resource/f62b4046-cc0b-4976-8121-2193682c21f8/download/metadados_bem_incinerado.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-incineracao/resource/f62b4046-cc0b-4976-8121-2193682c21f8"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:53+00:00",
@@ -2820,7 +2991,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/085200d6-333c-46f0-bf76-062b32a6fa91/resource/d8d89c00-6e3d-4d73-9eba-69c5fe70e506/download/metadados_especime_incinerado.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-incineracao/resource/d8d89c00-6e3d-4d73-9eba-69c5fe70e506"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:54+00:00",
@@ -2871,7 +3044,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/4f3a0c94-da69-4bb5-9236-439968e75179/resource/e5304ed3-60b0-4e20-80f5-2b169d8357fb/download/metadados-termo-de-soltura.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/e5304ed3-60b0-4e20-80f5-2b169d8357fb"
     },
     {
      "name": "Metadados - Espécime solto",
@@ -2879,7 +3054,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/4f3a0c94-da69-4bb5-9236-439968e75179/resource/2cf92dc1-6765-4f12-a381-ee3a8dc54ab8/download/metadados-termo-de-soltura-especime-solto.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/2cf92dc1-6765-4f12-a381-ee3a8dc54ab8"
     },
     {
      "name": "Metadados - Bem solto",
@@ -2887,7 +3064,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/4f3a0c94-da69-4bb5-9236-439968e75179/resource/41a8bbb0-5834-41b8-9d74-11c68261cecf/download/metadados-termo-de-soltura-bem-solto.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/41a8bbb0-5834-41b8-9d74-11c68261cecf"
     },
     {
      "name": "Metadados - Enquadramento legal",
@@ -2895,7 +3074,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/4f3a0c94-da69-4bb5-9236-439968e75179/resource/abafeb3c-3dac-462f-b2c8-bdc4a1159d40/download/metadados-termo-de-soltura-enquadramento.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/abafeb3c-3dac-462f-b2c8-bdc4a1159d40"
     },
     {
      "name": "Metadados - Enquadramento Legal Complementar ",
@@ -2903,7 +3084,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/4f3a0c94-da69-4bb5-9236-439968e75179/resource/1b3a223f-c84f-4080-9b12-f893ee7fb6dd/download/metadados-termo-de-soltura-enquadramento-legal-complementar.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/1b3a223f-c84f-4080-9b12-f893ee7fb6dd"
     }
    ],
    "tables": [
@@ -2917,7 +3100,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/4f3a0c94-da69-4bb5-9236-439968e75179/resource/e5304ed3-60b0-4e20-80f5-2b169d8357fb/download/metadados-termo-de-soltura.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/e5304ed3-60b0-4e20-80f5-2b169d8357fb"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:55+00:00",
@@ -2993,7 +3178,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/4f3a0c94-da69-4bb5-9236-439968e75179/resource/2cf92dc1-6765-4f12-a381-ee3a8dc54ab8/download/metadados-termo-de-soltura-especime-solto.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/2cf92dc1-6765-4f12-a381-ee3a8dc54ab8"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:57+00:00",
@@ -3079,7 +3266,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/4f3a0c94-da69-4bb5-9236-439968e75179/resource/41a8bbb0-5834-41b8-9d74-11c68261cecf/download/metadados-termo-de-soltura-bem-solto.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/41a8bbb0-5834-41b8-9d74-11c68261cecf"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:39:59+00:00",
@@ -3132,7 +3321,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/4f3a0c94-da69-4bb5-9236-439968e75179/resource/abafeb3c-3dac-462f-b2c8-bdc4a1159d40/download/metadados-termo-de-soltura-enquadramento.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/abafeb3c-3dac-462f-b2c8-bdc4a1159d40"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:40:00+00:00",
@@ -3178,7 +3369,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/4f3a0c94-da69-4bb5-9236-439968e75179/resource/1b3a223f-c84f-4080-9b12-f893ee7fb6dd/download/metadados-termo-de-soltura-enquadramento-legal-complementar.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/1b3a223f-c84f-4080-9b12-f893ee7fb6dd"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:40:05+00:00",
@@ -3229,7 +3422,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/47c97994-cd26-4d16-a2d8-4fbc27b1d9a0/resource/1c65d253-39ac-4574-8ed7-43e748cd4103/download/metadados-termo-de-suspensao.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-suspensao/resource/1c65d253-39ac-4574-8ed7-43e748cd4103"
     },
     {
      "name": "Metadados -  termo de suspensão - Enquadramento",
@@ -3237,7 +3432,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/47c97994-cd26-4d16-a2d8-4fbc27b1d9a0/resource/691ce689-6b05-4040-bc0a-7e298d2b0698/download/metadados-termo-de-suspensao-enquadramento.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-suspensao/resource/691ce689-6b05-4040-bc0a-7e298d2b0698"
     },
     {
      "name": "Metadados - Termo de Suspensão - Enquadramento Complementar",
@@ -3245,7 +3442,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/47c97994-cd26-4d16-a2d8-4fbc27b1d9a0/resource/27b3fae2-6843-4e14-a3fd-5171161ef964/download/metadados-termo-de-suspensao-enquadramento-complementar.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-suspensao/resource/27b3fae2-6843-4e14-a3fd-5171161ef964"
     }
    ],
    "tables": [
@@ -3259,7 +3458,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/47c97994-cd26-4d16-a2d8-4fbc27b1d9a0/resource/1c65d253-39ac-4574-8ed7-43e748cd4103/download/metadados-termo-de-suspensao.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-suspensao/resource/1c65d253-39ac-4574-8ed7-43e748cd4103"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:40:11+00:00",
@@ -3306,7 +3507,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/47c97994-cd26-4d16-a2d8-4fbc27b1d9a0/resource/691ce689-6b05-4040-bc0a-7e298d2b0698/download/metadados-termo-de-suspensao-enquadramento.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-suspensao/resource/691ce689-6b05-4040-bc0a-7e298d2b0698"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:40:14+00:00",
@@ -3359,7 +3562,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/47c97994-cd26-4d16-a2d8-4fbc27b1d9a0/resource/27b3fae2-6843-4e14-a3fd-5171161ef964/download/metadados-termo-de-suspensao-enquadramento-complementar.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-suspensao/resource/27b3fae2-6843-4e14-a3fd-5171161ef964"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:40:16+00:00",
@@ -3679,7 +3884,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/dataset/168289a4-5813-4186-aefd-ef2ff989cc1b/resource/c595bf2f-ddcc-4753-b814-6a55f15838c7/download/metadados-pessoas-juridicas-ctf_app.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/pessoas-juridicas-inscritas-no-ctf-app/resource/c595bf2f-ddcc-4753-b814-6a55f15838c7"
     }
    ],
    "tables": [
@@ -3693,7 +3900,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/dataset/168289a4-5813-4186-aefd-ef2ff989cc1b/resource/c595bf2f-ddcc-4753-b814-6a55f15838c7/download/metadados-pessoas-juridicas-ctf_app.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/pessoas-juridicas-inscritas-no-ctf-app/resource/c595bf2f-ddcc-4753-b814-6a55f15838c7"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:40:44+00:00",
@@ -3828,7 +4037,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/39a57ef4-7694-4761-ae22-5e1795c9f620/download/metadados-producao.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/39a57ef4-7694-4761-ae22-5e1795c9f620"
     },
     {
      "name": "Metadados - Resíduos/Produtos",
@@ -3836,7 +4047,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/fe4cfcc9-10f6-488d-a699-fe937ec4b1fe/download/metadados-residuos-e-produtos.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/fe4cfcc9-10f6-488d-a699-fe937ec4b1fe"
     },
     {
      "name": "Metadados - Pontos de Coleta",
@@ -3844,7 +4057,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/933f121d-14ca-4f41-88fb-19906c7303ed/download/metadados-pontos-de-coleta.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/933f121d-14ca-4f41-88fb-19906c7303ed"
     },
     {
      "name": "Metadados - Transporte",
@@ -3852,7 +4067,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/3e692f9a-35ff-4f0e-a966-85cc9c179641/download/metadados-transporte.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/3e692f9a-35ff-4f0e-a966-85cc9c179641"
     },
     {
      "name": "Metadados - Destinação",
@@ -3860,7 +4077,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/b31b76fc-192c-44b7-a44e-3ce2157b7751/download/metadados-destinacao.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/b31b76fc-192c-44b7-a44e-3ce2157b7751"
     }
    ],
    "tables": [
@@ -3874,7 +4093,9 @@
       "format": "CSV",
       "method": "name",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/39a57ef4-7694-4761-ae22-5e1795c9f620/download/metadados-producao.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/39a57ef4-7694-4761-ae22-5e1795c9f620"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:41:44+00:00",
@@ -3944,7 +4165,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/fe4cfcc9-10f6-488d-a699-fe937ec4b1fe/download/metadados-residuos-e-produtos.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/fe4cfcc9-10f6-488d-a699-fe937ec4b1fe"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:41:45+00:00",
@@ -3992,7 +4215,9 @@
       "format": "CSV",
       "method": "name",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/933f121d-14ca-4f41-88fb-19906c7303ed/download/metadados-pontos-de-coleta.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/933f121d-14ca-4f41-88fb-19906c7303ed"
      },
      "status": "error",
      "validated_at": null,
@@ -4017,7 +4242,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/3e692f9a-35ff-4f0e-a966-85cc9c179641/download/metadados-transporte.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/3e692f9a-35ff-4f0e-a966-85cc9c179641"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:42:56+00:00",
@@ -4059,7 +4286,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/b31b76fc-192c-44b7-a44e-3ce2157b7751/download/metadados-destinacao.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/b31b76fc-192c-44b7-a44e-3ce2157b7751"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:42:57+00:00",
@@ -4110,7 +4339,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/a5d344bc-6cc6-453e-b0e3-83763692c851/download/metadados-importadores.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/a5d344bc-6cc6-453e-b0e3-83763692c851"
     },
     {
      "name": "Metadados - Pilhas e baterias contidas em produtos importados",
@@ -4118,7 +4349,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/be344f38-bdfa-4ab5-aeab-e17a47dcf921/download/metadados-produtos-que-contem-pilhas-e-baterias.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/be344f38-bdfa-4ab5-aeab-e17a47dcf921"
     },
     {
      "name": "Metadados - Resíduos/Produtos",
@@ -4126,7 +4359,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/5e1a08a5-da03-4c8a-8c01-5206b629e5bc/download/metadados-residuos-e-produtos.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/5e1a08a5-da03-4c8a-8c01-5206b629e5bc"
     },
     {
      "name": "Metadados - Pontos de Coleta",
@@ -4134,7 +4369,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/415f379b-740e-4d75-96e0-3f7d88a81c3b/download/metadados-pontos-de-coleta.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/415f379b-740e-4d75-96e0-3f7d88a81c3b"
     },
     {
      "name": "Metadados - Transporte",
@@ -4142,7 +4379,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/7f7bb05d-1e89-45fb-b6d0-49decfad20a4/download/metadados-transporte.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/7f7bb05d-1e89-45fb-b6d0-49decfad20a4"
     },
     {
      "name": "Metadados - Destinação",
@@ -4150,7 +4389,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/c79fe74d-1bbc-4a4c-a804-22c3cb551099/download/metadados-destinacao.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/c79fe74d-1bbc-4a4c-a804-22c3cb551099"
     }
    ],
    "tables": [
@@ -4164,7 +4405,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/a5d344bc-6cc6-453e-b0e3-83763692c851/download/metadados-importadores.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/a5d344bc-6cc6-453e-b0e3-83763692c851"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:42:58+00:00",
@@ -4231,7 +4474,9 @@
       "format": "CSV",
       "method": "name",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/be344f38-bdfa-4ab5-aeab-e17a47dcf921/download/metadados-produtos-que-contem-pilhas-e-baterias.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/be344f38-bdfa-4ab5-aeab-e17a47dcf921"
      },
      "status": "error",
      "validated_at": null,
@@ -4256,7 +4501,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/5e1a08a5-da03-4c8a-8c01-5206b629e5bc/download/metadados-residuos-e-produtos.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/5e1a08a5-da03-4c8a-8c01-5206b629e5bc"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:43:00+00:00",
@@ -4307,7 +4554,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/415f379b-740e-4d75-96e0-3f7d88a81c3b/download/metadados-pontos-de-coleta.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/415f379b-740e-4d75-96e0-3f7d88a81c3b"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:43:00+00:00",
@@ -4347,7 +4596,9 @@
       "format": "CSV",
       "method": "name",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/7f7bb05d-1e89-45fb-b6d0-49decfad20a4/download/metadados-transporte.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/7f7bb05d-1e89-45fb-b6d0-49decfad20a4"
      },
      "status": "error",
      "validated_at": null,
@@ -4372,7 +4623,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/c79fe74d-1bbc-4a4c-a804-22c3cb551099/download/metadados-destinacao.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/c79fe74d-1bbc-4a4c-a804-22c3cb551099"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:43:04+00:00",
@@ -4426,7 +4679,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/7294fa27-6d00-47c6-ba4c-ba6d7b693c4d/resource/3677a3ae-3176-4b2b-8289-910ea863b863/download/metadados-pilhas-e-baterias-reciclador.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-reciclador/resource/3677a3ae-3176-4b2b-8289-910ea863b863"
     }
    ],
    "tables": [
@@ -4440,7 +4695,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/7294fa27-6d00-47c6-ba4c-ba6d7b693c4d/resource/3677a3ae-3176-4b2b-8289-910ea863b863/download/metadados-pilhas-e-baterias-reciclador.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-reciclador/resource/3677a3ae-3176-4b2b-8289-910ea863b863"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:43:05+00:00",
@@ -4748,7 +5005,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/dataset/3077864c-729b-4f37-969f-151725ac97fe/resource/bd5d10bf-c952-4f96-9ea4-e208e41d18d4/download/sinaflor-autorizacao-de-supressao-de-vegetacao.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-autorizacao-de-supressao-de-vegetacao/resource/bd5d10bf-c952-4f96-9ea4-e208e41d18d4"
     }
    ],
    "tables": [
@@ -4762,7 +5021,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/dataset/3077864c-729b-4f37-969f-151725ac97fe/resource/bd5d10bf-c952-4f96-9ea4-e208e41d18d4/download/sinaflor-autorizacao-de-supressao-de-vegetacao.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-autorizacao-de-supressao-de-vegetacao/resource/bd5d10bf-c952-4f96-9ea4-e208e41d18d4"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:43:45+00:00",
@@ -4884,7 +5145,12 @@
      "name": "Sinaflor - Autorização Especial",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/AutorizacaoEspecial/SinaflorAutorizacaoEspecial.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-autorizacao-especial/resource/26f5a30e-53d2-4509-b5b3-5e980ae706f1"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:43:52+00:00",
      "rows": 2867,
@@ -4942,7 +5208,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/a1f609a7-3bcf-4639-ab86-665214e051d9/resource/1374f568-4a2b-4ff1-b4c2-a39a2477899d/download/sinaflor-corte-de-arvores-isoladas.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-corte-de-arvores-isoladas/resource/1374f568-4a2b-4ff1-b4c2-a39a2477899d"
     }
    ],
    "tables": [
@@ -4956,7 +5224,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/a1f609a7-3bcf-4639-ab86-665214e051d9/resource/1374f568-4a2b-4ff1-b4c2-a39a2477899d/download/sinaflor-corte-de-arvores-isoladas.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-corte-de-arvores-isoladas/resource/1374f568-4a2b-4ff1-b4c2-a39a2477899d"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:43:55+00:00",
@@ -5052,7 +5322,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/dataset/d7986b0b-9bd0-4c95-a0b8-99fad6b188e0/resource/27303f72-d183-475d-a535-f6b3b7feef7e/download/sinaflor-empreendimentos-de-base-florestal.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-empreendimentos-de-base-florestal/resource/27303f72-d183-475d-a535-f6b3b7feef7e"
     }
    ],
    "tables": [
@@ -5066,7 +5338,9 @@
       "format": "CSV",
       "method": "name",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/dataset/d7986b0b-9bd0-4c95-a0b8-99fad6b188e0/resource/27303f72-d183-475d-a535-f6b3b7feef7e/download/sinaflor-empreendimentos-de-base-florestal.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-empreendimentos-de-base-florestal/resource/27303f72-d183-475d-a535-f6b3b7feef7e"
      },
      "status": "error",
      "validated_at": null,
@@ -5096,7 +5370,12 @@
      "name": "Exploração de Floresta Plantada",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/ExploracaoFlorestaPlantada/ExploracaoFlorestaPlantada.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-exploracao-de-floresta-plantada/resource/402741a2-8072-4365-b5d8-4dcb915be169"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:44:04+00:00",
      "rows": 16807,
@@ -5147,7 +5426,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/17c29a10-de5c-46cf-89f1-8aa3e6cc66d9/resource/8ddd5dd9-98ce-41ee-84b1-11e8b4738707/download/sinaflor-pmfs-amazonia-legal.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-pmfs-amazonia-legal/resource/8ddd5dd9-98ce-41ee-84b1-11e8b4738707"
     }
    ],
    "tables": [
@@ -5161,7 +5442,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/17c29a10-de5c-46cf-89f1-8aa3e6cc66d9/resource/8ddd5dd9-98ce-41ee-84b1-11e8b4738707/download/sinaflor-pmfs-amazonia-legal.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-pmfs-amazonia-legal/resource/8ddd5dd9-98ce-41ee-84b1-11e8b4738707"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:44:08+00:00",
@@ -5255,7 +5538,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/581b3be3-094c-495e-8772-2b0e119944ef/resource/115c7b39-4ebb-4a5f-9652-2b3b3da5e308/download/sinaflor-pmfs-outros-biomas.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-pmfs-outros-biomas/resource/115c7b39-4ebb-4a5f-9652-2b3b3da5e308"
     }
    ],
    "tables": [
@@ -5269,7 +5554,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/581b3be3-094c-495e-8772-2b0e119944ef/resource/115c7b39-4ebb-4a5f-9652-2b3b3da5e308/download/sinaflor-pmfs-outros-biomas.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-pmfs-outros-biomas/resource/115c7b39-4ebb-4a5f-9652-2b3b3da5e308"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:44:11+00:00",
@@ -5368,7 +5655,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/dataset/8639bdcd-0fb9-42c6-b8ca-2eac6b339a7a/resource/df734a37-d8a7-4f10-ae00-491a46b3e070/download/sinaflor-poa-amazonia-legal.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-poa-amazonia-legal/resource/df734a37-d8a7-4f10-ae00-491a46b3e070"
     }
    ],
    "tables": [
@@ -5382,7 +5671,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/dataset/8639bdcd-0fb9-42c6-b8ca-2eac6b339a7a/resource/df734a37-d8a7-4f10-ae00-491a46b3e070/download/sinaflor-poa-amazonia-legal.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-poa-amazonia-legal/resource/df734a37-d8a7-4f10-ae00-491a46b3e070"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:44:14+00:00",
@@ -5474,7 +5765,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/049740d8-a3c5-425f-9161-431a42a87109/resource/c48fa320-edde-454f-85b3-c0f2fbf31f4c/download/sinaflor-poa-outros-biomas.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-poa-outros-biomas/resource/c48fa320-edde-454f-85b3-c0f2fbf31f4c"
     }
    ],
    "tables": [
@@ -5488,7 +5781,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/049740d8-a3c5-425f-9161-431a42a87109/resource/c48fa320-edde-454f-85b3-c0f2fbf31f4c/download/sinaflor-poa-outros-biomas.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-poa-outros-biomas/resource/c48fa320-edde-454f-85b3-c0f2fbf31f4c"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:44:24+00:00",
@@ -5589,7 +5884,12 @@
      "name": "Responsável Técnico",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/ResponsavelTecnico/SinaflorResponsavelTecnico.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-responsavel-tecnico/resource/cf25bc77-14d7-47ca-9e61-4e45f5cdf2b9"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:44:26+00:00",
      "rows": 26867,
@@ -5631,7 +5931,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/bd827dc1-ca3d-41c7-b554-5fdbaee77a2e/resource/1400b471-62bc-4328-a7fb-047923b28781/download/sinaflor-uso-alternativo-do-solo.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-uso-alternativo-do-solo/resource/1400b471-62bc-4328-a7fb-047923b28781"
     }
    ],
    "tables": [
@@ -5645,7 +5947,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/bd827dc1-ca3d-41c7-b554-5fdbaee77a2e/resource/1400b471-62bc-4328-a7fb-047923b28781/download/sinaflor-uso-alternativo-do-solo.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-uso-alternativo-do-solo/resource/1400b471-62bc-4328-a7fb-047923b28781"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:44:29+00:00",
@@ -5739,7 +6043,12 @@
      "name": "Sinaflor - Uso Alternativo do Solo - Agricultor familiar",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/usoAlternativoDoSoloAgriculturaFamiliar/uso-alternativo-do-solo-agricultura-familiar.csv",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-uso-alternativo-do-solo-agricultor-familiar/resource/eeb2d948-dcdd-44c8-916a-1dd131deacfb"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:44:42+00:00",
      "rows": 1391,
@@ -5927,7 +6236,9 @@
      "kind": "machine",
      "readable": true,
      "error_kind": null,
-     "linked": 1
+     "linked": 1,
+     "url": "https://dadosabertos.ibama.gov.br/dataset/d2eb0087-6500-4315-92ec-e66fe2c56ec1/resource/a3f02639-ee4d-4db6-8fe5-c49193ded2f0/download/metadados_sisfogo_roi.csv",
+     "page": "https://dadosabertos.ibama.gov.br/dataset/sisfogo-roi/resource/a3f02639-ee4d-4db6-8fe5-c49193ded2f0"
     }
    ],
    "tables": [
@@ -5941,7 +6252,9 @@
       "format": "CSV",
       "method": "header",
       "readable": true,
-      "error_kind": null
+      "error_kind": null,
+      "url": "https://dadosabertos.ibama.gov.br/dataset/d2eb0087-6500-4315-92ec-e66fe2c56ec1/resource/a3f02639-ee4d-4db6-8fe5-c49193ded2f0/download/metadados_sisfogo_roi.csv",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/sisfogo-roi/resource/a3f02639-ee4d-4db6-8fe5-c49193ded2f0"
      },
      "status": "ok",
      "validated_at": "2026-10-01T19:44:56+00:00",
@@ -6231,7 +6544,12 @@
      "name": "Volumes Explorados - IF 100%",
      "level": 1,
      "url": "https://dadosabertos.ibama.gov.br/dados/SINAFLOR/VolumeExpIF100/VolumeExpIF100_csv.zip",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/volumes-explorados-if-100/resource/ac345e77-863b-472c-a06a-4f171263bc70"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:45:54+00:00",
      "rows": 2172220,
@@ -6289,7 +6607,12 @@
      "name": "Volumes Explorados - Inventário Amostral",
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/VolumeExpAmostral/VolumeExpAmostral_TODOS_ANOS_CSV.zip",
-     "dictionary": null,
+     "dictionary": {
+      "name": null,
+      "format": "description",
+      "method": "description",
+      "page": "https://dadosabertos.ibama.gov.br/dataset/volumes-explorados-inventario-amostral/resource/8b868981-3062-414c-9bd9-e6a896c050fb"
+     },
      "status": "ok",
      "validated_at": "2026-10-01T19:47:03+00:00",
      "rows": 1535083,
@@ -6517,5 +6840,39 @@
   }
  ],
  "pdf": [],
- "drift_events": []
+ "drift_events": [],
+ "history": [
+  {
+   "at": "2026-10-01T20:38:17+00:00",
+   "report_at": "2026-10-01T20:41:17+00:00",
+   "commit": "1021317",
+   "files": 129,
+   "read": 112,
+   "checked": 67,
+   "conform": 24,
+   "l1_rate": 0.3582,
+   "not_downloaded": 15,
+   "levels": [
+    55,
+    27,
+    47,
+    0,
+    0
+   ],
+   "dataset_levels": [
+    44,
+    13,
+    20,
+    0,
+    0
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "new_files": 0,
+   "gone_files": 0,
+   "gone_total": 0,
+   "drift_observed": 0,
+   "drift_declared": 0
+  }
+ ]
 }
