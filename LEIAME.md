@@ -5,7 +5,7 @@
 [English](README.md) · **Português**
 
 **Verifica se um portal de dados abertos diz como seus arquivos deveriam ser, e se os arquivos são
-assim.** Um censo de todos os conjuntos de dados de um portal CKAN numa escala de maturidade de
+assim.** Um levantamento de todos os conjuntos de dados de um portal CKAN numa escala de maturidade de
 esquema, leitores para os dicionários de dados que o portal publica (inclusive em PDF, com um modelo de
 IA local e revisão humana) e a validação de cada arquivo publicado contra o esquema declarado, com o
 Table Schema do Frictionless.
@@ -61,7 +61,7 @@ anterior aos dados.
 portal.json (um valor: a URL do portal)
         │
         ▼
- census ──── API CKAN: todos os conjuntos e recursos ──── dicionários (CSV, JSON, XML, XLSX, PDF, descrição)
+ levantamento ── API CKAN: todos os conjuntos e recursos ── dicionários (CSV, JSON, XML, XLSX, PDF, descrição)
    │              tipos do DataStore, esquema anexado               │
    │                                                                ▼
    │                                          schemas/<conjunto>/<recurso>.declared.json
@@ -222,7 +222,7 @@ um valor de célula aparecer na saída.
 
 Os arquivos do portal, seus dicionários em PDF e o LLM não são confiáveis. O workflow tem três jobs: o
 que baixa arquivos e executa o modelo tem um token só de leitura e entrega seus resultados como
-artefato; o que escreve aceita só os caminhos esperados, para conjuntos e recursos do censo commitado,
+artefato; o que escreve aceita só os caminhos esperados, para conjuntos e recursos do levantamento commitado (`results/census.json`),
 com Table Schemas válidos e textos limitados ([`src/safety.py`](src/safety.py)), e nunca executa o
 modelo. Esquemas vindos do modelo só chegam como `suggested`, por pull request. O XML é lido com
 `defusedxml`; o texto que vai para uma issue é neutralizado; o painel escapa tudo o que mostra. O Ollama
@@ -253,7 +253,7 @@ modelo. Esquemas vindos do modelo só chegam como `suggested`, por pull request.
 
 ```bash
 pip install -r requirements.txt
-python main.py run --minutes 10          # censo, 10 minutos de validação, etapa 1 do PDF, relatório
+python main.py run --minutes 10          # levantamento, 10 minutos de validação, etapa 1 do PDF, relatório
 python -m http.server -d docs 8000       # painel em http://localhost:8000
 pytest tests/ -v
 ```
@@ -271,7 +271,7 @@ CKAN_PORTAL_URL=https://dados.recife.pe.gov.br python main.py census
 
 | Workflow | Quando | O quê |
 |---|---|---|
-| `layer1.yml` | segundas-feiras 03:30 UTC e à mão | censo → lotes de validação → extração de PDF → issues, pull request, relatório |
+| `layer1.yml` | segundas-feiras 03:30 UTC e à mão | levantamento do portal → lotes de validação → extração de PDF → issues, pull request, relatório |
 | `tests.yml` | push e pull request | a suíte de testes em Python 3.10–3.12 |
 
 Variáveis do repositório (opcionais): `LLM_MODEL` (padrão `auto`: a escolha do benchmark de modelos; uma tag fixa o modelo) e `LLM_THINK`.
@@ -290,7 +290,7 @@ et al., 2026).
 portal.json                 o portal que esta instância avalia (o único valor a trocar)
 main.py                     linha de comando: census, validate, extract, report...
 src/
-  census.py                 escala de maturidade, dicionários, ligações, esquemas declarados
+  census.py                 o levantamento: escala de maturidade, dicionários, ligações, esquemas declarados
   dictionaries.py           leitores escolhidos pelo conteúdo (CSV, JSON, XML, XLSX, descrição)
   pdf_extract.py            PDF: leitor determinístico, oráculo, cliente do Ollama
   extract.py                as três etapas do PDF
@@ -303,7 +303,7 @@ src/
   report.py                 resumo, achados, dados do painel, selo de status
   safety.py                 verificações na entrega entre os jobs
 schemas/                    Table Schemas por conjunto e recurso (declarado, extraído, observado...)
-results/                    censo, validação, extração, deriva, layer1_summary.json
+results/                    levantamento (census.json), validação, extração, deriva, layer1_summary.json
 docs/                       painel (GitHub Pages)
 evaluation/                 scripts dos números da dissertação
 tests/                      testes (sem rede)

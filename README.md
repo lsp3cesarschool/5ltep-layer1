@@ -5,7 +5,7 @@
 **English** · [Português](LEIAME.md)
 
 **Checks whether an open data portal says what its files should look like, and whether the files
-look like that.** A census of every dataset of a CKAN portal on a schema maturity scale, readers for
+look like that.** A survey of every dataset of a CKAN portal on a schema maturity scale, readers for
 the data dictionaries the portal publishes (including PDF, with a local AI model and human review),
 and validation of every published file against its declared schema with the Frictionless Table Schema.
 
@@ -58,7 +58,7 @@ moment of each rule differ: here the specification is the publisher's, and it pr
 portal.json (one value: the portal URL)
         │
         ▼
- census ──── CKAN API: every dataset and resource ──── dictionaries (CSV, JSON, XML, XLSX, PDF, description)
+ survey ──── CKAN API: every dataset and resource ──── dictionaries (CSV, JSON, XML, XLSX, PDF, description)
    │              DataStore types, attached schema            │
    │                                                          ▼
    │                                          schemas/<dataset>/<resource>.declared.json
@@ -216,7 +216,7 @@ the output.
 The portal's files, its PDF dictionaries and the LLM are not trusted. The workflow has three jobs: the
 one that downloads files and runs the model has a read-only token and hands its results over as an
 artifact; the one that writes accepts only the expected paths, for datasets and resources in the
-committed census, with valid Table Schemas and bounded texts ([`src/safety.py`](src/safety.py)), and
+committed survey (`results/census.json`), with valid Table Schemas and bounded texts ([`src/safety.py`](src/safety.py)), and
 never runs the model. Schemas from the model can only arrive as `suggested`, through a pull request.
 XML is parsed with `defusedxml`; text that reaches an issue is neutralised; the dashboard escapes
 everything it shows. Ollama is a pinned, checksum-verified release.
@@ -246,7 +246,7 @@ everything it shows. Ollama is a pinned, checksum-verified release.
 
 ```bash
 pip install -r requirements.txt
-python main.py run --minutes 10          # census, 10 minutes of validation, PDF stage 1, report
+python main.py run --minutes 10          # survey, 10 minutes of validation, PDF stage 1, report
 python -m http.server -d docs 8000       # dashboard at http://localhost:8000
 pytest tests/ -v
 ```
@@ -264,7 +264,7 @@ CKAN_PORTAL_URL=https://dados.recife.pe.gov.br python main.py census
 
 | Workflow | When | What |
 |---|---|---|
-| `layer1.yml` | Mondays 03:30 UTC and by hand | census → validation batches → PDF extraction → issues, pull request, report |
+| `layer1.yml` | Mondays 03:30 UTC and by hand | survey of the portal → validation batches → PDF extraction → issues, pull request, report |
 | `tests.yml` | push and pull request | the test suite on Python 3.10–3.12 |
 
 Repository variables (optional): `LLM_MODEL` (default `auto`: the model benchmark's choice; a tag pins the model) and `LLM_THINK`.
@@ -282,7 +282,7 @@ per stage against the oracle (exact match and Levenshtein, the metrics of Al Hil
 portal.json                 the portal this instance evaluates (the only value to change)
 main.py                     command line: census, validate, extract, report...
 src/
-  census.py                 maturity scale, dictionaries, links, declared schemas
+  census.py                 the survey: maturity scale, dictionaries, links, declared schemas
   dictionaries.py           readers chosen by content (CSV, JSON, XML, XLSX, description)
   pdf_extract.py            PDF: deterministic reader, oracle, Ollama client
   extract.py                the three PDF stages
@@ -295,7 +295,7 @@ src/
   report.py                 summary, findings, dashboard data, status badge
   safety.py                 hand-over checks between the jobs
 schemas/                    Table Schemas per dataset and resource (declared, extracted, observed...)
-results/                    census, validation, extraction, drift, layer1_summary.json
+results/                    survey (census.json), validation, extraction, drift, layer1_summary.json
 docs/                       dashboard (GitHub Pages)
 evaluation/                 scripts for the thesis numbers
 tests/                      tests (no network)
