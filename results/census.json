@@ -4,7 +4,7 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-01T20:21:56+00:00",
+ "generated_at": "2026-10-01T20:38:17+00:00",
  "datasets": [
   {
    "name": "antropizacao-dos-biomas-extra-amazonicos",
@@ -186,11 +186,13 @@
      "attached": false,
      "datastore": null,
      "described": 9,
+     "described_from": "d5c0fa8b-b522-446a-a281-15f587783935",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "d5c0fa8b-b522-446a-a281-15f587783935",
+      "method": "description"
      },
      "level": 1
     }
@@ -280,11 +282,13 @@
      "attached": false,
      "datastore": null,
      "described": 34,
+     "described_from": "5f9d395c-41ec-4b8d-a0c0-3ad1a5b9192a",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "5f9d395c-41ec-4b8d-a0c0-3ad1a5b9192a",
+      "method": "description"
      },
      "level": 1
     }
@@ -311,11 +315,13 @@
      "attached": false,
      "datastore": null,
      "described": 54,
+     "described_from": "f89e36de-38a6-41b0-8c46-556cbbb28895",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "f89e36de-38a6-41b0-8c46-556cbbb28895",
+      "method": "description"
      },
      "level": 1
     }
@@ -342,11 +348,13 @@
      "attached": false,
      "datastore": null,
      "described": 11,
+     "described_from": "21e21d34-b71c-4f41-8ad3-ee5743fb8e00",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "21e21d34-b71c-4f41-8ad3-ee5743fb8e00",
+      "method": "description"
      },
      "level": 1
     }
@@ -746,11 +754,13 @@
      "attached": false,
      "datastore": null,
      "described": 50,
+     "described_from": "3364a902-067a-469a-bd9a-b865d234eed9",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "3364a902-067a-469a-bd9a-b865d234eed9",
+      "method": "description"
      },
      "level": 1
     },
@@ -765,11 +775,13 @@
      "attached": false,
      "datastore": null,
      "described": 34,
+     "described_from": "beab1a59-3fd2-4e00-871d-0d2052ef2425",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "beab1a59-3fd2-4e00-871d-0d2052ef2425",
+      "method": "description"
      },
      "level": 1
     },
@@ -784,11 +796,13 @@
      "attached": false,
      "datastore": null,
      "described": 23,
+     "described_from": "081627a0-d158-44a8-88b0-600929e93526",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "081627a0-d158-44a8-88b0-600929e93526",
+      "method": "description"
      },
      "level": 1
     },
@@ -803,11 +817,13 @@
      "attached": false,
      "datastore": null,
      "described": 9,
+     "described_from": "10869c00-3e91-4da2-99a9-e73c976a9af6",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "10869c00-3e91-4da2-99a9-e73c976a9af6",
+      "method": "description"
      },
      "level": 1
     },
@@ -822,11 +838,13 @@
      "attached": false,
      "datastore": null,
      "described": 12,
+     "described_from": "4d0993b3-3fc3-4708-b617-7e86485dbb99",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "4d0993b3-3fc3-4708-b617-7e86485dbb99",
+      "method": "description"
      },
      "level": 1
     },
@@ -841,11 +859,13 @@
      "attached": false,
      "datastore": null,
      "described": 8,
+     "described_from": "497ac942-f584-415c-bed8-a5bb09f97463",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "497ac942-f584-415c-bed8-a5bb09f97463",
+      "method": "description"
      },
      "level": 1
     }
@@ -1315,11 +1335,13 @@
      "attached": false,
      "datastore": null,
      "described": 21,
+     "described_from": "2f335d4d-6707-4862-995d-f2fb6c7dd052",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "2f335d4d-6707-4862-995d-f2fb6c7dd052",
+      "method": "description"
      },
      "level": 1
     },
@@ -1334,11 +1356,13 @@
      "attached": false,
      "datastore": null,
      "described": 6,
+     "described_from": "92f92021-28df-42b7-bbbb-a4f77b3a078e",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "92f92021-28df-42b7-bbbb-a4f77b3a078e",
+      "method": "description"
      },
      "level": 1
     },
@@ -1353,11 +1377,13 @@
      "attached": false,
      "datastore": null,
      "described": 6,
+     "described_from": "0224f6a5-1f51-4a64-a8c4-f34729f04285",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "0224f6a5-1f51-4a64-a8c4-f34729f04285",
+      "method": "description"
      },
      "level": 1
     }
@@ -1669,11 +1695,13 @@
      "attached": false,
      "datastore": null,
      "described": 50,
+     "described_from": "8f88b43e-287a-470b-a730-db440f9e37fa",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "8f88b43e-287a-470b-a730-db440f9e37fa",
+      "method": "description"
      },
      "level": 1
     },
@@ -1688,11 +1716,13 @@
      "attached": false,
      "datastore": null,
      "described": 12,
+     "described_from": "aba90ea8-e2f3-431e-a0cc-1ae24773843b",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "aba90ea8-e2f3-431e-a0cc-1ae24773843b",
+      "method": "description"
      },
      "level": 1
     },
@@ -1707,11 +1737,13 @@
      "attached": false,
      "datastore": null,
      "described": 14,
+     "described_from": "90d17ce7-6a9b-4bfb-804c-6d52e43af264",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "90d17ce7-6a9b-4bfb-804c-6d52e43af264",
+      "method": "description"
      },
      "level": 1
     },
@@ -1726,11 +1758,13 @@
      "attached": false,
      "datastore": null,
      "described": 7,
+     "described_from": "3360882c-a038-4129-a1f0-7013af37926a",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "3360882c-a038-4129-a1f0-7013af37926a",
+      "method": "description"
      },
      "level": 1
     },
@@ -1745,11 +1779,13 @@
      "attached": false,
      "datastore": null,
      "described": 12,
+     "described_from": "0a4284aa-e142-4d6d-823f-9958f26c829e",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "0a4284aa-e142-4d6d-823f-9958f26c829e",
+      "method": "description"
      },
      "level": 1
     },
@@ -1764,11 +1800,13 @@
      "attached": false,
      "datastore": null,
      "described": 10,
+     "described_from": "ccdbf737-0fbf-4547-adf6-267204aa4413",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "ccdbf737-0fbf-4547-adf6-267204aa4413",
+      "method": "description"
      },
      "level": 1
     },
@@ -1783,11 +1821,13 @@
      "attached": false,
      "datastore": null,
      "described": 7,
+     "described_from": "21347475-cd71-41de-a677-f0fbaa8c02b2",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "21347475-cd71-41de-a677-f0fbaa8c02b2",
+      "method": "description"
      },
      "level": 1
     },
@@ -1802,11 +1842,13 @@
      "attached": false,
      "datastore": null,
      "described": 43,
+     "described_from": "04f7998d-58e1-4717-85f5-401dc9994b19",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "04f7998d-58e1-4717-85f5-401dc9994b19",
+      "method": "description"
      },
      "level": 1
     }
@@ -3755,11 +3797,13 @@
      "attached": false,
      "datastore": null,
      "described": 23,
+     "described_from": "26f5a30e-53d2-4509-b5b3-5e980ae706f1",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "26f5a30e-53d2-4509-b5b3-5e980ae706f1",
+      "method": "description"
      },
      "level": 1
     }
@@ -3916,11 +3960,13 @@
      "attached": false,
      "datastore": null,
      "described": 42,
+     "described_from": "402741a2-8072-4365-b5d8-4dcb915be169",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "402741a2-8072-4365-b5d8-4dcb915be169",
+      "method": "description"
      },
      "level": 1
     }
@@ -4223,11 +4269,13 @@
      "attached": false,
      "datastore": null,
      "described": 11,
+     "described_from": "cf25bc77-14d7-47ca-9e61-4e45f5cdf2b9",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "cf25bc77-14d7-47ca-9e61-4e45f5cdf2b9",
+      "method": "description"
      },
      "level": 1
     }
@@ -4323,11 +4371,13 @@
      "attached": false,
      "datastore": null,
      "described": 28,
+     "described_from": "eeb2d948-dcdd-44c8-916a-1dd131deacfb",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "eeb2d948-dcdd-44c8-916a-1dd131deacfb",
+      "method": "description"
      },
      "level": 1
     }
@@ -4692,11 +4742,13 @@
      "attached": false,
      "datastore": null,
      "described": 21,
+     "described_from": "ac345e77-863b-472c-a06a-4f171263bc70",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "ac345e77-863b-472c-a06a-4f171263bc70",
+      "method": "description"
      },
      "level": 1
     }
@@ -4723,11 +4775,13 @@
      "attached": false,
      "datastore": null,
      "described": 19,
+     "described_from": "8b868981-3062-414c-9bd9-e6a896c050fb",
      "link": {
       "dictionary": null,
       "part": null,
-      "method": "description",
-      "score": 1.0
+      "score": 1.0,
+      "resource_id": "8b868981-3062-414c-9bd9-e6a896c050fb",
+      "method": "description"
      },
      "level": 1
     }
