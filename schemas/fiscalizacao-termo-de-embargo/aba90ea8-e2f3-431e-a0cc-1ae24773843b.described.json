@@ -1,0 +1,95 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "any",
+   "description": "Chave que identifica de forma única o termo cadastrado no Sistema de Cadastro, Arrecadação e Fiscalização (Sicafi).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NATUREZA",
+   "type": "any",
+   "description": "Tipo de atividade que motivou o embargo: desmatamento; florestal; exploração; empreendimentos; poluição/degradação; etc.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ITEM",
+   "type": "any",
+   "description": "Tipo de objeto embargado: fazenda; amazônia legal; floresta nativa; construção civil; mata nativa de preservação permanente; etc.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NUM_LONGITUDE_TAD",
+   "type": "any",
+   "description": "Longitude de referência do item embargado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NUM_LATITUDE_TAD",
+   "type": "any",
+   "description": "Latitude de referência do item embargado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DETER_PRODES",
+   "type": "any",
+   "description": "Origem do alvo de desmatamento relacionado ao item embargado: Prodes ou Deter.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "WKT",
+   "type": "any",
+   "description": "par de coordenadas de referência do item embargo em formato Well-known text – WKT.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ID_POLIGONO",
+   "type": "any",
+   "description": "Número que identifica o alvo de desmatamento relacionado ao item embargado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "EMBARGA_POLIGONO",
+   "type": "any",
+   "description": "Campo lógico que identifica se o polígono do alvo indicado no item foi embargado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "QTD_AREA_EMBARGADA",
+   "type": "any",
+   "description": "Área em hectares do item embargado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NOME_IMOVEL",
+   "type": "any",
+   "description": "Denominação do imóvel objeto do item embargado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "any",
+   "description": "Data e horário referente à última atualização do recurso no portal de dados abertos (formato ISO 8601).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "described",
+  "source": {
+   "kind": "description",
+   "resource_id": "aba90ea8-e2f3-431e-a0cc-1ae24773843b"
+  }
+ }
+}

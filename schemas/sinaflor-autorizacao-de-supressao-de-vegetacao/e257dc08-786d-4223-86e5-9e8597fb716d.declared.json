@@ -1,0 +1,208 @@
+{
+ "fields": [
+  {
+   "name": "nro_registro",
+   "type": "string",
+   "description": "Número do recibo do projeto associado a autorização.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "data_de_emissao",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "description": "Data de emissão da autorização.",
+   "declaredType": "data (DD/MM/AA)"
+  },
+  {
+   "name": "nro_autorizacao",
+   "type": "string",
+   "description": "Número da autorização.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "nro_autorizacao_original",
+   "type": "string",
+   "description": "Número da autorização emitido pelo órgão de origem, quando a autorização é gerada por um Estado que usa sistemas externos.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "data_de_validade",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "description": "Data de vencimento da autorização.",
+   "declaredType": "data (DD/MM/AA)"
+  },
+  {
+   "name": "uf",
+   "type": "string",
+   "description": "Sigla da unidade federativa onde localiza-se o empreendimento.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "municipio",
+   "type": "string",
+   "description": "Nome do município onde localiza-se o empreendimento.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "nome_detentor",
+   "type": "string",
+   "description": "Nome do detentor do empreendimento, podendo ser pessoa física ou jurídica.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "cpf_cnpj_detentor",
+   "type": "string",
+   "description": "Número do CPF ou CNPJ do detentor do empreendimento.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "imovel_rural_vinculado",
+   "type": "string",
+   "description": "Nome da propriedade no Cadastro Ambiental Rural (CAR).",
+   "declaredType": "texto"
+  },
+  {
+   "name": "nro_car_imovel_rural",
+   "type": "string",
+   "description": "Identificador do CAR do imóvel.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "nome_empreendimento_vinc",
+   "type": "string",
+   "description": "Nome do empreendimento vinculado a autorização.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "latitude_ponto_centr_empreend",
+   "type": "string",
+   "description": "Coordenada da latitude do empreendimento.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "longitude_ponto_centr_empreend",
+   "type": "string",
+   "description": "Coordenada da longitude do empreendimento.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "nome_do_rt",
+   "type": "string",
+   "description": "Nome do responsável técnico.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "nro_art",
+   "type": "string",
+   "description": "Número do ART do responsável técnico.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "atividade_rt",
+   "type": "string",
+   "description": "Grau de envolvimento do responsável técnico do projeto autorizado.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "atividade",
+   "type": "string",
+   "description": "Tipo de atividade daquele número de autorização.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "tipo_de_empreendimento",
+   "type": "string",
+   "description": "Definição de acordo com sua localização espacial em termos de área rural ou perímetro urbano. Valores possíveis: ‘Urbano’ ou ‘Rural’.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "natureza_juridica",
+   "type": "string",
+   "description": "Define a natureza do empreendimento. Valores possíveis: ‘Público’ ou ‘Privado’.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "competencia_da_avaliacao",
+   "type": "string",
+   "description": "Nível hierárquico da instituição responsável pela análise e aprovação do projeto cadastrado. Valores possíveis: ‘Federal’, ‘Estadual’ ou ‘Municipal’.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "orgao_ambiental_resp_analise",
+   "type": "string",
+   "description": "Nome da Instituição responsável pela análise e aprovação do projeto cadastrado.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "bioma",
+   "type": "string",
+   "description": "Tipo do conjunto de ecossistemas ou de área geográfica que abriga organismos, do projeto cadastrado/autorizado.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "bacia_hidro_regiao",
+   "type": "string",
+   "description": "Nome da bacia hidrográfica presente na região do projeto autorizado.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "finalidade_supressao",
+   "type": "string",
+   "description": "Definição do objetivo da supressão, para o projeto autorizado.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "area_total_proj",
+   "type": "number",
+   "description": "Dimensionamento da área de supressão do projeto autorizado. Separador decimal é o ponto.",
+   "declaredType": "número decimal"
+  },
+  {
+   "name": "situacao",
+   "type": "string",
+   "description": "Situação/status atual da autorização.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "data_da_situacao",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "description": "Data da atualização da situação/status da autorização.",
+   "declaredType": "data (DD/MM/AA)"
+  },
+  {
+   "name": "ultimo_tramite",
+   "type": "string",
+   "description": "Último trâmite referente à autorização, pode condizer com a Situação.",
+   "declaredType": "texto"
+  },
+  {
+   "name": "data_do_tramite",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "description": "Data do último trâmite referente à autorização.",
+   "declaredType": "data (DD/MM/AAAA)"
+  },
+  {
+   "name": "ultima_atualizacao_relatorio",
+   "type": "datetime",
+   "format": "%d/%m/%y %H:%M",
+   "description": "Data da última atualização do conjunto dos dados.",
+   "declaredType": "data e hora (DD/MM/AA hh:mm)"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "bd5d10bf-c952-4f96-9ea4-e208e41d18d4",
+   "dictionary_name": "Metadados - Autorização de Supressão de Vegetação",
+   "url": "https://dadosabertos.ibama.gov.br/dataset/3077864c-729b-4f37-969f-151725ac97fe/resource/bd5d10bf-c952-4f96-9ea4-e208e41d18d4/download/sinaflor-autorizacao-de-supressao-de-vegetacao.csv",
+   "sha256": "19b6d604cc0a9532fa29c0865b6954b3bbcb8fc9f45708d46ed0f03d7e946def",
+   "reader": "csv",
+   "part": "",
+   "link_method": "name"
+  }
+ }
+}

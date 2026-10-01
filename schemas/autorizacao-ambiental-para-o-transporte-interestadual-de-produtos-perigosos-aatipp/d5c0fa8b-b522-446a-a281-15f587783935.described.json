@@ -1,0 +1,74 @@
+{
+ "fields": [
+  {
+   "name": "Empreendimento",
+   "type": "any",
+   "description": "Nome da pessoa detentora da autorização de transporte, declarado no Cadastro Técnico Federal de Atividades Potencialmente Poluidoras - CTF/APP;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "CPF/CNPJ",
+   "type": "any",
+   "description": "Número do Cadastro de Pessoa Física (CPF) ou Cadastro Nacional de Pessoa Jurídica (CNPJ) da pessoa detentora da autorização;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UF",
+   "type": "any",
+   "description": "Sigla de uma das unidades da federação autorizada para transporte (para fins de consulta);",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Modal",
+   "type": "any",
+   "description": "Modal de transporte especificado na autorização: Ferroviário; Fluvial; Marítimo; Rodoviário;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Data Emissão",
+   "type": "any",
+   "description": "Data da emissão da autorização;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Data Validade",
+   "type": "any",
+   "description": "Data de validade da autorização;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Classe de Risco",
+   "type": "any",
+   "description": "Lista das classes de risco conforme Resolução nº 420, de 12 de fevereiro de 2004, da Agência Nacional de Transportes Terrestres (ANTT);",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Estados de Atuação",
+   "type": "any",
+   "description": "Lista de siglas das unidades da federação autorizadas para transporte;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "Empresa de Resposta",
+   "type": "any",
+   "description": "Nome da empresa de atendimento a emergências declarada pelo transportador.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "described",
+  "source": {
+   "kind": "description",
+   "resource_id": "d5c0fa8b-b522-446a-a281-15f587783935"
+  }
+ }
+}

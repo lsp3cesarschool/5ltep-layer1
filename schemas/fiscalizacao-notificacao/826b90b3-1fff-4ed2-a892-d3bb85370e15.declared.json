@@ -1,0 +1,257 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_NOTIFICACAO",
+   "type": "integer",
+   "description": "Chave primária que identifica a notificação",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "NUM_NOTIFICACAO",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo juntamente com a série.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SER_NOTIFICACAO",
+   "type": "string",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo juntamente com o número.",
+   "declaredType": "String"
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "description": "Código original do termo impresso, cadastro manualmente na página da web do Sistema do Auto de Infração Eletrônico (AIe).",
+   "declaredType": "String"
+  },
+  {
+   "name": "DES_STATUS_FORMULARIO",
+   "type": "string",
+   "description": "Situação do formulário: Lavrado; Cancelado; Substituído por outro; Excluído; Extraviado; Danificado; Duplicado; Impresso.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SIT_CANCELADO",
+   "type": "boolean",
+   "description": "Indica se o termo encontra-se cancelado: S (Sim); N (Não).",
+   "declaredType": "Boolean"
+  },
+  {
+   "name": "DAT_NOTIFICACAO",
+   "type": "date",
+   "description": "Data em que a notificação foi lavrada (ISO 8601).",
+   "declaredType": "Date"
+  },
+  {
+   "name": "DAT_IMPRESSAO",
+   "type": "date",
+   "description": "Data em que a notificação foi impressa no aparelho PDA (ISO 8601).",
+   "declaredType": "Date"
+  },
+  {
+   "name": "DAT_ALTERACAO",
+   "type": "date",
+   "description": "Data da última alteração do termo (ISO 8601).",
+   "declaredType": "Date"
+  },
+  {
+   "name": "TIPO_ALTERACAO",
+   "type": "string",
+   "description": "Tipo da última alteração: Redistribuído; Preenchido; Alterado; Cancelado; Cancelamento estornado.",
+   "declaredType": "String"
+  },
+  {
+   "name": "JUSTIFICATIVA_ALTERACAO",
+   "type": "string",
+   "description": "Descrição do motivo da alteração realizada no termo.",
+   "declaredType": "String"
+  },
+  {
+   "name": "NUM_PESSOA_NOTIFICADO",
+   "type": "integer",
+   "description": "Número de registro da pessoa notificada no banco de dados do Ibama (chave estrangeira).",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "NOME_NOTIFICADO",
+   "type": "string",
+   "description": "Nome da pessoa notificada.",
+   "declaredType": "String"
+  },
+  {
+   "name": "NUM_CPF_CNPJ_NOTIFICADO",
+   "type": "string",
+   "description": "Número de CNPJ ou CPF da pessoa notificada.",
+   "declaredType": "String"
+  },
+  {
+   "name": "NUM_PROCESSO",
+   "type": "string",
+   "description": "Número do processo administrativo do Ibama em que será processada a notificação.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DES_ATIVIDADE_NOTIFICADO",
+   "type": "string",
+   "description": "Descrição das atividades desenvolvidas pelo notificado, relacionadas ao objeto da notificação.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DES_OCORRENCIA",
+   "type": "string",
+   "description": "Descrição das medidas a serem adotadas pelo notificado.",
+   "declaredType": "String"
+  },
+  {
+   "name": "PRAZO_APRESENTACAO",
+   "type": "date",
+   "description": "Número de dias fixado pelo agente ambiental para que o notificado cumpra as medidas especificadas na notificação.",
+   "declaredType": "Date"
+  },
+  {
+   "name": "SIT_ATENDIDA",
+   "type": "boolean",
+   "description": "Indica se a notificação foi atendida: S (Sim); N (Não).",
+   "declaredType": "Boolean"
+  },
+  {
+   "name": "SIT_CONCLUSAO",
+   "type": "boolean",
+   "description": "Indica se não há mais pendências (processo concluído): S (Sim); N (Não).",
+   "declaredType": "Boolean"
+  },
+  {
+   "name": "SIT_AUTO_LAVRADO",
+   "type": "boolean",
+   "description": "Indica se foi lavrado auto de infração: S (Sim); N (Não).",
+   "declaredType": "Boolean"
+  },
+  {
+   "name": "COD_MUNICIPIO",
+   "type": "string",
+   "description": "Código do município (IBGE) referente ao local objeto da notificação (chave estrangeira).",
+   "declaredType": "String"
+  },
+  {
+   "name": "NOM_MUNICIPIO",
+   "type": "string",
+   "description": "Nome do município referente ao local objeto da notificação.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SIG_UF",
+   "type": "string",
+   "description": "Sigla da unidade da federação referente ao local objeto da notificação.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DS_REFERENCIA",
+   "type": "string",
+   "description": "Descrição de referência da localidade da notificação.",
+   "declaredType": "String"
+  },
+  {
+   "name": "NU_LNG",
+   "type": "number",
+   "description": "Longitude do local de notificação.",
+   "declaredType": "Decimal"
+  },
+  {
+   "name": "NU_LAT",
+   "type": "number",
+   "description": "Latitude do local de notificação.",
+   "declaredType": "Decimal"
+  },
+  {
+   "name": "FORMA_ENTREGA",
+   "type": "string",
+   "description": "Meio de entrega da notificação: pessoalmente; representante; aviso de recebimento (AR); edital; recusa de assinatura.",
+   "declaredType": "String"
+  },
+  {
+   "name": "UNID_NOTIFICANTE",
+   "type": "string",
+   "description": "Unidade responsável pela emissão da notificação.",
+   "declaredType": "String"
+  },
+  {
+   "name": "UNID_APRESENTACAO",
+   "type": "string",
+   "description": "Unidade responsável pela abertura do processo.",
+   "declaredType": "String"
+  },
+  {
+   "name": "UNID_CONTROLE",
+   "type": "string",
+   "description": "Unidade responsável pelo gerenciamento do termo no sistema de fiscalização.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SEQ_ACAO_FISCALIZATORIA",
+   "type": "integer",
+   "description": "Chave estrangeira da ação fiscalizatória em que ocorreu a notificação.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "CD_ACAO_FISCALIZATORIA",
+   "type": "string",
+   "description": "Código de identificação da ação fiscalizatória.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SEQ_ORDEM_FISCALIZACAO",
+   "type": "integer",
+   "description": "Chave estrangeira da ordem de fiscalização que motivou a ação.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "NUM_ORDEM_FISCALIZACAO",
+   "type": "string",
+   "description": "Identificação da ordem de fiscalização (número de série e estado de origem).",
+   "declaredType": "String"
+  },
+  {
+   "name": "UNID_ORDENADORA",
+   "type": "string",
+   "description": "Unidade responsável pela expedição da ordem de fiscalização.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SEQ_SOLICITACAO_RECURSO",
+   "type": "integer",
+   "description": "Chave estrangeira da solicitação de recurso vinculada à ordem.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "NUM_SOLICITACAO_RECURSO",
+   "type": "string",
+   "description": "Número da solicitação de recurso vinculada à ordem.",
+   "declaredType": "String"
+  },
+  {
+   "name": "OPERACAO_SOL_RECURSO",
+   "type": "string",
+   "description": "Nome da operação de fiscalização descrita na solicitação de recurso.",
+   "declaredType": "String"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "description": "Data e horário referente à última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601), no formato YYYY-MM-DD hh24:mi:ss",
+   "declaredType": "DateTime"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "f245368c-dcb6-46c9-ae17-635876ec5fac",
+   "dictionary_name": "Metadados - Notificação",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/89425df8-37fc-45b8-9983-50f3f9b423f1/resource/f245368c-dcb6-46c9-ae17-635876ec5fac/download/metadados-termo-de-notificacao.csv",
+   "sha256": "668b895943263903bccdde991a0044c918f7102ecc983b79e27747b6f3220d78",
+   "reader": "csv",
+   "part": "",
+   "link_method": "name"
+  }
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "declaredType": "int"
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "declaredType": "varchar"
+  },
+  {
+   "name": "SER_TAD",
+   "type": "integer",
+   "declaredType": "int"
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "integer",
+   "declaredType": "int"
+  },
+  {
+   "name": "ADMINISTRATIVO",
+   "type": "string",
+   "declaredType": "char"
+  },
+  {
+   "name": "NORMA_TIPO",
+   "type": "string",
+   "declaredType": "varchar"
+  },
+  {
+   "name": "NORMA_NUMERO",
+   "type": "integer",
+   "declaredType": "int"
+  },
+  {
+   "name": "ARTIGO",
+   "type": "integer",
+   "declaredType": "int"
+  },
+  {
+   "name": "NU_PARAGRAFO",
+   "type": "integer",
+   "declaredType": "int"
+  },
+  {
+   "name": "NU_INCISO",
+   "type": "integer",
+   "declaredType": "int"
+  },
+  {
+   "name": "CD_ALINEA",
+   "type": "string",
+   "declaredType": "varchar"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "declaredType": "timestamp"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "7804331e-c35f-4d74-b8c9-0bb4c3af2063",
+   "dictionary_name": "Metadados - Termo de demolição - enquadramento",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/49e2db1d-3b84-4556-9c87-e5b0dbd9e6a6/resource/7804331e-c35f-4d74-b8c9-0bb4c3af2063/download/metadados-termo-de-demolicao-enquadramento.csv",
+   "sha256": "d2a947eace2bace6c69ca7950b7dfae761b1b949e8919f6e7d908b79e6a6b954",
+   "reader": "csv",
+   "part": "",
+   "link_method": "name"
+  }
+ }
+}

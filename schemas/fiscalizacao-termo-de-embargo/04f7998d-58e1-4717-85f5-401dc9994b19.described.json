@@ -1,0 +1,312 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "any",
+   "description": "Chave que identifica de forma única o termo cadastrado no Sistema de Cadastro, Arrecadação e Fiscalização (Sicafi).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SEQ_HIST_TAD",
+   "type": "any",
+   "description": "Número da alteração registrada para o termo.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DT_ALTERACAO",
+   "type": "any",
+   "description": "Data de alteração do termo (ISO 8601).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DES_STATUS_FORMULARIO",
+   "type": "any",
+   "description": "Situação do termo de embargo no Sicafi: Lavrado; Cancelado; Substituído por outro; Excluído.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SIT_CANCELADO",
+   "type": "any",
+   "description": "Situação de cancelamento do termo de embargo: Cancelado (S); Não cancelado (N).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "any",
+   "description": "Número impresso no formulário que compõe a identificação do Termo de Embargo. Obs: Os Termos de Embargo emitidos até 07.10.2019, pelo Sistema de Cadastro, Arrecadação e Fiscalização (Sicafi), utilizam um padrão composto de números, acompanhado da respectiva Série. Os Termos de Embargo emitidos a partir de 08.10.2019, pelo Sistema do Auto de Infração Eletrônico (AIe), utilizam um padrão alfanumérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SER_TAD",
+   "type": "any",
+   "description": "Caractere impresso no formulário que contém a respectiva série e compõe a identificação do documento em conexão com o número do termo de embargo no Sistema de Cadastro, Arrecadação e Fiscalização (Sicafi). Obs: nos Termos de Embargo alfanuméricos, emitidos a partir de 08.10.2019 pelo Sistema do Auto de Infração Eletrônico (AIe), esse campo de dado não é preenchido.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DAT_EMBARGO",
+   "type": "any",
+   "description": "Data em que o termo de embargo foi lavrado (formato ISO 8601).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DAT_IMPRESSAO",
+   "type": "any",
+   "description": "Data em que o termo de embargo de Série \"E\" foi impresso. Obs: Nos Termos de Embargo alfanuméricos, emitidos a partir de 08.10.2019 pelo Sistema do Auto de Infração Eletrônico (AIe), esse campo de dado não é preenchido (formato ISO 8601).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "FORMA_ENTREGA",
+   "type": "any",
+   "description": "Meio empregado para dar ciência do embargo à pessoa embargada: pessoalmente; representante; correios; edital; o autuado recusou-se a assinar.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NUM_PROCESSO",
+   "type": "any",
+   "description": "Número do processo administrativo do Ibama em que será processado o embargo aplicado pelo agente ambiental.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DES_TAD",
+   "type": "any",
+   "description": "Circunstâncias do embargo, justificativa e normas que fundamentam a aplicação da medida.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "COD_MUNICIPIO",
+   "type": "any",
+   "description": "Código do município (IBGE) do local embargado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "MUNICIPIO",
+   "type": "any",
+   "description": "Nome do município do local embargado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UF",
+   "type": "any",
+   "description": "Sigla da Unidade da Federação do local embargado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DES_LOCALIZACAO",
+   "type": "any",
+   "description": "Local embargado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NUM_LONGITUDE_TAD",
+   "type": "any",
+   "description": "Longitude do local embargado (coordenada geográfica de referência).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NUM_LATITUDE_TAD",
+   "type": "any",
+   "description": "Latitude do local embargado (coordenada geográfica de referência).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DETER_PRODES",
+   "type": "any",
+   "description": "Origem do alvo de desmatamento que motivou o embargo. Prodes (Projeto de Monitoramento do Desmatamento na Amazônia Legal por Satélite) ou Deter (Sistema de Detecção de Desmatamentos em Tempo Real).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ID_POLIGONO",
+   "type": "any",
+   "description": "Número que identifica o alvo de desmatamento que motivou o embargo.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "EMBARGA_POLIGONO",
+   "type": "any",
+   "description": "Campo lógico que identifica se o polígono do alvo indicado foi embargado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "QTD_AREA_EMBARGADA",
+   "type": "any",
+   "description": "Área total em hectares objeto do embargo.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NOME_IMOVEL",
+   "type": "any",
+   "description": "Denominação do imóvel objeto do embargo.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "TIPO_AREA",
+   "type": "any",
+   "description": "Tipo de área embargada: desmatamento; queimadas; outros; não se aplica (classificação restrita a termos eletrônicos série “E” lavrados no período de 2013 a 2019).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "GEOM_AREA_EMBARGADA",
+   "type": "any",
+   "description": "Descrição da geometria que define os limites de embargo (polígonos) em formato Well-known text - WKT).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UNID_APRESENTACAO",
+   "type": "any",
+   "description": "Unidade responsável pelo recebimento e instauração do processo.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UNID_CONTROLE",
+   "type": "any",
+   "description": "Unidade responsável pelo gerenciamento do termo no sistema de fiscalização.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SIT_DESEMBARGO",
+   "type": "any",
+   "description": "Identifica existência de registro de desembargo administrativo ou judicial: “S” – Desembargado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DAT_DESEMBARGO",
+   "type": "any",
+   "description": "Data de registro da decisão de desembargo no sistema Sicafi.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DES_DESEMBARGO",
+   "type": "any",
+   "description": "Justificativa da decisão de desembargo.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SEQ_AUTO_INFRACAO",
+   "type": "any",
+   "description": "Chave que identifica de forma única o auto de infração registrado no sistema Sicafi, vinculado ao termo de embargo;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SEQ_NOTIFICACAO",
+   "type": "any",
+   "description": "Chave que identifica a notificação lavrada pela fiscalização, vinculada ao termo de embargo.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SEQ_ACAO_FISCALIZATORIA",
+   "type": "any",
+   "description": "Chave que identifica, de forma única no sistema Sicafi, a ação fiscalizatória referente ao termo lavrado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "OPERACAO",
+   "type": "any",
+   "description": "Nome da operação de fiscalização vinculada ao termo.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SEQ_ORDEM_FISCALIZACAO",
+   "type": "any",
+   "description": "Chave que identifica de forma única a ordem de fiscalização que motivou a ação fiscalizatória.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ORDEM_FISCALIZACAO",
+   "type": "any",
+   "description": "Identificação da ordem de fiscalização que motivou a ação fiscalizatória, com número de série e estado de origem da unidade que emitiu a ordem.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UNID_ORDENADORA",
+   "type": "any",
+   "description": "Unidade administrativa do Ibama responsável pela emissão da ordem de fiscalização.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SEQ_SOLICITACAO_RECURSO",
+   "type": "any",
+   "description": "Chave que identifica a solicitação de recurso vinculada à ordem de fiscalização.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SOLICITACAO_RECURSO",
+   "type": "any",
+   "description": "Número da solicitação de recurso vinculada à ordem de fiscalização.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "OPERACAO_SOL_RECURSO",
+   "type": "any",
+   "description": "Nome da operação de fiscalização descrita na solicitação de recursos.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DAT_ULT_ALTERACAO",
+   "type": "any",
+   "description": "Data da última alteração do termo de embargo no sistema Sicafi (formato ISO 8601).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "TIPO_ALTERACAO",
+   "type": "any",
+   "description": "Tipo da última alteração registrada no termo: Redistribuído; Preenchido; Alterado; Cancelado; Cancelamento estornado.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "any",
+   "description": "Data e horário referente à última atualização do recurso no portal de dados abertos (formato ISO 8601).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "described",
+  "source": {
+   "kind": "description",
+   "resource_id": "04f7998d-58e1-4717-85f5-401dc9994b19"
+  }
+ }
+}

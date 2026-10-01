@@ -1,0 +1,89 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "description": "Chave primária que identifica o termo de fiscalização.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SER_TAD",
+   "type": "string",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo.",
+   "declaredType": "String"
+  },
+  {
+   "name": "CD_TERMO",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo,juntamente com a série.",
+   "declaredType": "String"
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "description": "Código original do termo impresso, cadastro manualmentena página da web do Sistema do Auto de Infração Eletrônico (AIe).",
+   "declaredType": "String"
+  },
+  {
+   "name": "SQ_ENQUADRAMENTO",
+   "type": "integer",
+   "description": "Identificador do enquadramento legal",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "ADMINISTRATIVO",
+   "type": "boolean",
+   "description": "Indica se o dispositivo legal é de ordem administrativa ouespecífico da infração relacionada: S (Sim); N (Não).",
+   "declaredType": "Boolean"
+  },
+  {
+   "name": "SQ_ENQ_COMP",
+   "type": "integer",
+   "description": "Identificador do enquadramento legal complementar vinculado aoenquadramento principal",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "NU_LEI_COMP",
+   "type": "string",
+   "description": "Norma legal do enquadramento complementar.",
+   "declaredType": "String"
+  },
+  {
+   "name": "NU_ARTIGO_COMP",
+   "type": "string",
+   "description": "Artigo da norma citada no enquadramento complementar.",
+   "declaredType": "String"
+  },
+  {
+   "name": "NU_PAR_INC_AL",
+   "type": "string",
+   "description": "Parágrafo, inciso ou alínea do artigo citado para oenquadramento complementar.",
+   "declaredType": "String"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "description": "Data e horário referente à última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601), no formato YYYY-MM-DD hh24:mi:ss",
+   "declaredType": "DateTime"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "1b3a223f-c84f-4080-9b12-f893ee7fb6dd",
+   "dictionary_name": "Metadados - Enquadramento Legal Complementar ",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/4f3a0c94-da69-4bb5-9236-439968e75179/resource/1b3a223f-c84f-4080-9b12-f893ee7fb6dd/download/metadados-termo-de-soltura-enquadramento-legal-complementar.csv",
+   "sha256": "9eeab6d05c3361d31825c68dd441cdac5e89ceb00a09c6430bfcd8e938854446",
+   "reader": "csv",
+   "part": "",
+   "link_method": "name"
+  }
+ }
+}

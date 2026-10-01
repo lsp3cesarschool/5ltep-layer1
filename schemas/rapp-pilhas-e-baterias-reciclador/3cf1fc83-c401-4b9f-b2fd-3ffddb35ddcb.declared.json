@@ -1,0 +1,125 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "description": "Cadastro Nacional da Pessoa Jurídica, identificador único da empresa junto à Receita Federal do Brasil.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "RAZAO_SOCIAL",
+   "type": "string",
+   "description": "Nome empresarial ou denominação social da pessoa jurídica, conforme registrado nos órgãos competentes.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "ESTADO",
+   "type": "string",
+   "description": "Sigla da unidade da federação onde está localizada a empresa.",
+   "declaredType": "CHAR"
+  },
+  {
+   "name": "MUNICIPIO",
+   "type": "string",
+   "description": "Nome do município onde está localizada a empresa.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "CODIGO_DA_CATEGORIA",
+   "type": "integer",
+   "description": "Código identificador da categoria, que consiste no grupamento que reúne uma série de descrições de atividades congêneres.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "CATEGORIA_DE_ATIVIDADE",
+   "type": "string",
+   "description": "Especificação de cada categoria potencialmente poluidora e utilizadora de recursos ambientais, nos termos do Anexo VIII da Lei nº 6.938, de 1981, e do Anexo I da Instrução Normativa Ibama nº 13, de 23 de agosto de 2021.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "CODIGO_DO_DETALHE",
+   "type": "integer",
+   "description": "Código identificador da atividade, que consiste no grupamento que reúne uma série de descrições de atividades congêneres.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "DETALHE_DA_ATIVIDADE",
+   "type": "string",
+   "description": "Especificação de cada atividade potencialmente poluidora e utilizadora de recursos ambientais, agrupada por categoria, nos termos do Anexo VIII da Lei nº 6.938, de 1981, e do Anexo I da Instrução Normativa Ibama nº 13, de 23 de agosto de 2021.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "ANO",
+   "type": "integer",
+   "description": "Ano de referência das informações declaradas.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "TIPO_DE_PILHA",
+   "type": "string",
+   "description": "Tipo de pilha ou bateria recebida pela empresa.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "MODELO",
+   "type": "string",
+   "description": "Modelo da pilha ou bateria recebida.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "PESO_UNITARIO",
+   "type": "number",
+   "description": "Peso unitário da pilha ou bateria recebida.",
+   "declaredType": "DECIMAL"
+  },
+  {
+   "name": "QUANTIDADE_RECEBIDA",
+   "type": "integer",
+   "description": "Quantidade de pilhas ou baterias recebidas pela empresa.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "PESO_TOTAL",
+   "type": "number",
+   "description": "Peso total das pilhas ou baterias recebidas.",
+   "declaredType": "DECIMAL"
+  },
+  {
+   "name": "CNPJ_ATERRO",
+   "type": "string",
+   "description": "Cadastro Nacional da Pessoa Jurídica, identificador único da empresa junto à Receita Federal do Brasil, do Aterro Industrial Classe I para o qual foi destinado.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "TIPO_DE_DESTINACAO",
+   "type": "string",
+   "description": "Tipo de destinação ambientalmente adequada realizada para as pilhas ou baterias recebidas.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "EMPRESA_FORNECEDORA",
+   "type": "string",
+   "description": "CNPJ da empresa fornecedora das pilhas ou baterias recebidas pela empresa destinadora.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "description": "Data e hora da última atualização do relatório.",
+   "declaredType": "DATATIME"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "3677a3ae-3176-4b2b-8289-910ea863b863",
+   "dictionary_name": "Metadados - Rapp Pilhas e Baterias - Reciclador",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/7294fa27-6d00-47c6-ba4c-ba6d7b693c4d/resource/3677a3ae-3176-4b2b-8289-910ea863b863/download/metadados-pilhas-e-baterias-reciclador.csv",
+   "sha256": "a693db99d9b88ed217fa5d26394aaac43971c1de3dc670102ba6837ec6db90de",
+   "reader": "csv",
+   "part": "",
+   "link_method": "name"
+  }
+ }
+}

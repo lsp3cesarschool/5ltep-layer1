@@ -1,0 +1,95 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_DOACAO",
+   "type": "integer",
+   "description": "Chave primária que identifica o termo de doação.",
+   "declaredType": "INT"
+  },
+  {
+   "name": "NUM_DOACAO",
+   "type": "integer",
+   "description": "Número impresso no formulário que compõe a identificação dotermo juntamente com a série.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "SER_DOACAO",
+   "type": "string",
+   "description": "Caractere impresso no formulário que compõe a identificação dotermo juntamente com o número.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "description": "Código original do termo impresso, cadastro manualmentena página da web do Sistema do Auto de Infração Eletrônico (AIe).",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "SQ_ENQUADRAMENTO",
+   "type": "integer",
+   "description": "Identificador do enquadramento legal",
+   "declaredType": "INT"
+  },
+  {
+   "name": "ADMINISTRATIVO",
+   "type": "string",
+   "description": "Indica se o dispositivo legal é de ordem administrativa ouespecífico da infração relacionada: S (Sim); N (Não).",
+   "declaredType": "CHAR"
+  },
+  {
+   "name": "NORMA_TIPO",
+   "type": "string",
+   "description": "Tipo de norma legal: Decreto; Lei.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "NORMA_NUMERO",
+   "type": "integer",
+   "description": "Número da norma legal.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "ARTIGO",
+   "type": "integer",
+   "description": "Número do artigo da norma legal.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "NU_PARAGRAFO",
+   "type": "integer",
+   "description": "Número do parágrafo do artigo citado.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "NU_INCISO",
+   "type": "string",
+   "description": "Número do inciso do artigo citado.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "CD_ALINEA",
+   "type": "string",
+   "description": "Alínea do artigo citado.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "description": "Data e horário referente à última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601), no formato YYYY-MM-DD hh24:mi:ss",
+   "declaredType": "DATATIME"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "ce02732e-25ba-4266-adb7-3d5701fa8ce6",
+   "dictionary_name": "Metadados - Enquadramento legal",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/ce02732e-25ba-4266-adb7-3d5701fa8ce6/download/metadados_termo-de-doacao-enquadramento-legal.csv",
+   "sha256": "873e7a744d70f2c35d501519ed364e19447cf129a2224cbd8642f63d2cb584ec",
+   "reader": "csv",
+   "part": "",
+   "link_method": "name"
+  }
+ }
+}

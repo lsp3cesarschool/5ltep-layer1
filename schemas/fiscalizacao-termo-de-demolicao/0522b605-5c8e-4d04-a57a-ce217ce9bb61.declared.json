@@ -1,0 +1,257 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "description": "Chave que identifica o termo de demolição.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "STATUS_FORMULARIO",
+   "type": "string",
+   "description": "Situação atual do formulário: Lavrado, Cancelado, Substituído por outro, Excluído, Extraviado, Danificado, Duplicado ou Impresso.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SIT_CANCELADO",
+   "type": "string",
+   "description": "Indica se o termo encontra-se cancelado: S (Sim) ou N (Não).",
+   "declaredType": "String"
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo juntamente com a série.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SER_TAD",
+   "type": "string",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo juntamente com o número.",
+   "declaredType": "String"
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "description": "Código original do termo impresso, cadastrado manualmente no Sistema do Auto de Infração Eletrônico (AIe).",
+   "declaredType": "String"
+  },
+  {
+   "name": "DAT_TAD",
+   "type": "date",
+   "description": "Data em que o termo foi lavrado (ISO 8601).",
+   "declaredType": "Date"
+  },
+  {
+   "name": "DAT_IMPRESSAO",
+   "type": "date",
+   "description": "Data de impressão do termo no aparelho PDA (ISO 8601).",
+   "declaredType": "Date"
+  },
+  {
+   "name": "NUM_PESSOA_AUTUADA",
+   "type": "integer",
+   "description": "Número de registro da pessoa no banco de dados do Ibama.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "NOME_PESSOA_AUTUADA",
+   "type": "string",
+   "description": "Nome da pessoa responsável pela obra ou construção.",
+   "declaredType": "String"
+  },
+  {
+   "name": "CPF_CNPJ_PESSOA_AUTUADA",
+   "type": "string",
+   "description": "CPF ou CNPJ da pessoa responsável pela obra ou construção.",
+   "declaredType": "String"
+  },
+  {
+   "name": "NUM_PROCESSO",
+   "type": "string",
+   "description": "Número do processo administrativo do Ibama em que será processada a demolição.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DES_TAD",
+   "type": "string",
+   "description": "Descrição das circunstâncias e normas que fundamentaram a aplicação da medida.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DS_COMPLEMENTAR",
+   "type": "string",
+   "description": "Observações complementares.",
+   "declaredType": "String"
+  },
+  {
+   "name": "COD_MUNICIPIO",
+   "type": "integer",
+   "description": "Código do município (IBGE) referente ao local da demolição.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "NOM_MUNICIPIO",
+   "type": "string",
+   "description": "Nome do município referente ao local da demolição.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SIG_UF",
+   "type": "string",
+   "description": "Sigla da unidade da federação referente ao local da demolição.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DES_LOCALIZACAO",
+   "type": "string",
+   "description": "Descrição do local da demolição.",
+   "declaredType": "String"
+  },
+  {
+   "name": "NUM_LONGITUDE_TAD",
+   "type": "number",
+   "description": "Longitude do local da demolição.",
+   "declaredType": "Number"
+  },
+  {
+   "name": "NUM_LATITUDE_TAD",
+   "type": "number",
+   "description": "Latitude do local da demolição.",
+   "declaredType": "Number"
+  },
+  {
+   "name": "DES_JUSTIFICATIVA",
+   "type": "string",
+   "description": "Justificativa para aplicação da medida de demolição.",
+   "declaredType": "String"
+  },
+  {
+   "name": "FORMA_ENTREGA",
+   "type": "string",
+   "description": "Meio empregado para dar ciência da demolição à pessoa responsável: pessoalmente, representante, AR, edital ou recusa de assinatura.",
+   "declaredType": "String"
+  },
+  {
+   "name": "UNID_APRESENTACAO",
+   "type": "string",
+   "description": "Unidade responsável pelo recebimento e instauração do processo.",
+   "declaredType": "String"
+  },
+  {
+   "name": "UNID_CONTROLE",
+   "type": "string",
+   "description": "Unidade responsável pelo gerenciamento do termo no sistema de fiscalização.",
+   "declaredType": "String"
+  },
+  {
+   "name": "VALOR_TAD",
+   "type": "number",
+   "description": "Somatória do valor de todos os bens demolidos identificados no termo.",
+   "declaredType": "Number"
+  },
+  {
+   "name": "SEQ_AUTO_INFRACAO",
+   "type": "integer",
+   "description": "Chave que identifica o auto de infração vinculado ao termo de demolição.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "NUM_AUTO_INFRACAO",
+   "type": "string",
+   "description": "Número do auto de infração vinculado ao termo.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SEQ_NOTIFICACAO",
+   "type": "integer",
+   "description": "Chave que identifica a notificação vinculada ao termo de demolição.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "SEQ_ACAO_FISCALIZATORIA",
+   "type": "integer",
+   "description": "Chave que identifica a ação fiscalizatória em que ocorreu a demolição.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "CD_ACAO_FISCALIZATORIA",
+   "type": "string",
+   "description": "Código de identificação da ação fiscalizatória.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SEQ_ORDEM_FISCALIZACAO",
+   "type": "integer",
+   "description": "Chave estrangeira que identifica a ordem de fiscalização que motivou a ação fiscalizatória.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "NUM_ORDEM_FISCALIZACAO",
+   "type": "string",
+   "description": "Número da ordem de fiscalização que motivou a ação fiscalizatória.",
+   "declaredType": "String"
+  },
+  {
+   "name": "UNID_ORDENADORA",
+   "type": "string",
+   "description": "Unidade do Ibama responsável pela expedição da ordem de fiscalização.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SEQ_SOLICITACAO_RECURSO",
+   "type": "integer",
+   "description": "Chave estrangeira que identifica a solicitação de recurso vinculada à ordem de fiscalização.",
+   "declaredType": "Int"
+  },
+  {
+   "name": "NUM_SOLICITACAO_RECURSO",
+   "type": "integer",
+   "description": "Número da solicitação de recurso vinculada à ordem de fiscalização.",
+   "declaredType": "Int"
+  },
+  {
+   "name": "OPERACAO_SOL_RECURSO",
+   "type": "string",
+   "description": "Nome da operação de fiscalização vinculada à solicitação de recurso.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DAT_ALTERACAO",
+   "type": "datetime",
+   "description": "Data da última alteração dos atributos do termo (ISO 8601).",
+   "declaredType": "DateTime"
+  },
+  {
+   "name": "TIPO_ALTERACAO",
+   "type": "string",
+   "description": "Tipo da última alteração registrada no termo: Redistribuído, Preenchido, Alterado, Cancelado ou Cancelamento estornado.",
+   "declaredType": "String"
+  },
+  {
+   "name": "JUSTIFICATIVA_ALTERACAO",
+   "type": "string",
+   "description": "Descrição do motivo da alteração realizada no termo.",
+   "declaredType": "String"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "description": "Data e horário da última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601 - YYYY-MM-DD hh24:mi:ss).",
+   "declaredType": "DateTime"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "b845ac81-fd3a-4282-9150-454f65e38558",
+   "dictionary_name": "Metadados - Termo de demolição",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/49e2db1d-3b84-4556-9c87-e5b0dbd9e6a6/resource/b845ac81-fd3a-4282-9150-454f65e38558/download/metadados-termo-de-demolicao.csv",
+   "sha256": "87960f4fae996e806079d7592cb280157ddbee943d1d1fb27d3744f0bfc97dad",
+   "reader": "csv",
+   "part": "",
+   "link_method": "name"
+  }
+ }
+}
