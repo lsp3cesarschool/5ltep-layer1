@@ -227,12 +227,6 @@ Every request goes through one keep-alive session that identifies the project (U
 repository's address), with **15 s to open a connection and 120 s to read the answer**, and up to four
 attempts with growing waits. The survey reads four datasets at a time; files are downloaded one at a time.
 
-Lesson from the Recife portal (01/10/2026): seen from GitHub's runners, the portal intermittently refuses
-*new* connections. With one connection per request and the same 120 s limit for connecting and reading,
-each refusal cost about nine minutes of retries, and the first survey read 68 of 223 datasets in 1 h 48 min.
-Reusing connections and failing fast on connection refusals brought the whole survey down to 3.5 minutes,
-with no failed request.
-
 ## FAIR principles and replicability
 
 - **Findable / Accessible:** code, schemas, results and summaries are public, versioned in Git, with a
