@@ -1,0 +1,49 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano do relatório",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CNPJ do destinador",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Número da licença de operação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Validade da licença de operação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Atividades constantes na licença de operação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Método de destinação e tratamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:42:57+00:00",
+  "sha256": "b885172f2e2ce48d5792fe090688cd8cd30bb5d2d6a04f2f84fce748ce2f34db",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 3769,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

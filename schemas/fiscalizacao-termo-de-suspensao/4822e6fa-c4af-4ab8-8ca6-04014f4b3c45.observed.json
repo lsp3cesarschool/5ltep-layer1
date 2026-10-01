@@ -1,0 +1,213 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "STATUS_FORMULARIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SIT_CANCELADO",
+   "type": "boolean",
+   "trueValues": [
+    "S"
+   ],
+   "falseValues": [
+    "N"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SER_TAD",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "DAT_TAD",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DAT_IMPRESSAO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "NUM_PESSOA_SUSPENSAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0016
+  },
+  {
+   "name": "NOM_PESSOA_SUSPENSAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0016
+  },
+  {
+   "name": "CPF_CNPJ_PESSOA_SUSPENSAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0024
+  },
+  {
+   "name": "NUM_PROCESSO",
+   "type": "string",
+   "sampleEmptyShare": 0.0016
+  },
+  {
+   "name": "DES_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.002
+  },
+  {
+   "name": "DS_COMPLEMENTAR",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "COD_MUNICIPIO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOM_MUNICIPIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SIG_UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DES_LOCALIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.001
+  },
+  {
+   "name": "NUM_LONGITUDE_TAD",
+   "type": "number",
+   "sampleEmptyShare": 0.0082
+  },
+  {
+   "name": "NUM_LATITUDE_TAD",
+   "type": "number",
+   "sampleEmptyShare": 0.0082
+  },
+  {
+   "name": "DES_JUSTIFICATIVA",
+   "type": "string",
+   "sampleEmptyShare": 0.1802
+  },
+  {
+   "name": "FORMA_ENTREGA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UNID_APRESENTACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UNID_CONTROLE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEQ_AUTO_INFRACAO",
+   "type": "number",
+   "sampleEmptyShare": 0.6314
+  },
+  {
+   "name": "NUM_AUTO_INFRACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.6314
+  },
+  {
+   "name": "SEQ_NOTIFICACAO",
+   "type": "number",
+   "sampleEmptyShare": 0.996
+  },
+  {
+   "name": "SEQ_ACAO_FISCALIZATORIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0146
+  },
+  {
+   "name": "CD_ACAO_FISCALIZATORIA",
+   "type": "string",
+   "sampleEmptyShare": 0.0166
+  },
+  {
+   "name": "SEQ_ORDEM_FISCALIZACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0124
+  },
+  {
+   "name": "NUM_ORDEM_FISCALIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0124
+  },
+  {
+   "name": "UNID_ORDENADORA",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "SEQ_SOLICITACAO_RECURSO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0124
+  },
+  {
+   "name": "NUM_SOLICITACAO_RECURSO",
+   "type": "number",
+   "sampleEmptyShare": 0.0124
+  },
+  {
+   "name": "OPERACAO_SOL_RECURSO",
+   "type": "string",
+   "sampleEmptyShare": 0.0124
+  },
+  {
+   "name": "DAT_ALTERACAO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TIPO_ALTERACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0426
+  },
+  {
+   "name": "JUSTIFICATIVA_ALTERACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0426
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:40:11+00:00",
+  "sha256": "385193e90ea8582bbd735ce08c6e19050ed6001b4ed42f9767c45a09c7bb7c8b",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

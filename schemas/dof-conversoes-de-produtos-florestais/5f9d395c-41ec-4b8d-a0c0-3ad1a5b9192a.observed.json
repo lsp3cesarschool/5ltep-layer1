@@ -1,0 +1,193 @@
+{
+ "fields": [
+  {
+   "name": "NRO_REGISTRO_CONVERSAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_RAZAO_SOCIAL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CPF_CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CTF",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MUNICIPIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TIPO_DE_ORIGEM",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_DA_ORIGEM",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LATITUDE",
+   "type": "number",
+   "sampleEmptyShare": 0.2464
+  },
+  {
+   "name": "LONGITUDE",
+   "type": "number",
+   "sampleEmptyShare": 0.2464
+  },
+  {
+   "name": "NRO_LICENCA_CONVERSAO",
+   "type": "string",
+   "sampleEmptyShare": 0.3074
+  },
+  {
+   "name": "ORGAO_EMISSOR_LICENCA",
+   "type": "string",
+   "sampleEmptyShare": 0.3074
+  },
+  {
+   "name": "DATA_CADASTRO_LICENCA",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.3074
+  },
+  {
+   "name": "VALIDADE_LICENCA",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.3074
+  },
+  {
+   "name": "DATA_CONVERSAO",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ANO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CODIGO_RASTREIO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "NOME_CIENTIFICO",
+   "type": "string",
+   "sampleEmptyShare": 0.0013
+  },
+  {
+   "name": "NOME_POPULAR",
+   "type": "string",
+   "sampleEmptyShare": 0.0013
+  },
+  {
+   "name": "TIPO_PRODUTO_ENTRADA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOLUME_PRODUTO_ENTRADA",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UNIDADE_MEDIDA_ENTRADA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TIPO_PRODUTO_PROCESSADO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOLUME_PRODUTO_PROCESSADO",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UNIDADE_PRODUTO_PROCESSADO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "COEFICIENTE_CONVERSAO",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TIPO_RESIDUO_GERADO_1",
+   "type": "string",
+   "sampleEmptyShare": 0.1219
+  },
+  {
+   "name": "VOLUME_RESIDUO_GERADO_1",
+   "type": "number",
+   "sampleEmptyShare": 0.1219
+  },
+  {
+   "name": "UNIDADE_RESIDUO_GERADO_1",
+   "type": "string",
+   "sampleEmptyShare": 0.1219
+  },
+  {
+   "name": "TIPO_RESIDUO_GERADO_2",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "VOLUME_RESIDUO_GERADO_2",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "UNIDADE_RESIDUO_GERADO_2",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "VOLUME_PERDA",
+   "type": "number",
+   "sampleEmptyShare": 0.1265
+  },
+  {
+   "name": "SISTEMA_ORIGINARIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:11:52+00:00",
+  "sha256": "d8462459cd1e528093d19df3f08cfa48e52cbeab2061edec0c688f5a0da13b8b",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 1542,
+  "tables": 432,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_AUTO_INFRACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.1538
+  },
+  {
+   "name": "NUM_AUTO_INFRACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CD_SERIE__AUTO_INFRACAO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "SQ_ENQUADRAMENTO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ADMINISTRATIVO",
+   "type": "boolean",
+   "trueValues": [
+    "S"
+   ],
+   "falseValues": [
+    "N"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_NORMA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_NORMA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NUMERO_ARTIGO_NORMA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PARAGRAFO_ARTIGO_NORM",
+   "type": "integer",
+   "sampleEmptyShare": 0.703
+  },
+  {
+   "name": "INCISO_ARTIGO_NORMA",
+   "type": "integer",
+   "sampleEmptyShare": 0.6068
+  },
+  {
+   "name": "ALINEA_ARTIGO_NORMA",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:37:53+00:00",
+  "sha256": "74b58273f14188525a5b95db389b8c47c23833a42016b7300985e683bc6aaf66",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

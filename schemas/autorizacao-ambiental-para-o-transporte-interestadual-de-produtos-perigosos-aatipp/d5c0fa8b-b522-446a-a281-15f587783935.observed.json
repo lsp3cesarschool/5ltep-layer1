@@ -1,0 +1,72 @@
+{
+ "fields": [
+  {
+   "name": "Empreendimento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CPF/CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "modal",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data Emissão",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data Validade",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ANO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Classe de Risco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Estados de atuação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Empresa de resposta",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Última Atualização Relatório",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:10:24+00:00",
+  "sha256": "2afe2fccb08df1318886ce9160dde73f5c0893e5911d8433eda81f4a16e07d27",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

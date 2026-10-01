@@ -1,0 +1,136 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ do gerador",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Razão Social do gerador",
+   "type": "string",
+   "sampleEmptyShare": 0.0006
+  },
+  {
+   "name": "Estado",
+   "type": "string",
+   "sampleEmptyShare": 0.0006
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0006
+  },
+  {
+   "name": "Código da Categoria",
+   "type": "string",
+   "sampleEmptyShare": 0.3646
+  },
+  {
+   "name": "Categoria de Atividade",
+   "type": "string",
+   "sampleEmptyShare": 0.364
+  },
+  {
+   "name": "Código do Detalhe",
+   "type": "number",
+   "sampleEmptyShare": 0.364
+  },
+  {
+   "name": "Detalhe",
+   "type": "string",
+   "sampleEmptyShare": 0.364
+  },
+  {
+   "name": "Ano da geração do resíduo",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Cod. Resíduo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo de Resíduo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Classif. do Resíduo NBR 10.004",
+   "type": "string",
+   "sampleEmptyShare": 0.3481
+  },
+  {
+   "name": "Identif. do Resíduo NBR 10.004",
+   "type": "string",
+   "sampleEmptyShare": 0.3481
+  },
+  {
+   "name": "Quantidade",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Unidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Efic. do sist. de tratamento",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo de monit. realizado",
+   "type": "string",
+   "sampleEmptyShare": 0.0008
+  },
+  {
+   "name": "Tipo de Finalidade",
+   "type": "string",
+   "sampleEmptyShare": 0.348
+  },
+  {
+   "name": "Finalidade da Transferência",
+   "type": "string",
+   "sampleEmptyShare": 0.348
+  },
+  {
+   "name": "CNPJ da emp. de Armazen/Destin",
+   "type": "string",
+   "sampleEmptyShare": 0.6564
+  },
+  {
+   "name": "Raz. soc. emp. Armazen/Destin",
+   "type": "string",
+   "sampleEmptyShare": 0.6564
+  },
+  {
+   "name": "Latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.1604
+  },
+  {
+   "name": "Longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.1556
+  },
+  {
+   "name": "Situação Cadastral",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:43:34+00:00",
+  "sha256": "8ce74d15e75f7f7f6a183cce7f5f0e637a346e105f939405fd506193f0b81794",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

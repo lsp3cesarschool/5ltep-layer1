@@ -1,0 +1,65 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Razão Social",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Estado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0968
+  },
+  {
+   "name": "Certificado",
+   "type": "string",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "Tipo Certificado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Certificador",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Validade",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0182
+  },
+  {
+   "name": "Situação Cadastral",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:10:27+00:00",
+  "sha256": "ec26a5a20992f50244bc0f1590fb0bf94e6c459f02b8230d170154a946edb213",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

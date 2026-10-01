@@ -1,0 +1,45 @@
+{
+ "fields": [
+  {
+   "name": "Código da Receita",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Descrição Receita",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Valor (R$)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Quantidade",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Última Atualização Relatório",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:36:39+00:00",
+  "sha256": "34abb820895284fa72869c8f5151235f87b5e8300aaa0b3d47962000d48f0702",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 1081,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

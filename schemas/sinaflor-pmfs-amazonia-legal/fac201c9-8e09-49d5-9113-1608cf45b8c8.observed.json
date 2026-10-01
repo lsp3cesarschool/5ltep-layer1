@@ -1,0 +1,236 @@
+{
+ "fields": [
+  {
+   "name": "NRO_REGISTRO",
+   "type": "integer",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "DATA_DE_EMISSAO",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NRO_AUTORIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NRO_AUTORIZACAO_ORIGINAL",
+   "type": "string",
+   "sampleEmptyShare": 0.689
+  },
+  {
+   "name": "DATA_DE_VALIDADE",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MUNICIPIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_DETENTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0018
+  },
+  {
+   "name": "CPF_CNPJ_DETENTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IMOVEL_RURAL_VINCULADO",
+   "type": "string",
+   "sampleEmptyShare": 0.0472
+  },
+  {
+   "name": "NRO_CAR_IMOVEL_RURAL",
+   "type": "string",
+   "sampleEmptyShare": 0.0472
+  },
+  {
+   "name": "NOME_EMPREENDIMENTO_VINC",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LATITUDE_EMPREENDIMENTO",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LONGITUDE_EMPREENDIMENTO",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_DO_RT",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NRO_ART",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ATIVIDADE_RT",
+   "type": "string",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "ATIVIDADE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TIPO_DE_EMPREENDIMENTO",
+   "type": "string",
+   "sampleEmptyShare": 0.5554
+  },
+  {
+   "name": "NATUREZA_JURIDICA",
+   "type": "string",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "COMPETENCIA_AVALIACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ORGAO_AMBIENTAL_RESP_ANALISE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MODALIDADE_PMFS",
+   "type": "string",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "CLIMA",
+   "type": "string",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "SOLO",
+   "type": "string",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "BIOMA",
+   "type": "string",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "FITOFISIONOMIA",
+   "type": "string",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "METODO_EXTRACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "SISTEMA_SILVICULTURAL",
+   "type": "string",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "CICLO_CORTE",
+   "type": "number",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "AREA_TOTAL_PROPRIEDADE",
+   "type": "number",
+   "sampleEmptyShare": 0.552
+  },
+  {
+   "name": "AREA_MANEJO_FLORESTAL",
+   "type": "number",
+   "sampleEmptyShare": 0.554
+  },
+  {
+   "name": "AREA_EFETIVO_MANEJO",
+   "type": "number",
+   "sampleEmptyShare": 0.5528
+  },
+  {
+   "name": "CAPACIDADE_PRODUTIVA",
+   "type": "number",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "ESTIMATIVA_PRODUTIVA_ANUAL",
+   "type": "number",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "INTENSIDADE_CORTE",
+   "type": "number",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "EQUACAO_VOLUME",
+   "type": "string",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "AREA_AUTORIZADA",
+   "type": "number",
+   "sampleEmptyShare": 0.0036
+  },
+  {
+   "name": "SITUACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_DA_SITUACAO",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "sampleEmptyShare": 0.5508
+  },
+  {
+   "name": "ULTIMO_TRAMITE",
+   "type": "string",
+   "sampleEmptyShare": 0.5934
+  },
+  {
+   "name": "DATA_DO_TRAMITE",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "sampleEmptyShare": 0.5934
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:44:08+00:00",
+  "sha256": "44cc2a1efec1bfe5f2acb0fb4b62911aeb89935e377cdee268b889b89ce51690",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

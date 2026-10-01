@@ -1,0 +1,55 @@
+{
+ "fields": [
+  {
+   "name": "NUMERO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "FASE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MARCA_COMERCIAL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "I.A.",
+   "type": "string",
+   "sampleEmptyShare": 0.01
+  },
+  {
+   "name": "DETENTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NUMERO_PROCESSO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "POSICAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:36:42+00:00",
+  "sha256": "1db2018373b8b90e42d4e56c490e6c20e38668d00e51ebe7e1b924436950c05e",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 1891,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

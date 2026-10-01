@@ -1,0 +1,224 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "sampleEmptyShare": 0.7968
+  },
+  {
+   "name": "STATUS_FORMULARIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SIT_CANCELADO",
+   "type": "boolean",
+   "trueValues": [
+    "S"
+   ],
+   "falseValues": [
+    "N"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SER_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.8186
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "sampleEmptyShare": 0.9911
+  },
+  {
+   "name": "DAT_TAD",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DAT_IMPRESSAO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.8186
+  },
+  {
+   "name": "NUM_PESSOA_AUTUADA",
+   "type": "integer",
+   "sampleEmptyShare": 0.5461
+  },
+  {
+   "name": "NOME_PESSOA_AUTUADA",
+   "type": "string",
+   "sampleEmptyShare": 0.4321
+  },
+  {
+   "name": "CPF_CNPJ_PESSOA_AUTUADA",
+   "type": "string",
+   "sampleEmptyShare": 0.5173
+  },
+  {
+   "name": "NUM_PROCESSO",
+   "type": "string",
+   "sampleEmptyShare": 0.1219
+  },
+  {
+   "name": "DES_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.0069
+  },
+  {
+   "name": "DS_COMPLEMENTAR",
+   "type": "string",
+   "sampleEmptyShare": 0.4509
+  },
+  {
+   "name": "COD_MUNICIPIO",
+   "type": "integer",
+   "sampleEmptyShare": 0.002
+  },
+  {
+   "name": "NOM_MUNICIPIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SIG_UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DES_LOCALIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0218
+  },
+  {
+   "name": "NUM_LONGITUDE_TAD",
+   "type": "number",
+   "sampleEmptyShare": 0.001
+  },
+  {
+   "name": "NUM_LATITUDE_TAD",
+   "type": "number",
+   "sampleEmptyShare": 0.001
+  },
+  {
+   "name": "DES_JUSTIFICATIVA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "FORMA_ENTREGA",
+   "type": "string",
+   "sampleEmptyShare": 0.9772
+  },
+  {
+   "name": "UNID_APRESENTACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UNID_CONTROLE",
+   "type": "string",
+   "sampleEmptyShare": 0.7968
+  },
+  {
+   "name": "VALOR_TAD",
+   "type": "integer",
+   "sampleEmptyShare": 0.7978
+  },
+  {
+   "name": "SEQ_AUTO_INFRACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.6363
+  },
+  {
+   "name": "NUM_AUTO_INFRACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.6204
+  },
+  {
+   "name": "SEQ_NOTIFICACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.995
+  },
+  {
+   "name": "SEQ_ACAO_FISCALIZATORIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.1001
+  },
+  {
+   "name": "CD_ACAO_FISCALIZATORIA",
+   "type": "string",
+   "sampleEmptyShare": 0.1814
+  },
+  {
+   "name": "SEQ_ORDEM_FISCALIZACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0436
+  },
+  {
+   "name": "NUM_ORDEM_FISCALIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0436
+  },
+  {
+   "name": "UNID_ORDENADORA",
+   "type": "string",
+   "sampleEmptyShare": 0.0436
+  },
+  {
+   "name": "SEQ_SOLICITACAO_RECURSO",
+   "type": "integer",
+   "sampleEmptyShare": 0.1338
+  },
+  {
+   "name": "NUM_SOLICITACAO_RECURSO",
+   "type": "number",
+   "sampleEmptyShare": 0.1338
+  },
+  {
+   "name": "OPERACAO_SOL_RECURSO",
+   "type": "string",
+   "sampleEmptyShare": 0.1338
+  },
+  {
+   "name": "DAT_ALTERACAO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.7968
+  },
+  {
+   "name": "TIPO_ALTERACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.8048
+  },
+  {
+   "name": "JUSTIFICATIVA_ALTERACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.7631
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:38:39+00:00",
+  "sha256": "b65a329afd9e893e2704c3875551ed8f140634b5adeb28657f662e01e1630d11",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 1009,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

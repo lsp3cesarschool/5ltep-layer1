@@ -1,0 +1,98 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Razão Social",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Estado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nome Científico",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nome Popular",
+   "type": "string",
+   "sampleEmptyShare": 0.6558
+  },
+  {
+   "name": "Área efetivo plantio (ha)",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano do plantio",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Espaçamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nº de árvores total",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Volume/Quantidade explorado",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Unidade de medida",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano de corte",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Observações",
+   "type": "string",
+   "sampleEmptyShare": 0.5808
+  },
+  {
+   "name": "Situação Cadastral",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:43:44+00:00",
+  "sha256": "6f220173dc253347a1ff58a68ec1e9f8177f41f390befb8a93860caec72af046",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Razão Social",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Estado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Área ocupada por Instalações",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Plantação/Reflorestamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Área utilizada em Plantações",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nº Queimadas/Ano Plantação",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Vegetação Nativa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Área ocupada por Veg.Nativa",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nº Queimadas/Ano Veg.Nativa",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Situação Cadastral",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:41:43+00:00",
+  "sha256": "f1170c76c179c83f33c9ff7b361f707209b9c28be872b5c213ea2a7666a5cffa",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

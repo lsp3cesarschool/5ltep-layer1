@@ -1,0 +1,100 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_INCINERACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NUM_INCINERACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SER_INCINERACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEQ_INCIN_ESPECIME",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEQ_ESPECIME_APREENDIDO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QTD_INCIN_ESPECIME",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DES_UNIDADE_MEDIDA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DESCRICAO_PRODUTO",
+   "type": "string",
+   "sampleEmptyShare": 0.3723
+  },
+  {
+   "name": "SITUACAO_CARACTERISTICA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TIPO",
+   "type": "string",
+   "sampleEmptyShare": 0.1489
+  },
+  {
+   "name": "GRUPO",
+   "type": "string",
+   "sampleEmptyShare": 0.1702
+  },
+  {
+   "name": "SEQ_TAXONOMIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.7021
+  },
+  {
+   "name": "NOME_CIENTIFICO",
+   "type": "string",
+   "sampleEmptyShare": 0.7021
+  },
+  {
+   "name": "DES_NOME_POPULAR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CITES",
+   "type": "string",
+   "sampleEmptyShare": 0.6809
+  },
+  {
+   "name": "OBS_INCIN_ESPECIME",
+   "type": "string",
+   "sampleEmptyShare": 0.0745
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:39:54+00:00",
+  "sha256": "3d2058d58ba3aacd3d455ac8c15218dc3cc3e48350de97a882f76d6afe32d2e5",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 94,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

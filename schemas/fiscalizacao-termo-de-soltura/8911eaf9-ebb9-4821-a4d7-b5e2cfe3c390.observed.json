@@ -1,0 +1,123 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_SOLTURA",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SER_TAD",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "sampleEmptyShare": 0.9912
+  },
+  {
+   "name": "SEQ_ESPECIME_APREENDIDO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "CD_ESPECIME",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QTD_ESPECIME_APREENDIDO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DES_UNIDADE_MEDIDA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DESCRICAO_PRODUTO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SITUACAO_CARACTERISTICA",
+   "type": "string",
+   "sampleEmptyShare": 0.9548
+  },
+  {
+   "name": "ST_PERECIVEL",
+   "type": "boolean",
+   "trueValues": [
+    "S"
+   ],
+   "falseValues": [
+    "N"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_CIENTIFICO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DES_NOME_POPULAR",
+   "type": "string",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "CITES",
+   "type": "boolean",
+   "trueValues": [
+    "S"
+   ],
+   "falseValues": [
+    "N"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DAT_SOLTURA",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DS_OBSERVACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.657
+  },
+  {
+   "name": "DAT_ALTERACAO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "NU_VALOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0018
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:39:57+00:00",
+  "sha256": "63ed28b71d26f2c1e52036ce5f9c6831e03f243407a87bce13b62d11b7cc3a0a",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

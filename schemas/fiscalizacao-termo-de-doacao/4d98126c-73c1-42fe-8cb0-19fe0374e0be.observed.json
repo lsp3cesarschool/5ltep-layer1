@@ -1,0 +1,145 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_DOACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0424
+  },
+  {
+   "name": "NUM_DOACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SER_DOACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.1584
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "sampleEmptyShare": 0.999
+  },
+  {
+   "name": "SEQ_DOACAO_BEM",
+   "type": "integer",
+   "sampleEmptyShare": 0.3292
+  },
+  {
+   "name": "DES_BEM_APREENDIDO",
+   "type": "string",
+   "sampleEmptyShare": 0.0684
+  },
+  {
+   "name": "DES_TIPO_BEM",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DES_TIPO_INFRACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0996
+  },
+  {
+   "name": "QTD_DOACAO_BEM",
+   "type": "number",
+   "sampleEmptyShare": 0.3292
+  },
+  {
+   "name": "DES_UNIDADE_MEDIDA",
+   "type": "string",
+   "sampleEmptyShare": 0.0208
+  },
+  {
+   "name": "NU_VALOR",
+   "type": "integer",
+   "sampleEmptyShare": 0.9576
+  },
+  {
+   "name": "OBS_DOACAO_BEM",
+   "type": "string",
+   "sampleEmptyShare": 0.3968
+  },
+  {
+   "name": "TIPO_VEICULO",
+   "type": "string",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "DES_MARCA",
+   "type": "string",
+   "sampleEmptyShare": 0.9718
+  },
+  {
+   "name": "DES_MODELO",
+   "type": "string",
+   "sampleEmptyShare": 0.9544
+  },
+  {
+   "name": "DES_PLACA_VEICULO",
+   "type": "string",
+   "sampleEmptyShare": 0.9578
+  },
+  {
+   "name": "DES_COR",
+   "type": "string",
+   "sampleEmptyShare": 0.982
+  },
+  {
+   "name": "CHASSI_NUM_MOTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.9648
+  },
+  {
+   "name": "DES_ANO_VEICULO",
+   "type": "integer",
+   "sampleEmptyShare": 0.9572
+  },
+  {
+   "name": "NU_ANO_MOD",
+   "type": "integer",
+   "sampleEmptyShare": 0.9996
+  },
+  {
+   "name": "DES_LACRE_VEICULO",
+   "type": "string",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "NUM_INSCRICAO_MARINHA",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "NOME_MATRICULA",
+   "type": "string",
+   "sampleEmptyShare": 0.9974
+  },
+  {
+   "name": "LICENCA_NUMERO_SERIE",
+   "type": "string",
+   "sampleEmptyShare": 0.998
+  },
+  {
+   "name": "DES_FABRICANTE",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:39:00+00:00",
+  "sha256": "a62e49628436acaf56c7af41eeaa08c893c18f1046ff83f752cf60c6f175db49",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

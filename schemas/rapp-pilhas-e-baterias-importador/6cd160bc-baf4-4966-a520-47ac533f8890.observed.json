@@ -1,0 +1,54 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano do relatório",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CNPJ Destinador",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Licença de Operação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Validade da Licença",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Atividades da LO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Método de Destinação e/ou Tratamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CNPJ Aterro",
+   "type": "string",
+   "sampleEmptyShare": 0.9606
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:43:04+00:00",
+  "sha256": "1d190e503dba02ad423caf363cef054f04bbfe372313b006ebecd26a87276375",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "sampleEmptyShare": 0.0748
+  },
+  {
+   "name": "SEQ_ANEXO_TAD",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NUM_ANEXO_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.691
+  },
+  {
+   "name": "TIPO_ANEXO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DES_ANEXO_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.0124
+  },
+  {
+   "name": "NO_ARQUIVO_EVIDENCIA",
+   "type": "string",
+   "sampleEmptyShare": 0.32
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:39:17+00:00",
+  "sha256": "11c378d2e1016e21974c6221fb39e540f67a79b045c4dc6f376a585f2b9837ed",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

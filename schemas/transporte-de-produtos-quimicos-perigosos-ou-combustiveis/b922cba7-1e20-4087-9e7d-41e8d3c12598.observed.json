@@ -1,0 +1,102 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Razão Social",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Estado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Produto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Quantidade Transportada",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Unidade de Medida",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo de Transporte",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo de Armazenamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Plano de Emergência",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF - origem",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município - origem",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF - destino",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município - destino",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Situação Cadastral",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:45:22+00:00",
+  "sha256": "cb0fb2bb02dee90ad7667f7b42223d52fd0d0a57bc5a7a6fb3d0c4796101aa12",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

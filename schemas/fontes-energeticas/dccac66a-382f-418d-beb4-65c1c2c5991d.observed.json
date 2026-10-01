@@ -1,0 +1,154 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "Razão Social",
+   "type": "string",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "Estado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "Código da Categoria",
+   "type": "integer",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "Categoria de Atividade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Código do Detalhe",
+   "type": "integer",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "Detalhe",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo de Fonte Energética",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Quantidade Consumida",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Unidade de Medida",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Observações",
+   "type": "string",
+   "sampleEmptyShare": 0.1248
+  },
+  {
+   "name": "Energia",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Emissões de CO2",
+   "type": "string",
+   "sampleEmptyShare": 0.0096
+  },
+  {
+   "name": "Situação Cadastral",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Densidade",
+   "type": "number",
+   "sampleEmptyShare": 0.8232
+  },
+  {
+   "name": "Unidade de Medida - densidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Justificativa para alteração da densidade",
+   "type": "string",
+   "sampleEmptyShare": 0.9998
+  },
+  {
+   "name": "Poder Calorífico Inferior",
+   "type": "number",
+   "sampleEmptyShare": 0.6273
+  },
+  {
+   "name": "Unidade de Medida - Poder Calorífico Inferior",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Justificativa para alteração do Poder Calorífico Inferior",
+   "type": "string",
+   "sampleEmptyShare": 0.9994
+  },
+  {
+   "name": "Conteúdo de Carbono",
+   "type": "number",
+   "sampleEmptyShare": 0.7979
+  },
+  {
+   "name": "Unidade de Medida - Conteúdo de Carbono",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Justificativa para Alteração do Conteúdo de Carbono",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Fator de Oxidação",
+   "type": "number",
+   "sampleEmptyShare": 0.7979
+  },
+  {
+   "name": "Unidade de Medida - Fator de Oxidação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Justificativa para Alteração do Fator de Oxidação",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-01T19:40:17+00:00",
+  "sha256": "d73584260ab0b0ecc438d1748215f2b22084c5e6dcbbdce7e1dd877f7d7546bc",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

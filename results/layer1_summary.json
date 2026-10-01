@@ -1,0 +1,804 @@
+{
+ "layer": 1,
+ "portal": {
+  "portal_url": "https://dadosabertos.ibama.gov.br",
+  "name": "IBAMA",
+  "title": "IBAMA open data portal (Dados Abertos IBAMA)"
+ },
+ "generated_at": "2026-10-01T19:48:26+00:00",
+ "census_at": "2026-10-01T19:06:36+00:00",
+ "method": {
+  "rotation_days": 28,
+  "sample_rows": 5000,
+  "l1_max_error_rate": 0.01,
+  "l1_pass_threshold": 0.85,
+  "oracle_accept": 1.0,
+  "oracle_llm_below": 0.8,
+  "llm_model": "auto",
+  "llm_seed": 42,
+  "extraction_prompt_version": "v1"
+ },
+ "environment": {
+  "python": "3.11.16"
+ },
+ "datasets": {
+  "total": 79,
+  "with_tables": 77,
+  "by_level": {
+   "0": 44,
+   "1": 13,
+   "2": 20,
+   "3": 0,
+   "4": 0
+  }
+ },
+ "tables": {
+  "total": 129,
+  "by_level": {
+   "0": 55,
+   "1": 27,
+   "2": 47,
+   "3": 0,
+   "4": 0
+  },
+  "validated": 114,
+  "validation_coverage": 0.8837,
+  "errors": 15,
+  "queue_remaining": 0
+ },
+ "schema_sources": {
+  "described": 24,
+  "declared": 43
+ },
+ "verifiable": 67,
+ "conformant": 24,
+ "l1_rate": 0.3582,
+ "l1_pass": false,
+ "drift": {
+  "observed": 0,
+  "declared": 0
+ },
+ "findings": {
+  "dictionaries": {
+   "total": 47,
+   "by_format": {
+    "CSV": 47
+   },
+   "machine_readable": 47,
+   "human_readable": 0,
+   "machine_readable_and_read": 47,
+   "unreadable_by_reason": {},
+   "pdf_link_not_a_pdf": 0,
+   "orphans": 0,
+   "declaring_resource_ids": 0,
+   "broken_declared_links": 0,
+   "naming_another_dataset": 0
+  },
+  "links": {
+   "tables": 129,
+   "by_method": {
+    "none": 55,
+    "name": 46,
+    "description": 27,
+    "single": 1
+   },
+   "fields_listed_in_description": 27
+  },
+  "types": {
+   "fields_declared": 949,
+   "distinct_spellings": 60,
+   "fields_with_recognised_type": 0.9979,
+   "unrecognised_spellings": [
+    "null"
+   ],
+   "top_spellings": {
+    "texto": 201,
+    "string": 137,
+    "VARCHAR": 109,
+    "String": 103,
+    "float": 40,
+    "INTEGER": 39,
+    "int": 32,
+    "Integer": 27,
+    "Texto (String)": 24,
+    "numero": 19,
+    "DECIMAL": 19,
+    "data (DD/MM/AA)": 18,
+    "CHAR": 14,
+    "número decimal": 13,
+    "Date": 11
+   },
+   "date_fields": 92,
+   "date_fields_with_declared_format": 0.3913
+  },
+  "files_vs_dictionaries": {
+   "checked": 67,
+   "with_declared_fields_missing": 17,
+   "with_undeclared_columns": 21,
+   "with_spelling_differences": 16,
+   "with_probable_typos": 8,
+   "probable_typos": 45,
+   "declared_fields_missing": 98,
+   "formats_inferred_from_data": {
+    "trueValues": 9,
+    "falseValues": 9,
+    "type": 9,
+    "format": 48,
+    "decimalChar": 11,
+    "groupChar": 6
+   }
+  },
+  "files": {
+   "validated": 112,
+   "encodings": {
+    "utf-8": 45,
+    "utf-8-sig": 67
+   },
+   "delimiters": {
+    ";": 112
+   },
+   "with_decode_errors": 0,
+   "with_ragged_rows": 2,
+   "zips_with_several_headers": 0,
+   "not_tabular": 1,
+   "unreachable_by_reason": {
+    "HTTP 404": 14,
+    "other": 1
+   }
+  },
+  "pdf_extraction": {
+   "pdf_dictionaries_linked": 0,
+   "processed": 0,
+   "by_outcome": {},
+   "with_probable_typos": 0,
+   "deterministic": {
+    "with_oracle": 0,
+    "recall": null,
+    "precision": null,
+    "exact_match": null,
+    "levenshtein": null
+   },
+   "llm": {
+    "with_oracle": 0,
+    "recall": null,
+    "precision": null,
+    "exact_match": null,
+    "levenshtein": null
+   }
+  }
+ },
+ "per_dataset": [
+  {
+   "name": "antropizacao-dos-biomas-extra-amazonicos",
+   "level": 0,
+   "tables": 5,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "arrecadacao-com-tcfa",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "arrecadacao-de-multas-ambientais-bens-tutelados",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "ato-declaratorio-ambiental-ada",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "autorizacao-ambiental-para-o-transporte-interestadual-de-produtos-perigosos-aatipp",
+   "level": 1,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "catalogo-de-imagens-orbitais",
+   "level": null,
+   "tables": 0,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "certificados-ambientais",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "dof-autorizacoes-de-exploracao-florestal",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "dof-conversoes-de-produtos-florestais",
+   "level": 1,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "dof-transportes-de-produtos-florestais",
+   "level": 1,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
+   "level": 1,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "efluentes-liquidos",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "emissoes-de-poluentes-atmosfericos",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "evolucao-das-receitas-arrecadadas",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "exploracao-economica-da-madeira-ou-lenha-e-subprodutos-florestais",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "extracao-e-tratamento-de-produtos-minerais",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "fabricante-de-produtos-que-utilizam-materia-prima-de-origem-florestal",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "fila-de-acompanhamento-de-registro-de-agrotoxicos-quimicos",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "fiscalizacao-auto-de-infracao",
+   "level": 0,
+   "tables": 8,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "fiscalizacao-notificacao",
+   "level": 2,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "fiscalizacao-termo-de-apreensao",
+   "level": 1,
+   "tables": 6,
+   "verifiable": 6,
+   "conformant": 5,
+   "l1_rate": 0.8333
+  },
+  {
+   "name": "fiscalizacao-termo-de-demolicao",
+   "level": 2,
+   "tables": 3,
+   "verifiable": 3,
+   "conformant": 2,
+   "l1_rate": 0.6667
+  },
+  {
+   "name": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
+   "level": 2,
+   "tables": 5,
+   "verifiable": 5,
+   "conformant": 3,
+   "l1_rate": 0.6
+  },
+  {
+   "name": "fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b",
+   "level": 1,
+   "tables": 3,
+   "verifiable": 2,
+   "conformant": 2,
+   "l1_rate": 1.0
+  },
+  {
+   "name": "fiscalizacao-termo-de-doacao",
+   "level": 2,
+   "tables": 5,
+   "verifiable": 5,
+   "conformant": 2,
+   "l1_rate": 0.4
+  },
+  {
+   "name": "fiscalizacao-termo-de-embargo",
+   "level": 1,
+   "tables": 8,
+   "verifiable": 7,
+   "conformant": 3,
+   "l1_rate": 0.4286
+  },
+  {
+   "name": "fiscalizacao-termo-de-incineracao",
+   "level": 2,
+   "tables": 3,
+   "verifiable": 3,
+   "conformant": 2,
+   "l1_rate": 0.6667
+  },
+  {
+   "name": "fiscalizacao-termo-de-soltura",
+   "level": 2,
+   "tables": 5,
+   "verifiable": 5,
+   "conformant": 2,
+   "l1_rate": 0.4
+  },
+  {
+   "name": "fiscalizacao-termo-de-suspensao",
+   "level": 2,
+   "tables": 3,
+   "verifiable": 3,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "fonte-energetica",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "fontes-energeticas",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "imagens-aereas-do-desastre-mariana-mg",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "importador-exportador-de-fauna-e-flora-produtos-parte",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "licencas-ambientais-de-atividades-e-empreendimentos-licenciados-pelo-ibama",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "multas-ambientais-distribuidas-por-bens-tutelados",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "pescador-profissional",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "pessoas-juridicas-inscritas-no-ctf-aida",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "pessoas-juridicas-inscritas-no-ctf-app",
+   "level": 2,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "plantacao-vegetacao-nativa",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "produtos-reciclados",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "rapp-pilhas-e-baterias-fabricante-nacional",
+   "level": 2,
+   "tables": 5,
+   "verifiable": 4,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "rapp-pilhas-e-baterias-importador",
+   "level": 2,
+   "tables": 6,
+   "verifiable": 4,
+   "conformant": 2,
+   "l1_rate": 0.5
+  },
+  {
+   "name": "rapp-pilhas-e-baterias-reciclador",
+   "level": 2,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "relatorios-de-comercializacao-de-agrotoxicos",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "residuos-solidos-armazenador",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "residuos-solidos-destinador",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "residuos-solidos-gerador-a-partir-de-2012",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "residuos-solidos-gerador-anterior-a-2012",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "residuos-solidos-transportador",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "siema-comunicado-de-acidente-ambiental",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "silvicultura",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "sinaflor-autorizacao-de-supressao-de-vegetacao",
+   "level": 2,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "sinaflor-autorizacao-de-utilizacao-de-materia-prima-florestal",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "sinaflor-autorizacao-especial",
+   "level": 1,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "sinaflor-corte-de-arvores-isoladas",
+   "level": 2,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "sinaflor-empreendimentos-de-base-florestal",
+   "level": 2,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "sinaflor-exploracao-de-floresta-plantada",
+   "level": 1,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "sinaflor-pmfs-amazonia-legal",
+   "level": 2,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "sinaflor-pmfs-outros-biomas",
+   "level": 2,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "sinaflor-poa-amazonia-legal",
+   "level": 2,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "sinaflor-poa-outros-biomas",
+   "level": 2,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "sinaflor-responsavel-tecnico",
+   "level": 1,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 1,
+   "l1_rate": 1.0
+  },
+  {
+   "name": "sinaflor-uso-alternativo-do-solo",
+   "level": 2,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "sinaflor-uso-alternativo-do-solo-agricultor-familiar",
+   "level": 1,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "siscites-licencas-de-fauna-e-flora-emitidas",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "sisfauna-comercializacao-de-partes-produtos",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "sisfauna-plantel-estimado",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "sisfauna-plantel-exato",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "sisfogo-roi",
+   "level": 2,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "supressao-de-vegetacao-nao-florestal-no-bioma-amazonia",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "termos-de-embargo",
+   "level": null,
+   "tables": 0,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "transporte-de-produtos-quimicos-perigosos-ou-combustiveis",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "unidade-poluidora",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "unidades-ibama",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "vegetacao-de-mangue-brasileira",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "vias-despavimentadas",
+   "level": 0,
+   "tables": 1,
+   "verifiable": 0,
+   "conformant": 0,
+   "l1_rate": null
+  },
+  {
+   "name": "volumes-explorados-if-100",
+   "level": 1,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  },
+  {
+   "name": "volumes-explorados-inventario-amostral",
+   "level": 1,
+   "tables": 1,
+   "verifiable": 1,
+   "conformant": 0,
+   "l1_rate": 0.0
+  }
+ ]
+}
