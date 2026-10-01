@@ -247,6 +247,9 @@ python -m http.server -d docs 8000       # dashboard at http://localhost:8000
 pytest tests/ -v
 ```
 
+On Windows, enable long paths before cloning (`git config --global core.longpaths true`): schema
+files are stored as `schemas/<dataset>/<resource id>.<kind>.json`, and dataset names can be long.
+
 To try another portal without editing anything:
 
 ```bash

@@ -253,6 +253,9 @@ python -m http.server -d docs 8000       # painel em http://localhost:8000
 pytest tests/ -v
 ```
 
+No Windows, habilite caminhos longos antes de clonar (`git config --global core.longpaths true`): os
+esquemas ficam em `schemas/<conjunto>/<id do recurso>.<tipo>.json`, e os nomes de conjuntos podem ser longos.
+
 Para experimentar outro portal sem editar nada:
 
 ```bash
