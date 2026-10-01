@@ -4,7 +4,7 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-01T19:06:36+00:00",
+ "generated_at": "2026-10-01T20:21:56+00:00",
  "datasets": [
   {
    "name": "antropizacao-dos-biomas-extra-amazonicos",
@@ -718,7 +718,7 @@
      "link": {
       "dictionary": "f245368c-dcb6-46c9-ae17-635876ec5fac",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -976,7 +976,7 @@
      "link": {
       "dictionary": "b845ac81-fd3a-4282-9150-454f65e38558",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -995,7 +995,7 @@
      "link": {
       "dictionary": "7804331e-c35f-4d74-b8c9-0bb4c3af2063",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1014,7 +1014,7 @@
      "link": {
       "dictionary": "88b602a1-6be2-49c7-94a7-51593c18b527",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1211,7 +1211,7 @@
      "link": {
       "dictionary": "1b8b34b2-abf9-449f-8c94-fe4ee95231ec",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1230,7 +1230,7 @@
      "link": {
       "dictionary": "aa04d97f-0501-4d66-a3ef-6c36bdf9c0ef",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1249,7 +1249,7 @@
      "link": {
       "dictionary": "2697f6c9-662d-4580-b594-5fc779ff26d2",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1268,7 +1268,7 @@
      "link": {
       "dictionary": "28a48305-7abb-4d5f-a03b-f95ec29b3044",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1287,7 +1287,7 @@
      "link": {
       "dictionary": "935e4f69-8820-4e2b-a102-cc7d71d03c67",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1565,7 +1565,7 @@
      "link": {
       "dictionary": "4d9ade45-f802-443d-b5b7-d4eac667b241",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1584,7 +1584,7 @@
      "link": {
       "dictionary": "b3a63bc2-5fe2-4af0-9e7e-ec23194f32d3",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1603,7 +1603,7 @@
      "link": {
       "dictionary": "40fb572d-2b9e-43e2-b961-e0f8c113f741",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1622,7 +1622,7 @@
      "link": {
       "dictionary": "ce02732e-25ba-4266-adb7-3d5701fa8ce6",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1641,7 +1641,7 @@
      "link": {
       "dictionary": "10231548-29df-4c15-acf9-3cf8a88224a9",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1936,7 +1936,7 @@
      "link": {
       "dictionary": "b65f7723-4c24-4916-9e8d-1cb4b4ea2e7a",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1955,7 +1955,7 @@
      "link": {
       "dictionary": "f62b4046-cc0b-4976-8121-2193682c21f8",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -1974,7 +1974,7 @@
      "link": {
       "dictionary": "d8d89c00-6e3d-4d73-9eba-69c5fe70e506",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -2176,7 +2176,7 @@
      "link": {
       "dictionary": "e5304ed3-60b0-4e20-80f5-2b169d8357fb",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -2195,7 +2195,7 @@
      "link": {
       "dictionary": "2cf92dc1-6765-4f12-a381-ee3a8dc54ab8",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -2214,7 +2214,7 @@
      "link": {
       "dictionary": "41a8bbb0-5834-41b8-9d74-11c68261cecf",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -2233,7 +2233,7 @@
      "link": {
       "dictionary": "abafeb3c-3dac-462f-b2c8-bdc4a1159d40",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -2252,7 +2252,7 @@
      "link": {
       "dictionary": "1b3a223f-c84f-4080-9b12-f893ee7fb6dd",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -2378,8 +2378,8 @@
      "link": {
       "dictionary": "1c65d253-39ac-4574-8ed7-43e748cd4103",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.974
      },
      "level": 2
     },
@@ -2397,8 +2397,8 @@
      "link": {
       "dictionary": "691ce689-6b05-4040-bc0a-7e298d2b0698",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.909
      },
      "level": 2
     },
@@ -2416,8 +2416,8 @@
      "link": {
       "dictionary": "27b3fae2-6843-4e14-a3fd-5171161ef964",
       "part": 0,
-      "method": "name",
-      "score": 0.5
+      "method": "header",
+      "score": 0.875
      },
      "level": 2
     }
@@ -2716,8 +2716,8 @@
      "link": {
       "dictionary": "c595bf2f-ddcc-4753-b814-6a55f15838c7",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.85
      },
      "level": 2
     }
@@ -2981,8 +2981,8 @@
      "link": {
       "dictionary": "fe4cfcc9-10f6-488d-a699-fe937ec4b1fe",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.556
      },
      "level": 2
     },
@@ -3019,8 +3019,8 @@
      "link": {
       "dictionary": "3e692f9a-35ff-4f0e-a966-85cc9c179641",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.6
      },
      "level": 2
     },
@@ -3038,8 +3038,8 @@
      "link": {
       "dictionary": "b31b76fc-192c-44b7-a44e-3ce2157b7751",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.556
      },
      "level": 2
     }
@@ -3266,7 +3266,7 @@
      "link": {
       "dictionary": "a5d344bc-6cc6-453e-b0e3-83763692c851",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -3304,7 +3304,7 @@
      "link": {
       "dictionary": "5e1a08a5-da03-4c8a-8c01-5206b629e5bc",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -3323,7 +3323,7 @@
      "link": {
       "dictionary": "415f379b-740e-4d75-96e0-3f7d88a81c3b",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -3361,7 +3361,7 @@
      "link": {
       "dictionary": "c79fe74d-1bbc-4a4c-a804-22c3cb551099",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -3427,8 +3427,8 @@
      "link": {
       "dictionary": "3677a3ae-3176-4b2b-8289-910ea863b863",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.55
      },
      "level": 2
     }
@@ -3701,8 +3701,8 @@
      "link": {
       "dictionary": "bd5d10bf-c952-4f96-9ea4-e208e41d18d4",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.938
      },
      "level": 2
     }
@@ -3824,8 +3824,8 @@
      "link": {
       "dictionary": "1374f568-4a2b-4ff1-b4c2-a39a2477899d",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.6
      },
      "level": 2
     }
@@ -3986,7 +3986,7 @@
      "link": {
       "dictionary": "8ddd5dd9-98ce-41ee-84b1-11e8b4738707",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -4058,7 +4058,7 @@
      "link": {
       "dictionary": "115c7b39-4ebb-4a5f-9652-2b3b3da5e308",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -4124,8 +4124,8 @@
      "link": {
       "dictionary": "df734a37-d8a7-4f10-ae00-491a46b3e070",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.975
      },
      "level": 2
     }
@@ -4195,7 +4195,7 @@
      "link": {
       "dictionary": "c48fa320-edde-454f-85b3-c0f2fbf31f4c",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -4295,7 +4295,7 @@
      "link": {
       "dictionary": "1400b471-62bc-4328-a7fb-047923b28781",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -4497,8 +4497,8 @@
      "link": {
       "dictionary": "a3f02639-ee4d-4db6-8fe5-c49193ded2f0",
       "part": 0,
-      "method": "single",
-      "score": 0.5
+      "method": "header",
+      "score": 0.949
      },
      "level": 2
     }

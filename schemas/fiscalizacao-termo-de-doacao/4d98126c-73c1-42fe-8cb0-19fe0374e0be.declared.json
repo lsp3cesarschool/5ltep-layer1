@@ -167,7 +167,7 @@
    "sha256": "48499a659031f343bbf060941129c05b127d65ac4f3e78e2c59bdc5f8e9b6c95",
    "reader": "csv",
    "part": "",
-   "link_method": "name"
+   "link_method": "header"
   }
  }
 }
