@@ -1,7 +1,7 @@
 {
  "26307dda-12a0-47e2-ae7e-ca8137d22b13": {
   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
-  "checked_at": "2026-10-01T20:39:37+00:00",
+  "checked_at": "2026-10-01T21:21:56+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -9,13 +9,14 @@
    "last_modified": "2025-10-17T19:56:41.794770",
    "size": null
   },
+  "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_cerrado_mdbbs_2009_a&outputFormat=csv",
   "reason": "error"
  },
  "093b6f72-11c8-431f-a17e-3eaa57026dff": {
   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
-  "checked_at": "2026-10-01T20:39:37+00:00",
+  "checked_at": "2026-10-01T21:21:56+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -23,13 +24,14 @@
    "last_modified": "2021-09-16T13:32:49.305889",
    "size": null
   },
+  "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_mata_atlantica_mdbbs_2009_a&outputFormat=csv",
   "reason": "error"
  },
  "c5b84b15-57f4-4c83-a4be-2a334fa10709": {
   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
-  "checked_at": "2026-10-01T20:39:38+00:00",
+  "checked_at": "2026-10-01T21:21:57+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -37,13 +39,14 @@
    "last_modified": "2021-09-16T13:38:48.023130",
    "size": null
   },
+  "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_pampa_mdbbs_2009_a&outputFormat=csv",
   "reason": "error"
  },
  "90ba133b-0d56-4910-8d79-16cb8ff96428": {
   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
-  "checked_at": "2026-10-01T20:39:39+00:00",
+  "checked_at": "2026-10-01T21:21:58+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -51,13 +54,14 @@
    "last_modified": "2021-09-16T13:42:11.073092",
    "size": null
   },
+  "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_pantanal_mdbbs_2009_a&outputFormat=csv",
   "reason": "error"
  },
  "4b91ca8c-6950-4f43-857b-9d80ec9edfb8": {
   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
-  "checked_at": "2026-10-01T20:39:39+00:00",
+  "checked_at": "2026-10-01T21:21:58+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -65,6 +69,7 @@
    "last_modified": "2021-09-16T13:45:24.639130",
    "size": null
   },
+  "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_caatinga_mdbbs_2009_a&outputFormat=csv",
   "reason": "error"
@@ -3715,7 +3720,7 @@
  },
  "8f88b43e-287a-470b-a730-db440f9e37fa": {
   "dataset": "fiscalizacao-termo-de-embargo",
-  "checked_at": "2026-10-01T20:39:39+00:00",
+  "checked_at": "2026-10-01T21:21:58+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "b46b1a08cb858727",
   "ckan": {
@@ -3723,6 +3728,7 @@
    "last_modified": "2026-08-14T17:21:30.309299",
    "size": null
   },
+  "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_EMBARGO/termo_de_embargo.csv",
   "reason": "error"
@@ -5348,7 +5354,7 @@
  },
  "b0a63e0d-e656-455a-8bff-4672dc37ca44": {
   "dataset": "imagens-aereas-do-desastre-mariana-mg",
-  "checked_at": "2026-10-01T20:39:40+00:00",
+  "checked_at": "2026-10-01T21:21:59+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -5356,6 +5362,7 @@
    "last_modified": "2021-09-16T19:34:57.533174",
    "size": null
   },
+  "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:img_foto_rio_doce_p&outputFormat=csv",
   "reason": "error"
@@ -6041,7 +6048,7 @@
  },
  "6bde1c16-692f-4706-be68-bd2b3c1ac7d4": {
   "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
-  "checked_at": "2026-10-01T20:39:40+00:00",
+  "checked_at": "2026-10-01T21:21:59+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "da14e3e6b789d980",
   "ckan": {
@@ -6049,6 +6056,7 @@
    "last_modified": "2026-08-18T17:52:13.545718",
    "size": null
   },
+  "host": null,
   "status": "error",
   "error": "MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?",
   "reason": "error"
@@ -6282,7 +6290,7 @@
  },
  "85efc1b6-c4bb-4e1b-96cc-8fb4e39dd811": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-01T20:40:50+00:00",
+  "checked_at": "2026-10-01T21:23:09+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "edf1f955b08f659c",
   "ckan": {
@@ -6290,6 +6298,7 @@
    "last_modified": "2026-08-10T13:51:45.298913",
    "size": null
   },
+  "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importados/pilhas_baterias_produtos_consolidado_todos_anos.csv.zip",
   "reason": "error"
@@ -6440,7 +6449,7 @@
  },
  "c10fc1fd-3c85-4e12-a9cd-79fe464602c3": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-01T20:40:51+00:00",
+  "checked_at": "2026-10-01T21:23:10+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "01b2e1646ed47cf9",
   "ckan": {
@@ -6448,6 +6457,7 @@
    "last_modified": "2026-08-10T13:57:47.655340",
    "size": null
   },
+  "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_consolidado_todos_anos.csv.zip",
   "reason": "error"
@@ -6968,7 +6978,7 @@
  },
  "b213035b-e0b7-4765-9113-ad596322aceb": {
   "dataset": "siema-comunicado-de-acidente-ambiental",
-  "checked_at": "2026-10-01T20:40:51+00:00",
+  "checked_at": "2026-10-01T21:23:11+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -6976,6 +6986,7 @@
    "last_modified": "2024-07-11T18:04:24.284145",
    "size": null
   },
+  "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:adm_comunicacidente_p&outputFormat=csv",
   "reason": "error"
@@ -7575,7 +7586,7 @@
  },
  "3d6fb0d5-4efd-4f22-8321-a075d1d48c38": {
   "dataset": "sinaflor-empreendimentos-de-base-florestal",
-  "checked_at": "2026-10-01T20:40:51+00:00",
+  "checked_at": "2026-10-01T21:23:11+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "9f6de35b3184299d",
   "ckan": {
@@ -7583,6 +7594,7 @@
    "last_modified": "2026-03-16T14:30:32.031236",
    "size": null
   },
+  "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBaseFlorestal_csv.zip",
   "reason": "error"
@@ -9198,7 +9210,7 @@
  },
  "a46eb190-35b8-40a2-b726-2c537ef480c2": {
   "dataset": "supressao-de-vegetacao-nao-florestal-no-bioma-amazonia",
-  "checked_at": "2026-10-01T20:40:52+00:00",
+  "checked_at": "2026-10-01T21:23:12+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -9206,6 +9218,7 @@
    "last_modified": "2021-09-16T18:13:57.390727",
    "size": null
   },
+  "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_naofloresta_aml_a&outputFormat=csv",
   "reason": "error"
@@ -9319,7 +9332,7 @@
  },
  "93829d42-5811-47c3-8ea6-7d3912cc84b6": {
   "dataset": "unidades-ibama",
-  "checked_at": "2026-10-01T20:40:52+00:00",
+  "checked_at": "2026-10-01T21:23:12+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -9327,13 +9340,14 @@
    "last_modified": "2021-09-16T20:01:26.674676",
    "size": null
   },
+  "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:adm_edif_pub_civil_ibama_p&outputFormat=csv",
   "reason": "error"
  },
  "0727c17c-a3a8-4ebc-ae97-345235522391": {
   "dataset": "vegetacao-de-mangue-brasileira",
-  "checked_at": "2026-10-01T20:40:52+00:00",
+  "checked_at": "2026-10-01T21:23:12+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -9341,6 +9355,7 @@
    "last_modified": "2021-09-16T20:07:23.897393",
    "size": null
   },
+  "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_mangue_a&outputFormat=csv",
   "reason": "error"

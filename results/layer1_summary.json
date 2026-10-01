@@ -5,8 +5,8 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-01T20:41:17+00:00",
- "census_at": "2026-10-01T20:38:17+00:00",
+ "generated_at": "2026-10-01T21:23:35+00:00",
+ "census_at": "2026-10-01T21:21:23+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -84,6 +84,60 @@
   "fail_undeclared_columns": 21,
   "fail_cells_over_limit": 28,
   "fail_only_cells": 20
+ },
+ "network": {
+  "total": {
+   "files": 129,
+   "failed_files": 15,
+   "gb": 11.42,
+   "minutes": 39.3,
+   "end_to_end_mb_s": 4.84,
+   "zip_download_mb_s": null,
+   "first_byte_s_median": null,
+   "request_failures": {}
+  },
+  "by_host": {
+   "stibamadadosabertosprd.blob.core.windows.net": {
+    "files": 79,
+    "failed_files": 4,
+    "gb": 8.17,
+    "minutes": 36.1,
+    "end_to_end_mb_s": 3.77,
+    "zip_download_mb_s": null,
+    "first_byte_s_median": null,
+    "request_failures": {}
+   },
+   "dadosabertos.ibama.gov.br": {
+    "files": 39,
+    "failed_files": 0,
+    "gb": 3.25,
+    "minutes": 3.2,
+    "end_to_end_mb_s": 16.72,
+    "zip_download_mb_s": null,
+    "first_byte_s_median": null,
+    "request_failures": {}
+   },
+   "siscom.ibama.gov.br": {
+    "files": 10,
+    "failed_files": 10,
+    "gb": 0.0,
+    "minutes": 0.0,
+    "end_to_end_mb_s": null,
+    "zip_download_mb_s": null,
+    "first_byte_s_median": null,
+    "request_failures": {}
+   },
+   "—": {
+    "files": 1,
+    "failed_files": 1,
+    "gb": 0.0,
+    "minutes": 0.0,
+    "end_to_end_mb_s": null,
+    "zip_download_mb_s": null,
+    "first_byte_s_median": null,
+    "request_failures": {}
+   }
+  }
  },
  "findings": {
   "dictionaries": {
