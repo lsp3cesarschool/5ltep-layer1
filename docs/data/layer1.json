@@ -5,8 +5,8 @@
    "name": "IBAMA",
    "title": "IBAMA open data portal (Dados Abertos IBAMA)"
   },
-  "generated_at": "2026-10-01T19:48:26+00:00",
-  "census_at": "2026-10-01T19:06:36+00:00",
+  "generated_at": "2026-10-01T20:24:54+00:00",
+  "census_at": "2026-10-01T20:21:56+00:00",
   "datasets": {
    "total": 79,
    "with_tables": 77,
@@ -38,7 +38,34 @@
   "l1_pass": false,
   "drift": {
    "observed": 0,
-   "declared": 0
+   "declared": 0,
+   "files_with_baseline": 112,
+   "first_baseline_at": "2026-10-01T19:06:57+00:00",
+   "last_observed_at": "2026-10-01T19:47:03+00:00"
+  },
+  "coverage": {
+   "files": 129,
+   "read": 112,
+   "empty": 1,
+   "not_tabular": 1,
+   "not_downloaded": 15,
+   "pending": 0,
+   "not_downloaded_by_reason": {
+    "HTTP 404": 14,
+    "no URL": 1
+   },
+   "not_downloaded_by_host": {
+    "HTTP 404 · siscom.ibama.gov.br": 10,
+    "HTTP 404 · stibamadadosabertosprd.blob.core.windows.net": 4,
+    "no URL · —": 1
+   },
+   "read_without_schema": 45,
+   "checked": 67,
+   "conform": 24,
+   "fail_missing_fields": 17,
+   "fail_undeclared_columns": 21,
+   "fail_cells_over_limit": 28,
+   "fail_only_cells": 20
   },
   "schema_sources": {
    "described": 24,
@@ -64,9 +91,9 @@
     "tables": 129,
     "by_method": {
      "none": 55,
-     "name": 46,
+     "header": 42,
      "description": 27,
-     "single": 1
+     "name": 5
     },
     "fields_listed_in_description": 27
    },
@@ -129,7 +156,7 @@
     "not_tabular": 1,
     "unreachable_by_reason": {
      "HTTP 404": 14,
-     "other": 1
+     "no URL": 1
     }
    },
    "pdf_extraction": {
@@ -188,7 +215,8 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {}
     },
     {
      "id": "093b6f72-11c8-431f-a17e-3eaa57026dff",
@@ -204,7 +232,8 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {}
     },
     {
      "id": "c5b84b15-57f4-4c83-a4be-2a334fa10709",
@@ -220,7 +249,8 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {}
     },
     {
      "id": "90ba133b-0d56-4910-8d79-16cb8ff96428",
@@ -236,7 +266,8 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {}
     },
     {
      "id": "4b91ca8c-6950-4f43-857b-9d80ec9edfb8",
@@ -252,7 +283,8 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {}
     }
    ]
   },
@@ -280,7 +312,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/arrecadacao-com-tcfa/2873d587-4e02-44c9-a9e6-29bb6c7bacea.observed.json"
+     }
     }
    ]
   },
@@ -308,7 +343,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/arrecadacao-de-multas-ambientais-bens-tutelados/cd55e477-2f11-43e5-b994-7be34e275561.observed.json"
+     }
     }
    ]
   },
@@ -336,7 +374,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/ato-declaratorio-ambiental-ada/09494a73-726a-4341-92ca-b97cf35914b2.observed.json"
+     }
     }
    ]
   },
@@ -381,7 +422,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/autorizacao-ambiental-para-o-transporte-interestadual-de-produtos-perigosos-aatipp/d5c0fa8b-b522-446a-a281-15f587783935.described.json",
+      "observed": "schemas/autorizacao-ambiental-para-o-transporte-interestadual-de-produtos-perigosos-aatipp/d5c0fa8b-b522-446a-a281-15f587783935.observed.json"
+     }
     }
    ]
   },
@@ -418,7 +463,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/certificados-ambientais/4aed5817-45fd-49b9-ad42-e5d8addc8621.observed.json"
+     }
     }
    ]
   },
@@ -446,7 +494,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/dof-autorizacoes-de-exploracao-florestal/edf548f1-1920-4003-8c24-6d33b10701da.observed.json"
+     }
     }
    ]
   },
@@ -554,7 +605,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/dof-conversoes-de-produtos-florestais/5f9d395c-41ec-4b8d-a0c0-3ad1a5b9192a.described.json",
+      "observed": "schemas/dof-conversoes-de-produtos-florestais/5f9d395c-41ec-4b8d-a0c0-3ad1a5b9192a.observed.json"
+     }
     }
    ]
   },
@@ -720,7 +775,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/dof-transportes-de-produtos-florestais/f89e36de-38a6-41b0-8c46-556cbbb28895.described.json",
+      "observed": "schemas/dof-transportes-de-produtos-florestais/f89e36de-38a6-41b0-8c46-556cbbb28895.observed.json"
+     }
     }
    ]
   },
@@ -746,7 +805,10 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/21e21d34-b71c-4f41-8ad3-ee5743fb8e00.described.json"
+     }
     }
    ]
   },
@@ -774,7 +836,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/efluentes-liquidos/9ae4b7c3-6dd2-4e83-a117-7411c2cad222.observed.json"
+     }
     }
    ]
   },
@@ -802,7 +867,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/emissoes-de-poluentes-atmosfericos/74e90d52-2540-4b75-a1b8-6336d25f81e3.observed.json"
+     }
     }
    ]
   },
@@ -830,7 +898,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/evolucao-das-receitas-arrecadadas/e6a5c7ff-4dea-4b34-bd2e-9486cc6fcd56.observed.json"
+     }
     }
    ]
   },
@@ -858,7 +929,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/exploracao-economica-da-madeira-ou-lenha-e-subprodutos-florestais/cc7367e8-10b8-4a42-8f4a-e1ef02867ed5.observed.json"
+     }
     }
    ]
   },
@@ -886,7 +960,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/extracao-e-tratamento-de-produtos-minerais/ec986109-95a4-4361-ac9b-197883eae365.observed.json"
+     }
     }
    ]
   },
@@ -914,7 +991,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/fabricante-de-produtos-que-utilizam-materia-prima-de-origem-florestal/c7d0f645-ee23-4efd-9d3f-a270a97ffd75.observed.json"
+     }
     }
    ]
   },
@@ -942,7 +1022,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/fila-de-acompanhamento-de-registro-de-agrotoxicos-quimicos/eb580641-414e-4ae1-b430-d7b71c8c6709.observed.json"
+     }
     }
    ]
   },
@@ -970,7 +1053,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/b2aba344-95df-43c0-b2ba-f4353cfd9a00.observed.json"
+     }
     },
     {
      "id": "903120d7-9a73-46d2-8e22-93576f4f855b",
@@ -988,7 +1074,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/903120d7-9a73-46d2-8e22-93576f4f855b.observed.json"
+     }
     },
     {
      "id": "3325463b-3f90-4cd6-a033-e3c7cbe1b8ea",
@@ -1006,7 +1095,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/3325463b-3f90-4cd6-a033-e3c7cbe1b8ea.observed.json"
+     }
     },
     {
      "id": "96c79c3e-a979-47a1-9a05-1eba3df4ce20",
@@ -1024,7 +1116,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/96c79c3e-a979-47a1-9a05-1eba3df4ce20.observed.json"
+     }
     },
     {
      "id": "160b14e2-d7d8-40aa-b06c-295575a5fb9c",
@@ -1042,7 +1137,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/160b14e2-d7d8-40aa-b06c-295575a5fb9c.observed.json"
+     }
     },
     {
      "id": "8fd0af49-f045-4fc5-a1cc-d5def2efd3b5",
@@ -1060,7 +1158,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/8fd0af49-f045-4fc5-a1cc-d5def2efd3b5.observed.json"
+     }
     },
     {
      "id": "afe30a48-eb96-4915-8f13-c4e838dae033",
@@ -1078,7 +1179,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/afe30a48-eb96-4915-8f13-c4e838dae033.observed.json"
+     }
     },
     {
      "id": "2783a310-045b-4255-869a-c46a5647f8fc",
@@ -1096,7 +1200,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/2783a310-045b-4255-869a-c46a5647f8fc.observed.json"
+     }
     }
    ]
   },
@@ -1125,7 +1232,7 @@
      "dictionary": {
       "name": "Metadados - Notificação",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -1241,7 +1348,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-notificacao/826b90b3-1fff-4ed2-a892-d3bb85370e15.declared.json",
+      "observed": "schemas/fiscalizacao-notificacao/826b90b3-1fff-4ed2-a892-d3bb85370e15.observed.json"
+     }
     }
    ]
   },
@@ -1279,7 +1390,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-apreensao/3364a902-067a-469a-bd9a-b865d234eed9.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/3364a902-067a-469a-bd9a-b865d234eed9.observed.json"
+     }
     },
     {
      "id": "beab1a59-3fd2-4e00-871d-0d2052ef2425",
@@ -1307,7 +1422,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-apreensao/beab1a59-3fd2-4e00-871d-0d2052ef2425.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/beab1a59-3fd2-4e00-871d-0d2052ef2425.observed.json"
+     }
     },
     {
      "id": "081627a0-d158-44a8-88b0-600929e93526",
@@ -1335,7 +1454,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-apreensao/081627a0-d158-44a8-88b0-600929e93526.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/081627a0-d158-44a8-88b0-600929e93526.observed.json"
+     }
     },
     {
      "id": "10869c00-3e91-4da2-99a9-e73c976a9af6",
@@ -1363,7 +1486,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-apreensao/10869c00-3e91-4da2-99a9-e73c976a9af6.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/10869c00-3e91-4da2-99a9-e73c976a9af6.observed.json"
+     }
     },
     {
      "id": "4d0993b3-3fc3-4708-b617-7e86485dbb99",
@@ -1393,7 +1520,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-apreensao/4d0993b3-3fc3-4708-b617-7e86485dbb99.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/4d0993b3-3fc3-4708-b617-7e86485dbb99.observed.json"
+     }
     },
     {
      "id": "497ac942-f584-415c-bed8-a5bb09f97463",
@@ -1427,7 +1558,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-apreensao/497ac942-f584-415c-bed8-a5bb09f97463.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/497ac942-f584-415c-bed8-a5bb09f97463.observed.json"
+     }
     }
    ]
   },
@@ -1472,7 +1607,7 @@
      "dictionary": {
       "name": "Metadados - Termo de demolição",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -1515,7 +1650,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-demolicao/0522b605-5c8e-4d04-a57a-ce217ce9bb61.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-demolicao/0522b605-5c8e-4d04-a57a-ce217ce9bb61.observed.json"
+     }
     },
     {
      "id": "9e715d83-f7eb-4dcc-b686-23252325ebbf",
@@ -1525,7 +1664,7 @@
      "dictionary": {
       "name": "Metadados - Termo de demolição - enquadramento",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -1557,7 +1696,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-demolicao/9e715d83-f7eb-4dcc-b686-23252325ebbf.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-demolicao/9e715d83-f7eb-4dcc-b686-23252325ebbf.observed.json"
+     }
     },
     {
      "id": "e62430da-5c2e-4447-94f7-bd2d92496137",
@@ -1567,7 +1710,7 @@
      "dictionary": {
       "name": "Metadados - Termo de demolição - enquadramento complementar",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -1595,7 +1738,11 @@
       },
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-demolicao/e62430da-5c2e-4447-94f7-bd2d92496137.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-demolicao/e62430da-5c2e-4447-94f7-bd2d92496137.observed.json"
+     }
     }
    ]
   },
@@ -1656,7 +1803,7 @@
      "dictionary": {
       "name": "Metadados - Destruição/Inutilização",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -1697,7 +1844,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao/e2279c55-804e-409b-aaaf-1b7408d8ca52.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao/e2279c55-804e-409b-aaaf-1b7408d8ca52.observed.json"
+     }
     },
     {
      "id": "13f87098-c079-458d-93b6-810b708eb1e3",
@@ -1707,7 +1858,7 @@
      "dictionary": {
       "name": "Metadados - Bem destruído",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -1731,7 +1882,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao/13f87098-c079-458d-93b6-810b708eb1e3.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao/13f87098-c079-458d-93b6-810b708eb1e3.observed.json"
+     }
     },
     {
      "id": "17d20dcb-1848-4f8a-a972-fa7dfe4a1e7f",
@@ -1741,7 +1896,7 @@
      "dictionary": {
       "name": "Metadados - Enquadramento legal",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -1776,7 +1931,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao/17d20dcb-1848-4f8a-a972-fa7dfe4a1e7f.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao/17d20dcb-1848-4f8a-a972-fa7dfe4a1e7f.observed.json"
+     }
     },
     {
      "id": "62d099c5-e2b2-4e24-874e-46374cf9fa9e",
@@ -1786,7 +1945,7 @@
      "dictionary": {
       "name": "Metadados - Enquadramento legal complementar",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -1814,7 +1973,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao/62d099c5-e2b2-4e24-874e-46374cf9fa9e.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao/62d099c5-e2b2-4e24-874e-46374cf9fa9e.observed.json"
+     }
     },
     {
      "id": "0d58b13b-3909-43da-a242-11a3e95100f5",
@@ -1824,7 +1987,7 @@
      "dictionary": {
       "name": "Metadados - Espécime apreendido",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -1856,7 +2019,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao/0d58b13b-3909-43da-a242-11a3e95100f5.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao/0d58b13b-3909-43da-a242-11a3e95100f5.observed.json"
+     }
     }
    ]
   },
@@ -1894,7 +2061,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b/2f335d4d-6707-4862-995d-f2fb6c7dd052.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b/2f335d4d-6707-4862-995d-f2fb6c7dd052.observed.json"
+     }
     },
     {
      "id": "92f92021-28df-42b7-bbbb-a4f77b3a078e",
@@ -1922,7 +2093,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b/92f92021-28df-42b7-bbbb-a4f77b3a078e.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b/92f92021-28df-42b7-bbbb-a4f77b3a078e.observed.json"
+     }
     },
     {
      "id": "0224f6a5-1f51-4a64-a8c4-f34729f04285",
@@ -1938,7 +2113,10 @@
      "encodings": [],
      "distinct_headers": 0,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b/0224f6a5-1f51-4a64-a8c4-f34729f04285.described.json"
+     }
     }
    ]
   },
@@ -1999,7 +2177,7 @@
      "dictionary": {
       "name": "Metadados - Termo de doação",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -2043,7 +2221,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-doacao/2c53046a-664c-4d27-8dd1-159b5f054448.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-doacao/2c53046a-664c-4d27-8dd1-159b5f054448.observed.json"
+     }
     },
     {
      "id": "4d98126c-73c1-42fe-8cb0-19fe0374e0be",
@@ -2053,7 +2235,7 @@
      "dictionary": {
       "name": "Metadados - Bem doado",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -2081,7 +2263,11 @@
       },
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-doacao/4d98126c-73c1-42fe-8cb0-19fe0374e0be.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-doacao/4d98126c-73c1-42fe-8cb0-19fe0374e0be.observed.json"
+     }
     },
     {
      "id": "7409947a-637a-4ac6-827f-caf439617944",
@@ -2091,7 +2277,7 @@
      "dictionary": {
       "name": "Metadados - Espécime doado",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -2123,7 +2309,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-doacao/7409947a-637a-4ac6-827f-caf439617944.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-doacao/7409947a-637a-4ac6-827f-caf439617944.observed.json"
+     }
     },
     {
      "id": "194b9635-bd97-4555-8ea8-48fab4a9c972",
@@ -2133,7 +2323,7 @@
      "dictionary": {
       "name": "Metadados - Enquadramento legal",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -2174,7 +2364,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-doacao/194b9635-bd97-4555-8ea8-48fab4a9c972.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-doacao/194b9635-bd97-4555-8ea8-48fab4a9c972.observed.json"
+     }
     },
     {
      "id": "d9c1208f-1f35-4708-b9fb-abd022de894c",
@@ -2184,7 +2378,7 @@
      "dictionary": {
       "name": "Metadados - Enquadramento legal complementar",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -2216,7 +2410,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-doacao/d9c1208f-1f35-4708-b9fb-abd022de894c.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-doacao/d9c1208f-1f35-4708-b9fb-abd022de894c.observed.json"
+     }
     }
    ]
   },
@@ -2242,7 +2440,10 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-embargo/8f88b43e-287a-470b-a730-db440f9e37fa.described.json"
+     }
     },
     {
      "id": "aba90ea8-e2f3-431e-a0cc-1ae24773843b",
@@ -2270,7 +2471,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-embargo/aba90ea8-e2f3-431e-a0cc-1ae24773843b.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-embargo/aba90ea8-e2f3-431e-a0cc-1ae24773843b.observed.json"
+     }
     },
     {
      "id": "90d17ce7-6a9b-4bfb-804c-6d52e43af264",
@@ -2300,7 +2505,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-embargo/90d17ce7-6a9b-4bfb-804c-6d52e43af264.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-embargo/90d17ce7-6a9b-4bfb-804c-6d52e43af264.observed.json"
+     }
     },
     {
      "id": "3360882c-a038-4129-a1f0-7013af37926a",
@@ -2334,7 +2543,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-embargo/3360882c-a038-4129-a1f0-7013af37926a.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-embargo/3360882c-a038-4129-a1f0-7013af37926a.observed.json"
+     }
     },
     {
      "id": "0a4284aa-e142-4d6d-823f-9958f26c829e",
@@ -2362,7 +2575,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-embargo/0a4284aa-e142-4d6d-823f-9958f26c829e.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-embargo/0a4284aa-e142-4d6d-823f-9958f26c829e.observed.json"
+     }
     },
     {
      "id": "ccdbf737-0fbf-4547-adf6-267204aa4413",
@@ -2390,7 +2607,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-embargo/ccdbf737-0fbf-4547-adf6-267204aa4413.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-embargo/ccdbf737-0fbf-4547-adf6-267204aa4413.observed.json"
+     }
     },
     {
      "id": "21347475-cd71-41de-a677-f0fbaa8c02b2",
@@ -2420,7 +2641,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-embargo/21347475-cd71-41de-a677-f0fbaa8c02b2.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-embargo/21347475-cd71-41de-a677-f0fbaa8c02b2.observed.json"
+     }
     },
     {
      "id": "04f7998d-58e1-4717-85f5-401dc9994b19",
@@ -2450,7 +2675,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/fiscalizacao-termo-de-embargo/04f7998d-58e1-4717-85f5-401dc9994b19.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-embargo/04f7998d-58e1-4717-85f5-401dc9994b19.observed.json"
+     }
     }
    ]
   },
@@ -2495,7 +2724,7 @@
      "dictionary": {
       "name": "Metadados - Termo de incineração",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -2533,7 +2762,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-incineracao/f0073116-1642-4e4d-ac1f-153f3fcd21b4.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-incineracao/f0073116-1642-4e4d-ac1f-153f3fcd21b4.observed.json"
+     }
     },
     {
      "id": "08a27674-c9f2-4cd9-a4b9-2b2e3cf00948",
@@ -2543,7 +2776,7 @@
      "dictionary": {
       "name": "Metadados - Termo de incineração - Bem incinerado",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -2571,7 +2804,11 @@
       },
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-incineracao/08a27674-c9f2-4cd9-a4b9-2b2e3cf00948.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-incineracao/08a27674-c9f2-4cd9-a4b9-2b2e3cf00948.observed.json"
+     }
     },
     {
      "id": "589ea44c-cc80-4d1c-9797-af3b8646202c",
@@ -2581,7 +2818,7 @@
      "dictionary": {
       "name": "Metadados - Termo de incineração - Espécime incinerado",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -2613,7 +2850,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-incineracao/589ea44c-cc80-4d1c-9797-af3b8646202c.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-incineracao/589ea44c-cc80-4d1c-9797-af3b8646202c.observed.json"
+     }
     }
    ]
   },
@@ -2674,7 +2915,7 @@
      "dictionary": {
       "name": "Metadados - Termo de Soltura",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -2736,7 +2977,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-soltura/24251a10-7e8d-424d-878c-8d2aa908cf7b.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-soltura/24251a10-7e8d-424d-878c-8d2aa908cf7b.observed.json"
+     }
     },
     {
      "id": "8911eaf9-ebb9-4821-a4d7-b5e2cfe3c390",
@@ -2746,7 +2991,7 @@
      "dictionary": {
       "name": "Metadados - Espécime solto",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -2818,7 +3063,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-soltura/8911eaf9-ebb9-4821-a4d7-b5e2cfe3c390.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-soltura/8911eaf9-ebb9-4821-a4d7-b5e2cfe3c390.observed.json"
+     }
     },
     {
      "id": "d57ca40d-d5c0-4bd5-8bc1-cdfb79ae1a3e",
@@ -2828,7 +3077,7 @@
      "dictionary": {
       "name": "Metadados - Bem solto",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -2867,7 +3116,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-soltura/d57ca40d-d5c0-4bd5-8bc1-cdfb79ae1a3e.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-soltura/d57ca40d-d5c0-4bd5-8bc1-cdfb79ae1a3e.observed.json"
+     }
     },
     {
      "id": "6a4222f1-353f-4f61-a6a9-38d8f4f50c3e",
@@ -2877,7 +3130,7 @@
      "dictionary": {
       "name": "Metadados - Enquadramento legal",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -2909,7 +3162,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-soltura/6a4222f1-353f-4f61-a6a9-38d8f4f50c3e.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-soltura/6a4222f1-353f-4f61-a6a9-38d8f4f50c3e.observed.json"
+     }
     },
     {
      "id": "7dad7932-3761-456c-93fa-32413ba48703",
@@ -2919,7 +3176,7 @@
      "dictionary": {
       "name": "Metadados - Enquadramento Legal Complementar ",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -2951,7 +3208,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-soltura/7dad7932-3761-456c-93fa-32413ba48703.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-soltura/7dad7932-3761-456c-93fa-32413ba48703.observed.json"
+     }
     }
    ]
   },
@@ -2996,7 +3257,7 @@
      "dictionary": {
       "name": "Metadados - Termo de Suspensão",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -3029,7 +3290,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-suspensao/4822e6fa-c4af-4ab8-8ca6-04014f4b3c45.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-suspensao/4822e6fa-c4af-4ab8-8ca6-04014f4b3c45.observed.json"
+     }
     },
     {
      "id": "5b31395e-1e45-4840-ab84-a2532212caa3",
@@ -3039,7 +3304,7 @@
      "dictionary": {
       "name": "Metadados -  termo de suspensão - Enquadramento",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -3078,7 +3343,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-suspensao/5b31395e-1e45-4840-ab84-a2532212caa3.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-suspensao/5b31395e-1e45-4840-ab84-a2532212caa3.observed.json"
+     }
     },
     {
      "id": "0c2237c6-bfca-4ab7-8063-03dc8bf72c11",
@@ -3088,7 +3357,7 @@
      "dictionary": {
       "name": "Metadados - Termo de Suspensão - Enquadramento Complementar",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -3114,7 +3383,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/fiscalizacao-termo-de-suspensao/0c2237c6-bfca-4ab7-8063-03dc8bf72c11.declared.json",
+      "observed": "schemas/fiscalizacao-termo-de-suspensao/0c2237c6-bfca-4ab7-8063-03dc8bf72c11.observed.json"
+     }
     }
    ]
   },
@@ -3142,7 +3415,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/fonte-energetica/98d0aeb5-4843-421a-9e3c-cfb8d8b885e5.observed.json"
+     }
     }
    ]
   },
@@ -3170,7 +3446,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/fontes-energeticas/dccac66a-382f-418d-beb4-65c1c2c5991d.observed.json"
+     }
     }
    ]
   },
@@ -3196,7 +3475,8 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {}
     }
    ]
   },
@@ -3224,7 +3504,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/importador-exportador-de-fauna-e-flora-produtos-parte/9b04fdf7-d6da-4621-a1e7-460b53b399a6.observed.json"
+     }
     }
    ]
   },
@@ -3252,7 +3535,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama/6fe07a2f-718a-4d04-a386-2a1cd3e96afb.observed.json"
+     }
     }
    ]
   },
@@ -3280,7 +3566,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/licencas-ambientais-de-atividades-e-empreendimentos-licenciados-pelo-ibama/9e4873d3-10d8-464f-a883-88be3b3abf06.observed.json"
+     }
     }
    ]
   },
@@ -3308,7 +3597,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/multas-ambientais-distribuidas-por-bens-tutelados/3d9c4d47-9d44-4971-922c-4a9143d071a6.observed.json"
+     }
     }
    ]
   },
@@ -3336,7 +3628,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/pescador-profissional/69580d03-480d-4380-a2f7-1ffdd9a4e848.observed.json"
+     }
     }
    ]
   },
@@ -3364,7 +3659,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/pessoas-juridicas-inscritas-no-ctf-aida/3a9b322c-ac27-4e36-bc07-a81fff885dac.observed.json"
+     }
     }
    ]
   },
@@ -3393,7 +3691,7 @@
      "dictionary": {
       "name": "Metadados - Pessoas jurídicas inscritas no CTF/APP",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -3447,7 +3745,11 @@
       },
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/pessoas-juridicas-inscritas-no-ctf-app/6c07749d-da36-46b2-af2f-baa84194380a.declared.json",
+      "observed": "schemas/pessoas-juridicas-inscritas-no-ctf-app/6c07749d-da36-46b2-af2f-baa84194380a.observed.json"
+     }
     }
    ]
   },
@@ -3475,7 +3777,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/plantacao-vegetacao-nativa/cc55dbc7-f200-4f84-916b-534c02d2fe4a.observed.json"
+     }
     }
    ]
   },
@@ -3503,7 +3808,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/produtos-reciclados/82312442-c03c-4527-a9df-45d2cc78dd50.observed.json"
+     }
     }
    ]
   },
@@ -3620,7 +3928,11 @@
       },
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/305df277-08a9-44d4-a5af-be3e2eddb950.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/305df277-08a9-44d4-a5af-be3e2eddb950.observed.json"
+     }
     },
     {
      "id": "cc755979-551a-4e07-8be1-0a3d615286c0",
@@ -3630,7 +3942,7 @@
      "dictionary": {
       "name": "Metadados - Resíduos/Produtos",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -3664,7 +3976,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/cc755979-551a-4e07-8be1-0a3d615286c0.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/cc755979-551a-4e07-8be1-0a3d615286c0.observed.json"
+     }
     },
     {
      "id": "6bde1c16-692f-4706-be68-bd2b3c1ac7d4",
@@ -3686,7 +4002,10 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/6bde1c16-692f-4706-be68-bd2b3c1ac7d4.declared.json"
+     }
     },
     {
      "id": "5329587b-8db8-4c39-b7bf-8b2230495f16",
@@ -3696,7 +4015,7 @@
      "dictionary": {
       "name": "Metadados - Transporte",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -3724,7 +4043,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/5329587b-8db8-4c39-b7bf-8b2230495f16.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/5329587b-8db8-4c39-b7bf-8b2230495f16.observed.json"
+     }
     },
     {
      "id": "9fbedfb0-618c-43d9-931a-7b5925a88842",
@@ -3734,7 +4057,7 @@
      "dictionary": {
       "name": "Metadados - Destinação",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -3766,7 +4089,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/9fbedfb0-618c-43d9-931a-7b5925a88842.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/9fbedfb0-618c-43d9-931a-7b5925a88842.observed.json"
+     }
     }
    ]
   },
@@ -3835,7 +4162,7 @@
      "dictionary": {
       "name": "Metadados - Importadores",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -3888,7 +4215,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/6c96417b-b6bf-4599-bb11-471c14ddbe56.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-importador/6c96417b-b6bf-4599-bb11-471c14ddbe56.observed.json"
+     }
     },
     {
      "id": "85efc1b6-c4bb-4e1b-96cc-8fb4e39dd811",
@@ -3910,7 +4241,10 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/85efc1b6-c4bb-4e1b-96cc-8fb4e39dd811.declared.json"
+     }
     },
     {
      "id": "4260f6e2-6598-415a-a371-0a8bf7b16bd6",
@@ -3920,7 +4254,7 @@
      "dictionary": {
       "name": "Metadados - Resíduos/Produtos",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -3957,7 +4291,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/4260f6e2-6598-415a-a371-0a8bf7b16bd6.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-importador/4260f6e2-6598-415a-a371-0a8bf7b16bd6.observed.json"
+     }
     },
     {
      "id": "6c1ec9e7-6615-4b99-bd38-a64d1267a3c8",
@@ -3967,7 +4305,7 @@
      "dictionary": {
       "name": "Metadados - Pontos de Coleta",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -3993,7 +4331,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/6c1ec9e7-6615-4b99-bd38-a64d1267a3c8.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-importador/6c1ec9e7-6615-4b99-bd38-a64d1267a3c8.observed.json"
+     }
     },
     {
      "id": "c10fc1fd-3c85-4e12-a9cd-79fe464602c3",
@@ -4015,7 +4357,10 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/c10fc1fd-3c85-4e12-a9cd-79fe464602c3.declared.json"
+     }
     },
     {
      "id": "6cd160bc-baf4-4966-a520-47ac533f8890",
@@ -4025,7 +4370,7 @@
      "dictionary": {
       "name": "Metadados - Destinação",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -4060,7 +4405,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/6cd160bc-baf4-4966-a520-47ac533f8890.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-importador/6cd160bc-baf4-4966-a520-47ac533f8890.observed.json"
+     }
     }
    ]
   },
@@ -4089,7 +4438,7 @@
      "dictionary": {
       "name": "Metadados - Rapp Pilhas e Baterias - Reciclador",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -4134,7 +4483,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/rapp-pilhas-e-baterias-reciclador/3cf1fc83-c401-4b9f-b2fd-3ffddb35ddcb.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-reciclador/3cf1fc83-c401-4b9f-b2fd-3ffddb35ddcb.observed.json"
+     }
     }
    ]
   },
@@ -4162,7 +4515,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/relatorios-de-comercializacao-de-agrotoxicos/5baa8719-cbc7-4a31-956c-d8d016ab5672.observed.json"
+     }
     }
    ]
   },
@@ -4190,7 +4546,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/residuos-solidos-armazenador/4f1236db-ec33-465a-80c7-d31ac05338ee.observed.json"
+     }
     }
    ]
   },
@@ -4218,7 +4577,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/residuos-solidos-destinador/532a6fec-dfc2-4b49-ab95-86d46b9cd4f3.observed.json"
+     }
     }
    ]
   },
@@ -4246,7 +4608,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/residuos-solidos-gerador-a-partir-de-2012/3033f34f-b622-4da6-a188-f9a56cbb2b2a.observed.json"
+     }
     }
    ]
   },
@@ -4274,7 +4639,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/residuos-solidos-gerador-anterior-a-2012/5d78cd9f-a990-4d65-acf3-aa5a18937143.observed.json"
+     }
     }
    ]
   },
@@ -4302,7 +4670,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/residuos-solidos-transportador/5907b69f-64dd-47d1-b9ee-f81eb19c6012.observed.json"
+     }
     }
    ]
   },
@@ -4328,7 +4699,8 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {}
     }
    ]
   },
@@ -4356,7 +4728,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/silvicultura/dada25a0-4e75-4a5e-8b8a-a9f5767127f3.observed.json"
+     }
     }
    ]
   },
@@ -4385,7 +4760,7 @@
      "dictionary": {
       "name": "Metadados - Autorização de Supressão de Vegetação",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -4457,7 +4832,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/sinaflor-autorizacao-de-supressao-de-vegetacao/e257dc08-786d-4223-86e5-9e8597fb716d.declared.json",
+      "observed": "schemas/sinaflor-autorizacao-de-supressao-de-vegetacao/e257dc08-786d-4223-86e5-9e8597fb716d.observed.json"
+     }
     }
    ]
   },
@@ -4485,7 +4864,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/sinaflor-autorizacao-de-utilizacao-de-materia-prima-florestal/7a275dac-4a9c-4664-a6b5-b4ff12af3786.observed.json"
+     }
     }
    ]
   },
@@ -4539,7 +4921,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/sinaflor-autorizacao-especial/26f5a30e-53d2-4509-b5b3-5e980ae706f1.described.json",
+      "observed": "schemas/sinaflor-autorizacao-especial/26f5a30e-53d2-4509-b5b3-5e980ae706f1.observed.json"
+     }
     }
    ]
   },
@@ -4568,7 +4954,7 @@
      "dictionary": {
       "name": "Metadados - Corte de Árvores Isoladas",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -4645,7 +5031,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/sinaflor-corte-de-arvores-isoladas/91b0bde2-9b66-4ba1-bb5c-b955571b075d.declared.json",
+      "observed": "schemas/sinaflor-corte-de-arvores-isoladas/91b0bde2-9b66-4ba1-bb5c-b955571b075d.observed.json"
+     }
     }
    ]
   },
@@ -4686,7 +5076,10 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/sinaflor-empreendimentos-de-base-florestal/3d6fb0d5-4efd-4f22-8321-a075d1d48c38.declared.json"
+     }
     }
    ]
   },
@@ -4733,7 +5126,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/sinaflor-exploracao-de-floresta-plantada/402741a2-8072-4365-b5d8-4dcb915be169.described.json",
+      "observed": "schemas/sinaflor-exploracao-de-floresta-plantada/402741a2-8072-4365-b5d8-4dcb915be169.observed.json"
+     }
     }
    ]
   },
@@ -4762,7 +5159,7 @@
      "dictionary": {
       "name": "Metadados - PMFS Amazônia Legal",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -4837,7 +5234,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/sinaflor-pmfs-amazonia-legal/fac201c9-8e09-49d5-9113-1608cf45b8c8.declared.json",
+      "observed": "schemas/sinaflor-pmfs-amazonia-legal/fac201c9-8e09-49d5-9113-1608cf45b8c8.observed.json"
+     }
     }
    ]
   },
@@ -4866,7 +5267,7 @@
      "dictionary": {
       "name": "Metadados - PMFS Outros Biomas",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -4946,7 +5347,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/sinaflor-pmfs-outros-biomas/b36eeee5-f885-45e3-8926-3b822be5735a.declared.json",
+      "observed": "schemas/sinaflor-pmfs-outros-biomas/b36eeee5-f885-45e3-8926-3b822be5735a.observed.json"
+     }
     }
    ]
   },
@@ -4975,7 +5380,7 @@
      "dictionary": {
       "name": "Metadados - POA Amazônia Legal",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -5048,7 +5453,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/sinaflor-poa-amazonia-legal/a913bfaa-61c1-43da-a98e-5a5a366eaeec.declared.json",
+      "observed": "schemas/sinaflor-poa-amazonia-legal/a913bfaa-61c1-43da-a98e-5a5a366eaeec.observed.json"
+     }
     }
    ]
   },
@@ -5077,7 +5486,7 @@
      "dictionary": {
       "name": "Metadados - POA Outros Biomas",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -5159,7 +5568,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/sinaflor-poa-outros-biomas/b2f0b4a5-0664-469d-aa6a-be980b45d2cb.declared.json",
+      "observed": "schemas/sinaflor-poa-outros-biomas/b2f0b4a5-0664-469d-aa6a-be980b45d2cb.observed.json"
+     }
     }
    ]
   },
@@ -5197,7 +5610,11 @@
       "inferred_formats": {},
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/sinaflor-responsavel-tecnico/cf25bc77-14d7-47ca-9e61-4e45f5cdf2b9.described.json",
+      "observed": "schemas/sinaflor-responsavel-tecnico/cf25bc77-14d7-47ca-9e61-4e45f5cdf2b9.observed.json"
+     }
     }
    ]
   },
@@ -5226,7 +5643,7 @@
      "dictionary": {
       "name": "Metadados - Uso Alternativo do Solo",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -5301,7 +5718,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/sinaflor-uso-alternativo-do-solo/09a00f90-3eba-4a57-a557-dfdf6030c188.declared.json",
+      "observed": "schemas/sinaflor-uso-alternativo-do-solo/09a00f90-3eba-4a57-a557-dfdf6030c188.observed.json"
+     }
     }
    ]
   },
@@ -5361,7 +5782,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/sinaflor-uso-alternativo-do-solo-agricultor-familiar/eeb2d948-dcdd-44c8-916a-1dd131deacfb.described.json",
+      "observed": "schemas/sinaflor-uso-alternativo-do-solo-agricultor-familiar/eeb2d948-dcdd-44c8-916a-1dd131deacfb.observed.json"
+     }
     }
    ]
   },
@@ -5389,7 +5814,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/siscites-licencas-de-fauna-e-flora-emitidas/dddd819f-275a-4653-9104-772dd7519e6a.observed.json"
+     }
     }
    ]
   },
@@ -5417,7 +5845,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/sisfauna-comercializacao-de-partes-produtos/0b1167c8-4a2a-4a9b-9959-3b24c51b6d09.observed.json"
+     }
     }
    ]
   },
@@ -5445,7 +5876,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/sisfauna-plantel-estimado/7944b91e-085f-4f72-a9af-fc4207a3ecb8.observed.json"
+     }
     }
    ]
   },
@@ -5473,7 +5907,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/sisfauna-plantel-exato/a271ddd8-aac6-4b58-9017-37b57b3b80dd.observed.json"
+     }
     }
    ]
   },
@@ -5502,7 +5939,7 @@
      "dictionary": {
       "name": "Metadados - Sisfogo ROI",
       "format": "CSV",
-      "method": "single",
+      "method": "header",
       "readable": true,
       "error_kind": null
      },
@@ -5590,7 +6027,11 @@
       },
       "errors_by_field": {}
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "declared": "schemas/sisfogo-roi/c2ac514d-3701-4255-9b47-fcbb042fb9b2.declared.json",
+      "observed": "schemas/sisfogo-roi/c2ac514d-3701-4255-9b47-fcbb042fb9b2.observed.json"
+     }
     }
    ]
   },
@@ -5616,7 +6057,8 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {}
     }
    ]
   },
@@ -5653,7 +6095,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/transporte-de-produtos-quimicos-perigosos-ou-combustiveis/b922cba7-1e20-4087-9e7d-41e8d3c12598.observed.json"
+     }
     }
    ]
   },
@@ -5681,7 +6126,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/unidade-poluidora/03610c0c-b1b0-4a93-a90b-b57cb46c8ad6.observed.json"
+     }
     }
    ]
   },
@@ -5707,7 +6155,8 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {}
     }
    ]
   },
@@ -5733,7 +6182,8 @@
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {}
     }
    ]
   },
@@ -5761,7 +6211,10 @@
      ],
      "distinct_headers": 1,
      "conformance": null,
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "observed": "schemas/vias-despavimentadas/f7120b1d-e413-4520-a921-b1976be1900d.observed.json"
+     }
     }
    ]
   },
@@ -5815,7 +6268,11 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/volumes-explorados-if-100/ac345e77-863b-472c-a06a-4f171263bc70.described.json",
+      "observed": "schemas/volumes-explorados-if-100/ac345e77-863b-472c-a06a-4f171263bc70.observed.json"
+     }
     }
    ]
   },
@@ -5861,9 +6318,204 @@
        }
       }
      },
-     "drift_events": 0
+     "drift_events": 0,
+     "schema_files": {
+      "described": "schemas/volumes-explorados-inventario-amostral/8b868981-3062-414c-9bd9-e6a896c050fb.described.json",
+      "observed": "schemas/volumes-explorados-inventario-amostral/8b868981-3062-414c-9bd9-e6a896c050fb.observed.json"
+     }
     }
    ]
   }
- ]
+ ],
+ "unreadable": [
+  {
+   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+   "title": "Antropização dos Biomas Extra-Amazônicos",
+   "file": "CSV - Antropização do Cerrado 2008-2009",
+   "id": "26307dda-12a0-47e2-ae7e-ca8137d22b13",
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_cerrado_mdbbs_2009_a&outputFormat=csv",
+   "host": "siscom.ibama.gov.br",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_cerrado_mdbbs_2009_a&outputFormat=cs"
+  },
+  {
+   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+   "title": "Antropização dos Biomas Extra-Amazônicos",
+   "file": "CSV - Antropização da Mata Atlântica 2008-2009",
+   "id": "093b6f72-11c8-431f-a17e-3eaa57026dff",
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_mata_atlantica_mdbbs_2009_a&outputFormat=csv",
+   "host": "siscom.ibama.gov.br",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_mata_atlantica_mdbbs_2009_a&outputFo"
+  },
+  {
+   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+   "title": "Antropização dos Biomas Extra-Amazônicos",
+   "file": "CSV - Antropização do Pampa 2008-2009",
+   "id": "c5b84b15-57f4-4c83-a4be-2a334fa10709",
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_pampa_mdbbs_2009_a&outputFormat=csv",
+   "host": "siscom.ibama.gov.br",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_pampa_mdbbs_2009_a&outputFormat=csv"
+  },
+  {
+   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+   "title": "Antropização dos Biomas Extra-Amazônicos",
+   "file": "CSV - Antropização do Pantanal 2008-2009",
+   "id": "90ba133b-0d56-4910-8d79-16cb8ff96428",
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_pantanal_mdbbs_2009_a&outputFormat=csv",
+   "host": "siscom.ibama.gov.br",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_pantanal_mdbbs_2009_a&outputFormat=c"
+  },
+  {
+   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+   "title": "Antropização dos Biomas Extra-Amazônicos",
+   "file": "CSV - Antropização da Caatinga 2008-2009",
+   "id": "4b91ca8c-6950-4f43-857b-9d80ec9edfb8",
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_caatinga_mdbbs_2009_a&outputFormat=csv",
+   "host": "siscom.ibama.gov.br",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_caatinga_mdbbs_2009_a&outputFormat=c"
+  },
+  {
+   "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
+   "title": "DOF - Trechos e Veículos de Transportes Florestais (Detalhes)",
+   "file": "Detalhes de Trechos e Veículos de Transportes ...",
+   "id": "21e21d34-b71c-4f41-8ad3-ee5743fb8e00",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/DOF/DOFTrechos/csv.zip",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "not-tabular",
+   "reason": "not-tabular",
+   "detail": "zip without CSV members (first entries: ['2007.zip', '2008.zip', '2009.zip', '2010.zip', '2011.zip'])"
+  },
+  {
+   "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b",
+   "title": "Fiscalização – termo de destruição ou inutilização (série A e B)",
+   "file": "Espécime destruído",
+   "id": "0224f6a5-1f51-4a64-a8c4-f34729f04285",
+   "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_destruicao_a_b/especime.csv",
+   "host": "dadosabertos.ibama.gov.br",
+   "status": "empty",
+   "reason": "empty",
+   "detail": ""
+  },
+  {
+   "dataset": "fiscalizacao-termo-de-embargo",
+   "title": "Fiscalização - termo de embargo",
+   "file": "Termos de embargo",
+   "id": "8f88b43e-287a-470b-a730-db440f9e37fa",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_EMBARGO/termo_de_embargo.csv",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_EMBARGO/termo_de_embargo.csv"
+  },
+  {
+   "dataset": "imagens-aereas-do-desastre-mariana-mg",
+   "title": "Imagens aéreas do desastre Mariana/MG",
+   "file": "Imagens aéreas do desastre Mariana/MG no ...",
+   "id": "b0a63e0d-e656-455a-8bff-4672dc37ca44",
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:img_foto_rio_doce_p&outputFormat=csv",
+   "host": "siscom.ibama.gov.br",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:img_foto_rio_doce_p&outputFormat=csv"
+  },
+  {
+   "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+   "title": "Rapp Pilhas e Baterias - Fabricante Nacional",
+   "file": "Pontos de Coleta",
+   "id": "6bde1c16-692f-4706-be68-bd2b3c1ac7d4",
+   "url": "",
+   "host": null,
+   "status": "error",
+   "reason": "no URL",
+   "detail": "MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?"
+  },
+  {
+   "dataset": "rapp-pilhas-e-baterias-importador",
+   "title": "Rapp Pilhas e baterias - Importador",
+   "file": "Pilhas e baterias contidas em produtos importados",
+   "id": "85efc1b6-c4bb-4e1b-96cc-8fb4e39dd811",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importados/pilhas_baterias_produtos_consolidado_todos_anos.csv.zip",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_"
+  },
+  {
+   "dataset": "rapp-pilhas-e-baterias-importador",
+   "title": "Rapp Pilhas e baterias - Importador",
+   "file": "Transporte",
+   "id": "c10fc1fd-3c85-4e12-a9cd-79fe464602c3",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_consolidado_todos_anos.csv.zip",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transport"
+  },
+  {
+   "dataset": "siema-comunicado-de-acidente-ambiental",
+   "title": "Siema - Comunicado de Acidente Ambiental",
+   "file": "Acidentes Ambientais CSV",
+   "id": "b213035b-e0b7-4765-9113-ad596322aceb",
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:adm_comunicacidente_p&outputFormat=csv",
+   "host": "siscom.ibama.gov.br",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:adm_comunicacidente_p&outputFormat=csv"
+  },
+  {
+   "dataset": "sinaflor-empreendimentos-de-base-florestal",
+   "title": "Sinaflor - Empreendimentos de Base Florestal",
+   "file": "Empreendimentos de base florestal",
+   "id": "3d6fb0d5-4efd-4f22-8321-a075d1d48c38",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBaseFlorestal_csv.zip",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBas"
+  },
+  {
+   "dataset": "supressao-de-vegetacao-nao-florestal-no-bioma-amazonia",
+   "title": "Supressão de Vegetação não florestal no bioma Amazônia",
+   "file": "Não-Floresta formato CSV",
+   "id": "a46eb190-35b8-40a2-b726-2c537ef480c2",
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_naofloresta_aml_a&outputFormat=csv",
+   "host": "siscom.ibama.gov.br",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_naofloresta_aml_a&outputFormat=csv"
+  },
+  {
+   "dataset": "unidades-ibama",
+   "title": "Unidades IBAMA",
+   "file": "Unidades IBAMA formato CSV",
+   "id": "93829d42-5811-47c3-8ea6-7d3912cc84b6",
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:adm_edif_pub_civil_ibama_p&outputFormat=csv",
+   "host": "siscom.ibama.gov.br",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:adm_edif_pub_civil_ibama_p&outputFormat="
+  },
+  {
+   "dataset": "vegetacao-de-mangue-brasileira",
+   "title": "Vegetação de Mangue brasileira",
+   "file": "CSV - Vegetação de mangue",
+   "id": "0727c17c-a3a8-4ebc-ae97-345235522391",
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_mangue_a&outputFormat=csv",
+   "host": "siscom.ibama.gov.br",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_mangue_a&outputFormat=csv"
+  }
+ ],
+ "pdf": [],
+ "drift_events": []
 }

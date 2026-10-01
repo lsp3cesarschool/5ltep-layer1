@@ -5,8 +5,8 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-01T19:48:26+00:00",
- "census_at": "2026-10-01T19:06:36+00:00",
+ "generated_at": "2026-10-01T20:24:54+00:00",
+ "census_at": "2026-10-01T20:21:56+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -56,7 +56,34 @@
  "l1_pass": false,
  "drift": {
   "observed": 0,
-  "declared": 0
+  "declared": 0,
+  "files_with_baseline": 112,
+  "first_baseline_at": "2026-10-01T19:06:57+00:00",
+  "last_observed_at": "2026-10-01T19:47:03+00:00"
+ },
+ "coverage": {
+  "files": 129,
+  "read": 112,
+  "empty": 1,
+  "not_tabular": 1,
+  "not_downloaded": 15,
+  "pending": 0,
+  "not_downloaded_by_reason": {
+   "HTTP 404": 14,
+   "no URL": 1
+  },
+  "not_downloaded_by_host": {
+   "HTTP 404 · siscom.ibama.gov.br": 10,
+   "HTTP 404 · stibamadadosabertosprd.blob.core.windows.net": 4,
+   "no URL · —": 1
+  },
+  "read_without_schema": 45,
+  "checked": 67,
+  "conform": 24,
+  "fail_missing_fields": 17,
+  "fail_undeclared_columns": 21,
+  "fail_cells_over_limit": 28,
+  "fail_only_cells": 20
  },
  "findings": {
   "dictionaries": {
@@ -78,9 +105,9 @@
    "tables": 129,
    "by_method": {
     "none": 55,
-    "name": 46,
+    "header": 42,
     "description": 27,
-    "single": 1
+    "name": 5
    },
    "fields_listed_in_description": 27
   },
@@ -143,7 +170,7 @@
    "not_tabular": 1,
    "unreachable_by_reason": {
     "HTTP 404": 14,
-    "other": 1
+    "no URL": 1
    }
   },
   "pdf_extraction": {
