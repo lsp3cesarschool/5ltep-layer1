@@ -1,1 +1,704 @@
-[]
+[
+ {
+  "id": "9f200e1a-dd01-4328-9e44-127b7e7ee966",
+  "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9d371390-73e7-4010-af9f-d8f672697094",
+  "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2d4550a2-6d6b-4e10-8822-7544fdb12099",
+  "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "aa08a6eb-388e-4c20-bfa5-24cfb979ace9",
+  "dataset": "ato-declaratorio-ambiental-ada",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "13f44201-5207-4aa9-92d1-69830f642142",
+  "dataset": "ato-declaratorio-ambiental-ada",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c4c9db21-036a-4eb7-9d96-cb979f8448c9",
+  "dataset": "ato-declaratorio-ambiental-ada",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2d3c0058-d466-49d8-b5dd-b92f46b7da63",
+  "dataset": "dof-autorizacoes-de-exploracao-florestal",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9713832d-dd76-457d-926a-d398ca2f716e",
+  "dataset": "dof-autorizacoes-de-exploracao-florestal",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "762ce581-1096-4e83-bceb-dcaea43d7790",
+  "dataset": "dof-conversoes-de-produtos-florestais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c1414b9c-b760-45e7-8ad2-3a5f226e2e9b",
+  "dataset": "dof-conversoes-de-produtos-florestais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+  "dataset": "dof-transportes-de-produtos-florestais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
+  "dataset": "dof-transportes-de-produtos-florestais",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "45702319-7f8c-4e22-ade4-607935928c5e",
+  "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2b2107f4-8aea-4b27-9c0e-739f9d799026",
+  "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "761dbd28-235b-4199-8613-92245416421e",
+  "dataset": "fiscalizacao-auto-de-infracao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c3aea257-5c96-44ee-9e49-c1d3a439b61d",
+  "dataset": "fiscalizacao-auto-de-infracao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "22dae6f2-41b0-4781-9d4c-a45fb6eee0e9",
+  "dataset": "fiscalizacao-auto-de-infracao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "6f8b8b68-ee86-4ce0-9799-13698ad91062",
+  "dataset": "fiscalizacao-auto-de-infracao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4244aee7-93c3-4b5f-89aa-fa6a09f1344f",
+  "dataset": "fiscalizacao-auto-de-infracao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "67fa25c0-8869-4cd9-8938-36d4c7061e07",
+  "dataset": "fiscalizacao-auto-de-infracao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "67c67a93-f99e-4764-b0ee-4a2911d79c7a",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "27242a34-0690-436a-83e9-572f2e9cbc0e",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0c3335d3-cd37-48f6-9785-9de6864dfeb8",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "26063153-1102-4cc1-ba71-df8f2bb00727",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "122931cd-78da-4064-87b6-3f2a89406c61",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "27706b6b-e099-4cd7-bb87-2a45a47f9446",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f7195f5e-26ac-444a-ad98-d1bd69081d58",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c49419ca-efed-4090-a32e-565c2ec68084",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "76095503-a1e2-4e5d-8f02-fd05aa632522",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a96d568d-2beb-44bd-84ce-19522dd0f856",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3b99c21e-30b2-410b-8823-356bb73012e0",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e8f66578-2df7-424e-bd85-bcbf260243a9",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "45afa8f4-25ec-414d-8ea6-34a70814fc36",
+  "dataset": "multas-ambientais-distribuidas-por-bens-tutelados",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4f9c7227-2bbd-4e88-8599-a3fbe787fb5b",
+  "dataset": "multas-ambientais-distribuidas-por-bens-tutelados",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f7db373a-09a3-48c7-a370-fe71da7dcf8b",
+  "dataset": "multas-ambientais-distribuidas-por-bens-tutelados",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "9d35f568-b77f-453b-9cac-b47b87c85125",
+  "dataset": "pessoas-juridicas-inscritas-no-ctf-app",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "3d3ac98e-6737-429b-a1c3-bfd73b259003",
+  "dataset": "pessoas-juridicas-inscritas-no-ctf-app",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "473e8496-3530-4c95-897a-447db2bf8b7e",
+  "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "53af19d0-356e-4e4a-ba52-98982cdc047c",
+  "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d42ef134-d6f2-4129-a7f7-497c06dcf695",
+  "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "819ac66f-8c8f-465f-9f30-4def5e81ece6",
+  "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "4c02546d-c971-44b2-a007-87e2127c02b3",
+  "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "336f347e-21f9-4bef-82f2-a4984aaa66d6",
+  "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2f8116fe-968a-4efb-9895-3e35f41ee300",
+  "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "2e2cb2ba-95bf-4680-bf65-abc5777e229d",
+  "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "058e6e91-eb09-4df6-8452-e1cfa21eb05e",
+  "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1013018f-2a1d-4af8-8ffd-8acb7219e73a",
+  "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "0dcf7b76-12fd-498e-9ae2-d3de8e5331cb",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "8b4cc0cb-f3c6-4fe3-be79-94ab1867df71",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "78692bb1-017c-4ba4-a954-ff619bdc53ed",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "c60c95d4-ce2b-4d27-884d-1a572a604576",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "7fcc2bcd-fdb0-4be5-b215-37973dc6dd2f",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "ebca9d7f-aceb-4c50-9f48-34f502d2eb55",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d7f3fcc4-4a5d-413e-9213-9f6ede3a1380",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a2adba95-0b96-4ccf-9630-13cc1668396a",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cb9cf40d-f0fa-4304-ae73-3c857c3d59d0",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "e6a02e7b-98c0-44e4-aa7c-2f61b9552e04",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "de5ffe29-1873-4b34-87e9-fa5cb7e1a6a7",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "a262adef-7e05-47fe-b1ab-56cc86980a05",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1fb9c97f-13b8-4385-95e9-8249b974746c",
+  "dataset": "relatorios-de-comercializacao-de-agrotoxicos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "570e4b24-e728-4887-bd6c-864cc8c9f587",
+  "dataset": "relatorios-de-comercializacao-de-agrotoxicos",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "1db30067-2c1a-43f6-abff-d3258cdc376a",
+  "dataset": "sinaflor-corte-de-arvores-isoladas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "26694091-a6ec-45c0-a619-622382f7f7ad",
+  "dataset": "sinaflor-corte-de-arvores-isoladas",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "68dd6c57-9a91-4913-b2ab-dfaac2cbdd8d",
+  "dataset": "sinaflor-empreendimentos-de-base-florestal",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "d20eb3a0-7463-462a-b9b7-f289510eda1c",
+  "dataset": "sinaflor-empreendimentos-de-base-florestal",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "f27715d9-8f23-4c01-8440-5cc0c2567b00",
+  "dataset": "volumes-explorados-if-100",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cc66d4ce-5eca-4a07-bc2c-aa4f567bc82f",
+  "dataset": "volumes-explorados-if-100",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "86a438d0-d599-462e-b771-28f69bcf2395",
+  "dataset": "volumes-explorados-inventario-amostral",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "5d6f99ec-b9e1-4a62-ba03-231ff9f7234d",
+  "dataset": "volumes-explorados-inventario-amostral",
+  "reason": "new",
+  "since": ""
+ },
+ {
+  "id": "cd55e477-2f11-43e5-b994-7be34e275561",
+  "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
+  "reason": "changed",
+  "since": "2026-10-01T19:06:58+00:00"
+ },
+ {
+  "id": "edf548f1-1920-4003-8c24-6d33b10701da",
+  "dataset": "dof-autorizacoes-de-exploracao-florestal",
+  "reason": "changed",
+  "since": "2026-10-01T19:10:27+00:00"
+ },
+ {
+  "id": "5f9d395c-41ec-4b8d-a0c0-3ad1a5b9192a",
+  "dataset": "dof-conversoes-de-produtos-florestais",
+  "reason": "changed",
+  "since": "2026-10-01T19:11:52+00:00"
+ },
+ {
+  "id": "826b90b3-1fff-4ed2-a892-d3bb85370e15",
+  "dataset": "fiscalizacao-notificacao",
+  "reason": "changed",
+  "since": "2026-10-01T19:38:16+00:00"
+ },
+ {
+  "id": "0522b605-5c8e-4d04-a57a-ce217ce9bb61",
+  "dataset": "fiscalizacao-termo-de-demolicao",
+  "reason": "changed",
+  "since": "2026-10-01T19:38:39+00:00"
+ },
+ {
+  "id": "9e715d83-f7eb-4dcc-b686-23252325ebbf",
+  "dataset": "fiscalizacao-termo-de-demolicao",
+  "reason": "changed",
+  "since": "2026-10-01T19:38:42+00:00"
+ },
+ {
+  "id": "e62430da-5c2e-4447-94f7-bd2d92496137",
+  "dataset": "fiscalizacao-termo-de-demolicao",
+  "reason": "changed",
+  "since": "2026-10-01T19:38:43+00:00"
+ },
+ {
+  "id": "e2279c55-804e-409b-aaaf-1b7408d8ca52",
+  "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
+  "reason": "changed",
+  "since": "2026-10-01T19:38:44+00:00"
+ },
+ {
+  "id": "13f87098-c079-458d-93b6-810b708eb1e3",
+  "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
+  "reason": "changed",
+  "since": "2026-10-01T19:38:48+00:00"
+ },
+ {
+  "id": "17d20dcb-1848-4f8a-a972-fa7dfe4a1e7f",
+  "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
+  "reason": "changed",
+  "since": "2026-10-01T19:38:50+00:00"
+ },
+ {
+  "id": "62d099c5-e2b2-4e24-874e-46374cf9fa9e",
+  "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
+  "reason": "changed",
+  "since": "2026-10-01T19:38:52+00:00"
+ },
+ {
+  "id": "0d58b13b-3909-43da-a242-11a3e95100f5",
+  "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
+  "reason": "changed",
+  "since": "2026-10-01T19:38:53+00:00"
+ },
+ {
+  "id": "2c53046a-664c-4d27-8dd1-159b5f054448",
+  "dataset": "fiscalizacao-termo-de-doacao",
+  "reason": "changed",
+  "since": "2026-10-01T19:38:56+00:00"
+ },
+ {
+  "id": "4d98126c-73c1-42fe-8cb0-19fe0374e0be",
+  "dataset": "fiscalizacao-termo-de-doacao",
+  "reason": "changed",
+  "since": "2026-10-01T19:39:00+00:00"
+ },
+ {
+  "id": "7409947a-637a-4ac6-827f-caf439617944",
+  "dataset": "fiscalizacao-termo-de-doacao",
+  "reason": "changed",
+  "since": "2026-10-01T19:39:02+00:00"
+ },
+ {
+  "id": "194b9635-bd97-4555-8ea8-48fab4a9c972",
+  "dataset": "fiscalizacao-termo-de-doacao",
+  "reason": "changed",
+  "since": "2026-10-01T19:39:05+00:00"
+ },
+ {
+  "id": "d9c1208f-1f35-4708-b9fb-abd022de894c",
+  "dataset": "fiscalizacao-termo-de-doacao",
+  "reason": "changed",
+  "since": "2026-10-01T19:39:07+00:00"
+ },
+ {
+  "id": "90d17ce7-6a9b-4bfb-804c-6d52e43af264",
+  "dataset": "fiscalizacao-termo-de-embargo",
+  "reason": "changed",
+  "since": "2026-10-01T19:39:13+00:00"
+ },
+ {
+  "id": "3360882c-a038-4129-a1f0-7013af37926a",
+  "dataset": "fiscalizacao-termo-de-embargo",
+  "reason": "changed",
+  "since": "2026-10-01T19:39:17+00:00"
+ },
+ {
+  "id": "ccdbf737-0fbf-4547-adf6-267204aa4413",
+  "dataset": "fiscalizacao-termo-de-embargo",
+  "reason": "changed",
+  "since": "2026-10-01T19:39:20+00:00"
+ },
+ {
+  "id": "21347475-cd71-41de-a677-f0fbaa8c02b2",
+  "dataset": "fiscalizacao-termo-de-embargo",
+  "reason": "changed",
+  "since": "2026-10-01T19:39:23+00:00"
+ },
+ {
+  "id": "f0073116-1642-4e4d-ac1f-153f3fcd21b4",
+  "dataset": "fiscalizacao-termo-de-incineracao",
+  "reason": "changed",
+  "since": "2026-10-01T19:39:52+00:00"
+ },
+ {
+  "id": "08a27674-c9f2-4cd9-a4b9-2b2e3cf00948",
+  "dataset": "fiscalizacao-termo-de-incineracao",
+  "reason": "changed",
+  "since": "2026-10-01T19:39:53+00:00"
+ },
+ {
+  "id": "589ea44c-cc80-4d1c-9797-af3b8646202c",
+  "dataset": "fiscalizacao-termo-de-incineracao",
+  "reason": "changed",
+  "since": "2026-10-01T19:39:54+00:00"
+ },
+ {
+  "id": "4822e6fa-c4af-4ab8-8ca6-04014f4b3c45",
+  "dataset": "fiscalizacao-termo-de-suspensao",
+  "reason": "changed",
+  "since": "2026-10-01T19:40:11+00:00"
+ },
+ {
+  "id": "5b31395e-1e45-4840-ab84-a2532212caa3",
+  "dataset": "fiscalizacao-termo-de-suspensao",
+  "reason": "changed",
+  "since": "2026-10-01T19:40:14+00:00"
+ },
+ {
+  "id": "0c2237c6-bfca-4ab7-8063-03dc8bf72c11",
+  "dataset": "fiscalizacao-termo-de-suspensao",
+  "reason": "changed",
+  "since": "2026-10-01T19:40:16+00:00"
+ },
+ {
+  "id": "3d9c4d47-9d44-4971-922c-4a9143d071a6",
+  "dataset": "multas-ambientais-distribuidas-por-bens-tutelados",
+  "reason": "changed",
+  "since": "2026-10-01T19:40:27+00:00"
+ },
+ {
+  "id": "5baa8719-cbc7-4a31-956c-d8d016ab5672",
+  "dataset": "relatorios-de-comercializacao-de-agrotoxicos",
+  "reason": "changed",
+  "since": "2026-10-01T19:43:06+00:00"
+ },
+ {
+  "id": "b36eeee5-f885-45e3-8926-3b822be5735a",
+  "dataset": "sinaflor-pmfs-outros-biomas",
+  "reason": "changed",
+  "since": "2026-10-01T19:44:11+00:00"
+ },
+ {
+  "id": "09a00f90-3eba-4a57-a557-dfdf6030c188",
+  "dataset": "sinaflor-uso-alternativo-do-solo",
+  "reason": "changed",
+  "since": "2026-10-01T19:44:29+00:00"
+ },
+ {
+  "id": "eeb2d948-dcdd-44c8-916a-1dd131deacfb",
+  "dataset": "sinaflor-uso-alternativo-do-solo-agricultor-familiar",
+  "reason": "changed",
+  "since": "2026-10-01T19:44:42+00:00"
+ },
+ {
+  "id": "8b868981-3062-414c-9bd9-e6a896c050fb",
+  "dataset": "volumes-explorados-inventario-amostral",
+  "reason": "changed",
+  "since": "2026-10-01T19:47:03+00:00"
+ },
+ {
+  "id": "26307dda-12a0-47e2-ae7e-ca8137d22b13",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "093b6f72-11c8-431f-a17e-3eaa57026dff",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "c5b84b15-57f4-4c83-a4be-2a334fa10709",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "90ba133b-0d56-4910-8d79-16cb8ff96428",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "4b91ca8c-6950-4f43-857b-9d80ec9edfb8",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "8f88b43e-287a-470b-a730-db440f9e37fa",
+  "dataset": "fiscalizacao-termo-de-embargo",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "b0a63e0d-e656-455a-8bff-4672dc37ca44",
+  "dataset": "imagens-aereas-do-desastre-mariana-mg",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "6bde1c16-692f-4706-be68-bd2b3c1ac7d4",
+  "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "85efc1b6-c4bb-4e1b-96cc-8fb4e39dd811",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "c10fc1fd-3c85-4e12-a9cd-79fe464602c3",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "b213035b-e0b7-4765-9113-ad596322aceb",
+  "dataset": "siema-comunicado-de-acidente-ambiental",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "3d6fb0d5-4efd-4f22-8321-a075d1d48c38",
+  "dataset": "sinaflor-empreendimentos-de-base-florestal",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "a46eb190-35b8-40a2-b726-2c537ef480c2",
+  "dataset": "supressao-de-vegetacao-nao-florestal-no-bioma-amazonia",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "93829d42-5811-47c3-8ea6-7d3912cc84b6",
+  "dataset": "unidades-ibama",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "0727c17c-a3a8-4ebc-ae97-345235522391",
+  "dataset": "vegetacao-de-mangue-brasileira",
+  "reason": "error",
+  "since": ""
+ }
+]

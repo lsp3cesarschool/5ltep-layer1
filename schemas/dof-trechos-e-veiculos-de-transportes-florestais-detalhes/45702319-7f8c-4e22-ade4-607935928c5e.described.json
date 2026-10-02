@@ -1,0 +1,77 @@
+{
+ "fields": [
+  {
+   "name": "Nº de Série do DOF",
+   "type": "string",
+   "description": "Número de série identificador do DOF, gerado pelos sistemas. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Código de Controle do DOF",
+   "type": "string",
+   "description": "Código de controle utilizado para verificar a validade do DOF. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Data de Emissão do DOF",
+   "type": "string",
+   "description": "Data da emissão do DOF. Formato: *Texto formatado em DD/MM/AAAA*;",
+   "declaredType": "Texto formatado em DD/MM/AAAA"
+  },
+  {
+   "name": "Ano",
+   "type": "string",
+   "description": "Ano da data de emissão do DOF. Formato: *Texto formatado em AAAA*;",
+   "declaredType": "Texto formatado em AAAA"
+  },
+  {
+   "name": "UF de Origem",
+   "type": "string",
+   "description": "Sigla da unidade federativa do município de origem da carga. Formato: *Texto*.",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Número do Trecho",
+   "type": "number",
+   "description": "Número sequencial do trecho de rota dentro um mesmo DOF. Formato: *Número*;",
+   "declaredType": "Número"
+  },
+  {
+   "name": "Município Início",
+   "type": "string",
+   "description": "Nome do município de partida do trecho da rota. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Município Fim",
+   "type": "string",
+   "description": "Nome do município de destino do trecho da rota. Formato: *texto*;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "Tipo de Transporte",
+   "type": "string",
+   "description": "Descrição do modal de transporte utilizada naquele trecho. Formato: *texto*;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "Placa(s)/Registro do Veículo",
+   "type": "string",
+   "description": "Placas dos veículos informados utilizados no transporte da carga durante todo o percurso, separadas por ‘/ ‘. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Sistema Originário",
+   "type": "string",
+   "description": "Sistema Originário do DOF. Formato: *Texto*;",
+   "declaredType": "Texto"
+  }
+ ],
+ "x5ltep": {
+  "status": "described",
+  "source": {
+   "kind": "description",
+   "resource_id": "45702319-7f8c-4e22-ade4-607935928c5e"
+  }
+ }
+}

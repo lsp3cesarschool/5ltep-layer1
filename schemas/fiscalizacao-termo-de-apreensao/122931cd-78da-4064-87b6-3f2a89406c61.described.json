@@ -1,0 +1,172 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "any",
+   "description": "Chave que identifica o termo de apreensão, em formato numérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "CD_TAD",
+   "type": "any",
+   "description": "Código impresso no formulário que compõe a identificação do termo, junto com a série, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "CD_SERIE_TAD",
+   "type": "any",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo junto com o número, em formato texto. Obs: nos Termos de Apreensão alfanuméricos, emitidos a partir de 08.10.2019 pelo Sistema do Auto de Infração Eletrônico (AIe), esse campo de dado não é preenchido.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ID_ESPECIME",
+   "type": "any",
+   "description": "Chave que identifica o espécime apreendido, em formato numérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "CD_ESPECIME",
+   "type": "any",
+   "description": "Código do espécime apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "QT_ESPECIME",
+   "type": "any",
+   "description": "Quantidade de espécimes apreendidos, em formato numérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_UNIDADE_MEDIDA",
+   "type": "any",
+   "description": "Unidade de medida da quantidade de espécimes apreendidos, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_PRODUTO",
+   "type": "any",
+   "description": "Descrição do produto originado a partir do espécime apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ST_CARACTERISTICA",
+   "type": "any",
+   "description": "Descrição da característica ou situação em que os espécimes foram apreendidos, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ST_PERECIVEL",
+   "type": "any",
+   "description": "Indica se o espécime apreendido é perecível: S - Sim; N - Não.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "TP_INFRACAO",
+   "type": "any",
+   "description": "Tipo de infração associada ao espécime apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_GRUPO",
+   "type": "any",
+   "description": "Identifica o grupo de organismos dos espécimes apreendidos, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ID_TAXONOMIA",
+   "type": "any",
+   "description": "Chave oriunda do sistema Sistaxon, que identifica a taxonomia do espécime apreendido, em formato numérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NO_CIENTIFICO",
+   "type": "any",
+   "description": "Nome científico do espécime apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NO_POPULAR",
+   "type": "any",
+   "description": "Nome popular do espécime apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ST_CITES",
+   "type": "any",
+   "description": "Identifica se a espécie do espécime apreendido consta na lista de espécies Cites (Convention on International Trade in Endangered Species of Wild Fauna and Flora): S - Sim; N - Não.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_OBSERVACAO",
+   "type": "any",
+   "description": "Descreve demais circunstâncias da apreensão e da situação do espécime, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DT_ALTERACAO",
+   "type": "any",
+   "description": "Data da última alteração do registro de espécime no formato YYYY-MM-DD.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "VL_ESPECIME_APREENDIDO",
+   "type": "any",
+   "description": "Valor do espécime apreendido, em formato numérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "CD_TERMO_DESTINO",
+   "type": "any",
+   "description": "Código do termo de fiscalização relativo à destinação do espécime apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_TIPO_TERMO_DESTINO",
+   "type": "any",
+   "description": "Tipo de destinação dada para o espécime apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DT_APREENSAO",
+   "type": "any",
+   "description": "Data em que o termo de apreensão foi lavrado no formato YYYY-MM-DD.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "any",
+   "description": "Data e horário referente à última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601), no formato YYYY-MM-DD hh24:mi:ss",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "described",
+  "source": {
+   "kind": "description",
+   "resource_id": "122931cd-78da-4064-87b6-3f2a89406c61"
+  }
+ }
+}

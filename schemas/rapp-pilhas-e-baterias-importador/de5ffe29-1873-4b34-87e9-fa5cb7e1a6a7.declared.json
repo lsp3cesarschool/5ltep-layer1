@@ -1,0 +1,65 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "description": "Número de inscrição da empresa declarante no Cadastro Nacional da Pessoa Jurídica (CNPJ).",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Ano do relatório",
+   "type": "integer",
+   "description": "Ano de referência das informações apresentadas no relatório.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "CNPJ Destinador",
+   "type": "string",
+   "description": "Número de inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ) da empresa responsável pelo tratamento ou destinação final ambientalmente adequada das pilhas e baterias.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Licença de Operação",
+   "type": "string",
+   "description": "Número ou identificação da Licença de Operação da empresa responsável pelo tratamento ou destinação final das pilhas e baterias.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Validade da licença",
+   "type": "date",
+   "description": "Data de validade da Licença de Operação da empresa responsável pelo tratamento ou destinação final.",
+   "declaredType": "DATE"
+  },
+  {
+   "name": "Atividades da LO",
+   "type": "string",
+   "description": "Descrição das atividades autorizadas na Licença de Operação relacionadas ao tratamento ou à destinação final ambientalmente adequada das pilhas e baterias.",
+   "declaredType": "TEXT"
+  },
+  {
+   "name": "Método de destinação e/ou tratamento",
+   "type": "string",
+   "description": "Método empregado de destinação e tratamento ambientalmente adequada das pilhas e baterias.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "CNPJ Aterro",
+   "type": "string",
+   "description": "Número de inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ) do aterro utilizado para a destinação final, quando o método de destinação informado for Aterro Industrial Classe I.",
+   "declaredType": "VARCHAR"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "c79fe74d-1bbc-4a4c-a804-22c3cb551099",
+   "dictionary_name": "Metadados - Destinação",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/c79fe74d-1bbc-4a4c-a804-22c3cb551099/download/metadados-destinacao.csv",
+   "sha256": "ba40701577e2a243a14c2eba7dadadac90f0fb55635b711037257bfac81fd707",
+   "reader": "csv",
+   "part": "",
+   "link_method": "name"
+  }
+ }
+}
