@@ -82,7 +82,8 @@ portal.json (um valor: a URL do portal)
 
 ## A escala de maturidade
 
-Cada arquivo tabular (um CSV, ou um zip com CSVs) recebe um nível a partir do que o portal declara sobre ele:
+Cada arquivo tabular (CSV, XLSX, XLS, ODS, Parquet, JSON, XML, ou um zip com qualquer um deles) recebe
+um nível a partir do que o portal declara sobre ele:
 
 | Nível | Critério (lido da API CKAN) |
 |---|---|
@@ -123,9 +124,11 @@ legível por máquina, esquema extraído de PDF (depois de confirmado), lista na
 
 ## Validação
 
-Cada arquivo é lido em stream: um CSV direto da resposta HTTP, um zip a partir de um arquivo temporário,
-membro por membro. Nada é guardado além de contagens. Codificação e delimitador são detectados; bytes que
-não decodificam são contados. Para cada arquivo:
+Cada arquivo é lido em stream: CSV, JSON (uma lista de registros) e XML (elementos repetidos) direto da
+resposta HTTP; zip, Parquet ou XLS a partir de um arquivo temporário, membro por membro, aba por aba ou
+lote por lote. O formato é reconhecido pelos primeiros bytes, não pelo rótulo no portal. Um zip dentro
+de um zip é aberto um nível abaixo. Nada é guardado além de contagens. Codificação e delimitador são
+detectados nos formatos de texto; bytes que não decodificam são contados. Para cada arquivo:
 
 - o **esquema observado** (cabeçalho, delimitador, codificação e o tipo mais estreito em que cabem as
   primeiras 5.000 linhas de cada coluna) é gravado em `schemas/<conjunto>/<recurso>.observed.json`;
@@ -136,6 +139,13 @@ não decodificam são contados. Para cada arquivo:
 Formatos que o dicionário não declara (uma data escrita `03/05/2022`, vírgula decimal) são tirados do
 que a maioria dos valores da amostra segue e registrados como *inferidos*: a verificação é se os
 valores são consistentes com o tipo declarado num formato, não se seguem a ISO 8601.
+
+**Uma tabela, vários formatos.** Quando um conjunto publica a mesma tabela em vários formatos (o mesmo
+nome com `CSV`, `XLSX`, `JSON`...), ela conta como uma tabela: a primeira na ordem CSV, ZIP, Parquet,
+XLSX, ODS, XLS, JSON, XML é validada inteira, e as outras só têm as colunas comparadas (mesmas colunas,
+ou quais faltam ou sobram). **Não é tabela:** um zip só com documentos ou mapas é listado à parte e fica
+fora do universo tabular; um link que devolve uma página web ou um PDF no lugar da tabela é falha de
+link. Formatos geográficos (shapefile, KML, GeoJSON, WMS/WFS) e tabelas em HTML ficam fora do escopo.
 
 A primeira execução num portal valida todos os arquivos, em lotes que cabem no limite de tempo do
 runner. As seguintes validam só o que é novo, alterado (URL, metadados do CKAN, ou ETag, Last-Modified
@@ -303,7 +313,7 @@ src/
   extract.py                as três etapas do PDF
   linker.py                 qual dicionário descreve qual arquivo
   types_map.py              tipos declarados para o Table Schema
-  tabular.py                arquivos em stream (HTTP, zip), codificação e delimitador
+  tabular.py                arquivos em stream (CSV, zip, planilhas, Parquet, JSON, XML)
   validate.py               esquema observado e conformidade (leitores de célula do Frictionless)
   work.py                   fila de trabalho e lotes
   drift.py                  eventos de deriva e issues
@@ -338,6 +348,8 @@ mesmo nome; os valores usados ficam registrados no resumo. Os principais:
 - Os tipos de um DataStore podem ter sido inferidos pelo carregador do portal, não declarados pelo
   publicador; contam para o nível de maturidade, mas são a última opção para a validação.
 - Dicionários em PDF sem camada de texto (digitalizações) não são lidos (sem OCR).
+- Arquivos XLS e ODS são lidos inteiros em memória (limite `MAX_SHEET_BYTES`); outros formatos de uma
+  tabela maiores que `DISTRIBUTION_CHECK_MAX_BYTES` não são comparados.
 - Nomes que diferem só na grafia não reprovam a conformidade; são relatados.
 - O oráculo mede *nomes* de campos; os tipos declarados extraídos de um PDF só são verificados por pessoas.
 

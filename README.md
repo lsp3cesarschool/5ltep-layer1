@@ -79,7 +79,8 @@ portal.json (one value: the portal URL)
 
 ## The maturity scale
 
-Every tabular file (a CSV, or a zip holding CSVs) gets a level from what the portal declares about it:
+Every tabular file (CSV, XLSX, XLS, ODS, Parquet, JSON, XML, or a zip holding any of them) gets a level
+from what the portal declares about it:
 
 | Level | Criterion (read from the CKAN API) |
 |---|---|
@@ -120,9 +121,11 @@ dictionary, schema extracted from a PDF (once confirmed), list in the descriptio
 
 ## Validation
 
-Every file is read as a stream: a plain CSV straight from the HTTP response, a zip from a temporary
-file, member by member. Nothing is kept but counts. Encoding and delimiter are detected; bytes that do
-not decode are counted. For each file:
+Every file is read as a stream: CSV, JSON (a list of records) and XML (repeated elements) straight from
+the HTTP response; a zip, Parquet or XLS from a temporary file, member by member, sheet by sheet or
+batch by batch. The format is recognised from the first bytes, not from the label on the portal. A zip
+inside a zip is opened one level down. Nothing is kept but counts. Encoding and delimiter are detected
+for text formats; bytes that do not decode are counted. For each file:
 
 - the **observed schema** (header, delimiter, encoding, and the narrowest type the first 5,000 rows of
   each column fit) is written to `schemas/<dataset>/<resource>.observed.json`;
@@ -133,6 +136,14 @@ not decode are counted. For each file:
 Formats a dictionary does not declare (a date written `03/05/2022`, a decimal comma) are taken from
 what most sampled values follow and recorded as *inferred*: the check is whether the values are
 consistent with the declared type in one format, not whether they follow ISO 8601.
+
+**One table, several formats.** When a dataset publishes the same table in several formats (the
+same name with `CSV`, `XLSX`, `JSON`...), it counts as one table: the first in the order CSV, ZIP,
+Parquet, XLSX, ODS, XLS, JSON, XML is validated in full, and the others are only checked for their
+columns (same columns, or which are missing or extra). **Not a table:** a zip holding only documents
+or maps is listed apart and left out of the tabular universe; a link that returns a web page or a PDF
+instead of the table is a link failure. Geographic formats (shapefile, KML, GeoJSON, WMS/WFS) and HTML
+tables are out of scope.
 
 The first run of a portal validates every file, in batches that fit the runner's time limit. Later
 runs validate only what is new, changed (URL, CKAN metadata, or the server's ETag, Last-Modified or
@@ -294,7 +305,7 @@ src/
   extract.py                the three PDF stages
   linker.py                 which dictionary describes which file
   types_map.py              declared types to Table Schema
-  tabular.py                files as streams (HTTP, zip), encoding and delimiter
+  tabular.py                files as streams (CSV, zip, spreadsheets, Parquet, JSON, XML)
   validate.py               observed schema and conformance (Frictionless cell readers)
   work.py                   work queue and batches
   drift.py                  drift events and issues
@@ -329,6 +340,8 @@ the same name; the values used are recorded in the summary. The main ones:
 - A DataStore's types may have been inferred by the portal's loader, not declared by the publisher;
   they count for the maturity level but are the last choice for validation.
 - PDF dictionaries without a text layer (scans) are not read (no OCR).
+- XLS and ODS files are read whole in memory (limit `MAX_SHEET_BYTES`); other formats of a table larger
+  than `DISTRIBUTION_CHECK_MAX_BYTES` are not compared.
 - Names that differ only in spelling do not fail conformance; they are reported.
 - The oracle measures field *names*; declared types extracted from a PDF are checked only by people.
 
