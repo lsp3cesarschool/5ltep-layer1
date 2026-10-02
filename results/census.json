@@ -4,7 +4,7 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-02T13:52:48+00:00",
+ "generated_at": "2026-10-02T22:15:46+00:00",
  "datasets": [
   {
    "name": "antropizacao-dos-biomas-extra-amazonicos",
@@ -4255,8 +4255,8 @@
      "link": {
       "dictionary": "c595bf2f-ddcc-4753-b814-6a55f15838c7",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.85
      },
      "level": 2
     },
@@ -4274,8 +4274,8 @@
      "link": {
       "dictionary": "c595bf2f-ddcc-4753-b814-6a55f15838c7",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.85
      },
      "level": 2
     }
@@ -4634,8 +4634,8 @@
      "link": {
       "dictionary": "fe4cfcc9-10f6-488d-a699-fe937ec4b1fe",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.556
      },
      "level": 2
     },
@@ -4653,8 +4653,8 @@
      "link": {
       "dictionary": "fe4cfcc9-10f6-488d-a699-fe937ec4b1fe",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.556
      },
      "level": 2
     },
@@ -4691,7 +4691,7 @@
      "link": {
       "dictionary": "933f121d-14ca-4f41-88fb-19906c7303ed",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -4710,7 +4710,7 @@
      "link": {
       "dictionary": "933f121d-14ca-4f41-88fb-19906c7303ed",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -4748,8 +4748,8 @@
      "link": {
       "dictionary": "3e692f9a-35ff-4f0e-a966-85cc9c179641",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.6
      },
      "level": 2
     },
@@ -4767,8 +4767,8 @@
      "link": {
       "dictionary": "3e692f9a-35ff-4f0e-a966-85cc9c179641",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.6
      },
      "level": 2
     },
@@ -4805,8 +4805,8 @@
      "link": {
       "dictionary": "b31b76fc-192c-44b7-a44e-3ce2157b7751",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.556
      },
      "level": 2
     },
@@ -4824,8 +4824,8 @@
      "link": {
       "dictionary": "b31b76fc-192c-44b7-a44e-3ce2157b7751",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.556
      },
      "level": 2
     }
@@ -5083,7 +5083,7 @@
      "link": {
       "dictionary": "a5d344bc-6cc6-453e-b0e3-83763692c851",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -5102,7 +5102,7 @@
      "link": {
       "dictionary": "a5d344bc-6cc6-453e-b0e3-83763692c851",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -5197,7 +5197,7 @@
      "link": {
       "dictionary": "5e1a08a5-da03-4c8a-8c01-5206b629e5bc",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -5216,7 +5216,7 @@
      "link": {
       "dictionary": "5e1a08a5-da03-4c8a-8c01-5206b629e5bc",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -5254,7 +5254,7 @@
      "link": {
       "dictionary": "415f379b-740e-4d75-96e0-3f7d88a81c3b",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -5273,7 +5273,7 @@
      "link": {
       "dictionary": "415f379b-740e-4d75-96e0-3f7d88a81c3b",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -5368,7 +5368,7 @@
      "link": {
       "dictionary": "c79fe74d-1bbc-4a4c-a804-22c3cb551099",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -5387,7 +5387,7 @@
      "link": {
       "dictionary": "c79fe74d-1bbc-4a4c-a804-22c3cb551099",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -6041,8 +6041,8 @@
      "link": {
       "dictionary": "1374f568-4a2b-4ff1-b4c2-a39a2477899d",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.6
      },
      "level": 2
     },

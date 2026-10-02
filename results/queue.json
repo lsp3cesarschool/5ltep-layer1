@@ -1,1 +1,488 @@
-[]
+[
+ {
+  "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
+  "dataset": "dof-transportes-de-produtos-florestais",
+  "reason": "schema",
+  "since": ""
+ },
+ {
+  "id": "26307dda-12a0-47e2-ae7e-ca8137d22b13",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "093b6f72-11c8-431f-a17e-3eaa57026dff",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "c5b84b15-57f4-4c83-a4be-2a334fa10709",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "90ba133b-0d56-4910-8d79-16cb8ff96428",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "4b91ca8c-6950-4f43-857b-9d80ec9edfb8",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "8f88b43e-287a-470b-a730-db440f9e37fa",
+  "dataset": "fiscalizacao-termo-de-embargo",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "b0a63e0d-e656-455a-8bff-4672dc37ca44",
+  "dataset": "imagens-aereas-do-desastre-mariana-mg",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "6bde1c16-692f-4706-be68-bd2b3c1ac7d4",
+  "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "85efc1b6-c4bb-4e1b-96cc-8fb4e39dd811",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "78692bb1-017c-4ba4-a954-ff619bdc53ed",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "c60c95d4-ce2b-4d27-884d-1a572a604576",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "c10fc1fd-3c85-4e12-a9cd-79fe464602c3",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "cb9cf40d-f0fa-4304-ae73-3c857c3d59d0",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "e6a02e7b-98c0-44e4-aa7c-2f61b9552e04",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "b213035b-e0b7-4765-9113-ad596322aceb",
+  "dataset": "siema-comunicado-de-acidente-ambiental",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "26694091-a6ec-45c0-a619-622382f7f7ad",
+  "dataset": "sinaflor-corte-de-arvores-isoladas",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "3d6fb0d5-4efd-4f22-8321-a075d1d48c38",
+  "dataset": "sinaflor-empreendimentos-de-base-florestal",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "68dd6c57-9a91-4913-b2ab-dfaac2cbdd8d",
+  "dataset": "sinaflor-empreendimentos-de-base-florestal",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "d20eb3a0-7463-462a-b9b7-f289510eda1c",
+  "dataset": "sinaflor-empreendimentos-de-base-florestal",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "a46eb190-35b8-40a2-b726-2c537ef480c2",
+  "dataset": "supressao-de-vegetacao-nao-florestal-no-bioma-amazonia",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "93829d42-5811-47c3-8ea6-7d3912cc84b6",
+  "dataset": "unidades-ibama",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "0727c17c-a3a8-4ebc-ae97-345235522391",
+  "dataset": "vegetacao-de-mangue-brasileira",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "2873d587-4e02-44c9-a9e6-29bb6c7bacea",
+  "dataset": "arrecadacao-com-tcfa",
+  "reason": "reader",
+  "since": "2026-10-01T19:06:57+00:00"
+ },
+ {
+  "id": "d5c0fa8b-b522-446a-a281-15f587783935",
+  "dataset": "autorizacao-ambiental-para-o-transporte-interestadual-de-produtos-perigosos-aatipp",
+  "reason": "reader",
+  "since": "2026-10-01T19:10:24+00:00"
+ },
+ {
+  "id": "4aed5817-45fd-49b9-ad42-e5d8addc8621",
+  "dataset": "certificados-ambientais",
+  "reason": "reader",
+  "since": "2026-10-01T19:10:27+00:00"
+ },
+ {
+  "id": "21e21d34-b71c-4f41-8ad3-ee5743fb8e00",
+  "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
+  "reason": "reader",
+  "since": "2026-10-01T19:36:04+00:00"
+ },
+ {
+  "id": "9ae4b7c3-6dd2-4e83-a117-7411c2cad222",
+  "dataset": "efluentes-liquidos",
+  "reason": "reader",
+  "since": "2026-10-01T19:36:34+00:00"
+ },
+ {
+  "id": "74e90d52-2540-4b75-a1b8-6336d25f81e3",
+  "dataset": "emissoes-de-poluentes-atmosfericos",
+  "reason": "reader",
+  "since": "2026-10-01T19:36:38+00:00"
+ },
+ {
+  "id": "e6a5c7ff-4dea-4b34-bd2e-9486cc6fcd56",
+  "dataset": "evolucao-das-receitas-arrecadadas",
+  "reason": "reader",
+  "since": "2026-10-01T19:36:39+00:00"
+ },
+ {
+  "id": "cc7367e8-10b8-4a42-8f4a-e1ef02867ed5",
+  "dataset": "exploracao-economica-da-madeira-ou-lenha-e-subprodutos-florestais",
+  "reason": "reader",
+  "since": "2026-10-01T19:36:39+00:00"
+ },
+ {
+  "id": "ec986109-95a4-4361-ac9b-197883eae365",
+  "dataset": "extracao-e-tratamento-de-produtos-minerais",
+  "reason": "reader",
+  "since": "2026-10-01T19:36:40+00:00"
+ },
+ {
+  "id": "c7d0f645-ee23-4efd-9d3f-a270a97ffd75",
+  "dataset": "fabricante-de-produtos-que-utilizam-materia-prima-de-origem-florestal",
+  "reason": "reader",
+  "since": "2026-10-01T19:36:40+00:00"
+ },
+ {
+  "id": "eb580641-414e-4ae1-b430-d7b71c8c6709",
+  "dataset": "fila-de-acompanhamento-de-registro-de-agrotoxicos-quimicos",
+  "reason": "reader",
+  "since": "2026-10-01T19:36:42+00:00"
+ },
+ {
+  "id": "3325463b-3f90-4cd6-a033-e3c7cbe1b8ea",
+  "dataset": "fiscalizacao-auto-de-infracao",
+  "reason": "reader",
+  "since": "2026-10-01T19:37:53+00:00"
+ },
+ {
+  "id": "96c79c3e-a979-47a1-9a05-1eba3df4ce20",
+  "dataset": "fiscalizacao-auto-de-infracao",
+  "reason": "reader",
+  "since": "2026-10-01T19:37:58+00:00"
+ },
+ {
+  "id": "160b14e2-d7d8-40aa-b06c-295575a5fb9c",
+  "dataset": "fiscalizacao-auto-de-infracao",
+  "reason": "reader",
+  "since": "2026-10-01T19:38:00+00:00"
+ },
+ {
+  "id": "8fd0af49-f045-4fc5-a1cc-d5def2efd3b5",
+  "dataset": "fiscalizacao-auto-de-infracao",
+  "reason": "reader",
+  "since": "2026-10-01T19:38:05+00:00"
+ },
+ {
+  "id": "afe30a48-eb96-4915-8f13-c4e838dae033",
+  "dataset": "fiscalizacao-auto-de-infracao",
+  "reason": "reader",
+  "since": "2026-10-01T19:38:08+00:00"
+ },
+ {
+  "id": "2f335d4d-6707-4862-995d-f2fb6c7dd052",
+  "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b",
+  "reason": "reader",
+  "since": "2026-10-01T19:38:55+00:00"
+ },
+ {
+  "id": "92f92021-28df-42b7-bbbb-a4f77b3a078e",
+  "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b",
+  "reason": "reader",
+  "since": "2026-10-01T19:38:55+00:00"
+ },
+ {
+  "id": "aba90ea8-e2f3-431e-a0cc-1ae24773843b",
+  "dataset": "fiscalizacao-termo-de-embargo",
+  "reason": "reader",
+  "since": "2026-10-01T19:39:10+00:00"
+ },
+ {
+  "id": "0a4284aa-e142-4d6d-823f-9958f26c829e",
+  "dataset": "fiscalizacao-termo-de-embargo",
+  "reason": "reader",
+  "since": "2026-10-01T19:39:19+00:00"
+ },
+ {
+  "id": "04f7998d-58e1-4717-85f5-401dc9994b19",
+  "dataset": "fiscalizacao-termo-de-embargo",
+  "reason": "reader",
+  "since": "2026-10-01T19:39:25+00:00"
+ },
+ {
+  "id": "24251a10-7e8d-424d-878c-8d2aa908cf7b",
+  "dataset": "fiscalizacao-termo-de-soltura",
+  "reason": "reader",
+  "since": "2026-10-01T19:39:55+00:00"
+ },
+ {
+  "id": "8911eaf9-ebb9-4821-a4d7-b5e2cfe3c390",
+  "dataset": "fiscalizacao-termo-de-soltura",
+  "reason": "reader",
+  "since": "2026-10-01T19:39:57+00:00"
+ },
+ {
+  "id": "d57ca40d-d5c0-4bd5-8bc1-cdfb79ae1a3e",
+  "dataset": "fiscalizacao-termo-de-soltura",
+  "reason": "reader",
+  "since": "2026-10-01T19:39:59+00:00"
+ },
+ {
+  "id": "6a4222f1-353f-4f61-a6a9-38d8f4f50c3e",
+  "dataset": "fiscalizacao-termo-de-soltura",
+  "reason": "reader",
+  "since": "2026-10-01T19:40:00+00:00"
+ },
+ {
+  "id": "7dad7932-3761-456c-93fa-32413ba48703",
+  "dataset": "fiscalizacao-termo-de-soltura",
+  "reason": "reader",
+  "since": "2026-10-01T19:40:05+00:00"
+ },
+ {
+  "id": "98d0aeb5-4843-421a-9e3c-cfb8d8b885e5",
+  "dataset": "fonte-energetica",
+  "reason": "reader",
+  "since": "2026-10-01T19:40:16+00:00"
+ },
+ {
+  "id": "dccac66a-382f-418d-beb4-65c1c2c5991d",
+  "dataset": "fontes-energeticas",
+  "reason": "reader",
+  "since": "2026-10-01T19:40:17+00:00"
+ },
+ {
+  "id": "9b04fdf7-d6da-4621-a1e7-460b53b399a6",
+  "dataset": "importador-exportador-de-fauna-e-flora-produtos-parte",
+  "reason": "reader",
+  "since": "2026-10-01T19:40:23+00:00"
+ },
+ {
+  "id": "6fe07a2f-718a-4d04-a386-2a1cd3e96afb",
+  "dataset": "julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama",
+  "reason": "reader",
+  "since": "2026-10-01T19:40:24+00:00"
+ },
+ {
+  "id": "9e4873d3-10d8-464f-a883-88be3b3abf06",
+  "dataset": "licencas-ambientais-de-atividades-e-empreendimentos-licenciados-pelo-ibama",
+  "reason": "reader",
+  "since": "2026-10-01T19:40:24+00:00"
+ },
+ {
+  "id": "69580d03-480d-4380-a2f7-1ffdd9a4e848",
+  "dataset": "pescador-profissional",
+  "reason": "reader",
+  "since": "2026-10-01T19:40:40+00:00"
+ },
+ {
+  "id": "3a9b322c-ac27-4e36-bc07-a81fff885dac",
+  "dataset": "pessoas-juridicas-inscritas-no-ctf-aida",
+  "reason": "reader",
+  "since": "2026-10-01T19:40:41+00:00"
+ },
+ {
+  "id": "cc55dbc7-f200-4f84-916b-534c02d2fe4a",
+  "dataset": "plantacao-vegetacao-nativa",
+  "reason": "reader",
+  "since": "2026-10-01T19:41:43+00:00"
+ },
+ {
+  "id": "82312442-c03c-4527-a9df-45d2cc78dd50",
+  "dataset": "produtos-reciclados",
+  "reason": "reader",
+  "since": "2026-10-01T19:41:44+00:00"
+ },
+ {
+  "id": "3cf1fc83-c401-4b9f-b2fd-3ffddb35ddcb",
+  "dataset": "rapp-pilhas-e-baterias-reciclador",
+  "reason": "reader",
+  "since": "2026-10-01T19:43:05+00:00"
+ },
+ {
+  "id": "4f1236db-ec33-465a-80c7-d31ac05338ee",
+  "dataset": "residuos-solidos-armazenador",
+  "reason": "reader",
+  "since": "2026-10-01T19:43:10+00:00"
+ },
+ {
+  "id": "532a6fec-dfc2-4b49-ab95-86d46b9cd4f3",
+  "dataset": "residuos-solidos-destinador",
+  "reason": "reader",
+  "since": "2026-10-01T19:43:11+00:00"
+ },
+ {
+  "id": "3033f34f-b622-4da6-a188-f9a56cbb2b2a",
+  "dataset": "residuos-solidos-gerador-a-partir-de-2012",
+  "reason": "reader",
+  "since": "2026-10-01T19:43:13+00:00"
+ },
+ {
+  "id": "5d78cd9f-a990-4d65-acf3-aa5a18937143",
+  "dataset": "residuos-solidos-gerador-anterior-a-2012",
+  "reason": "reader",
+  "since": "2026-10-01T19:43:34+00:00"
+ },
+ {
+  "id": "5907b69f-64dd-47d1-b9ee-f81eb19c6012",
+  "dataset": "residuos-solidos-transportador",
+  "reason": "reader",
+  "since": "2026-10-01T19:43:43+00:00"
+ },
+ {
+  "id": "dada25a0-4e75-4a5e-8b8a-a9f5767127f3",
+  "dataset": "silvicultura",
+  "reason": "reader",
+  "since": "2026-10-01T19:43:44+00:00"
+ },
+ {
+  "id": "e257dc08-786d-4223-86e5-9e8597fb716d",
+  "dataset": "sinaflor-autorizacao-de-supressao-de-vegetacao",
+  "reason": "reader",
+  "since": "2026-10-01T19:43:45+00:00"
+ },
+ {
+  "id": "7a275dac-4a9c-4664-a6b5-b4ff12af3786",
+  "dataset": "sinaflor-autorizacao-de-utilizacao-de-materia-prima-florestal",
+  "reason": "reader",
+  "since": "2026-10-01T19:43:49+00:00"
+ },
+ {
+  "id": "26f5a30e-53d2-4509-b5b3-5e980ae706f1",
+  "dataset": "sinaflor-autorizacao-especial",
+  "reason": "reader",
+  "since": "2026-10-01T19:43:52+00:00"
+ },
+ {
+  "id": "402741a2-8072-4365-b5d8-4dcb915be169",
+  "dataset": "sinaflor-exploracao-de-floresta-plantada",
+  "reason": "reader",
+  "since": "2026-10-01T19:44:04+00:00"
+ },
+ {
+  "id": "fac201c9-8e09-49d5-9113-1608cf45b8c8",
+  "dataset": "sinaflor-pmfs-amazonia-legal",
+  "reason": "reader",
+  "since": "2026-10-01T19:44:08+00:00"
+ },
+ {
+  "id": "a913bfaa-61c1-43da-a98e-5a5a366eaeec",
+  "dataset": "sinaflor-poa-amazonia-legal",
+  "reason": "reader",
+  "since": "2026-10-01T19:44:14+00:00"
+ },
+ {
+  "id": "b2f0b4a5-0664-469d-aa6a-be980b45d2cb",
+  "dataset": "sinaflor-poa-outros-biomas",
+  "reason": "reader",
+  "since": "2026-10-01T19:44:24+00:00"
+ },
+ {
+  "id": "cf25bc77-14d7-47ca-9e61-4e45f5cdf2b9",
+  "dataset": "sinaflor-responsavel-tecnico",
+  "reason": "reader",
+  "since": "2026-10-01T19:44:26+00:00"
+ },
+ {
+  "id": "dddd819f-275a-4653-9104-772dd7519e6a",
+  "dataset": "siscites-licencas-de-fauna-e-flora-emitidas",
+  "reason": "reader",
+  "since": "2026-10-01T19:44:44+00:00"
+ },
+ {
+  "id": "0b1167c8-4a2a-4a9b-9959-3b24c51b6d09",
+  "dataset": "sisfauna-comercializacao-de-partes-produtos",
+  "reason": "reader",
+  "since": "2026-10-01T19:44:52+00:00"
+ },
+ {
+  "id": "7944b91e-085f-4f72-a9af-fc4207a3ecb8",
+  "dataset": "sisfauna-plantel-estimado",
+  "reason": "reader",
+  "since": "2026-10-01T19:44:53+00:00"
+ },
+ {
+  "id": "a271ddd8-aac6-4b58-9017-37b57b3b80dd",
+  "dataset": "sisfauna-plantel-exato",
+  "reason": "reader",
+  "since": "2026-10-01T19:44:54+00:00"
+ },
+ {
+  "id": "c2ac514d-3701-4255-9b47-fcbb042fb9b2",
+  "dataset": "sisfogo-roi",
+  "reason": "reader",
+  "since": "2026-10-01T19:44:56+00:00"
+ },
+ {
+  "id": "b922cba7-1e20-4087-9e7d-41e8d3c12598",
+  "dataset": "transporte-de-produtos-quimicos-perigosos-ou-combustiveis",
+  "reason": "reader",
+  "since": "2026-10-01T19:45:22+00:00"
+ },
+ {
+  "id": "03610c0c-b1b0-4a93-a90b-b57cb46c8ad6",
+  "dataset": "unidade-poluidora",
+  "reason": "reader",
+  "since": "2026-10-01T19:45:52+00:00"
+ },
+ {
+  "id": "f7120b1d-e413-4520-a921-b1976be1900d",
+  "dataset": "vias-despavimentadas",
+  "reason": "reader",
+  "since": "2026-10-01T19:45:53+00:00"
+ }
+]
