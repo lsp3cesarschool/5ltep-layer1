@@ -66,7 +66,7 @@ portal.json (um valor: a URL do portal)
    │                                                                ▼
    │                                          schemas/<conjunto>/<recurso>.declared.json
    ▼
- fila de trabalho (novo, alterado, esquema alterado, rodízio mensal)
+ fila de trabalho (novo, alterado, esquema alterado, lido por um leitor mais antigo, rodízio mensal)
    │
    ▼
  validate ── lê cada arquivo em stream (nenhum dado bruto guardado) ── esquema observado + conformidade por campo

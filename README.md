@@ -63,7 +63,7 @@ portal.json (one value: the portal URL)
    │                                                          ▼
    │                                          schemas/<dataset>/<resource>.declared.json
    ▼
- work queue (new, changed, schema changed, monthly rotation)
+ work queue (new, changed, schema changed, read by an older reader, monthly rotation)
    │
    ▼
  validate ── stream every file (no raw data stored) ── observed schema + conformance per field
