@@ -1,0 +1,56 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "sampleEmptyShare": 0.1474
+  },
+  {
+   "name": "CD_TERMO_APREENSAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ID_ENQUADRAMENTO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DS_DISPOSITIVO_LEGAL_COMPLEMENTAR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DS_ARTIGO_DISP_COMPLEMENTAR",
+   "type": "string",
+   "sampleEmptyShare": 0.0018
+  },
+  {
+   "name": "DS_PAR_INC_AL_DISP_COMPLEMENTAR",
+   "type": "string",
+   "sampleEmptyShare": 0.0298
+  },
+  {
+   "name": "DH_IMPRESSAO_TERMO_APREENSAO",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-02T19:21:21+00:00",
+  "sha256": "e332556ae6729b64f55e4e73bab3413a3af60ca781df41b0b5dc0aa77ee1446d",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

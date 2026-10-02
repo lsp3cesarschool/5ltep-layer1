@@ -1,0 +1,61 @@
+{
+ "fields": [
+  {
+   "name": "ID_ANEXO_TAD",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "sampleEmptyShare": 0.052
+  },
+  {
+   "name": "NU_ANEXO_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.3948
+  },
+  {
+   "name": "CD_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_ANEXO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DS_ANEXO",
+   "type": "string",
+   "sampleEmptyShare": 0.0394
+  },
+  {
+   "name": "CD_SERIE_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.3418
+  },
+  {
+   "name": "DT_APREENSAO",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-02T19:21:23+00:00",
+  "sha256": "b42d6c7c28de64591315d9a8780d81b13ca2a51470a40b9d66a4247571ac3a0d",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

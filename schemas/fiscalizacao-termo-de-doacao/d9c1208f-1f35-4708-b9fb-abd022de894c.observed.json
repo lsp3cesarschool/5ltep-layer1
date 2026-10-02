@@ -43,12 +43,12 @@
   {
    "name": "NU_ARTIGO_COMP",
    "type": "string",
-   "sampleEmptyShare": 0.0594
+   "sampleEmptyShare": 0.06
   },
   {
    "name": "NU_PAR_INC_AL",
    "type": "string",
-   "sampleEmptyShare": 0.7486
+   "sampleEmptyShare": 0.7582
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -59,8 +59,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-01T19:39:07+00:00",
-  "sha256": "a1a99b7cf4efdb3c155ef8694163b158d01c2ad0aa61600fd485303f85e74315",
+  "observed_at": "2026-10-02T19:47:44+00:00",
+  "sha256": "94bd436a739f37293d6cb57c1fd7c399496cc46fd11cd5062b3481d5a823f690",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

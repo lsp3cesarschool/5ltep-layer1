@@ -5,7 +5,7 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-02T18:34:25+00:00",
+ "generated_at": "2026-10-02T19:52:26+00:00",
  "census_at": "2026-10-02T13:52:48+00:00",
  "method": {
   "rotation_days": 28,
@@ -33,74 +33,76 @@
   }
  },
  "tables": {
-  "total": 195,
+  "total": 194,
   "by_level": {
-   "0": 72,
+   "0": 71,
    "1": 48,
    "2": 75,
    "3": 0,
    "4": 0
   },
-  "validated": 122,
-  "validation_coverage": 0.6256,
-  "errors": 16,
-  "queue_remaining": 105
+  "validated": 171,
+  "validation_coverage": 0.8814,
+  "errors": 23,
+  "queue_remaining": 0
  },
  "schema_sources": {
-  "described": 27,
-  "declared": 43
+  "described": 45,
+  "declared": 64
  },
  "conformance_by_source": {
   "described": {
-   "verifiable": 27,
-   "conformant": 11,
-   "l1_rate": 0.4074
+   "verifiable": 45,
+   "conformant": 20,
+   "l1_rate": 0.4444
   },
   "declared": {
-   "verifiable": 43,
-   "conformant": 13,
-   "l1_rate": 0.3023
+   "verifiable": 64,
+   "conformant": 19,
+   "l1_rate": 0.2969
   }
  },
- "verifiable": 70,
- "conformant": 24,
- "l1_rate": 0.3429,
+ "verifiable": 109,
+ "conformant": 39,
+ "l1_rate": 0.3578,
  "l1_pass": false,
  "drift": {
   "observed": 0,
   "declared": 0,
-  "files_with_baseline": 121,
+  "files_with_baseline": 170,
   "first_baseline_at": "2026-10-01T19:06:57+00:00",
-  "last_observed_at": "2026-10-02T14:47:35+00:00"
+  "last_observed_at": "2026-10-02T19:49:32+00:00"
  },
  "coverage": {
-  "files": 195,
-  "read": 121,
+  "files": 194,
+  "read": 170,
   "empty": 1,
   "not_tabular": 0,
-  "not_downloaded": 16,
-  "pending": 57,
+  "not_downloaded": 23,
+  "pending": 0,
   "not_downloaded_by_reason": {
-   "HTTP 404": 14,
+   "HTTP 404": 20,
    "batch time limit": 1,
-   "no URL": 1
+   "no URL": 1,
+   "other": 1
   },
   "not_downloaded_by_host": {
    "HTTP 404 · siscom.ibama.gov.br": 10,
-   "HTTP 404 · stibamadadosabertosprd.blob.core.windows.net": 4,
+   "HTTP 404 · stibamadadosabertosprd.blob.core.windows.net": 10,
    "batch time limit · stibamadadosabertosprd.blob.core.windows.net": 1,
-   "no URL · —": 1
+   "no URL · —": 1,
+   "other · stibamadadosabertosprd.blob.core.windows.net": 1
   },
-  "read_without_schema": 51,
-  "checked": 70,
-  "conform": 24,
-  "fail_missing_fields": 20,
-  "fail_undeclared_columns": 24,
-  "fail_cells_over_limit": 28,
-  "fail_only_cells": 20
+  "read_without_schema": 61,
+  "checked": 109,
+  "conform": 39,
+  "fail_missing_fields": 37,
+  "fail_undeclared_columns": 42,
+  "fail_cells_over_limit": 39,
+  "fail_only_cells": 26
  },
  "not_tables": {
-  "count": 3,
+  "count": 4,
   "resources": [
    {
     "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
@@ -119,49 +121,64 @@
     "id": "21e21d34-b71c-4f41-8ad3-ee5743fb8e00",
     "name": "Detalhes de Trechos e Veículos de Transportes ...",
     "contents": "zip without CSV members (first entries: ['2007.zip', '2008.zip', '2009.zip', '2010.zip', '2011.zip'])"
+   },
+   {
+    "dataset": "multas-ambientais-distribuidas-por-bens-tutelados",
+    "id": "45afa8f4-25ec-414d-8ea6-34a70814fc36",
+    "name": "Quantidade de Multas Ambientais Distribuídas ...",
+    "contents": "zip without tables (first entries: ['multas_ambientais_distribuidas_por_bens_tutelados_AC.html', 'multas_ambientais_distribuidas_por_bens_tutelados_AL.html', 'multas_ambientais_distribuidas_por_bens_t"
    }
   ]
  },
  "distributions": {
   "tables_with_other_formats": 94,
-  "other_formats": 0,
-  "compared": 0,
-  "same_columns": 0,
-  "different_columns": 0,
-  "not_compared": {},
-  "by_format": {}
+  "other_formats": 54,
+  "compared": 52,
+  "same_columns": 50,
+  "different_columns": 2,
+  "not_compared": {
+   "not-checked": 2
+  },
+  "by_format": {
+   "json": 27,
+   "xml": 27
+  }
  },
  "network": {
   "total": {
-   "files": 138,
-   "failed_files": 16,
-   "gb": 23.19,
-   "minutes": 258.1,
-   "end_to_end_mb_s": 1.5,
-   "zip_download_mb_s": 19.77,
+   "files": 194,
+   "failed_files": 23,
+   "gb": 26.85,
+   "minutes": 324.3,
+   "end_to_end_mb_s": 1.38,
+   "zip_download_mb_s": 16.31,
    "first_byte_s_median": 0.26,
-   "request_failures": {}
+   "request_failures": {
+    "ReadTimeout": 1
+   }
   },
   "by_host": {
    "stibamadadosabertosprd.blob.core.windows.net": {
-    "files": 88,
-    "failed_files": 5,
-    "gb": 19.94,
-    "minutes": 254.9,
-    "end_to_end_mb_s": 1.3,
-    "zip_download_mb_s": 19.77,
-    "first_byte_s_median": 0.26,
+    "files": 130,
+    "failed_files": 12,
+    "gb": 23.38,
+    "minutes": 311.7,
+    "end_to_end_mb_s": 1.25,
+    "zip_download_mb_s": 18.97,
+    "first_byte_s_median": 0.25,
     "request_failures": {}
    },
    "dadosabertos.ibama.gov.br": {
-    "files": 39,
+    "files": 53,
     "failed_files": 0,
-    "gb": 3.25,
-    "minutes": 3.2,
-    "end_to_end_mb_s": 16.72,
-    "zip_download_mb_s": null,
-    "first_byte_s_median": null,
-    "request_failures": {}
+    "gb": 3.48,
+    "minutes": 12.6,
+    "end_to_end_mb_s": 4.59,
+    "zip_download_mb_s": 1.59,
+    "first_byte_s_median": 0.27,
+    "request_failures": {
+     "ReadTimeout": 1
+    }
    },
    "siscom.ibama.gov.br": {
     "files": 10,
@@ -239,26 +256,26 @@
    "date_fields_with_declared_format": 0.3913
   },
   "files_vs_dictionaries": {
-   "checked": 70,
-   "with_declared_fields_missing": 20,
-   "with_undeclared_columns": 24,
-   "with_spelling_differences": 19,
-   "with_similar_names": 11,
-   "similar_names": 96,
-   "declared_fields_missing": 181,
+   "checked": 109,
+   "with_declared_fields_missing": 37,
+   "with_undeclared_columns": 42,
+   "with_spelling_differences": 38,
+   "with_similar_names": 19,
+   "similar_names": 108,
+   "declared_fields_missing": 228,
    "formats_inferred_from_data": {
-    "trueValues": 9,
-    "falseValues": 9,
-    "type": 9,
-    "format": 48,
-    "decimalChar": 11,
-    "groupChar": 6
+    "trueValues": 13,
+    "falseValues": 13,
+    "type": 11,
+    "format": 58,
+    "decimalChar": 19,
+    "groupChar": 14
    }
   },
   "files": {
-   "validated": 121,
+   "validated": 170,
    "encodings": {
-    "utf-8": 54,
+    "utf-8": 103,
     "utf-8-sig": 67
    },
    "delimiters": {
@@ -269,16 +286,17 @@
    "zips_with_several_headers": 0,
    "with_columns_without_name": 0,
    "not_tabular": 0,
-   "not_tables": 3,
+   "not_tables": 4,
    "formats": {
     "csv": 112,
-    "json": 4,
-    "xml": 5
+    "json": 28,
+    "xml": 30
    },
    "unreachable_by_reason": {
-    "HTTP 404": 14,
+    "HTTP 404": 20,
     "batch time limit": 1,
-    "no URL": 1
+    "no URL": 1,
+    "other": 1
    }
   },
   "pdf_extraction": {
@@ -387,9 +405,9 @@
    "name": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
    "level": 1,
    "tables": 2,
-   "verifiable": 0,
+   "verifiable": 2,
    "conformant": 0,
-   "l1_rate": null
+   "l1_rate": 0.0
   },
   {
    "name": "efluentes-liquidos",
@@ -467,9 +485,9 @@
    "name": "fiscalizacao-termo-de-apreensao",
    "level": 1,
    "tables": 18,
-   "verifiable": 6,
-   "conformant": 5,
-   "l1_rate": 0.8333
+   "verifiable": 18,
+   "conformant": 14,
+   "l1_rate": 0.7778
   },
   {
    "name": "fiscalizacao-termo-de-demolicao",
@@ -586,7 +604,7 @@
   {
    "name": "multas-ambientais-distribuidas-por-bens-tutelados",
    "level": 0,
-   "tables": 4,
+   "tables": 3,
    "verifiable": 0,
    "conformant": 0,
    "l1_rate": null
@@ -611,7 +629,7 @@
    "name": "pessoas-juridicas-inscritas-no-ctf-app",
    "level": 2,
    "tables": 3,
-   "verifiable": 1,
+   "verifiable": 3,
    "conformant": 0,
    "l1_rate": 0.0
   },
@@ -635,16 +653,16 @@
    "name": "rapp-pilhas-e-baterias-fabricante-nacional",
    "level": 2,
    "tables": 15,
-   "verifiable": 4,
-   "conformant": 0,
-   "l1_rate": 0.0
+   "verifiable": 14,
+   "conformant": 2,
+   "l1_rate": 0.1429
   },
   {
    "name": "rapp-pilhas-e-baterias-importador",
    "level": 2,
    "tables": 18,
-   "verifiable": 4,
-   "conformant": 2,
+   "verifiable": 12,
+   "conformant": 6,
    "l1_rate": 0.5
   },
   {
@@ -747,7 +765,7 @@
    "name": "sinaflor-corte-de-arvores-isoladas",
    "level": 2,
    "tables": 3,
-   "verifiable": 1,
+   "verifiable": 2,
    "conformant": 0,
    "l1_rate": 0.0
   },
@@ -923,7 +941,7 @@
    "name": "volumes-explorados-if-100",
    "level": 1,
    "tables": 3,
-   "verifiable": 1,
+   "verifiable": 3,
    "conformant": 0,
    "l1_rate": 0.0
   },
@@ -931,7 +949,7 @@
    "name": "volumes-explorados-inventario-amostral",
    "level": 1,
    "tables": 3,
-   "verifiable": 1,
+   "verifiable": 3,
    "conformant": 0,
    "l1_rate": 0.0
   }

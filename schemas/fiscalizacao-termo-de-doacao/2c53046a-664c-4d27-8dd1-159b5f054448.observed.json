@@ -8,17 +8,17 @@
   {
    "name": "SEQ_DOACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.8668
+   "sampleEmptyShare": 0.8676
   },
   {
    "name": "NUM_DOACAO",
    "type": "string",
-   "sampleEmptyShare": 0.8668
+   "sampleEmptyShare": 0.8676
   },
   {
    "name": "SER_DOACAO",
    "type": "string",
-   "sampleEmptyShare": 0.9494
+   "sampleEmptyShare": 0.9502
   },
   {
    "name": "COD_SUBSTITUICAO",
@@ -45,48 +45,48 @@
    "name": "DAT_DOACAO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
-   "sampleEmptyShare": 0.8668
+   "sampleEmptyShare": 0.8676
   },
   {
    "name": "DAT_ALTERACAO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
-   "sampleEmptyShare": 0.8668
+   "sampleEmptyShare": 0.8676
   },
   {
    "name": "TIPO_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.9072
+   "sampleEmptyShare": 0.908
   },
   {
    "name": "JUSTIFICATIVA_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.8586
+   "sampleEmptyShare": 0.8594
   },
   {
    "name": "NUM_PESSOA_RECEBEDOR",
    "type": "integer",
-   "sampleEmptyShare": 0.2504
+   "sampleEmptyShare": 0.2498
   },
   {
    "name": "NOME_RECEBEDOR",
    "type": "string",
-   "sampleEmptyShare": 0.104
+   "sampleEmptyShare": 0.1032
   },
   {
    "name": "NUM_CPF_CNPJ_RECEBEDOR",
    "type": "string",
-   "sampleEmptyShare": 0.1088
+   "sampleEmptyShare": 0.108
   },
   {
    "name": "NUM_PROCESSO",
    "type": "string",
-   "sampleEmptyShare": 0.058
+   "sampleEmptyShare": 0.0586
   },
   {
    "name": "DES_JUSTIFICATIVA",
    "type": "string",
-   "sampleEmptyShare": 0.0868
+   "sampleEmptyShare": 0.086
   },
   {
    "name": "DES_OBSERVACAO",
@@ -121,12 +121,12 @@
   {
    "name": "NUM_LONGITUDE",
    "type": "number",
-   "sampleEmptyShare": 0.0716
+   "sampleEmptyShare": 0.0708
   },
   {
    "name": "NUM_LATITUDE",
    "type": "number",
-   "sampleEmptyShare": 0.0716
+   "sampleEmptyShare": 0.0708
   },
   {
    "name": "FORMA_ENTREGA",
@@ -136,72 +136,72 @@
   {
    "name": "UNID_APRESENTACAO",
    "type": "string",
-   "sampleEmptyShare": 0.1332
+   "sampleEmptyShare": 0.1324
   },
   {
    "name": "UNID_CONTROLE",
    "type": "string",
-   "sampleEmptyShare": 0.8676
+   "sampleEmptyShare": 0.8684
   },
   {
    "name": "DS_COMPLEMENTAR",
    "type": "string",
-   "sampleEmptyShare": 0.5376
+   "sampleEmptyShare": 0.5372
   },
   {
    "name": "SEQ_AUTO_INFRACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.5124
+   "sampleEmptyShare": 0.513
   },
   {
    "name": "NUM_AUTO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.5006
+   "sampleEmptyShare": 0.5012
   },
   {
    "name": "SER_AUTO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.957
+   "sampleEmptyShare": 0.9576
   },
   {
    "name": "SEQ_ACAO_FISCALIZATORIA",
    "type": "integer",
-   "sampleEmptyShare": 0.1552
+   "sampleEmptyShare": 0.155
   },
   {
    "name": "CD_ACAO_FISCALIZATORIA",
    "type": "string",
-   "sampleEmptyShare": 0.0822
+   "sampleEmptyShare": 0.0814
   },
   {
    "name": "SEQ_ORDEM_FISCALIZACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.0678
+   "sampleEmptyShare": 0.067
   },
   {
    "name": "NUM_ORDEM_FISCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0678
+   "sampleEmptyShare": 0.067
   },
   {
    "name": "UNID_ORDENADORA",
    "type": "string",
-   "sampleEmptyShare": 0.0678
+   "sampleEmptyShare": 0.067
   },
   {
    "name": "SEQ_SOLICITACAO_RECURSO",
    "type": "integer",
-   "sampleEmptyShare": 0.0868
+   "sampleEmptyShare": 0.086
   },
   {
    "name": "NUM_SOLICITACAO_RECURSO",
    "type": "number",
-   "sampleEmptyShare": 0.0868
+   "sampleEmptyShare": 0.086
   },
   {
    "name": "OPERACAO_SOL_RECURSO",
    "type": "string",
-   "sampleEmptyShare": 0.0868
+   "sampleEmptyShare": 0.086
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -212,8 +212,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-01T19:38:56+00:00",
-  "sha256": "dc65f9db8b72fa8284a34cd3b95fa4bbd22e774cdd127ba0a48a07c7d2cb23a6",
+  "observed_at": "2026-10-02T19:47:14+00:00",
+  "sha256": "3d2fa34e342b9b25eaed33ec93265a035f3b004d8868c256b6e3afe2732af276",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

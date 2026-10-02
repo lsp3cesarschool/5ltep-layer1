@@ -5,7 +5,7 @@
    "name": "IBAMA",
    "title": "IBAMA open data portal (Dados Abertos IBAMA)"
   },
-  "generated_at": "2026-10-02T18:34:25+00:00",
+  "generated_at": "2026-10-02T19:52:26+00:00",
   "census_at": "2026-10-02T13:52:48+00:00",
   "datasets": {
    "total": 79,
@@ -19,58 +19,60 @@
    }
   },
   "tables": {
-   "total": 195,
+   "total": 194,
    "by_level": {
-    "0": 72,
+    "0": 71,
     "1": 48,
     "2": 75,
     "3": 0,
     "4": 0
    },
-   "validated": 122,
-   "validation_coverage": 0.6256,
-   "errors": 16,
-   "queue_remaining": 105
+   "validated": 171,
+   "validation_coverage": 0.8814,
+   "errors": 23,
+   "queue_remaining": 0
   },
-  "verifiable": 70,
-  "conformant": 24,
-  "l1_rate": 0.3429,
+  "verifiable": 109,
+  "conformant": 39,
+  "l1_rate": 0.3578,
   "l1_pass": false,
   "drift": {
    "observed": 0,
    "declared": 0,
-   "files_with_baseline": 121,
+   "files_with_baseline": 170,
    "first_baseline_at": "2026-10-01T19:06:57+00:00",
-   "last_observed_at": "2026-10-02T14:47:35+00:00"
+   "last_observed_at": "2026-10-02T19:49:32+00:00"
   },
   "coverage": {
-   "files": 195,
-   "read": 121,
+   "files": 194,
+   "read": 170,
    "empty": 1,
    "not_tabular": 0,
-   "not_downloaded": 16,
-   "pending": 57,
+   "not_downloaded": 23,
+   "pending": 0,
    "not_downloaded_by_reason": {
-    "HTTP 404": 14,
+    "HTTP 404": 20,
     "batch time limit": 1,
-    "no URL": 1
+    "no URL": 1,
+    "other": 1
    },
    "not_downloaded_by_host": {
     "HTTP 404 · siscom.ibama.gov.br": 10,
-    "HTTP 404 · stibamadadosabertosprd.blob.core.windows.net": 4,
+    "HTTP 404 · stibamadadosabertosprd.blob.core.windows.net": 10,
     "batch time limit · stibamadadosabertosprd.blob.core.windows.net": 1,
-    "no URL · —": 1
+    "no URL · —": 1,
+    "other · stibamadadosabertosprd.blob.core.windows.net": 1
    },
-   "read_without_schema": 51,
-   "checked": 70,
-   "conform": 24,
-   "fail_missing_fields": 20,
-   "fail_undeclared_columns": 24,
-   "fail_cells_over_limit": 28,
-   "fail_only_cells": 20
+   "read_without_schema": 61,
+   "checked": 109,
+   "conform": 39,
+   "fail_missing_fields": 37,
+   "fail_undeclared_columns": 42,
+   "fail_cells_over_limit": 39,
+   "fail_only_cells": 26
   },
   "not_tables": {
-   "count": 3,
+   "count": 4,
    "resources": [
     {
      "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
@@ -89,49 +91,64 @@
      "id": "21e21d34-b71c-4f41-8ad3-ee5743fb8e00",
      "name": "Detalhes de Trechos e Veículos de Transportes ...",
      "contents": "zip without CSV members (first entries: ['2007.zip', '2008.zip', '2009.zip', '2010.zip', '2011.zip'])"
+    },
+    {
+     "dataset": "multas-ambientais-distribuidas-por-bens-tutelados",
+     "id": "45afa8f4-25ec-414d-8ea6-34a70814fc36",
+     "name": "Quantidade de Multas Ambientais Distribuídas ...",
+     "contents": "zip without tables (first entries: ['multas_ambientais_distribuidas_por_bens_tutelados_AC.html', 'multas_ambientais_distribuidas_por_bens_tutelados_AL.html', 'multas_ambientais_distribuidas_por_bens_t"
     }
    ]
   },
   "distributions": {
    "tables_with_other_formats": 94,
-   "other_formats": 0,
-   "compared": 0,
-   "same_columns": 0,
-   "different_columns": 0,
-   "not_compared": {},
-   "by_format": {}
+   "other_formats": 54,
+   "compared": 52,
+   "same_columns": 50,
+   "different_columns": 2,
+   "not_compared": {
+    "not-checked": 2
+   },
+   "by_format": {
+    "json": 27,
+    "xml": 27
+   }
   },
   "network": {
    "total": {
-    "files": 138,
-    "failed_files": 16,
-    "gb": 23.19,
-    "minutes": 258.1,
-    "end_to_end_mb_s": 1.5,
-    "zip_download_mb_s": 19.77,
+    "files": 194,
+    "failed_files": 23,
+    "gb": 26.85,
+    "minutes": 324.3,
+    "end_to_end_mb_s": 1.38,
+    "zip_download_mb_s": 16.31,
     "first_byte_s_median": 0.26,
-    "request_failures": {}
+    "request_failures": {
+     "ReadTimeout": 1
+    }
    },
    "by_host": {
     "stibamadadosabertosprd.blob.core.windows.net": {
-     "files": 88,
-     "failed_files": 5,
-     "gb": 19.94,
-     "minutes": 254.9,
-     "end_to_end_mb_s": 1.3,
-     "zip_download_mb_s": 19.77,
-     "first_byte_s_median": 0.26,
+     "files": 130,
+     "failed_files": 12,
+     "gb": 23.38,
+     "minutes": 311.7,
+     "end_to_end_mb_s": 1.25,
+     "zip_download_mb_s": 18.97,
+     "first_byte_s_median": 0.25,
      "request_failures": {}
     },
     "dadosabertos.ibama.gov.br": {
-     "files": 39,
+     "files": 53,
      "failed_files": 0,
-     "gb": 3.25,
-     "minutes": 3.2,
-     "end_to_end_mb_s": 16.72,
-     "zip_download_mb_s": null,
-     "first_byte_s_median": null,
-     "request_failures": {}
+     "gb": 3.48,
+     "minutes": 12.6,
+     "end_to_end_mb_s": 4.59,
+     "zip_download_mb_s": 1.59,
+     "first_byte_s_median": 0.27,
+     "request_failures": {
+      "ReadTimeout": 1
+     }
     },
     "siscom.ibama.gov.br": {
      "files": 10,
@@ -156,19 +173,19 @@
    }
   },
   "schema_sources": {
-   "described": 27,
-   "declared": 43
+   "described": 45,
+   "declared": 64
   },
   "conformance_by_source": {
    "described": {
-    "verifiable": 27,
-    "conformant": 11,
-    "l1_rate": 0.4074
+    "verifiable": 45,
+    "conformant": 20,
+    "l1_rate": 0.4444
    },
    "declared": {
-    "verifiable": 43,
-    "conformant": 13,
-    "l1_rate": 0.3023
+    "verifiable": 64,
+    "conformant": 19,
+    "l1_rate": 0.2969
    }
   },
   "findings": {
@@ -225,26 +242,26 @@
     "date_fields_with_declared_format": 0.3913
    },
    "files_vs_dictionaries": {
-    "checked": 70,
-    "with_declared_fields_missing": 20,
-    "with_undeclared_columns": 24,
-    "with_spelling_differences": 19,
-    "with_similar_names": 11,
-    "similar_names": 96,
-    "declared_fields_missing": 181,
+    "checked": 109,
+    "with_declared_fields_missing": 37,
+    "with_undeclared_columns": 42,
+    "with_spelling_differences": 38,
+    "with_similar_names": 19,
+    "similar_names": 108,
+    "declared_fields_missing": 228,
     "formats_inferred_from_data": {
-     "trueValues": 9,
-     "falseValues": 9,
-     "type": 9,
-     "format": 48,
-     "decimalChar": 11,
-     "groupChar": 6
+     "trueValues": 13,
+     "falseValues": 13,
+     "type": 11,
+     "format": 58,
+     "decimalChar": 19,
+     "groupChar": 14
     }
    },
    "files": {
-    "validated": 121,
+    "validated": 170,
     "encodings": {
-     "utf-8": 54,
+     "utf-8": 103,
      "utf-8-sig": 67
     },
     "delimiters": {
@@ -255,16 +272,17 @@
     "zips_with_several_headers": 0,
     "with_columns_without_name": 0,
     "not_tabular": 0,
-    "not_tables": 3,
+    "not_tables": 4,
     "formats": {
      "csv": 112,
-     "json": 4,
-     "xml": 5
+     "json": 28,
+     "xml": 30
     },
     "unreachable_by_reason": {
-     "HTTP 404": 14,
+     "HTTP 404": 20,
      "batch time limit": 1,
-     "no URL": 1
+     "no URL": 1,
+     "other": 1
     }
    },
    "pdf_extraction": {
@@ -521,8 +539,8 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ARRECADACAO_DE_MULTAS_AMBIENTAIS_POR_BENS_TUTELADOS/arrecadacao_de_multas_ambientais_por_bens_tutelados_csv.zip",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:06:58+00:00",
-     "rows": 1587261,
+     "validated_at": "2026-10-02T19:40:18+00:00",
+     "rows": 1587818,
      "schema_kind": null,
      "error": null,
      "encodings": [
@@ -822,7 +840,7 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/DOF/DOFAutorizacoes/DOFAutorizacoes_csv.zip",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:10:27+00:00",
+     "validated_at": "2026-10-02T19:40:35+00:00",
      "rows": 491805,
      "schema_kind": null,
      "error": null,
@@ -906,8 +924,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/dof-conversoes-de-produtos-florestais/resource/5f9d395c-41ec-4b8d-a0c0-3ad1a5b9192a"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:11:52+00:00",
-     "rows": 6013573,
+     "validated_at": "2026-10-02T19:41:59+00:00",
+     "rows": 6017066,
      "schema_kind": "described",
      "error": null,
      "encodings": [
@@ -975,7 +993,22 @@
        "Unidade Resíduo Gerado 2": "UNIDADE_RESIDUO_GERADO_2",
        "Sistema Originário": "SISTEMA_ORIGINARIO"
       },
-      "similar_names": null,
+      "similar_names": {
+       "Órgão Emissor da Licença": "ORGAO_EMISSOR_LICENCA",
+       "Validade da Licença": "VALIDADE_LICENCA",
+       "Data da Conversão": "DATA_CONVERSAO",
+       "Código de rastreio": "CODIGO_RASTREIO",
+       "Unidade de Medida Entrada": "UNIDADE_MEDIDA_ENTRADA",
+       "Tipo de Produto Processado": "TIPO_PRODUTO_PROCESSADO",
+       "Volume do Produto Processado": "VOLUME_PRODUTO_PROCESSADO",
+       "Unidade do Produto Processado": "UNIDADE_PRODUTO_PROCESSADO",
+       "Coeficiente de Conversão": "COEFICIENTE_CONVERSAO",
+       "Tipo de Resíduo Gerado 1": "TIPO_RESIDUO_GERADO_1",
+       "Volume do Resíduo Gerado 1": "VOLUME_RESIDUO_GERADO_1",
+       "Tipo de Resíduo Gerado 2": "TIPO_RESIDUO_GERADO_2",
+       "Volume do Resíduo Gerado 2": "VOLUME_RESIDUO_GERADO_2",
+       "Volume da Perda": "VOLUME_PERDA"
+      },
       "declared_fields": 34,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -1599,19 +1632,57 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/resource/45702319-7f8c-4e22-ade4-607935928c5e"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T18:36:01+00:00",
+     "rows": 30883826,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "Código de Controle do DOF",
+       "Data de Emissão do DOF",
+       "Nº de Série do DOF",
+       "Número do Trecho",
+       "Placa(s)/Registro do Veículo",
+       "Tipo de Transporte",
+       "UF de Origem"
+      ],
+      "undeclared": [
+       "COD_CONTROLE_DOF",
+       "DATA_EMISSAO_DOF",
+       "NUMERO_TRECHO",
+       "NUM_SERIE_DOF",
+       "PLACA_VEICULO",
+       "TIPO_TRANSPORTE",
+       "UF_ORIGEM",
+       "ULTIMA_ATUALIZACAO_RELATORIO"
+      ],
+      "spelling": {
+       "Ano": "ANO",
+       "Município Início": "MUNICIPIO_INICIO",
+       "Município Fim": "MUNICIPIO_FIM",
+       "Sistema Originário": "SISTEMA_ORIGINARIO"
+      },
+      "similar_names": {
+       "Número do Trecho": "NUMERO_TRECHO",
+       "Tipo de Transporte": "TIPO_TRANSPORTE"
+      },
+      "declared_fields": 11,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/45702319-7f8c-4e22-ade4-607935928c5e.described.json"
+      "described": "schemas/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/45702319-7f8c-4e22-ade4-607935928c5e.described.json",
+      "observed": "schemas/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/45702319-7f8c-4e22-ade4-607935928c5e.observed.json"
      }
     },
     {
@@ -1625,19 +1696,57 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/resource/2b2107f4-8aea-4b27-9c0e-739f9d799026"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T18:57:26+00:00",
+     "rows": 30883826,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "Código de Controle do DOF",
+       "Data de Emissão do DOF",
+       "Nº de Série do DOF",
+       "Número do Trecho",
+       "Placa(s)/Registro do Veículo",
+       "Tipo de Transporte",
+       "UF de Origem"
+      ],
+      "undeclared": [
+       "COD_CONTROLE_DOF",
+       "DATA_EMISSAO_DOF",
+       "NUMERO_TRECHO",
+       "NUM_SERIE_DOF",
+       "PLACA_VEICULO",
+       "TIPO_TRANSPORTE",
+       "UF_ORIGEM",
+       "ULTIMA_ATUALIZACAO_RELATORIO"
+      ],
+      "spelling": {
+       "Ano": "ANO",
+       "Município Início": "MUNICIPIO_INICIO",
+       "Município Fim": "MUNICIPIO_FIM",
+       "Sistema Originário": "SISTEMA_ORIGINARIO"
+      },
+      "similar_names": {
+       "Número do Trecho": "NUMERO_TRECHO",
+       "Tipo de Transporte": "TIPO_TRANSPORTE"
+      },
+      "declared_fields": 11,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/2b2107f4-8aea-4b27-9c0e-739f9d799026.described.json"
+      "described": "schemas/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/2b2107f4-8aea-4b27-9c0e-739f9d799026.described.json",
+      "observed": "schemas/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/2b2107f4-8aea-4b27-9c0e-739f9d799026.observed.json"
      }
     }
    ]
@@ -2001,18 +2110,22 @@
      "level": 0,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/auto_infracao/auto_infracao_xml.zip",
      "dictionary": null,
-     "status": null,
-     "validated_at": null,
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:11:53+00:00",
+     "rows": 711441,
      "schema_kind": null,
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/761dbd28-235b-4199-8613-92245416421e.observed.json"
+     }
     },
     {
      "id": "c3aea257-5c96-44ee-9e49-c1d3a439b61d",
@@ -2020,18 +2133,22 @@
      "level": 0,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/auto_infracao/auto_infracao_json.zip",
      "dictionary": null,
-     "status": null,
-     "validated_at": null,
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:15:45+00:00",
+     "rows": 711441,
      "schema_kind": null,
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/c3aea257-5c96-44ee-9e49-c1d3a439b61d.observed.json"
+     }
     },
     {
      "id": "903120d7-9a73-46d2-8e22-93576f4f855b",
@@ -2062,18 +2179,22 @@
      "level": 0,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/enquadramento/enquadramento_xml.zip",
      "dictionary": null,
-     "status": null,
-     "validated_at": null,
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:18:21+00:00",
+     "rows": 689178,
      "schema_kind": null,
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/22dae6f2-41b0-4781-9d4c-a45fb6eee0e9.observed.json"
+     }
     },
     {
      "id": "6f8b8b68-ee86-4ce0-9799-13698ad91062",
@@ -2081,18 +2202,22 @@
      "level": 0,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/enquadramento/enquadramento_json.zip",
      "dictionary": null,
-     "status": null,
-     "validated_at": null,
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:18:53+00:00",
+     "rows": 689178,
      "schema_kind": null,
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/6f8b8b68-ee86-4ce0-9799-13698ad91062.observed.json"
+     }
     },
     {
      "id": "3325463b-3f90-4cd6-a033-e3c7cbe1b8ea",
@@ -2303,18 +2428,22 @@
      "level": 0,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/anexo/anexo_xml.zip",
      "dictionary": null,
-     "status": null,
-     "validated_at": null,
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:19:15+00:00",
+     "rows": 722598,
      "schema_kind": null,
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/4244aee7-93c3-4b5f-89aa-fa6a09f1344f.observed.json"
+     }
     },
     {
      "id": "67fa25c0-8869-4cd9-8938-36d4c7061e07",
@@ -2322,18 +2451,22 @@
      "level": 0,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/anexo/anexo_json.zip",
      "dictionary": null,
-     "status": null,
-     "validated_at": null,
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:19:39+00:00",
+     "rows": 722598,
      "schema_kind": null,
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/fiscalizacao-auto-de-infracao/67fa25c0-8869-4cd9-8938-36d4c7061e07.observed.json"
+     }
     }
    ]
   },
@@ -2371,8 +2504,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-notificacao/resource/f245368c-dcb6-46c9-ae17-635876ec5fac"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:16+00:00",
-     "rows": 439747,
+     "validated_at": "2026-10-02T19:45:55+00:00",
+     "rows": 439774,
      "schema_kind": "declared",
      "error": null,
      "encodings": [
@@ -2381,11 +2514,11 @@
      "distinct_headers": 1,
      "conformance": {
       "pass": false,
-      "error_rate": 0.031233,
+      "error_rate": 0.026557,
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 40,
       "inferred_formats": {
        "SIT_CANCELADO": {
@@ -2406,7 +2539,7 @@
        },
        "DAT_NOTIFICACAO": {
         "type": "datetime (date values carry a time)",
-        "format": "%Y-%m-%d %H:%M:%S"
+        "format": "%Y-%m-%d %H:%M"
        },
        "DAT_ALTERACAO": {
         "type": "datetime (date values carry a time)",
@@ -2471,11 +2604,11 @@
        }
       },
       "errors_by_field": {
-       "PRAZO_APRESENTACAO": {
-        "type": 89732
-       },
        "DAT_NOTIFICACAO": {
-        "type": 436468
+        "type": 354212
+       },
+       "PRAZO_APRESENTACAO": {
+        "type": 89758
        },
        "DAT_IMPRESSAO": {
         "type": 23192
@@ -2487,15 +2620,17 @@
      "distributions": [
       {
        "id": "67b1b3db-a7db-4759-b254-7277bcbf1015",
-       "name": "Notificação",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/FISCALIZACAO_NOTIFICACAO/fiscalizacao_notificacao.json"
+       "name": "Notificação",
+       "status": "not-checked",
+       "reason": "0.7 GB"
       },
       {
        "id": "25a727f1-f78b-463b-8185-187051a1baff",
-       "name": "Notificação",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/FISCALIZACAO_NOTIFICACAO/fiscalizacao_notificacao.xml"
+       "name": "Notificação",
+       "status": "not-checked",
+       "reason": "0.6 GB"
       }
      ],
      "schema_files": {
@@ -2563,19 +2698,32 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/67c67a93-f99e-4764-b0ee-4a2911d79c7a"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:19:53+00:00",
+     "rows": 157955,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 50,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/fiscalizacao-termo-de-apreensao/67c67a93-f99e-4764-b0ee-4a2911d79c7a.described.json"
+      "described": "schemas/fiscalizacao-termo-de-apreensao/67c67a93-f99e-4764-b0ee-4a2911d79c7a.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/67c67a93-f99e-4764-b0ee-4a2911d79c7a.observed.json"
      }
     },
     {
@@ -2589,19 +2737,32 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/27242a34-0690-436a-83e9-572f2e9cbc0e"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:20:16+00:00",
+     "rows": 157955,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 50,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/fiscalizacao-termo-de-apreensao/27242a34-0690-436a-83e9-572f2e9cbc0e.described.json"
+      "described": "schemas/fiscalizacao-termo-de-apreensao/27242a34-0690-436a-83e9-572f2e9cbc0e.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/27242a34-0690-436a-83e9-572f2e9cbc0e.observed.json"
      }
     },
     {
@@ -2654,19 +2815,34 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/0c3335d3-cd37-48f6-9785-9de6864dfeb8"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:20:31+00:00",
+     "rows": 150683,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [
+       "ID_BEM_APREENDIDO"
+      ],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 33,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/fiscalizacao-termo-de-apreensao/0c3335d3-cd37-48f6-9785-9de6864dfeb8.described.json"
+      "described": "schemas/fiscalizacao-termo-de-apreensao/0c3335d3-cd37-48f6-9785-9de6864dfeb8.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/0c3335d3-cd37-48f6-9785-9de6864dfeb8.observed.json"
      }
     },
     {
@@ -2680,19 +2856,32 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/26063153-1102-4cc1-ba71-df8f2bb00727"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:20:46+00:00",
+     "rows": 150683,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 34,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/fiscalizacao-termo-de-apreensao/26063153-1102-4cc1-ba71-df8f2bb00727.described.json"
+      "described": "schemas/fiscalizacao-termo-de-apreensao/26063153-1102-4cc1-ba71-df8f2bb00727.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/26063153-1102-4cc1-ba71-df8f2bb00727.observed.json"
      }
     },
     {
@@ -2745,19 +2934,32 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/122931cd-78da-4064-87b6-3f2a89406c61"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:20:55+00:00",
+     "rows": 153897,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 23,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/fiscalizacao-termo-de-apreensao/122931cd-78da-4064-87b6-3f2a89406c61.described.json"
+      "described": "schemas/fiscalizacao-termo-de-apreensao/122931cd-78da-4064-87b6-3f2a89406c61.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/122931cd-78da-4064-87b6-3f2a89406c61.observed.json"
      }
     },
     {
@@ -2771,19 +2973,32 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/27706b6b-e099-4cd7-bb87-2a45a47f9446"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:21:06+00:00",
+     "rows": 153897,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 23,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/fiscalizacao-termo-de-apreensao/27706b6b-e099-4cd7-bb87-2a45a47f9446.described.json"
+      "described": "schemas/fiscalizacao-termo-de-apreensao/27706b6b-e099-4cd7-bb87-2a45a47f9446.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/27706b6b-e099-4cd7-bb87-2a45a47f9446.observed.json"
      }
     },
     {
@@ -2877,19 +3092,34 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/f7195f5e-26ac-444a-ad98-d1bd69081d58"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:21:13+00:00",
+     "rows": 128366,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {
+       "CD_TERMO_APREENSAO-": "CD_TERMO_APREENSAO"
+      },
+      "similar_names": {},
+      "declared_fields": 12,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/fiscalizacao-termo-de-apreensao/f7195f5e-26ac-444a-ad98-d1bd69081d58.described.json"
+      "described": "schemas/fiscalizacao-termo-de-apreensao/f7195f5e-26ac-444a-ad98-d1bd69081d58.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/f7195f5e-26ac-444a-ad98-d1bd69081d58.observed.json"
      }
     },
     {
@@ -2903,19 +3133,34 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/c49419ca-efed-4090-a32e-565c2ec68084"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:21:17+00:00",
+     "rows": 128366,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {
+       "CD_TERMO_APREENSAO-": "CD_TERMO_APREENSAO"
+      },
+      "similar_names": {},
+      "declared_fields": 12,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/fiscalizacao-termo-de-apreensao/c49419ca-efed-4090-a32e-565c2ec68084.described.json"
+      "described": "schemas/fiscalizacao-termo-de-apreensao/c49419ca-efed-4090-a32e-565c2ec68084.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/c49419ca-efed-4090-a32e-565c2ec68084.observed.json"
      }
     },
     {
@@ -2972,19 +3217,38 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/76095503-a1e2-4e5d-8f02-fd05aa632522"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:21:21+00:00",
+     "rows": 5607,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "DS_PAR_INC_AL_ART_DISP_COMPLEMENTAR"
+      ],
+      "undeclared": [
+       "DS_PAR_INC_AL_DISP_COMPLEMENTAR"
+      ],
+      "spelling": {},
+      "similar_names": {
+       "DS_PAR_INC_AL_ART_DISP_COMPLEMENTAR": "DS_PAR_INC_AL_DISP_COMPLEMENTAR"
+      },
+      "declared_fields": 8,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/fiscalizacao-termo-de-apreensao/76095503-a1e2-4e5d-8f02-fd05aa632522.described.json"
+      "described": "schemas/fiscalizacao-termo-de-apreensao/76095503-a1e2-4e5d-8f02-fd05aa632522.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/76095503-a1e2-4e5d-8f02-fd05aa632522.observed.json"
      }
     },
     {
@@ -2998,19 +3262,38 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/a96d568d-2beb-44bd-84ce-19522dd0f856"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:21:21+00:00",
+     "rows": 5607,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "DS_PAR_INC_AL_ART_DISP_COMPLEMENTAR"
+      ],
+      "undeclared": [
+       "DS_PAR_INC_AL_DISP_COMPLEMENTAR"
+      ],
+      "spelling": {},
+      "similar_names": {
+       "DS_PAR_INC_AL_ART_DISP_COMPLEMENTAR": "DS_PAR_INC_AL_DISP_COMPLEMENTAR"
+      },
+      "declared_fields": 8,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/fiscalizacao-termo-de-apreensao/a96d568d-2beb-44bd-84ce-19522dd0f856.described.json"
+      "described": "schemas/fiscalizacao-termo-de-apreensao/a96d568d-2beb-44bd-84ce-19522dd0f856.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/a96d568d-2beb-44bd-84ce-19522dd0f856.observed.json"
      }
     },
     {
@@ -3024,19 +3307,32 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/3b99c21e-30b2-410b-8823-356bb73012e0"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:21:22+00:00",
+     "rows": 24960,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 9,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/fiscalizacao-termo-de-apreensao/3b99c21e-30b2-410b-8823-356bb73012e0.described.json"
+      "described": "schemas/fiscalizacao-termo-de-apreensao/3b99c21e-30b2-410b-8823-356bb73012e0.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/3b99c21e-30b2-410b-8823-356bb73012e0.observed.json"
      }
     },
     {
@@ -3050,19 +3346,32 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-apreensao/resource/e8f66578-2df7-424e-bd85-bcbf260243a9"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:21:23+00:00",
+     "rows": 24960,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 9,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/fiscalizacao-termo-de-apreensao/e8f66578-2df7-424e-bd85-bcbf260243a9.described.json"
+      "described": "schemas/fiscalizacao-termo-de-apreensao/e8f66578-2df7-424e-bd85-bcbf260243a9.described.json",
+      "observed": "schemas/fiscalizacao-termo-de-apreensao/e8f66578-2df7-424e-bd85-bcbf260243a9.observed.json"
      }
     }
    ]
@@ -3121,7 +3430,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-demolicao/resource/b845ac81-fd3a-4282-9150-454f65e38558"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:39+00:00",
+     "validated_at": "2026-10-02T19:46:34+00:00",
      "rows": 1009,
      "schema_kind": "declared",
      "error": null,
@@ -3135,7 +3444,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 40,
       "inferred_formats": {
        "DAT_TAD": {
@@ -3164,15 +3473,23 @@
      "distributions": [
       {
        "id": "d74ab754-8060-4e70-9caa-f6754258844f",
-       "name": "Termo de demolição",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DEMOLICAO/termo_de_demolicao.json"
+       "name": "Termo de demolição",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "fe797e4c-7d8a-4287-ba46-d210e9f45995",
-       "name": "Termo de demolição",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DEMOLICAO/termo_de_demolicao.xml"
+       "name": "Termo de demolição",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -3195,7 +3512,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-demolicao/resource/7804331e-c35f-4d74-b8c9-0bb4c3af2063"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:42+00:00",
+     "validated_at": "2026-10-02T19:46:38+00:00",
      "rows": 4132,
      "schema_kind": "declared",
      "error": null,
@@ -3209,7 +3526,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 12,
       "inferred_formats": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
@@ -3227,15 +3544,23 @@
      "distributions": [
       {
        "id": "8c9d2b6a-3290-4634-99ca-c62631972d9e",
-       "name": "Termo de demolição - enquadramento",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DEMOLICAO/termo_de_demolicao_enquadramento.json"
+       "name": "Termo de demolição - enquadramento",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "8e8ec3ed-9d65-4939-bc32-26ef0955333c",
-       "name": "Termo de demolição - enquadramento",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DEMOLICAO/termo_de_demolicao_enquadramento.xml"
+       "name": "Termo de demolição - enquadramento",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -3258,7 +3583,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-demolicao/resource/88b602a1-6be2-49c7-94a7-51593c18b527"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:43+00:00",
+     "validated_at": "2026-10-02T19:46:41+00:00",
      "rows": 267,
      "schema_kind": "declared",
      "error": null,
@@ -3272,7 +3597,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 9,
       "inferred_formats": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
@@ -3286,15 +3611,23 @@
      "distributions": [
       {
        "id": "d550d7a6-71c2-4ee5-a5ee-260248017e2a",
-       "name": "Termo de demolição - enquadramento complementar",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DEMOLICAO/termo_de_demolicao_enquadramento_complementar.json"
+       "name": "Termo de demolição - enquadramento complementar",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "cec8a8ff-8ba8-49f4-9de4-d56797d5fd6e",
-       "name": "Termo de demolição - enquadramento complementar",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DEMOLICAO/termo_de_demolicao_enquadramento_complementar.xml"
+       "name": "Termo de demolição - enquadramento complementar",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -3378,8 +3711,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/1b8b34b2-abf9-449f-8c94-fe4ee95231ec"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:44+00:00",
-     "rows": 9412,
+     "validated_at": "2026-10-02T19:46:43+00:00",
+     "rows": 9415,
      "schema_kind": "declared",
      "error": null,
      "encodings": [
@@ -3388,11 +3721,11 @@
      "distinct_headers": 1,
      "conformance": {
       "pass": true,
-      "error_rate": 0.008452,
+      "error_rate": 0.008449,
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 42,
       "inferred_formats": {
        "DAT_TAD": {
@@ -3419,15 +3752,23 @@
      "distributions": [
       {
        "id": "f4364ad3-d089-490b-b64b-97872db38fac",
-       "name": "Destruição/Inutilização",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DESTRUICAO/termo_destruicao_inutilizacao.json"
+       "name": "Destruição/Inutilização",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "2f33a3e4-5753-4f61-bc5e-a7f0d12cded4",
-       "name": "Destruição/Inutilização",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DESTRUICAO/termo_destruicao_inutilizacao.xml"
+       "name": "Destruição/Inutilização",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -3450,8 +3791,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/aa04d97f-0501-4d66-a3ef-6c36bdf9c0ef"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:48+00:00",
-     "rows": 24445,
+     "validated_at": "2026-10-02T19:46:52+00:00",
+     "rows": 24448,
      "schema_kind": "declared",
      "error": null,
      "encodings": [
@@ -3464,7 +3805,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 26,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -3474,15 +3815,23 @@
      "distributions": [
       {
        "id": "ae81c173-a612-4f7e-8af3-3d4fea440955",
-       "name": "Bem destruído",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DESTRUICAO/termo_destruicao_bem_destruido.json"
+       "name": "Bem destruído",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "886eee34-cc9d-4833-a2a2-8f0a8e7e3ebc",
-       "name": "Bem destruído",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DESTRUICAO/termo_destruicao_bem_destruido.xml"
+       "name": "Bem destruído",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -3505,8 +3854,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/2697f6c9-662d-4580-b594-5fc779ff26d2"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:50+00:00",
-     "rows": 26950,
+     "validated_at": "2026-10-02T19:46:59+00:00",
+     "rows": 26964,
      "schema_kind": "declared",
      "error": null,
      "encodings": [
@@ -3519,7 +3868,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 12,
       "inferred_formats": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
@@ -3528,7 +3877,7 @@
       },
       "errors_by_field": {
        "NORMA_TIPO": {
-        "type": 26950
+        "type": 26964
        },
        "COD_SUBSTITUICAO": {
         "type": 164
@@ -3540,15 +3889,23 @@
      "distributions": [
       {
        "id": "124f0265-dbf2-4335-a101-df2c434505e4",
-       "name": "Enquadramento legal",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DESTRUICAO/termo_destruicao_enquadramento_legal.json"
+       "name": "Enquadramento legal",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "cafefd01-898b-43ac-b26d-4d327e39aea6",
-       "name": "Enquadramento legal",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DESTRUICAO/termo_destruicao_enquadramento_legal.xml"
+       "name": "Enquadramento legal",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -3571,7 +3928,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/28a48305-7abb-4d5f-a03b-f95ec29b3044"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:52+00:00",
+     "validated_at": "2026-10-02T19:47:05+00:00",
      "rows": 1480,
      "schema_kind": "declared",
      "error": null,
@@ -3585,7 +3942,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 9,
       "inferred_formats": {},
       "errors_by_field": {
@@ -3599,15 +3956,23 @@
      "distributions": [
       {
        "id": "ea3ed79d-6341-418e-9453-e88d7782d092",
-       "name": "Enquadramento legal complementar",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DESTRUICAO/termo_destruicao_enquadramento_legal_complementar.json"
+       "name": "Enquadramento legal complementar",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "5b4df258-c390-4d07-af67-285de723db02",
-       "name": "Enquadramento legal complementar",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DESTRUICAO/termo_destruicao_enquadramento_legal_complementar.xml"
+       "name": "Enquadramento legal complementar",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -3630,7 +3995,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao/resource/935e4f69-8820-4e2b-a102-cc7d71d03c67"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:53+00:00",
+     "validated_at": "2026-10-02T19:47:08+00:00",
      "rows": 3910,
      "schema_kind": "declared",
      "error": null,
@@ -3644,7 +4009,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 21,
       "inferred_formats": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
@@ -3662,15 +4027,23 @@
      "distributions": [
       {
        "id": "d076ce95-8304-4b94-b383-7852d083df17",
-       "name": "Espécime apreendido",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DESTRUICAO/termo_destruicao_especime_apreendido.json"
+       "name": "Espécime apreendido",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "f93b5b8d-9dcf-4231-a95b-86db7b17675e",
-       "name": "Espécime apreendido",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DESTRUICAO/termo_destruicao_especime_apreendido.xml"
+       "name": "Espécime apreendido",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -3907,8 +4280,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/4d9ade45-f802-443d-b5b7-d4eac667b241"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:56+00:00",
-     "rows": 21574,
+     "validated_at": "2026-10-02T19:47:14+00:00",
+     "rows": 21578,
      "schema_kind": "declared",
      "error": null,
      "encodings": [
@@ -3917,11 +4290,11 @@
      "distinct_headers": 1,
      "conformance": {
       "pass": false,
-      "error_rate": 0.045416,
+      "error_rate": 0.045412,
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 40,
       "inferred_formats": {
        "DAT_DOACAO": {
@@ -3936,7 +4309,7 @@
       },
       "errors_by_field": {
        "DES_STATUS_FORMULARIO": {
-        "type": 20215
+        "type": 20219
        },
        "TIPO_ALTERACAO": {
         "type": 14060
@@ -3951,15 +4324,23 @@
      "distributions": [
       {
        "id": "e443dbb2-89ca-4cc5-ba1e-e0b9e1767091",
-       "name": "Termo de doação",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_FISCALIZACAO_DOACAO/DOACAO/termo_doacao.json"
+       "name": "Termo de doação",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "c74ff525-1648-4a67-af88-9af166d0b749",
-       "name": "Termo de doação",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_FISCALIZACAO_DOACAO/DOACAO/termo_doacao.xml"
+       "name": "Termo de doação",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -3982,7 +4363,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/b3a63bc2-5fe2-4af0-9e7e-ec23194f32d3"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:00+00:00",
+     "validated_at": "2026-10-02T19:47:23+00:00",
      "rows": 23602,
      "schema_kind": "declared",
      "error": null,
@@ -3996,7 +4377,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 26,
       "inferred_formats": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
@@ -4010,15 +4391,23 @@
      "distributions": [
       {
        "id": "56249f33-6302-4c87-aa5a-35c78e40d38e",
-       "name": "Bem doado",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_FISCALIZACAO_DOACAO/DOACAO/termo_doacao_bem_doado.json"
+       "name": "Bem doado",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "5a8cb555-c5cd-48d5-9cbc-2e1e7677bf2d",
-       "name": "Bem doado",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_FISCALIZACAO_DOACAO/DOACAO/termo_doacao_bem_doado.xml"
+       "name": "Bem doado",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -4041,8 +4430,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/40fb572d-2b9e-43e2-b961-e0f8c113f741"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:02+00:00",
-     "rows": 33419,
+     "validated_at": "2026-10-02T19:47:31+00:00",
+     "rows": 33422,
      "schema_kind": "declared",
      "error": null,
      "encodings": [
@@ -4051,11 +4440,11 @@
      "distinct_headers": 1,
      "conformance": {
       "pass": false,
-      "error_rate": 0.015757,
+      "error_rate": 0.01576,
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 22,
       "inferred_formats": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
@@ -4064,7 +4453,7 @@
       },
       "errors_by_field": {
        "NUM_DOACAO": {
-        "type": 11585
+        "type": 11588
        }
       }
      },
@@ -4073,15 +4462,99 @@
      "distributions": [
       {
        "id": "00d848c5-a9dd-4577-a1b4-78bbd07b55c6",
-       "name": "Espécime doado",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_FISCALIZACAO_DOACAO/DOACAO/termo_doacao_bem_doado.json"
+       "name": "Espécime doado",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "cites",
+        "dat alteracao",
+        "des nome popular",
+        "descricao produto",
+        "ds unidade medida",
+        "grupo",
+        "nome cientifico",
+        "obs doacao especime",
+        "qtd doacao especime",
+        "qtd especime apreendido",
+        "seq doacao especime",
+        "seq especime apreendido",
+        "seq taxonomia",
+        "situacao caracteristica",
+        "st perecivel",
+        "tipo"
+       ],
+       "extra": [
+        "chassi num motor",
+        "des ano veiculo",
+        "des bem apreendido",
+        "des cor",
+        "des fabricante",
+        "des lacre veiculo",
+        "des marca",
+        "des modelo",
+        "des placa veiculo",
+        "des tipo bem",
+        "des tipo infracao",
+        "licenca numero serie",
+        "nome matricula",
+        "nu ano mod",
+        "nu valor",
+        "num inscricao marinha",
+        "obs doacao bem",
+        "qtd doacao bem",
+        "seq doacao bem",
+        "tipo veiculo"
+       ]
       },
       {
        "id": "2b14610a-7bca-4ad2-9043-bdce40496076",
-       "name": "Espécime doado",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_FISCALIZACAO_DOACAO/DOACAO/termo_doacao_bem_doado.xml"
+       "name": "Espécime doado",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "cites",
+        "dat alteracao",
+        "des nome popular",
+        "descricao produto",
+        "ds unidade medida",
+        "grupo",
+        "nome cientifico",
+        "obs doacao especime",
+        "qtd doacao especime",
+        "qtd especime apreendido",
+        "seq doacao especime",
+        "seq especime apreendido",
+        "seq taxonomia",
+        "situacao caracteristica",
+        "st perecivel",
+        "tipo"
+       ],
+       "extra": [
+        "chassi num motor",
+        "des ano veiculo",
+        "des bem apreendido",
+        "des cor",
+        "des fabricante",
+        "des lacre veiculo",
+        "des marca",
+        "des modelo",
+        "des placa veiculo",
+        "des tipo bem",
+        "des tipo infracao",
+        "licenca numero serie",
+        "nome matricula",
+        "nu ano mod",
+        "nu valor",
+        "num inscricao marinha",
+        "obs doacao bem",
+        "qtd doacao bem",
+        "seq doacao bem",
+        "tipo veiculo"
+       ]
       }
      ],
      "schema_files": {
@@ -4104,8 +4577,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/ce02732e-25ba-4266-adb7-3d5701fa8ce6"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:05+00:00",
-     "rows": 38744,
+     "validated_at": "2026-10-02T19:47:38+00:00",
+     "rows": 38742,
      "schema_kind": "declared",
      "error": null,
      "encodings": [
@@ -4114,11 +4587,11 @@
      "distinct_headers": 1,
      "conformance": {
       "pass": false,
-      "error_rate": 0.090904,
+      "error_rate": 0.090901,
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 13,
       "inferred_formats": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
@@ -4126,14 +4599,14 @@
        }
       },
       "errors_by_field": {
-       "NU_PARAGRAFO": {
-        "type": 14943
-       },
        "NORMA_NUMERO": {
-        "type": 21017
+        "type": 21016
        },
        "ARTIGO": {
-        "type": 8588
+        "type": 8587
+       },
+       "NU_PARAGRAFO": {
+        "type": 14941
        },
        "NUM_DOACAO": {
         "type": 1238
@@ -4145,15 +4618,23 @@
      "distributions": [
       {
        "id": "b58e5c5b-8657-45ff-b2bf-30ac4f49a65d",
-       "name": "Enquadramento legal",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_FISCALIZACAO_DOACAO/DOACAO/termo_doacao_enquadramento_legal.json"
+       "name": "Enquadramento legal",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "2fc7b198-9a48-4a18-837b-a4460ad62a1e",
-       "name": "Enquadramento legal",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_FISCALIZACAO_DOACAO/DOACAO/termo_doacao_enquadramento_legal.xml"
+       "name": "Enquadramento legal",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -4176,8 +4657,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-doacao/resource/10231548-29df-4c15-acf9-3cf8a88224a9"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:07+00:00",
-     "rows": 38744,
+     "validated_at": "2026-10-02T19:47:44+00:00",
+     "rows": 38742,
      "schema_kind": "declared",
      "error": null,
      "encodings": [
@@ -4190,7 +4671,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 11,
       "inferred_formats": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
@@ -4208,15 +4689,23 @@
      "distributions": [
       {
        "id": "08d2ddbf-0c5d-496f-91b2-6359ed8160db",
-       "name": "Enquadramento legal complementar",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_FISCALIZACAO_DOACAO/DOACAO/termo_doacao_enquadramento_legal_complementar.json"
+       "name": "Enquadramento legal complementar",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "a8a76242-bc2c-4cb3-9845-2e25071818bc",
-       "name": "Enquadramento legal complementar",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_FISCALIZACAO_DOACAO/DOACAO/termo_doacao_enquadramento_legal_complementar.xml"
+       "name": "Enquadramento legal complementar",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -4337,7 +4826,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/90d17ce7-6a9b-4bfb-804c-6d52e43af264"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:13+00:00",
+     "validated_at": "2026-10-02T19:47:50+00:00",
      "rows": 128498,
      "schema_kind": "described",
      "error": null,
@@ -4353,7 +4842,7 @@
       ],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 14,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -4363,15 +4852,23 @@
      "distributions": [
       {
        "id": "f16fa044-a48e-426c-818b-6e9a7c8da60f",
-       "name": "Termos de embargo - coordenadas geográficas",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_COORDENADAS/termo_de_embargo_coordenadas.json"
+       "name": "Termos de embargo - coordenadas geográficas",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "0566fa5c-9732-4894-93a0-6157e5e7ec76",
-       "name": "Termos de embargo - coordenadas geográficas",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_COORDENADAS/termo_de_embargo_coordenadas.xml"
+       "name": "Termos de embargo - coordenadas geográficas",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -4391,8 +4888,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/3360882c-a038-4129-a1f0-7013af37926a"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:17+00:00",
-     "rows": 15909,
+     "validated_at": "2026-10-02T19:48:00+00:00",
+     "rows": 15917,
      "schema_kind": "described",
      "error": null,
      "encodings": [
@@ -4409,7 +4906,9 @@
        "NO_ARQUIVO_EVIDENCIA"
       ],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {
+       "NO_ARQUIVIO_EVIDENCIA": "NO_ARQUIVO_EVIDENCIA"
+      },
       "declared_fields": 7,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -4419,15 +4918,23 @@
      "distributions": [
       {
        "id": "23641597-d18c-44c5-9281-d145890419a8",
-       "name": "Termos de embargo - anexos",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_ANEXO/termo_de_embargo_anexo.json"
+       "name": "Termos de embargo - anexos",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "c0d24815-7ec0-46c4-846f-0eb554d079d4",
-       "name": "Termos de embargo - anexos",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_ANEXO/termo_de_embargo_anexo.xml"
+       "name": "Termos de embargo - anexos",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -4499,8 +5006,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/ccdbf737-0fbf-4547-adf6-267204aa4413"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:20+00:00",
-     "rows": 150404,
+     "validated_at": "2026-10-02T19:48:05+00:00",
+     "rows": 150525,
      "schema_kind": "described",
      "error": null,
      "encodings": [
@@ -4513,7 +5020,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 10,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -4523,15 +5030,23 @@
      "distributions": [
       {
        "id": "71f32ee4-3904-4b89-8894-6bedf4c9ebb6",
-       "name": "Termos de embargo - enquadramento",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_ENQUADRAMENTO/termo_de_embargo_enquadramento.json"
+       "name": "Termos de embargo - enquadramento",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "bf0eba64-05e1-43d8-8e97-7685b3bd2826",
-       "name": "Termos de embargo - enquadramento",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_ENQUADRAMENTO/termo_de_embargo_enquadramento.xml"
+       "name": "Termos de embargo - enquadramento",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -4551,8 +5066,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/21347475-cd71-41de-a677-f0fbaa8c02b2"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:23+00:00",
-     "rows": 14646,
+     "validated_at": "2026-10-02T19:48:13+00:00",
+     "rows": 14662,
      "schema_kind": "described",
      "error": null,
      "encodings": [
@@ -4567,7 +5082,7 @@
       ],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 7,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -4577,15 +5092,23 @@
      "distributions": [
       {
        "id": "31a27563-f288-4881-9f70-8d7f3c0f8164",
-       "name": "Termos de embargo - enquadramento complementar",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_ENQUADRAMENTO_COMPLEMENTAR/termo_de_embargo_enquadramento_complementar.json"
+       "name": "Termos de embargo - enquadramento complementar",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "2da15ba8-2c12-4669-8cb3-acceb701873e",
-       "name": "Termos de embargo - enquadramento complementar",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_ENQUADRAMENTO_COMPLEMENTAR/termo_de_embargo_enquadramento_complementar.xml"
+       "name": "Termos de embargo - enquadramento complementar",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -4703,7 +5226,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-incineracao/resource/b65f7723-4c24-4916-9e8d-1cb4b4ea2e7a"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:52+00:00",
+     "validated_at": "2026-10-02T19:48:18+00:00",
      "rows": 1606,
      "schema_kind": "declared",
      "error": null,
@@ -4717,7 +5240,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 21,
       "inferred_formats": {
        "DATA_INCINERACAO": {
@@ -4741,15 +5264,23 @@
      "distributions": [
       {
        "id": "3179d942-0627-4369-a8c8-4093237164f6",
-       "name": "Termo de incineração",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_INCINERACAO/termo_de_incineracao.json"
+       "name": "Termo de incineração",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "9c595330-c003-477d-b6f2-bd5f3c292254",
-       "name": "Termo de incineração",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_INCINERACAO/termo_de_incineracao.xml"
+       "name": "Termo de incineração",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -4772,7 +5303,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-incineracao/resource/f62b4046-cc0b-4976-8121-2193682c21f8"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:53+00:00",
+     "validated_at": "2026-10-02T19:48:24+00:00",
      "rows": 1584,
      "schema_kind": "declared",
      "error": null,
@@ -4786,7 +5317,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 11,
       "inferred_formats": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
@@ -4800,15 +5331,23 @@
      "distributions": [
       {
        "id": "bf47738e-04fd-41d3-93f5-ce5f7ac4bd30",
-       "name": "Termo de incineração - Bem incinerado",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_INCINERACAO/termo_de_incineracao_bem_incinerado.json"
+       "name": "Termo de incineração - Bem incinerado",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "7f312016-1426-471c-9ed1-bcf4157bfc89",
-       "name": "Termo de incineração - Bem incinerado",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_INCINERACAO/termo_de_incineracao_bem_incinerado.xml"
+       "name": "Termo de incineração - Bem incinerado",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -4831,7 +5370,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-incineracao/resource/d8d89c00-6e3d-4d73-9eba-69c5fe70e506"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:54+00:00",
+     "validated_at": "2026-10-02T19:48:29+00:00",
      "rows": 94,
      "schema_kind": "declared",
      "error": null,
@@ -4845,7 +5384,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 17,
       "inferred_formats": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
@@ -4863,15 +5402,23 @@
      "distributions": [
       {
        "id": "7568cc8a-3f2f-4137-9a18-2fdcec5443d0",
-       "name": "Termo de incineração - Espécime incinerado",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_INCINERACAO/termo_de_incineracao_especime_incinerado.json"
+       "name": "Termo de incineração - Espécime incinerado",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "4e9109d9-b846-4cb6-94f2-108073bb235a",
-       "name": "Termo de incineração - Espécime incinerado",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_INCINERACAO/termo_de_incineracao_especime_incinerado.xml"
+       "name": "Termo de incineração - Espécime incinerado",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -5388,8 +5935,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-suspensao/resource/1c65d253-39ac-4574-8ed7-43e748cd4103"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:40:11+00:00",
-     "rows": 10411,
+     "validated_at": "2026-10-02T19:48:31+00:00",
+     "rows": 10412,
      "schema_kind": "declared",
      "error": null,
      "encodings": [
@@ -5404,12 +5951,12 @@
        "ULTIMA_ATUALIZACAO_RELATORIO"
       ],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 37,
       "inferred_formats": {},
       "errors_by_field": {
        "CD_ACAO_FISCALIZATORIA": {
-        "type": 6720
+        "type": 6721
        },
        "NUM_AUTO_INFRACAO": {
         "type": 3246
@@ -5421,15 +5968,23 @@
      "distributions": [
       {
        "id": "6642c546-5825-4f12-8a5f-276a7e3b3050",
-       "name": "Termo de suspensão",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SUSPENSAO/termo_de_suspensao.json"
+       "name": "Termo de suspensão",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "74796739-474c-4b53-8feb-ddc4d5d4f5c7",
-       "name": "Termo de suspensão",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SUSPENSAO/termo_de_suspensao.xml"
+       "name": "Termo de suspensão",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -5452,7 +6007,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-suspensao/resource/691ce689-6b05-4040-bc0a-7e298d2b0698"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:40:14+00:00",
+     "validated_at": "2026-10-02T19:48:38+00:00",
      "rows": 7685,
      "schema_kind": "declared",
      "error": null,
@@ -5468,18 +6023,18 @@
        "ULTIMA_ATUALIZACAO_RELATORIO"
       ],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 10,
       "inferred_formats": {},
       "errors_by_field": {
        "NU_PARAGRAFO": {
         "type": 7544
        },
-       "NORMA_NUMERO": {
-        "type": 3827
-       },
        "NU_INCISO": {
         "type": 2883
+       },
+       "NORMA_NUMERO": {
+        "type": 3827
        },
        "ARTIGO": {
         "type": 233
@@ -5491,15 +6046,23 @@
      "distributions": [
       {
        "id": "e546eef7-3ccd-413b-acfd-1b8756f717d3",
-       "name": "Termo de Suspensão - Enquadramento",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SUSPENSAO/enquadramento.json"
+       "name": "Termo de Suspensão - Enquadramento",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "9441bdda-ee1c-4ac9-9db4-3820927bf0ce",
-       "name": "Termo de Suspensão - Enquadramento",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SUSPENSAO/enquadramento.xml"
+       "name": "Termo de Suspensão - Enquadramento",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -5522,7 +6085,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-suspensao/resource/27b3fae2-6843-4e14-a3fd-5171161ef964"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:40:16+00:00",
+     "validated_at": "2026-10-02T19:48:43+00:00",
      "rows": 1177,
      "schema_kind": "declared",
      "error": null,
@@ -5538,7 +6101,7 @@
        "ULTIMA_ATUALIZACAO_RELATORIO"
       ],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 7,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -5548,15 +6111,23 @@
      "distributions": [
       {
        "id": "b1910309-5f09-435d-8005-eb1deb491367",
-       "name": "Enquadramento Complementar",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SUSPENSAO/enquadramento_complementar.json"
+       "name": "Enquadramento Complementar",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "f416a005-52e2-42fd-8231-fc7e60054cd3",
-       "name": "Enquadramento Complementar",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SUSPENSAO/enquadramento_complementar.xml"
+       "name": "Enquadramento Complementar",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -5846,16 +6417,16 @@
      "level": 0,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/MULTAS_AMBIENTAIS_DISTRIBUIDAS_POR_BENS_TUTELADOS/multas_ambientais_distribuidas_por_bens_tutelados_html.zip",
      "dictionary": null,
-     "status": null,
-     "validated_at": null,
+     "status": "not-tabular",
+     "validated_at": "2026-10-02T19:21:24+00:00",
      "rows": null,
      "schema_kind": null,
-     "error": null,
+     "error": "zip without tables (first entries: ['multas_ambientais_distribuidas_por_bens_tutelados_AC.html', 'multas_ambientais_distribuidas_por_bens_tutelados_AL.html', 'multas_ambientais_distribuidas_por_bens_tutelados_AM.html', 'multas_ambientais_distribuidas_por_bens_tutelados_AP.html', 'multas_ambientais_d",
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
      "drift_events": 0,
-     "not_a_table": false,
+     "not_a_table": true,
      "distributions": [],
      "schema_files": {}
     },
@@ -5866,8 +6437,8 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/MULTAS_AMBIENTAIS_DISTRIBUIDAS_POR_BENS_TUTELADOS/multas_ambientais_distribuidas_por_bens_tutelados_csv.zip",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:40:27+00:00",
-     "rows": 724057,
+     "validated_at": "2026-10-02T19:48:46+00:00",
+     "rows": 724119,
      "schema_kind": null,
      "error": null,
      "encodings": [
@@ -5888,18 +6459,22 @@
      "level": 0,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/MULTAS_AMBIENTAIS_DISTRIBUIDAS_POR_BENS_TUTELADOS/multas_ambientais_distribuidas_por_bens_tutelados_json.zip",
      "dictionary": null,
-     "status": null,
-     "validated_at": null,
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:21:25+00:00",
+     "rows": 724119,
      "schema_kind": null,
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/multas-ambientais-distribuidas-por-bens-tutelados/4f9c7227-2bbd-4e88-8599-a3fbe787fb5b.observed.json"
+     }
     },
     {
      "id": "f7db373a-09a3-48c7-a370-fe71da7dcf8b",
@@ -5907,18 +6482,22 @@
      "level": 0,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/MULTAS_AMBIENTAIS_DISTRIBUIDAS_POR_BENS_TUTELADOS/multas_ambientais_distribuidas_por_bens_tutelados_xml.zip",
      "dictionary": null,
-     "status": null,
-     "validated_at": null,
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:21:52+00:00",
+     "rows": 724119,
      "schema_kind": null,
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/multas-ambientais-distribuidas-por-bens-tutelados/f7db373a-09a3-48c7-a370-fe71da7dcf8b.observed.json"
+     }
     }
    ]
   },
@@ -6119,19 +6698,64 @@
       "url": "https://dadosabertos.ibama.gov.br/dataset/168289a4-5813-4186-aefd-ef2ff989cc1b/resource/c595bf2f-ddcc-4753-b814-6a55f15838c7/download/metadados-pessoas-juridicas-ctf_app.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/pessoas-juridicas-inscritas-no-ctf-app/resource/c595bf2f-ddcc-4753-b814-6a55f15838c7"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:22:27+00:00",
+     "rows": 1467574,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "Potencial de Poluição da atividade"
+      ],
+      "undeclared": [
+       "Potenc_de_Pol_da_atividade",
+       "UF"
+      ],
+      "spelling": {
+       "Razao Social": "Razao_Social",
+       "Nome Fantasia": "Nome_Fantasia",
+       "Codigo da categoria": "Codigo_da_categoria",
+       "Descricao da categoria": "Descricao_da_categoria",
+       "Codigo da atividade": "Codigo_da_atividade",
+       "Descricao da atividade": "Descricao_da_atividade",
+       "Data de inicio da atividade": "Data_de_inicio_da_atividade",
+       "Data de termino da atividade": "Data_de_termino_da_atividade",
+       "Situacao cadastral": "Situacao_cadastral",
+       "Data de última emissão do CR": "Data_de_ultima_emissao_do_CR",
+       "Situação atual do último CR emitido": "Situacao_atual_do_ultimo_CR_emitido",
+       "Ultima Atualizacao Relatorio": "Ultima_Atualizacao_Relatorio"
+      },
+      "similar_names": {},
+      "declared_fields": 18,
+      "inferred_formats": {
+       "Data de inicio da atividade": {
+        "format": "%d/%m/%Y"
+       },
+       "Data de termino da atividade": {
+        "format": "%d/%m/%Y"
+       },
+       "Data de última emissão do CR": {
+        "type": "datetime (date values carry a time)",
+        "format": "%d/%m/%Y %H:%M:%S"
+       },
+       "Ultima Atualizacao Relatorio": {
+        "format": "%d/%m/%Y %H:%M"
+       }
+      },
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/pessoas-juridicas-inscritas-no-ctf-app/9d35f568-b77f-453b-9cac-b47b87c85125.declared.json"
+      "declared": "schemas/pessoas-juridicas-inscritas-no-ctf-app/9d35f568-b77f-453b-9cac-b47b87c85125.declared.json",
+      "observed": "schemas/pessoas-juridicas-inscritas-no-ctf-app/9d35f568-b77f-453b-9cac-b47b87c85125.observed.json"
      }
     },
     {
@@ -6148,19 +6772,62 @@
       "url": "https://dadosabertos.ibama.gov.br/dataset/168289a4-5813-4186-aefd-ef2ff989cc1b/resource/c595bf2f-ddcc-4753-b814-6a55f15838c7/download/metadados-pessoas-juridicas-ctf_app.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/pessoas-juridicas-inscritas-no-ctf-app/resource/c595bf2f-ddcc-4753-b814-6a55f15838c7"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:24:48+00:00",
+     "rows": 1467574,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "Potencial de Poluição da atividade"
+      ],
+      "undeclared": [
+       "Potenc. de Pol. da atividade",
+       "UF"
+      ],
+      "spelling": {
+       "Razao Social": "Razão Social",
+       "Codigo da categoria": "Código da categoria",
+       "Descricao da categoria": "Descrição da categoria",
+       "Codigo da atividade": "Código da atividade",
+       "Descricao da atividade": "Descrição da atividade",
+       "Data de inicio da atividade": "Data de início da atividade",
+       "Data de termino da atividade": "Data de término da atividade",
+       "Municipio": "Município",
+       "Situacao cadastral": "Situação cadastral",
+       "Ultima Atualizacao Relatorio": "Última Atualização Relatório"
+      },
+      "similar_names": {},
+      "declared_fields": 18,
+      "inferred_formats": {
+       "Data de inicio da atividade": {
+        "format": "%d/%m/%Y"
+       },
+       "Data de termino da atividade": {
+        "format": "%d/%m/%Y"
+       },
+       "Data de última emissão do CR": {
+        "type": "datetime (date values carry a time)",
+        "format": "%d/%m/%Y %H:%M:%S"
+       },
+       "Ultima Atualizacao Relatorio": {
+        "format": "%d/%m/%Y %H:%M"
+       }
+      },
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/pessoas-juridicas-inscritas-no-ctf-app/3d3ac98e-6737-429b-a1c3-bfd73b259003.declared.json"
+      "declared": "schemas/pessoas-juridicas-inscritas-no-ctf-app/3d3ac98e-6737-429b-a1c3-bfd73b259003.declared.json",
+      "observed": "schemas/pessoas-juridicas-inscritas-no-ctf-app/3d3ac98e-6737-429b-a1c3-bfd73b259003.observed.json"
      }
     }
    ]
@@ -6401,19 +7068,64 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/39a57ef4-7694-4761-ae22-5e1795c9f620/download/metadados-producao.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/39a57ef4-7694-4761-ae22-5e1795c9f620"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:38+00:00",
+     "rows": 12026,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "Modelo de pilha ou bateria",
+       "Peso Unitário (kg)",
+       "Peso total (kg)",
+       "Quantidade importada (un)",
+       "Tipo de pilhas ou bateria"
+      ],
+      "undeclared": [
+       "Modelo de pilhas ou baterias",
+       "Peso total produzido (kg)",
+       "Peso unitário das pilhas ou baterias (kg)",
+       "Quantidade produzida (und)",
+       "Tipo de pilhas ou baterias"
+      ],
+      "spelling": {},
+      "similar_names": {
+       "Tipo de pilhas ou bateria": "Tipo de pilhas ou baterias",
+       "Modelo de pilha ou bateria": "Modelo de pilhas ou baterias"
+      },
+      "declared_fields": 9,
+      "inferred_formats": {
+       "Laudo": {
+        "trueValues": [
+         "S",
+         "SIM",
+         "Sim",
+         "s"
+        ],
+        "falseValues": [
+         "N",
+         "NAO",
+         "Nao",
+         "NÃO",
+         "Não",
+         "n"
+        ]
+       }
+      },
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/473e8496-3530-4c95-897a-447db2bf8b7e.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/473e8496-3530-4c95-897a-447db2bf8b7e.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/473e8496-3530-4c95-897a-447db2bf8b7e.observed.json"
      }
     },
     {
@@ -6430,19 +7142,67 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/39a57ef4-7694-4761-ae22-5e1795c9f620/download/metadados-producao.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/39a57ef4-7694-4761-ae22-5e1795c9f620"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:38+00:00",
+     "rows": 12026,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "Modelo de pilha ou bateria",
+       "Peso Unitário (kg)",
+       "Peso total (kg)",
+       "Quantidade importada (un)",
+       "Tipo de pilhas ou bateria"
+      ],
+      "undeclared": [
+       "Modelo_de_pilhas_ou_baterias",
+       "Peso_total_produzido__kg_",
+       "Peso_unitario_das_pilhas_ou_baterias__kg_",
+       "Quantidade_produzida__und_",
+       "Tipo_de_pilhas_ou_baterias"
+      ],
+      "spelling": {
+       "Ano do relatório": "Ano_do_relatorio",
+       "Abrangência da comercialização": "Abrangencia_da_comercializacao"
+      },
+      "similar_names": {
+       "Tipo de pilhas ou bateria": "Tipo_de_pilhas_ou_baterias",
+       "Modelo de pilha ou bateria": "Modelo_de_pilhas_ou_baterias"
+      },
+      "declared_fields": 9,
+      "inferred_formats": {
+       "Laudo": {
+        "trueValues": [
+         "S",
+         "SIM",
+         "Sim",
+         "s"
+        ],
+        "falseValues": [
+         "N",
+         "NAO",
+         "Nao",
+         "NÃO",
+         "Não",
+         "n"
+        ]
+       }
+      },
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/53af19d0-356e-4e4a-ba52-98982cdc047c.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/53af19d0-356e-4e4a-ba52-98982cdc047c.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/53af19d0-356e-4e4a-ba52-98982cdc047c.observed.json"
      }
     },
     {
@@ -6511,19 +7271,42 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/fe4cfcc9-10f6-488d-a699-fe937ec4b1fe/download/metadados-residuos-e-produtos.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/fe4cfcc9-10f6-488d-a699-fe937ec4b1fe"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:39+00:00",
+     "rows": 2205,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.127166,
+      "missing": [
+       "Peso total (kg)",
+       "Peso unitário (kg)"
+      ],
+      "undeclared": [
+       "Peso total recebido (kg)",
+       "Peso unitário das pilhas ou baterias (kg)"
+      ],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 7,
+      "inferred_formats": {},
+      "errors_by_field": {
+       "Quantidade recebida dos consumidores (und)": {
+        "type": 1402
+       }
+      }
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/d42ef134-d6f2-4129-a7f7-497c06dcf695.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/d42ef134-d6f2-4129-a7f7-497c06dcf695.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/d42ef134-d6f2-4129-a7f7-497c06dcf695.observed.json"
      }
     },
     {
@@ -6540,19 +7323,47 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/fe4cfcc9-10f6-488d-a699-fe937ec4b1fe/download/metadados-residuos-e-produtos.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/fe4cfcc9-10f6-488d-a699-fe937ec4b1fe"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:39+00:00",
+     "rows": 2205,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.127166,
+      "missing": [
+       "Peso total (kg)",
+       "Peso unitário (kg)"
+      ],
+      "undeclared": [
+       "Peso_total_recebido__kg_",
+       "Peso_unitario_das_pilhas_ou_baterias__kg_"
+      ],
+      "spelling": {
+       "Ano do relatório": "Ano_do_relatorio",
+       "Tipo de pilhas ou baterias": "Tipo_de_pilhas_ou_baterias",
+       "Modelo de pilhas ou baterias": "Modelo_de_pilhas_ou_baterias",
+       "Quantidade recebida dos consumidores (und)": "Quantidade_recebida_dos_consumidores__und_"
+      },
+      "similar_names": {},
+      "declared_fields": 7,
+      "inferred_formats": {},
+      "errors_by_field": {
+       "Quantidade recebida dos consumidores (und)": {
+        "type": 1402
+       }
+      }
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/819ac66f-8c8f-465f-9f30-4def5e81ece6.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/819ac66f-8c8f-465f-9f30-4def5e81ece6.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/819ac66f-8c8f-465f-9f30-4def5e81ece6.observed.json"
      }
     },
     {
@@ -6598,19 +7409,34 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/933f121d-14ca-4f41-88fb-19906c7303ed/download/metadados-pontos-de-coleta.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/933f121d-14ca-4f41-88fb-19906c7303ed"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:39+00:00",
+     "rows": 127563,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {
+       "Sítio na Internet": "Sítio na internet"
+      },
+      "similar_names": {},
+      "declared_fields": 11,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/4c02546d-c971-44b2-a007-87e2127c02b3.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/4c02546d-c971-44b2-a007-87e2127c02b3.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/4c02546d-c971-44b2-a007-87e2127c02b3.observed.json"
      }
     },
     {
@@ -6627,19 +7453,39 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/933f121d-14ca-4f41-88fb-19906c7303ed/download/metadados-pontos-de-coleta.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/933f121d-14ca-4f41-88fb-19906c7303ed"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:43+00:00",
+     "rows": 127563,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {
+       "Ano do relatório": "Ano_do_relatorio",
+       "CNPJ do ponto de coleta": "CNPJ_do_ponto_de_coleta",
+       "Ponto de coleta": "Ponto_de_coleta",
+       "Endereço": "Endereco",
+       "Município": "Municipio",
+       "Sítio na Internet": "Sitio_na_internet"
+      },
+      "similar_names": {},
+      "declared_fields": 11,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/336f347e-21f9-4bef-82f2-a4984aaa66d6.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/336f347e-21f9-4bef-82f2-a4984aaa66d6.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/336f347e-21f9-4bef-82f2-a4984aaa66d6.observed.json"
      }
     },
     {
@@ -6702,19 +7548,36 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/3e692f9a-35ff-4f0e-a966-85cc9c179641/download/metadados-transporte.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/3e692f9a-35ff-4f0e-a966-85cc9c179641"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:48+00:00",
+     "rows": 2479,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "CPF/CNPJ"
+      ],
+      "undeclared": [
+       "CPF/CNPJ do transportador"
+      ],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 4,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/2f8116fe-968a-4efb-9895-3e35f41ee300.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/2f8116fe-968a-4efb-9895-3e35f41ee300.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/2f8116fe-968a-4efb-9895-3e35f41ee300.observed.json"
      }
     },
     {
@@ -6731,19 +7594,39 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/3e692f9a-35ff-4f0e-a966-85cc9c179641/download/metadados-transporte.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/3e692f9a-35ff-4f0e-a966-85cc9c179641"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:48+00:00",
+     "rows": 2479,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "CPF/CNPJ"
+      ],
+      "undeclared": [
+       "CPF_CNPJ_do_transportador"
+      ],
+      "spelling": {
+       "Ano do relatório": "Ano_do_relatorio",
+       "Frequência de recolhimento": "Frequencia_de_recolhimento"
+      },
+      "similar_names": {},
+      "declared_fields": 4,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/2e2cb2ba-95bf-4680-bf65-abc5777e229d.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/2e2cb2ba-95bf-4680-bf65-abc5777e229d.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/2e2cb2ba-95bf-4680-bf65-abc5777e229d.observed.json"
      }
     },
     {
@@ -6808,19 +7691,40 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/b31b76fc-192c-44b7-a44e-3ce2157b7751/download/metadados-destinacao.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/b31b76fc-192c-44b7-a44e-3ce2157b7751"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:49+00:00",
+     "rows": 3769,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "CNPJ Destinador",
+       "Validade da licença"
+      ],
+      "undeclared": [
+       "CNPJ do destinador",
+       "Validade da licença de operação"
+      ],
+      "spelling": {},
+      "similar_names": {
+       "CNPJ Destinador": "CNPJ do destinador"
+      },
+      "declared_fields": 7,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/058e6e91-eb09-4df6-8452-e1cfa21eb05e.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/058e6e91-eb09-4df6-8452-e1cfa21eb05e.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/058e6e91-eb09-4df6-8452-e1cfa21eb05e.observed.json"
      }
     },
     {
@@ -6837,19 +7741,45 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/b31b76fc-192c-44b7-a44e-3ce2157b7751/download/metadados-destinacao.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional/resource/b31b76fc-192c-44b7-a44e-3ce2157b7751"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:49+00:00",
+     "rows": 3769,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "CNPJ Destinador",
+       "Validade da licença"
+      ],
+      "undeclared": [
+       "CNPJ_do_destinador",
+       "Validade_da_licenca_de_operacao"
+      ],
+      "spelling": {
+       "Ano do relatório": "Ano_do_relatorio",
+       "Número da licença de operação": "Numero_da_licenca_de_operacao",
+       "Atividades constantes na licença de operação": "Atividades_constantes_na_licenca_de_operacao",
+       "Método de destinação e tratamento": "Metodo_de_destinacao_e_tratamento"
+      },
+      "similar_names": {
+       "CNPJ Destinador": "CNPJ_do_destinador"
+      },
+      "declared_fields": 7,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/1013018f-2a1d-4af8-8ffd-8acb7219e73a.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/1013018f-2a1d-4af8-8ffd-8acb7219e73a.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-fabricante-nacional/1013018f-2a1d-4af8-8ffd-8acb7219e73a.observed.json"
      }
     }
    ]
@@ -7008,19 +7938,72 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/a5d344bc-6cc6-453e-b0e3-83763692c851/download/metadados-importadores.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/a5d344bc-6cc6-453e-b0e3-83763692c851"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:49+00:00",
+     "rows": 12965,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.032003,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {
+       "Razão social": "Razao_social",
+       "Município": "Municipio",
+       "Ano do relatório": "Ano_do_relatorio",
+       "Tipo de pilhas ou bateria": "Tipo_de_pilhas_ou_bateria",
+       "Modelo de pilha ou bateria": "Modelo_de_pilha_ou_bateria",
+       "Peso Unitário (kg)": "Peso_Unitario__kg_",
+       "Quantidade importada (un)": "Quantidade_importada__un_",
+       "Peso total (kg)": "Peso_total__kg_",
+       "NCM de importação": "NCM_de_importacao",
+       "Abrangência da comercialização": "Abrangencia_da_comercializacao"
+      },
+      "similar_names": {},
+      "declared_fields": 13,
+      "inferred_formats": {
+       "Peso Unitário (kg)": {
+        "decimalChar": ",",
+        "groupChar": "."
+       },
+       "Peso total (kg)": {
+        "decimalChar": ",",
+        "groupChar": "."
+       },
+       "Laudo": {
+        "trueValues": [
+         "S",
+         "SIM",
+         "Sim",
+         "s"
+        ],
+        "falseValues": [
+         "N",
+         "NAO",
+         "Nao",
+         "NÃO",
+         "Não",
+         "n"
+        ]
+       }
+      },
+      "errors_by_field": {
+       "Quantidade importada (un)": {
+        "type": 5394
+       }
+      }
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-importador/0dcf7b76-12fd-498e-9ae2-d3de8e5331cb.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/0dcf7b76-12fd-498e-9ae2-d3de8e5331cb.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-importador/0dcf7b76-12fd-498e-9ae2-d3de8e5331cb.observed.json"
      }
     },
     {
@@ -7037,19 +8020,64 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/a5d344bc-6cc6-453e-b0e3-83763692c851/download/metadados-importadores.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/a5d344bc-6cc6-453e-b0e3-83763692c851"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:50+00:00",
+     "rows": 12965,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.108926,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 13,
+      "inferred_formats": {
+       "Peso Unitário (kg)": {
+        "decimalChar": ",",
+        "groupChar": "."
+       },
+       "Peso total (kg)": {
+        "decimalChar": ",",
+        "groupChar": "."
+       },
+       "Laudo": {
+        "trueValues": [
+         "S",
+         "SIM",
+         "Sim",
+         "s"
+        ],
+        "falseValues": [
+         "N",
+         "NAO",
+         "Nao",
+         "NÃO",
+         "Não",
+         "n"
+        ]
+       }
+      },
+      "errors_by_field": {
+       "Ano do relatório": {
+        "type": 12965
+       },
+       "Quantidade importada (un)": {
+        "type": 5394
+       }
+      }
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-importador/8b4cc0cb-f3c6-4fe3-be79-94ab1867df71.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/8b4cc0cb-f3c6-4fe3-be79-94ab1867df71.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-importador/8b4cc0cb-f3c6-4fe3-be79-94ab1867df71.observed.json"
      }
     },
     {
@@ -7095,11 +8123,11 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/be344f38-bdfa-4ab5-aeab-e17a47dcf921/download/metadados-produtos-que-contem-pilhas-e-baterias.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/be344f38-bdfa-4ab5-aeab-e17a47dcf921"
      },
-     "status": null,
+     "status": "error",
      "validated_at": null,
      "rows": null,
-     "schema_kind": null,
-     "error": null,
+     "schema_kind": "declared",
+     "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importados/pilhas_baterias_produtos_consolidado_todos_anos.xml.zip",
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
@@ -7124,11 +8152,11 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/be344f38-bdfa-4ab5-aeab-e17a47dcf921/download/metadados-produtos-que-contem-pilhas-e-baterias.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/be344f38-bdfa-4ab5-aeab-e17a47dcf921"
      },
-     "status": null,
+     "status": "error",
      "validated_at": null,
      "rows": null,
-     "schema_kind": null,
-     "error": null,
+     "schema_kind": "declared",
+     "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importados/pilhas_baterias_produtos_consolidado_todos_anos.json.zip",
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
@@ -7208,19 +8236,52 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/5e1a08a5-da03-4c8a-8c01-5206b629e5bc/download/metadados-residuos-e-produtos.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/5e1a08a5-da03-4c8a-8c01-5206b629e5bc"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:52+00:00",
+     "rows": 7034,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.036456,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {
+       "Ano do relatório": "Ano_do_relatorio",
+       "Tipo de pilhas ou baterias": "Tipo_de_pilhas_ou_baterias",
+       "Modelo de pilhas ou baterias": "Modelo_de_pilhas_ou_baterias",
+       "Peso unitário (kg)": "Peso_unitario__kg_",
+       "Quantidade recebida (un)": "Quantidade_recebida__un_",
+       "Peso total (kg)": "Peso_total__kg_"
+      },
+      "similar_names": {},
+      "declared_fields": 7,
+      "inferred_formats": {
+       "Peso unitário (kg)": {
+        "decimalChar": ",",
+        "groupChar": "."
+       },
+       "Peso total (kg)": {
+        "decimalChar": ",",
+        "groupChar": "."
+       }
+      },
+      "errors_by_field": {
+       "Quantidade recebida (un)": {
+        "type": 1795
+       }
+      }
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-importador/7fcc2bcd-fdb0-4be5-b215-37973dc6dd2f.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/7fcc2bcd-fdb0-4be5-b215-37973dc6dd2f.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-importador/7fcc2bcd-fdb0-4be5-b215-37973dc6dd2f.observed.json"
      }
     },
     {
@@ -7237,19 +8298,45 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/5e1a08a5-da03-4c8a-8c01-5206b629e5bc/download/metadados-residuos-e-produtos.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/5e1a08a5-da03-4c8a-8c01-5206b629e5bc"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:54+00:00",
+     "rows": 7034,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.036456,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 7,
+      "inferred_formats": {
+       "Peso unitário (kg)": {
+        "decimalChar": ",",
+        "groupChar": "."
+       },
+       "Peso total (kg)": {
+        "decimalChar": ",",
+        "groupChar": "."
+       }
+      },
+      "errors_by_field": {
+       "Quantidade recebida (un)": {
+        "type": 1795
+       }
+      }
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-importador/ebca9d7f-aceb-4c50-9f48-34f502d2eb55.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/ebca9d7f-aceb-4c50-9f48-34f502d2eb55.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-importador/ebca9d7f-aceb-4c50-9f48-34f502d2eb55.observed.json"
      }
     },
     {
@@ -7310,19 +8397,39 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/415f379b-740e-4d75-96e0-3f7d88a81c3b/download/metadados-pontos-de-coleta.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/415f379b-740e-4d75-96e0-3f7d88a81c3b"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:54+00:00",
+     "rows": 68812,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {
+       "Ano do relatório": "Ano_do_relatorio",
+       "Ponto de coleta": "Ponto_de_coleta",
+       "CNPJ do ponto de coleta": "CNPJ_do_ponto_de_coleta",
+       "Endereço": "Endereco",
+       "Município": "Municipio",
+       "Sítio na Internet": "Sitio_na_internet"
+      },
+      "similar_names": {},
+      "declared_fields": 11,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-importador/d7f3fcc4-4a5d-413e-9213-9f6ede3a1380.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/d7f3fcc4-4a5d-413e-9213-9f6ede3a1380.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-importador/d7f3fcc4-4a5d-413e-9213-9f6ede3a1380.observed.json"
      }
     },
     {
@@ -7339,19 +8446,34 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/415f379b-740e-4d75-96e0-3f7d88a81c3b/download/metadados-pontos-de-coleta.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/415f379b-740e-4d75-96e0-3f7d88a81c3b"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:26:59+00:00",
+     "rows": 68812,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.0,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {
+       "Sítio na Internet": "Sítio na internet"
+      },
+      "similar_names": {},
+      "declared_fields": 11,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-importador/a2adba95-0b96-4ccf-9630-13cc1668396a.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/a2adba95-0b96-4ccf-9630-13cc1668396a.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-importador/a2adba95-0b96-4ccf-9630-13cc1668396a.observed.json"
      }
     },
     {
@@ -7397,11 +8519,11 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/7f7bb05d-1e89-45fb-b6d0-49decfad20a4/download/metadados-transporte.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/7f7bb05d-1e89-45fb-b6d0-49decfad20a4"
      },
-     "status": null,
+     "status": "error",
      "validated_at": null,
      "rows": null,
-     "schema_kind": null,
-     "error": null,
+     "schema_kind": "declared",
+     "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_consolidado_todos_anos.xml.zip",
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
@@ -7426,11 +8548,11 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/7f7bb05d-1e89-45fb-b6d0-49decfad20a4/download/metadados-transporte.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/7f7bb05d-1e89-45fb-b6d0-49decfad20a4"
      },
-     "status": null,
+     "status": "error",
      "validated_at": null,
      "rows": null,
-     "schema_kind": null,
-     "error": null,
+     "schema_kind": "declared",
+     "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_consolidado_todos_anos.json.zip",
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
@@ -7508,19 +8630,48 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/c79fe74d-1bbc-4a4c-a804-22c3cb551099/download/metadados-destinacao.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/c79fe74d-1bbc-4a4c-a804-22c3cb551099"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:27:03+00:00",
+     "rows": 7825,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.000974,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {
+       "Ano do relatório": "Ano_do_relatorio",
+       "CNPJ Destinador": "CNPJ_Destinador",
+       "Licença de Operação": "Licenca_de_Operacao",
+       "Validade da licença": "Validade_da_Licenca",
+       "Atividades da LO": "Atividades_da_LO",
+       "Método de destinação e/ou tratamento": "Metodo_de_Destinacao_e_ou_Tratamento",
+       "CNPJ Aterro": "CNPJ_Aterro"
+      },
+      "similar_names": {},
+      "declared_fields": 8,
+      "inferred_formats": {
+       "Validade da licença": {
+        "format": "%d/%m/%Y"
+       }
+      },
+      "errors_by_field": {
+       "Validade da licença": {
+        "type": 61
+       }
+      }
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-importador/de5ffe29-1873-4b34-87e9-fa5cb7e1a6a7.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/de5ffe29-1873-4b34-87e9-fa5cb7e1a6a7.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-importador/de5ffe29-1873-4b34-87e9-fa5cb7e1a6a7.observed.json"
      }
     },
     {
@@ -7537,19 +8688,43 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/c79fe74d-1bbc-4a4c-a804-22c3cb551099/download/metadados-destinacao.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador/resource/c79fe74d-1bbc-4a4c-a804-22c3cb551099"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:27:05+00:00",
+     "rows": 7825,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": true,
+      "error_rate": 0.000974,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {
+       "Validade da licença": "Validade da Licença",
+       "Método de destinação e/ou tratamento": "Método de Destinação e/ou Tratamento"
+      },
+      "similar_names": {},
+      "declared_fields": 8,
+      "inferred_formats": {
+       "Validade da licença": {
+        "format": "%d/%m/%Y"
+       }
+      },
+      "errors_by_field": {
+       "Validade da licença": {
+        "type": 61
+       }
+      }
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/rapp-pilhas-e-baterias-importador/a262adef-7e05-47fe-b1ab-56cc86980a05.declared.json"
+      "declared": "schemas/rapp-pilhas-e-baterias-importador/a262adef-7e05-47fe-b1ab-56cc86980a05.declared.json",
+      "observed": "schemas/rapp-pilhas-e-baterias-importador/a262adef-7e05-47fe-b1ab-56cc86980a05.observed.json"
      }
     }
    ]
@@ -7664,7 +8839,7 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AGROTOXICOS/RelatoriosdeComercializacaodeAgrotoxicos/relatorios_comercializacao_agrotoxicos.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:43:06+00:00",
+     "validated_at": "2026-10-02T19:48:59+00:00",
      "rows": 124298,
      "schema_kind": null,
      "error": null,
@@ -7686,18 +8861,22 @@
      "level": 0,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AGROTOXICOS/RelatoriosdeComercializacaodeAgrotoxicos/relatorios_comercializacao_agrotoxicos.xml",
      "dictionary": null,
-     "status": null,
-     "validated_at": null,
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:27:05+00:00",
+     "rows": 124298,
      "schema_kind": null,
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/relatorios-de-comercializacao-de-agrotoxicos/1fb9c97f-13b8-4385-95e9-8249b974746c.observed.json"
+     }
     },
     {
      "id": "570e4b24-e728-4887-bd6c-864cc8c9f587",
@@ -7705,18 +8884,22 @@
      "level": 0,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AGROTOXICOS/RelatoriosdeComercializacaodeAgrotoxicos/relatorios_comercializacao_agrotoxicos.json",
      "dictionary": null,
-     "status": null,
-     "validated_at": null,
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:27:24+00:00",
+     "rows": 124298,
      "schema_kind": null,
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/relatorios-de-comercializacao-de-agrotoxicos/570e4b24-e728-4887-bd6c-864cc8c9f587.observed.json"
+     }
     }
    ]
   },
@@ -8401,19 +9584,85 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/a1f609a7-3bcf-4639-ab86-665214e051d9/resource/1374f568-4a2b-4ff1-b4c2-a39a2477899d/download/sinaflor-corte-de-arvores-isoladas.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-corte-de-arvores-isoladas/resource/1374f568-4a2b-4ff1-b4c2-a39a2477899d"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:27:34+00:00",
+     "rows": 272049,
+     "schema_kind": "declared",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.100994,
+      "missing": [
+       "data_de_emissao",
+       "data_do_tramite",
+       "natureza_juridica",
+       "nome_do_rt",
+       "nro_art",
+       "situacao",
+       "ultimo_tramite"
+      ],
+      "undeclared": [
+       "ALTURA",
+       "ARVORE_LATITUDE",
+       "ARVORE_LONGITUDE",
+       "DAP",
+       "DATA_DE_CADASTRO",
+       "NRO_CONSELHO_DE_CLASSE_RT",
+       "NRO_PROCESSO",
+       "NRO_PROTOCOLO",
+       "POLIGONO_DO_EMPREEND_VINC"
+      ],
+      "spelling": {
+       "nro_registro": "NRO_REGISTRO",
+       "nro_autorizacao": "NRO_AUTORIZACAO",
+       "nro_autorizacao_original": "NRO_AUTORIZACAO_ORIGINAL",
+       "data_de_validade": "DATA_DE_VALIDADE",
+       "uf": "UF",
+       "municipio": "MUNICIPIO",
+       "nome_detentor": "NOME_DETENTOR",
+       "cpf_cnpj_detentor": "CPF_CNPJ_DETENTOR",
+       "imovel_rural_vinculado": "IMOVEL_RURAL_VINCULADO",
+       "nro_car_imovel_rural": "NRO_CAR_IMOVEL_RURAL",
+       "nome_empreendimento_vinc": "NOME_EMPREENDIMENTO_VINC",
+       "latitude_empreendimento": "LATITUDE_EMPREENDIMENTO",
+       "longitude_empreendimento": "LONGITUDE_EMPREENDIMENTO",
+       "atividade_rt": "ATIVIDADE_RT",
+       "atividade": "ATIVIDADE",
+       "tipo_de_empreendimento": "TIPO_DE_EMPREENDIMENTO",
+       "competencia_da_avaliacao": "COMPETENCIA_DA_AVALIACAO",
+       "orgao_ambiental_resp_analise": "ORGAO_AMBIENTAL_RESP_ANALISE",
+       "produto_florestal": "PRODUTO_FLORESTAL",
+       "nome_cientifico": "NOME_CIENTIFICO",
+       "nome_popular": "NOME_POPULAR",
+       "volume": "VOLUME",
+       "data_da_situacao": "DATA_DA_SITUACAO",
+       "ultima_atualizacao_relatorio": "ULTIMA_ATUALIZACAO_RELATORIO"
+      },
+      "similar_names": {},
+      "declared_fields": 31,
+      "inferred_formats": {},
+      "errors_by_field": {
+       "data_de_validade": {
+        "type": 272049
+       },
+       "ultima_atualizacao_relatorio": {
+        "type": 272049
+       },
+       "data_da_situacao": {
+        "type": 115312
+       }
+      }
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "declared": "schemas/sinaflor-corte-de-arvores-isoladas/1db30067-2c1a-43f6-abff-d3258cdc376a.declared.json"
+      "declared": "schemas/sinaflor-corte-de-arvores-isoladas/1db30067-2c1a-43f6-abff-d3258cdc376a.declared.json",
+      "observed": "schemas/sinaflor-corte-de-arvores-isoladas/1db30067-2c1a-43f6-abff-d3258cdc376a.observed.json"
      }
     },
     {
@@ -8430,11 +9679,11 @@
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/a1f609a7-3bcf-4639-ab86-665214e051d9/resource/1374f568-4a2b-4ff1-b4c2-a39a2477899d/download/sinaflor-corte-de-arvores-isoladas.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-corte-de-arvores-isoladas/resource/1374f568-4a2b-4ff1-b4c2-a39a2477899d"
      },
-     "status": null,
+     "status": "error",
      "validated_at": null,
      "rows": null,
-     "schema_kind": null,
-     "error": null,
+     "schema_kind": "declared",
+     "error": "IncompleteJSONError: lexical error: invalid char in json text.\n          a (m³)\", \"NOME_CIENTIFICO\": NaN, \"NOME_POPULAR\": NaN, \"DAP\"\n                     (right here) ------^\n",
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
@@ -8509,11 +9758,11 @@
       "url": "https://dadosabertos.ibama.gov.br/dataset/d7986b0b-9bd0-4c95-a0b8-99fad6b188e0/resource/27303f72-d183-475d-a535-f6b3b7feef7e/download/sinaflor-empreendimentos-de-base-florestal.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-empreendimentos-de-base-florestal/resource/27303f72-d183-475d-a535-f6b3b7feef7e"
      },
-     "status": null,
+     "status": "error",
      "validated_at": null,
      "rows": null,
-     "schema_kind": null,
-     "error": null,
+     "schema_kind": "declared",
+     "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBaseFlorestal_xml.zip",
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
@@ -8538,11 +9787,11 @@
       "url": "https://dadosabertos.ibama.gov.br/dataset/d7986b0b-9bd0-4c95-a0b8-99fad6b188e0/resource/27303f72-d183-475d-a535-f6b3b7feef7e/download/sinaflor-empreendimentos-de-base-florestal.csv",
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-empreendimentos-de-base-florestal/resource/27303f72-d183-475d-a535-f6b3b7feef7e"
      },
-     "status": null,
+     "status": "error",
      "validated_at": null,
      "rows": null,
-     "schema_kind": null,
-     "error": null,
+     "schema_kind": "declared",
+     "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBaseFlorestal_json.zip",
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
@@ -8784,8 +10033,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-pmfs-outros-biomas/resource/115c7b39-4ebb-4a5f-9652-2b3b3da5e308"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:44:11+00:00",
-     "rows": 1832,
+     "validated_at": "2026-10-02T19:49:00+00:00",
+     "rows": 1833,
      "schema_kind": "declared",
      "error": null,
      "encodings": [
@@ -8794,7 +10043,7 @@
      "distinct_headers": 1,
      "conformance": {
       "pass": false,
-      "error_rate": 0.026161,
+      "error_rate": 0.026173,
       "missing": [],
       "undeclared": [],
       "spelling": {
@@ -8840,7 +10089,7 @@
        "data_do_tramite": "DATA_DO_TRAMITE",
        "ultima_atualizacao_relatorio": "ULTIMA_ATUALIZACAO_RELATORIO"
       },
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 41,
       "inferred_formats": {
        "data_de_validade": {
@@ -8849,13 +10098,13 @@
       },
       "errors_by_field": {
        "ultima_atualizacao_relatorio": {
-        "type": 1832
+        "type": 1833
        },
        "nro_art": {
         "type": 70
        },
        "nro_autorizacao": {
-        "type": 63
+        "type": 64
        }
       }
      },
@@ -8864,15 +10113,23 @@
      "distributions": [
       {
        "id": "8e7b0ec7-2570-41c1-9a65-7f455708990d",
-       "name": "PMFS Outros Biomas",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/pmfs/OutrosBiomas/pmfsOutrosBiomas.json"
+       "name": "PMFS Outros Biomas",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "5d3ea5d4-be41-4613-b8e1-c499d5a0dc0d",
-       "name": "PMFS Outros Biomas",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/pmfs/OutrosBiomas/pmfsOutrosBiomas.xml"
+       "name": "PMFS Outros Biomas",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -9237,8 +10494,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-uso-alternativo-do-solo/resource/1400b471-62bc-4328-a7fb-047923b28781"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:44:29+00:00",
-     "rows": 245314,
+     "validated_at": "2026-10-02T19:49:05+00:00",
+     "rows": 245503,
      "schema_kind": "declared",
      "error": null,
      "encodings": [
@@ -9247,7 +10504,7 @@
      "distinct_headers": 1,
      "conformance": {
       "pass": false,
-      "error_rate": 0.094925,
+      "error_rate": 0.094921,
       "missing": [],
       "undeclared": [],
       "spelling": {
@@ -9289,21 +10546,21 @@
        "data_do_tramite": "DATA_DO_TRAMITE",
        "ultima_atualizacao_relatorio": "ULTIMA_ATUALIZACAO_RELATORIO"
       },
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 37,
       "inferred_formats": {},
       "errors_by_field": {
        "data_de_emissao": {
-        "type": 245314
+        "type": 245503
        },
        "data_de_validade": {
-        "type": 245314
+        "type": 245503
        },
        "data_da_situacao": {
-        "type": 125657
+        "type": 125715
        },
        "ultima_atualizacao_relatorio": {
-        "type": 245314
+        "type": 245503
        }
       }
      },
@@ -9312,15 +10569,23 @@
      "distributions": [
       {
        "id": "4ff928aa-3f23-422f-81ed-f412407c9e49",
-       "name": "Uso Alternativo do Solo",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/usoAlternativoDoSolo/uso-alternativo-do-solo.json"
+       "name": "Uso Alternativo do Solo",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "681995ed-2429-46ee-b5d6-7bb102a2159a",
-       "name": "Uso Alternativo do Solo",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/usoAlternativoDoSolo/uso-alternativo-do-solo.xml"
+       "name": "Uso Alternativo do Solo",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -9350,8 +10615,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-uso-alternativo-do-solo-agricultor-familiar/resource/eeb2d948-dcdd-44c8-916a-1dd131deacfb"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:44:42+00:00",
-     "rows": 1391,
+     "validated_at": "2026-10-02T19:49:25+00:00",
+     "rows": 1397,
      "schema_kind": "described",
      "error": null,
      "encodings": [
@@ -9360,34 +10625,34 @@
      "distinct_headers": 1,
      "conformance": {
       "pass": false,
-      "error_rate": 0.208829,
+      "error_rate": 0.208807,
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 28,
       "inferred_formats": {},
       "errors_by_field": {
        "DATA_DE_EMISSAO": {
-        "type": 1391
+        "type": 1397
        },
        "DATA_DE_VALIDADE": {
-        "type": 1391
+        "type": 1397
        },
        "AREA_A_SER_SUPRIMIDA": {
-        "type": 884
+        "type": 887
        },
        "VOLUME": {
         "type": 4
        },
        "DATA_DA_SITUACAO": {
-        "type": 1391
+        "type": 1397
        },
        "DATA_DO_TRAMITE": {
-        "type": 1391
+        "type": 1397
        },
        "ULTIMA_ATUALIZACAO_RELATORIO": {
-        "type": 1391
+        "type": 1397
        }
       }
      },
@@ -9396,15 +10661,23 @@
      "distributions": [
       {
        "id": "064fb4d4-2689-4038-afd7-6c903153a2ab",
-       "name": "Sinaflor - Uso Alternativo do Solo - Agricultor familiar",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/usoAlternativoDoSoloAgriculturaFamiliar/uso-alternativo-do-solo-agricultura-familiar.json"
+       "name": "Sinaflor - Uso Alternativo do Solo - Agricultor familiar",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "5d0c59ac-bd9b-4e06-b2ad-933218ee8f77",
-       "name": "Sinaflor - Uso Alternativo do Solo - Agricultor familiar",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/usoAlternativoDoSoloAgriculturaFamiliar/uso-alternativo-do-solo-agricultura-familiar.xml"
+       "name": "Sinaflor - Uso Alternativo do Solo - Agricultor familiar",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -10060,19 +11333,48 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/volumes-explorados-if-100/resource/f27715d9-8f23-4c01-8440-5cc0c2567b00"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:28:08+00:00",
+     "rows": 2172220,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.238095,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 21,
+      "inferred_formats": {},
+      "errors_by_field": {
+       "DATA_DE_EMISSAO": {
+        "type": 2172220
+       },
+       "DATA_DE_VALIDADE": {
+        "type": 2172220
+       },
+       "DATA_DA_EXPLORACAO": {
+        "type": 2172220
+       },
+       "DATA_DA_SITUACAO": {
+        "type": 2172220
+       },
+       "ULTIMA_ATUALIZACAO_RELATORIO": {
+        "type": 2172220
+       }
+      }
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/volumes-explorados-if-100/f27715d9-8f23-4c01-8440-5cc0c2567b00.described.json"
+      "described": "schemas/volumes-explorados-if-100/f27715d9-8f23-4c01-8440-5cc0c2567b00.described.json",
+      "observed": "schemas/volumes-explorados-if-100/f27715d9-8f23-4c01-8440-5cc0c2567b00.observed.json"
      }
     },
     {
@@ -10086,19 +11388,48 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/volumes-explorados-if-100/resource/cc66d4ce-5eca-4a07-bc2c-aa4f567bc82f"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:33:33+00:00",
+     "rows": 2172220,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.238095,
+      "missing": [],
+      "undeclared": [],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 21,
+      "inferred_formats": {},
+      "errors_by_field": {
+       "DATA_DE_EMISSAO": {
+        "type": 2172220
+       },
+       "DATA_DE_VALIDADE": {
+        "type": 2172220
+       },
+       "DATA_DA_EXPLORACAO": {
+        "type": 2172220
+       },
+       "DATA_DA_SITUACAO": {
+        "type": 2172220
+       },
+       "ULTIMA_ATUALIZACAO_RELATORIO": {
+        "type": 2172220
+       }
+      }
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/volumes-explorados-if-100/cc66d4ce-5eca-4a07-bc2c-aa4f567bc82f.described.json"
+      "described": "schemas/volumes-explorados-if-100/cc66d4ce-5eca-4a07-bc2c-aa4f567bc82f.described.json",
+      "observed": "schemas/volumes-explorados-if-100/cc66d4ce-5eca-4a07-bc2c-aa4f567bc82f.observed.json"
      }
     }
    ]
@@ -10123,8 +11454,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/volumes-explorados-inventario-amostral/resource/8b868981-3062-414c-9bd9-e6a896c050fb"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:47:03+00:00",
-     "rows": 1535083,
+     "validated_at": "2026-10-02T19:49:32+00:00",
+     "rows": 1536155,
      "schema_kind": "described",
      "error": null,
      "encodings": [
@@ -10141,12 +11472,12 @@
        "CNPJ_CPF_DETENTOR"
       ],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 19,
       "inferred_formats": {},
       "errors_by_field": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
-        "type": 1535083
+        "type": 1536155
        }
       }
      },
@@ -10169,19 +11500,40 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/volumes-explorados-inventario-amostral/resource/86a438d0-d599-462e-b771-28f69bcf2395"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:36:01+00:00",
+     "rows": 1536155,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.055556,
+      "missing": [
+       "CPF_CNPJ_DETENTOR"
+      ],
+      "undeclared": [
+       "CNPJ_CPF_DETENTOR"
+      ],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 19,
+      "inferred_formats": {},
+      "errors_by_field": {
+       "ULTIMA_ATUALIZACAO_RELATORIO": {
+        "type": 1536155
+       }
+      }
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/volumes-explorados-inventario-amostral/86a438d0-d599-462e-b771-28f69bcf2395.described.json"
+      "described": "schemas/volumes-explorados-inventario-amostral/86a438d0-d599-462e-b771-28f69bcf2395.described.json",
+      "observed": "schemas/volumes-explorados-inventario-amostral/86a438d0-d599-462e-b771-28f69bcf2395.observed.json"
      }
     },
     {
@@ -10195,19 +11547,40 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/volumes-explorados-inventario-amostral/resource/5d6f99ec-b9e1-4a62-ba03-231ff9f7234d"
      },
-     "status": null,
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T19:38:30+00:00",
+     "rows": 1536155,
+     "schema_kind": "described",
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.055556,
+      "missing": [
+       "CPF_CNPJ_DETENTOR"
+      ],
+      "undeclared": [
+       "CNPJ_CPF_DETENTOR"
+      ],
+      "spelling": {},
+      "similar_names": {},
+      "declared_fields": 19,
+      "inferred_formats": {},
+      "errors_by_field": {
+       "ULTIMA_ATUALIZACAO_RELATORIO": {
+        "type": 1536155
+       }
+      }
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/volumes-explorados-inventario-amostral/5d6f99ec-b9e1-4a62-ba03-231ff9f7234d.described.json"
+      "described": "schemas/volumes-explorados-inventario-amostral/5d6f99ec-b9e1-4a62-ba03-231ff9f7234d.described.json",
+      "observed": "schemas/volumes-explorados-inventario-amostral/5d6f99ec-b9e1-4a62-ba03-231ff9f7234d.observed.json"
      }
     }
    ]
@@ -10347,6 +11720,17 @@
    "detail": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:img_foto_rio_doce_p&outputFormat=csv"
   },
   {
+   "dataset": "multas-ambientais-distribuidas-por-bens-tutelados",
+   "title": "Multas Ambientais Distribuídas por Bens Tutelados",
+   "file": "Quantidade de Multas Ambientais Distribuídas ...",
+   "id": "45afa8f4-25ec-414d-8ea6-34a70814fc36",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/MULTAS_AMBIENTAIS_DISTRIBUIDAS_POR_BENS_TUTELADOS/multas_ambientais_distribuidas_por_bens_tutelados_html.zip",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "not-tabular",
+   "reason": "not-a-table",
+   "detail": "zip without tables (first entries: ['multas_ambientais_distribuidas_por_bens_tutelados_AC.html', 'multas_ambientais_distribuidas_por_bens_tutelados_AL.html', 'multas_ambientais_distribuidas_por_bens_t"
+  },
+  {
    "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
    "title": "Rapp Pilhas e Baterias - Fabricante Nacional",
    "file": "Pontos de Coleta",
@@ -10371,9 +11755,53 @@
   {
    "dataset": "rapp-pilhas-e-baterias-importador",
    "title": "Rapp Pilhas e baterias - Importador",
+   "file": "Pilhas e baterias contidas em produtos importados",
+   "id": "78692bb1-017c-4ba4-a954-ff619bdc53ed",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importados/pilhas_baterias_produtos_consolidado_todos_anos.xml.zip",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_"
+  },
+  {
+   "dataset": "rapp-pilhas-e-baterias-importador",
+   "title": "Rapp Pilhas e baterias - Importador",
+   "file": "Pilhas e baterias contidas em produtos importados",
+   "id": "c60c95d4-ce2b-4d27-884d-1a572a604576",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importados/pilhas_baterias_produtos_consolidado_todos_anos.json.zip",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_"
+  },
+  {
+   "dataset": "rapp-pilhas-e-baterias-importador",
+   "title": "Rapp Pilhas e baterias - Importador",
    "file": "Transporte",
    "id": "c10fc1fd-3c85-4e12-a9cd-79fe464602c3",
    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_consolidado_todos_anos.csv.zip",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transport"
+  },
+  {
+   "dataset": "rapp-pilhas-e-baterias-importador",
+   "title": "Rapp Pilhas e baterias - Importador",
+   "file": "Transporte",
+   "id": "cb9cf40d-f0fa-4304-ae73-3c857c3d59d0",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_consolidado_todos_anos.xml.zip",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transport"
+  },
+  {
+   "dataset": "rapp-pilhas-e-baterias-importador",
+   "title": "Rapp Pilhas e baterias - Importador",
+   "file": "Transporte",
+   "id": "e6a02e7b-98c0-44e4-aa7c-2f61b9552e04",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_consolidado_todos_anos.json.zip",
    "host": "stibamadadosabertosprd.blob.core.windows.net",
    "status": "error",
    "reason": "HTTP 404",
@@ -10391,11 +11819,44 @@
    "detail": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:adm_comunicacidente_p&outputFormat=csv"
   },
   {
+   "dataset": "sinaflor-corte-de-arvores-isoladas",
+   "title": "Sinaflor - Corte de Árvores Isoladas",
+   "file": "Corte de Árvores Isoladas",
+   "id": "26694091-a6ec-45c0-a619-622382f7f7ad",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/CortesdeArvoresIsoladas/sinaflor-corte-de-arvores-isoladas.json.zip",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "error",
+   "reason": "other",
+   "detail": "IncompleteJSONError: lexical error: invalid char in json text.\n          a (m³)\", \"NOME_CIENTIFICO\": NaN, \"NOME_POPULAR\": NaN, \"DAP\"\n                     (right here) ------^\n"
+  },
+  {
    "dataset": "sinaflor-empreendimentos-de-base-florestal",
    "title": "Sinaflor - Empreendimentos de Base Florestal",
    "file": "Empreendimentos de base florestal",
    "id": "3d6fb0d5-4efd-4f22-8321-a075d1d48c38",
    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBaseFlorestal_csv.zip",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBas"
+  },
+  {
+   "dataset": "sinaflor-empreendimentos-de-base-florestal",
+   "title": "Sinaflor - Empreendimentos de Base Florestal",
+   "file": "Empreendimentos de base florestal",
+   "id": "68dd6c57-9a91-4913-b2ab-dfaac2cbdd8d",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBaseFlorestal_xml.zip",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "error",
+   "reason": "HTTP 404",
+   "detail": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBas"
+  },
+  {
+   "dataset": "sinaflor-empreendimentos-de-base-florestal",
+   "title": "Sinaflor - Empreendimentos de Base Florestal",
+   "file": "Empreendimentos de base florestal",
+   "id": "d20eb3a0-7463-462a-b9b7-f289510eda1c",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBaseFlorestal_json.zip",
    "host": "stibamadadosabertosprd.blob.core.windows.net",
    "status": "error",
    "reason": "HTTP 404",
@@ -10449,6 +11910,26 @@
    "similarity": 0.962
   },
   {
+   "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+   "title": "Rapp Pilhas e Baterias - Fabricante Nacional",
+   "file": "Produção",
+   "id": "473e8496-3530-4c95-897a-447db2bf8b7e",
+   "declared": "Tipo de pilhas ou bateria",
+   "column": "Tipo de pilhas ou baterias",
+   "schema_kind": "declared",
+   "similarity": 0.962
+  },
+  {
+   "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+   "title": "Rapp Pilhas e Baterias - Fabricante Nacional",
+   "file": "Produção",
+   "id": "53af19d0-356e-4e4a-ba52-98982cdc047c",
+   "declared": "Tipo de pilhas ou bateria",
+   "column": "Tipo_de_pilhas_ou_baterias",
+   "schema_kind": "declared",
+   "similarity": 0.962
+  },
+  {
    "dataset": "fiscalizacao-termo-de-embargo",
    "title": "Fiscalização - termo de embargo",
    "file": "Termos de embargo - anexos",
@@ -10465,6 +11946,26 @@
    "id": "305df277-08a9-44d4-a5af-be3e2eddb950",
    "declared": "Modelo de pilha ou bateria",
    "column": "Modelo de pilhas ou baterias",
+   "schema_kind": "declared",
+   "similarity": 0.929
+  },
+  {
+   "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+   "title": "Rapp Pilhas e Baterias - Fabricante Nacional",
+   "file": "Produção",
+   "id": "473e8496-3530-4c95-897a-447db2bf8b7e",
+   "declared": "Modelo de pilha ou bateria",
+   "column": "Modelo de pilhas ou baterias",
+   "schema_kind": "declared",
+   "similarity": 0.929
+  },
+  {
+   "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+   "title": "Rapp Pilhas e Baterias - Fabricante Nacional",
+   "file": "Produção",
+   "id": "53af19d0-356e-4e4a-ba52-98982cdc047c",
+   "declared": "Modelo de pilha ou bateria",
+   "column": "Modelo_de_pilhas_ou_baterias",
    "schema_kind": "declared",
    "similarity": 0.929
   },
@@ -10553,6 +12054,26 @@
    "title": "Fiscalização - termo de apreensão",
    "file": "Termo de apreensão - enquadramento complementar",
    "id": "497ac942-f584-415c-bed8-a5bb09f97463",
+   "declared": "DS_PAR_INC_AL_ART_DISP_COMPLEMENTAR",
+   "column": "DS_PAR_INC_AL_DISP_COMPLEMENTAR",
+   "schema_kind": "described",
+   "similarity": 0.886
+  },
+  {
+   "dataset": "fiscalizacao-termo-de-apreensao",
+   "title": "Fiscalização - termo de apreensão",
+   "file": "Termo de apreensão - enquadramento complementar",
+   "id": "76095503-a1e2-4e5d-8f02-fd05aa632522",
+   "declared": "DS_PAR_INC_AL_ART_DISP_COMPLEMENTAR",
+   "column": "DS_PAR_INC_AL_DISP_COMPLEMENTAR",
+   "schema_kind": "described",
+   "similarity": 0.886
+  },
+  {
+   "dataset": "fiscalizacao-termo-de-apreensao",
+   "title": "Fiscalização - termo de apreensão",
+   "file": "Termo de apreensão - enquadramento complementar",
+   "id": "a96d568d-2beb-44bd-84ce-19522dd0f856",
    "declared": "DS_PAR_INC_AL_ART_DISP_COMPLEMENTAR",
    "column": "DS_PAR_INC_AL_DISP_COMPLEMENTAR",
    "schema_kind": "described",
@@ -11279,12 +12800,52 @@
    "similarity": 0.833
   },
   {
+   "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
+   "title": "DOF - Trechos e Veículos de Transportes Florestais (Detalhes)",
+   "file": "Detalhes de Trechos e Veículos de Transportes ...",
+   "id": "45702319-7f8c-4e22-ade4-607935928c5e",
+   "declared": "Tipo de Transporte",
+   "column": "TIPO_TRANSPORTE",
+   "schema_kind": "described",
+   "similarity": 0.833
+  },
+  {
+   "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
+   "title": "DOF - Trechos e Veículos de Transportes Florestais (Detalhes)",
+   "file": "Detalhes de Trechos e Veículos de Transportes ...",
+   "id": "2b2107f4-8aea-4b27-9c0e-739f9d799026",
+   "declared": "Tipo de Transporte",
+   "column": "TIPO_TRANSPORTE",
+   "schema_kind": "described",
+   "similarity": 0.833
+  },
+  {
    "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
    "title": "Rapp Pilhas e Baterias - Fabricante Nacional",
    "file": "Destinação",
    "id": "9fbedfb0-618c-43d9-931a-7b5925a88842",
    "declared": "CNPJ Destinador",
    "column": "CNPJ do destinador",
+   "schema_kind": "declared",
+   "similarity": 0.833
+  },
+  {
+   "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+   "title": "Rapp Pilhas e Baterias - Fabricante Nacional",
+   "file": "Destinação",
+   "id": "058e6e91-eb09-4df6-8452-e1cfa21eb05e",
+   "declared": "CNPJ Destinador",
+   "column": "CNPJ do destinador",
+   "schema_kind": "declared",
+   "similarity": 0.833
+  },
+  {
+   "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+   "title": "Rapp Pilhas e Baterias - Fabricante Nacional",
+   "file": "Destinação",
+   "id": "1013018f-2a1d-4af8-8ffd-8acb7219e73a",
+   "declared": "CNPJ Destinador",
+   "column": "CNPJ_do_destinador",
    "schema_kind": "declared",
    "similarity": 0.833
   },
@@ -11335,6 +12896,26 @@
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
    "declared": "CTF do Remetente",
    "column": "CTF_REMETENTE",
+   "schema_kind": "described",
+   "similarity": 0.812
+  },
+  {
+   "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
+   "title": "DOF - Trechos e Veículos de Transportes Florestais (Detalhes)",
+   "file": "Detalhes de Trechos e Veículos de Transportes ...",
+   "id": "45702319-7f8c-4e22-ade4-607935928c5e",
+   "declared": "Número do Trecho",
+   "column": "NUMERO_TRECHO",
+   "schema_kind": "described",
+   "similarity": 0.812
+  },
+  {
+   "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
+   "title": "DOF - Trechos e Veículos de Transportes Florestais (Detalhes)",
+   "file": "Detalhes de Trechos e Veículos de Transportes ...",
+   "id": "2b2107f4-8aea-4b27-9c0e-739f9d799026",
+   "declared": "Número do Trecho",
+   "column": "NUMERO_TRECHO",
    "schema_kind": "described",
    "similarity": 0.812
   },
@@ -11459,6 +13040,38 @@
    "fixed": 0,
    "broken": 0,
    "new_files": 0,
+   "gone_files": 0,
+   "gone_total": 0,
+   "drift_observed": 0,
+   "drift_declared": 0
+  },
+  {
+   "at": "2026-10-02T13:52:48+00:00",
+   "report_at": "2026-10-02T19:52:26+00:00",
+   "commit": "633005c",
+   "files": 194,
+   "read": 170,
+   "checked": 109,
+   "conform": 39,
+   "l1_rate": 0.3578,
+   "not_downloaded": 23,
+   "levels": [
+    71,
+    48,
+    75,
+    0,
+    0
+   ],
+   "dataset_levels": [
+    44,
+    13,
+    20,
+    0,
+    0
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "new_files": 91,
    "gone_files": 0,
    "gone_total": 0,
    "drift_observed": 0,

@@ -1,0 +1,179 @@
+{
+ "fields": [
+  {
+   "name": "Classe_de_uso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ingrediente_ativo",
+   "type": "string",
+   "sampleEmptyShare": 0.0008
+  },
+  {
+   "name": "SEMESTRE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ANO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Vendas_a_clientes__ton__produtos_",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Vendas_a_Industrias__ton__produtos_",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Acre",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Alagoas",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Amazonas",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Amapa",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Bahia",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Ceara",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Distrito_Federal",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Espirito_Santo",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Goias",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Maranhao",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Minas_Gerais",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Mato_Grosso_do_Sul",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Mato_Grosso",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Para",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Paraiba",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Pernambuco",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Piaui",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Parana",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Rio_de_Janeiro",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Rio_Grande_do_Norte",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Rondonia",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Roraima",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Rio_Grande_do_Sul",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Santa_Catarina",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Sergipe",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Sao_Paulo",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd__Vendas___Tocantins",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-02T19:27:05+00:00",
+  "sha256": "b177c4a502d33dbd22d02ab5ecb88996f4b6ce4d0830b604057424a79ee7e2a5",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

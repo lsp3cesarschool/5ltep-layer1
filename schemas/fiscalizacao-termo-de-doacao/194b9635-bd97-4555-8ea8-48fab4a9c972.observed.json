@@ -3,27 +3,27 @@
   {
    "name": "SEQ_DOACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.0
+   "sampleEmptyShare": 0.0012
   },
   {
    "name": "NUM_DOACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0
+   "sampleEmptyShare": 0.0162
   },
   {
    "name": "SER_DOACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0
+   "sampleEmptyShare": 0.0502
   },
   {
    "name": "COD_SUBSTITUICAO",
-   "type": "any",
-   "sampleEmptyShare": 1.0
+   "type": "string",
+   "sampleEmptyShare": 0.9976
   },
   {
    "name": "SQ_ENQUADRAMENTO",
    "type": "integer",
-   "sampleEmptyShare": 0.0588
+   "sampleEmptyShare": 0.0832
   },
   {
    "name": "ADMINISTRATIVO",
@@ -33,27 +33,27 @@
   {
    "name": "NORMA_TIPO",
    "type": "string",
-   "sampleEmptyShare": 0.0588
+   "sampleEmptyShare": 0.0864
   },
   {
    "name": "NORMA_NUMERO",
    "type": "string",
-   "sampleEmptyShare": 0.5518
+   "sampleEmptyShare": 0.4398
   },
   {
    "name": "ARTIGO",
    "type": "string",
-   "sampleEmptyShare": 0.0588
+   "sampleEmptyShare": 0.0834
   },
   {
    "name": "NU_PARAGRAFO",
    "type": "string",
-   "sampleEmptyShare": 0.7506
+   "sampleEmptyShare": 0.57
   },
   {
    "name": "NU_INCISO",
    "type": "string",
-   "sampleEmptyShare": 0.9684
+   "sampleEmptyShare": 0.902
   },
   {
    "name": "CD_ALINEA",
@@ -69,8 +69,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-01T19:39:05+00:00",
-  "sha256": "c707520de59f861b9d0eed86e4415a385deeea3f06ccd2bada2d45137a290650",
+  "observed_at": "2026-10-02T19:47:38+00:00",
+  "sha256": "d2b325fe12496877e24e2ecccc2d5085c041dcc4336a1354a6a1140cc6898b00",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

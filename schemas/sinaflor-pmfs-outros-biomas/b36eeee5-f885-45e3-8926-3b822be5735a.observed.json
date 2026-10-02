@@ -3,7 +3,7 @@
   {
    "name": "NRO_REGISTRO",
    "type": "integer",
-   "sampleEmptyShare": 0.0344
+   "sampleEmptyShare": 0.0349
   },
   {
    "name": "DATA_DE_EMISSAO",
@@ -19,7 +19,7 @@
   {
    "name": "NRO_AUTORIZACAO_ORIGINAL",
    "type": "string",
-   "sampleEmptyShare": 0.9793
+   "sampleEmptyShare": 0.9787
   },
   {
    "name": "DATA_DE_VALIDADE",
@@ -50,12 +50,12 @@
   {
    "name": "IMOVEL_RURAL_VINCULADO",
    "type": "string",
-   "sampleEmptyShare": 0.2276
+   "sampleEmptyShare": 0.228
   },
   {
    "name": "NRO_CAR_IMOVEL_RURAL",
    "type": "string",
-   "sampleEmptyShare": 0.2276
+   "sampleEmptyShare": 0.228
   },
   {
    "name": "NOME_EMPREENDIMENTO_VINC",
@@ -77,17 +77,17 @@
   {
    "name": "NOME_DO_RT",
    "type": "string",
-   "sampleEmptyShare": 0.0066
+   "sampleEmptyShare": 0.0082
   },
   {
    "name": "NRO_ART",
    "type": "string",
-   "sampleEmptyShare": 0.0066
+   "sampleEmptyShare": 0.0082
   },
   {
    "name": "ATIVIDADE_RT",
    "type": "string",
-   "sampleEmptyShare": 0.0409
+   "sampleEmptyShare": 0.0431
   },
   {
    "name": "ATIVIDADE",
@@ -97,12 +97,12 @@
   {
    "name": "TIPO_DE_EMPREENDIMENTO",
    "type": "string",
-   "sampleEmptyShare": 0.0371
+   "sampleEmptyShare": 0.0376
   },
   {
    "name": "NATUREZA_JURIDICA",
    "type": "string",
-   "sampleEmptyShare": 0.0344
+   "sampleEmptyShare": 0.0349
   },
   {
    "name": "COMPETENCIA_AVALIACAO",
@@ -117,67 +117,67 @@
   {
    "name": "MODALIDADE_PMFS",
    "type": "string",
-   "sampleEmptyShare": 0.0344
+   "sampleEmptyShare": 0.0349
   },
   {
    "name": "CLIMA",
    "type": "string",
-   "sampleEmptyShare": 0.0344
+   "sampleEmptyShare": 0.0349
   },
   {
    "name": "SOLO",
    "type": "string",
-   "sampleEmptyShare": 0.0344
+   "sampleEmptyShare": 0.0349
   },
   {
    "name": "BIOMA",
    "type": "string",
-   "sampleEmptyShare": 0.0344
+   "sampleEmptyShare": 0.0349
   },
   {
    "name": "FITOFISIONOMIA",
    "type": "string",
-   "sampleEmptyShare": 0.0344
+   "sampleEmptyShare": 0.0349
   },
   {
    "name": "CICLO_CORTE",
    "type": "integer",
-   "sampleEmptyShare": 0.0944
+   "sampleEmptyShare": 0.0949
   },
   {
    "name": "AREA_TOTAL_PROPRIEDADE",
    "type": "number",
-   "sampleEmptyShare": 0.036
+   "sampleEmptyShare": 0.0366
   },
   {
    "name": "AREA_MANEJO_FLORESTAL",
    "type": "number",
-   "sampleEmptyShare": 0.036
+   "sampleEmptyShare": 0.0366
   },
   {
    "name": "AREA_EFETIVO_MANEJO",
    "type": "number",
-   "sampleEmptyShare": 0.066
+   "sampleEmptyShare": 0.0666
   },
   {
    "name": "CAPACIDADE_PRODUTIVA",
    "type": "number",
-   "sampleEmptyShare": 0.0344
+   "sampleEmptyShare": 0.0349
   },
   {
    "name": "ESTIMATIVA_PRODUTIVA_ANUAL",
    "type": "number",
-   "sampleEmptyShare": 0.0344
+   "sampleEmptyShare": 0.0349
   },
   {
    "name": "INTENSIDADE_CORTE",
    "type": "number",
-   "sampleEmptyShare": 0.0344
+   "sampleEmptyShare": 0.0349
   },
   {
    "name": "EQUACAO_VOLUME",
    "type": "string",
-   "sampleEmptyShare": 0.0344
+   "sampleEmptyShare": 0.0349
   },
   {
    "name": "AREA_AUTORIZADA",
@@ -193,18 +193,18 @@
    "name": "DATA_DA_SITUACAO",
    "type": "date",
    "format": "%d/%m/%y",
-   "sampleEmptyShare": 0.0344
+   "sampleEmptyShare": 0.0349
   },
   {
    "name": "ULTIMO_TRAMITE",
    "type": "string",
-   "sampleEmptyShare": 0.1981
+   "sampleEmptyShare": 0.1986
   },
   {
    "name": "DATA_DO_TRAMITE",
    "type": "date",
    "format": "%d/%m/%y",
-   "sampleEmptyShare": 0.1981
+   "sampleEmptyShare": 0.1986
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -215,11 +215,11 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-01T19:44:11+00:00",
-  "sha256": "5fd566a9a77fd693f1f2c5653cd3d8833ee39b5256a9fee32195d7a8df91601d",
+  "observed_at": "2026-10-02T19:49:00+00:00",
+  "sha256": "31d17fdc2b6c413cb3bad7597a7970559a08d2559594cdb0b6bf973b3681aef9",
   "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 1832,
+  "sample_rows": 1833,
   "tables": 1,
   "distinct_headers": 1
  }
