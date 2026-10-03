@@ -169,6 +169,8 @@ Al Hilmi et al. (2026) found most reliable for tabular PDFs with local models:
 
 1. **Deterministic:** pdfplumber finds the tables; each row is read by *content* (an identifier is the
    name, a type word is the type, a number is the size), since cells drift between columns across pages.
+   A column the grid does not draw (only its header ruled, or left of the grid on a later page) is read
+   from the words in its place. When this reader learns more (`PDF_READER_VERSION`), every PDF is read again.
 2. **Local LLM:** only where stage 1 found nothing or disagrees with the data, a model run with Ollama
    on the runner reads the PDF text and returns the field list as JSON (temperature 0, fixed seed).
    The model is the one the [Layer 1 model benchmark](https://github.com/lsp3cesarschool/5ltep-layer1-modeltest)

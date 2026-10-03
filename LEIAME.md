@@ -172,7 +172,9 @@ et al. (2026) acharam mais confiável para PDFs tabulares com modelos locais:
 
 1. **Determinística:** o pdfplumber encontra as tabelas; cada linha é lida pelo *conteúdo* (um
    identificador é o nome, uma palavra de tipo é o tipo, um número é o tamanho), porque as células
-   mudam de coluna entre as páginas.
+   mudam de coluna entre as páginas. Uma coluna que a grade não desenha (só o cabeçalho tem linhas, ou
+   ela fica à esquerda da grade numa página seguinte) é lida das palavras que ocupam o seu lugar. Quando
+   este leitor aprende mais (`PDF_READER_VERSION`), todos os PDFs são lidos de novo.
 2. **LLM local:** só onde a etapa 1 não achou nada ou discorda dos dados, um modelo executado com Ollama
    no runner lê o texto do PDF e devolve a lista de campos em JSON (temperatura 0, semente fixa).
    O modelo é o que o [benchmark de modelos da Camada 1](https://github.com/lsp3cesarschool/5ltep-layer1-modeltest)
