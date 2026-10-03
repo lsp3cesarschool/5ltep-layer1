@@ -377,6 +377,20 @@ CKAN_PORTAL_URL=https://dados.recife.pe.gov.br python main.py census
 Variáveis do repositório (opcionais): `LLM_MODEL` (padrão `auto`: a escolha do benchmark de modelos; uma tag fixa o modelo) e `LLM_THINK`.
 Repositórios públicos rodam nos runners padrão do GitHub sem custo.
 
+Duas opções da instância, ligadas por padrão e mostradas no rodapé do painel, economizam downloads que
+não diriam nada de novo; as duas ficam registradas como tal, não escondidas:
+
+- **Um zip de documentos, por amostra** (`ZIP_DOCUMENTS_SAMPLE=50`). Sem intervalos de bytes (o servidor
+  de arquivos do Recife os ignora), a única forma de saber que um zip não tem tabela é lê-lo até o fim:
+  a lista de membros fica no fim. Os membros são lidos desde o começo enquanto o zip baixa; quando os 50
+  primeiros não têm tabela (os "Anexos" do Recife são zips de 1 GB com PDFs anexados a pedidos de acesso
+  à informação), o download para e o arquivo é registrado como "não é tabela, por amostra", com os
+  membros lidos, seus tipos e os bytes lidos do total. Uma tabela entre eles, e o zip é lido até o fim.
+- **Um arquivo publicado mais de uma vez** (`COPIES_ONCE=1`). Arquivos de um conjunto com o mesmo nome,
+  tamanho declarado e nome de arquivo (o Recife publica alguns três vezes) são baixados uma vez; os
+  outros recebem esse resultado, marcados como cópia dele. As cópias são contadas nos achados de
+  documentação de qualquer forma.
+
 Enquanto uma execução está em andamento, o painel avisa no topo ("baixando e validando arquivos há
 1 h 12 min", com link para a execução). O navegador do visitante lê isso da API pública do GitHub a cada
 cinco minutos. O job que baixa os arquivos não tem permissão de escrita no repositório, de propósito,
@@ -426,6 +440,8 @@ mesmo nome; os valores usados ficam registrados no resumo. Os principais:
 | `L1_PASS_THRESHOLD` | 0,85 | fração de arquivos conformes para a Camada 1 passar |
 | `ROTATION_DAYS` | 28 | um arquivo inalterado é validado de novo depois desse número de dias |
 | `VALIDATE_MAX_MINUTES` | 270 | orçamento de tempo de um lote de validação |
+| `ZIP_DOCUMENTS_SAMPLE` | 50 | um zip cujos primeiros membros (esta quantidade) não têm tabela é registrado como recipiente de documentos *por amostra*, e o download para ali; 0 lê todo zip até o fim |
+| `COPIES_ONCE` | 1 | arquivos de um conjunto com o mesmo nome, tamanho declarado e nome de arquivo são tomados como cópias de um arquivo só: só o primeiro é baixado, os outros recebem o resultado dele, marcados como cópias; 0 baixa todas as cópias |
 | `VALIDATE_WORKERS` | 3 | arquivos validados ao mesmo tempo, cada um no seu processo; os downloads são um de cada vez por servidor (um arquivo maior que um quarto de `MAX_ZIP_BYTES` é lido pela rede; uma planilha ou Parquet que talvez não caiba no disco junto com outros roda sozinho) |
 | `SURVEY_HEADER_MAX_MINUTES` | 180 | tempo que o levantamento gasta lendo cabeçalhos de arquivos nunca validados |
 | `DELIVERY_PROBES` | 3 | arquivos por servidor pedidos pelos primeiros 100 bytes em cada levantamento (entrega dos arquivos) |
@@ -453,7 +469,7 @@ dividido em quantos lotes forem precisos. Os únicos limites são o que as máqu
 | O quê | Limite | Por quê |
 |---|---|---|
 | CSV, TXT, JSON, XML | nenhum | lidos em fluxo, registro a registro, nunca inteiros na memória |
-| Zip | nenhum | lido em fluxo, membro a membro, sem o disco (um zip de formato incomum é lido do disco, até 12 GB, `MAX_ZIP_BYTES`); zips dentro de zips até 5 níveis (`ZIP_MAX_DEPTH`, proteção contra um zip que se aninha em si mesmo) |
+| Zip | nenhum | baixado inteiro e lido do disco até um quarto de 12 GB (`MAX_ZIP_BYTES`), lido em fluxo acima disso; zips dentro de zips até 5 níveis (`ZIP_MAX_DEPTH`, proteção contra um zip que se aninha em si mesmo); um zip cujos 50 primeiros membros não têm tabela é registrado como documentos por amostra (`ZIP_DOCUMENTS_SAMPLE`) |
 | XLSX, ODS | 12 GB por arquivo (o disco) | o arquivo precisa estar em disco (suas partes ficam espalhadas nele); depois as linhas são lidas uma a uma. O XLSX comporta no máximo 1.048.576 linhas por planilha |
 | XLS | nenhum, na prática | o formato comporta no máximo 65.536 linhas por planilha; lido uma planilha por vez |
 | Parquet | 12 GB por arquivo (o disco) | o índice fica no fim, então o arquivo precisa estar em disco; depois as linhas são lidas em lotes |

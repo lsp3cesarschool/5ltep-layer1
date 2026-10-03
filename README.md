@@ -369,6 +369,21 @@ CKAN_PORTAL_URL=https://dados.recife.pe.gov.br python main.py census
 Repository variables (optional): `LLM_MODEL` (default `auto`: the model benchmark's choice; a tag pins the model) and `LLM_THINK`.
 Public repositories run on GitHub's standard runners at no cost.
 
+Two options of the instance, on by default and shown in the dashboard's footer, save downloads that
+would tell nothing new; both are recorded as such, not hidden:
+
+- **A zip of documents, by sample** (`ZIP_DOCUMENTS_SAMPLE=50`). Without byte ranges (Recife's file
+  server ignores them) the only way to know that a zip holds no table is to read it to its end: the
+  list of members is at the end. The members are read from their start while the zip downloads; when
+  the first 50 hold no table (Recife's "Anexos" are 1 GB zips of PDF attachments to information
+  requests), the download stops and the file is recorded as "not a table, by sample", with the
+  members read, their kinds and the bytes read of the total. A table among them, and the zip is read
+  to its end.
+- **One file published more than once** (`COPIES_ONCE=1`). Files of a dataset with the same name,
+  declared size and file name (Recife publishes some three times) are downloaded once; the others
+  get that result, marked as a copy of it. The copies are counted in the documentation findings
+  either way.
+
 While a run is in progress, the dashboard says so at the top ("downloading and validating files for
 1 h 12 min", with a link to the run). The visitor's browser reads it from GitHub's public API every five
 minutes. The job that downloads the files has no write access to the repository, by design, so the
@@ -417,6 +432,8 @@ the same name; the values used are recorded in the summary. The main ones:
 | `L1_PASS_THRESHOLD` | 0.85 | share of conformant files for Layer 1 to pass |
 | `ROTATION_DAYS` | 28 | an unchanged file is validated again after this many days |
 | `VALIDATE_MAX_MINUTES` | 270 | time budget of one validation batch |
+| `ZIP_DOCUMENTS_SAMPLE` | 50 | a zip whose first members (this many) hold no table is recorded as a container of documents *by sample*, and its download stops there; 0 reads every zip to its end |
+| `COPIES_ONCE` | 1 | files of a dataset with the same name, declared size and file name are taken as copies of one file: only the first is downloaded, the others get its result, marked as copies; 0 downloads every copy |
 | `VALIDATE_WORKERS` | 3 | files validated at the same time, each in its own process; downloads are one at a time per server (a file larger than a quarter of `MAX_ZIP_BYTES` is read over the network; a spreadsheet or Parquet that may not fit on the disk beside others runs alone) |
 | `SURVEY_HEADER_MAX_MINUTES` | 180 | time the survey spends reading headers of files never validated |
 | `DELIVERY_PROBES` | 3 | files per server asked for their first 100 bytes in each survey (file delivery) |
@@ -444,7 +461,7 @@ into as many batches as it takes. The only limits are what GitHub's machines can
 | What | Limit | Why |
 |---|---|---|
 | CSV, TXT, JSON, XML | none | read as they stream, record by record, never held whole |
-| Zip | none | read as it streams, member by member, without the disk (a zip of an unusual layout is read from disk, up to 12 GB, `MAX_ZIP_BYTES`); zips inside zips up to 5 levels (`ZIP_MAX_DEPTH`, a guard against a zip that nests itself) |
+| Zip | none | downloaded whole and read from disk up to a quarter of 12 GB (`MAX_ZIP_BYTES`), read as it streams beyond that; zips inside zips up to 5 levels (`ZIP_MAX_DEPTH`, a guard against a zip that nests itself); a zip whose first 50 members hold no table is recorded as documents by sample (`ZIP_DOCUMENTS_SAMPLE`) |
 | XLSX, ODS | 12 GB per file (the disk) | the file must be on disk (its parts are spread through it); rows are then read one at a time. XLSX holds at most 1,048,576 rows per sheet |
 | XLS | none in practice | the format holds at most 65,536 rows per sheet; read a sheet at a time |
 | Parquet | 12 GB per file (the disk) | its index is at the end, so the file must be on disk; rows are then read in batches |
