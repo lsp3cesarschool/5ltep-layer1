@@ -1,0 +1,107 @@
+{
+ "fields": [
+  {
+   "name": "Nº AI",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nome ou Razão Social",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CPF/CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0018
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Status Débito",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo Auto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo Infração",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Enquadramento Legal",
+   "type": "string",
+   "sampleEmptyShare": 0.6638
+  },
+  {
+   "name": "Data Auto",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Valor do Auto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Moeda",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Parcela",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Quantidade de Parcelas",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Valor (Base) da Parcela",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Valor Pago",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data Pagamento",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Última Atualização Relatório",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T06:00:07+00:00",
+  "sha256": "7b1b17f2213522a905af2eb91232601821656f396fedb4c1e6b0cadef1a606f3",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 27,
+  "distinct_headers": 1
+ }
+}

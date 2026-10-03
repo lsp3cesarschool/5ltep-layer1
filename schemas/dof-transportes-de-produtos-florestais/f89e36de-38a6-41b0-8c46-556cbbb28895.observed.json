@@ -1,0 +1,300 @@
+{
+ "fields": [
+  {
+   "name": "NOME_RAZAO_SOCIAL_REMETENTE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CPF_CNPJ_REMETENTE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF_ORIGEM",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MUNICIPIO_ORIGEM",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CTF_REMETENTE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TIPO_ORIGEM",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ORGAO_HOMOLOGADOR",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "DATA_HOMOLOGACAO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "NOME_PATIO_ORIGEM",
+   "type": "string",
+   "sampleEmptyShare": 0.1512
+  },
+  {
+   "name": "NUM_SERIE_AUTEX",
+   "type": "string",
+   "sampleEmptyShare": 0.2192
+  },
+  {
+   "name": "NUM_AUTORIZACAO_ORIGINAL",
+   "type": "string",
+   "sampleEmptyShare": 0.2204
+  },
+  {
+   "name": "TIPO_AUTEX",
+   "type": "string",
+   "sampleEmptyShare": 0.2192
+  },
+  {
+   "name": "ORGAO_EMISSOR_AUTEX",
+   "type": "string",
+   "sampleEmptyShare": 0.3716
+  },
+  {
+   "name": "DATA_VALIDADE_AUTEX",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.2192
+  },
+  {
+   "name": "NUM_DI",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "ORGAO_EMISSOR_DI",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "DATA_VALIDADE_DI",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "NOME_PORTO_ENTRADA",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "PAIS_ORIGEM",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "NUM_AUTESP",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "ORGAO_EMISSOR_AUTESP",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "DATA_VALIDADE_AUTESP",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "LATITUDE_ORIGEM",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LONGITUDE_ORIGEM",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF_DESTINO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MUNICIPIO_DESTINO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_RAZAO_SOCIAL_DESTINATARIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CPF_CNPJ_DESTINATARIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CTF_DESTINATARIO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_PATIO_DESTINO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LATITUDE_DESTINO",
+   "type": "number",
+   "sampleEmptyShare": 0.6916
+  },
+  {
+   "name": "LONGITUDE_DESTINO",
+   "type": "number",
+   "sampleEmptyShare": 0.692
+  },
+  {
+   "name": "NOME_PORTO_SAIDA",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "MUNICIPIO_PORTO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "UF_PORTO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "PAIS_DESTINO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "DATA_EMISSAO_DOF",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ANO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VALIDADE_INICIAL_DOF",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VALIDADE_FINAL_DOF",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMA_TRANSACAO_DOF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_ULTIMA_TRANSACAO",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NUM_OFERTA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NUM_SERIE_DOF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "COD_CONTROLE_DOF",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ROTA_TRANSPORTE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PRODUTO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "COD_RASTREIO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "NOME_CIENTIFICO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_POPULAR",
+   "type": "string",
+   "sampleEmptyShare": 0.0034
+  },
+  {
+   "name": "UNIDADE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOLUME",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VALOR_UNITARIO",
+   "type": "number",
+   "sampleEmptyShare": 0.0274
+  },
+  {
+   "name": "VALOR_CONSOLIDADO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "SISTEMA_ORIGINARIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T06:44:48+00:00",
+  "sha256": "b0b497ec2d4cd09f959c39f0586031fca683ed32c290e12fbddfc01805d9a8da",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 538,
+  "distinct_headers": 1
+ }
+}

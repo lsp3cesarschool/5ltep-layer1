@@ -1,0 +1,250 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TRANSACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ANO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nome_do_Declarante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CPF_CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo_de_Declarante",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NIRF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Codigo_do_Imovel_no_Incra",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nome_do_Imovel",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Municipio",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Latitude_da_Sede",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Longitude_da_Sede",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_Total_do_Imovel_ATI",
+   "type": "number",
+   "sampleEmptyShare": 0.0052
+  },
+  {
+   "name": "APP_ha",
+   "type": "number",
+   "sampleEmptyShare": 0.1636
+  },
+  {
+   "name": "Reserva_Legal_ha",
+   "type": "number",
+   "sampleEmptyShare": 0.729
+  },
+  {
+   "name": "Sobreposicao_ARL_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_Liquida_ARL_ha",
+   "type": "number",
+   "sampleEmptyShare": 0.729
+  },
+  {
+   "name": "Area_RPPN_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Sobreposicao_RPPN_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Tipo_de_Area_Sobreposta_a_RPPN",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_Liquida_RPPN_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_AIE_ha",
+   "type": "number",
+   "sampleEmptyShare": 0.9776
+  },
+  {
+   "name": "Sobreposicao_AIE_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Tipo_de_Area_Sobreposta_a_AIE",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_Liquida_AIE_ha",
+   "type": "number",
+   "sampleEmptyShare": 0.9776
+  },
+  {
+   "name": "Area_Servidao_Ambiental_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Sobreposicao_ASA_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Tipo_de_Area_Sobreposta_a_ASA",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_Liquida_ASA_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_Floresta_Nativa_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Sobreposicao_AFN_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Tipo_de_Area_Sobreposta_a_AFN",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_Liquida_AFN_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_AUH_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Benfeitorias_Ativ_Rural_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_Produtos_Vegetais_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_em_Descanso_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Reflorestamento_ha",
+   "type": "number",
+   "sampleEmptyShare": 0.916
+  },
+  {
+   "name": "Pastagens_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Ativ_Granjeira_Aquicola_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_Frustracao_de_Safra_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_Demais_Benfeitorias_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_com_Mineracao_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Imprestavel_para_Ativ_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Area_Inexplorada_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "Outras_Areas_ha",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T06:03:15+00:00",
+  "sha256": "1b2aea2bd49bd4f3f701da7a8d6ce9123e75534bec7e231ee15d0f3fe3ce8499",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 30,
+  "distinct_headers": 1
+ }
+}
