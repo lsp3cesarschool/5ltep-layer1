@@ -245,7 +245,8 @@ A server that does not answer is a fact about that moment, not about the portal'
 
 - After 8 failures in a row (`UNREACHABLE_STREAK`) the survey stops asking the file server, and asks
   again what was left after 5, 10 and 20 minutes (`DICTIONARY_RETRY_ROUNDS`, `DICTIONARY_RETRY_WAIT_S`).
-- A dataset whose dictionary still does not answer keeps its last reading (marked `kept_from`), and its
+- A dataset whose dictionary still does not answer (or the header of a file, needed to link it to
+  its dictionary) keeps its last reading (marked `kept_from`), and its
   committed schemas stay: no drift issue, no lower level.
 - In a first run there is no last reading: its files wait, pending, for the next run, instead of being
   checked against a weaker schema (the DataStore) as if that were what the portal documents.

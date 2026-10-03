@@ -253,7 +253,8 @@ Um servidor que não responde é um fato daquele momento, não da documentação
 - Depois de 8 falhas seguidas (`UNREACHABLE_STREAK`), o levantamento para de pedir ao servidor de
   arquivos e pede de novo o que ficou depois de 5, 10 e 20 minutos (`DICTIONARY_RETRY_ROUNDS`,
   `DICTIONARY_RETRY_WAIT_S`).
-- Um conjunto cujo dicionário continua sem responder fica com a última leitura (marcada `kept_from`), e
+- Um conjunto cujo dicionário continua sem responder (ou o cabeçalho de um arquivo, necessário para
+  ligá-lo ao dicionário) fica com a última leitura (marcada `kept_from`), e
   os esquemas commitados dele ficam: nenhuma issue de deriva, nenhum nível rebaixado.
 - Numa primeira execução não há última leitura: os arquivos dele esperam, pendentes, pela próxima
   execução, em vez de serem conferidos contra um esquema mais fraco (o DataStore) como se fosse o que o
