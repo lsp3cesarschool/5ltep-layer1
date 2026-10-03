@@ -262,6 +262,23 @@ loop, a bad certificate) is a broken link and is reported as such.
 - The dashboard shows how many dictionaries did not answer, apart from the ones the portal publishes
   in a form that cannot be read.
 
+**Partial reads (byte ranges).** The columns of a zip, a spreadsheet or a Parquet file are only known
+by downloading it whole. Reading just the zip's index would need an HTTP `Range` request, and the file
+servers of the three portals do not answer it the same way (measured on 03/10/2026, `Range: bytes=0-99`):
+
+| Portal | Who serves the file | Answer |
+|---|---|---|
+| IBAMA | Azure Blob Storage | `206 Partial Content`, 100 bytes |
+| ANEEL | the CKAN portal itself (nginx) | `206 Partial Content`, 100 bytes, `Accept-Ranges: bytes` |
+| Recife | a download service apart from the portal (`ckan-storage-download.app.emprel.gov.br`, `server: istio-envoy`), to which CKAN redirects | `200 OK`, the whole file (973 MB for the largest zip) |
+
+HTTP lets a server ignore `Range` (RFC 9110, section 14.2), so Recife's answer is not an error, but
+there a partial read costs a full download, and a download cut short starts again from the beginning.
+CKAN does not cause it (ANEEL runs CKAN and honours ranges), and neither does the storage: the object
+storages CKAN uses (S3, MinIO, Azure) honour ranges. It comes from the layer between them, which also
+leaves out `Accept-Ranges`, `ETag` and `Last-Modified` from its answers. This is why the survey reads a
+header only where it decides something, within `SURVEY_HEADER_MAX_MINUTES` (see *Where the declared schema comes from*).
+
 ## FAIR principles and replicability
 
 - **Findable / Accessible:** code, schemas, results and summaries are public, versioned in Git, with a

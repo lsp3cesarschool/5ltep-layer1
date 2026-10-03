@@ -271,6 +271,24 @@ certificado inválido) é um link quebrado e é relatada como tal.
 - O painel mostra quantos dicionários não responderam, separados dos que o portal publica numa forma
   que não pode ser lida.
 
+**Leitura parcial (intervalos de bytes).** As colunas de um zip, de uma planilha ou de um Parquet só
+são conhecidas baixando o arquivo inteiro. Ler só o índice do zip exigiria um pedido HTTP com `Range`, e
+os servidores de arquivos dos três portais não respondem a ele do mesmo jeito (medido em 03/10/2026,
+`Range: bytes=0-99`):
+
+| Portal | Quem entrega o arquivo | Resposta |
+|---|---|---|
+| IBAMA | Azure Blob Storage | `206 Partial Content`, 100 bytes |
+| ANEEL | o próprio portal CKAN (nginx) | `206 Partial Content`, 100 bytes, `Accept-Ranges: bytes` |
+| Recife | um serviço de download à parte do portal (`ckan-storage-download.app.emprel.gov.br`, `server: istio-envoy`), para o qual o CKAN redireciona | `200 OK`, o arquivo inteiro (973 MB no maior zip) |
+
+O HTTP permite que o servidor ignore o `Range` (RFC 9110, seção 14.2), então a resposta do Recife não é
+um erro, mas ali uma leitura parcial custa um download inteiro, e um download interrompido recomeça do
+início. Não vem do CKAN (a ANEEL usa CKAN e atende intervalos), nem do armazenamento: os armazenamentos
+de objetos que o CKAN usa (S3, MinIO, Azure) atendem intervalos. Vem da camada entre os dois, que também
+deixa de fora `Accept-Ranges`, `ETag` e `Last-Modified` das respostas. Por isso o levantamento lê um
+cabeçalho só onde ele decide algo, dentro de `SURVEY_HEADER_MAX_MINUTES` (ver *De onde vem o esquema declarado*).
+
 ## Princípios FAIR e replicabilidade
 
 - **Localizável / Acessível:** código, esquemas, resultados e resumos são públicos, versionados no Git,
