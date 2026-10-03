@@ -369,6 +369,12 @@ CKAN_PORTAL_URL=https://dados.recife.pe.gov.br python main.py census
 Repository variables (optional): `LLM_MODEL` (default `auto`: the model benchmark's choice; a tag pins the model) and `LLM_THINK`.
 Public repositories run on GitHub's standard runners at no cost.
 
+While a run is in progress, the dashboard says so at the top ("downloading and validating files for
+1 h 12 min", with a link to the run). The visitor's browser reads it from GitHub's public API every five
+minutes. The job that downloads the files has no write access to the repository, by design, so the
+dashboard shows the step it is in, not the file. What is left (the queue, with the size the portal
+declares for each file and the largest ones) is written at every batch.
+
 ## Evaluation
 
 [`evaluation/`](evaluation/) holds the scripts that produce the numbers used in the thesis from the

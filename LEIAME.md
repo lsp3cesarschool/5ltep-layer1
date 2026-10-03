@@ -377,6 +377,12 @@ CKAN_PORTAL_URL=https://dados.recife.pe.gov.br python main.py census
 Variáveis do repositório (opcionais): `LLM_MODEL` (padrão `auto`: a escolha do benchmark de modelos; uma tag fixa o modelo) e `LLM_THINK`.
 Repositórios públicos rodam nos runners padrão do GitHub sem custo.
 
+Enquanto uma execução está em andamento, o painel avisa no topo ("baixando e validando arquivos há
+1 h 12 min", com link para a execução). O navegador do visitante lê isso da API pública do GitHub a cada
+cinco minutos. O job que baixa os arquivos não tem permissão de escrita no repositório, de propósito,
+então o painel mostra a etapa em que ele está, não o arquivo. O que falta (a fila, com o tamanho que o
+portal declara para cada arquivo e os maiores) é gravado a cada lote.
+
 ## Avaliação
 
 [`evaluation/`](evaluation/) tem os scripts que produzem os números usados na dissertação a partir dos
