@@ -405,5 +405,108 @@
   "checked_at": "2026-10-03T01:22:04+00:00",
   "error": "did not finish within the batch time limit",
   "reason": "new"
+ },
+ "09494a73-726a-4341-92ca-b97cf35914b2": {
+  "dataset": "ato-declaratorio-ambiental-ada",
+  "checked_at": "2026-10-03T01:23:30+00:00",
+  "schema_kind": null,
+  "schema_fingerprint": null,
+  "ckan": {
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ADA/atoDeclaratorio/ADA_atoDeclaratorio_csv.zip",
+   "last_modified": "2026-07-08T20:22:30.700745",
+   "size": null
+  },
+  "host": "stibamadadosabertosprd.blob.core.windows.net",
+  "timing": {
+   "first_byte_s": 0.53,
+   "download_s": 15.38
+  },
+  "first_seen": "2026-10-03T01:23:30+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-03T01:23:30+00:00",
+  "seconds": 45.0,
+  "sha256": "893c45b27f9efaf5d9172633e7ee39884061691e032ac2670184b5a9c7e5a8f8",
+  "bytes": 400754321,
+  "kind": "zip",
+  "http": {
+   "etag": "0x8DF1F2A7AE02517",
+   "last_modified": "Wed, 30 Sep 2026 19:39:02 GMT",
+   "content_length": 400754321
+  },
+  "summary": {
+   "tables": 30,
+   "rows": 6201240,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 1,
+   "columns_without_name": 0,
+   "encodings": [
+    "utf-8"
+   ],
+   "delimiters": [
+    ";"
+   ],
+   "formats": [
+    "csv"
+   ]
+  },
+  "header": [
+   "SEQ_TRANSACAO",
+   "ANO",
+   "Nome do Declarante",
+   "CPF/CNPJ",
+   "Tipo de Declarante",
+   "NIRF",
+   "Código do Imóvel no Incra",
+   "Nome do Imóvel",
+   "UF",
+   "Município",
+   "Latitude da Sede",
+   "Longitude da Sede",
+   "Área Total do Imóvel(ATI)",
+   "APP(ha)",
+   "Reserva Legal(ha)",
+   "Sobreposição ARL (ha)",
+   "Área Líquida ARL (ha)",
+   "Área RPPN (ha)",
+   "Sobreposição RPPN (ha)",
+   "Tipo de Área Sobreposta à RPPN",
+   "Área Líquida RPPN (ha)",
+   "Área AIE (ha)",
+   "Sobreposição AIE (ha)",
+   "Tipo de Área Sobreposta à AIE",
+   "Área Líquida AIE (ha)",
+   "Área Servidão Ambiental (ha)",
+   "Sobreposição ASA (ha)",
+   "Tipo de Área Sobreposta à ASA",
+   "Área Líquida ASA (ha)",
+   "Área Floresta Nativa (ha)",
+   "Sobreposição AFN (ha)",
+   "Tipo de Área Sobreposta à AFN",
+   "Área Líquida AFN (ha)",
+   "Área AUH (ha)",
+   "Benfeitorias Ativ. Rural (ha)",
+   "Área Produtos Vegetais (ha)",
+   "Área em Descanso (ha)",
+   "Reflorestamento (ha)",
+   "Pastagens (ha)",
+   "Ativ. Granjeira/Aquícola (ha)",
+   "Área Frustração de Safra (ha)",
+   "Área Demais Benfeitorias (ha)",
+   "Área com Mineração (ha)",
+   "Imprestável para Ativ. (ha)",
+   "Área Inexplorada (ha)",
+   "Outras Áreas (ha)",
+   "ULTIMA_ATUALIZACAO_RELATORIO"
+  ],
+  "reason": "new"
+ },
+ "13f44201-5207-4aa9-92d1-69830f642142": {
+  "dataset": "ato-declaratorio-ambiental-ada",
+  "status": "error",
+  "checked_at": "2026-10-03T01:24:15+00:00",
+  "error": "did not finish within the batch time limit",
+  "reason": "new"
  }
 }

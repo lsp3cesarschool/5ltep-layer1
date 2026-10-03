@@ -5,7 +5,7 @@
    "name": "IBAMA",
    "title": "IBAMA open data portal (Dados Abertos IBAMA)"
   },
-  "generated_at": "2026-10-03T01:22:49+00:00",
+  "generated_at": "2026-10-03T01:37:00+00:00",
   "census_at": "2026-10-03T01:18:39+00:00",
   "datasets": {
    "total": 79,
@@ -27,10 +27,10 @@
     "3": 0,
     "4": 0
    },
-   "validated": 4,
-   "validation_coverage": 0.0203,
-   "errors": 6,
-   "queue_remaining": 187
+   "validated": 5,
+   "validation_coverage": 0.0254,
+   "errors": 7,
+   "queue_remaining": 185
   },
   "verifiable": 0,
   "conformant": 0,
@@ -39,27 +39,27 @@
   "drift": {
    "observed": 0,
    "declared": 0,
-   "files_with_baseline": 4,
+   "files_with_baseline": 5,
    "first_baseline_at": "2026-10-03T01:19:10+00:00",
-   "last_observed_at": "2026-10-03T01:20:35+00:00"
+   "last_observed_at": "2026-10-03T01:23:30+00:00"
   },
   "coverage": {
    "files": 197,
-   "read": 4,
+   "read": 5,
    "empty": 0,
    "not_tabular": 0,
    "too_large": 0,
-   "not_downloaded": 6,
-   "pending": 187,
+   "not_downloaded": 7,
+   "pending": 185,
    "not_downloaded_by_reason": {
     "HTTP 404": 5,
-    "batch time limit": 1
+    "batch time limit": 2
    },
    "not_downloaded_by_host": {
     "HTTP 404 · siscom.ibama.gov.br": 5,
-    "batch time limit · stibamadadosabertosprd.blob.core.windows.net": 1
+    "batch time limit · stibamadadosabertosprd.blob.core.windows.net": 2
    },
-   "read_without_schema": 4,
+   "read_without_schema": 5,
    "checked": 0,
    "conform": 0,
    "fail_missing_fields": 0,
@@ -93,24 +93,24 @@
   },
   "network": {
    "total": {
-    "files": 10,
-    "failed_files": 6,
-    "gb": 0.11,
-    "minutes": 2.8,
-    "end_to_end_mb_s": 0.63,
-    "zip_download_mb_s": 28.4,
+    "files": 12,
+    "failed_files": 7,
+    "gb": 0.51,
+    "minutes": 3.6,
+    "end_to_end_mb_s": 2.37,
+    "zip_download_mb_s": 26.51,
     "first_byte_s_median": 0.2,
     "request_failures": {}
    },
    "by_host": {
     "stibamadadosabertosprd.blob.core.windows.net": {
-     "files": 4,
-     "failed_files": 1,
-     "gb": 0.11,
-     "minutes": 2.8,
-     "end_to_end_mb_s": 0.63,
-     "zip_download_mb_s": 28.4,
-     "first_byte_s_median": 0.2,
+     "files": 6,
+     "failed_files": 2,
+     "gb": 0.51,
+     "minutes": 3.5,
+     "end_to_end_mb_s": 2.38,
+     "zip_download_mb_s": 26.51,
+     "first_byte_s_median": 0.26,
      "request_failures": {}
     },
     "dadosabertos.ibama.gov.br": {
@@ -201,13 +201,13 @@
     "formats_inferred_from_data": {}
    },
    "files": {
-    "validated": 4,
+    "validated": 5,
     "encodings": {
-     "utf-8": 3,
+     "utf-8": 4,
      "utf-8-sig": 1
     },
     "delimiters": {
-     ";": 2
+     ";": 3
     },
     "with_decode_errors": 0,
     "with_ragged_rows": 0,
@@ -216,13 +216,13 @@
     "not_tabular": 0,
     "not_tables": 1,
     "formats": {
-     "csv": 2,
+     "csv": 3,
      "json": 1,
      "xml": 1
     },
     "unreachable_by_reason": {
      "HTTP 404": 5,
-     "batch time limit": 1
+     "batch time limit": 2
     }
    },
    "pdf_extraction": {
@@ -604,18 +604,22 @@
      "level": 0,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ADA/atoDeclaratorio/ADA_atoDeclaratorio_csv.zip",
      "dictionary": null,
-     "status": null,
-     "validated_at": null,
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-03T01:23:30+00:00",
+     "rows": 6201240,
      "schema_kind": null,
      "error": null,
-     "encodings": null,
-     "distinct_headers": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
      "conformance": null,
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
-     "schema_files": {}
+     "schema_files": {
+      "observed": "schemas/ato-declaratorio-ambiental-ada/09494a73-726a-4341-92ca-b97cf35914b2.observed.json"
+     }
     },
     {
      "id": "13f44201-5207-4aa9-92d1-69830f642142",
@@ -623,11 +627,11 @@
      "level": 0,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ADA/atoDeclaratorio/ADA_atoDeclaratorio_xml.zip",
      "dictionary": null,
-     "status": null,
+     "status": "error",
      "validated_at": null,
      "rows": null,
      "schema_kind": null,
-     "error": null,
+     "error": "did not finish within the batch time limit",
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
@@ -7684,6 +7688,17 @@
    "file": "Ato Declaratório Ambiental (ADA)",
    "id": "aa08a6eb-388e-4c20-bfa5-24cfb979ace9",
    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ADA/atoDeclaratorio/ADA_atoDeclaratorio_html.zip",
+   "host": "stibamadadosabertosprd.blob.core.windows.net",
+   "status": "error",
+   "reason": "batch time limit",
+   "detail": "did not finish within the batch time limit"
+  },
+  {
+   "dataset": "ato-declaratorio-ambiental-ada",
+   "title": "Ato Declaratório Ambiental (ADA)",
+   "file": "Ato Declaratório Ambiental (ADA)",
+   "id": "13f44201-5207-4aa9-92d1-69830f642142",
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ADA/atoDeclaratorio/ADA_atoDeclaratorio_xml.zip",
    "host": "stibamadadosabertosprd.blob.core.windows.net",
    "status": "error",
    "reason": "batch time limit",
