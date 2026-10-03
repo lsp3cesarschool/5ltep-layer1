@@ -128,8 +128,8 @@ legível por máquina, esquema extraído de PDF (depois de confirmado), lista na
 
 Cada arquivo é lido em stream: CSV, JSON (uma lista de registros) e XML (elementos repetidos) direto da
 resposta HTTP; zip, Parquet ou XLS a partir de um arquivo temporário, membro por membro, aba por aba ou
-lote por lote. O formato é reconhecido pelos primeiros bytes, não pelo rótulo no portal. Um zip dentro
-de um zip é aberto um nível abaixo. Nada é guardado além de contagens. Codificação e delimitador são
+lote por lote. O formato é reconhecido pelos primeiros bytes, não pelo rótulo no portal. Zips dentro
+de zips também são abertos, e um zip maior que o disco do runner é lido em fluxo. Nada é guardado além de contagens. Codificação e delimitador são
 detectados nos formatos de texto; bytes que não decodificam são contados. Para cada arquivo:
 
 - o **esquema observado** (cabeçalho, delimitador, codificação e o tipo mais estreito em que cabem as
@@ -353,7 +353,7 @@ dividido em quantos lotes forem precisos. Os únicos limites são o que as máqu
 | Recurso | Limite do GitHub | Como este repositório cabe nele |
 |---|---|---|
 | Minutos de Actions | gratuitos e ilimitados | validação completa de todos os arquivos, toda semana |
-| Máquina | 4 CPUs, 16 GB de memória, 14 GB de disco | zips, planilhas e Parquet vão para o disco; o resto é lido em fluxo |
+| Máquina | 4 CPUs, 16 GB de memória, 14 GB de disco | tudo é lido em partes (linhas, membros, lotes); só planilhas e Parquet precisam do arquivo inteiro em disco |
 | Um job | 6 horas | um lote: até 240 minutos de validação (`VALIDATE_MAX_MINUTES`) num job de no máximo 350 |
 | Uma cadeia de lotes | (sem limite; uma execução dura até 35 dias) | até 40 lotes seguidos (`MAX_BATCHES`, cerca de 160 horas); se não bastar, a execução seguinte continua de onde parou |
 | Um arquivo no repositório | aviso acima de 50 MB, recusado acima de 100 MB | cada arquivo de resultado com no máximo 80 MB (verificado antes do commit) |
@@ -363,9 +363,11 @@ dividido em quantos lotes forem precisos. Os únicos limites são o que as máqu
 
 | O quê | Limite | Por quê |
 |---|---|---|
-| CSV, TXT, JSON, XML | nenhum | lidos em fluxo, nunca inteiros na memória |
-| Zip, XLSX, ODS, Parquet, XLS | 12 GB por arquivo (`MAX_ZIP_BYTES`) | precisam estar em disco para serem lidos; o runner tem 14 GB |
-| XLS e ODS | 300 MB por arquivo (`MAX_SHEET_BYTES`) | lidos inteiros na memória, onde ocupam várias vezes o seu tamanho |
+| CSV, TXT, JSON, XML | nenhum | lidos em fluxo, registro a registro, nunca inteiros na memória |
+| Zip | nenhum | lido do disco até 12 GB (`MAX_ZIP_BYTES`); um zip maior é lido em fluxo, membro a membro; zips dentro de zips até 5 níveis (`ZIP_MAX_DEPTH`, proteção contra um zip que se aninha em si mesmo) |
+| XLSX, ODS | 12 GB por arquivo (o disco) | o arquivo precisa estar em disco (suas partes ficam espalhadas nele); depois as linhas são lidas uma a uma. O XLSX comporta no máximo 1.048.576 linhas por planilha |
+| XLS | nenhum, na prática | o formato comporta no máximo 65.536 linhas por planilha; lido uma planilha por vez |
+| Parquet | 12 GB por arquivo (o disco) | o índice fica no fim, então o arquivo precisa estar em disco; depois as linhas são lidas em lotes |
 | Dicionários (CSV, JSON, XLSX...) | 2 GB (`MAX_DICTIONARY_BYTES`) | lidos inteiros na memória |
 | Dicionário em PDF para o modelo local | nenhum: partes de 20.000 caracteres (`LLM_MAX_PDF_CHARS`) | cada parte cabe no contexto do modelo; uma resposta cortada pelo limite de tamanho é pedida de novo com a parte dividida ao meio |
 | Modelo local por lote | 60 minutos (`EXTRACT_MAX_MINUTES`) | os PDFs que sobram esperam o lote seguinte |
@@ -384,7 +386,8 @@ linhas (`SAMPLE_ROWS`) e as listas longas do resumo guardam os primeiros itens a
 - Os tipos de um DataStore podem ter sido inferidos pelo carregador do portal, não declarados pelo
   publicador; contam para o nível de maturidade, mas são a última opção para a validação.
 - Dicionários em PDF sem camada de texto (digitalizações) não são lidos (sem OCR).
-- Arquivos acima do disco ou da memória da máquina não são lidos; ver [Limites de tamanho e de tempo](#limites-de-tamanho-e-de-tempo).
+- Um único XLSX, ODS ou Parquet maior que o disco do runner não pode ser lido nas máquinas do GitHub; ver
+  [Limites de tamanho e de tempo](#limites-de-tamanho-e-de-tempo).
 - Nomes que diferem só na grafia não reprovam a conformidade; são relatados.
 - O oráculo mede *nomes* de campos; os tipos declarados extraídos de um PDF só são verificados por pessoas.
 

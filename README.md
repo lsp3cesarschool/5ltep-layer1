@@ -125,8 +125,8 @@ dictionary, schema extracted from a PDF (once confirmed), list in the descriptio
 
 Every file is read as a stream: CSV, JSON (a list of records) and XML (repeated elements) straight from
 the HTTP response; a zip, Parquet or XLS from a temporary file, member by member, sheet by sheet or
-batch by batch. The format is recognised from the first bytes, not from the label on the portal. A zip
-inside a zip is opened one level down. Nothing is kept but counts. Encoding and delimiter are detected
+batch by batch. The format is recognised from the first bytes, not from the label on the portal. Zips
+inside zips are opened too, and a zip larger than the runner's disk is read as it streams. Nothing is kept but counts. Encoding and delimiter are detected
 for text formats; bytes that do not decode are counted. For each file:
 
 - the **observed schema** (header, delimiter, encoding, and the narrowest type the first 5,000 rows of
@@ -345,7 +345,7 @@ into as many batches as it takes. The only limits are what GitHub's machines can
 | Resource | GitHub limit | How this repository fits in it |
 |---|---|---|
 | Minutes of Actions | free and unlimited | full validation of every file, weekly |
-| Machine | 4 CPUs, 16 GB of memory, 14 GB of disk | zips, spreadsheets and Parquet go to disk; the rest is read as it streams |
+| Machine | 4 CPUs, 16 GB of memory, 14 GB of disk | everything is read in pieces (rows, members, batches); only spreadsheets and Parquet need the whole file on disk |
 | One job | 6 hours | one batch: up to 240 minutes of validation (`VALIDATE_MAX_MINUTES`) in a job of at most 350 |
 | A chain of batches | (no limit; a run lasts up to 35 days) | up to 40 batches in a row (`MAX_BATCHES`, about 160 hours); if that is not enough, the next run continues where it stopped |
 | One file in the repository | above 50 MB a warning, above 100 MB refused | each result file at most 80 MB (checked before it is committed) |
@@ -355,9 +355,11 @@ into as many batches as it takes. The only limits are what GitHub's machines can
 
 | What | Limit | Why |
 |---|---|---|
-| CSV, TXT, JSON, XML | none | read as they stream, never held whole |
-| Zip, XLSX, ODS, Parquet, XLS | 12 GB per file (`MAX_ZIP_BYTES`) | must be on disk to be read; the runner has 14 GB |
-| XLS and ODS | 300 MB per file (`MAX_SHEET_BYTES`) | read whole in memory, which they take many times over |
+| CSV, TXT, JSON, XML | none | read as they stream, record by record, never held whole |
+| Zip | none | read from disk up to 12 GB (`MAX_ZIP_BYTES`); a larger zip is read as it streams, member by member; zips inside zips up to 5 levels (`ZIP_MAX_DEPTH`, a guard against a zip that nests itself) |
+| XLSX, ODS | 12 GB per file (the disk) | the file must be on disk (its parts are spread through it); rows are then read one at a time. XLSX holds at most 1,048,576 rows per sheet |
+| XLS | none in practice | the format holds at most 65,536 rows per sheet; read a sheet at a time |
+| Parquet | 12 GB per file (the disk) | its index is at the end, so the file must be on disk; rows are then read in batches |
 | Dictionaries (CSV, JSON, XLSX...) | 2 GB (`MAX_DICTIONARY_BYTES`) | read whole in memory |
 | PDF dictionary to the local model | none: pieces of 20,000 characters (`LLM_MAX_PDF_CHARS`) | each piece fits in the model's context; an answer cut by its length limit is asked again with the piece in halves |
 | Local model per batch | 60 minutes (`EXTRACT_MAX_MINUTES`) | the PDFs left wait for the next batch |
@@ -376,7 +378,8 @@ rows (`SAMPLE_ROWS`), and long lists in the summary keep their first items next 
 - A DataStore's types may have been inferred by the portal's loader, not declared by the publisher;
   they count for the maturity level but are the last choice for validation.
 - PDF dictionaries without a text layer (scans) are not read (no OCR).
-- Files above the machine's disk or memory are not read; see [Size and time limits](#size-and-time-limits).
+- A single XLSX, ODS or Parquet larger than the runner's disk cannot be read on GitHub's machines; see
+  [Size and time limits](#size-and-time-limits).
 - Names that differ only in spelling do not fail conformance; they are reported.
 - The oracle measures field *names*; declared types extracted from a PDF are checked only by people.
 
