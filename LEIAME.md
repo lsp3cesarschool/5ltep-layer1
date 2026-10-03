@@ -113,8 +113,14 @@ portal não precisa de mudança no código quando seus dicionários se parecem c
 Cada dicionário é então ligado ao arquivo que descreve, pela evidência mais forte disponível, e o método
 fica registrado: o dicionário nomeia o id do recurso; seus campos coincidem com o cabeçalho do arquivo;
 seu nome corresponde ao nome do recurso; ou é o único dicionário do conjunto, com um nome genérico.
-O cabeçalho de um arquivo nunca validado é lido no levantamento (a primeira linha; nada mais é guardado),
-para que o arquivo seja ligado pelo cabeçalho, e validado contra o seu dicionário, já na primeira execução.
+O cabeçalho de um arquivo nunca validado é lido no levantamento (a primeira linha; nada mais é guardado)
+quando decide algo nessa execução: a ligação (quando nenhum dicionário nomeia o arquivo, e há vários
+dicionários ou o arquivo ainda não está ligado), ou o oráculo de um dicionário em PDF (um arquivo, o mais
+barato). O arquivo é então validado contra o seu dicionário já na primeira execução. Um zip ou uma
+planilha é baixado inteiro para dar as colunas, por isso nada além disso é lido, e a leitura para depois
+de `SURVEY_HEADER_MAX_MINUTES` (180): o levantamento roda num só job, cujo trabalho se perderia no limite.
+Um arquivo que ficou sem leitura é ligado sem o cabeçalho e validado; a validação dá o cabeçalho ao
+levantamento seguinte.
 
 Os tipos declarados são escritos de muitos jeitos (`TEXTO (STRING)`, `Cadeia de caracteres`, `VARCHAR`,
 `char`...). Eles são mapeados para tipos do Table Schema por palavras-chave, numa ordem fixa e auditável
@@ -357,6 +363,7 @@ mesmo nome; os valores usados ficam registrados no resumo. Os principais:
 | `L1_PASS_THRESHOLD` | 0,85 | fração de arquivos conformes para a Camada 1 passar |
 | `ROTATION_DAYS` | 28 | um arquivo inalterado é validado de novo depois desse número de dias |
 | `VALIDATE_MAX_MINUTES` | 270 | orçamento de tempo de um lote de validação |
+| `SURVEY_HEADER_MAX_MINUTES` | 180 | tempo que o levantamento gasta lendo cabeçalhos de arquivos nunca validados |
 | `ORACLE_ACCEPT` / `ORACLE_LLM_BELOW` | 1,0 / 0,8 | concordância para aceitar uma extração de PDF / para tentar o LLM |
 | `LLM_MODEL` | `auto` | modelo do Ollama para a extração de PDF (`auto` = a escolha do benchmark; reserva `qwen3:8b`) |
 

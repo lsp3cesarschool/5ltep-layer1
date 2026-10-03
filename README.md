@@ -110,8 +110,14 @@ code change when its dictionaries look like any of these:
 Each dictionary is then linked to the file it describes, by the strongest evidence available, and the
 method is recorded: the dictionary names the resource id; its fields overlap the file's header; its
 name matches the resource's name; or it is the only dictionary of the dataset, with a generic name.
-The header of a file never validated is read in the survey (its first line; nothing else is kept), so
-that the file is linked by its header, and validated against its dictionary, already in its first run.
+The header of a file never validated is read in the survey (its first line; nothing else is kept) where
+it decides something in that run: the link (when no dictionary names the file, and there are several
+dictionaries or the file is not linked yet), or the oracle of a PDF dictionary (one file, the cheapest).
+The file is then validated against its dictionary already in its first run. A zip or a spreadsheet is
+downloaded whole for its columns, so nothing else is read, and the reading stops after
+`SURVEY_HEADER_MAX_MINUTES` (180): the survey runs in one job, whose work would be lost at its limit. A
+file left unread is linked without its header and validated; its validation gives the header to the
+next survey.
 
 Declared types are written in many ways (`TEXTO (STRING)`, `Cadeia de caracteres`, `VARCHAR`,
 `char`...). They are mapped to Table Schema types by keywords, in a fixed and auditable order
@@ -347,6 +353,7 @@ the same name; the values used are recorded in the summary. The main ones:
 | `L1_PASS_THRESHOLD` | 0.85 | share of conformant files for Layer 1 to pass |
 | `ROTATION_DAYS` | 28 | an unchanged file is validated again after this many days |
 | `VALIDATE_MAX_MINUTES` | 270 | time budget of one validation batch |
+| `SURVEY_HEADER_MAX_MINUTES` | 180 | time the survey spends reading headers of files never validated |
 | `ORACLE_ACCEPT` / `ORACLE_LLM_BELOW` | 1.0 / 0.8 | agreement to accept a PDF extraction / to try the LLM |
 | `LLM_MODEL` | `auto` | Ollama model for PDF extraction (`auto` = the benchmark's choice; fallback `qwen3:8b`) |
 
