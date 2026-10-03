@@ -1,0 +1,53 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_DESTR",
+   "type": "any",
+   "description": "Chave estrangeira que identifica o termo de destruição;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SEQ_DESTR_ESPECIME",
+   "type": "any",
+   "description": "Chave primária que identifica o espécime destruído;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SEQ_ESPECIME_APREENDIDO",
+   "type": "any",
+   "description": "Chave estrangeira que identifica o item do termo de apreensão (Termo de apreensão – espécime apreendido) que foi objeto de destruição;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "QTD_DESTR_ESPECIME",
+   "type": "any",
+   "description": "Quantidade espécimes destruídos;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "OBS_DESTR_ESPECIME",
+   "type": "any",
+   "description": "Descrição das circunstâncias em que o espécime apreendido foi destruído;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "any",
+   "description": "Data da última atualização do recurso no portal de dados abertos.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "described",
+  "source": {
+   "kind": "description",
+   "resource_id": "0224f6a5-1f51-4a64-a8c4-f34729f04285"
+  }
+ }
+}

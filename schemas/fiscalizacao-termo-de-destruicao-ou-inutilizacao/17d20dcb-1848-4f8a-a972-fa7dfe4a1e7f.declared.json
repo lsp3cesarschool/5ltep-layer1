@@ -1,0 +1,89 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "number",
+   "description": "Chave primária que identifica o termo de fiscalização.",
+   "declaredType": "float"
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo, juntamente com a série.",
+   "declaredType": "string"
+  },
+  {
+   "name": "SER_TAD",
+   "type": "string",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo juntamente com o número;",
+   "declaredType": "string"
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "number",
+   "description": "Código original do termo impresso, cadastro manualmente na página da web do Sistema do Auto de Infração Eletrônico (AIe).",
+   "declaredType": "float"
+  },
+  {
+   "name": "ADMINISTRATIVO",
+   "type": "string",
+   "description": "Indica se o dispositivo legal é de ordem administrativa ou específico da infração relacionada: S (Sim); N (Não).",
+   "declaredType": "string"
+  },
+  {
+   "name": "NORMA_TIPO",
+   "type": "number",
+   "description": "Tipo de norma legal: Decreto; Lei.",
+   "declaredType": "numero"
+  },
+  {
+   "name": "NORMA_NUMERO",
+   "type": "string",
+   "description": "Número da norma legal.",
+   "declaredType": "string"
+  },
+  {
+   "name": "ARTIGO",
+   "type": "string",
+   "description": "Número do artigo da norma legal.",
+   "declaredType": "string"
+  },
+  {
+   "name": "NU_PARAGRAFO",
+   "type": "number",
+   "description": "Número do parágrafo do artigo citado.",
+   "declaredType": "numero"
+  },
+  {
+   "name": "NU_INCISO",
+   "type": "string",
+   "description": "Número do inciso do artigo citado.",
+   "declaredType": "string"
+  },
+  {
+   "name": "CD_ALINEA",
+   "type": "number",
+   "description": "Alínea do artigo citado.",
+   "declaredType": "float"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "description": "Data e horário referente à última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601), no formato YYYY-MM-DD hh24:mi:ss",
+   "declaredType": "datatime"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "2697f6c9-662d-4580-b594-5fc779ff26d2",
+   "dictionary_name": "Metadados - Enquadramento legal",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/2697f6c9-662d-4580-b594-5fc779ff26d2/download/metadados-termo-de-destruicao-enquadramento-legal-atualizado.csv",
+   "sha256": "50faeb8da3db97525c55c1796bf8fb7a873b7c2bcab3cf3d02605983c30e723c",
+   "reader": "csv",
+   "part": "",
+   "link_method": "header"
+  }
+ }
+}

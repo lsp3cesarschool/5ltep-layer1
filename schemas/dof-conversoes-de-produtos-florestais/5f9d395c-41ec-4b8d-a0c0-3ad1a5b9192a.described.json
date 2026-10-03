@@ -1,0 +1,215 @@
+{
+ "fields": [
+  {
+   "name": "Nº do Registro de Conversão",
+   "type": "number",
+   "description": "Identificador único da conversão gerado pelos sistemas. Formato: *Número*;",
+   "declaredType": "Número"
+  },
+  {
+   "name": "Nome/Razão Social",
+   "type": "string",
+   "description": "Nome do detentor do empreendimento, podendo ser pessoa física ou jurídica. Para pessoa física apenas as iniciais dos nomes são exibidas. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "CPF/CNPJ",
+   "type": "string",
+   "description": "Número do CPF ou CNPJ do detentor do empreendimento. Para pessoa física apenas os três primeiros dígitos do CPF são exibidos. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "CTF",
+   "type": "string",
+   "description": "Número identificador do detentor do empreendimento na base do IBAMA. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "description": "Sigla da unidade federativa onde localiza-se o empreendimento. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "description": "Nome do município onde localiza-se o empreendimento. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Tipo de Origem",
+   "type": "string",
+   "description": "Tipo do empreendimento (e descrição do tipo de autorização, se houver). Formato: *texto*;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "Nome da Origem",
+   "type": "string",
+   "description": "Nome do empreendimento. Formato: *texto*;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "Latitude",
+   "type": "number",
+   "description": "Coordenada da latitude do empreendimento, em graus decimais. Formato: *Número decimal*;",
+   "declaredType": "Número decimal"
+  },
+  {
+   "name": "Longitude",
+   "type": "number",
+   "description": "Coordenada da longitude do empreendimento, em graus decimais. Formato: *Número decimal*;",
+   "declaredType": "Número decimal"
+  },
+  {
+   "name": "Nº da Licença de Conversão",
+   "type": "string",
+   "description": "Número da licença de conversão. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Órgão Emissor da Licença",
+   "type": "string",
+   "description": "Para o sistema DOF1 apresenta o órgão emissor da licença de conversão. Para o DOF+ será o órgão do responsável pelo cadastro da licença. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Data de Cadastro da Licença",
+   "type": "string",
+   "description": "Data de cadastro da licença que foi informada no módulo interno. Formato: *Texto formatado em DD/MM/AAAA*;",
+   "declaredType": "Texto formatado em DD/MM/AAAA"
+  },
+  {
+   "name": "Validade da Licença",
+   "type": "string",
+   "description": "Data de validade da licença que foi informada. Formato: *Texto formatado em DD/MM/AAAA*;",
+   "declaredType": "Texto formatado em DD/MM/AAAA"
+  },
+  {
+   "name": "Data da Conversão",
+   "type": "string",
+   "description": "Data completa da transação de conversão. Formato: *Texto formatado em DD/MM/AAAA*;",
+   "declaredType": "Texto formatado em DD/MM/AAAA"
+  },
+  {
+   "name": "Ano",
+   "type": "string",
+   "description": "Ano da transação de conversão realizada. Formato: *Texto no padrão AAAA*;",
+   "declaredType": "Texto no padrão AAAA"
+  },
+  {
+   "name": "Código de rastreio",
+   "type": "string",
+   "description": "Código de rastreio do produto de entrada presente no DOF+. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Nome Científico",
+   "type": "string",
+   "description": "Nome Científico da espécie da matéria-prima do item que foi processado. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Nome Popular",
+   "type": "string",
+   "description": "Nome popular da espécie matéria-prima do item que foi processado. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Tipo de Produto de Entrada",
+   "type": "string",
+   "description": "Tipo de produto madeireiro do item que foi processado. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Volume do Produto de Entrada",
+   "type": "number",
+   "description": "Quantidade de volume informada do item que foi processado. Formato: *Número decimal*;",
+   "declaredType": "Número decimal"
+  },
+  {
+   "name": "Unidade de Medida Entrada",
+   "type": "string",
+   "description": "Unidade de medida utilizada para o volume informado, de acordo com o tipo de produto. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Tipo de Produto Processado",
+   "type": "string",
+   "description": "Tipo de produto madeireiro do resultado do processo de conversão. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Volume do Produto Processado",
+   "type": "number",
+   "description": "Quantidade de volume informada do produto obtido ao final do processo de conversão. Formato: *Número decimal*;",
+   "declaredType": "Número decimal"
+  },
+  {
+   "name": "Unidade do Produto Processado",
+   "type": "string",
+   "description": "Unidade de medida utilizada para o volume do produto obtido. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Coeficiente de Conversão",
+   "type": "number",
+   "description": "Proporção obtida pela comparação entre o volume de entrada e o de saída representado em porcentagem. Formato: *Número decimal*;",
+   "declaredType": "Número decimal"
+  },
+  {
+   "name": "Tipo de Resíduo Gerado 1",
+   "type": "string",
+   "description": "Tipo de produto do resíduo gerado após a conversão. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Volume do Resíduo Gerado 1",
+   "type": "number",
+   "description": "Quantidade de volume do resíduo gerado após a conversão. Formato: *Número decimal*;",
+   "declaredType": "Número decimal"
+  },
+  {
+   "name": "Unidade Resíduo Gerado 1",
+   "type": "string",
+   "description": "Unidade de medida utilizada para o volume do resíduo gerado. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Tipo de Resíduo Gerado 2",
+   "type": "string",
+   "description": "Tipo de produto do resíduo gerado após a conversão. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Volume do Resíduo Gerado 2",
+   "type": "number",
+   "description": "Quantidade de volume do resíduo gerado após a conversão. Formato: *Número decimal*;",
+   "declaredType": "Número decimal"
+  },
+  {
+   "name": "Unidade Resíduo Gerado 2",
+   "type": "string",
+   "description": "Unidade de medida utilizada para o volume do resíduo gerado. Formato: *Texto*;",
+   "declaredType": "Texto"
+  },
+  {
+   "name": "Volume da Perda",
+   "type": "number",
+   "description": "Percentual de perda na conversão, calculado pelo sistema. Formato: *Número decimal*;",
+   "declaredType": "Número decimal"
+  },
+  {
+   "name": "Sistema Originário",
+   "type": "string",
+   "description": "Sistema onde a conversão foi cadastrada. Formato: *Texto*;",
+   "declaredType": "Texto"
+  }
+ ],
+ "x5ltep": {
+  "status": "described",
+  "source": {
+   "kind": "description",
+   "resource_id": "5f9d395c-41ec-4b8d-a0c0-3ad1a5b9192a"
+  }
+ }
+}

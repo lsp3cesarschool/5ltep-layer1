@@ -1,0 +1,71 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "description": "Número de inscrição da empresa declarante no Cadastro Nacional da Pessoa Jurídica (CNPJ).",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Ano do relatório",
+   "type": "integer",
+   "description": "Ano de referência das informações apresentadas no relatório.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "Tipo de pilhas ou bateria",
+   "type": "string",
+   "description": "Tipo de pilha ou bateria produzidos pela empresa.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Modelo de pilha ou bateria",
+   "type": "string",
+   "description": "Modelo da pilha ou bateria produzidos pela empresa.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Peso Unitário (kg)",
+   "type": "number",
+   "description": "Peso unitário da pilha ou bateria produzidos, expresso em quilogramas (kg).",
+   "declaredType": "DECIMAL"
+  },
+  {
+   "name": "Quantidade importada (un)",
+   "type": "integer",
+   "description": "Quantidade de pilhas ou baterias produzidos, expressa em unidades.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "Peso total (kg)",
+   "type": "number",
+   "description": "Peso total das pilhas ou baterias produzidos, expresso em quilogramas (kg).",
+   "declaredType": "DECIMAL"
+  },
+  {
+   "name": "Abrangência da comercialização",
+   "type": "string",
+   "description": "Abrangência geográfica da comercialização das pilhas ou baterias informada pela empresa: nacional, regional ou local.",
+   "declaredType": "STRING"
+  },
+  {
+   "name": "Laudo",
+   "type": "boolean",
+   "description": "Indica se consta na base de dados arquivo de laudo físico-químico de composição associado ao registro: Sim (possui arquivo de laudo); Não (não possui arquivo de laudo).",
+   "declaredType": "BOOLEAN"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "39a57ef4-7694-4761-ae22-5e1795c9f620",
+   "dictionary_name": "Metadados - Produção",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/39a57ef4-7694-4761-ae22-5e1795c9f620/download/metadados-producao.csv",
+   "sha256": "5d1ddfeca4c0f96dd66095ff73b644e1f476930f76dca24a23e4f6b554c4cb53",
+   "reader": "csv",
+   "part": "",
+   "link_method": "name"
+  }
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "description": "Número de inscrição da empresa declarante no Cadastro Nacional da Pessoa Jurídica (CNPJ).",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Ano do relatório",
+   "type": "integer",
+   "description": "Ano de referência das informações apresentadas no relatório.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "CNPJ do ponto de coleta",
+   "type": "string",
+   "description": "Número de inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ) do estabelecimento onde está localizado o ponto de coleta.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Ponto de coleta",
+   "type": "string",
+   "description": "Nome ou identificação do ponto de coleta de pilhas e baterias.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "CEP",
+   "type": "string",
+   "description": "Código de Endereçamento Postal (CEP) do ponto de coleta.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Endereço",
+   "type": "string",
+   "description": "Endereço onde está localizado o ponto de coleta de pilhas e baterias.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Bairro",
+   "type": "string",
+   "description": "Nome do bairro onde está localizado o ponto de coleta.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "description": "Sigla da unidade da federação onde está localizado o ponto de coleta.",
+   "declaredType": "CHAR"
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "description": "Nome do município onde está localizado o ponto de coleta.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Sítio na Internet",
+   "type": "string",
+   "description": "Endereço do sítio eletrônico informado para o ponto de coleta.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Acondicionamento",
+   "type": "string",
+   "description": "Forma de acondicionamento utilizada para o armazenamento temporário das pilhas e baterias recebidas no ponto de coleta.",
+   "declaredType": "VARCHAR"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "933f121d-14ca-4f41-88fb-19906c7303ed",
+   "dictionary_name": "Metadados - Pontos de Coleta",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/933f121d-14ca-4f41-88fb-19906c7303ed/download/metadados-pontos-de-coleta.csv",
+   "sha256": "0eddb2afccb05ea7efdaef41c71e72c2b0e6a8b282bb8c3c0019f5c6c6a678cf",
+   "reader": "csv",
+   "part": "",
+   "link_method": "name"
+  }
+ }
+}

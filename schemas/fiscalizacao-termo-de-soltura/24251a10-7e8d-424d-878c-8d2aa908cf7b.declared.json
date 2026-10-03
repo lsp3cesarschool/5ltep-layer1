@@ -1,0 +1,167 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_SOLTURA",
+   "type": "integer",
+   "description": "Chave primária que identifica o termo de soltura.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "NUM_SOLTURA",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo juntamente com a série.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SER_SOLTURA",
+   "type": "string",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo juntamente com o número.",
+   "declaredType": "String"
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "description": "Código original do termo impresso, cadastrado manualmente na página web do Sistema do Auto de Infração Eletrônico (AIe).",
+   "declaredType": "String"
+  },
+  {
+   "name": "DES_STATUS_FORMULARIO",
+   "type": "string",
+   "description": "Situação do formulário: Lavrado; Cancelado; Substituído por outro; Excluído; Extraviado; Danificado; Duplicado; Impresso.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SIT_CANCELADO",
+   "type": "boolean",
+   "description": "Indica se o termo encontra-se cancelado: Sim (S) ou Não (N).",
+   "declaredType": "Boolean"
+  },
+  {
+   "name": "DAT_SOLTURA",
+   "type": "date",
+   "description": "Data em que o termo de soltura foi lavrado (ISO 8601).",
+   "declaredType": "Date"
+  },
+  {
+   "name": "NUM_PESSOA_AUTUADO",
+   "type": "integer",
+   "description": "Número de registro da pessoa autuada no banco de dados do Ibama (chave estrangeira).",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "NOME_AUTUADO",
+   "type": "string",
+   "description": "Nome da pessoa autuada.",
+   "declaredType": "String"
+  },
+  {
+   "name": "NUM_CPF_CNPJ_AUTUADO",
+   "type": "string",
+   "description": "Número do Cadastro de Pessoa Física (CPF) ou Cadastro Nacional da Pessoa Jurídica (CNPJ) da pessoa autuada.",
+   "declaredType": "String"
+  },
+  {
+   "name": "COD_MUNICIPIO",
+   "type": "string",
+   "description": "Código do município (IBGE) referente ao local da soltura (chave estrangeira).",
+   "declaredType": "String"
+  },
+  {
+   "name": "NOM_MUNICIPIO",
+   "type": "string",
+   "description": "Nome do município referente ao local da soltura.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SIG_UF",
+   "type": "string",
+   "description": "Sigla da Unidade da Federação (UF) referente ao local da soltura.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DES_LOCALIZACAO",
+   "type": "string",
+   "description": "Descrição do local da soltura.",
+   "declaredType": "String"
+  },
+  {
+   "name": "NUM_LONGITUDE",
+   "type": "number",
+   "description": "Longitude do local da soltura.",
+   "declaredType": "Decimal"
+  },
+  {
+   "name": "NUM_LATITUDE",
+   "type": "number",
+   "description": "Latitude do local da soltura.",
+   "declaredType": "Decimal"
+  },
+  {
+   "name": "FORMA_ENTREGA",
+   "type": "string",
+   "description": "Meio empregado para dar ciência da soltura ao responsável pelos animais ou pela área de soltura: pessoalmente, representante, aviso de recebimento (AR), edital ou recusa de assinatura pelo autuado.",
+   "declaredType": "String"
+  },
+  {
+   "name": "UNID_APRESENTACAO",
+   "type": "string",
+   "description": "Unidade responsável pelo recebimento e instauração do processo.",
+   "declaredType": "String"
+  },
+  {
+   "name": "UNID_CONTROLE",
+   "type": "string",
+   "description": "Unidade responsável pelo gerenciamento do termo no sistema de fiscalização.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DES_JUSTIFICATIVA",
+   "type": "string",
+   "description": "Justificativa para a soltura dos animais.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DAT_ALTERACAO",
+   "type": "date",
+   "description": "Data da última alteração dos atributos do termo (ISO 8601).",
+   "declaredType": "Date"
+  },
+  {
+   "name": "TIPO_ALTERACAO",
+   "type": "string",
+   "description": "Tipo da última alteração registrada no termo: Redistribuído, Preenchido, Alterado, Cancelado ou Cancelamento estornado.",
+   "declaredType": "String"
+  },
+  {
+   "name": "JUSTIFICATIVA_ALTERACAO",
+   "type": "string",
+   "description": "Descrição do motivo da alteração realizada no termo.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DES_OBSERVACAO",
+   "type": "string",
+   "description": "Informações complementares e descrição das condições de soltura dos espécimes.",
+   "declaredType": "String"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "description": "Data e horário referente à última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601), no formato YYYY-MM-DD hh24:mi:ss",
+   "declaredType": "datatime"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "e5304ed3-60b0-4e20-80f5-2b169d8357fb",
+   "dictionary_name": "Metadados - Termo de Soltura",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/4f3a0c94-da69-4bb5-9236-439968e75179/resource/e5304ed3-60b0-4e20-80f5-2b169d8357fb/download/metadados-termo-de-soltura.csv",
+   "sha256": "eefc0142ee7b49abfac1ea43648e767fb061cd4a6dbdfe8cb416445f692a3776",
+   "reader": "csv",
+   "part": "",
+   "link_method": "header"
+  }
+ }
+}

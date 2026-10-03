@@ -1,0 +1,187 @@
+{
+ "fields": [
+  {
+   "name": "NRO_AUTORIZACAO",
+   "type": "string",
+   "description": "Identificador da autorização. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "DATA_DE_EMISSAO",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "description": "Data de emissão da autorização. Formato: data no padrão DD/MM/AA;",
+   "declaredType": "data no padrão DD/MM/AA"
+  },
+  {
+   "name": "DATA_DE_VALIDADE",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "description": "Data de vencimento da autorização. Formato: data no padrão DD/MM/AA;",
+   "declaredType": "data no padrão DD/MM/AA"
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "description": "Sigla da unidade federativa onde localiza-se a autorização. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "MUNICIPIO",
+   "type": "string",
+   "description": "Nome do município onde localiza-se a autorização. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "NOME_DETENTOR",
+   "type": "string",
+   "description": "Nome do detentor da autorização, podendo ser pessoa física ou jurídica. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "CPF_CNPJ_DETENTOR",
+   "type": "string",
+   "description": "Número do CPF ou CNPJ do detentor da autorização. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "IMOVEL_RURAL_VINCULADO",
+   "type": "string",
+   "description": "Nome da propriedade no Cadastro Ambiental Rural (CAR). Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "NRO_CAR_IMOVEL_RURAL",
+   "type": "string",
+   "description": "Identificador do CAR do imóvel. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "LATITUDE",
+   "type": "string",
+   "description": "Coordenada da latitude da autorização, em graus decimais. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "LONGITUDE",
+   "type": "string",
+   "description": "Coordenada da longitude da autorização, em graus decimais. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "ATIVIDADE",
+   "type": "string",
+   "description": "Modalidade da autorização simplificada. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "NATUREZA_JURIDICA",
+   "type": "string",
+   "description": "Define a natureza da autorização. Formato: texto ‘Público’ ou ‘Privado’;",
+   "declaredType": "texto ‘Público’ ou ‘Privado’"
+  },
+  {
+   "name": "COMPETENCIA_DA_AVALIACAO",
+   "type": "string",
+   "description": "Nível hierárquico da instituição responsável pela análise e aprovação do projeto autorizado. Formato: texto ‘Federal’, ‘Estadual’ ou ‘Municipal’;",
+   "declaredType": "texto ‘Federal’, ‘Estadual’ ou ‘Municipal’"
+  },
+  {
+   "name": "ORGAO_AMBIENTAL_RESP_ANALISE",
+   "type": "string",
+   "description": "Nome da Instituição responsável pela análise e aprovação do projeto autorizado. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "FINALIDADE",
+   "type": "string",
+   "description": "Identifica a finalidade da exploração florestal. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "APROVEITAMENTO_EXTERNO_DO_PRODUTO_FLORESTAL",
+   "type": "any",
+   "description": "Indicação quanto ao aproveitamento do produto autorizado. Formato: caractere ‘S’ ou ‘N’;",
+   "declaredType": "caractere ‘S’ ou ‘N’",
+   "mappingNote": "declared type not recognised: 'caractere ‘S’ ou ‘N’'"
+  },
+  {
+   "name": "BIOMA",
+   "type": "string",
+   "description": "Tipo do conjunto de ecossistemas ou de área geográfica que abriga organismos, do projeto autorizado. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "AREA_A_SER_SUPRIMIDA",
+   "type": "number",
+   "decimalChar": ".",
+   "description": "Dimensionamento da área de uso alternativo do solo do projeto autorizado. Formato: número decimal separador ponto;",
+   "declaredType": "número decimal separador ponto"
+  },
+  {
+   "name": "PRODUTO_FLORESTAL",
+   "type": "string",
+   "description": "Definição da nomenclatura e unidade de medida do produto florestal mensurado, para projeto autorizado. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "NOME_CIENTIFICO",
+   "type": "string",
+   "description": "Definição do nome científico do produto mensurado, para projeto autorizado. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "NOME_POPULAR",
+   "type": "string",
+   "description": "Definição do nome popular do produto mensurado, para projeto autorizado. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "VOLUME",
+   "type": "number",
+   "decimalChar": ".",
+   "description": "Resultado do valor total obtido do produto mensurado, para projeto autorizado. Formato: número decimal separador ponto;",
+   "declaredType": "número decimal separador ponto"
+  },
+  {
+   "name": "SITUACAO",
+   "type": "string",
+   "description": "Situação/status atual da autorização. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "DATA_DA_SITUACAO",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "description": "Data da atualização da situação/status da autorização. Formato: data no padrão DD/MM/AA;",
+   "declaredType": "data no padrão DD/MM/AA"
+  },
+  {
+   "name": "ULTIMO_TRAMITE",
+   "type": "string",
+   "description": "Último trâmite referente a autorização, pode condizer com a Situação. Formato: texto;",
+   "declaredType": "texto"
+  },
+  {
+   "name": "DATA_DO_TRAMITE",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "description": "Data do último trâmite referente a autorização. Formato: data no padrão DD/MM/AAA;",
+   "declaredType": "data no padrão DD/MM/AAA"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%d/%m/%y %H:%M",
+   "description": "Data da última atualização do conjunto dos dados. Formato: data no padrão DD/MM/AA hh:mm.",
+   "declaredType": "data no padrão DD/MM/AA hh:mm"
+  }
+ ],
+ "x5ltep": {
+  "status": "described",
+  "source": {
+   "kind": "description",
+   "resource_id": "eeb2d948-dcdd-44c8-916a-1dd131deacfb"
+  }
+ }
+}

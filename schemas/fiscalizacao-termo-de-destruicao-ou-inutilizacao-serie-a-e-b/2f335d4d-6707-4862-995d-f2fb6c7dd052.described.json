@@ -1,0 +1,158 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_DESTR",
+   "type": "any",
+   "description": "Chave primária (número sequencial) que identifica o termo de destruição.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DES_STATUS_FORMULARIO",
+   "type": "any",
+   "description": "Situação atual do formulário: “Lavrado”; “Cancelado”; “Substituído por outro”; “Excluído”; “Extraviado”; “Danificado”; “Duplicado”.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SIT_CANCELADO",
+   "type": "any",
+   "description": "Indica se o termo encontra-se cancelado: “S (Sim)”; “N (Não)”.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NUM_DESTR",
+   "type": "any",
+   "description": "Número impresso no formulário que compõe a identificação do termo juntamente com a série;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SER_DESTR",
+   "type": "any",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo juntamente com o número;",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DAT_DESTR",
+   "type": "any",
+   "description": "Data em que o termo de destruição foi lavrado (ISO 8601).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "COD_MUNICIPIO",
+   "type": "any",
+   "description": "Código do município (IBGE) referente ao local da destruição.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NOM_MUNICIPIO",
+   "type": "any",
+   "description": "Nome do município referente ao local da destruição.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SIG_UF",
+   "type": "any",
+   "description": "Sigla da unidade da federação referente ao local da destruição.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DES_LOCALIZACAO",
+   "type": "any",
+   "description": "Descrição do local da destruição.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NUM_LONGITUDE",
+   "type": "any",
+   "description": "Longitude do local da destruição.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NUM_LATITUDE",
+   "type": "any",
+   "description": "Latitude do local da destruição.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DES_JUSTIFICATIVA",
+   "type": "any",
+   "description": "Justificativa para aplicação da medida de destruição.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "FORMA_ENTREGA",
+   "type": "any",
+   "description": "Meio empregado para dar ciência da destruição à pessoa responsável pelos bens e espécimes destruídos: “pessoalmente”; “representante”; “aviso de recebimento (AR)”; “edital”; “o autuado recusou-se a assinar”.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UNID_APRESENTACAO",
+   "type": "any",
+   "description": "Unidade responsável pelo recebimento do termo e instauração do processo.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "UNID_CONTROLE",
+   "type": "any",
+   "description": "Unidade responsável pelo gerenciamento do Termo no sistema de fiscalização",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SEQ_TAD",
+   "type": "any",
+   "description": "Chave estrangeira que identifica o termo de apreensão dos bens e espécimes destruídos.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DAT_ALTERACAO",
+   "type": "any",
+   "description": "Data da última alteração dos atributos do termo (ISO 8601).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "TIPO_ALTERACAO",
+   "type": "any",
+   "description": "Tipo da última alteração registrada no termo: “Redistribuído”; “Preenchido”; “Alterado”; “Cancelado”; “Cancelamento estornado”.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "JUSTIFICATIVA_ALTERACAO",
+   "type": "any",
+   "description": "Descrição do motivo da alteração realizada no termo.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "any",
+   "description": "Data da última alteração do relatório, conforme consulta realizada na base de dados.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "described",
+  "source": {
+   "kind": "description",
+   "resource_id": "2f335d4d-6707-4862-995d-f2fb6c7dd052"
+  }
+ }
+}

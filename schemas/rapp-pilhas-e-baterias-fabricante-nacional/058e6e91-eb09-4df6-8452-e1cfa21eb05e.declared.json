@@ -1,0 +1,59 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "description": "Número de inscrição da empresa declarante no Cadastro Nacional da Pessoa Jurídica (CNPJ).",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Ano do relatório",
+   "type": "integer",
+   "description": "Ano de referência das informações apresentadas no relatório.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "CNPJ Destinador",
+   "type": "string",
+   "description": "Número de inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ) da empresa responsável pelo tratamento ou destinação final ambientalmente adequada das pilhas e baterias.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Número da licença de operação",
+   "type": "string",
+   "description": "Número ou identificação da Licença de Operação da empresa responsável pelo tratamento ou destinação final das pilhas e baterias.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Validade da licença",
+   "type": "date",
+   "description": "Data de validade da Licença de Operação da empresa responsável pelo tratamento ou destinação final.",
+   "declaredType": "DATE"
+  },
+  {
+   "name": "Atividades constantes na licença de operação",
+   "type": "string",
+   "description": "Descrição das atividades autorizadas na Licença de Operação relacionadas ao tratamento ou à destinação final ambientalmente adequada das pilhas e baterias.",
+   "declaredType": "TEXT"
+  },
+  {
+   "name": "Método de destinação e tratamento",
+   "type": "string",
+   "description": "Método empregado de destinação e tratamento ambientalmente adequada das pilhas e baterias.",
+   "declaredType": "VARCHAR"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "b31b76fc-192c-44b7-a44e-3ce2157b7751",
+   "dictionary_name": "Metadados - Destinação",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/b31b76fc-192c-44b7-a44e-3ce2157b7751/download/metadados-destinacao.csv",
+   "sha256": "1bd3c6ab8bb4a80903b79c37a1eaf8269e1332b1039c834860dda603cd3c641e",
+   "reader": "csv",
+   "part": "",
+   "link_method": "header"
+  }
+ }
+}

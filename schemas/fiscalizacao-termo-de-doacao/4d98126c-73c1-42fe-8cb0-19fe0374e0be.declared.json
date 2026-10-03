@@ -1,0 +1,173 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_DOACAO",
+   "type": "integer",
+   "description": "Chave estrangeira que identifica o termo de doação.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "NUM_DOACAO",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "SER_DOACAO",
+   "type": "string",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo juntamente com o número.",
+   "declaredType": "CHAR"
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "description": "Código original do termo impresso, cadastro manualmente na página web do Sistema do Auto de Infração Eletrônico (AIe).",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "SEQ_DOACAO_BEM",
+   "type": "integer",
+   "description": "Chave primária que identifica o bem doado.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "DES_BEM_APREENDIDO",
+   "type": "string",
+   "description": "Descrição das características, estado de conservação e demais detalhes do bem apreendido.",
+   "declaredType": "TEXT"
+  },
+  {
+   "name": "DES_TIPO_BEM",
+   "type": "string",
+   "description": "Tipo de bem apreendido.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "DES_TIPO_INFRACAO",
+   "type": "string",
+   "description": "Tipo da infração associada ao bem apreendido.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "QTD_DOACAO_BEM",
+   "type": "number",
+   "description": "Quantidade de bem doado.",
+   "declaredType": "DECIMAL"
+  },
+  {
+   "name": "DES_UNIDADE_MEDIDA",
+   "type": "string",
+   "description": "Unidade de medida da quantidade de bem apreendido.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "NU_VALOR",
+   "type": "number",
+   "description": "Valor do bem doado.",
+   "declaredType": "DECIMAL"
+  },
+  {
+   "name": "OBS_DOACAO_BEM",
+   "type": "string",
+   "description": "Observações referentes ao bem doado.",
+   "declaredType": "TEXT"
+  },
+  {
+   "name": "TIPO_VEICULO",
+   "type": "string",
+   "description": "Tipo de veículo doado: aéreo, fluvial, terrestre.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "DES_MARCA",
+   "type": "string",
+   "description": "Marca do veículo.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "DES_MODELO",
+   "type": "string",
+   "description": "Modelo do veículo.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "DES_PLACA_VEICULO",
+   "type": "string",
+   "description": "Placa de identificação do veículo.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "DES_COR",
+   "type": "string",
+   "description": "Cor do veículo.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "CHASSI_NUM_MOTOR",
+   "type": "string",
+   "description": "Número do chassi ou número do motor do veículo.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "DES_ANO_VEICULO",
+   "type": "integer",
+   "description": "Ano de fabricação do veículo.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "NU_ANO_MOD",
+   "type": "integer",
+   "description": "Ano do modelo do veículo.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "DES_LACRE_VEICULO",
+   "type": "string",
+   "description": "Número do lacre aposto no veículo apreendido.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "NUM_INSCRICAO_MARINHA",
+   "type": "string",
+   "description": "Inscrição ou registro de embarcação na Marinha do Brasil.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "NOME_MATRICULA",
+   "type": "string",
+   "description": "Denominação ou número de matrícula do veículo.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "LICENCA_NUMERO_SERIE",
+   "type": "string",
+   "description": "Licença ou número de série do veículo.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "DES_FABRICANTE",
+   "type": "string",
+   "description": "Fabricante do veículo.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "description": "Data e horário referente à última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601), no formato YYYY-MM-DD hh24:mi:ss",
+   "declaredType": "datatime"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "b3a63bc2-5fe2-4af0-9e7e-ec23194f32d3",
+   "dictionary_name": "Metadados - Bem doado",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/b3a63bc2-5fe2-4af0-9e7e-ec23194f32d3/download/metadados-termo-de-doacao-bem-doado.csv",
+   "sha256": "48499a659031f343bbf060941129c05b127d65ac4f3e78e2c59bdc5f8e9b6c95",
+   "reader": "csv",
+   "part": "",
+   "link_method": "header"
+  }
+ }
+}

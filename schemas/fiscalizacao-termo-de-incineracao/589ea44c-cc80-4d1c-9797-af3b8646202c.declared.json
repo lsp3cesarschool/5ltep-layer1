@@ -1,0 +1,119 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_INCINERACAO",
+   "type": "integer",
+   "description": "Chave estrangeira que identifica o termo de incineração;",
+   "declaredType": "int"
+  },
+  {
+   "name": "NUM_INCINERACAO",
+   "type": "integer",
+   "description": "Número impresso no formulário que compõe a identificação do termo juntamente com a série;",
+   "declaredType": "int"
+  },
+  {
+   "name": "SER_INCINERACAO",
+   "type": "integer",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo juntamente com o número;",
+   "declaredType": "int"
+  },
+  {
+   "name": "SEQ_INCIN_ESPECIME",
+   "type": "integer",
+   "description": "Chave primária que identifica o registro de espécime incinerado;",
+   "declaredType": "int"
+  },
+  {
+   "name": "SEQ_ESPECIME_APREENDIDO",
+   "type": "integer",
+   "description": "Chave estrangeira que identifica o item do termo de apreensão (Termo de apreensão – espécime apreendido) que foi objeto da incineração;",
+   "declaredType": "int"
+  },
+  {
+   "name": "QTD_INCIN_ESPECIME",
+   "type": "integer",
+   "description": "Quantidade de espécimes incinerados;",
+   "declaredType": "int"
+  },
+  {
+   "name": "DES_UNIDADE_MEDIDA",
+   "type": "string",
+   "description": "Unidade de medida da quantidade de espécimes apreendidos;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DESCRICAO_PRODUTO",
+   "type": "string",
+   "description": "Descrição do produto originado a partir do espécime apreendido: Artesanato; Carne; Casca; Couro; Crânio; Dente; Espécime; Essência; Extrato; Garra; Óleo; Ossos; Ovos; Partes; Pele; Sementes; Subproduto; Taxid. (Empalhado);",
+   "declaredType": "string"
+  },
+  {
+   "name": "SITUACAO_CARACTERISTICA",
+   "type": "string",
+   "description": "Descrição da característica ou situação em que os espécimes foram apreendidos: vivo; morto; abatido; empalhado;",
+   "declaredType": "string"
+  },
+  {
+   "name": "TIPO",
+   "type": "string",
+   "description": "Tipo de infração associada ao espécime apreendido: Degradação; Fauna; Flora; Pesca;",
+   "declaredType": "string"
+  },
+  {
+   "name": "GRUPO",
+   "type": "string",
+   "description": "Identifica o grupo de organismos dos espécimes apreendidos: Anfíbio; Ave; Caranguejo; Domestico; Exótico; Invertebrado; Lagosta; Mamífero; Molusco; Outros; Palmito; Peixes Ornamentais; Pescado; Réptil;",
+   "declaredType": "string"
+  },
+  {
+   "name": "SEQ_TAXONOMIA",
+   "type": "number",
+   "description": "Chave oriunda do sistema Sistaxon, que identifica a taxonomia do espécime apreendido;",
+   "declaredType": "float"
+  },
+  {
+   "name": "NOME_CIENTIFICO",
+   "type": "string",
+   "description": "Nome científico do espécime apreendido;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DES_NOME_POPULAR",
+   "type": "string",
+   "description": "Nome popular do espécime apreendido;",
+   "declaredType": "string"
+  },
+  {
+   "name": "CITES",
+   "type": "string",
+   "description": "Identifica se a espécie do espécime apreendido consta na lista de espécies Cites (Convention on International Trade in Endangered Species of Wild Fauna and Flora): S – Sim; N – Não;",
+   "declaredType": "string"
+  },
+  {
+   "name": "OBS_INCIN_ESPECIME",
+   "type": "string",
+   "description": "Descrição das circunstâncias em que o espécime apreendido foi incinerado.",
+   "declaredType": "string"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "description": "Data e horário da última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601 - YYYY-MM-DD hh24:mi:ss).",
+   "declaredType": "DateTime"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "d8d89c00-6e3d-4d73-9eba-69c5fe70e506",
+   "dictionary_name": "Metadados - Termo de incineração - Espécime incinerado",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/085200d6-333c-46f0-bf76-062b32a6fa91/resource/d8d89c00-6e3d-4d73-9eba-69c5fe70e506/download/metadados_especime_incinerado.csv",
+   "sha256": "616a30e28250ab0e3d16cb9b525154a4f458939aecf4a72e73902afc8964b674",
+   "reader": "csv",
+   "part": "",
+   "link_method": "header"
+  }
+ }
+}

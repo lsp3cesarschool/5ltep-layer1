@@ -1,0 +1,109 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "any",
+   "description": "Chave que identifica de forma única o termo cadastrado no Sistema de Cadastro, Arrecadação e Fiscalização (Sicafi).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "any",
+   "description": "Número impresso no formulário que compõe a identificação do Termo de Embargo. Obs: Os Termos de Embargo emitidos até 07.10.2019, pelo Sistema de Cadastro, Arrecadação e Fiscalização (Sicafi), utilizam um padrão composto de números, acompanhado da respectiva Série. Os Termos de Embargo emitidos a partir de 08.10.2019, pelo Sistema do Auto de Infração Eletrônico (AIe), utilizam um padrão alfanumérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SEQ_POLIGONO",
+   "type": "any",
+   "description": "Chave que identifica o polígono registrado no sistema Sicafi.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SQ_POLIGONO_AIEMOB",
+   "type": "any",
+   "description": "Chave que identifica o polígono registrado no sistema AIe.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NO_AREA",
+   "type": "any",
+   "description": "Nome da área (polígono) cadastrada no sistema AIe.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "AREA_POLIGONO",
+   "type": "any",
+   "description": "Área do polígono, em hectares, calculada pelo sistema AIe.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SEQ_PONTO_POLIGONO",
+   "type": "any",
+   "description": "Chave que identifica o par de coordenadas do polígono vinculado ao termo de embargo, no sistema Sicafi.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SQ_COORDENADA_AIEMOB",
+   "type": "any",
+   "description": "Chave identifica o par de coordenadas do polígono vinculado ao termo de embargo, no sistema AIe.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ORDEM",
+   "type": "any",
+   "description": "Numeração que identifica a ordem dos pares de coordenadas do polígono, registrado no sistema AIe.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "LONGITUDE",
+   "type": "any",
+   "description": "Longitude que compõe o par de coordenadas.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "LATITUDE",
+   "type": "any",
+   "description": "Latitude que compõe o par de coordenadas.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "WKT",
+   "type": "any",
+   "description": "par de coordenadas de referência do item embargo em formato Well-known text – WKT.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_ORGAO_EMISSOR_EMBARGO",
+   "type": "any",
+   "description": "Ibama",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "any",
+   "description": "Data e horário referente à última atualização do recurso no portal de dados abertos (formato ISO 8601).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "described",
+  "source": {
+   "kind": "description",
+   "resource_id": "90d17ce7-6a9b-4bfb-804c-6d52e43af264"
+  }
+ }
+}
