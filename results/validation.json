@@ -1,0 +1,409 @@
+{
+ "26307dda-12a0-47e2-ae7e-ca8137d22b13": {
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "checked_at": "2026-10-03T01:19:08+00:00",
+  "schema_kind": null,
+  "schema_fingerprint": null,
+  "ckan": {
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_cerrado_mdbbs_2009_a&outputFormat=csv",
+   "last_modified": "2025-10-17T19:56:41.794770",
+   "size": null
+  },
+  "host": "siscom.ibama.gov.br",
+  "status": "error",
+  "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_cerrado_mdbbs_2009_a&outputFormat=csv",
+  "reason": "new"
+ },
+ "093b6f72-11c8-431f-a17e-3eaa57026dff": {
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "checked_at": "2026-10-03T01:19:08+00:00",
+  "schema_kind": null,
+  "schema_fingerprint": null,
+  "ckan": {
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_mata_atlantica_mdbbs_2009_a&outputFormat=csv",
+   "last_modified": "2021-09-16T13:32:49.305889",
+   "size": null
+  },
+  "host": "siscom.ibama.gov.br",
+  "status": "error",
+  "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_mata_atlantica_mdbbs_2009_a&outputFormat=csv",
+  "reason": "new"
+ },
+ "c5b84b15-57f4-4c83-a4be-2a334fa10709": {
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "checked_at": "2026-10-03T01:19:08+00:00",
+  "schema_kind": null,
+  "schema_fingerprint": null,
+  "ckan": {
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_pampa_mdbbs_2009_a&outputFormat=csv",
+   "last_modified": "2021-09-16T13:38:48.023130",
+   "size": null
+  },
+  "host": "siscom.ibama.gov.br",
+  "status": "error",
+  "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_pampa_mdbbs_2009_a&outputFormat=csv",
+  "reason": "new"
+ },
+ "90ba133b-0d56-4910-8d79-16cb8ff96428": {
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "checked_at": "2026-10-03T01:19:09+00:00",
+  "schema_kind": null,
+  "schema_fingerprint": null,
+  "ckan": {
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_pantanal_mdbbs_2009_a&outputFormat=csv",
+   "last_modified": "2021-09-16T13:42:11.073092",
+   "size": null
+  },
+  "host": "siscom.ibama.gov.br",
+  "status": "error",
+  "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_pantanal_mdbbs_2009_a&outputFormat=csv",
+  "reason": "new"
+ },
+ "4b91ca8c-6950-4f43-857b-9d80ec9edfb8": {
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "checked_at": "2026-10-03T01:19:09+00:00",
+  "schema_kind": null,
+  "schema_fingerprint": null,
+  "ckan": {
+   "url": "http://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_caatinga_mdbbs_2009_a&outputFormat=csv",
+   "last_modified": "2021-09-16T13:45:24.639130",
+   "size": null
+  },
+  "host": "siscom.ibama.gov.br",
+  "status": "error",
+  "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_caatinga_mdbbs_2009_a&outputFormat=csv",
+  "reason": "new"
+ },
+ "2873d587-4e02-44c9-a9e6-29bb6c7bacea": {
+  "dataset": "arrecadacao-com-tcfa",
+  "checked_at": "2026-10-03T01:19:10+00:00",
+  "schema_kind": null,
+  "schema_fingerprint": null,
+  "ckan": {
+   "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/AC/Arrecadacao/arrecadacaoTCFA.csv",
+   "last_modified": "2021-09-16T19:54:36.439993",
+   "size": null
+  },
+  "host": "dadosabertos.ibama.gov.br",
+  "timing": {
+   "first_byte_s": 0.18
+  },
+  "distributions": [
+   {
+    "id": "d8876290-bd5f-427b-a8c7-f3777ab376d7",
+    "format": "json",
+    "name": "Arrecadação com TCFA",
+    "status": "ok",
+    "read_as": "json",
+    "same_columns": false,
+    "missing": [
+     "ano debito",
+     "data pagamento",
+     "data vencimento",
+     "numero de gru",
+     "ultima atualizacao relatorio",
+     "valor cobrado r",
+     "valor pago r"
+    ],
+    "extra": [
+     "anodebito",
+     "datapagamento",
+     "datavencimento",
+     "numerogru",
+     "ultimaatualizacaorelatorio",
+     "valorcobrado",
+     "valorpago"
+    ]
+   },
+   {
+    "id": "52b00d0a-c548-41b4-abec-230960350d8f",
+    "format": "xml",
+    "name": "Arrecadação com TCFA",
+    "status": "ok",
+    "read_as": "xml",
+    "same_columns": false,
+    "missing": [
+     "ano debito",
+     "data pagamento",
+     "data vencimento",
+     "numero de gru",
+     "ultima atualizacao relatorio",
+     "valor cobrado r",
+     "valor pago r"
+    ],
+    "extra": [
+     "anodebito",
+     "datapagamento",
+     "datavencimento",
+     "numerogru",
+     "ultimaatualizacaorelatorio",
+     "valorcobrado",
+     "valorpago"
+    ]
+   }
+  ],
+  "first_seen": "2026-10-03T01:19:10+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-03T01:19:10+00:00",
+  "seconds": 1.9,
+  "sha256": "ed053f48fb2de0a0b38cc8b9760ea4a50cc0a2e35c072fe842ff7f03a39d00ce",
+  "bytes": 1382543,
+  "kind": "csv",
+  "http": {
+   "etag": "\"15188f-64e8231dc633d\"",
+   "last_modified": "Thu, 02 Apr 2026 23:02:29 GMT",
+   "content_length": 1382543
+  },
+  "summary": {
+   "tables": 1,
+   "rows": 17455,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 1,
+   "columns_without_name": 0,
+   "encodings": [
+    "utf-8"
+   ],
+   "delimiters": [
+    ";"
+   ],
+   "formats": [
+    "csv"
+   ]
+  },
+  "header": [
+   "Número de GRU",
+   "Valor Cobrado (R$)",
+   "Valor Pago (R$)",
+   "Data Vencimento",
+   "Data Pagamento",
+   "Ano Débito",
+   "Trimestre",
+   "UF",
+   "Última Atualização Relatório"
+  ],
+  "reason": "new"
+ },
+ "9f200e1a-dd01-4328-9e44-127b7e7ee966": {
+  "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
+  "checked_at": "2026-10-03T01:19:11+00:00",
+  "schema_kind": null,
+  "schema_fingerprint": null,
+  "ckan": {
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ARRECADACAO_DE_MULTAS_AMBIENTAIS_POR_BENS_TUTELADOS/arrecadacao_de_multas_ambientais_por_bens_tutelados_html.zip",
+   "last_modified": "2026-08-26T15:04:28.919689",
+   "size": null
+  },
+  "host": "stibamadadosabertosprd.blob.core.windows.net",
+  "status": "not-tabular",
+  "not_tabular_kind": "no-tables",
+  "error": "zip without tables (first entries: ['arrecadacao_de_multas_ambientais_por_bens_tutelados_AC.html', 'arrecadacao_de_multas_ambientais_por_bens_tutelados_AL.html', 'arrecadacao_de_multas_ambientais_por_bens_tutelados_AM.html', 'arrecadacao_de_multas_ambientais_por_bens_tutelados_AP.html', 'arrecadacao",
+  "validated_at": "2026-10-03T01:19:11+00:00",
+  "reason": "new"
+ },
+ "cd55e477-2f11-43e5-b994-7be34e275561": {
+  "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
+  "checked_at": "2026-10-03T01:19:16+00:00",
+  "schema_kind": null,
+  "schema_fingerprint": null,
+  "ckan": {
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ARRECADACAO_DE_MULTAS_AMBIENTAIS_POR_BENS_TUTELADOS/arrecadacao_de_multas_ambientais_por_bens_tutelados_csv.zip",
+   "last_modified": "2026-08-26T15:04:02.026297",
+   "size": null
+  },
+  "host": "stibamadadosabertosprd.blob.core.windows.net",
+  "timing": {
+   "first_byte_s": 0.2,
+   "download_s": 1.0
+  },
+  "first_seen": "2026-10-03T01:19:16+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-03T01:19:16+00:00",
+  "seconds": 16.6,
+  "sha256": "7b1b17f2213522a905af2eb91232601821656f396fedb4c1e6b0cadef1a606f3",
+  "bytes": 27929307,
+  "kind": "zip",
+  "http": {
+   "etag": "0x8DF2065273B3885",
+   "last_modified": "Fri, 02 Oct 2026 09:11:33 GMT",
+   "content_length": 27929307
+  },
+  "summary": {
+   "tables": 27,
+   "rows": 1587818,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 1,
+   "columns_without_name": 0,
+   "encodings": [
+    "utf-8-sig"
+   ],
+   "delimiters": [
+    ";"
+   ],
+   "formats": [
+    "csv"
+   ]
+  },
+  "header": [
+   "Nº AI",
+   "Nome ou Razão Social",
+   "CPF/CNPJ",
+   "UF",
+   "Município",
+   "Status Débito",
+   "Tipo Auto",
+   "Tipo Infração",
+   "Enquadramento Legal",
+   "Data Auto",
+   "Valor do Auto",
+   "Moeda",
+   "Parcela",
+   "Quantidade de Parcelas",
+   "Valor (Base) da Parcela",
+   "Valor Pago",
+   "Data Pagamento",
+   "Última Atualização Relatório"
+  ],
+  "reason": "new"
+ },
+ "9d371390-73e7-4010-af9f-d8f672697094": {
+  "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
+  "checked_at": "2026-10-03T01:19:33+00:00",
+  "schema_kind": null,
+  "schema_fingerprint": null,
+  "ckan": {
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ARRECADACAO_DE_MULTAS_AMBIENTAIS_POR_BENS_TUTELADOS/arrecadacao_de_multas_ambientais_por_bens_tutelados_json.zip",
+   "last_modified": "2026-08-26T15:05:34.446932",
+   "size": null
+  },
+  "host": "stibamadadosabertosprd.blob.core.windows.net",
+  "timing": {
+   "first_byte_s": 0.26,
+   "download_s": 1.41
+  },
+  "first_seen": "2026-10-03T01:19:33+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-03T01:19:33+00:00",
+  "seconds": 62.0,
+  "sha256": "6aaaa929ecf502d8bbb10f94456df662b83982b36afc79b484d09648b4783030",
+  "bytes": 39246574,
+  "kind": "zip",
+  "http": {
+   "etag": "0x8DF206537D5B878",
+   "last_modified": "Fri, 02 Oct 2026 09:12:01 GMT",
+   "content_length": 39246574
+  },
+  "summary": {
+   "tables": 27,
+   "rows": 1587818,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 1,
+   "columns_without_name": 0,
+   "encodings": [
+    "utf-8"
+   ],
+   "delimiters": [],
+   "formats": [
+    "json"
+   ]
+  },
+  "header": [
+   "Nº AI",
+   "Nome ou Razão Social",
+   "CPF/CNPJ",
+   "UF",
+   "Município",
+   "Status Débito",
+   "Tipo Auto",
+   "Tipo Infração",
+   "Enquadramento Legal",
+   "Data Auto",
+   "Valor do Auto",
+   "Moeda",
+   "Parcela",
+   "Quantidade de Parcelas",
+   "Valor (Base) da Parcela",
+   "Valor Pago",
+   "Data Pagamento",
+   "Última Atualização Relatório"
+  ],
+  "reason": "new"
+ },
+ "2d4550a2-6d6b-4e10-8822-7544fdb12099": {
+  "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
+  "checked_at": "2026-10-03T01:20:35+00:00",
+  "schema_kind": null,
+  "schema_fingerprint": null,
+  "ckan": {
+   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ARRECADACAO_DE_MULTAS_AMBIENTAIS_POR_BENS_TUTELADOS/arrecadacao_de_multas_ambientais_por_bens_tutelados_xml.zip",
+   "last_modified": "2026-08-26T15:05:57.282120",
+   "size": null
+  },
+  "host": "stibamadadosabertosprd.blob.core.windows.net",
+  "timing": {
+   "first_byte_s": 0.18,
+   "download_s": 1.33
+  },
+  "first_seen": "2026-10-03T01:20:35+00:00",
+  "pass_history": [],
+  "status": "ok",
+  "validated_at": "2026-10-03T01:20:35+00:00",
+  "seconds": 89.4,
+  "sha256": "dc86b7a3e594d56d3250aa8b6eda408a675718899ec19aca42124a1ad6294b6b",
+  "bytes": 39021675,
+  "kind": "zip",
+  "http": {
+   "etag": "0x8DF2065BF625859",
+   "last_modified": "Fri, 02 Oct 2026 09:15:48 GMT",
+   "content_length": 39021675
+  },
+  "summary": {
+   "tables": 27,
+   "rows": 1587818,
+   "ragged_rows": 0,
+   "decode_errors": 0,
+   "distinct_headers": 1,
+   "columns_without_name": 0,
+   "encodings": [
+    "utf-8"
+   ],
+   "delimiters": [],
+   "formats": [
+    "xml"
+   ]
+  },
+  "header": [
+   "No_AI",
+   "Nome_ou_Razao_Social",
+   "CPF_CNPJ",
+   "UF",
+   "Municipio",
+   "Status_Debito",
+   "Tipo_Auto",
+   "Tipo_Infracao",
+   "Enquadramento_Legal",
+   "Data_Auto",
+   "Valor_do_Auto",
+   "Moeda",
+   "Parcela",
+   "Quantidade_de_Parcelas",
+   "Valor__Base__da_Parcela",
+   "Valor_Pago",
+   "Data_Pagamento",
+   "Ultima_Atualizacao_Relatorio"
+  ],
+  "reason": "new"
+ },
+ "aa08a6eb-388e-4c20-bfa5-24cfb979ace9": {
+  "dataset": "ato-declaratorio-ambiental-ada",
+  "status": "error",
+  "checked_at": "2026-10-03T01:22:04+00:00",
+  "error": "did not finish within the batch time limit",
+  "reason": "new"
+ }
+}
