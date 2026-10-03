@@ -130,12 +130,14 @@ dictionary, schema extracted from a PDF (once confirmed), list in the descriptio
 
 ## Validation
 
-Every file is read as a stream: CSV, JSON (a list of records) and XML (repeated elements) straight from
-the HTTP response; a zip too, member by member, validated while it downloads (each member has its own
+Every file is downloaded whole to a temporary file and read from it as a stream: CSV, JSON (a list of
+records) and XML (repeated elements) row by row; a zip member by member; a Parquet or a spreadsheet sheet
+by sheet or batch by batch. A file larger than its share of the runner's disk is read straight from the
+HTTP response instead; a zip too, member by member, validated while it downloads (each member has its own
 header at its start, so no index and no byte range is needed; the tables are then put in the order a
-zip read from disk gives, by name); a Parquet or a spreadsheet from a temporary file, sheet by sheet or
-batch by batch. The format is recognised from the first bytes, not from the label on the portal. Zips
-inside zips are opened too. Nothing is kept but counts. Encoding and delimiter are detected
+zip read from disk gives, by name). The format is recognised from the first bytes, not from the label on
+the portal. Zips inside zips are opened too. Nothing is kept but counts, and the temporary file is
+deleted once read. Encoding and delimiter are detected
 for text formats; bytes that do not decode are counted. For each file:
 
 - the **observed schema** (header, delimiter, encoding, and the narrowest type the first 5,000 rows of
@@ -271,10 +273,14 @@ everything it shows. Ollama is a pinned, checksum-verified release.
 
 Every request goes through one keep-alive session that identifies the project (User-Agent with the
 repository's address), with **15 s to open a connection and 120 s to read the answer**, and up to four
-attempts with growing waits. The survey reads four datasets at a time; the validation reads three files
-at a time (`VALIDATE_WORKERS`), each in its own process, because the validation, not the network, is the
-bottleneck (measured on 03/10/2026: zips downloaded at 6 to 23 MB/s, files validated at 1.4 to 1.9 MB/s;
-the runner has 4 CPUs). The summary records, per server, the share of the time spent waiting for the
+attempts with growing waits. The survey reads four datasets at a time. The validation downloads **one
+file at a time from each server**, as fast as the server sends it, and validates up to three files at a
+time (`VALIDATE_WORKERS`) from the disk, each in its own process, while the next file downloads. Two
+measurements of 03/10/2026 led to this: the validation of a zip is slower than its download (zips
+downloaded at 6 to 23 MB/s, validated at 1.4 to 1.9 MB/s; the runner has 4 CPUs), and three connections
+at once to ANEEL's server made each of them 5 to 10 times slower than one alone, and the three together
+slower than one (0.6 to 0.9 MB/s each, against 4.7 to 9.8 MB/s for files of the same dataset read one at
+a time minutes earlier). The summary records, per server, the share of each file's time spent on the
 network (`network_share`). Several files at once run in one job: the layers of 5L-TEP share one GitHub
 account, whose number of jobs at the same time is limited.
 
@@ -403,7 +409,7 @@ the same name; the values used are recorded in the summary. The main ones:
 | `L1_PASS_THRESHOLD` | 0.85 | share of conformant files for Layer 1 to pass |
 | `ROTATION_DAYS` | 28 | an unchanged file is validated again after this many days |
 | `VALIDATE_MAX_MINUTES` | 270 | time budget of one validation batch |
-| `VALIDATE_WORKERS` | 3 | files validated at the same time, each in its own process (a spreadsheet or Parquet that may not fit on the disk beside others runs alone) |
+| `VALIDATE_WORKERS` | 3 | files validated at the same time, each in its own process; downloads are one at a time per server (a file larger than a quarter of `MAX_ZIP_BYTES` is read over the network; a spreadsheet or Parquet that may not fit on the disk beside others runs alone) |
 | `SURVEY_HEADER_MAX_MINUTES` | 180 | time the survey spends reading headers of files never validated |
 | `DELIVERY_PROBES` | 3 | files per server asked for their first 100 bytes in each survey (file delivery) |
 | `ORACLE_ACCEPT` / `ORACLE_LLM_BELOW` | 1.0 / 0.8 | agreement to accept a PDF extraction / to try the LLM |

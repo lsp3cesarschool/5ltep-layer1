@@ -133,12 +133,14 @@ legível por máquina, esquema extraído de PDF (depois de confirmado), lista na
 
 ## Validação
 
-Cada arquivo é lido em stream: CSV, JSON (uma lista de registros) e XML (elementos repetidos) direto da
-resposta HTTP; um zip também, membro por membro, validado enquanto baixa (cada membro tem o próprio
+Cada arquivo é baixado inteiro para um arquivo temporário e lido dele em stream: CSV, JSON (uma lista de
+registros) e XML (elementos repetidos) linha por linha; um zip membro por membro; um Parquet ou uma
+planilha aba por aba ou lote por lote. Um arquivo maior que a sua parte do disco do runner é lido direto
+da resposta HTTP; um zip também, membro por membro, validado enquanto baixa (cada membro tem o próprio
 cabeçalho no começo, então não é preciso o índice nem intervalo de bytes; as tabelas depois ficam na
-ordem que um zip lido do disco dá, por nome); um Parquet ou uma planilha a partir de um arquivo
-temporário, aba por aba ou lote por lote. O formato é reconhecido pelos primeiros bytes, não pelo rótulo
-no portal. Zips dentro de zips também são abertos. Nada é guardado além de contagens. Codificação e delimitador são
+ordem que um zip lido do disco dá, por nome). O formato é reconhecido pelos primeiros bytes, não pelo
+rótulo no portal. Zips dentro de zips também são abertos. Nada é guardado além de contagens, e o arquivo
+temporário é apagado depois de lido. Codificação e delimitador são
 detectados nos formatos de texto; bytes que não decodificam são contados. Para cada arquivo:
 
 - o **esquema observado** (cabeçalho, delimitador, codificação e o tipo mais estreito em que cabem as
@@ -277,12 +279,16 @@ modelo. Esquemas vindos do modelo só chegam como `suggested`, por pull request.
 
 Todo pedido passa por uma única sessão com conexões reaproveitadas (*keep-alive*) que identifica o projeto
 (User-Agent com o endereço do repositório), com **15 s para abrir uma conexão e 120 s para ler a resposta**,
-e até quatro tentativas com esperas crescentes. O levantamento lê quatro conjuntos ao mesmo tempo; a
-validação lê três arquivos ao mesmo tempo (`VALIDATE_WORKERS`), cada um no seu processo, porque o gargalo
-é a validação, não a rede (medido em 03/10/2026: zips baixados a 6 a 23 MB/s, arquivos validados a 1,4 a
-1,9 MB/s; o runner tem 4 CPUs). O resumo registra, por servidor, a fração do tempo gasta esperando a rede
-(`network_share`). Os vários arquivos ao mesmo tempo rodam num só job: as camadas do 5L-TEP dividem uma
-conta do GitHub, cujo número de jobs simultâneos é limitado.
+e até quatro tentativas com esperas crescentes. O levantamento lê quatro conjuntos ao mesmo tempo. A
+validação baixa **um arquivo de cada vez de cada servidor**, na velocidade em que o servidor envia, e valida
+até três arquivos ao mesmo tempo (`VALIDATE_WORKERS`) a partir do disco, cada um no seu processo, enquanto
+o próximo arquivo baixa. Duas medições de 03/10/2026 levaram a isso: a validação de um zip é mais lenta que
+o download dele (zips baixados a 6 a 23 MB/s, validados a 1,4 a 1,9 MB/s; o runner tem 4 CPUs), e três
+conexões ao mesmo tempo com o servidor da ANEEL deixaram cada uma de 5 a 10 vezes mais lenta que uma
+sozinha, e as três juntas mais lentas que uma (0,6 a 0,9 MB/s cada, contra 4,7 a 9,8 MB/s para arquivos do
+mesmo conjunto lidos um de cada vez minutos antes). O resumo registra, por servidor, a fração do tempo de
+cada arquivo gasta na rede (`network_share`). Os vários arquivos ao mesmo tempo rodam num só job: as
+camadas do 5L-TEP dividem uma conta do GitHub, cujo número de jobs simultâneos é limitado.
 
 Um servidor que não responde (sem conexão, tempo esgotado, download cortado, erro 5xx) é um fato daquele
 momento, não da documentação do portal. Uma resposta que é do portal (404, redirecionamento em laço,
@@ -412,7 +418,7 @@ mesmo nome; os valores usados ficam registrados no resumo. Os principais:
 | `L1_PASS_THRESHOLD` | 0,85 | fração de arquivos conformes para a Camada 1 passar |
 | `ROTATION_DAYS` | 28 | um arquivo inalterado é validado de novo depois desse número de dias |
 | `VALIDATE_MAX_MINUTES` | 270 | orçamento de tempo de um lote de validação |
-| `VALIDATE_WORKERS` | 3 | arquivos validados ao mesmo tempo, cada um no seu processo (uma planilha ou Parquet que talvez não caiba no disco junto com outros roda sozinho) |
+| `VALIDATE_WORKERS` | 3 | arquivos validados ao mesmo tempo, cada um no seu processo; os downloads são um de cada vez por servidor (um arquivo maior que um quarto de `MAX_ZIP_BYTES` é lido pela rede; uma planilha ou Parquet que talvez não caiba no disco junto com outros roda sozinho) |
 | `SURVEY_HEADER_MAX_MINUTES` | 180 | tempo que o levantamento gasta lendo cabeçalhos de arquivos nunca validados |
 | `DELIVERY_PROBES` | 3 | arquivos por servidor pedidos pelos primeiros 100 bytes em cada levantamento (entrega dos arquivos) |
 | `ORACLE_ACCEPT` / `ORACLE_LLM_BELOW` | 1,0 / 0,8 | concordância para aceitar uma extração de PDF / para tentar o LLM |
