@@ -205,6 +205,29 @@ documentation practice come from a commit and can be compared between portals:
 
 They are in `findings` of `results/layer1_summary.json` and in the *Documentation findings* panel of the dashboard.
 
+### File delivery
+
+How each server the portal links its files to delivers them, also measured every week: from the HTTP
+headers of the files validated, and from a request for the first 100 bytes of a few files per server
+(`DELIVERY_PROBES`, 3, from different datasets; the connection is closed before the content is read).
+Each observation sets what was seen beside what HTTP provides for it, with the reference, so that it
+can be read by whoever serves the files without the toolkit's vocabulary. They describe, they do not
+grade, and nothing assumes the portal will act on them.
+
+| Observation | When | Reference |
+|---|---|---|
+| broken links | files that answer 404 or 410 | [W3C Data on the Web Best Practices](https://www.w3.org/TR/dwbp/) |
+| redirect loops | download links that redirect back to themselves | [RFC 9110, §15.4](https://www.rfc-editor.org/rfc/rfc9110#section-15.4) |
+| byte ranges | a request for the first 100 bytes answered with the whole file (200 instead of 206) | [RFC 9110, §14](https://www.rfc-editor.org/rfc/rfc9110#section-14) |
+| validators | files without `ETag` or `Last-Modified` (a changed file cannot be told without downloading it) | [RFC 9110, §8.8 and §13](https://www.rfc-editor.org/rfc/rfc9110#section-8.8) |
+| media type | a CSV, zip, JSON, XML or spreadsheet served as `application/octet-stream` or with no type | [RFC 9110, §8.3](https://www.rfc-editor.org/rfc/rfc9110#section-8.3) |
+| length | files without `Content-Length` | [RFC 9110, §8.6](https://www.rfc-editor.org/rfc/rfc9110#section-8.6) |
+
+They are in `findings.delivery` of the summary (per server, and a list of `suggestions`), in the *File
+delivery* section of the dashboard, and side by side for the three portals in
+[`evaluation/compare_portals.py`](evaluation/compare_portals.py). The software or version of a server
+is not judged: only how it answers can be seen from outside.
+
 ## Layer 1 score and output for Layers 4-5
 
 `results/layer1_summary.json` is public, so Layer 5 reads it over HTTPS with no token:
@@ -374,6 +397,7 @@ the same name; the values used are recorded in the summary. The main ones:
 | `ROTATION_DAYS` | 28 | an unchanged file is validated again after this many days |
 | `VALIDATE_MAX_MINUTES` | 270 | time budget of one validation batch |
 | `SURVEY_HEADER_MAX_MINUTES` | 180 | time the survey spends reading headers of files never validated |
+| `DELIVERY_PROBES` | 3 | files per server asked for their first 100 bytes in each survey (file delivery) |
 | `ORACLE_ACCEPT` / `ORACLE_LLM_BELOW` | 1.0 / 0.8 | agreement to accept a PDF extraction / to try the LLM |
 | `LLM_MODEL` | `auto` | Ollama model for PDF extraction (`auto` = the benchmark's choice; fallback `qwen3:8b`) |
 

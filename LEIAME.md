@@ -210,6 +210,29 @@ documentação venham de um commit e possam ser comparadas entre portais:
 
 Eles ficam em `findings` de `results/layer1_summary.json` e no painel *Achados de documentação*.
 
+### Entrega dos arquivos
+
+Como cada servidor para o qual o portal aponta seus arquivos os entrega, também medido toda semana:
+pelos cabeçalhos HTTP dos arquivos validados e por um pedido dos primeiros 100 bytes de alguns arquivos
+por servidor (`DELIVERY_PROBES`, 3, de conjuntos diferentes; a conexão é fechada antes de o conteúdo ser
+lido). Cada observação põe o que foi visto ao lado do que o HTTP prevê para isso, com a referência, para
+que possa ser lida por quem serve os arquivos sem o vocabulário da ferramenta. Elas descrevem, não dão
+nota, e nada pressupõe que o portal vá agir a partir delas.
+
+| Observação | Quando | Referência |
+|---|---|---|
+| links quebrados | arquivos que respondem 404 ou 410 | [W3C Data on the Web Best Practices](https://www.w3.org/TR/dwbp/) |
+| redirecionamentos em laço | links de download que redirecionam para si mesmos | [RFC 9110, §15.4](https://www.rfc-editor.org/rfc/rfc9110#section-15.4) |
+| intervalos de bytes | um pedido dos primeiros 100 bytes respondido com o arquivo inteiro (200 em vez de 206) | [RFC 9110, §14](https://www.rfc-editor.org/rfc/rfc9110#section-14) |
+| validadores | arquivos sem `ETag` nem `Last-Modified` (não dá para saber se um arquivo mudou sem baixá-lo) | [RFC 9110, §8.8 e §13](https://www.rfc-editor.org/rfc/rfc9110#section-8.8) |
+| tipo de mídia | um CSV, zip, JSON, XML ou planilha entregue como `application/octet-stream` ou sem tipo | [RFC 9110, §8.3](https://www.rfc-editor.org/rfc/rfc9110#section-8.3) |
+| tamanho | arquivos sem `Content-Length` | [RFC 9110, §8.6](https://www.rfc-editor.org/rfc/rfc9110#section-8.6) |
+
+Elas ficam em `findings.delivery` do resumo (por servidor, e uma lista de `suggestions`), na seção
+*Entrega dos arquivos* do painel e, lado a lado para os três portais, em
+[`evaluation/compare_portals.py`](evaluation/compare_portals.py). O software ou a versão de um servidor
+não é julgado: de fora só se vê como ele responde.
+
 ## Nota da Camada 1 e saída para as Camadas 4-5
 
 `results/layer1_summary.json` é público, e a Camada 5 o lê por HTTPS sem token:
@@ -384,6 +407,7 @@ mesmo nome; os valores usados ficam registrados no resumo. Os principais:
 | `ROTATION_DAYS` | 28 | um arquivo inalterado é validado de novo depois desse número de dias |
 | `VALIDATE_MAX_MINUTES` | 270 | orçamento de tempo de um lote de validação |
 | `SURVEY_HEADER_MAX_MINUTES` | 180 | tempo que o levantamento gasta lendo cabeçalhos de arquivos nunca validados |
+| `DELIVERY_PROBES` | 3 | arquivos por servidor pedidos pelos primeiros 100 bytes em cada levantamento (entrega dos arquivos) |
 | `ORACLE_ACCEPT` / `ORACLE_LLM_BELOW` | 1,0 / 0,8 | concordância para aceitar uma extração de PDF / para tentar o LLM |
 | `LLM_MODEL` | `auto` | modelo do Ollama para a extração de PDF (`auto` = a escolha do benchmark; reserva `qwen3:8b`) |
 
