@@ -113,6 +113,8 @@ portal não precisa de mudança no código quando seus dicionários se parecem c
 Cada dicionário é então ligado ao arquivo que descreve, pela evidência mais forte disponível, e o método
 fica registrado: o dicionário nomeia o id do recurso; seus campos coincidem com o cabeçalho do arquivo;
 seu nome corresponde ao nome do recurso; ou é o único dicionário do conjunto, com um nome genérico.
+O cabeçalho de um arquivo nunca validado é lido no levantamento (a primeira linha; nada mais é guardado),
+para que o arquivo seja ligado pelo cabeçalho, e validado contra o seu dicionário, já na primeira execução.
 
 Os tipos declarados são escritos de muitos jeitos (`TEXTO (STRING)`, `Cadeia de caracteres`, `VARCHAR`,
 `char`...). Eles são mapeados para tipos do Table Schema por palavras-chave, numa ordem fixa e auditável
@@ -171,7 +173,8 @@ et al. (2026) acharam mais confiável para PDFs tabulares com modelos locais:
 O **oráculo** é o próprio cabeçalho do arquivo. Os nomes extraídos são comparados com ele (revocação,
 precisão, correspondência exata e similaridade de Levenshtein). O modelo nunca vê o cabeçalho, e assim o
 oráculo continua independente. Uma extração determinística que o cabeçalho confirma por inteiro é usada
-na hora (`extracted`); tudo o que o LLM produz vai sempre para pessoas.
+na hora (`extracted`); tudo o que o LLM produz vai sempre para pessoas. As etapas dos PDFs rodam antes
+da validação, para que um esquema extraído numa execução seja o usado pela validação da mesma execução.
 
 ## Deriva de esquema
 
@@ -348,8 +351,11 @@ mesmo nome; os valores usados ficam registrados no resumo. Os principais:
 - Os tipos de um DataStore podem ter sido inferidos pelo carregador do portal, não declarados pelo
   publicador; contam para o nível de maturidade, mas são a última opção para a validação.
 - Dicionários em PDF sem camada de texto (digitalizações) não são lidos (sem OCR).
-- Arquivos XLS e ODS são lidos inteiros em memória (limite `MAX_SHEET_BYTES`); outros formatos de uma
-  tabela maiores que `DISTRIBUTION_CHECK_MAX_BYTES` não são comparados.
+- Arquivos XLS e ODS são lidos inteiros em memória (limite `MAX_SHEET_BYTES`, a memória do runner);
+  arquivos maiores que isso não são lidos. Arquivos que precisam ir para o disco (zips, planilhas, Parquet)
+  são lidos até `MAX_ZIP_BYTES`, o disco livre do runner. Esses são os únicos limites de tamanho: todo o
+  resto é lido por inteiro, em quantos lotes forem precisos (um PDF longo vai ao modelo em partes, nunca
+  cortado).
 - Nomes que diferem só na grafia não reprovam a conformidade; são relatados.
 - O oráculo mede *nomes* de campos; os tipos declarados extraídos de um PDF só são verificados por pessoas.
 

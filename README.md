@@ -110,6 +110,8 @@ code change when its dictionaries look like any of these:
 Each dictionary is then linked to the file it describes, by the strongest evidence available, and the
 method is recorded: the dictionary names the resource id; its fields overlap the file's header; its
 name matches the resource's name; or it is the only dictionary of the dataset, with a generic name.
+The header of a file never validated is read in the survey (its first line; nothing else is kept), so
+that the file is linked by its header, and validated against its dictionary, already in its first run.
 
 Declared types are written in many ways (`TEXTO (STRING)`, `Cadeia de caracteres`, `VARCHAR`,
 `char`...). They are mapped to Table Schema types by keywords, in a fixed and auditable order
@@ -167,7 +169,8 @@ Al Hilmi et al. (2026) found most reliable for tabular PDFs with local models:
 The **oracle** is the file's own header. The extracted names are compared with it (recall, precision,
 exact match and Levenshtein similarity). The model never sees the header, so the oracle stays
 independent. A deterministic extraction that the header confirms in full is used right away
-(`extracted`); anything the LLM produced always goes to people.
+(`extracted`); anything the LLM produced always goes to people. The PDF stages run before the
+validation, so that a schema extracted in a run is the one the same run validates against.
 
 ## Schema drift
 
@@ -340,8 +343,10 @@ the same name; the values used are recorded in the summary. The main ones:
 - A DataStore's types may have been inferred by the portal's loader, not declared by the publisher;
   they count for the maturity level but are the last choice for validation.
 - PDF dictionaries without a text layer (scans) are not read (no OCR).
-- XLS and ODS files are read whole in memory (limit `MAX_SHEET_BYTES`); other formats of a table larger
-  than `DISTRIBUTION_CHECK_MAX_BYTES` are not compared.
+- XLS and ODS files are read whole in memory (limit `MAX_SHEET_BYTES`, the runner's memory); files larger
+  than that are not read. Files that must go to disk (zips, spreadsheets, Parquet) are read up to
+  `MAX_ZIP_BYTES`, the runner's free disk. These are the only size limits: everything else is read in
+  full, in as many batches as it takes (a long PDF goes to the model in pieces, never cut short).
 - Names that differ only in spelling do not fail conformance; they are reported.
 - The oracle measures field *names*; declared types extracted from a PDF are checked only by people.
 
