@@ -189,6 +189,12 @@ oráculo continua independente. Uma extração determinística que o cabeçalho 
 na hora (`extracted`); tudo o que o LLM produz vai sempre para pessoas. As etapas dos PDFs rodam antes
 da validação, para que um esquema extraído numa execução seja o usado pela validação da mesma execução.
 
+Onde eles discordam, o painel junta os nomes em pares para pessoas conferirem: *nomes parecidos* (um erro
+de digitação ou uma abreviação, `data_resp_1o_recurso` ≈ `data_resposta_1o_recurso`) e *nomes diferentes
+no mesmo lugar*: entre nomes encontrados nos dois, o k-ésimo nome só do PDF e a k-ésima coluna só do
+arquivo (no Recife, `arquivos_resposta_pedido` no PDF × `anexo_resposta` no arquivo). Um trecho com
+quantidades diferentes de nomes de cada lado, ou colunas que o arquivo reordenou, fica sem par.
+
 ## Deriva de esquema
 
 Cada execução compara o que vê com os esquemas commitados. Um arquivo com colunas acrescentadas,
@@ -377,19 +383,22 @@ CKAN_PORTAL_URL=https://dados.recife.pe.gov.br python main.py census
 Variáveis do repositório (opcionais): `LLM_MODEL` (padrão `auto`: a escolha do benchmark de modelos; uma tag fixa o modelo) e `LLM_THINK`.
 Repositórios públicos rodam nos runners padrão do GitHub sem custo.
 
-Duas opções da instância, ligadas por padrão e mostradas no rodapé do painel, economizam downloads que
-não diriam nada de novo; as duas ficam registradas como tal, não escondidas:
+Todo arquivo é lido inteiro primeiro. Dois fail-safes, mostrados no rodapé do painel com suas opções,
+evitam que um download que falhou deixe sem resposta um arquivo sobre o qual o que já foi lido diz algo;
+os dois ficam registrados como tal, não escondidos:
 
 - **Um zip de documentos, por amostra** (`ZIP_DOCUMENTS_SAMPLE=50`). Sem intervalos de bytes (o servidor
   de arquivos do Recife os ignora), a única forma de saber que um zip não tem tabela é lê-lo até o fim:
-  a lista de membros fica no fim. Os membros são lidos desde o começo enquanto o zip baixa; quando os 50
-  primeiros não têm tabela (os "Anexos" do Recife são zips de 1 GB com PDFs anexados a pedidos de acesso
-  à informação), o download para e o arquivo é registrado como "não é tabela, por amostra", com os
-  membros lidos, seus tipos e os bytes lidos do total. Uma tabela entre eles, e o zip é lido até o fim.
-- **Um arquivo publicado mais de uma vez** (`COPIES_ONCE=1`). Arquivos de um conjunto com o mesmo nome,
-  tamanho declarado e nome de arquivo (o Recife publica alguns três vezes) são baixados uma vez; os
-  outros recebem esse resultado, marcados como cópia dele. As cópias são contadas nos achados de
-  documentação de qualquer forma.
+  a lista de membros fica no fim. Os 50 primeiros membros são lidos desde o começo enquanto ele baixa.
+  Se depois o download falha e nenhum deles era tabela (os "Anexos" do Recife são zips de 1 GB com PDFs
+  anexados a pedidos de acesso à informação), o zip é registrado como "não é tabela, por amostra", com
+  os membros lidos, seus tipos, os bytes lidos do total e a falha. `ZIP_STOP_AT_SAMPLE=1` para todo
+  download assim na amostra (no zip de 973 MB do Recife: 17 MB lidos).
+- **Um arquivo publicado mais de uma vez** (`COPIES_ONCE=0`). Arquivos de um conjunto com o mesmo nome,
+  tamanho declarado e nome de arquivo (o Recife publica alguns três vezes) são todos baixados e
+  comparados pelo SHA-256: os achados de documentação contam as idênticas e as diferentes. Uma cópia
+  cujo download falha recebe o resultado da primeira, marcada como cópia dela. `COPIES_ONCE=1` baixa só
+  a primeira.
 
 Enquanto uma execução está em andamento, o painel avisa no topo ("baixando e validando arquivos há
 1 h 12 min", com link para a execução). O navegador do visitante lê isso da API pública do GitHub a cada
@@ -440,8 +449,9 @@ mesmo nome; os valores usados ficam registrados no resumo. Os principais:
 | `L1_PASS_THRESHOLD` | 0,85 | fração de arquivos conformes para a Camada 1 passar |
 | `ROTATION_DAYS` | 28 | um arquivo inalterado é validado de novo depois desse número de dias |
 | `VALIDATE_MAX_MINUTES` | 270 | orçamento de tempo de um lote de validação |
-| `ZIP_DOCUMENTS_SAMPLE` | 50 | um zip cujos primeiros membros (esta quantidade) não têm tabela é registrado como recipiente de documentos *por amostra*, e o download para ali; 0 lê todo zip até o fim |
-| `COPIES_ONCE` | 1 | arquivos de um conjunto com o mesmo nome, tamanho declarado e nome de arquivo são tomados como cópias de um arquivo só: só o primeiro é baixado, os outros recebem o resultado dele, marcados como cópias; 0 baixa todas as cópias |
+| `ZIP_DOCUMENTS_SAMPLE` | 50 | membros de um zip lidos enquanto ele baixa; se o download falha e nenhum deles era tabela, o zip é registrado como recipiente de documentos *por amostra* (fail-safe); 0: sem amostra |
+| `ZIP_STOP_AT_SAMPLE` | 0 | 1 para todo download assim na amostra, em vez de ler o zip até o fim |
+| `COPIES_ONCE` | 0 | arquivos de um conjunto com o mesmo nome, tamanho declarado e nome de arquivo são cópias: 0 baixa cada uma e as compara pelo SHA-256, e uma cópia cujo download falha recebe o resultado da primeira (fail-safe); 1 baixa só a primeira |
 | `VALIDATE_WORKERS` | 3 | arquivos validados ao mesmo tempo, cada um no seu processo; os downloads são um de cada vez por servidor (um arquivo maior que um quarto de `MAX_ZIP_BYTES` é lido pela rede; uma planilha ou Parquet que talvez não caiba no disco junto com outros roda sozinho) |
 | `SURVEY_HEADER_MAX_MINUTES` | 180 | tempo que o levantamento gasta lendo cabeçalhos de arquivos nunca validados |
 | `DELIVERY_PROBES` | 3 | arquivos por servidor pedidos pelos primeiros 100 bytes em cada levantamento (entrega dos arquivos) |
@@ -469,7 +479,7 @@ dividido em quantos lotes forem precisos. Os únicos limites são o que as máqu
 | O quê | Limite | Por quê |
 |---|---|---|
 | CSV, TXT, JSON, XML | nenhum | lidos em fluxo, registro a registro, nunca inteiros na memória |
-| Zip | nenhum | baixado inteiro e lido do disco até um quarto de 12 GB (`MAX_ZIP_BYTES`), lido em fluxo acima disso; zips dentro de zips até 5 níveis (`ZIP_MAX_DEPTH`, proteção contra um zip que se aninha em si mesmo); um zip cujos 50 primeiros membros não têm tabela é registrado como documentos por amostra (`ZIP_DOCUMENTS_SAMPLE`) |
+| Zip | nenhum | baixado inteiro e lido do disco até um quarto de 12 GB (`MAX_ZIP_BYTES`), lido em fluxo acima disso; zips dentro de zips até 5 níveis (`ZIP_MAX_DEPTH`, proteção contra um zip que se aninha em si mesmo); um zip cujo download falha depois dos 50 primeiros membros, nenhum deles tabela, é registrado como documentos por amostra (`ZIP_DOCUMENTS_SAMPLE`) |
 | XLSX, ODS | 12 GB por arquivo (o disco) | o arquivo precisa estar em disco (suas partes ficam espalhadas nele); depois as linhas são lidas uma a uma. O XLSX comporta no máximo 1.048.576 linhas por planilha |
 | XLS | nenhum, na prática | o formato comporta no máximo 65.536 linhas por planilha; lido uma planilha por vez |
 | Parquet | 12 GB por arquivo (o disco) | o índice fica no fim, então o arquivo precisa estar em disco; depois as linhas são lidas em lotes |

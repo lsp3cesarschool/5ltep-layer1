@@ -185,6 +185,12 @@ independent. A deterministic extraction that the header confirms in full is used
 (`extracted`); anything the LLM produced always goes to people. The PDF stages run before the
 validation, so that a schema extracted in a run is the one the same run validates against.
 
+Where they disagree, the dashboard pairs the names for people to check: *similar names* (a typo or an
+abbreviation, `data_resp_1o_recurso` ≈ `data_resposta_1o_recurso`) and *different names in the same
+place*: between names found in both, the k-th name only in the PDF and the k-th column only in the file
+(Recife's `arquivos_resposta_pedido` in the PDF × `anexo_resposta` in the file). A gap with a different
+number of names on each side, or columns the file has reordered, is left unpaired.
+
 ## Schema drift
 
 Each run compares what it sees with the committed schemas. A file whose columns were added, removed or
@@ -369,20 +375,22 @@ CKAN_PORTAL_URL=https://dados.recife.pe.gov.br python main.py census
 Repository variables (optional): `LLM_MODEL` (default `auto`: the model benchmark's choice; a tag pins the model) and `LLM_THINK`.
 Public repositories run on GitHub's standard runners at no cost.
 
-Two options of the instance, on by default and shown in the dashboard's footer, save downloads that
-would tell nothing new; both are recorded as such, not hidden:
+Every file is read whole first. Two fail-safes, shown in the dashboard's footer with their options,
+keep a failed download from leaving a file unknown when what was read already tells; both are recorded
+as such, not hidden:
 
 - **A zip of documents, by sample** (`ZIP_DOCUMENTS_SAMPLE=50`). Without byte ranges (Recife's file
   server ignores them) the only way to know that a zip holds no table is to read it to its end: the
-  list of members is at the end. The members are read from their start while the zip downloads; when
-  the first 50 hold no table (Recife's "Anexos" are 1 GB zips of PDF attachments to information
-  requests), the download stops and the file is recorded as "not a table, by sample", with the
-  members read, their kinds and the bytes read of the total. A table among them, and the zip is read
-  to its end.
-- **One file published more than once** (`COPIES_ONCE=1`). Files of a dataset with the same name,
-  declared size and file name (Recife publishes some three times) are downloaded once; the others
-  get that result, marked as a copy of it. The copies are counted in the documentation findings
-  either way.
+  list of members is at the end. Its first 50 members are read from their start while it downloads.
+  If the download then fails and none of them was a table (Recife's "Anexos" are 1 GB zips of PDF
+  attachments to information requests), the zip is recorded as "not a table, by sample", with the
+  members read, their kinds, the bytes read of the total and the failure. `ZIP_STOP_AT_SAMPLE=1` stops
+  every such download at the sample instead (Recife's 973 MB zip: 17 MB read).
+- **One file published more than once** (`COPIES_ONCE=0`). Files of a dataset with the same name,
+  declared size and file name (Recife publishes some three times) are all downloaded and compared by
+  their SHA-256: the documentation findings count the identical and the different ones. A copy whose
+  download fails gets the first one's result, marked as a copy of it. `COPIES_ONCE=1` downloads only
+  the first.
 
 While a run is in progress, the dashboard says so at the top ("downloading and validating files for
 1 h 12 min", with a link to the run). The visitor's browser reads it from GitHub's public API every five
@@ -432,8 +440,9 @@ the same name; the values used are recorded in the summary. The main ones:
 | `L1_PASS_THRESHOLD` | 0.85 | share of conformant files for Layer 1 to pass |
 | `ROTATION_DAYS` | 28 | an unchanged file is validated again after this many days |
 | `VALIDATE_MAX_MINUTES` | 270 | time budget of one validation batch |
-| `ZIP_DOCUMENTS_SAMPLE` | 50 | a zip whose first members (this many) hold no table is recorded as a container of documents *by sample*, and its download stops there; 0 reads every zip to its end |
-| `COPIES_ONCE` | 1 | files of a dataset with the same name, declared size and file name are taken as copies of one file: only the first is downloaded, the others get its result, marked as copies; 0 downloads every copy |
+| `ZIP_DOCUMENTS_SAMPLE` | 50 | members of a zip read as it downloads; when the download fails and none of them was a table, the zip is recorded as a container of documents *by sample* (a fail-safe); 0: no sample |
+| `ZIP_STOP_AT_SAMPLE` | 0 | 1 stops every such download at the sample, instead of reading the zip to its end |
+| `COPIES_ONCE` | 0 | files of a dataset with the same name, declared size and file name are copies: 0 downloads each and compares them by SHA-256, and a copy whose download fails gets the first one's result (a fail-safe); 1 downloads only the first |
 | `VALIDATE_WORKERS` | 3 | files validated at the same time, each in its own process; downloads are one at a time per server (a file larger than a quarter of `MAX_ZIP_BYTES` is read over the network; a spreadsheet or Parquet that may not fit on the disk beside others runs alone) |
 | `SURVEY_HEADER_MAX_MINUTES` | 180 | time the survey spends reading headers of files never validated |
 | `DELIVERY_PROBES` | 3 | files per server asked for their first 100 bytes in each survey (file delivery) |
@@ -461,7 +470,7 @@ into as many batches as it takes. The only limits are what GitHub's machines can
 | What | Limit | Why |
 |---|---|---|
 | CSV, TXT, JSON, XML | none | read as they stream, record by record, never held whole |
-| Zip | none | downloaded whole and read from disk up to a quarter of 12 GB (`MAX_ZIP_BYTES`), read as it streams beyond that; zips inside zips up to 5 levels (`ZIP_MAX_DEPTH`, a guard against a zip that nests itself); a zip whose first 50 members hold no table is recorded as documents by sample (`ZIP_DOCUMENTS_SAMPLE`) |
+| Zip | none | downloaded whole and read from disk up to a quarter of 12 GB (`MAX_ZIP_BYTES`), read as it streams beyond that; zips inside zips up to 5 levels (`ZIP_MAX_DEPTH`, a guard against a zip that nests itself); a zip whose download fails after its first 50 members, none of them a table, is recorded as documents by sample (`ZIP_DOCUMENTS_SAMPLE`) |
 | XLSX, ODS | 12 GB per file (the disk) | the file must be on disk (its parts are spread through it); rows are then read one at a time. XLSX holds at most 1,048,576 rows per sheet |
 | XLS | none in practice | the format holds at most 65,536 rows per sheet; read a sheet at a time |
 | Parquet | 12 GB per file (the disk) | its index is at the end, so the file must be on disk; rows are then read in batches |
