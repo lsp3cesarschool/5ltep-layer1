@@ -1,1 +1,134 @@
-[]
+[
+ {
+  "id": "26307dda-12a0-47e2-ae7e-ca8137d22b13",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "093b6f72-11c8-431f-a17e-3eaa57026dff",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "c5b84b15-57f4-4c83-a4be-2a334fa10709",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "90ba133b-0d56-4910-8d79-16cb8ff96428",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "4b91ca8c-6950-4f43-857b-9d80ec9edfb8",
+  "dataset": "antropizacao-dos-biomas-extra-amazonicos",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "8f88b43e-287a-470b-a730-db440f9e37fa",
+  "dataset": "fiscalizacao-termo-de-embargo",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "b0a63e0d-e656-455a-8bff-4672dc37ca44",
+  "dataset": "imagens-aereas-do-desastre-mariana-mg",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "6bde1c16-692f-4706-be68-bd2b3c1ac7d4",
+  "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "85efc1b6-c4bb-4e1b-96cc-8fb4e39dd811",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "78692bb1-017c-4ba4-a954-ff619bdc53ed",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "c60c95d4-ce2b-4d27-884d-1a572a604576",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "c10fc1fd-3c85-4e12-a9cd-79fe464602c3",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "cb9cf40d-f0fa-4304-ae73-3c857c3d59d0",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "e6a02e7b-98c0-44e4-aa7c-2f61b9552e04",
+  "dataset": "rapp-pilhas-e-baterias-importador",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "b213035b-e0b7-4765-9113-ad596322aceb",
+  "dataset": "siema-comunicado-de-acidente-ambiental",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "26694091-a6ec-45c0-a619-622382f7f7ad",
+  "dataset": "sinaflor-corte-de-arvores-isoladas",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "3d6fb0d5-4efd-4f22-8321-a075d1d48c38",
+  "dataset": "sinaflor-empreendimentos-de-base-florestal",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "68dd6c57-9a91-4913-b2ab-dfaac2cbdd8d",
+  "dataset": "sinaflor-empreendimentos-de-base-florestal",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "d20eb3a0-7463-462a-b9b7-f289510eda1c",
+  "dataset": "sinaflor-empreendimentos-de-base-florestal",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "a46eb190-35b8-40a2-b726-2c537ef480c2",
+  "dataset": "supressao-de-vegetacao-nao-florestal-no-bioma-amazonia",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "93829d42-5811-47c3-8ea6-7d3912cc84b6",
+  "dataset": "unidades-ibama",
+  "reason": "error",
+  "since": ""
+ },
+ {
+  "id": "0727c17c-a3a8-4ebc-ae97-345235522391",
+  "dataset": "vegetacao-de-mangue-brasileira",
+  "reason": "error",
+  "since": ""
+ }
+]
