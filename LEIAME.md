@@ -248,17 +248,20 @@ Todo pedido passa por uma única sessão com conexões reaproveitadas (*keep-ali
 e até quatro tentativas com esperas crescentes. O levantamento lê quatro conjuntos ao mesmo tempo; os
 arquivos são baixados um de cada vez.
 
-Um servidor que não responde é um fato daquele momento, não da documentação do portal:
+Um servidor que não responde (sem conexão, tempo esgotado, download cortado, erro 5xx) é um fato daquele
+momento, não da documentação do portal. Uma resposta que é do portal (404, redirecionamento em laço,
+certificado inválido) é um link quebrado e é relatada como tal.
 
 - Depois de 8 falhas seguidas (`UNREACHABLE_STREAK`), o levantamento para de pedir ao servidor de
   arquivos e pede de novo o que ficou depois de 5, 10 e 20 minutos (`DICTIONARY_RETRY_ROUNDS`,
   `DICTIONARY_RETRY_WAIT_S`).
 - Um conjunto cujo dicionário continua sem responder (ou o cabeçalho de um arquivo, necessário para
-  ligá-lo ao dicionário) fica com a última leitura (marcada `kept_from`), e
-  os esquemas commitados dele ficam: nenhuma issue de deriva, nenhum nível rebaixado.
+  ligá-lo ao dicionário) fica com a última leitura (marcada `kept_from`), por até 28 dias
+  (`ROTATION_DAYS`), e os esquemas commitados dele ficam: nenhuma issue de deriva, nenhum nível rebaixado.
 - Numa primeira execução não há última leitura: os arquivos dele esperam, pendentes, pela próxima
-  execução, em vez de serem conferidos contra um esquema mais fraco (o DataStore) como se fosse o que o
-  portal documenta.
+  execução (uma vez), em vez de serem conferidos contra um esquema mais fraco (o DataStore) como se
+  fosse o que o portal documenta.
+- Um servidor que continua sem responder depois disso é um fato do portal, e é relatado como tal.
 - O painel mostra quantos dicionários não responderam, separados dos que o portal publica numa forma
   que não pode ser lida.
 
