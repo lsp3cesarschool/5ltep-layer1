@@ -1,0 +1,45 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_DESTR",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEQ_DESTR_BEM",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEQ_BEM_APREENDIDO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QTD_DESTR_BEM",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "OBS_DESTR_BEM",
+   "type": "string",
+   "sampleEmptyShare": 0.0843
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:01:50+00:00",
+  "sha256": "d52b7a84f6da92309c4547cbb31b67802ee66cebaf1d54183b9ff846431eb594",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 178,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

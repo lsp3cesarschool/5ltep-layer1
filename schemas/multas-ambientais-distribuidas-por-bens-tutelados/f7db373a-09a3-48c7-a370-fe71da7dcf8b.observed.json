@@ -1,0 +1,81 @@
+{
+ "fields": [
+  {
+   "name": "No_AI",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data_Auto",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nome_ou_Razao_Social",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CPF_CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0088
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Municipio",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo_Auto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo_Infracao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Enquadramento_Legal",
+   "type": "string",
+   "sampleEmptyShare": 0.2932
+  },
+  {
+   "name": "Valor_do_Auto",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Moeda",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Situacao_Debito",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ultima_Atualizacao_Relatorio",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:05:32+00:00",
+  "sha256": "d4c33047bd478d988acd4db6e32d7f1d099ecd72173796180e656ed2e07d30cb",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 27,
+  "distinct_headers": 1
+ }
+}

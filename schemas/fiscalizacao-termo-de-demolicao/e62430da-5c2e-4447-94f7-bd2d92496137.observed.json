@@ -1,0 +1,60 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "sampleEmptyShare": 0.9625
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SER_TAD",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "sampleEmptyShare": 0.9925
+  },
+  {
+   "name": "ADMINISTRATIVO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_LEI_COMP",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_ARTIGO_COMP",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_PAR_INC_AL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:01:28+00:00",
+  "sha256": "2a41fadb5e3d995380a0d3f2d0a7fffdce6a6af73603541926df1495548553fd",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 267,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

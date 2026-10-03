@@ -1,0 +1,268 @@
+{
+ "fields": [
+  {
+   "name": "DS_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.0436
+  },
+  {
+   "name": "SG_UNIDADE_ORDENADORA",
+   "type": "string",
+   "sampleEmptyShare": 0.658
+  },
+  {
+   "name": "CD_MUNICIPIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DT_APREENSAO",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ST_CANCELADO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NO_MUNICIPIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SER_AUTO_INFRACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.2882
+  },
+  {
+   "name": "DS_AUTO_INFRACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.198
+  },
+  {
+   "name": "CD_SERIE_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.1678
+  },
+  {
+   "name": "DS_COMPLEMENTAR",
+   "type": "string",
+   "sampleEmptyShare": 0.9016
+  },
+  {
+   "name": "DS_JUSTIFICATIVA_CANCELAMENTO",
+   "type": "string",
+   "sampleEmptyShare": 0.9936
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CD_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_PESSOA_APREENSAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.1186
+  },
+  {
+   "name": "DS_FORMA_ENTREGA",
+   "type": "string",
+   "sampleEmptyShare": 0.6328
+  },
+  {
+   "name": "DS_ENQUADRAMENTO_NAO_ADMINISTRATIVO",
+   "type": "string",
+   "sampleEmptyShare": 0.8458
+  },
+  {
+   "name": "DS_LOCALIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0926
+  },
+  {
+   "name": "SEQ_ACAO_FISCALIZATORIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.6958
+  },
+  {
+   "name": "VL_MULTA",
+   "type": "string",
+   "sampleEmptyShare": 0.2064
+  },
+  {
+   "name": "SG_UNIDADE_CONTROLE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CD_AUTO_INFRACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.197
+  },
+  {
+   "name": "NO_OPERACAO_SOL_RECURSO",
+   "type": "string",
+   "sampleEmptyShare": 0.8028
+  },
+  {
+   "name": "SEQ_ORDEM_FISCALIZACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.6584
+  },
+  {
+   "name": "DS_ENQUADRAMENTO_COMPLEMENTAR",
+   "type": "string",
+   "sampleEmptyShare": 0.9734
+  },
+  {
+   "name": "NU_LATITUDE_TAD",
+   "type": "number",
+   "sampleEmptyShare": 0.5926
+  },
+  {
+   "name": "DS_WKT_LOCAL_APREENSAO",
+   "type": "string",
+   "sampleEmptyShare": 0.5936
+  },
+  {
+   "name": "SEQ_SOLICITACAO_RECURSO",
+   "type": "integer",
+   "sampleEmptyShare": 0.8028
+  },
+  {
+   "name": "NU_PROCESSO_FORMATADO",
+   "type": "string",
+   "sampleEmptyShare": 0.0946
+  },
+  {
+   "name": "DS_JUSTIFICATIVA_ALTERACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0264
+  },
+  {
+   "name": "NU_SOLICITACAO_RECURSO",
+   "type": "number",
+   "sampleEmptyShare": 0.8028
+  },
+  {
+   "name": "NO_OPERACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.9198
+  },
+  {
+   "name": "NU_CPF_CNPJ_PESSOA_APREENSAO",
+   "type": "string",
+   "sampleEmptyShare": 0.1338
+  },
+  {
+   "name": "DS_COORDENADA_APREENSAO",
+   "type": "string",
+   "sampleEmptyShare": 0.8406
+  },
+  {
+   "name": "NO_PESSOA_APREENSAO",
+   "type": "string",
+   "sampleEmptyShare": 0.1164
+  },
+  {
+   "name": "SEQ_NOTIFICACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.9772
+  },
+  {
+   "name": "SG_UNIDADE_APRESENTACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_ORDEM_FISCALIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.658
+  },
+  {
+   "name": "TP_ALTERACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0154
+  },
+  {
+   "name": "DS_SIT_APREENSAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SG_UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TP_ORIGEM_REGISTRO_APREENSAO",
+   "type": "string",
+   "sampleEmptyShare": 0.84
+  },
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "sampleEmptyShare": 0.0146
+  },
+  {
+   "name": "DT_IMPRESSAO",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.8412
+  },
+  {
+   "name": "VL_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.4126
+  },
+  {
+   "name": "NU_LONGITUDE_TAD",
+   "type": "number",
+   "sampleEmptyShare": 0.5936
+  },
+  {
+   "name": "DT_ALTERACAO",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DS_ENQUADRAMENTO_ADMINISTRATIVO",
+   "type": "string",
+   "sampleEmptyShare": 0.8402
+  },
+  {
+   "name": "SEQ_AUTO_INFRACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.2064
+  },
+  {
+   "name": "CD_ACAO_FISCALIZATORIA",
+   "type": "string",
+   "sampleEmptyShare": 0.8398
+  },
+  {
+   "name": "CD_ORIGINAL_APREENSAO",
+   "type": "string",
+   "sampleEmptyShare": 0.9958
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:00:45+00:00",
+  "sha256": "3091b98113b667da9d7e10a2f7433691f0cd07fa87c3955bbdcc881f3bd67b12",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

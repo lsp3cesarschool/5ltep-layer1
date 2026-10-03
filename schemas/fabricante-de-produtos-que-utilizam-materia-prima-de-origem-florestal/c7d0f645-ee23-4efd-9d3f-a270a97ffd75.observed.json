@@ -1,0 +1,98 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Razão Social",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Estado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nome do Produto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Quantidade recebida",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Quantidade comercializada",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Quantidade processada",
+   "type": "string",
+   "sampleEmptyShare": 0.0166
+  },
+  {
+   "name": "Quantidade estocada",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Capacidade de Processamento",
+   "type": "string",
+   "sampleEmptyShare": 0.047
+  },
+  {
+   "name": "Qtd. de Doc. Estad. recebidos",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0652
+  },
+  {
+   "name": "Qtd. de Doc. Estad. utilizados",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0676
+  },
+  {
+   "name": "Quantidade Transportada",
+   "type": "string",
+   "sampleEmptyShare": 0.044
+  },
+  {
+   "name": "Unidade de Medida",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Situação Cadastral",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T10:54:21+00:00",
+  "sha256": "46c5570d771b9d7cafa51e84384ee75855b846503b845a918daea013345cf15f",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

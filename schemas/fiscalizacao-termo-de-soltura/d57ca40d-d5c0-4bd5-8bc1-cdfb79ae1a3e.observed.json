@@ -1,0 +1,81 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_SOLTURA",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SER_TAD",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "SEQ_BEM_APREENDIDO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "CD_BEM",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DES_TIPO_BEM",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DES_BEM_APREENDIDO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QTD_BEM_APREENDIDO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DES_UNIDADE_MEDIDA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DAT_SOLTURA",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_VALOR",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:04:28+00:00",
+  "sha256": "c597589b367083fcae70391a6f4832b128677ee012bbcec08fa2b1ceeab9d58d",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 1,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

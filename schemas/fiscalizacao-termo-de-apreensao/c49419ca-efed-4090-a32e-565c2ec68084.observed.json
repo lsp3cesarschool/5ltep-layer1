@@ -1,0 +1,82 @@
+{
+ "fields": [
+  {
+   "name": "CD_TERMO_APREENSAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ST_ENQUADRAMENTO_ADMINISTRATIVO",
+   "type": "boolean",
+   "trueValues": [
+    "S"
+   ],
+   "falseValues": [
+    "N"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "sampleEmptyShare": 0.1318
+  },
+  {
+   "name": "NU_INCISO_ARTIGO_NORMA",
+   "type": "integer",
+   "sampleEmptyShare": 0.599
+  },
+  {
+   "name": "TP_NORMA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CD_ALINEA_ARTIGO_NORMA",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "NU_NORMA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_PARAGRAFO_ARTIGO_NORMA",
+   "type": "integer",
+   "sampleEmptyShare": 0.6564
+  },
+  {
+   "name": "ID_ENQUADRAMENTO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DS_NUMERO_ARTIGO_NORMA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DH_IMPRESSAO_TERMO_APREENSAO",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:01:19+00:00",
+  "sha256": "9e63646dde96fef2b437a64e8c080081a228df13bcac419c7aba55e856f396a7",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

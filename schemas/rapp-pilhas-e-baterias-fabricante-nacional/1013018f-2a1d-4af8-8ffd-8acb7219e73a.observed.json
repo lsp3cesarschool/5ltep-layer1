@@ -1,0 +1,49 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano_do_relatorio",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CNPJ_do_destinador",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Numero_da_licenca_de_operacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Validade_da_licenca_de_operacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Atividades_constantes_na_licenca_de_operacao",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Metodo_de_destinacao_e_tratamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:10:01+00:00",
+  "sha256": "90a4c42801efa9d1c4bd2edcc3ce263eca09757935640cbe3c9b54b1db4bfc1e",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 3769,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

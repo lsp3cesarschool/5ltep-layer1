@@ -1,0 +1,70 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SER_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.3002
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ADMINISTRATIVO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "NORMA_TIPO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NORMA_NUMERO",
+   "type": "string",
+   "sampleEmptyShare": 0.4952
+  },
+  {
+   "name": "ARTIGO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NU_PARAGRAFO",
+   "type": "string",
+   "sampleEmptyShare": 0.0066
+  },
+  {
+   "name": "NU_INCISO",
+   "type": "string",
+   "sampleEmptyShare": 0.6442
+  },
+  {
+   "name": "CD_ALINEA",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:04:45+00:00",
+  "sha256": "262302218f1779c7ed05f47cc6afd3e837a86a80805ccf3f2bc48379418a9783",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

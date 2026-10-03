@@ -1,0 +1,69 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Razão Social",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Estado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo de Resíduo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Método de Reciclagem",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Quantidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Unidade de Medida",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Empresa Destinadora do Resíduo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Situação Cadastral",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:08:40+00:00",
+  "sha256": "cf13525c3654b05a2aed653b12ad1675f266cec5c8764592b6dcb87814a13a65",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

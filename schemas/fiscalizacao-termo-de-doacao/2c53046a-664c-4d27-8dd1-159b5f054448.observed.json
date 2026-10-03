@@ -1,0 +1,223 @@
+{
+ "fields": [
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEQ_DOACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.8676
+  },
+  {
+   "name": "NUM_DOACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.8676
+  },
+  {
+   "name": "SER_DOACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.9502
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "sampleEmptyShare": 0.9916
+  },
+  {
+   "name": "DES_STATUS_FORMULARIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SIT_CANCELADO",
+   "type": "boolean",
+   "trueValues": [
+    "S"
+   ],
+   "falseValues": [
+    "N"
+   ],
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DAT_DOACAO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.8676
+  },
+  {
+   "name": "DAT_ALTERACAO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.8676
+  },
+  {
+   "name": "TIPO_ALTERACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.908
+  },
+  {
+   "name": "JUSTIFICATIVA_ALTERACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.8594
+  },
+  {
+   "name": "NUM_PESSOA_RECEBEDOR",
+   "type": "integer",
+   "sampleEmptyShare": 0.2498
+  },
+  {
+   "name": "NOME_RECEBEDOR",
+   "type": "string",
+   "sampleEmptyShare": 0.1032
+  },
+  {
+   "name": "NUM_CPF_CNPJ_RECEBEDOR",
+   "type": "string",
+   "sampleEmptyShare": 0.108
+  },
+  {
+   "name": "NUM_PROCESSO",
+   "type": "string",
+   "sampleEmptyShare": 0.0586
+  },
+  {
+   "name": "DES_JUSTIFICATIVA",
+   "type": "string",
+   "sampleEmptyShare": 0.086
+  },
+  {
+   "name": "DES_OBSERVACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.9494
+  },
+  {
+   "name": "VALOR_DOACAO",
+   "type": "number",
+   "sampleEmptyShare": 0.928
+  },
+  {
+   "name": "COD_MUNICIPIO",
+   "type": "integer",
+   "sampleEmptyShare": 0.018
+  },
+  {
+   "name": "NOM_MUNICIPIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0008
+  },
+  {
+   "name": "SIG_UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0008
+  },
+  {
+   "name": "DES_LOCALIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.042
+  },
+  {
+   "name": "NUM_LONGITUDE",
+   "type": "number",
+   "sampleEmptyShare": 0.0708
+  },
+  {
+   "name": "NUM_LATITUDE",
+   "type": "number",
+   "sampleEmptyShare": 0.0708
+  },
+  {
+   "name": "FORMA_ENTREGA",
+   "type": "string",
+   "sampleEmptyShare": 0.9064
+  },
+  {
+   "name": "UNID_APRESENTACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.1324
+  },
+  {
+   "name": "UNID_CONTROLE",
+   "type": "string",
+   "sampleEmptyShare": 0.8684
+  },
+  {
+   "name": "DS_COMPLEMENTAR",
+   "type": "string",
+   "sampleEmptyShare": 0.5372
+  },
+  {
+   "name": "SEQ_AUTO_INFRACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.513
+  },
+  {
+   "name": "NUM_AUTO_INFRACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.5012
+  },
+  {
+   "name": "SER_AUTO_INFRACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.9576
+  },
+  {
+   "name": "SEQ_ACAO_FISCALIZATORIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.155
+  },
+  {
+   "name": "CD_ACAO_FISCALIZATORIA",
+   "type": "string",
+   "sampleEmptyShare": 0.0814
+  },
+  {
+   "name": "SEQ_ORDEM_FISCALIZACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.067
+  },
+  {
+   "name": "NUM_ORDEM_FISCALIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.067
+  },
+  {
+   "name": "UNID_ORDENADORA",
+   "type": "string",
+   "sampleEmptyShare": 0.067
+  },
+  {
+   "name": "SEQ_SOLICITACAO_RECURSO",
+   "type": "integer",
+   "sampleEmptyShare": 0.086
+  },
+  {
+   "name": "NUM_SOLICITACAO_RECURSO",
+   "type": "number",
+   "sampleEmptyShare": 0.086
+  },
+  {
+   "name": "OPERACAO_SOL_RECURSO",
+   "type": "string",
+   "sampleEmptyShare": 0.086
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:01:51+00:00",
+  "sha256": "3d2fa34e342b9b25eaed33ec93265a035f3b004d8868c256b6e3afe2732af276",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

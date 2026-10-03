@@ -1,0 +1,96 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ do armazenador",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Razão Social do Armazenador",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Estado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CNPJ da emp. ger. do resíduo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Raz. soc. da emp. ger. do res.",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Cód. Resíduo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Desc. Resíduo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano da destinação",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CNPJ Armazenamento/Destinação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Raz. soc. empresa Armaz./Dest.",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd armaz/enviada p/dest final",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Unidade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo de armazenamento/destin.",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Situação",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Situação Cadastral",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:10:39+00:00",
+  "sha256": "03faf1f9b1583f7764ac00894404f8ce57e05779255fa3a112245b0ac54a577a",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

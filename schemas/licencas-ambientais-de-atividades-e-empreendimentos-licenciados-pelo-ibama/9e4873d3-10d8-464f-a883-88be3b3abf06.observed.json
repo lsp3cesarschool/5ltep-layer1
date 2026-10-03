@@ -1,0 +1,67 @@
+{
+ "fields": [
+  {
+   "name": "DES_TIPOLICENCA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NUM_LICENCA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DAT_EMISSAO",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DAT_VENCIMENTO",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0012
+  },
+  {
+   "name": "NOM_EMPREENDIMENTO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOM_PESSOA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NUM_PROCESSO_IBAMA",
+   "type": "string",
+   "sampleEmptyShare": 0.0014
+  },
+  {
+   "name": "DES_TIPOLOGIA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PAC",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ultima_atualizacao_relatorio",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:05:04+00:00",
+  "sha256": "160713f523c6694bc30c25ade03483cea118e7b5063697336f285ce0fb701301",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

@@ -1,0 +1,114 @@
+{
+ "fields": [
+  {
+   "name": "NRO_REGISTRO",
+   "type": "integer",
+   "sampleEmptyShare": 0.2857
+  },
+  {
+   "name": "NRO_AUTORIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_DE_EMISSAO",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_DE_VALIDADE",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MUNICIPIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_DETENTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CNPJ_CPF_DETENTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ATIVIDADE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PRODUTO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NRO_TORA_EXPLORADA",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "NOME_CIENTIFICO",
+   "type": "string",
+   "sampleEmptyShare": 0.5714
+  },
+  {
+   "name": "NOME_POPULAR",
+   "type": "string",
+   "sampleEmptyShare": 0.5714
+  },
+  {
+   "name": "VOLUME_AUTORIZADO",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOLUME_EXPLORADO",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_DA_EXPLORACAO",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SITUACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_DA_SITUACAO",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "sampleEmptyShare": 0.2857
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:18:54+00:00",
+  "sha256": "78c4bf070d092f829b079b711a6cbb02ddb5deacf7b47dacb2ff41fab2a9f48f",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 7,
+  "tables": 9,
+  "distinct_headers": 1
+ }
+}

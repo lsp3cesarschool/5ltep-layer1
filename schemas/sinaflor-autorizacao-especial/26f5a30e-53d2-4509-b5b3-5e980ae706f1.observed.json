@@ -1,0 +1,134 @@
+{
+ "fields": [
+  {
+   "name": "NRO_AUTORIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_DE_EMISSAO",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_DE_VALIDADE",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MUNICIPIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_DETENTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CPF_CNPJ_DETENTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_LOCAL_ARMAZENAMENTO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LATITUDE",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LONGITUDE",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ATIVIDADE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NATUREZA_JURIDICA",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "COMPETENCIA_DA_AVALIACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ORGAO_AMBIENTAL_RESP_ANALISE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PRODUTO_FLORESTAL",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_CIENTIFICO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_POPULAR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "VOLUME",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SITUACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_DA_SITUACAO",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMO_TRAMITE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_DO_TRAMITE",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:11:14+00:00",
+  "sha256": "3aee2f8570aff389b5c0351668b495cd37bc64c28f417c287a427b17dfeece8a",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 2867,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

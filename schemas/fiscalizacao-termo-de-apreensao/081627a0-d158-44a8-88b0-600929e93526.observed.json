@@ -1,0 +1,146 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "sampleEmptyShare": 0.0282
+  },
+  {
+   "name": "CD_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CD_SERIE_TAD",
+   "type": "string",
+   "sampleEmptyShare": 0.2474
+  },
+  {
+   "name": "ID_ESPECIME",
+   "type": "integer",
+   "sampleEmptyShare": 0.235
+  },
+  {
+   "name": "CD_ESPECIME",
+   "type": "string",
+   "sampleEmptyShare": 0.765
+  },
+  {
+   "name": "QT_ESPECIME",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0038
+  },
+  {
+   "name": "DS_UNIDADE_MEDIDA",
+   "type": "string",
+   "sampleEmptyShare": 0.0138
+  },
+  {
+   "name": "DS_PRODUTO",
+   "type": "string",
+   "sampleEmptyShare": 0.4488
+  },
+  {
+   "name": "ST_CARACTERISTICA",
+   "type": "string",
+   "sampleEmptyShare": 0.002
+  },
+  {
+   "name": "ST_PERECIVEL",
+   "type": "boolean",
+   "trueValues": [
+    "S"
+   ],
+   "falseValues": [
+    "N"
+   ],
+   "sampleEmptyShare": 0.7658
+  },
+  {
+   "name": "TP_INFRACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.461
+  },
+  {
+   "name": "DS_GRUPO",
+   "type": "string",
+   "sampleEmptyShare": 0.6026
+  },
+  {
+   "name": "ID_TAXONOMIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.9714
+  },
+  {
+   "name": "NO_CIENTIFICO",
+   "type": "string",
+   "sampleEmptyShare": 0.5614
+  },
+  {
+   "name": "NO_POPULAR",
+   "type": "string",
+   "sampleEmptyShare": 0.041
+  },
+  {
+   "name": "ST_CITES",
+   "type": "boolean",
+   "trueValues": [
+    "S"
+   ],
+   "falseValues": [
+    "N"
+   ],
+   "sampleEmptyShare": 0.53
+  },
+  {
+   "name": "DS_OBSERVACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.8464
+  },
+  {
+   "name": "DT_ALTERACAO",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.7966
+  },
+  {
+   "name": "VL_ESPECIME_APREENDIDO",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.765
+  },
+  {
+   "name": "CD_TERMO_DESTINO",
+   "type": "string",
+   "sampleEmptyShare": 0.5678
+  },
+  {
+   "name": "DS_TIPO_TERMO_DESTINO",
+   "type": "string",
+   "sampleEmptyShare": 0.5678
+  },
+  {
+   "name": "DT_APREENSAO",
+   "type": "date",
+   "format": "%Y-%m-%d",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:01:06+00:00",
+  "sha256": "5a4de5c370ed164d70fc3745cd69f6286c0c7ce52ea830e97c0b9f2edb0b8262",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

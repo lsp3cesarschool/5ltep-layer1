@@ -1,0 +1,76 @@
+{
+ "fields": [
+  {
+   "name": "NUM_SERIE_DOF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "COD_CONTROLE_DOF",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_EMISSAO_DOF",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ANO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF_ORIGEM",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NUMERO_TRECHO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MUNICIPIO_INICIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MUNICIPIO_FIM",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TIPO_TRANSPORTE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PLACA_VEICULO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SISTEMA_ORIGINARIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T10:45:54+00:00",
+  "sha256": "4a2bfdb929e2be45c00a7de711db1f572601fb4104f0e781bc8622d7687294d2",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 540,
+  "distinct_headers": 1
+ }
+}

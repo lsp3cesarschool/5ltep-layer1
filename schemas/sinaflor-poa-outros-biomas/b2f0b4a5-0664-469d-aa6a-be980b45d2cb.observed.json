@@ -1,0 +1,220 @@
+{
+ "fields": [
+  {
+   "name": "NRO_REGISTRO",
+   "type": "string",
+   "sampleEmptyShare": 0.005
+  },
+  {
+   "name": "DATA_DE_EMISSAO",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NRO_AUTORIZACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NRO_AUTORIZACAO_ORIGINAL",
+   "type": "string",
+   "sampleEmptyShare": 0.995
+  },
+  {
+   "name": "NRO_AUTORIZACAO_PMFS_VINCULADO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_DE_VALIDADE",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "MUNICIPIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_DETENTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CPF_CNPJ_DETENTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "IMOVEL_RURAL_VINCULADO",
+   "type": "string",
+   "sampleEmptyShare": 0.2401
+  },
+  {
+   "name": "NRO_CAR_IMOVEL_RURAL",
+   "type": "string",
+   "sampleEmptyShare": 0.2401
+  },
+  {
+   "name": "NOME_EMPREENDIMENTO_VINC",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LATITUDE_EMPREENDIMENTO",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.009
+  },
+  {
+   "name": "LONGITUDE_EMPREENDIMENTO",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.009
+  },
+  {
+   "name": "NOME_DO_RT",
+   "type": "string",
+   "sampleEmptyShare": 0.0101
+  },
+  {
+   "name": "NRO_ART",
+   "type": "string",
+   "sampleEmptyShare": 0.0101
+  },
+  {
+   "name": "ATIVIDADE_RT",
+   "type": "string",
+   "sampleEmptyShare": 0.0151
+  },
+  {
+   "name": "ATIVIDADE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "TIPO_DE_EMPREENDIMENTO",
+   "type": "string",
+   "sampleEmptyShare": 0.005
+  },
+  {
+   "name": "NATUREZA_JURIDICA",
+   "type": "string",
+   "sampleEmptyShare": 0.005
+  },
+  {
+   "name": "COMPETENCIA_AVALIACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ORGAO_AMBIENTAL_RESP_ANALISE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "AREA_MANEJO_FLORESTAL",
+   "type": "string",
+   "sampleEmptyShare": 0.056
+  },
+  {
+   "name": "NRO_UPA",
+   "type": "string",
+   "sampleEmptyShare": 0.005
+  },
+  {
+   "name": "AREA_UPA",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LATITUDE_UPA",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LONGITUDE_UPA",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "METODO_INVENTARIO",
+   "type": "string",
+   "sampleEmptyShare": 0.019
+  },
+  {
+   "name": "PRODUTO",
+   "type": "string",
+   "sampleEmptyShare": 0.0025
+  },
+  {
+   "name": "NOME_CIENTIFICO",
+   "type": "string",
+   "sampleEmptyShare": 0.0039
+  },
+  {
+   "name": "NOME_POPULAR",
+   "type": "string",
+   "sampleEmptyShare": 0.0039
+  },
+  {
+   "name": "VOLUME",
+   "type": "string",
+   "sampleEmptyShare": 0.0025
+  },
+  {
+   "name": "EQUACAO_VOLUME",
+   "type": "string",
+   "sampleEmptyShare": 0.0617
+  },
+  {
+   "name": "SITUACAO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_DA_SITUACAO",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "sampleEmptyShare": 0.005
+  },
+  {
+   "name": "ULTIMO_TRAMITE",
+   "type": "string",
+   "sampleEmptyShare": 0.0162
+  },
+  {
+   "name": "DATA_DO_TRAMITE",
+   "type": "date",
+   "format": "%d/%m/%y",
+   "sampleEmptyShare": 0.0162
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:12:12+00:00",
+  "sha256": "da69beb844d35c27c18f1ffbf110bb34cf93449db4850cd6e6ef194b9ef59b77",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 2786,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

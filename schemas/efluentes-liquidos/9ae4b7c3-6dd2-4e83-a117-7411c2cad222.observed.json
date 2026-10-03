@@ -1,0 +1,151 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Razão Social",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Estado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Código da Categoria",
+   "type": "integer",
+   "sampleEmptyShare": 0.2018
+  },
+  {
+   "name": "Categoria de Atividade",
+   "type": "string",
+   "sampleEmptyShare": 0.2018
+  },
+  {
+   "name": "Código do Detalhe",
+   "type": "integer",
+   "sampleEmptyShare": 0.2018
+  },
+  {
+   "name": "Detalhe",
+   "type": "string",
+   "sampleEmptyShare": 0.2018
+  },
+  {
+   "name": "Ano",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Quantidade",
+   "type": "string",
+   "sampleEmptyShare": 0.1036
+  },
+  {
+   "name": "Desc. Monitoramento Utilizado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Eficiência do tratamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo de Tratamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nível de Tratamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Compart. Ambiental da Emissão",
+   "type": "string",
+   "sampleEmptyShare": 0.2016
+  },
+  {
+   "name": "Tipo de Emissão",
+   "type": "string",
+   "sampleEmptyShare": 0.3884
+  },
+  {
+   "name": "Tipo Corpo Receptor",
+   "type": "string",
+   "sampleEmptyShare": 0.7878
+  },
+  {
+   "name": "Classe do Corpo Receptor",
+   "type": "string",
+   "sampleEmptyShare": 0.7878
+  },
+  {
+   "name": "Nome do Corpo Hídrico",
+   "type": "string",
+   "sampleEmptyShare": 0.791
+  },
+  {
+   "name": "Latitude",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.145
+  },
+  {
+   "name": "Longitude",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.1428
+  },
+  {
+   "name": "Corpo Receptor",
+   "type": "string",
+   "sampleEmptyShare": 0.595
+  },
+  {
+   "name": "Qual?",
+   "type": "string",
+   "sampleEmptyShare": 0.9456
+  },
+  {
+   "name": "Empresa Receptora do Efluente",
+   "type": "string",
+   "sampleEmptyShare": 0.6064
+  },
+  {
+   "name": "Tipo de Emissão Para o Solo",
+   "type": "string",
+   "sampleEmptyShare": 0.8234
+  },
+  {
+   "name": "(Se outro) Qual?",
+   "type": "string",
+   "sampleEmptyShare": 0.8464
+  },
+  {
+   "name": "Situação Cadastral",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T10:54:06+00:00",
+  "sha256": "d7a76f4739e2691cf87f58008afa586188350aea6c29ba7e0903e496f99ba77a",
+  "encoding": "utf-8",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

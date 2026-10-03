@@ -1,0 +1,113 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Razao_Social",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nome_Fantasia",
+   "type": "string",
+   "sampleEmptyShare": 0.0256
+  },
+  {
+   "name": "Codigo_da_categoria",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Descricao_da_categoria",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Codigo_da_atividade",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Descricao_da_atividade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data_de_inicio_da_atividade",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data_de_termino_da_atividade",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.4544
+  },
+  {
+   "name": "Potenc_de_Pol_da_atividade",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Municipio",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Estado",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Latitude",
+   "type": "number",
+   "sampleEmptyShare": 0.1948
+  },
+  {
+   "name": "Longitude",
+   "type": "number",
+   "sampleEmptyShare": 0.1948
+  },
+  {
+   "name": "Situacao_cadastral",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data_de_ultima_emissao_do_CR",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M:%S",
+   "sampleEmptyShare": 0.131
+  },
+  {
+   "name": "Situacao_atual_do_ultimo_CR_emitido",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ultima_Atualizacao_Relatorio",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:06:28+00:00",
+  "sha256": "527d89fdb90a9c1cc4e3e434cb746dd5d87ea87762b72289f262959e856fcb12",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 27,
+  "distinct_headers": 1
+ }
+}

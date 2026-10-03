@@ -1,0 +1,205 @@
+{
+ "fields": [
+  {
+   "name": "Classe de uso",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ingrediente ativo",
+   "type": "string",
+   "sampleEmptyShare": 0.0008
+  },
+  {
+   "name": "SEMESTRE",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ANO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Vendas a clientes (ton. produtos)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Vendas a Indústrias (ton. produtos)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Acre",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Alagoas",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Amazonas",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Amapá",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Bahia",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Ceará",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Distrito Federal",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Espírito Santo",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Goiás",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Maranhão",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Minas Gerais",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Mato Grosso do Sul",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Mato Grosso",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Pará",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Paraíba",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Pernambuco",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Piauí",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Paraná",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Rio de Janeiro",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Rio Grande do Norte",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Rondônia",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Roraima",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Rio Grande do Sul",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Santa Catarina",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Sergipe",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - São Paulo",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Qtd. Vendas - Tocantins",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:10:18+00:00",
+  "sha256": "0efac6e2388075f1f371f660a25cdd8dc72389f47327d190dff412396d10f398",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

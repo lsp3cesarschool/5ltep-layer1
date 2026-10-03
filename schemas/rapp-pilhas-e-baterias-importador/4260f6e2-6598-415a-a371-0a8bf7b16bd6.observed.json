@@ -1,0 +1,53 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano do relatório",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo de pilhas ou baterias",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Modelo de pilhas ou baterias",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Peso unitário (kg)",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Quantidade recebida (un)",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Peso total (kg)",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:10:05+00:00",
+  "sha256": "9497358d47d8a7af0dc9790e017edab968f590c16fc3673f14f395409e0b5bf8",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

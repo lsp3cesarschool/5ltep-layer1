@@ -1,0 +1,69 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano_do_relatorio",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CNPJ_do_ponto_de_coleta",
+   "type": "string",
+   "sampleEmptyShare": 0.8876
+  },
+  {
+   "name": "Ponto_de_coleta",
+   "type": "string",
+   "sampleEmptyShare": 0.0004
+  },
+  {
+   "name": "CEP",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Endereco",
+   "type": "string",
+   "sampleEmptyShare": 0.0004
+  },
+  {
+   "name": "Bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "Municipio",
+   "type": "string",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "Sitio_na_internet",
+   "type": "string",
+   "sampleEmptyShare": 0.9918
+  },
+  {
+   "name": "Acondicionamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-03T11:09:57+00:00",
+  "sha256": "98cf6012be310f9d6d3f545d62565b18a63deeb09639055805804174eb00386f",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}
