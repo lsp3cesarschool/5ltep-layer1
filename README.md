@@ -113,11 +113,12 @@ name matches the resource's name; or it is the only dictionary of the dataset, w
 The header of a file never validated is read in the survey (its first line; nothing else is kept) where
 it decides something in that run: the link (when no dictionary names the file, and there are several
 dictionaries or the file is not linked yet), or the oracle of a PDF dictionary (one file, the cheapest).
-The file is then validated against its dictionary already in its first run. A zip or a spreadsheet is
-downloaded whole for its columns, so nothing else is read, and the reading stops after
-`SURVEY_HEADER_MAX_MINUTES` (180): the survey runs in one job, whose work would be lost at its limit. A
-file left unread is linked without its header and validated; its validation gives the header to the
-next survey.
+The file is then validated against its dictionary already in its first run. A zip is read from its
+start, as it streams, and the download stops at its first table's header (a few kilobytes); a
+spreadsheet or a Parquet file is downloaded whole for its columns. So nothing else is read, and the
+reading stops after `SURVEY_HEADER_MAX_MINUTES` (180): the survey runs in one job, whose work would be
+lost at its limit. A file left unread is linked without its header and validated; its validation gives
+the header to the next survey.
 
 Declared types are written in many ways (`TEXTO (STRING)`, `Cadeia de caracteres`, `VARCHAR`,
 `char`...). They are mapped to Table Schema types by keywords, in a fixed and auditable order
@@ -262,9 +263,9 @@ loop, a bad certificate) is a broken link and is reported as such.
 - The dashboard shows how many dictionaries did not answer, apart from the ones the portal publishes
   in a form that cannot be read.
 
-**Partial reads (byte ranges).** The columns of a zip, a spreadsheet or a Parquet file are only known
-by downloading it whole. Reading just the zip's index would need an HTTP `Range` request, and the file
-servers of the three portals do not answer it the same way (measured on 03/10/2026, `Range: bytes=0-99`):
+**Partial reads (byte ranges).** An HTTP `Range` request asks for part of a file: the index of a zip
+(at its end), or the rest of a download cut short. The file servers of the three portals do not answer
+it the same way (measured on 03/10/2026, `Range: bytes=0-99`):
 
 | Portal | Who serves the file | Answer |
 |---|---|---|
@@ -273,11 +274,13 @@ servers of the three portals do not answer it the same way (measured on 03/10/20
 | Recife | a download service apart from the portal (`ckan-storage-download.app.emprel.gov.br`, `server: istio-envoy`), to which CKAN redirects | `200 OK`, the whole file (973 MB for the largest zip) |
 
 HTTP lets a server ignore `Range` (RFC 9110, section 14.2), so Recife's answer is not an error, but
-there a partial read costs a full download, and a download cut short starts again from the beginning.
-CKAN does not cause it (ANEEL runs CKAN and honours ranges), and neither does the storage: the object
-storages CKAN uses (S3, MinIO, Azure) honour ranges. It comes from the layer between them, which also
-leaves out `Accept-Ranges`, `ETag` and `Last-Modified` from its answers. This is why the survey reads a
-header only where it decides something, within `SURVEY_HEADER_MAX_MINUTES` (see *Where the declared schema comes from*).
+there a download cut short starts again from the beginning. CKAN does not cause it (ANEEL runs CKAN and
+honours ranges), and neither does the storage: the object storages CKAN uses (S3, MinIO, Azure) honour
+ranges. It comes from the layer between them, which also leaves out `Accept-Ranges`, `ETag` and
+`Last-Modified` from its answers; without these two, a later run notices a changed file only by the
+portal's metadata or a different size (see *Validation*). The toolkit does not depend on
+ranges: a zip's header is read from the start of the file, which every server gives (see *Where the
+declared schema comes from*).
 
 ## FAIR principles and replicability
 

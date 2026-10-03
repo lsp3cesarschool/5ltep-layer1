@@ -116,9 +116,10 @@ seu nome corresponde ao nome do recurso; ou é o único dicionário do conjunto,
 O cabeçalho de um arquivo nunca validado é lido no levantamento (a primeira linha; nada mais é guardado)
 quando decide algo nessa execução: a ligação (quando nenhum dicionário nomeia o arquivo, e há vários
 dicionários ou o arquivo ainda não está ligado), ou o oráculo de um dicionário em PDF (um arquivo, o mais
-barato). O arquivo é então validado contra o seu dicionário já na primeira execução. Um zip ou uma
-planilha é baixado inteiro para dar as colunas, por isso nada além disso é lido, e a leitura para depois
-de `SURVEY_HEADER_MAX_MINUTES` (180): o levantamento roda num só job, cujo trabalho se perderia no limite.
+barato). O arquivo é então validado contra o seu dicionário já na primeira execução. Um zip é lido do começo, em
+stream, e o download para no cabeçalho da primeira tabela (alguns kilobytes); uma planilha ou um Parquet
+é baixado inteiro para dar as colunas. Por isso nada além disso é lido, e a leitura para depois de
+`SURVEY_HEADER_MAX_MINUTES` (180): o levantamento roda num só job, cujo trabalho se perderia no limite.
 Um arquivo que ficou sem leitura é ligado sem o cabeçalho e validado; a validação dá o cabeçalho ao
 levantamento seguinte.
 
@@ -271,10 +272,9 @@ certificado inválido) é um link quebrado e é relatada como tal.
 - O painel mostra quantos dicionários não responderam, separados dos que o portal publica numa forma
   que não pode ser lida.
 
-**Leitura parcial (intervalos de bytes).** As colunas de um zip, de uma planilha ou de um Parquet só
-são conhecidas baixando o arquivo inteiro. Ler só o índice do zip exigiria um pedido HTTP com `Range`, e
-os servidores de arquivos dos três portais não respondem a ele do mesmo jeito (medido em 03/10/2026,
-`Range: bytes=0-99`):
+**Leitura parcial (intervalos de bytes).** Um pedido HTTP com `Range` pede uma parte do arquivo: o
+índice de um zip (no fim dele), ou o resto de um download interrompido. Os servidores de arquivos dos
+três portais não respondem a ele do mesmo jeito (medido em 03/10/2026, `Range: bytes=0-99`):
 
 | Portal | Quem entrega o arquivo | Resposta |
 |---|---|---|
@@ -283,11 +283,13 @@ os servidores de arquivos dos três portais não respondem a ele do mesmo jeito 
 | Recife | um serviço de download à parte do portal (`ckan-storage-download.app.emprel.gov.br`, `server: istio-envoy`), para o qual o CKAN redireciona | `200 OK`, o arquivo inteiro (973 MB no maior zip) |
 
 O HTTP permite que o servidor ignore o `Range` (RFC 9110, seção 14.2), então a resposta do Recife não é
-um erro, mas ali uma leitura parcial custa um download inteiro, e um download interrompido recomeça do
-início. Não vem do CKAN (a ANEEL usa CKAN e atende intervalos), nem do armazenamento: os armazenamentos
-de objetos que o CKAN usa (S3, MinIO, Azure) atendem intervalos. Vem da camada entre os dois, que também
-deixa de fora `Accept-Ranges`, `ETag` e `Last-Modified` das respostas. Por isso o levantamento lê um
-cabeçalho só onde ele decide algo, dentro de `SURVEY_HEADER_MAX_MINUTES` (ver *De onde vem o esquema declarado*).
+um erro, mas ali um download interrompido recomeça do início. Não vem do CKAN (a ANEEL usa CKAN e atende
+intervalos), nem do armazenamento: os armazenamentos de objetos que o CKAN usa (S3, MinIO, Azure)
+atendem intervalos. Vem da camada entre os dois, que também deixa de fora `Accept-Ranges`, `ETag` e
+`Last-Modified` das respostas; sem esses dois, uma execução seguinte só percebe um arquivo alterado pelos
+metadados do portal ou por um tamanho diferente (ver *Validação*). A ferramenta não
+depende de intervalos: o cabeçalho de um zip é lido do começo do arquivo, que todo servidor entrega (ver
+*De onde vem o esquema declarado*).
 
 ## Princípios FAIR e replicabilidade
 
