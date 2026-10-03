@@ -1,79 +1,76 @@
 {
  "fields": [
   {
-   "name": "CNPJ",
+   "name": "NUM_SERIE_DOF",
    "type": "string",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "Razão Social",
-   "type": "string",
-   "sampleEmptyShare": 0.0
-  },
-  {
-   "name": "Estado",
-   "type": "string",
-   "sampleEmptyShare": 0.0
-  },
-  {
-   "name": "Município",
-   "type": "string",
-   "sampleEmptyShare": 0.0
-  },
-  {
-   "name": "Código da Categoria",
+   "name": "COD_CONTROLE_DOF",
    "type": "integer",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "Categoria de Atividade",
-   "type": "string",
+   "name": "DATA_EMISSAO_DOF",
+   "type": "date",
+   "format": "%d/%m/%Y",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "Código do Detalhe",
+   "name": "ANO",
    "type": "integer",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "Detalhe",
+   "name": "UF_ORIGEM",
    "type": "string",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "Ano",
+   "name": "NUMERO_TRECHO",
    "type": "integer",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "Poluente emitido",
+   "name": "MUNICIPIO_INICIO",
    "type": "string",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "Quantidade",
+   "name": "MUNICIPIO_FIM",
    "type": "string",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "Metodologia utilizada",
+   "name": "TIPO_TRANSPORTE",
    "type": "string",
-   "sampleEmptyShare": 0.0002
+   "sampleEmptyShare": 0.0
   },
   {
-   "name": "Situação Cadastral",
+   "name": "PLACA_VEICULO",
    "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SISTEMA_ORIGINARIO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
    "sampleEmptyShare": 0.0
   }
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T00:12:56+00:00",
-  "sha256": "581e7be286e3c05b470d2f53319ff89553e2ec73603c2cc97a7fe4742bd782a5",
+  "observed_at": "2026-10-03T00:08:33+00:00",
+  "sha256": "a9cc7548d002c0ec7cf81cb35720fd68c09b19402d7bdf3c287e4165adfac20e",
   "encoding": "utf-8",
   "delimiter": ";",
   "sample_rows": 5000,
-  "tables": 1,
+  "tables": 540,
   "distinct_headers": 1
  }
 }

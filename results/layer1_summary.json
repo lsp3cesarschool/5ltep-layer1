@@ -5,8 +5,8 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-02T19:52:26+00:00",
- "census_at": "2026-10-02T13:52:48+00:00",
+ "generated_at": "2026-10-03T00:23:27+00:00",
+ "census_at": "2026-10-02T22:15:46+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -33,28 +33,28 @@
   }
  },
  "tables": {
-  "total": 194,
+  "total": 195,
   "by_level": {
    "0": 71,
-   "1": 48,
+   "1": 49,
    "2": 75,
    "3": 0,
    "4": 0
   },
-  "validated": 171,
-  "validation_coverage": 0.8814,
-  "errors": 23,
+  "validated": 173,
+  "validation_coverage": 0.8872,
+  "errors": 22,
   "queue_remaining": 0
  },
  "schema_sources": {
-  "described": 45,
+  "described": 47,
   "declared": 64
  },
  "conformance_by_source": {
   "described": {
-   "verifiable": 45,
+   "verifiable": 47,
    "conformant": 20,
-   "l1_rate": 0.4444
+   "l1_rate": 0.4255
   },
   "declared": {
    "verifiable": 64,
@@ -62,47 +62,45 @@
    "l1_rate": 0.2969
   }
  },
- "verifiable": 109,
+ "verifiable": 111,
  "conformant": 39,
- "l1_rate": 0.3578,
+ "l1_rate": 0.3514,
  "l1_pass": false,
  "drift": {
   "observed": 0,
   "declared": 0,
-  "files_with_baseline": 170,
-  "first_baseline_at": "2026-10-01T19:06:57+00:00",
-  "last_observed_at": "2026-10-02T19:49:32+00:00"
+  "files_with_baseline": 172,
+  "first_baseline_at": "2026-10-01T19:07:17+00:00",
+  "last_observed_at": "2026-10-03T00:22:52+00:00"
  },
  "coverage": {
-  "files": 194,
-  "read": 170,
+  "files": 195,
+  "read": 172,
   "empty": 1,
   "not_tabular": 0,
-  "not_downloaded": 23,
+  "not_downloaded": 22,
   "pending": 0,
   "not_downloaded_by_reason": {
    "HTTP 404": 20,
-   "batch time limit": 1,
    "no URL": 1,
    "other": 1
   },
   "not_downloaded_by_host": {
    "HTTP 404 · siscom.ibama.gov.br": 10,
    "HTTP 404 · stibamadadosabertosprd.blob.core.windows.net": 10,
-   "batch time limit · stibamadadosabertosprd.blob.core.windows.net": 1,
    "no URL · —": 1,
    "other · stibamadadosabertosprd.blob.core.windows.net": 1
   },
   "read_without_schema": 61,
-  "checked": 109,
+  "checked": 111,
   "conform": 39,
-  "fail_missing_fields": 37,
-  "fail_undeclared_columns": 42,
+  "fail_missing_fields": 39,
+  "fail_undeclared_columns": 44,
   "fail_cells_over_limit": 39,
   "fail_only_cells": 26
  },
  "not_tables": {
-  "count": 4,
+  "count": 3,
   "resources": [
    {
     "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
@@ -117,12 +115,6 @@
     "contents": "zip without tables (first entries: ['ADA_atoDeclaratorio_2026.html', 'ADA_atoDeclaratorio_2025.html', 'ADA_atoDeclaratorio_2024.html', 'ADA_atoDeclaratorio_2023.html', 'ADA_atoDeclaratorio_2022.html']"
    },
    {
-    "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
-    "id": "21e21d34-b71c-4f41-8ad3-ee5743fb8e00",
-    "name": "Detalhes de Trechos e Veículos de Transportes ...",
-    "contents": "zip without CSV members (first entries: ['2007.zip', '2008.zip', '2009.zip', '2010.zip', '2011.zip'])"
-   },
-   {
     "dataset": "multas-ambientais-distribuidas-por-bens-tutelados",
     "id": "45afa8f4-25ec-414d-8ea6-34a70814fc36",
     "name": "Quantidade de Multas Ambientais Distribuídas ...",
@@ -132,51 +124,55 @@
  },
  "distributions": {
   "tables_with_other_formats": 94,
-  "other_formats": 54,
-  "compared": 52,
-  "same_columns": 50,
-  "different_columns": 2,
+  "other_formats": 168,
+  "compared": 164,
+  "same_columns": 105,
+  "different_columns": 59,
   "not_compared": {
-   "not-checked": 2
+   "not-checked": 4
   },
   "by_format": {
-   "json": 27,
-   "xml": 27
+   "json": 84,
+   "xml": 84
   }
  },
  "network": {
   "total": {
-   "files": 194,
-   "failed_files": 23,
-   "gb": 26.85,
-   "minutes": 324.3,
-   "end_to_end_mb_s": 1.38,
-   "zip_download_mb_s": 16.31,
-   "first_byte_s_median": 0.26,
+   "files": 195,
+   "failed_files": 22,
+   "gb": 36.41,
+   "minutes": 445.4,
+   "end_to_end_mb_s": 1.36,
+   "zip_download_mb_s": 20.01,
+   "first_byte_s_median": 0.28,
    "request_failures": {
+    "HTTP 502": 10,
+    "HTTP 504": 8,
     "ReadTimeout": 1
    }
   },
   "by_host": {
    "stibamadadosabertosprd.blob.core.windows.net": {
-    "files": 130,
-    "failed_files": 12,
-    "gb": 23.38,
-    "minutes": 311.7,
-    "end_to_end_mb_s": 1.25,
-    "zip_download_mb_s": 18.97,
-    "first_byte_s_median": 0.25,
+    "files": 131,
+    "failed_files": 11,
+    "gb": 32.93,
+    "minutes": 426.4,
+    "end_to_end_mb_s": 1.29,
+    "zip_download_mb_s": 22.43,
+    "first_byte_s_median": 0.5,
     "request_failures": {}
    },
    "dadosabertos.ibama.gov.br": {
     "files": 53,
     "failed_files": 0,
     "gb": 3.48,
-    "minutes": 12.6,
-    "end_to_end_mb_s": 4.59,
+    "minutes": 19.0,
+    "end_to_end_mb_s": 3.05,
     "zip_download_mb_s": 1.59,
-    "first_byte_s_median": 0.27,
+    "first_byte_s_median": 0.26,
     "request_failures": {
+     "HTTP 502": 10,
+     "HTTP 504": 8,
      "ReadTimeout": 1
     }
    },
@@ -222,9 +218,9 @@
    "tables": 198,
    "by_method": {
     "none": 74,
+    "header": 61,
     "description": 49,
-    "header": 42,
-    "name": 33
+    "name": 14
    },
    "fields_listed_in_description": 49
   },
@@ -256,13 +252,13 @@
    "date_fields_with_declared_format": 0.3913
   },
   "files_vs_dictionaries": {
-   "checked": 109,
-   "with_declared_fields_missing": 37,
-   "with_undeclared_columns": 42,
-   "with_spelling_differences": 38,
-   "with_similar_names": 19,
-   "similar_names": 108,
-   "declared_fields_missing": 228,
+   "checked": 111,
+   "with_declared_fields_missing": 39,
+   "with_undeclared_columns": 44,
+   "with_spelling_differences": 40,
+   "with_similar_names": 21,
+   "similar_names": 133,
+   "declared_fields_missing": 280,
    "formats_inferred_from_data": {
     "trueValues": 13,
     "falseValues": 13,
@@ -273,28 +269,27 @@
    }
   },
   "files": {
-   "validated": 170,
+   "validated": 172,
    "encodings": {
-    "utf-8": 103,
+    "utf-8": 105,
     "utf-8-sig": 67
    },
    "delimiters": {
-    ";": 112
+    ";": 113
    },
    "with_decode_errors": 0,
    "with_ragged_rows": 2,
    "zips_with_several_headers": 0,
    "with_columns_without_name": 0,
    "not_tabular": 0,
-   "not_tables": 4,
+   "not_tables": 3,
    "formats": {
-    "csv": 112,
-    "json": 28,
+    "csv": 113,
+    "json": 29,
     "xml": 30
    },
    "unreachable_by_reason": {
     "HTTP 404": 20,
-    "batch time limit": 1,
     "no URL": 1,
     "other": 1
    }
@@ -397,15 +392,15 @@
    "name": "dof-transportes-de-produtos-florestais",
    "level": 1,
    "tables": 3,
-   "verifiable": 2,
+   "verifiable": 3,
    "conformant": 0,
    "l1_rate": 0.0
   },
   {
    "name": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
    "level": 1,
-   "tables": 2,
-   "verifiable": 2,
+   "tables": 3,
+   "verifiable": 3,
    "conformant": 0,
    "l1_rate": 0.0
   },

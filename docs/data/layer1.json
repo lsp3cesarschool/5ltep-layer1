@@ -5,8 +5,8 @@
    "name": "IBAMA",
    "title": "IBAMA open data portal (Dados Abertos IBAMA)"
   },
-  "generated_at": "2026-10-02T19:52:26+00:00",
-  "census_at": "2026-10-02T13:52:48+00:00",
+  "generated_at": "2026-10-03T00:23:27+00:00",
+  "census_at": "2026-10-02T22:15:46+00:00",
   "datasets": {
    "total": 79,
    "with_tables": 77,
@@ -19,60 +19,58 @@
    }
   },
   "tables": {
-   "total": 194,
+   "total": 195,
    "by_level": {
     "0": 71,
-    "1": 48,
+    "1": 49,
     "2": 75,
     "3": 0,
     "4": 0
    },
-   "validated": 171,
-   "validation_coverage": 0.8814,
-   "errors": 23,
+   "validated": 173,
+   "validation_coverage": 0.8872,
+   "errors": 22,
    "queue_remaining": 0
   },
-  "verifiable": 109,
+  "verifiable": 111,
   "conformant": 39,
-  "l1_rate": 0.3578,
+  "l1_rate": 0.3514,
   "l1_pass": false,
   "drift": {
    "observed": 0,
    "declared": 0,
-   "files_with_baseline": 170,
-   "first_baseline_at": "2026-10-01T19:06:57+00:00",
-   "last_observed_at": "2026-10-02T19:49:32+00:00"
+   "files_with_baseline": 172,
+   "first_baseline_at": "2026-10-01T19:07:17+00:00",
+   "last_observed_at": "2026-10-03T00:22:52+00:00"
   },
   "coverage": {
-   "files": 194,
-   "read": 170,
+   "files": 195,
+   "read": 172,
    "empty": 1,
    "not_tabular": 0,
-   "not_downloaded": 23,
+   "not_downloaded": 22,
    "pending": 0,
    "not_downloaded_by_reason": {
     "HTTP 404": 20,
-    "batch time limit": 1,
     "no URL": 1,
     "other": 1
    },
    "not_downloaded_by_host": {
     "HTTP 404 · siscom.ibama.gov.br": 10,
     "HTTP 404 · stibamadadosabertosprd.blob.core.windows.net": 10,
-    "batch time limit · stibamadadosabertosprd.blob.core.windows.net": 1,
     "no URL · —": 1,
     "other · stibamadadosabertosprd.blob.core.windows.net": 1
    },
    "read_without_schema": 61,
-   "checked": 109,
+   "checked": 111,
    "conform": 39,
-   "fail_missing_fields": 37,
-   "fail_undeclared_columns": 42,
+   "fail_missing_fields": 39,
+   "fail_undeclared_columns": 44,
    "fail_cells_over_limit": 39,
    "fail_only_cells": 26
   },
   "not_tables": {
-   "count": 4,
+   "count": 3,
    "resources": [
     {
      "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
@@ -87,12 +85,6 @@
      "contents": "zip without tables (first entries: ['ADA_atoDeclaratorio_2026.html', 'ADA_atoDeclaratorio_2025.html', 'ADA_atoDeclaratorio_2024.html', 'ADA_atoDeclaratorio_2023.html', 'ADA_atoDeclaratorio_2022.html']"
     },
     {
-     "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
-     "id": "21e21d34-b71c-4f41-8ad3-ee5743fb8e00",
-     "name": "Detalhes de Trechos e Veículos de Transportes ...",
-     "contents": "zip without CSV members (first entries: ['2007.zip', '2008.zip', '2009.zip', '2010.zip', '2011.zip'])"
-    },
-    {
      "dataset": "multas-ambientais-distribuidas-por-bens-tutelados",
      "id": "45afa8f4-25ec-414d-8ea6-34a70814fc36",
      "name": "Quantidade de Multas Ambientais Distribuídas ...",
@@ -102,51 +94,55 @@
   },
   "distributions": {
    "tables_with_other_formats": 94,
-   "other_formats": 54,
-   "compared": 52,
-   "same_columns": 50,
-   "different_columns": 2,
+   "other_formats": 168,
+   "compared": 164,
+   "same_columns": 105,
+   "different_columns": 59,
    "not_compared": {
-    "not-checked": 2
+    "not-checked": 4
    },
    "by_format": {
-    "json": 27,
-    "xml": 27
+    "json": 84,
+    "xml": 84
    }
   },
   "network": {
    "total": {
-    "files": 194,
-    "failed_files": 23,
-    "gb": 26.85,
-    "minutes": 324.3,
-    "end_to_end_mb_s": 1.38,
-    "zip_download_mb_s": 16.31,
-    "first_byte_s_median": 0.26,
+    "files": 195,
+    "failed_files": 22,
+    "gb": 36.41,
+    "minutes": 445.4,
+    "end_to_end_mb_s": 1.36,
+    "zip_download_mb_s": 20.01,
+    "first_byte_s_median": 0.28,
     "request_failures": {
+     "HTTP 502": 10,
+     "HTTP 504": 8,
      "ReadTimeout": 1
     }
    },
    "by_host": {
     "stibamadadosabertosprd.blob.core.windows.net": {
-     "files": 130,
-     "failed_files": 12,
-     "gb": 23.38,
-     "minutes": 311.7,
-     "end_to_end_mb_s": 1.25,
-     "zip_download_mb_s": 18.97,
-     "first_byte_s_median": 0.25,
+     "files": 131,
+     "failed_files": 11,
+     "gb": 32.93,
+     "minutes": 426.4,
+     "end_to_end_mb_s": 1.29,
+     "zip_download_mb_s": 22.43,
+     "first_byte_s_median": 0.5,
      "request_failures": {}
     },
     "dadosabertos.ibama.gov.br": {
      "files": 53,
      "failed_files": 0,
      "gb": 3.48,
-     "minutes": 12.6,
-     "end_to_end_mb_s": 4.59,
+     "minutes": 19.0,
+     "end_to_end_mb_s": 3.05,
      "zip_download_mb_s": 1.59,
-     "first_byte_s_median": 0.27,
+     "first_byte_s_median": 0.26,
      "request_failures": {
+      "HTTP 502": 10,
+      "HTTP 504": 8,
       "ReadTimeout": 1
      }
     },
@@ -173,14 +169,14 @@
    }
   },
   "schema_sources": {
-   "described": 45,
+   "described": 47,
    "declared": 64
   },
   "conformance_by_source": {
    "described": {
-    "verifiable": 45,
+    "verifiable": 47,
     "conformant": 20,
-    "l1_rate": 0.4444
+    "l1_rate": 0.4255
    },
    "declared": {
     "verifiable": 64,
@@ -208,9 +204,9 @@
     "tables": 198,
     "by_method": {
      "none": 74,
+     "header": 61,
      "description": 49,
-     "header": 42,
-     "name": 33
+     "name": 14
     },
     "fields_listed_in_description": 49
    },
@@ -242,13 +238,13 @@
     "date_fields_with_declared_format": 0.3913
    },
    "files_vs_dictionaries": {
-    "checked": 109,
-    "with_declared_fields_missing": 37,
-    "with_undeclared_columns": 42,
-    "with_spelling_differences": 38,
-    "with_similar_names": 19,
-    "similar_names": 108,
-    "declared_fields_missing": 228,
+    "checked": 111,
+    "with_declared_fields_missing": 39,
+    "with_undeclared_columns": 44,
+    "with_spelling_differences": 40,
+    "with_similar_names": 21,
+    "similar_names": 133,
+    "declared_fields_missing": 280,
     "formats_inferred_from_data": {
      "trueValues": 13,
      "falseValues": 13,
@@ -259,28 +255,27 @@
     }
    },
    "files": {
-    "validated": 170,
+    "validated": 172,
     "encodings": {
-     "utf-8": 103,
+     "utf-8": 105,
      "utf-8-sig": 67
     },
     "delimiters": {
-     ";": 112
+     ";": 113
     },
     "with_decode_errors": 0,
     "with_ragged_rows": 2,
     "zips_with_several_headers": 0,
     "with_columns_without_name": 0,
     "not_tabular": 0,
-    "not_tables": 4,
+    "not_tables": 3,
     "formats": {
-     "csv": 112,
-     "json": 28,
+     "csv": 113,
+     "json": 29,
      "xml": 30
     },
     "unreachable_by_reason": {
      "HTTP 404": 20,
-     "batch time limit": 1,
      "no URL": 1,
      "other": 1
     }
@@ -474,7 +469,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/AC/Arrecadacao/arrecadacaoTCFA.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:06:57+00:00",
+     "validated_at": "2026-10-03T00:07:49+00:00",
      "rows": 17455,
      "schema_kind": null,
      "error": null,
@@ -488,15 +483,55 @@
      "distributions": [
       {
        "id": "d8876290-bd5f-427b-a8c7-f3777ab376d7",
-       "name": "Arrecadação com TCFA",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/AC/Arrecadacao/arrecadacaoTCFA.json"
+       "name": "Arrecadação com TCFA",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "ano debito",
+        "data pagamento",
+        "data vencimento",
+        "numero de gru",
+        "ultima atualizacao relatorio",
+        "valor cobrado r",
+        "valor pago r"
+       ],
+       "extra": [
+        "anodebito",
+        "datapagamento",
+        "datavencimento",
+        "numerogru",
+        "ultimaatualizacaorelatorio",
+        "valorcobrado",
+        "valorpago"
+       ]
       },
       {
        "id": "52b00d0a-c548-41b4-abec-230960350d8f",
-       "name": "Arrecadação com TCFA",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/AC/Arrecadacao/arrecadacaoTCFA.xml"
+       "name": "Arrecadação com TCFA",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "ano debito",
+        "data pagamento",
+        "data vencimento",
+        "numero de gru",
+        "ultima atualizacao relatorio",
+        "valor cobrado r",
+        "valor pago r"
+       ],
+       "extra": [
+        "anodebito",
+        "datapagamento",
+        "datavencimento",
+        "numerogru",
+        "ultimaatualizacaorelatorio",
+        "valorcobrado",
+        "valorpago"
+       ]
       }
      ],
      "schema_files": {
@@ -721,7 +756,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/autorizacao-ambiental-para-o-transporte-interestadual-de-produtos-perigosos-aatipp/resource/d5c0fa8b-b522-446a-a281-15f587783935"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:10:24+00:00",
+     "validated_at": "2026-10-03T00:08:25+00:00",
      "rows": 218881,
      "schema_kind": "described",
      "error": null,
@@ -742,7 +777,7 @@
        "Estados de Atuação": "Estados de atuação",
        "Empresa de Resposta": "Empresa de resposta"
       },
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 9,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -752,15 +787,41 @@
      "distributions": [
       {
        "id": "e66352e2-be24-4fc2-89a0-c18d59b334a5",
-       "name": "Autorização Ambiental para o Transporte ...",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/AATIPP/autorizacao_empresa/DF/2016.json"
+       "name": "Autorização Ambiental para o Transporte ...",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "ano",
+        "classe de risco",
+        "empresa de resposta",
+        "estados de atuacao"
+       ],
+       "extra": [
+        "classe risco",
+        "empresa resposta",
+        "estados atuacao"
+       ]
       },
       {
        "id": "18f536f4-f584-48ba-869d-5db9d61dd4cd",
-       "name": "Autorização Ambiental para o Transporte ...",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/AATIPP/autorizacao_empresa/DF/2016.xml"
+       "name": "Autorização Ambiental para o Transporte ...",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "ano",
+        "classe de risco",
+        "empresa de resposta",
+        "estados de atuacao"
+       ],
+       "extra": [
+        "classe risco",
+        "empresa resposta",
+        "estados atuacao"
+       ]
       }
      ],
      "schema_files": {
@@ -794,7 +855,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/certificadosAmbientais/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:10:27+00:00",
+     "validated_at": "2026-10-03T00:08:30+00:00",
      "rows": 91821,
      "schema_kind": null,
      "error": null,
@@ -808,15 +869,39 @@
      "distributions": [
       {
        "id": "df40f45d-d993-49e4-83ea-05d63b7778c2",
-       "name": "Certificados Ambientais",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/certificadosAmbientais/relatorio.json"
+       "name": "Certificados Ambientais",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "razao social",
+        "situacao cadastral",
+        "tipo certificado"
+       ],
+       "extra": [
+        "razaosocial",
+        "situacaocadastral",
+        "tipocertificado"
+       ]
       },
       {
        "id": "5864bf31-9737-49c9-9ba2-f781c07706d0",
-       "name": "Certificados Ambientais",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/certificadosAmbientais/relatorio.xml"
+       "name": "Certificados Ambientais",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "razao social",
+        "situacao cadastral",
+        "tipo certificado"
+       ],
+       "extra": [
+        "razaosocial",
+        "situacaocadastral",
+        "tipocertificado"
+       ]
       }
      ],
      "schema_files": {
@@ -1570,19 +1655,160 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/dof-transportes-de-produtos-florestais/resource/a7fe3ed9-8981-495a-9f26-63351422e700"
      },
-     "status": "error",
-     "validated_at": null,
-     "rows": null,
-     "schema_kind": null,
-     "error": "did not finish within the batch time limit",
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "status": "ok",
+     "validated_at": "2026-10-02T22:16:35+00:00",
+     "rows": 57138487,
+     "schema_kind": "described",
+     "error": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "CPF/CNPJ do Destinatário",
+       "CPF/CNPJ do Remetente",
+       "CTF do Destinatário",
+       "CTF do Remetente",
+       "Código de Controle do DOF",
+       "Código de rastreio",
+       "Data da Homologação",
+       "Data da Última Transação",
+       "Data de Emissão do DOF",
+       "Data de Validade da Autesp",
+       "Data de Validade da Autex",
+       "Data de Validade da DI",
+       "Latitude de Origem",
+       "Latitude do Destino",
+       "Longitude de Origem",
+       "Longitude do Destino",
+       "Município de Destino",
+       "Município de Origem",
+       "Município do Porto",
+       "Nome Porto de Entrada no País",
+       "Nome Porto de Saída do País",
+       "Nome do Pátio de Destino",
+       "Nome do Pátio de Origem",
+       "Nome/Razão Social do Remetente",
+       "Nº da Autesp",
+       "Nº da Autorização Original",
+       "Nº da DI",
+       "Nº da Oferta",
+       "Nº de Série da Autex",
+       "Nº de Série do DOF",
+       "País de Destino",
+       "País de Origem",
+       "Rota do Transporte",
+       "Tipo de Autex",
+       "Tipo de Origem",
+       "UF de Destino",
+       "UF de Origem",
+       "UF do Porto",
+       "Validade Final do DOF",
+       "Validade Inicial do DOF",
+       "Valor Consolidado DOF+ (R$)",
+       "Valor Unitário (R$)",
+       "Órgão Emissor da Autesp",
+       "Órgão Emissor da Autex",
+       "Órgão Emissor da DI"
+      ],
+      "undeclared": [
+       "COD_CONTROLE_DOF",
+       "COD_RASTREIO",
+       "CPF_CNPJ_DESTINATARIO",
+       "CPF_CNPJ_REMETENTE",
+       "CTF_DESTINATARIO",
+       "CTF_REMETENTE",
+       "DATA_EMISSAO_DOF",
+       "DATA_HOMOLOGACAO",
+       "DATA_ULTIMA_TRANSACAO",
+       "DATA_VALIDADE_AUTESP",
+       "DATA_VALIDADE_AUTEX",
+       "DATA_VALIDADE_DI",
+       "LATITUDE_DESTINO",
+       "LATITUDE_ORIGEM",
+       "LONGITUDE_DESTINO",
+       "LONGITUDE_ORIGEM",
+       "MUNICIPIO_DESTINO",
+       "MUNICIPIO_ORIGEM",
+       "MUNICIPIO_PORTO",
+       "NOME_PATIO_DESTINO",
+       "NOME_PATIO_ORIGEM",
+       "NOME_PORTO_ENTRADA",
+       "NOME_PORTO_SAIDA",
+       "NOME_RAZAO_SOCIAL_REMETENTE",
+       "NUM_AUTESP",
+       "NUM_AUTORIZACAO_ORIGINAL",
+       "NUM_DI",
+       "NUM_OFERTA",
+       "NUM_SERIE_AUTEX",
+       "NUM_SERIE_DOF",
+       "ORGAO_EMISSOR_AUTESP",
+       "ORGAO_EMISSOR_AUTEX",
+       "ORGAO_EMISSOR_DI",
+       "PAIS_DESTINO",
+       "PAIS_ORIGEM",
+       "ROTA_TRANSPORTE",
+       "TIPO_AUTEX",
+       "TIPO_ORIGEM",
+       "UF_DESTINO",
+       "UF_ORIGEM",
+       "UF_PORTO",
+       "ULTIMA_ATUALIZACAO_RELATORIO",
+       "ULTIMA_TRANSACAO_DOF",
+       "VALIDADE_FINAL_DOF",
+       "VALIDADE_INICIAL_DOF",
+       "VALOR_CONSOLIDADO",
+       "VALOR_UNITARIO"
+      ],
+      "spelling": {
+       "Órgão Homologador": "ORGAO_HOMOLOGADOR",
+       "Nome/Razão Social Destinatário": "NOME_RAZAO_SOCIAL_DESTINATARIO",
+       "Ano": "ANO",
+       "Produto": "PRODUTO",
+       "Nome Científico": "NOME_CIENTIFICO",
+       "Nome Popular": "NOME_POPULAR",
+       "Unidade": "UNIDADE",
+       "Volume": "VOLUME",
+       "Sistema Originário": "SISTEMA_ORIGINARIO"
+      },
+      "similar_names": {
+       "Nome/Razão Social do Remetente": "NOME_RAZAO_SOCIAL_REMETENTE",
+       "CPF/CNPJ do Remetente": "CPF_CNPJ_REMETENTE",
+       "Município de Origem": "MUNICIPIO_ORIGEM",
+       "CTF do Remetente": "CTF_REMETENTE",
+       "Data da Homologação": "DATA_HOMOLOGACAO",
+       "Nº da Autorização Original": "NUM_AUTORIZACAO_ORIGINAL",
+       "Órgão Emissor da Autex": "ORGAO_EMISSOR_AUTEX",
+       "Órgão Emissor da DI": "ORGAO_EMISSOR_DI",
+       "Órgão Emissor da Autesp": "ORGAO_EMISSOR_AUTESP",
+       "Latitude de Origem": "LATITUDE_ORIGEM",
+       "Longitude de Origem": "LONGITUDE_ORIGEM",
+       "Município de Destino": "MUNICIPIO_DESTINO",
+       "CPF/CNPJ do Destinatário": "CPF_CNPJ_DESTINATARIO",
+       "CTF do Destinatário": "CTF_DESTINATARIO",
+       "Latitude do Destino": "LATITUDE_DESTINO",
+       "Longitude do Destino": "LONGITUDE_DESTINO",
+       "Município do Porto": "MUNICIPIO_PORTO",
+       "País de Destino": "PAIS_DESTINO",
+       "Validade Inicial do DOF": "VALIDADE_INICIAL_DOF",
+       "Validade Final do DOF": "VALIDADE_FINAL_DOF",
+       "Data da Última Transação": "DATA_ULTIMA_TRANSACAO",
+       "Rota do Transporte": "ROTA_TRANSPORTE",
+       "Valor Unitário (R$)": "VALOR_UNITARIO"
+      },
+      "declared_fields": 54,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
      "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/dof-transportes-de-produtos-florestais/a7fe3ed9-8981-495a-9f26-63351422e700.described.json"
+      "described": "schemas/dof-transportes-de-produtos-florestais/a7fe3ed9-8981-495a-9f26-63351422e700.described.json",
+      "observed": "schemas/dof-transportes-de-produtos-florestais/a7fe3ed9-8981-495a-9f26-63351422e700.observed.json"
      }
     }
    ]
@@ -1606,19 +1832,57 @@
       "method": "description",
       "page": "https://dadosabertos.ibama.gov.br/dataset/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/resource/21e21d34-b71c-4f41-8ad3-ee5743fb8e00"
      },
-     "status": "not-tabular",
-     "validated_at": "2026-10-01T19:36:04+00:00",
-     "rows": null,
+     "status": "ok",
+     "validated_at": "2026-10-03T00:08:33+00:00",
+     "rows": 30883826,
      "schema_kind": "described",
-     "error": "zip without CSV members (first entries: ['2007.zip', '2008.zip', '2009.zip', '2010.zip', '2011.zip'])",
-     "encodings": null,
-     "distinct_headers": null,
-     "conformance": null,
+     "error": null,
+     "encodings": [
+      "utf-8"
+     ],
+     "distinct_headers": 1,
+     "conformance": {
+      "pass": false,
+      "error_rate": 0.0,
+      "missing": [
+       "Código de Controle do DOF",
+       "Data de Emissão do DOF",
+       "Nº de Série do DOF",
+       "Número do Trecho",
+       "Placa(s)/Registro do Veículo",
+       "Tipo de Transporte",
+       "UF de Origem"
+      ],
+      "undeclared": [
+       "COD_CONTROLE_DOF",
+       "DATA_EMISSAO_DOF",
+       "NUMERO_TRECHO",
+       "NUM_SERIE_DOF",
+       "PLACA_VEICULO",
+       "TIPO_TRANSPORTE",
+       "UF_ORIGEM",
+       "ULTIMA_ATUALIZACAO_RELATORIO"
+      ],
+      "spelling": {
+       "Ano": "ANO",
+       "Município Início": "MUNICIPIO_INICIO",
+       "Município Fim": "MUNICIPIO_FIM",
+       "Sistema Originário": "SISTEMA_ORIGINARIO"
+      },
+      "similar_names": {
+       "Número do Trecho": "NUMERO_TRECHO",
+       "Tipo de Transporte": "TIPO_TRANSPORTE"
+      },
+      "declared_fields": 11,
+      "inferred_formats": {},
+      "errors_by_field": {}
+     },
      "drift_events": 0,
-     "not_a_table": true,
+     "not_a_table": false,
      "distributions": [],
      "schema_files": {
-      "described": "schemas/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/21e21d34-b71c-4f41-8ad3-ee5743fb8e00.described.json"
+      "described": "schemas/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/21e21d34-b71c-4f41-8ad3-ee5743fb8e00.described.json",
+      "observed": "schemas/dof-trechos-e-veiculos-de-transportes-florestais-detalhes/21e21d34-b71c-4f41-8ad3-ee5743fb8e00.observed.json"
      }
     },
     {
@@ -1766,7 +2030,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/efluentesLiquidos/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:36:34+00:00",
+     "validated_at": "2026-10-03T00:12:36+00:00",
      "rows": 486956,
      "schema_kind": null,
      "error": null,
@@ -1780,15 +2044,103 @@
      "distributions": [
       {
        "id": "9856fa16-96ff-4192-9a06-13efda404c8c",
-       "name": "Efluentes Líquidos",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/efluentesLiquidos/relatorio.json"
+       "name": "Efluentes Líquidos",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "categoria de atividade",
+        "classe do corpo receptor",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "compart ambiental da emissao",
+        "corpo receptor",
+        "desc monitoramento utilizado",
+        "detalhe",
+        "eficiencia do tratamento",
+        "empresa receptora do efluente",
+        "nivel de tratamento",
+        "nome do corpo hidrico",
+        "razao social",
+        "se outro qual",
+        "situacao cadastral",
+        "tipo corpo receptor",
+        "tipo de emissao",
+        "tipo de emissao para o solo",
+        "tipo de tratamento"
+       ],
+       "extra": [
+        "classecorporeceptor",
+        "codcategoria",
+        "coddetalhe",
+        "compartambientalemissao",
+        "corporeceptor",
+        "descategoria",
+        "desdetalhe",
+        "desmonitoramentoutilizado",
+        "eficienciatratamento",
+        "empresareceptoraefluente",
+        "niveltratamento",
+        "nomecorpohidrico",
+        "razaosocial",
+        "seoutroqual",
+        "situacaocadastral",
+        "tipocorporeceptor",
+        "tipoemissao",
+        "tipoemissaosolo",
+        "tipotratamento"
+       ]
       },
       {
        "id": "67fe00cd-9b62-4ede-a52a-d29e72d05823",
-       "name": "Efluentes Líquidos",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/efluentesLiquidos/relatorio.xml"
+       "name": "Efluentes Líquidos",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "categoria de atividade",
+        "classe do corpo receptor",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "compart ambiental da emissao",
+        "corpo receptor",
+        "desc monitoramento utilizado",
+        "detalhe",
+        "eficiencia do tratamento",
+        "empresa receptora do efluente",
+        "nivel de tratamento",
+        "nome do corpo hidrico",
+        "razao social",
+        "se outro qual",
+        "situacao cadastral",
+        "tipo corpo receptor",
+        "tipo de emissao",
+        "tipo de emissao para o solo",
+        "tipo de tratamento"
+       ],
+       "extra": [
+        "classecorporeceptor",
+        "codcategoria",
+        "coddetalhe",
+        "compartambientalemissao",
+        "corporeceptor",
+        "descategoria",
+        "desdetalhe",
+        "desmonitoramentoutilizado",
+        "eficienciatratamento",
+        "empresareceptoraefluente",
+        "niveltratamento",
+        "nomecorpohidrico",
+        "razaosocial",
+        "seoutroqual",
+        "situacaocadastral",
+        "tipocorporeceptor",
+        "tipoemissao",
+        "tipoemissaosolo",
+        "tipotratamento"
+       ]
       }
      ],
      "schema_files": {
@@ -1812,7 +2164,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/emissoesPoluentesAtmosfericos/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:36:38+00:00",
+     "validated_at": "2026-10-03T00:12:56+00:00",
      "rows": 236728,
      "schema_kind": null,
      "error": null,
@@ -1826,15 +2178,55 @@
      "distributions": [
       {
        "id": "6c904c00-410f-43d6-8300-eb28feaed0e1",
-       "name": "Emissões de Poluentes Atmosféricos",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/emissoesPoluentesAtmosfericos/relatorio.json"
+       "name": "Emissões de Poluentes Atmosféricos",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "metodologia utilizada",
+        "poluente emitido",
+        "razao social",
+        "situacao cadastral"
+       ],
+       "extra": [
+        "categoriaatividade",
+        "codigocategoria",
+        "codigodetalhe",
+        "metodologiautilizada",
+        "poluenteemitido",
+        "razaosocial",
+        "situacaocadastral"
+       ]
       },
       {
        "id": "b4f2c7bf-a14f-4f70-bc76-aa7d39d2ee20",
-       "name": "Emissões de Poluentes Atmosféricos",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/emissoesPoluentesAtmosfericos/relatorio.xml"
+       "name": "Emissões de Poluentes Atmosféricos",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "metodologia utilizada",
+        "poluente emitido",
+        "razao social",
+        "situacao cadastral"
+       ],
+       "extra": [
+        "categoriaatividade",
+        "codigocategoria",
+        "codigodetalhe",
+        "metodologiautilizada",
+        "poluenteemitido",
+        "razaosocial",
+        "situacaocadastral"
+       ]
       }
      ],
      "schema_files": {
@@ -1858,7 +2250,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/receitas/receitasArrecadadas.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:36:39+00:00",
+     "validated_at": "2026-10-03T00:12:59+00:00",
      "rows": 1081,
      "schema_kind": null,
      "error": null,
@@ -1872,15 +2264,43 @@
      "distributions": [
       {
        "id": "a36563d7-170b-4e15-a5bb-3888ae7f6e57",
-       "name": "Evolução das Receitas Arrecadadas pelo Ibama",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/receitas/receitasArrecadadas.json"
+       "name": "Evolução das Receitas Arrecadadas pelo Ibama",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "codigo da receita",
+        "descricao receita",
+        "ultima atualizacao relatorio",
+        "valor r"
+       ],
+       "extra": [
+        "codigoreceita",
+        "receita",
+        "ultimaatualizacaorelatorio",
+        "valor"
+       ]
       },
       {
        "id": "21180ea9-463b-41b9-8acc-a266b3142768",
-       "name": "Evolução das Receitas Arrecadadas pelo Ibama",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/receitas/receitasArrecadadas.xml"
+       "name": "Evolução das Receitas Arrecadadas pelo Ibama",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "codigo da receita",
+        "descricao receita",
+        "ultima atualizacao relatorio",
+        "valor r"
+       ],
+       "extra": [
+        "codigoreceita",
+        "receita",
+        "ultimaatualizacaorelatorio",
+        "valor"
+       ]
       }
      ],
      "schema_files": {
@@ -1904,7 +2324,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/expEcoMadProdSubprodFl/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:36:39+00:00",
+     "validated_at": "2026-10-03T00:13:02+00:00",
      "rows": 40220,
      "schema_kind": null,
      "error": null,
@@ -1918,15 +2338,47 @@
      "distributions": [
       {
        "id": "2ec7bb84-2fc2-4475-b8c5-706b0103a917",
-       "name": "Exploração Econômica da Madeira ou Lenha e ...",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/expEcoMadProdSubprodFl/relatorio.json"
+       "name": "Exploração Econômica da Madeira ou Lenha e ...",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "area total explorada ha",
+        "lenha estereo ou m3",
+        "razao social",
+        "situacao cadastral",
+        "tora m3"
+       ],
+       "extra": [
+        "qtdareatotal",
+        "qtdlenha",
+        "qtdtora",
+        "razaosocial",
+        "situacaocadastral"
+       ]
       },
       {
        "id": "1ed85356-be23-4011-a99c-a7e4c35f2595",
-       "name": "Exploração Econômica da Madeira ou Lenha e ...",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/expEcoMadProdSubprodFl/relatorio.xml"
+       "name": "Exploração Econômica da Madeira ou Lenha e ...",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "area total explorada ha",
+        "lenha estereo ou m3",
+        "razao social",
+        "situacao cadastral",
+        "tora m3"
+       ],
+       "extra": [
+        "qtdareatotal",
+        "qtdlenha",
+        "qtdtora",
+        "razaosocial",
+        "situacaocadastral"
+       ]
       }
      ],
      "schema_files": {
@@ -1950,7 +2402,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/extTratProdMinerais/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:36:40+00:00",
+     "validated_at": "2026-10-03T00:13:06+00:00",
      "rows": 37519,
      "schema_kind": null,
      "error": null,
@@ -1964,15 +2416,75 @@
      "distributions": [
       {
        "id": "90690278-882c-4cab-b75b-697dac481b9d",
-       "name": "Extração e tratamento de Produtos Minerais",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/extTratProdMinerais/relatorio.json"
+       "name": "Extração e tratamento de Produtos Minerais",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "ano de inicio da exploracao",
+        "ano de termino da exploracao",
+        "data de aprovacao do pra",
+        "data do decreto",
+        "no decreto da lavra",
+        "nome do produto",
+        "proj recup amb pra aprvd por",
+        "quantidade explorada",
+        "razao social",
+        "situacao cadastral",
+        "tamanho da area",
+        "unidade de medida"
+       ],
+       "extra": [
+        "anoinicioexploracao",
+        "anoterminoexploracao",
+        "dataaprovacao",
+        "datadecreto",
+        "nomeproduto",
+        "numdecretolavra",
+        "projrecupambaprvdpor",
+        "qtdexplorada",
+        "razaosocial",
+        "situacaocadastral",
+        "tamanhoarea",
+        "unidademedida"
+       ]
       },
       {
        "id": "c93ecf56-781a-489f-9329-7cd322e0b735",
-       "name": "Extração e tratamento de Produtos Minerais",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/extTratProdMinerais/relatorio.xml"
+       "name": "Extração e tratamento de Produtos Minerais",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "ano de inicio da exploracao",
+        "ano de termino da exploracao",
+        "data de aprovacao do pra",
+        "data do decreto",
+        "no decreto da lavra",
+        "nome do produto",
+        "proj recup amb pra aprvd por",
+        "quantidade explorada",
+        "razao social",
+        "situacao cadastral",
+        "tamanho da area",
+        "unidade de medida"
+       ],
+       "extra": [
+        "anoinicioexploracao",
+        "anoterminoexploracao",
+        "dataaprovacao",
+        "datadecreto",
+        "nomeproduto",
+        "numdecretolavra",
+        "projrecupambaprvdpor",
+        "qtdexplorada",
+        "razaosocial",
+        "situacaocadastral",
+        "tamanhoarea",
+        "unidademedida"
+       ]
       }
      ],
      "schema_files": {
@@ -1996,7 +2508,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/utilMatPrimaOriFlorestal/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:36:40+00:00",
+     "validated_at": "2026-10-03T00:13:09+00:00",
      "rows": 147659,
      "schema_kind": null,
      "error": null,
@@ -2010,15 +2522,75 @@
      "distributions": [
       {
        "id": "4148a2a5-3d46-492d-9c18-24761a9c2acc",
-       "name": "Fabricante de produtos que utilizam matéria ...",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/utilMatPrimaOriFlorestal/relatorio.json"
+       "name": "Fabricante de produtos que utilizam matéria ...",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "capacidade de processamento",
+        "nome do produto",
+        "qtd de doc estad recebidos",
+        "qtd de doc estad utilizados",
+        "quantidade comercializada",
+        "quantidade estocada",
+        "quantidade processada",
+        "quantidade recebida",
+        "quantidade transportada",
+        "razao social",
+        "situacao cadastral",
+        "unidade de medida"
+       ],
+       "extra": [
+        "capacidadeprocessamento",
+        "nomeproduto",
+        "qtdcomercializada",
+        "qtddocestadrecebidos",
+        "qtddocestadutilizados",
+        "qtdestocada",
+        "qtdprocessada",
+        "qtdrecebida",
+        "qtdtransportada",
+        "razaosocial",
+        "situacaocadastral",
+        "unidademedida"
+       ]
       },
       {
        "id": "ec81ff66-c84d-47db-88c0-447b4fe33c91",
-       "name": "Fabricante de produtos que utilizam matéria ...",
        "format": "xml",
-       "url": "http://dadosabertos.ibama.gov.br/dados/RAPP/utilMatPrimaOriFlorestal/relatorio.xml"
+       "name": "Fabricante de produtos que utilizam matéria ...",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "capacidade de processamento",
+        "nome do produto",
+        "qtd de doc estad recebidos",
+        "qtd de doc estad utilizados",
+        "quantidade comercializada",
+        "quantidade estocada",
+        "quantidade processada",
+        "quantidade recebida",
+        "quantidade transportada",
+        "razao social",
+        "situacao cadastral",
+        "unidade de medida"
+       ],
+       "extra": [
+        "capacidadeprocessamento",
+        "nomeproduto",
+        "qtdcomercializada",
+        "qtddocestadrecebidos",
+        "qtddocestadutilizados",
+        "qtdestocada",
+        "qtdprocessada",
+        "qtdrecebida",
+        "qtdtransportada",
+        "razaosocial",
+        "situacaocadastral",
+        "unidademedida"
+       ]
       }
      ],
      "schema_files": {
@@ -2042,7 +2614,7 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AGROTOXICOS/RegistrodeAgrot%C3%B3xicosQuimicos/FiladeAcompanhamentodeRegistrodeAgrot%C3%B3xicosQuimicos.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:36:42+00:00",
+     "validated_at": "2026-10-03T00:13:14+00:00",
      "rows": 1891,
      "schema_kind": null,
      "error": null,
@@ -2056,15 +2628,23 @@
      "distributions": [
       {
        "id": "2004321e-d75e-4666-b5f5-cdd673f5ab51",
-       "name": "Fila de agrotóxicos químicos em JSON",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AGROTOXICOS/RegistrodeAgrot%C3%B3xicosQuimicos/FiladeAcompanhamentodeRegistrodeAgrot%C3%B3xicosQuimicos.json"
+       "name": "Fila de agrotóxicos químicos em JSON",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "bedf5b95-eb1e-475b-b8c1-029745ad1da3",
-       "name": "Fila de agrotóxicos químicos em XML",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AGROTOXICOS/RegistrodeAgrot%C3%B3xicosQuimicos/FiladeAcompanhamentodeRegistrodeAgrot%C3%B3xicosQuimicos.xml"
+       "name": "Fila de agrotóxicos químicos em XML",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -2226,7 +2806,7 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AIE_MOB/auto_infracao/aie_enquadramento.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:37:53+00:00",
+     "validated_at": "2026-10-03T00:13:17+00:00",
      "rows": 529359,
      "schema_kind": null,
      "error": null,
@@ -2240,15 +2820,23 @@
      "distributions": [
       {
        "id": "abd4c9d0-2810-43c1-8670-bbb0b8d529ab",
-       "name": "Autos de Infração - enquadramento Sabiá/AIe Mob",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AIE_MOB/auto_infracao/aie_enquadramento.json"
+       "name": "Autos de Infração - enquadramento Sabiá/AIe Mob",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "0c6a43b8-b6cc-4dee-a458-5bf3de66ad79",
-       "name": "Autos de Infração - enquadramento Sabiá/AIe Mob",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AIE_MOB/auto_infracao/aie_enquadramento.xml"
+       "name": "Autos de Infração - enquadramento Sabiá/AIe Mob",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -2262,7 +2850,7 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AIE_MOB/auto_infracao/aie_enquadramentocomp.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:37:58+00:00",
+     "validated_at": "2026-10-03T00:13:23+00:00",
      "rows": 35664,
      "schema_kind": null,
      "error": null,
@@ -2276,15 +2864,23 @@
      "distributions": [
       {
        "id": "9a777a37-e224-4e2c-82f7-0cde33707e07",
-       "name": "Auto de infração – Enquadramento Complementar",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AIE_MOB/auto_infracao/aie_enquadramentocomp.json"
+       "name": "Auto de infração – Enquadramento Complementar",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "704778bf-8b7f-4b9e-8937-a74568b8a259",
-       "name": "Auto de infração – Enquadramento Complementar",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AIE_MOB/auto_infracao/aie_enquadramentocomp.xml"
+       "name": "Auto de infração – Enquadramento Complementar",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -2298,7 +2894,7 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/especime/especime.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:00+00:00",
+     "validated_at": "2026-10-03T00:13:27+00:00",
      "rows": 38012,
      "schema_kind": null,
      "error": null,
@@ -2312,15 +2908,23 @@
      "distributions": [
       {
        "id": "7463c3f1-f332-4d3d-8c64-911f0995b8ec",
-       "name": "Autos de infração - espécimes",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/especime/especime.json"
+       "name": "Autos de infração - espécimes",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "fed26c9f-6b80-4dba-a965-f4b1888a40ca",
-       "name": "Autos de infração - espécimes",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/especime/especime.xml"
+       "name": "Autos de infração - espécimes",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -2334,7 +2938,7 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/coordenada/coordenada.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:05+00:00",
+     "validated_at": "2026-10-03T00:13:32+00:00",
      "rows": 73035,
      "schema_kind": null,
      "error": null,
@@ -2348,15 +2952,23 @@
      "distributions": [
       {
        "id": "166aeb26-cec8-49c0-8a79-eb267c3ba55e",
-       "name": "Autos de infração - coordenadas geográficas",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/coordenada/coordenada.json"
+       "name": "Autos de infração - coordenadas geográficas",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "3d37cee2-fab0-4f22-b748-2c39bd5cc5dd",
-       "name": "Autos de infração - coordenadas geográficas",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/coordenada/coordenada.xml"
+       "name": "Autos de infração - coordenadas geográficas",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -2370,7 +2982,7 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/bioma/bioma.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:08+00:00",
+     "validated_at": "2026-10-03T00:13:37+00:00",
      "rows": 293968,
      "schema_kind": null,
      "error": null,
@@ -2384,15 +2996,23 @@
      "distributions": [
       {
        "id": "23393b4c-cd45-47f6-9bbf-04e328548aa2",
-       "name": "Autos de infração - biomas",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/bioma/bioma.json"
+       "name": "Autos de infração - biomas",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "39ef9677-fd0e-494b-aeee-c9ad1e8dbe35",
-       "name": "Autos de infração - biomas",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/bioma/bioma.xml"
+       "name": "Autos de infração - biomas",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -4073,7 +4693,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b/resource/2f335d4d-6707-4862-995d-f2fb6c7dd052"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:55+00:00",
+     "validated_at": "2026-10-03T00:13:42+00:00",
      "rows": 69,
      "schema_kind": "described",
      "error": null,
@@ -4087,7 +4707,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 21,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -4097,15 +4717,23 @@
      "distributions": [
       {
        "id": "4d751570-70f0-4e50-9abd-53c98b336778",
-       "name": "Termo de destruição ou inutilização (série A e B)",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_destruicao_a_b/destruicao.json"
+       "name": "Termo de destruição ou inutilização (série A e B)",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "04266352-891c-4884-8196-7344dd55ff19",
-       "name": "Termo de destruição ou inutilização (série A e B)",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_destruicao_a_b/destruicao.xml"
+       "name": "Termo de destruição ou inutilização (série A e B)",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -4125,7 +4753,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b/resource/92f92021-28df-42b7-bbbb-a4f77b3a078e"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:38:55+00:00",
+     "validated_at": "2026-10-03T00:15:02+00:00",
      "rows": 178,
      "schema_kind": "described",
      "error": null,
@@ -4139,7 +4767,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 6,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -4149,15 +4777,23 @@
      "distributions": [
       {
        "id": "8608dd20-f8b3-46dd-923f-d05a83d62de0",
-       "name": "Bem destruído",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_destruicao_a_b/bem.json"
+       "name": "Bem destruído",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "8e160bcb-60bc-4ab6-a844-89a76297ed01",
-       "name": "Bem destruído",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_destruicao_a_b/bem.xml"
+       "name": "Bem destruído",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -4774,7 +5410,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/aba90ea8-e2f3-431e-a0cc-1ae24773843b"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:10+00:00",
+     "validated_at": "2026-10-03T00:15:14+00:00",
      "rows": 48782,
      "schema_kind": "described",
      "error": null,
@@ -4788,7 +5424,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 12,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -4798,15 +5434,23 @@
      "distributions": [
       {
        "id": "71faa91d-e62c-4378-8dcf-8cf3a133ac9e",
-       "name": "Termos de embargo - itens",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_ITENS/termo_embargo_itens.json"
+       "name": "Termos de embargo - itens",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "a097f16d-d15d-46ad-a7dc-f8d7935d2abe",
-       "name": "Termos de embargo - itens",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_ITENS/termo_embargo_itens.xml"
+       "name": "Termos de embargo - itens",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -4954,7 +5598,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/0a4284aa-e142-4d6d-823f-9958f26c829e"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:19+00:00",
+     "validated_at": "2026-10-03T00:15:18+00:00",
      "rows": 474,
      "schema_kind": "described",
      "error": null,
@@ -4968,7 +5612,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 12,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -4978,15 +5622,23 @@
      "distributions": [
       {
        "id": "fe524197-4798-4c42-955c-eea73e093fbf",
-       "name": "Termos de embargo - decisões judiciais",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_DECISAO/termo_embargo_decisao.json"
+       "name": "Termos de embargo - decisões judiciais",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "ba0fa83f-23f1-4faf-838c-ad8966fbd120",
-       "name": "Termos de embargo - decisões judiciais",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_DECISAO/termo_embargo_decisao.xml"
+       "name": "Termos de embargo - decisões judiciais",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -5128,7 +5780,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo/resource/04f7998d-58e1-4717-85f5-401dc9994b19"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:25+00:00",
+     "validated_at": "2026-10-03T00:15:20+00:00",
      "rows": 502193,
      "schema_kind": "described",
      "error": null,
@@ -5144,7 +5796,7 @@
        "JUSTIFICATIVA_ALTERACAO"
       ],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 43,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -5154,15 +5806,17 @@
      "distributions": [
       {
        "id": "f20ab38a-819d-4db9-9dd3-4dffe52ea576",
-       "name": "Termos de embargo - histórico",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_HISTORICO/termo_embargo_historico.json"
+       "name": "Termos de embargo - histórico",
+       "status": "not-checked",
+       "reason": "1.4 GB"
       },
       {
        "id": "2b9cc93b-9af1-4cc5-9b9b-b5e6b7a1eefb",
-       "name": "Termos de embargo - histórico",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO_HISTORICO/termo_embargo_historico.xml"
+       "name": "Termos de embargo - histórico",
+       "status": "not-checked",
+       "reason": "1.4 GB"
       }
      ],
      "schema_files": {
@@ -5502,7 +6156,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/e5304ed3-60b0-4e20-80f5-2b169d8357fb"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:55+00:00",
+     "validated_at": "2026-10-03T00:15:47+00:00",
      "rows": 3131,
      "schema_kind": "declared",
      "error": null,
@@ -5516,7 +6170,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 25,
       "inferred_formats": {
        "SIT_CANCELADO": {
@@ -5564,15 +6218,23 @@
      "distributions": [
       {
        "id": "43c8c014-2bf0-49b8-884b-61d3edaa0590",
-       "name": "Termo de Soltura",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SOLTURA/termo_soltura.json"
+       "name": "Termo de Soltura",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "222f4604-0bc1-4110-bad1-37baa492b336",
-       "name": "Termo de Soltura",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SOLTURA/termo_soltura.xml"
+       "name": "Termo de Soltura",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -5595,7 +6257,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/2cf92dc1-6765-4f12-a381-ee3a8dc54ab8"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:57+00:00",
+     "validated_at": "2026-10-03T00:15:50+00:00",
      "rows": 5056,
      "schema_kind": "declared",
      "error": null,
@@ -5609,7 +6271,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 19,
       "inferred_formats": {
        "QTD_ESPECIME_APREENDIDO": {
@@ -5667,15 +6329,23 @@
      "distributions": [
       {
        "id": "68298354-cf2f-48ad-ba5e-6065f986b15a",
-       "name": "Espécime solto",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SOLTURA/termo_soltura_especime_solto.json"
+       "name": "Espécime solto",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "b9afd19e-4157-4c27-a4a7-dd34019d0f5f",
-       "name": "Espécime solto",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SOLTURA/termo_soltura_especime_solto.xml"
+       "name": "Espécime solto",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -5698,7 +6368,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/41a8bbb0-5834-41b8-9d74-11c68261cecf"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:39:59+00:00",
+     "validated_at": "2026-10-03T00:15:54+00:00",
      "rows": 1,
      "schema_kind": "declared",
      "error": null,
@@ -5712,7 +6382,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 13,
       "inferred_formats": {
        "DAT_SOLTURA": {
@@ -5737,15 +6407,23 @@
      "distributions": [
       {
        "id": "9417ef2b-c3e1-4977-866b-07c171bfd5b4",
-       "name": "Bem solto",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SOLTURA/termo_soltura_bem_solto.json"
+       "name": "Bem solto",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "e66ed13c-a79e-4086-8c7f-b40d78dd1e89",
-       "name": "Bem solto",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SOLTURA/termo_soltura_bem_solto.xml"
+       "name": "Bem solto",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -5768,7 +6446,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/abafeb3c-3dac-462f-b2c8-bdc4a1159d40"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:40:00+00:00",
+     "validated_at": "2026-10-03T00:15:55+00:00",
      "rows": 283263,
      "schema_kind": "declared",
      "error": null,
@@ -5782,7 +6460,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 14,
       "inferred_formats": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
@@ -5800,15 +6478,23 @@
      "distributions": [
       {
        "id": "2c7d4cd2-2066-4e12-a2d6-7aa4aaa2005b",
-       "name": "Enquadramento legal",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SOLTURA/termo_soltura_enquadramento.json"
+       "name": "Enquadramento legal",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "fcca2e70-f166-45b8-94e6-7440968033f0",
-       "name": "Enquadramento legal",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SOLTURA/termo_soltura_enquadramento.xml"
+       "name": "Enquadramento legal",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -5831,7 +6517,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-soltura/resource/1b3a223f-c84f-4080-9b12-f893ee7fb6dd"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:40:05+00:00",
+     "validated_at": "2026-10-03T00:16:02+00:00",
      "rows": 283263,
      "schema_kind": "declared",
      "error": null,
@@ -5845,7 +6531,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 12,
       "inferred_formats": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
@@ -5863,15 +6549,23 @@
      "distributions": [
       {
        "id": "e35b3332-dbe2-40b7-b75b-5b11286ee15a",
-       "name": "Enquadramento Legal Complementar ",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SOLTURA/termo_soltura_enquadramento_LEGAL_COMPLEMENTAR.json"
+       "name": "Enquadramento Legal Complementar ",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "b7cf6929-3599-4a3d-9e90-360aae84bbd3",
-       "name": "Enquadramento Legal Complementar ",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_SOLTURA/termo_soltura_enquadramento_LEGAL_COMPLEMENTAR.xml"
+       "name": "Enquadramento Legal Complementar ",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -6152,7 +6846,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/fonteEnergetica/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:40:16+00:00",
+     "validated_at": "2026-10-03T00:16:09+00:00",
      "rows": 98534,
      "schema_kind": null,
      "error": null,
@@ -6166,15 +6860,35 @@
      "distributions": [
       {
        "id": "20c9e30e-9c1a-432a-afd7-3671dba13259",
-       "name": "Fonte Energética",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/fonteEnergetica/relatorio.json"
+       "name": "Fonte Energética",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "razao social",
+        "situacao cadastral"
+       ],
+       "extra": [
+        "razaosocial",
+        "situacaocadastral"
+       ]
       },
       {
        "id": "3f03c7b9-5b66-4770-8951-6cfd8e6521f2",
-       "name": "Fonte Energética",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/fonteEnergetica/relatorio.xml"
+       "name": "Fonte Energética",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "razao social",
+        "situacao cadastral"
+       ],
+       "extra": [
+        "razaosocial",
+        "situacaocadastral"
+       ]
       }
      ],
      "schema_files": {
@@ -6198,7 +6912,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/fontesEnergeticas/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:40:17+00:00",
+     "validated_at": "2026-10-03T00:16:47+00:00",
      "rows": 479317,
      "schema_kind": null,
      "error": null,
@@ -6212,15 +6926,111 @@
      "distributions": [
       {
        "id": "2920d6fc-d789-4aa7-9edb-f0437560cab7",
-       "name": "Fontes Energéticas",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/fontesEnergeticas/relatorio.json"
+       "name": "Fontes Energéticas",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "conteudo de carbono",
+        "densidade",
+        "emissoes de co2",
+        "fator de oxidacao",
+        "justificativa para alteracao da densidade",
+        "justificativa para alteracao do conteudo de carbono",
+        "justificativa para alteracao do fator de oxidacao",
+        "justificativa para alteracao do poder calorifico inferior",
+        "poder calorifico inferior",
+        "quantidade consumida",
+        "razao social",
+        "situacao cadastral",
+        "tipo de fonte energetica",
+        "unidade de medida",
+        "unidade de medida conteudo de carbono",
+        "unidade de medida densidade",
+        "unidade de medida fator de oxidacao",
+        "unidade de medida poder calorifico inferior"
+       ],
+       "extra": [
+        "categoriaatividade",
+        "codigocategoria",
+        "codigodetalhe",
+        "conteudocarbono",
+        "emissoesco2",
+        "fatoroxidacao",
+        "justificativaalteracaoconteudocarbono",
+        "justificativaalteracaodensidade",
+        "justificativaalteracaofatoroxidacao",
+        "justificativaalteracaopodercalorificoinferior",
+        "podercalorificoinferior",
+        "quantidadeconsumida",
+        "razaosocial",
+        "situacaocadastral",
+        "tipofonteenergetica",
+        "unidademedida",
+        "unidademedidaconteudocarbono",
+        "unidademedidadensidade",
+        "unidademedidafatoroxidacao",
+        "unidademedidapodercalorificoinferior",
+        "valordensidade"
+       ]
       },
       {
        "id": "e393d99b-9fb3-4d6e-a367-f32de7c87f52",
-       "name": "Fontes Energéticas",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/fontesEnergeticas/relatorio.xml"
+       "name": "Fontes Energéticas",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "conteudo de carbono",
+        "densidade",
+        "emissoes de co2",
+        "fator de oxidacao",
+        "justificativa para alteracao da densidade",
+        "justificativa para alteracao do conteudo de carbono",
+        "justificativa para alteracao do fator de oxidacao",
+        "justificativa para alteracao do poder calorifico inferior",
+        "poder calorifico inferior",
+        "quantidade consumida",
+        "razao social",
+        "situacao cadastral",
+        "tipo de fonte energetica",
+        "unidade de medida",
+        "unidade de medida conteudo de carbono",
+        "unidade de medida densidade",
+        "unidade de medida fator de oxidacao",
+        "unidade de medida poder calorifico inferior"
+       ],
+       "extra": [
+        "categoriaatividade",
+        "codigocategoria",
+        "codigodetalhe",
+        "conteudocarbono",
+        "emissoesco2",
+        "fatoroxidacao",
+        "justificativaalteracaoconteudocarbono",
+        "justificativaalteracaodensidade",
+        "justificativaalteracaofatoroxidacao",
+        "justificativaalteracaopodercalorificoinferior",
+        "podercalorificoinferior",
+        "quantidadeconsumida",
+        "razaosocial",
+        "situacaocadastral",
+        "tipofonteenergetica",
+        "unidademedida",
+        "unidademedidaconteudocarbono",
+        "unidademedidadensidade",
+        "unidademedidafatoroxidacao",
+        "unidademedidapodercalorificoinferior",
+        "valordensidade"
+       ]
       }
      ],
      "schema_files": {
@@ -6280,7 +7090,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/impExpFaunaFlora/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:40:23+00:00",
+     "validated_at": "2026-10-03T00:17:06+00:00",
      "rows": 36093,
      "schema_kind": null,
      "error": null,
@@ -6294,15 +7104,71 @@
      "distributions": [
       {
        "id": "c3176ef3-a62e-44ac-9dfc-5f1cbc035bde",
-       "name": "Importador/ Exportador de Fauna e Flora - ...",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/impExpFaunaFlora/relatorio.json"
+       "name": "Importador/ Exportador de Fauna e Flora - ...",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "detalhe",
+        "estoque em 31 de dezembro de",
+        "nome do produto",
+        "quantidade exportada",
+        "quantidade importada",
+        "razao social",
+        "situacao cadastral",
+        "unidade de medida"
+       ],
+       "extra": [
+        "codcategoria",
+        "coddetalhe",
+        "descategoria",
+        "desdetalhe",
+        "nomeproduto",
+        "qtdestoque",
+        "qtdexportada",
+        "qtdimportada",
+        "razaosocial",
+        "situacaocadastral",
+        "unidademedida"
+       ]
       },
       {
        "id": "366b3fea-508a-4e3d-8b82-1428714b4585",
-       "name": "Importador/ Exportador de Fauna e Flora - ...",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/impExpFaunaFlora/relatorio.xml"
+       "name": "Importador/ Exportador de Fauna e Flora - ...",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "detalhe",
+        "estoque em 31 de dezembro de",
+        "nome do produto",
+        "quantidade exportada",
+        "quantidade importada",
+        "razao social",
+        "situacao cadastral",
+        "unidade de medida"
+       ],
+       "extra": [
+        "codcategoria",
+        "coddetalhe",
+        "descategoria",
+        "desdetalhe",
+        "nomeproduto",
+        "qtdestoque",
+        "qtdexportada",
+        "qtdimportada",
+        "razaosocial",
+        "situacaocadastral",
+        "unidademedida"
+       ]
       }
      ],
      "schema_files": {
@@ -6326,7 +7192,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/AC/Volume/volumeJulgamentoAI.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:40:24+00:00",
+     "validated_at": "2026-10-03T00:17:09+00:00",
      "rows": 2917,
      "schema_kind": null,
      "error": null,
@@ -6340,15 +7206,83 @@
      "distributions": [
       {
        "id": "3cfe4e2f-8806-4179-9601-c55739d36f76",
-       "name": "Volume de Julgamento de Auto de Infração",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/AC/Volume/volumeJulgamentoAI.json"
+       "name": "Volume de Julgamento de Auto de Infração",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "cpf cnpj",
+        "data auto",
+        "data julgamento principal",
+        "data julgamento recurso",
+        "data pagamento",
+        "decisao administrativa",
+        "nome ou razao social",
+        "numero ai",
+        "status debito",
+        "tipo auto",
+        "tipo de infracao",
+        "ultima atualizacao relatorio",
+        "valor do auto",
+        "valor pago"
+       ],
+       "extra": [
+        "cpfcnpj",
+        "dataauto",
+        "datajulgamentoprincipal",
+        "datajulgamentorecurso",
+        "datapagamento",
+        "decisaoadministrativa",
+        "nomerazaosocial",
+        "numai",
+        "statusdebito",
+        "tipoauto",
+        "tipoinfracao",
+        "ultimaatualizacaorelatorio",
+        "valorauto",
+        "valorpago"
+       ]
       },
       {
        "id": "f1073229-9748-44f1-9b88-17ca4c5b04a1",
-       "name": "Volume de Julgamento de Auto de Infração",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/AC/Volume/volumeJulgamentoAI.xml"
+       "name": "Volume de Julgamento de Auto de Infração",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "cpf cnpj",
+        "data auto",
+        "data julgamento principal",
+        "data julgamento recurso",
+        "data pagamento",
+        "decisao administrativa",
+        "nome ou razao social",
+        "numero ai",
+        "status debito",
+        "tipo auto",
+        "tipo de infracao",
+        "ultima atualizacao relatorio",
+        "valor do auto",
+        "valor pago"
+       ],
+       "extra": [
+        "cpfcnpj",
+        "dataauto",
+        "datajulgamentoprincipal",
+        "datajulgamentorecurso",
+        "datapagamento",
+        "decisaoadministrativa",
+        "nomerazaosocial",
+        "numai",
+        "statusdebito",
+        "tipoauto",
+        "tipoinfracao",
+        "ultimaatualizacaorelatorio",
+        "valorauto",
+        "valorpago"
+       ]
       }
      ],
      "schema_files": {
@@ -6372,7 +7306,7 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SISLIC/sislic-licencas.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:40:24+00:00",
+     "validated_at": "2026-10-03T00:17:11+00:00",
      "rows": 14174,
      "schema_kind": null,
      "error": null,
@@ -6386,15 +7320,23 @@
      "distributions": [
       {
        "id": "53e7ba33-cadf-409b-9cfc-7b9041c86973",
-       "name": "Licenças ambientais de atividades e ...",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SISLIC/sislic-licencas.json"
+       "name": "Licenças ambientais de atividades e ...",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "d01c586d-74ea-4649-a70d-9d06822ae12b",
-       "name": "Licenças ambientais de atividades e ...",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SISLIC/sislic-licencas.xml"
+       "name": "Licenças ambientais de atividades e ...",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -6516,7 +7458,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/pescadorProfissional/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:40:40+00:00",
+     "validated_at": "2026-10-03T00:17:15+00:00",
      "rows": 2237,
      "schema_kind": null,
      "error": null,
@@ -6530,15 +7472,55 @@
      "distributions": [
       {
        "id": "766d4ee8-da9d-45c5-a526-2efc6fb8ab3e",
-       "name": "Pescador Profissional",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/pescadorProfissional/relatorio.json"
+       "name": "Pescador Profissional",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "estado de atuacao",
+        "forma de comercializacao",
+        "nome do produto",
+        "quantidade pescada",
+        "razao social",
+        "situacao cadastral",
+        "unidade de medida"
+       ],
+       "extra": [
+        "estadoatuacao",
+        "formacomercializacao",
+        "nomeproduto",
+        "qtdpescada",
+        "razaosocial",
+        "situacaocadastral",
+        "unidademedida"
+       ]
       },
       {
        "id": "209d6f00-68bb-46d9-ae15-0773c7b3b920",
-       "name": "Pescador Profissional",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/pescadorProfissional/relatorio.xml"
+       "name": "Pescador Profissional",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "estado de atuacao",
+        "forma de comercializacao",
+        "nome do produto",
+        "quantidade pescada",
+        "razao social",
+        "situacao cadastral",
+        "unidade de medida"
+       ],
+       "extra": [
+        "estadoatuacao",
+        "formacomercializacao",
+        "nomeproduto",
+        "qtdpescada",
+        "razaosocial",
+        "situacaocadastral",
+        "unidademedida"
+       ]
       }
      ],
      "schema_files": {
@@ -6562,7 +7544,7 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/CTF/AIDA/pessoasJuridicas.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:40:41+00:00",
+     "validated_at": "2026-10-03T00:17:16+00:00",
      "rows": 42189,
      "schema_kind": null,
      "error": null,
@@ -6576,15 +7558,23 @@
      "distributions": [
       {
        "id": "39d5e32c-4cd8-4887-8707-c65e281f6995",
-       "name": "Pessoas jurídicas inscritas no CTF/AIDA",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/CTF/AIDA/pessoasJuridicas.json"
+       "name": "Pessoas jurídicas inscritas no CTF/AIDA",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "eb4d4468-78f8-42df-a850-9b02770356d3",
-       "name": "Pessoas jurídicas inscritas no CTF/AIDA",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/CTF/AIDA/pessoasJuridicas.xml"
+       "name": "Pessoas jurídicas inscritas no CTF/AIDA",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -6692,7 +7682,7 @@
      "dictionary": {
       "name": "Metadados - Pessoas jurídicas inscritas no CTF/APP",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/dataset/168289a4-5813-4186-aefd-ef2ff989cc1b/resource/c595bf2f-ddcc-4753-b814-6a55f15838c7/download/metadados-pessoas-juridicas-ctf_app.csv",
@@ -6766,7 +7756,7 @@
      "dictionary": {
       "name": "Metadados - Pessoas jurídicas inscritas no CTF/APP",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/dataset/168289a4-5813-4186-aefd-ef2ff989cc1b/resource/c595bf2f-ddcc-4753-b814-6a55f15838c7/download/metadados-pessoas-juridicas-ctf_app.csv",
@@ -6847,7 +7837,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/plantacaoVegetacaoNativa/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:41:43+00:00",
+     "validated_at": "2026-10-03T00:17:22+00:00",
      "rows": 14524,
      "schema_kind": null,
      "error": null,
@@ -6861,15 +7851,63 @@
      "distributions": [
       {
        "id": "db9e62b5-9eb5-4a26-b0b9-1b631d8ab77b",
-       "name": "Plantação/ Vegetação Nativa",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/plantacaoVegetacaoNativa/relatorio.json"
+       "name": "Plantação/ Vegetação Nativa",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "area ocupada por instalacoes",
+        "area ocupada por veg nativa",
+        "area utilizada em plantacoes",
+        "no queimadas ano plantacao",
+        "no queimadas ano veg nativa",
+        "plantacao reflorestamento",
+        "razao social",
+        "situacao cadastral",
+        "vegetacao nativa"
+       ],
+       "extra": [
+        "areaocupadainstalacoes",
+        "areaocupadavegnativa",
+        "areautilizadaplantacoes",
+        "numqueimadasplantacao",
+        "numqueimadasvegnativa",
+        "plantacaoreflorestamento",
+        "razaosocial",
+        "situacaocadastral",
+        "vegetacaonativa"
+       ]
       },
       {
        "id": "097ab888-07c6-4b6b-b9c2-a0d44565bb3b",
-       "name": "Plantação/ Vegetação Nativa",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/plantacaoVegetacaoNativa/relatorio.xml"
+       "name": "Plantação/ Vegetação Nativa",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "area ocupada por instalacoes",
+        "area ocupada por veg nativa",
+        "area utilizada em plantacoes",
+        "no queimadas ano plantacao",
+        "no queimadas ano veg nativa",
+        "plantacao reflorestamento",
+        "razao social",
+        "situacao cadastral",
+        "vegetacao nativa"
+       ],
+       "extra": [
+        "areaocupadainstalacoes",
+        "areaocupadavegnativa",
+        "areautilizadaplantacoes",
+        "numqueimadasplantacao",
+        "numqueimadasvegnativa",
+        "plantacaoreflorestamento",
+        "razaosocial",
+        "situacaocadastral",
+        "vegetacaonativa"
+       ]
       }
      ],
      "schema_files": {
@@ -6893,7 +7931,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/produtosReciclados/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:41:44+00:00",
+     "validated_at": "2026-10-03T00:17:28+00:00",
      "rows": 23161,
      "schema_kind": null,
      "error": null,
@@ -6907,15 +7945,51 @@
      "distributions": [
       {
        "id": "c1483e4c-ccb2-41d9-b209-89789ca3099f",
-       "name": "Produtos Reciclados",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/produtosReciclados/relatorio.json"
+       "name": "Produtos Reciclados",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "empresa destinadora do residuo",
+        "metodo de reciclagem",
+        "razao social",
+        "situacao cadastral",
+        "tipo de residuo",
+        "unidade de medida"
+       ],
+       "extra": [
+        "empresadestinresiduo",
+        "metodoreciclagem",
+        "razaosocial",
+        "situacaocadastral",
+        "tiporesiduo",
+        "unidademedida"
+       ]
       },
       {
        "id": "c879ce34-f533-4e1a-a836-ef53773eef34",
-       "name": "Produtos Reciclados",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/produtosReciclados/relatorio.xml"
+       "name": "Produtos Reciclados",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "empresa destinadora do residuo",
+        "metodo de reciclagem",
+        "razao social",
+        "situacao cadastral",
+        "tipo de residuo",
+        "unidade de medida"
+       ],
+       "extra": [
+        "empresadestinresiduo",
+        "metodoreciclagem",
+        "razaosocial",
+        "situacaocadastral",
+        "tiporesiduo",
+        "unidademedida"
+       ]
       }
      ],
      "schema_files": {
@@ -7265,7 +8339,7 @@
      "dictionary": {
       "name": "Metadados - Resíduos/Produtos",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/fe4cfcc9-10f6-488d-a699-fe937ec4b1fe/download/metadados-residuos-e-produtos.csv",
@@ -7317,7 +8391,7 @@
      "dictionary": {
       "name": "Metadados - Resíduos/Produtos",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/fe4cfcc9-10f6-488d-a699-fe937ec4b1fe/download/metadados-residuos-e-produtos.csv",
@@ -7403,7 +8477,7 @@
      "dictionary": {
       "name": "Metadados - Pontos de Coleta",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/933f121d-14ca-4f41-88fb-19906c7303ed/download/metadados-pontos-de-coleta.csv",
@@ -7447,7 +8521,7 @@
      "dictionary": {
       "name": "Metadados - Pontos de Coleta",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/933f121d-14ca-4f41-88fb-19906c7303ed/download/metadados-pontos-de-coleta.csv",
@@ -7542,7 +8616,7 @@
      "dictionary": {
       "name": "Metadados - Transporte",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/3e692f9a-35ff-4f0e-a966-85cc9c179641/download/metadados-transporte.csv",
@@ -7588,7 +8662,7 @@
      "dictionary": {
       "name": "Metadados - Transporte",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/3e692f9a-35ff-4f0e-a966-85cc9c179641/download/metadados-transporte.csv",
@@ -7685,7 +8759,7 @@
      "dictionary": {
       "name": "Metadados - Destinação",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/b31b76fc-192c-44b7-a44e-3ce2157b7751/download/metadados-destinacao.csv",
@@ -7735,7 +8809,7 @@
      "dictionary": {
       "name": "Metadados - Destinação",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/b31b76fc-192c-44b7-a44e-3ce2157b7751/download/metadados-destinacao.csv",
@@ -7932,7 +9006,7 @@
      "dictionary": {
       "name": "Metadados - Importadores",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/a5d344bc-6cc6-453e-b0e3-83763692c851/download/metadados-importadores.csv",
@@ -8014,7 +9088,7 @@
      "dictionary": {
       "name": "Metadados - Importadores",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/a5d344bc-6cc6-453e-b0e3-83763692c851/download/metadados-importadores.csv",
@@ -8230,7 +9304,7 @@
      "dictionary": {
       "name": "Metadados - Resíduos/Produtos",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/5e1a08a5-da03-4c8a-8c01-5206b629e5bc/download/metadados-residuos-e-produtos.csv",
@@ -8292,7 +9366,7 @@
      "dictionary": {
       "name": "Metadados - Resíduos/Produtos",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/5e1a08a5-da03-4c8a-8c01-5206b629e5bc/download/metadados-residuos-e-produtos.csv",
@@ -8391,7 +9465,7 @@
      "dictionary": {
       "name": "Metadados - Pontos de Coleta",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/415f379b-740e-4d75-96e0-3f7d88a81c3b/download/metadados-pontos-de-coleta.csv",
@@ -8440,7 +9514,7 @@
      "dictionary": {
       "name": "Metadados - Pontos de Coleta",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/415f379b-740e-4d75-96e0-3f7d88a81c3b/download/metadados-pontos-de-coleta.csv",
@@ -8624,7 +9698,7 @@
      "dictionary": {
       "name": "Metadados - Destinação",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/c79fe74d-1bbc-4a4c-a804-22c3cb551099/download/metadados-destinacao.csv",
@@ -8682,7 +9756,7 @@
      "dictionary": {
       "name": "Metadados - Destinação",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/503f10ae-b624-481e-9ef7-0a490bc33d2d/resource/c79fe74d-1bbc-4a4c-a804-22c3cb551099/download/metadados-destinacao.csv",
@@ -8763,7 +9837,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-reciclador/resource/3677a3ae-3176-4b2b-8289-910ea863b863"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:43:05+00:00",
+     "validated_at": "2026-10-03T00:18:05+00:00",
      "rows": 5586,
      "schema_kind": "declared",
      "error": null,
@@ -8792,7 +9866,9 @@
        "MUNICIPIO": "MUNICÍPIO",
        "TIPO_DE_DESTINACAO": "TIPO_DE_DESTINAÇÃO"
       },
-      "similar_names": null,
+      "similar_names": {
+       "PESO_UNITARIO": "Peso_Unitário(kg)"
+      },
       "declared_fields": 18,
       "inferred_formats": {},
       "errors_by_field": {
@@ -8806,15 +9882,23 @@
      "distributions": [
       {
        "id": "cf841919-5cda-44b9-8aff-e91fb49a100f",
-       "name": "Rapp Pilhas e Baterias - Reciclador",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_RECICLADOR/pilhas_baterias_reciclador.json"
+       "name": "Rapp Pilhas e Baterias - Reciclador",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "bf9c4293-fe2d-40b0-b926-0b233e309e03",
-       "name": "Rapp Pilhas e Baterias - Reciclador",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_RECICLADOR/pilhas_baterias_reciclador.xml"
+       "name": "Rapp Pilhas e Baterias - Reciclador",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -8918,7 +10002,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuoSolidosArmazenador/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:43:10+00:00",
+     "validated_at": "2026-10-03T00:18:09+00:00",
      "rows": 27681,
      "schema_kind": null,
      "error": null,
@@ -8932,15 +10016,75 @@
      "distributions": [
       {
        "id": "d035d8ac-ab8a-4bb2-9120-ba66d3946283",
-       "name": "Resíduos Sólidos – Armazenador",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuoSolidosArmazenador/relatorio.json"
+       "name": "Resíduos Sólidos – Armazenador",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "ano da destinacao",
+        "cnpj armazenamento destinacao",
+        "cnpj da emp ger do residuo",
+        "cnpj do armazenador",
+        "cod residuo",
+        "desc residuo",
+        "qtd armaz enviada p dest final",
+        "raz soc da emp ger do res",
+        "raz soc empresa armaz dest",
+        "razao social do armazenador",
+        "situacao cadastral",
+        "tipo de armazenamento destin"
+       ],
+       "extra": [
+        "anodestinacao",
+        "cnpjarmazenador",
+        "cnpjarmazenamentodestinacao",
+        "codresiduo",
+        "descresiduo",
+        "numcnpjempgeradoraresiduo",
+        "qtdarmazenviadadestfinal",
+        "razaosocialarmazenador",
+        "razaosocialempgeradoraresiduo",
+        "razsocempresaarmazdest",
+        "situacaocadastral",
+        "tipoarmazenamentodestin"
+       ]
       },
       {
        "id": "ef42eb2a-512e-46bd-9b60-1f6f25f78931",
-       "name": "Resíduos Sólidos – Armazenador",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuoSolidosArmazenador/relatorio.xml"
+       "name": "Resíduos Sólidos – Armazenador",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "ano da destinacao",
+        "cnpj armazenamento destinacao",
+        "cnpj da emp ger do residuo",
+        "cnpj do armazenador",
+        "cod residuo",
+        "desc residuo",
+        "qtd armaz enviada p dest final",
+        "raz soc da emp ger do res",
+        "raz soc empresa armaz dest",
+        "razao social do armazenador",
+        "situacao cadastral",
+        "tipo de armazenamento destin"
+       ],
+       "extra": [
+        "anodestinacao",
+        "cnpjarmazenador",
+        "cnpjarmazenamentodestinacao",
+        "codresiduo",
+        "descresiduo",
+        "numcnpjempgeradoraresiduo",
+        "qtdarmazenviadadestfinal",
+        "razaosocialarmazenador",
+        "razaosocialempgeradoraresiduo",
+        "razsocempresaarmazdest",
+        "situacaocadastral",
+        "tipoarmazenamentodestin"
+       ]
       }
      ],
      "schema_files": {
@@ -8964,7 +10108,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuoSolidosDestinador/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:43:11+00:00",
+     "validated_at": "2026-10-03T00:18:12+00:00",
      "rows": 170400,
      "schema_kind": null,
      "error": null,
@@ -8978,15 +10122,79 @@
      "distributions": [
       {
        "id": "7fdde88b-148a-4d31-9679-cc6d2e379675",
-       "name": "Resíduos Sólidos – Destinador",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuoSolidosDestinador/relatorio.json"
+       "name": "Resíduos Sólidos – Destinador",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "ano destinacao",
+        "categoria de atividade",
+        "cnpj do destinador",
+        "cnpj do gerador do residuo",
+        "cod residuo",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "desc residuo",
+        "quant destinada",
+        "raz soc do gerador do residuo",
+        "razao social do destinador",
+        "situacao cadastral",
+        "tipo de destinacao"
+       ],
+       "extra": [
+        "anodestinacao",
+        "categoriaatividade",
+        "cnpjdestinador",
+        "cnpjgeradorresiduo",
+        "codigocategoria",
+        "codigodetalhe",
+        "codresiduo",
+        "descresiduo",
+        "quantdestinada",
+        "razaosocialdestinador",
+        "razaosocialgeradorresiduo",
+        "situacaocadastral",
+        "tipodestinacao"
+       ]
       },
       {
        "id": "cd4db1a8-4028-41c3-b521-c9ada6d3137e",
-       "name": "Resíduos Sólidos – Destinador",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuoSolidosDestinador/relatorio.xml"
+       "name": "Resíduos Sólidos – Destinador",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "ano destinacao",
+        "categoria de atividade",
+        "cnpj do destinador",
+        "cnpj do gerador do residuo",
+        "cod residuo",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "desc residuo",
+        "quant destinada",
+        "raz soc do gerador do residuo",
+        "razao social do destinador",
+        "situacao cadastral",
+        "tipo de destinacao"
+       ],
+       "extra": [
+        "anodestinacao",
+        "categoriaatividade",
+        "cnpjdestinador",
+        "cnpjgeradorresiduo",
+        "codigocategoria",
+        "codigodetalhe",
+        "codresiduo",
+        "descresiduo",
+        "quantdestinada",
+        "razaosocialdestinador",
+        "razaosocialgeradorresiduo",
+        "situacaocadastral",
+        "tipodestinacao"
+       ]
       }
      ],
      "schema_files": {
@@ -9010,7 +10218,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuoSolidosGerador/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:43:13+00:00",
+     "validated_at": "2026-10-03T00:18:54+00:00",
      "rows": 2811397,
      "schema_kind": null,
      "error": null,
@@ -9024,15 +10232,71 @@
      "distributions": [
       {
        "id": "8a2e5e61-e7df-407f-b549-b70e32ace824",
-       "name": "Resíduos Sólidos – Gerador (a partir de 2012)",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuoSolidosGerador/relatorio.json"
+       "name": "Resíduos Sólidos – Gerador (a partir de 2012)",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "ano da geracao",
+        "categoria de atividade",
+        "classificacao residuo",
+        "cnpj do gerador",
+        "cod residuo",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "quantidade gerada",
+        "razao social do gerador",
+        "situacao cadastral",
+        "tipo de residuo"
+       ],
+       "extra": [
+        "anogeracao",
+        "categoriaatividade",
+        "classificacaoresiduo",
+        "cnpjgerador",
+        "codigocategoria",
+        "codigodetalhe",
+        "codresiduo",
+        "quantidadegerada",
+        "razaosocialgerador",
+        "situacaocadastral",
+        "tiporesiduo"
+       ]
       },
       {
        "id": "f3ce8dee-3db9-485e-9a55-0f7f853016b6",
-       "name": "Resíduos Sólidos – Gerador (a partir de 2012)",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuoSolidosGerador/relatorio.xml"
+       "name": "Resíduos Sólidos – Gerador (a partir de 2012)",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "ano da geracao",
+        "categoria de atividade",
+        "classificacao residuo",
+        "cnpj do gerador",
+        "cod residuo",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "quantidade gerada",
+        "razao social do gerador",
+        "situacao cadastral",
+        "tipo de residuo"
+       ],
+       "extra": [
+        "anogeracao",
+        "categoriaatividade",
+        "classificacaoresiduo",
+        "cnpjgerador",
+        "codigocategoria",
+        "codigodetalhe",
+        "codresiduo",
+        "quantidadegerada",
+        "razaosocialgerador",
+        "situacaocadastral",
+        "tiporesiduo"
+       ]
       }
      ],
      "schema_files": {
@@ -9056,7 +10320,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuosSolidos/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:43:34+00:00",
+     "validated_at": "2026-10-03T00:19:14+00:00",
      "rows": 808919,
      "schema_kind": null,
      "error": null,
@@ -9070,15 +10334,95 @@
      "distributions": [
       {
        "id": "243e399b-048f-4dd3-bfa4-ffc46fd66051",
-       "name": "Resíduos Sólidos – Gerador (anterior a 2012)",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuosSolidos/relatorio.json"
+       "name": "Resíduos Sólidos – Gerador (anterior a 2012)",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "ano da geracao do residuo",
+        "categoria de atividade",
+        "classif do residuo nbr 10 004",
+        "cnpj da emp de armazen destin",
+        "cnpj do gerador",
+        "cod residuo",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "efic do sist de tratamento",
+        "finalidade da transferencia",
+        "identif do residuo nbr 10 004",
+        "raz soc emp armazen destin",
+        "razao social do gerador",
+        "situacao cadastral",
+        "tipo de finalidade",
+        "tipo de monit realizado",
+        "tipo de residuo"
+       ],
+       "extra": [
+        "anogeracaoresiduo",
+        "categoriaatividade",
+        "classifresiduonbr10004",
+        "cnpjemparmazenamantodestinacao",
+        "cnpjgerador",
+        "codigocategoria",
+        "codigodetalhe",
+        "codresiduo",
+        "eficsisttratamento",
+        "finalidadetransferencia",
+        "identifresiduonbr10004",
+        "razaosocialemparmazenamantodestinacao",
+        "razaosocialgerador",
+        "situacaocadastral",
+        "tipofinalidade",
+        "tipomonitrealizado",
+        "tiporesiduo"
+       ]
       },
       {
        "id": "bfbe1484-5db2-47ef-8c0b-f1aaa033c8d3",
-       "name": "Resíduos Sólidos – Gerador (anterior a 2012)",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuosSolidos/relatorio.xml"
+       "name": "Resíduos Sólidos – Gerador (anterior a 2012)",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "ano da geracao do residuo",
+        "categoria de atividade",
+        "classif do residuo nbr 10 004",
+        "cnpj da emp de armazen destin",
+        "cnpj do gerador",
+        "cod residuo",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "efic do sist de tratamento",
+        "finalidade da transferencia",
+        "identif do residuo nbr 10 004",
+        "raz soc emp armazen destin",
+        "razao social do gerador",
+        "situacao cadastral",
+        "tipo de finalidade",
+        "tipo de monit realizado",
+        "tipo de residuo"
+       ],
+       "extra": [
+        "anogeracaoresiduo",
+        "categoriaatividade",
+        "classifresiduonbr10004",
+        "cnpjemparmazenamantodestinacao",
+        "cnpjgerador",
+        "codigocategoria",
+        "codigodetalhe",
+        "codresiduo",
+        "eficsisttratamento",
+        "finalidadetransferencia",
+        "identifresiduonbr10004",
+        "razaosocialemparmazenamantodestinacao",
+        "razaosocialgerador",
+        "situacaocadastral",
+        "tipofinalidade",
+        "tipomonitrealizado",
+        "tiporesiduo"
+       ]
       }
      ],
      "schema_files": {
@@ -9102,7 +10446,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuoSolidosTransportador/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:43:43+00:00",
+     "validated_at": "2026-10-03T00:19:54+00:00",
      "rows": 114852,
      "schema_kind": null,
      "error": null,
@@ -9116,15 +10460,47 @@
      "distributions": [
       {
        "id": "f377525d-8dc7-4155-b297-8720fd0d63a5",
-       "name": "Resíduos Sólidos – Transportador",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuoSolidosTransportador/relatorio.json"
+       "name": "Resíduos Sólidos – Transportador",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "cnpj da origem",
+        "cnpj do transportador",
+        "razao social da origem",
+        "razao social do transportador",
+        "situacao cadastral"
+       ],
+       "extra": [
+        "cnpjorigem",
+        "cnpjtransportador",
+        "razaosocialorigem",
+        "razaosocialtransportador",
+        "situacaocadastral"
+       ]
       },
       {
        "id": "8fba5aa8-5bd1-45af-824c-a8d3bdce9ed3",
-       "name": "Resíduos Sólidos – Transportador",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/residuoSolidosTransportador/relatorio.xml"
+       "name": "Resíduos Sólidos – Transportador",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "cnpj da origem",
+        "cnpj do transportador",
+        "razao social da origem",
+        "razao social do transportador",
+        "situacao cadastral"
+       ],
+       "extra": [
+        "cnpjorigem",
+        "cnpjtransportador",
+        "razaosocialorigem",
+        "razaosocialtransportador",
+        "situacaocadastral"
+       ]
       }
      ],
      "schema_files": {
@@ -9177,7 +10553,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/silvicultura/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:43:44+00:00",
+     "validated_at": "2026-10-03T00:20:01+00:00",
      "rows": 27529,
      "schema_kind": null,
      "error": null,
@@ -9191,15 +10567,66 @@
      "distributions": [
       {
        "id": "63c26974-8fe0-4a41-93af-0ccc635aa8e5",
-       "name": "Silvicultura",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/silvicultura/relatorio.json"
+       "name": "Silvicultura",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "ano de corte",
+        "ano do plantio",
+        "area efetivo plantio ha",
+        "no de arvores total",
+        "nome cientifico",
+        "nome popular",
+        "razao social",
+        "situacao cadastral",
+        "unidade de medida",
+        "volume quantidade explorado"
+       ],
+       "extra": [
+        "anocorte",
+        "anoplantio",
+        "areaefetivoplantioha",
+        "nomecientifico",
+        "nomepopular",
+        "numarvorestotal",
+        "razaosocial",
+        "situacaocadastral",
+        "unidademedida",
+        "volquantexplorado"
+       ]
       },
       {
        "id": "6361293c-6412-4d78-81a8-05b94d5d3ac9",
-       "name": "Silvicultura",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/silvicultura/relatorio.xml"
+       "name": "Silvicultura",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "ano de corte",
+        "ano do plantio",
+        "area efetivo plantio ha",
+        "no de arvores total",
+        "nome cientifico",
+        "nome popular",
+        "razao social",
+        "situacao cadastral",
+        "unidade de medida",
+        "volume quantidade explorado"
+       ],
+       "extra": [
+        "anocorte",
+        "anoplantio",
+        "areaefetivoplantioha",
+        "nomecientifico",
+        "nomepopular",
+        "razaosocial",
+        "situacaocadastral",
+        "unidademedida",
+        "volquantexplorado"
+       ]
       }
      ],
      "schema_files": {
@@ -9242,7 +10669,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-autorizacao-de-supressao-de-vegetacao/resource/bd5d10bf-c952-4f96-9ea4-e208e41d18d4"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:43:45+00:00",
+     "validated_at": "2026-10-03T00:20:04+00:00",
      "rows": 31164,
      "schema_kind": "declared",
      "error": null,
@@ -9291,7 +10718,7 @@
        "data_do_tramite": "DATA_DO_TRAMITE",
        "ultima_atualizacao_relatorio": "ULTIMA_ATUALIZACAO_RELATORIO"
       },
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 31,
       "inferred_formats": {},
       "errors_by_field": {
@@ -9314,15 +10741,23 @@
      "distributions": [
       {
        "id": "b4f4c326-fdea-4bf2-b405-168f29d62052",
-       "name": "Autorização de Supressão de Vegetação",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/AutSuprVegetacao/sinaflor-autorizacao-de-supressao-de-vegetacao.json"
+       "name": "Autorização de Supressão de Vegetação",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "6eda003b-cf9d-4e10-b5a9-42d4aae2a169",
-       "name": "Autorização de Supressão de Vegetação",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/AutSuprVegetacao/sinaflor-autorizacao-de-supressao-de-vegetacao.xml"
+       "name": "Autorização de Supressão de Vegetação",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -9347,7 +10782,7 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/aumpf/aumpf.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:43:49+00:00",
+     "validated_at": "2026-10-03T00:20:10+00:00",
      "rows": 38996,
      "schema_kind": null,
      "error": null,
@@ -9361,15 +10796,23 @@
      "distributions": [
       {
        "id": "ccb86b66-abc0-42a7-bcba-3459e3b9a894",
-       "name": "Autorização de Utilização de Matéria-Prima ...",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/aumpf/aumpf.json"
+       "name": "Autorização de Utilização de Matéria-Prima ...",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "2070b210-f8b4-4718-a8a1-49a0dbb89c19",
-       "name": "Autorização de Utilização de Matéria-Prima ...",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/aumpf/aumpf.xml"
+       "name": "Autorização de Utilização de Matéria-Prima ...",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -9398,7 +10841,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-autorizacao-especial/resource/26f5a30e-53d2-4509-b5b3-5e980ae706f1"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:43:52+00:00",
+     "validated_at": "2026-10-03T00:20:17+00:00",
      "rows": 2867,
      "schema_kind": "described",
      "error": null,
@@ -9412,7 +10855,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 23,
       "inferred_formats": {},
       "errors_by_field": {
@@ -9438,15 +10881,23 @@
      "distributions": [
       {
        "id": "c534fef6-d4f0-4500-b7b9-927a200b0e35",
-       "name": "Sinaflor - Autorização Especial",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/AutorizacaoEspecial/SinaflorAutorizacaoEspecial.json"
+       "name": "Sinaflor - Autorização Especial",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "14fad79c-ba76-4940-9094-0838889a0202",
-       "name": "Sinaflor - Autorização Especial",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/AutorizacaoEspecial/SinaflorAutorizacaoEspecial.xml"
+       "name": "Sinaflor - Autorização Especial",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -9578,7 +11029,7 @@
      "dictionary": {
       "name": "Metadados - Corte de Árvores Isoladas",
       "format": "CSV",
-      "method": "name",
+      "method": "header",
       "readable": true,
       "error_kind": null,
       "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/a1f609a7-3bcf-4639-ab86-665214e051d9/resource/1374f568-4a2b-4ff1-b4c2-a39a2477899d/download/sinaflor-corte-de-arvores-isoladas.csv",
@@ -9683,7 +11134,7 @@
      "validated_at": null,
      "rows": null,
      "schema_kind": "declared",
-     "error": "IncompleteJSONError: lexical error: invalid char in json text.\n          a (m³)\", \"NOME_CIENTIFICO\": NaN, \"NOME_POPULAR\": NaN, \"DAP\"\n                     (right here) ------^\n",
+     "error": "IncompleteJSONError: lexical error: invalid char in json text.",
      "encodings": null,
      "distinct_headers": null,
      "conformance": null,
@@ -9824,7 +11275,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-exploracao-de-floresta-plantada/resource/402741a2-8072-4365-b5d8-4dcb915be169"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:44:04+00:00",
+     "validated_at": "2026-10-03T00:20:22+00:00",
      "rows": 16807,
      "schema_kind": "described",
      "error": null,
@@ -9844,7 +11295,10 @@
        "TIPO_EMPREENDIMENTO"
       ],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {
+       "TIPO_DE_EMPREENDIMENTO": "TIPO_EMPREENDIMENTO",
+       "COMPETENCIA_DA_AVALIACAO": "COMPETENCIA_AVALIACAO"
+      },
       "declared_fields": 42,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -9854,15 +11308,23 @@
      "distributions": [
       {
        "id": "8253a4bb-d9f3-42f8-b25b-5a4611b9b9f2",
-       "name": "Exploração de Floresta Plantada",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/ExploracaoFlorestaPlantada/ExploracaoFlorestaPlantada.json"
+       "name": "Exploração de Floresta Plantada",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "a559833c-8379-47b6-9508-75afa71ef0a7",
-       "name": "Exploração de Floresta Plantada",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/ExploracaoFlorestaPlantada/ExploracaoFlorestaPlantada.xml"
+       "name": "Exploração de Floresta Plantada",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -9906,7 +11368,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-pmfs-amazonia-legal/resource/8ddd5dd9-98ce-41ee-84b1-11e8b4738707"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:44:08+00:00",
+     "validated_at": "2026-10-03T00:20:28+00:00",
      "rows": 10060,
      "schema_kind": "declared",
      "error": null,
@@ -9964,7 +11426,7 @@
        "data_do_tramite": "DATA_DO_TRAMITE",
        "ultima_atualizacao_relatorio": "ULTIMA_ATUALIZACAO_RELATORIO"
       },
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 43,
       "inferred_formats": {},
       "errors_by_field": {
@@ -9981,15 +11443,23 @@
      "distributions": [
       {
        "id": "6a756194-3bb4-4149-8348-0ff457ed45ff",
-       "name": "PMFS Amazônia Legal",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/pmfs/AmazoniaLegal/pmfsAmazoniaLegal.json"
+       "name": "PMFS Amazônia Legal",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "fd230fd7-7d29-45f3-ac19-58a038a19a2f",
-       "name": "PMFS Amazônia Legal",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/pmfs/AmazoniaLegal/pmfsAmazoniaLegal.xml"
+       "name": "PMFS Amazônia Legal",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -10173,7 +11643,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-poa-amazonia-legal/resource/df734a37-d8a7-4f10-ae00-491a46b3e070"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:44:14+00:00",
+     "validated_at": "2026-10-03T00:20:36+00:00",
      "rows": 162335,
      "schema_kind": "declared",
      "error": null,
@@ -10229,7 +11699,7 @@
        "data_do_tramite": "DATA_DO_TRAMITE",
        "ultima_atualizacao_relatorio": "ULTIMA_ATUALIZACAO_RELATORIO"
       },
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 39,
       "inferred_formats": {},
       "errors_by_field": {
@@ -10246,15 +11716,23 @@
      "distributions": [
       {
        "id": "e1c34194-677f-4f9a-9192-01a1fbafa55f",
-       "name": "POA Amazônia Legal",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/poaAmazoniaLegal/sinaflor-poa-amazonia-legal.json"
+       "name": "POA Amazônia Legal",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "721007b2-c302-44d1-8a85-1c7b6870ea07",
-       "name": "POA Amazônia Legal",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/poaAmazoniaLegal/sinaflor-poa-amazonia-legal.xml"
+       "name": "POA Amazônia Legal",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -10298,7 +11776,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-poa-outros-biomas/resource/c48fa320-edde-454f-85b3-c0f2fbf31f4c"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:44:24+00:00",
+     "validated_at": "2026-10-03T00:20:49+00:00",
      "rows": 2786,
      "schema_kind": "declared",
      "error": null,
@@ -10352,7 +11830,7 @@
        "data_do_tramite": "DATA_DO_TRAMITE",
        "ultima_atualizacao_relatorio": "ULTIMA_ATUALIZACAO_RELATORIO"
       },
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 39,
       "inferred_formats": {
        "volume": {
@@ -10380,15 +11858,23 @@
      "distributions": [
       {
        "id": "16a06598-3eee-44cb-89a6-ea80f384b59d",
-       "name": "POA Outros Biomas",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/poa/OutrosBiomas/poaOutrosBiomas.json"
+       "name": "POA Outros Biomas",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "ecee0fc1-3e5c-4afe-a9e0-8d124c74148c",
-       "name": "POA Outros Biomas",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/poa/OutrosBiomas/poaOutrosBiomas.xml"
+       "name": "POA Outros Biomas",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -10418,7 +11904,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-responsavel-tecnico/resource/cf25bc77-14d7-47ca-9e61-4e45f5cdf2b9"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:44:26+00:00",
+     "validated_at": "2026-10-03T00:20:54+00:00",
      "rows": 26867,
      "schema_kind": "described",
      "error": null,
@@ -10432,7 +11918,7 @@
       "missing": [],
       "undeclared": [],
       "spelling": {},
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 11,
       "inferred_formats": {},
       "errors_by_field": {}
@@ -10442,15 +11928,23 @@
      "distributions": [
       {
        "id": "91a3d83a-cce6-4d83-a9d8-619d26b2b1c6",
-       "name": "Responsável Técnico",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/ResponsavelTecnico/SinaflorResponsavelTecnico.json"
+       "name": "Responsável Técnico",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "7d350585-40ec-46c6-aae6-8605296a56c0",
-       "name": "Responsável Técnico",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/ResponsavelTecnico/SinaflorResponsavelTecnico.xml"
+       "name": "Responsável Técnico",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -10702,7 +12196,7 @@
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/CITES/licencas.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:44:44+00:00",
+     "validated_at": "2026-10-03T00:20:59+00:00",
      "rows": 258028,
      "schema_kind": null,
      "error": null,
@@ -10716,15 +12210,23 @@
      "distributions": [
       {
        "id": "ae08f9a3-7517-4577-936d-4bfa3d7d82bb",
-       "name": "Siscites",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/CITES/licencas.json"
+       "name": "Siscites",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "ef3ac234-169f-4b9a-b481-647d38bb6eb1",
-       "name": "Siscites",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/CITES/licencas.xml"
+       "name": "Siscites",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       }
      ],
      "schema_files": {
@@ -10748,7 +12250,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/sisfaunaPartesProdutos/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:44:52+00:00",
+     "validated_at": "2026-10-03T00:21:09+00:00",
      "rows": 75171,
      "schema_kind": null,
      "error": null,
@@ -10762,15 +12264,75 @@
      "distributions": [
       {
        "id": "d0abcba4-c66a-4b8d-9163-54e7ee041f2d",
-       "name": "Sisfauna - Comercialização de Partes & Produtos",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/sisfaunaPartesProdutos/relatorio.json"
+       "name": "Sisfauna - Comercialização de Partes & Produtos",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "entradas producao",
+        "estoque anterior",
+        "estoque atual",
+        "nome cientifico",
+        "nome popular",
+        "razao social",
+        "saidas comercializacao",
+        "situacao cadastral",
+        "unidade de medida"
+       ],
+       "extra": [
+        "categoriaatividade",
+        "codigocategoria",
+        "codigodetalhe",
+        "entradasproducao",
+        "estoqueanterior",
+        "estoqueatual",
+        "nomecientifico",
+        "nomepopular",
+        "razaosocial",
+        "saidascomercializacao",
+        "situacaocadastral",
+        "unidademedida"
+       ]
       },
       {
        "id": "0380087f-9150-4cd0-9ea4-9ece0fd6a69d",
-       "name": "Sisfauna - Comercialização de Partes & Produtos",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/sisfaunaPartesProdutos/relatorio.xml"
+       "name": "Sisfauna - Comercialização de Partes & Produtos",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "entradas producao",
+        "estoque anterior",
+        "estoque atual",
+        "nome cientifico",
+        "nome popular",
+        "razao social",
+        "saidas comercializacao",
+        "situacao cadastral",
+        "unidade de medida"
+       ],
+       "extra": [
+        "categoriaatividade",
+        "codigocategoria",
+        "codigodetalhe",
+        "entradasproducao",
+        "estoqueanterior",
+        "estoqueatual",
+        "nomecientifico",
+        "nomepopular",
+        "razaosocial",
+        "saidascomercializacao",
+        "situacaocadastral",
+        "unidademedida"
+       ]
       }
      ],
      "schema_files": {
@@ -10794,7 +12356,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/sisfaunaPlantelEstimado/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:44:53+00:00",
+     "validated_at": "2026-10-03T00:21:47+00:00",
      "rows": 5663,
      "schema_kind": null,
      "error": null,
@@ -10808,15 +12370,99 @@
      "distributions": [
       {
        "id": "ba1292b3-4561-455b-b3f5-f0fde4e7ba71",
-       "name": "Sisfauna - Plantel Estimado",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/sisfaunaPlantelEstimado/relatorio.json"
+       "name": "Sisfauna - Plantel Estimado",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "abates vendas",
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "furtos roubos",
+        "metodo de contagem",
+        "nome cientifico",
+        "nome popular",
+        "ovos coletados",
+        "plantel anterior",
+        "plantel esperado",
+        "plantel est contagem atual",
+        "razao social",
+        "situacao cadastral",
+        "total de entradas",
+        "total de saidas",
+        "trans saidas",
+        "transf entradas"
+       ],
+       "extra": [
+        "abatesvendas",
+        "categoriaatividade",
+        "codigocategoria",
+        "codigodetalhe",
+        "furtosroubos",
+        "metodocontagem",
+        "nomecientifico",
+        "nomepopular",
+        "ovoscoletados",
+        "plantelanterior",
+        "plantelesperado",
+        "plantelestcontagematual",
+        "razaosocial",
+        "situacaocadastral",
+        "totalentradas",
+        "totalsaidas",
+        "transfentradas",
+        "transsaidas"
+       ]
       },
       {
        "id": "2f840008-6acf-48bb-a0cd-deda72bafb81",
-       "name": "Sisfauna - Plantel Estimado",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/sisfaunaPlantelEstimado/relatorio.xml"
+       "name": "Sisfauna - Plantel Estimado",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "abates vendas",
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "furtos roubos",
+        "metodo de contagem",
+        "nome cientifico",
+        "nome popular",
+        "ovos coletados",
+        "plantel anterior",
+        "plantel esperado",
+        "plantel est contagem atual",
+        "razao social",
+        "situacao cadastral",
+        "total de entradas",
+        "total de saidas",
+        "trans saidas",
+        "transf entradas"
+       ],
+       "extra": [
+        "abatesvendas",
+        "categoriaatividade",
+        "codigocategoria",
+        "codigodetalhe",
+        "furtosroubos",
+        "metodocontagem",
+        "nomecientifico",
+        "nomepopular",
+        "ovoscoletados",
+        "plantelanterior",
+        "plantelesperado",
+        "plantelestcontagematual",
+        "razaosocial",
+        "situacaocadastral",
+        "totalentradas",
+        "totalsaidas",
+        "transfentradas",
+        "transsaidas"
+       ]
       }
      ],
      "schema_files": {
@@ -10840,7 +12486,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/sisfaunaPlantelExato/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:44:54+00:00",
+     "validated_at": "2026-10-03T00:21:50+00:00",
      "rows": 173747,
      "schema_kind": null,
      "error": null,
@@ -10854,15 +12500,107 @@
      "distributions": [
       {
        "id": "fe08e051-c869-404c-8cc6-f2127e970946",
-       "name": "Sisfauna - Plantel Exato",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/sisfaunaPlantelExato/relatorio.json"
+       "name": "Sisfauna - Plantel Exato",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "femeas plantel anterior",
+        "femeas plantel atual",
+        "furtos roubos",
+        "indet plantel anterior",
+        "indeterminado plantel atual",
+        "machos plantel anterior",
+        "machos plantel atual",
+        "nome cientifico",
+        "nome popular",
+        "razao social",
+        "reint solturas",
+        "situacao cadastral",
+        "total de entradas",
+        "total de saidas",
+        "total geral",
+        "trans saidas",
+        "transf entradas"
+       ],
+       "extra": [
+        "categoriaatividade",
+        "codigocategoria",
+        "codigodetalhe",
+        "femeasplantelanterior",
+        "femeasplantelatual",
+        "furtosroubos",
+        "indeterminadoplantelanterior",
+        "indeterminadoplantelatual",
+        "machosplantelanterior",
+        "machosplantelatual",
+        "nomecientifico",
+        "nomepopular",
+        "razaosocial",
+        "reintsolturas",
+        "situacaocadastral",
+        "totalentradas",
+        "totalgeral",
+        "totalsaidas",
+        "transfentradas",
+        "transsaidas"
+       ]
       },
       {
        "id": "d72a5680-fcd2-46c8-b9ec-58e0a352c1e1",
-       "name": "Sisfauna - Plantel Exato",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/sisfaunaPlantelExato/relatorio.xml"
+       "name": "Sisfauna - Plantel Exato",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "femeas plantel anterior",
+        "femeas plantel atual",
+        "furtos roubos",
+        "indet plantel anterior",
+        "indeterminado plantel atual",
+        "machos plantel anterior",
+        "machos plantel atual",
+        "nome cientifico",
+        "nome popular",
+        "razao social",
+        "reint solturas",
+        "situacao cadastral",
+        "total de entradas",
+        "total de saidas",
+        "total geral",
+        "trans saidas",
+        "transf entradas"
+       ],
+       "extra": [
+        "categoriaatividade",
+        "codigocategoria",
+        "codigodetalhe",
+        "femeasplantelanterior",
+        "femeasplantelatual",
+        "furtosroubos",
+        "indeterminadoplantelanterior",
+        "indeterminadoplantelatual",
+        "machosplantelanterior",
+        "machosplantelatual",
+        "nomecientifico",
+        "nomepopular",
+        "razaosocial",
+        "reintsolturas",
+        "situacaocadastral",
+        "totalentradas",
+        "totalgeral",
+        "totalsaidas",
+        "transfentradas",
+        "transsaidas"
+       ]
       }
      ],
      "schema_files": {
@@ -10905,7 +12643,7 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/sisfogo-roi/resource/a3f02639-ee4d-4db6-8fe5-c49193ded2f0"
      },
      "status": "ok",
-     "validated_at": "2026-10-01T19:44:56+00:00",
+     "validated_at": "2026-10-03T00:21:55+00:00",
      "rows": 418525,
      "schema_kind": "declared",
      "error": null,
@@ -10961,7 +12699,7 @@
        "observacao": "OBSERVACAO",
        "arquivo": "ARQUIVO"
       },
-      "similar_names": null,
+      "similar_names": {},
       "declared_fields": 38,
       "inferred_formats": {
        "data/hora deteccao": {
@@ -10993,15 +12731,27 @@
      "distributions": [
       {
        "id": "576d258e-63ef-4342-988a-1e9c4fcd0a5b",
-       "name": "ROI formato JSON",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SISFOGO/ROI.json"
+       "name": "ROI formato JSON",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": true,
+       "missing": [],
+       "extra": []
       },
       {
        "id": "989f3fc5-8b38-413f-91ee-77f7499be839",
-       "name": "ROI formato xml",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SISFOGO/ROI.xml"
+       "name": "ROI formato xml",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "data hora inicio fogo"
+       ],
+       "extra": [
+        "data hota inicio fogo"
+       ]
       }
      ],
      "schema_files": {
@@ -11064,7 +12814,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/transpProdQuiPerigCombustivel/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:45:22+00:00",
+     "validated_at": "2026-10-03T00:22:24+00:00",
      "rows": 3929301,
      "schema_kind": null,
      "error": null,
@@ -11078,15 +12828,71 @@
      "distributions": [
       {
        "id": "7a867b36-f874-41af-bd9f-86dfec069a8d",
-       "name": "Transporte de Produtos Químicos Perigosos ou ...",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/transpProdQuiPerigCombustivel/relatorio.json"
+       "name": "Transporte de Produtos Químicos Perigosos ou ...",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "municipio destino",
+        "municipio origem",
+        "plano de emergencia",
+        "quantidade transportada",
+        "razao social",
+        "situacao cadastral",
+        "tipo de armazenamento",
+        "tipo de transporte",
+        "uf destino",
+        "uf origem",
+        "unidade de medida"
+       ],
+       "extra": [
+        "municipiodestino",
+        "municipioorigem",
+        "planoemergencia",
+        "quantidadetransportada",
+        "razaosocial",
+        "situacaocadastral",
+        "tipoarmazenamento",
+        "tipotransporte",
+        "ufdestino",
+        "uforigem",
+        "unidademedida"
+       ]
       },
       {
        "id": "068ad700-fdce-4ea0-8b1b-34f56f37fec8",
-       "name": "Transporte de Produtos Químicos Perigosos ou ...",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/transpProdQuiPerigCombustivel/relatorio.xml"
+       "name": "Transporte de Produtos Químicos Perigosos ou ...",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "municipio destino",
+        "municipio origem",
+        "plano de emergencia",
+        "quantidade transportada",
+        "razao social",
+        "situacao cadastral",
+        "tipo de armazenamento",
+        "tipo de transporte",
+        "uf destino",
+        "uf origem",
+        "unidade de medida"
+       ],
+       "extra": [
+        "municipiodestino",
+        "municipioorigem",
+        "planoemergencia",
+        "quantidadetransportada",
+        "razaosocial",
+        "situacaocadastral",
+        "tipoarmazenamento",
+        "tipotransporte",
+        "ufdestino",
+        "uforigem",
+        "unidademedida"
+       ]
       }
      ],
      "schema_files": {
@@ -11110,7 +12916,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/unidadePoluidora/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:45:52+00:00",
+     "validated_at": "2026-10-03T00:22:43+00:00",
      "rows": 33192,
      "schema_kind": null,
      "error": null,
@@ -11124,15 +12930,67 @@
      "distributions": [
       {
        "id": "55ff556f-c52b-4a6b-bc38-9ae7756a323a",
-       "name": "Unidade Poluidora",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/unidadePoluidora/relatorio.json"
+       "name": "Unidade Poluidora",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "capacidade nominal",
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "equipamento controle",
+        "fonte poluidora",
+        "funcionamento diario",
+        "possui chamine",
+        "razao social",
+        "situacao cadastral"
+       ],
+       "extra": [
+        "capacidadenominal",
+        "categoriaatividade",
+        "codigocategoria",
+        "codigodetalhe",
+        "equipamentocontrole",
+        "fontepoluidora",
+        "funcionamentodiario",
+        "possuichamine",
+        "razaosocial",
+        "situacaocadastral"
+       ]
       },
       {
        "id": "0f4a25a0-a5e4-431a-8e5e-42bfe60de75a",
-       "name": "Unidade Poluidora",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/unidadePoluidora/relatorio.xml"
+       "name": "Unidade Poluidora",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "capacidade nominal",
+        "categoria de atividade",
+        "codigo da categoria",
+        "codigo do detalhe",
+        "equipamento controle",
+        "fonte poluidora",
+        "funcionamento diario",
+        "possui chamine",
+        "razao social",
+        "situacao cadastral"
+       ],
+       "extra": [
+        "capacidadenominal",
+        "categoriaatividade",
+        "codigocategoria",
+        "codigodetalhe",
+        "equipamentocontrole",
+        "fontepoluidora",
+        "funcionamentodiario",
+        "possuichamine",
+        "razaosocial",
+        "situacaocadastral"
+       ]
       }
      ],
      "schema_files": {
@@ -11228,7 +13086,7 @@
      "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/viasDespavimentadas/relatorio.csv",
      "dictionary": null,
      "status": "ok",
-     "validated_at": "2026-10-01T19:45:53+00:00",
+     "validated_at": "2026-10-03T00:22:52+00:00",
      "rows": 13651,
      "schema_kind": null,
      "error": null,
@@ -11242,15 +13100,51 @@
      "distributions": [
       {
        "id": "4325cdd3-5719-4db4-be57-f30e5c73da7a",
-       "name": "Vias Despavimentadas",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/viasDespavimentadas/relatorio.json"
+       "name": "Vias Despavimentadas",
+       "status": "ok",
+       "read_as": "json",
+       "same_columns": false,
+       "missing": [
+        "freq de irrigacao por dia",
+        "granulom media do sedimento",
+        "no dias que houve irrigacao",
+        "razao social",
+        "situacao cadastral",
+        "vias nao pavim empreendimento"
+       ],
+       "extra": [
+        "freqirrigacaopordia",
+        "granulommediasedimento",
+        "numdiashouveirrigacao",
+        "razaosocial",
+        "situacaocadastral",
+        "viasnaopavimeempreendimento"
+       ]
       },
       {
        "id": "d8e98ba0-640b-44e6-8411-42e1c3aa5a1f",
-       "name": "Vias Despavimentadas",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/viasDespavimentadas/relatorio.xml"
+       "name": "Vias Despavimentadas",
+       "status": "ok",
+       "read_as": "xml",
+       "same_columns": false,
+       "missing": [
+        "freq de irrigacao por dia",
+        "granulom media do sedimento",
+        "no dias que houve irrigacao",
+        "razao social",
+        "situacao cadastral",
+        "vias nao pavim empreendimento"
+       ],
+       "extra": [
+        "freqirrigacaopordia",
+        "granulommediasedimento",
+        "numdiashouveirrigacao",
+        "razaosocial",
+        "situacaocadastral",
+        "viasnaopavimeempreendimento"
+       ]
       }
      ],
      "schema_files": {
@@ -11665,28 +13559,6 @@
    "detail": "zip without tables (first entries: ['ADA_atoDeclaratorio_2026.html', 'ADA_atoDeclaratorio_2025.html', 'ADA_atoDeclaratorio_2024.html', 'ADA_atoDeclaratorio_2023.html', 'ADA_atoDeclaratorio_2022.html']"
   },
   {
-   "dataset": "dof-transportes-de-produtos-florestais",
-   "title": "DOF - Transportes de Produtos Florestais",
-   "file": "DOF - Transportes de Produtos Florestais",
-   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
-   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/DOF/DOFTransportes/DOFTransportes_json.zip",
-   "host": "stibamadadosabertosprd.blob.core.windows.net",
-   "status": "error",
-   "reason": "batch time limit",
-   "detail": "did not finish within the batch time limit"
-  },
-  {
-   "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
-   "title": "DOF - Trechos e Veículos de Transportes Florestais (Detalhes)",
-   "file": "Detalhes de Trechos e Veículos de Transportes ...",
-   "id": "21e21d34-b71c-4f41-8ad3-ee5743fb8e00",
-   "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/DOF/DOFTrechos/csv.zip",
-   "host": "stibamadadosabertosprd.blob.core.windows.net",
-   "status": "not-tabular",
-   "reason": "not-a-table",
-   "detail": "zip without CSV members (first entries: ['2007.zip', '2008.zip', '2009.zip', '2010.zip', '2011.zip'])"
-  },
-  {
    "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b",
    "title": "Fiscalização – termo de destruição ou inutilização (série A e B)",
    "file": "Espécime destruído",
@@ -11827,7 +13699,7 @@
    "host": "stibamadadosabertosprd.blob.core.windows.net",
    "status": "error",
    "reason": "other",
-   "detail": "IncompleteJSONError: lexical error: invalid char in json text.\n          a (m³)\", \"NOME_CIENTIFICO\": NaN, \"NOME_POPULAR\": NaN, \"DAP\"\n                     (right here) ------^\n"
+   "detail": "IncompleteJSONError: lexical error: invalid char in json text."
   },
   {
    "dataset": "sinaflor-empreendimentos-de-base-florestal",
@@ -11984,6 +13856,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Nome/Razão Social do Remetente",
+   "column": "NOME_RAZAO_SOCIAL_REMETENTE",
+   "schema_kind": "described",
+   "similarity": 0.9
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Nome/Razão Social do Remetente",
    "column": "NOME_RAZAO_SOCIAL_REMETENTE",
    "schema_kind": "described",
@@ -12343,6 +14225,16 @@
    "dataset": "dof-transportes-de-produtos-florestais",
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
+   "declared": "CPF/CNPJ do Destinatário",
+   "column": "CPF_CNPJ_DESTINATARIO",
+   "schema_kind": "described",
+   "similarity": 0.875
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
    "id": "f89e36de-38a6-41b0-8c46-556cbbb28895",
    "declared": "Data da Última Transação",
    "column": "DATA_ULTIMA_TRANSACAO",
@@ -12354,6 +14246,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Data da Última Transação",
+   "column": "DATA_ULTIMA_TRANSACAO",
+   "schema_kind": "described",
+   "similarity": 0.875
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Data da Última Transação",
    "column": "DATA_ULTIMA_TRANSACAO",
    "schema_kind": "described",
@@ -12374,6 +14276,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Valor Unitário (R$)",
+   "column": "VALOR_UNITARIO",
+   "schema_kind": "described",
+   "similarity": 0.875
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Valor Unitário (R$)",
    "column": "VALOR_UNITARIO",
    "schema_kind": "described",
@@ -12413,6 +14325,16 @@
    "dataset": "dof-transportes-de-produtos-florestais",
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
+   "declared": "Validade Inicial do DOF",
+   "column": "VALIDADE_INICIAL_DOF",
+   "schema_kind": "described",
+   "similarity": 0.87
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
    "id": "f89e36de-38a6-41b0-8c46-556cbbb28895",
    "declared": "Órgão Emissor da Autesp",
    "column": "ORGAO_EMISSOR_AUTESP",
@@ -12424,6 +14346,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Órgão Emissor da Autesp",
+   "column": "ORGAO_EMISSOR_AUTESP",
+   "schema_kind": "described",
+   "similarity": 0.87
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Órgão Emissor da Autesp",
    "column": "ORGAO_EMISSOR_AUTESP",
    "schema_kind": "described",
@@ -12444,6 +14376,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Órgão Emissor da Autex",
+   "column": "ORGAO_EMISSOR_AUTEX",
+   "schema_kind": "described",
+   "similarity": 0.864
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Órgão Emissor da Autex",
    "column": "ORGAO_EMISSOR_AUTEX",
    "schema_kind": "described",
@@ -12483,6 +14425,16 @@
    "dataset": "dof-transportes-de-produtos-florestais",
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
+   "declared": "CPF/CNPJ do Remetente",
+   "column": "CPF_CNPJ_REMETENTE",
+   "schema_kind": "described",
+   "similarity": 0.857
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
    "id": "f89e36de-38a6-41b0-8c46-556cbbb28895",
    "declared": "Validade Final do DOF",
    "column": "VALIDADE_FINAL_DOF",
@@ -12494,6 +14446,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Validade Final do DOF",
+   "column": "VALIDADE_FINAL_DOF",
+   "schema_kind": "described",
+   "similarity": 0.857
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Validade Final do DOF",
    "column": "VALIDADE_FINAL_DOF",
    "schema_kind": "described",
@@ -12514,6 +14476,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Longitude do Destino",
+   "column": "LONGITUDE_DESTINO",
+   "schema_kind": "described",
+   "similarity": 0.85
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Longitude do Destino",
    "column": "LONGITUDE_DESTINO",
    "schema_kind": "described",
@@ -12534,6 +14506,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Município de Destino",
+   "column": "MUNICIPIO_DESTINO",
+   "schema_kind": "described",
+   "similarity": 0.85
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Município de Destino",
    "column": "MUNICIPIO_DESTINO",
    "schema_kind": "described",
@@ -12554,6 +14536,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Nº da Autorização Original",
+   "column": "NUM_AUTORIZACAO_ORIGINAL",
+   "schema_kind": "described",
+   "similarity": 0.846
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Nº da Autorização Original",
    "column": "NUM_AUTORIZACAO_ORIGINAL",
    "schema_kind": "described",
@@ -12613,6 +14605,16 @@
    "dataset": "dof-transportes-de-produtos-florestais",
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
+   "declared": "CTF do Destinatário",
+   "column": "CTF_DESTINATARIO",
+   "schema_kind": "described",
+   "similarity": 0.842
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
    "id": "f89e36de-38a6-41b0-8c46-556cbbb28895",
    "declared": "Data da Homologação",
    "column": "DATA_HOMOLOGACAO",
@@ -12624,6 +14626,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Data da Homologação",
+   "column": "DATA_HOMOLOGACAO",
+   "schema_kind": "described",
+   "similarity": 0.842
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Data da Homologação",
    "column": "DATA_HOMOLOGACAO",
    "schema_kind": "described",
@@ -12644,6 +14656,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Latitude do Destino",
+   "column": "LATITUDE_DESTINO",
+   "schema_kind": "described",
+   "similarity": 0.842
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Latitude do Destino",
    "column": "LATITUDE_DESTINO",
    "schema_kind": "described",
@@ -12664,6 +14686,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Longitude de Origem",
+   "column": "LONGITUDE_ORIGEM",
+   "schema_kind": "described",
+   "similarity": 0.842
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Longitude de Origem",
    "column": "LONGITUDE_ORIGEM",
    "schema_kind": "described",
@@ -12684,6 +14716,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Município de Origem",
+   "column": "MUNICIPIO_ORIGEM",
+   "schema_kind": "described",
+   "similarity": 0.842
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Município de Origem",
    "column": "MUNICIPIO_ORIGEM",
    "schema_kind": "described",
@@ -12704,6 +14746,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Órgão Emissor da DI",
+   "column": "ORGAO_EMISSOR_DI",
+   "schema_kind": "described",
+   "similarity": 0.842
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Órgão Emissor da DI",
    "column": "ORGAO_EMISSOR_DI",
    "schema_kind": "described",
@@ -12763,6 +14815,16 @@
    "dataset": "dof-transportes-de-produtos-florestais",
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
+   "declared": "Latitude de Origem",
+   "column": "LATITUDE_ORIGEM",
+   "schema_kind": "described",
+   "similarity": 0.833
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
    "id": "f89e36de-38a6-41b0-8c46-556cbbb28895",
    "declared": "Município do Porto",
    "column": "MUNICIPIO_PORTO",
@@ -12774,6 +14836,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "Município do Porto",
+   "column": "MUNICIPIO_PORTO",
+   "schema_kind": "described",
+   "similarity": 0.833
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "Município do Porto",
    "column": "MUNICIPIO_PORTO",
    "schema_kind": "described",
@@ -12796,6 +14868,26 @@
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
    "declared": "Rota do Transporte",
    "column": "ROTA_TRANSPORTE",
+   "schema_kind": "described",
+   "similarity": 0.833
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
+   "declared": "Rota do Transporte",
+   "column": "ROTA_TRANSPORTE",
+   "schema_kind": "described",
+   "similarity": 0.833
+  },
+  {
+   "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
+   "title": "DOF - Trechos e Veículos de Transportes Florestais (Detalhes)",
+   "file": "Detalhes de Trechos e Veículos de Transportes ...",
+   "id": "21e21d34-b71c-4f41-8ad3-ee5743fb8e00",
+   "declared": "Tipo de Transporte",
+   "column": "TIPO_TRANSPORTE",
    "schema_kind": "described",
    "similarity": 0.833
   },
@@ -12900,6 +14992,26 @@
    "similarity": 0.812
   },
   {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
+   "declared": "CTF do Remetente",
+   "column": "CTF_REMETENTE",
+   "schema_kind": "described",
+   "similarity": 0.812
+  },
+  {
+   "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
+   "title": "DOF - Trechos e Veículos de Transportes Florestais (Detalhes)",
+   "file": "Detalhes de Trechos e Veículos de Transportes ...",
+   "id": "21e21d34-b71c-4f41-8ad3-ee5743fb8e00",
+   "declared": "Número do Trecho",
+   "column": "NUMERO_TRECHO",
+   "schema_kind": "described",
+   "similarity": 0.812
+  },
+  {
    "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
    "title": "DOF - Trechos e Veículos de Transportes Florestais (Detalhes)",
    "file": "Detalhes de Trechos e Veículos de Transportes ...",
@@ -12974,6 +15086,16 @@
    "title": "DOF - Transportes de Produtos Florestais",
    "file": "DOF - Transportes de Produtos Florestais",
    "id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+   "declared": "País de Destino",
+   "column": "PAIS_DESTINO",
+   "schema_kind": "described",
+   "similarity": 0.8
+  },
+  {
+   "dataset": "dof-transportes-de-produtos-florestais",
+   "title": "DOF - Transportes de Produtos Florestais",
+   "file": "DOF - Transportes de Produtos Florestais",
+   "id": "a7fe3ed9-8981-495a-9f26-63351422e700",
    "declared": "País de Destino",
    "column": "PAIS_DESTINO",
    "schema_kind": "described",
@@ -13072,6 +15194,38 @@
    "fixed": 0,
    "broken": 0,
    "new_files": 91,
+   "gone_files": 0,
+   "gone_total": 0,
+   "drift_observed": 0,
+   "drift_declared": 0
+  },
+  {
+   "at": "2026-10-02T22:15:46+00:00",
+   "report_at": "2026-10-03T00:23:27+00:00",
+   "commit": "246cfe2",
+   "files": 195,
+   "read": 172,
+   "checked": 111,
+   "conform": 39,
+   "l1_rate": 0.3514,
+   "not_downloaded": 22,
+   "levels": [
+    71,
+    49,
+    75,
+    0,
+    0
+   ],
+   "dataset_levels": [
+    44,
+    13,
+    20,
+    0,
+    0
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "new_files": 0,
    "gone_files": 0,
    "gone_total": 0,
    "drift_observed": 0,
