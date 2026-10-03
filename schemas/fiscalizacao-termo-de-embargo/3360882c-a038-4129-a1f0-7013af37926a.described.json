@@ -1,0 +1,60 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "any",
+   "description": "Chave que identifica de forma única o termo cadastrado no Sistema de Cadastro, Arrecadação e Fiscalização (Sicafi).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "SEQ_ANEXO_TAD",
+   "type": "any",
+   "description": "Ordem de registro dos anexos ou chave que identifica a evidência registrada no sistema AIe.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NUM_ANEXO_TAD",
+   "type": "any",
+   "description": "Número de identificação do anexo ou localização no processo administrativo.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "TIPO_ANEXO",
+   "type": "any",
+   "description": "Tipo de anexo: documento; mapa; foto; croqui; imagem.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DES_ANEXO_TAD",
+   "type": "any",
+   "description": "Descrição do anexo ou evidência.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NO_ARQUIVIO_EVIDENCIA",
+   "type": "any",
+   "description": "Nome do arquivo da evidência gerado pelo aplicativo de fiscalização.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "any",
+   "description": "Data e horário referente à última atualização do recurso no portal de dados abertos (formato ISO 8601).",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "described",
+  "source": {
+   "kind": "description",
+   "resource_id": "3360882c-a038-4129-a1f0-7013af37926a"
+  }
+ }
+}

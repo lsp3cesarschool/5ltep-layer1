@@ -1,0 +1,269 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "number",
+   "description": "Chave primária que identifica o termo de fiscalização;",
+   "declaredType": "float"
+  },
+  {
+   "name": "STATUS_FORMULARIO",
+   "type": "string",
+   "description": "Situação atual do formulário: Lavrado; Cancelado; Substituído por outro; Excluído; Extraviado; Danificado; Duplicado;",
+   "declaredType": "string"
+  },
+  {
+   "name": "SIT_CANCELADO",
+   "type": "string",
+   "description": "Indica se o termo encontra-se cancelado: S (Sim); N (Não);",
+   "declaredType": "string"
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo juntamente com a série;",
+   "declaredType": "string"
+  },
+  {
+   "name": "SER_TAD",
+   "type": "string",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo juntamente com o número;",
+   "declaredType": "string"
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "description": "Código original do termo impresso, cadastro manualmente na página da web do Sistema do Auto de Infração Eletrônico (AIe).",
+   "declaredType": "string"
+  },
+  {
+   "name": "DAT_TAD",
+   "type": "datetime",
+   "description": "Data em que o termo foi lavrado (ISO 8601);",
+   "declaredType": "datatime"
+  },
+  {
+   "name": "DAT_IMPRESSAO",
+   "type": "datetime",
+   "description": "Data em que o termo foi impresso no aparelho PDA (ISO 8601);",
+   "declaredType": "datatime"
+  },
+  {
+   "name": "NUM_PESSOA_AUTUADA",
+   "type": "number",
+   "description": "Número de registro da pessoa no banco de dados do Ibama;",
+   "declaredType": "float"
+  },
+  {
+   "name": "NOME_PESSOA_AUTUADA",
+   "type": "number",
+   "description": "Nome da pessoa responsável pelo bem destruído;",
+   "declaredType": "float"
+  },
+  {
+   "name": "CPF_CNPJ_PESSOA_AUTUADA",
+   "type": "number",
+   "description": "Número de Cadastro Nacional de Pessoa Jurídica (CNPJ) ou Cadastro de Pessoa Física (CPF) da pessoa responsável pelo bem destruído;",
+   "declaredType": "numero"
+  },
+  {
+   "name": "NUM_PROCESSO",
+   "type": "number",
+   "description": "Número do processo administrativo do Ibama em que será processada a destruição;",
+   "declaredType": "numero"
+  },
+  {
+   "name": "DES_TAD",
+   "type": "string",
+   "description": "Descrição das circunstâncias e normas que fundamentaram a aplicação da medida;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DS_INFORMACOES_COMPLEMENTARES",
+   "type": "string",
+   "description": "Observações complementares;",
+   "declaredType": "string"
+  },
+  {
+   "name": "COD_MUNICIPIO",
+   "type": "number",
+   "description": "Código do município (IBGE) referente ao local da destruição;",
+   "declaredType": "numero"
+  },
+  {
+   "name": "NOM_MUNICIPIO",
+   "type": "string",
+   "description": "Nome do município referente ao local da destruição;",
+   "declaredType": "string"
+  },
+  {
+   "name": "SIG_UF",
+   "type": "string",
+   "description": "Sigla da unidade da federação referente ao local da destruição;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DES_LOCALIZACAO",
+   "type": "string",
+   "description": "Descrição do local da destruição;",
+   "declaredType": "string"
+  },
+  {
+   "name": "NUM_LONGITUDE_TAD",
+   "type": "string",
+   "description": "Longitude do local da destruição;",
+   "declaredType": "string"
+  },
+  {
+   "name": "NUM_LATITUDE_TAD",
+   "type": "string",
+   "description": "Latitude do local da destruição;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DES_JUSTIFICATIVA",
+   "type": "string",
+   "description": "Justificativa para aplicação da medida de destruição;",
+   "declaredType": "string"
+  },
+  {
+   "name": "FORMA_ENTREGA",
+   "type": "string",
+   "description": "Meio empregado para dar ciência da destruição à pessoa responsável pelo bem destruído: pessoalmente; representante; aviso de recebimento (AR); edital; o autuado recusou-se a assinar;",
+   "declaredType": "string"
+  },
+  {
+   "name": "UNID_APRESENTACAO",
+   "type": "string",
+   "description": "Unidade responsável pelo recebimento e instauração do processo;",
+   "declaredType": "string"
+  },
+  {
+   "name": "UNID_CONTROLE",
+   "type": "string",
+   "description": "Unidade responsável pelo gerenciamento do termo no sistema de fiscalização;",
+   "declaredType": "string"
+  },
+  {
+   "name": "VALOR_TAD",
+   "type": "number",
+   "description": "Somatória do valor de todos bens destruídos identificados no termo;",
+   "declaredType": "float"
+  },
+  {
+   "name": "SEQ_TAD_PAI",
+   "type": "number",
+   "description": "Chave estrangeira que identifica o termo de apreensão dos bens destruídos;",
+   "declaredType": "float"
+  },
+  {
+   "name": "SEQ_AUTO_INFRACAO",
+   "type": "number",
+   "description": "Chave estrangeira que identifica o auto de infração vinculado ao termo de apreensão;",
+   "declaredType": "float"
+  },
+  {
+   "name": "NUM_AUTO_INFRACAO",
+   "type": "string",
+   "description": "Número do auto de infração vinculado ao termo;",
+   "declaredType": "string"
+  },
+  {
+   "name": "SER_AUTO_INFRACAO",
+   "type": "string",
+   "description": "Caractere existente no formulário que contém a respectiva série e compõe a identificação do documento e relacionado ao número do auto.",
+   "declaredType": "string"
+  },
+  {
+   "name": "SEQ_NOTIFICACAO",
+   "type": "number",
+   "description": "Chave estrangeira que identifica a notificação vinculada ao termo de apreensão;",
+   "declaredType": "float"
+  },
+  {
+   "name": "SEQ_ACAO_FISCALIZATORIA",
+   "type": "number",
+   "description": "Chave estrangeira que identifica a ação fiscalizatória em que ocorreu a apreensão;",
+   "declaredType": "float"
+  },
+  {
+   "name": "CD_ACAO_FISCALIZATORIA",
+   "type": "string",
+   "description": "Código de identificação da ação fiscalizatória;",
+   "declaredType": "string"
+  },
+  {
+   "name": "SEQ_ORDEM_FISCALIZACAO",
+   "type": "number",
+   "description": "Chave estrangeira que identifica a ordem de fiscalização que motivou a ação fiscalizatória;",
+   "declaredType": "float"
+  },
+  {
+   "name": "NUM_ORDEM_FISCALIZACAO",
+   "type": "string",
+   "description": "Identificação da ordem de fiscalização que motivou a ação fiscalizatória, com número de série e estado de origem da unidade que emitiu a ordem;",
+   "declaredType": "string"
+  },
+  {
+   "name": "UNID_ORDENADORA",
+   "type": "string",
+   "description": "Unidade do Ibama responsável pela expedição da ordem de fiscalização;",
+   "declaredType": "string"
+  },
+  {
+   "name": "SEQ_SOLICITACAO_RECURSO",
+   "type": "number",
+   "description": "Chave estrangeira que identifica a solicitação de recurso vinculada à ordem de fiscalização;",
+   "declaredType": "float"
+  },
+  {
+   "name": "NUM_SOLICITACAO_RECURSO",
+   "type": "number",
+   "description": "Número da solicitação de recurso vinculada à ordem de fiscalização;",
+   "declaredType": "float"
+  },
+  {
+   "name": "OPERACAO_SOL_RECURSO",
+   "type": "string",
+   "description": "Nome da operação de fiscalização descrita na solicitação de recurso;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DAT_ALTERACAO",
+   "type": "datetime",
+   "description": "Data da última alteração registrada para o termo (ISO 8601);",
+   "declaredType": "datatime"
+  },
+  {
+   "name": "TIPO_ALTERACAO",
+   "type": "string",
+   "description": "Tipo da última alteração registrada no termo: Redistribuído; Preenchido; Alterado; Cancelado; Cancelamento estornado.",
+   "declaredType": "string"
+  },
+  {
+   "name": "JUSTIFICATIVA_ALTERACAO",
+   "type": "string",
+   "description": "Descrição do motivo da alteração realizada no termo.",
+   "declaredType": "string"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "description": "Data e horário referente à última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601), no formato YYYY-MM-DD hh24:mi:ss",
+   "declaredType": "datatime"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "1b8b34b2-abf9-449f-8c94-fe4ee95231ec",
+   "dictionary_name": "Metadados - Destruição/Inutilização",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/1b8b34b2-abf9-449f-8c94-fe4ee95231ec/download/metadados-termo-de-destruicao-ou-inutilizacao.csv",
+   "sha256": "f8ee1ccc823bad4579502f255caaa61aa0c3ede42d9b264a47254dc7121346d6",
+   "reader": "csv",
+   "part": "",
+   "link_method": "header"
+  }
+ }
+}

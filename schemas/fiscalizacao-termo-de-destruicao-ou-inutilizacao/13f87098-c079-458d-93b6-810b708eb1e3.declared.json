@@ -1,0 +1,173 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "number",
+   "description": "Chave estrangeira que identifica o termo de destruição;",
+   "declaredType": "numero"
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo juntamente com a série;",
+   "declaredType": "string"
+  },
+  {
+   "name": "SER_TAD",
+   "type": "string",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo juntamente com o número;",
+   "declaredType": "string"
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "description": "Código original do termo impresso, cadastro manualmente na página da web do Sistema do Auto de Infração Eletrônico (AIe).",
+   "declaredType": "string"
+  },
+  {
+   "name": "SEQ_BEM_APREENDIDO",
+   "type": "number",
+   "description": "Chave primária que identifica cada bem destruído;",
+   "declaredType": "numero"
+  },
+  {
+   "name": "CD_BEM",
+   "type": "string",
+   "description": "Código do bem destruído.",
+   "declaredType": "string"
+  },
+  {
+   "name": "QTD_BEM_APREENDIDO",
+   "type": "number",
+   "description": "Quantidade de bem destruído;",
+   "declaredType": "numero"
+  },
+  {
+   "name": "DES_UNIDADE_MEDIDA",
+   "type": "string",
+   "description": "Unidade de medida da quantidade de bem destruído;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DES_TIPO_BEM",
+   "type": "string",
+   "description": "Tipo de bem destruído;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DES_TIPO_INFRACAO",
+   "type": "string",
+   "description": "Tipo da infração associada ao bem destruído;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DES_BEM_APREENDIDO",
+   "type": "string",
+   "description": "Descrição das características, estado de conservação e demais detalhes do bem destruído;",
+   "declaredType": "string"
+  },
+  {
+   "name": "TIPO_VEICULO",
+   "type": "string",
+   "description": "Tipo de veículo destruído: aéreo, fluvial, terrestre;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DES_MARCA",
+   "type": "string",
+   "description": "Marca do veículo;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DES_MARCA_MODELO",
+   "type": "string",
+   "description": "Marca e modelo do veículo;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DES_PLACA_VEICULO",
+   "type": "string",
+   "description": "Placa de identificação do veículo;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DES_COR",
+   "type": "string",
+   "description": "Cor do veículo;",
+   "declaredType": "string"
+  },
+  {
+   "name": "CHASSI_NUM_MOTOR",
+   "type": "string",
+   "description": "Número do chassi ou número do motor do veículo;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DES_ANO_VEICULO",
+   "type": "number",
+   "description": "Ano de fabricação do veículo;",
+   "declaredType": "numero"
+  },
+  {
+   "name": "NU_ANO_MOD",
+   "type": "number",
+   "description": "Ano do modelo do veículo;",
+   "declaredType": "numero"
+  },
+  {
+   "name": "DES_LACRE_VEICULO",
+   "type": "string",
+   "description": "Número do lacre aposto no veículo apreendido;",
+   "declaredType": "string"
+  },
+  {
+   "name": "NUM_INSCRICAO_MARINHA",
+   "type": "string",
+   "description": "Inscrição ou registro de embarcação na Marinha do Brasil;",
+   "declaredType": "string"
+  },
+  {
+   "name": "NOME_MATRICULA",
+   "type": "string",
+   "description": "Denominação ou número de matrícula do veículo;",
+   "declaredType": "string"
+  },
+  {
+   "name": "LICENCA_NUMERO_SERIE",
+   "type": "string",
+   "description": "Licença ou número de série do veículo;",
+   "declaredType": "string"
+  },
+  {
+   "name": "DES_FABRICANTE",
+   "type": "string",
+   "description": "Fabricante do veículo.",
+   "declaredType": "string"
+  },
+  {
+   "name": "NU_VALOR",
+   "type": "string",
+   "description": "Valor, em reais, atribuído ao bem destruído ou inutilizado registrado no termo.",
+   "declaredType": "string"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "string",
+   "description": "Data e horário referente à última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601), no formato YYYY-MM-DD hh24:mi:ss",
+   "declaredType": "string"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "aa04d97f-0501-4d66-a3ef-6c36bdf9c0ef",
+   "dictionary_name": "Metadados - Bem destruído",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/656f3fbb-febc-428a-9e01-2e2d4d54adab/resource/aa04d97f-0501-4d66-a3ef-6c36bdf9c0ef/download/metadados-termo-de-destruicao-ou-inutilizacao-bem-destruido.csv",
+   "sha256": "2bf77ae278bc253695394195e2404d753db3334010adcea44189403a4946b327",
+   "reader": "csv",
+   "part": "",
+   "link_method": "header"
+  }
+ }
+}

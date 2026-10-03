@@ -1,0 +1,257 @@
+{
+ "fields": [
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "SEQ_DOACAO",
+   "type": "integer",
+   "description": "Chave primária que identifica o termo de doação.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "NUM_DOACAO",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo juntamente com a série.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "SER_DOACAO",
+   "type": "string",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo juntamente com o número.",
+   "declaredType": "CHAR"
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "description": "Código original do termo impresso, cadastrado manualmente na página web do Sistema do Auto de Infração Eletrônico (AIe).",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "DES_STATUS_FORMULARIO",
+   "type": "integer",
+   "description": "Situação do formulário: Lavrado; Cancelado; Substituído por outro; Excluído; Extraviado; Danificado; Duplicado; Impresso.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "SIT_CANCELADO",
+   "type": "string",
+   "description": "Indica se o termo encontra-se cancelado: S (Sim); N (Não).",
+   "declaredType": "CHAR"
+  },
+  {
+   "name": "DAT_DOACAO",
+   "type": "datetime",
+   "description": "Data em que o termo de doação foi lavrado (ISO 8601).",
+   "declaredType": "TIMESTAMP"
+  },
+  {
+   "name": "DAT_ALTERACAO",
+   "type": "datetime",
+   "description": "Data da última alteração dos atributos do termo (ISO 8601).",
+   "declaredType": "TIMESTAMP"
+  },
+  {
+   "name": "TIPO_ALTERACAO",
+   "type": "integer",
+   "description": "Tipo da última alteração registrada no termo: Redistribuído; Preenchido; Alterado; Cancelado; Cancelamento estornado.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "JUSTIFICATIVA_ALTERACAO",
+   "type": "string",
+   "description": "Descrição do motivo da alteração realizada no termo.",
+   "declaredType": "TEXT"
+  },
+  {
+   "name": "NUM_PESSOA_RECEBEDOR",
+   "type": "integer",
+   "description": "Número de registro da pessoa que recebeu os bens e espécies no banco de dados do Ibama (chave estrangeira).",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "NOME_RECEBEDOR",
+   "type": "string",
+   "description": "Nome da pessoa que recebeu os bens e espécies doados.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "NUM_CPF_CNPJ_RECEBEDOR",
+   "type": "string",
+   "description": "Número de Cadastro Nacional de Pessoa Jurídica (CNPJ) ou Cadastro de Pessoa Física (CPF) do recebedor dos bens e espécies doados.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "NUM_PROCESSO",
+   "type": "string",
+   "description": "Número do processo administrativo do Ibama.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "DES_JUSTIFICATIVA",
+   "type": "string",
+   "description": "Justificativa para aplicação da medida de doação.",
+   "declaredType": "TEXT"
+  },
+  {
+   "name": "DES_OBSERVACAO",
+   "type": "string",
+   "description": "Circunstâncias da doação e informações complementares.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "VALOR_DOACAO",
+   "type": "number",
+   "description": "Somatória do valor dos bens e espécies doados, em reais.",
+   "declaredType": "DECIMAL"
+  },
+  {
+   "name": "COD_MUNICIPIO",
+   "type": "integer",
+   "description": "Código do município (IBGE) referente ao local da doação (chave estrangeira).",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "NOM_MUNICIPIO",
+   "type": "string",
+   "description": "Nome do município referente ao local da doação.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "SIG_UF",
+   "type": "string",
+   "description": "Sigla da unidade da federação referente ao local da doação.",
+   "declaredType": "CHAR"
+  },
+  {
+   "name": "DES_LOCALIZACAO",
+   "type": "string",
+   "description": "Descrição do local da doação.",
+   "declaredType": "TEXT"
+  },
+  {
+   "name": "NUM_LONGITUDE",
+   "type": "number",
+   "description": "Longitude do local da doação.",
+   "declaredType": "DECIMAL"
+  },
+  {
+   "name": "NUM_LATITUDE",
+   "type": "number",
+   "description": "Latitude do local da doação.",
+   "declaredType": "DECIMAL"
+  },
+  {
+   "name": "FORMA_ENTREGA",
+   "type": "integer",
+   "description": "Meio empregado para dar ciência da doação à pessoa responsável pelo recebimento dos bens ou espécies: pessoalmente; representante; aviso de recebimento (AR); edital; o autuado recusou-se a assinar.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "UNID_APRESENTACAO",
+   "type": "string",
+   "description": "Unidade responsável pelo recebimento do termo e instauração do processo.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "UNID_CONTROLE",
+   "type": "string",
+   "description": "Unidade responsável pelo gerenciamento do termo no sistema de fiscalização.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "DS_COMPLEMENTAR",
+   "type": "string",
+   "description": "Circunstâncias da doação e informações complementares.",
+   "declaredType": "TEXT"
+  },
+  {
+   "name": "SEQ_AUTO_INFRACAO",
+   "type": "integer",
+   "description": "Identificador do auto de infração vinculado ao termo.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "NUM_AUTO_INFRACAO",
+   "type": "string",
+   "description": "Número do auto de infração vinculado ao termo.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "SER_AUTO_INFRACAO",
+   "type": "string",
+   "description": "Caractere existente no formulário que contém a respectiva série e compõe a identificação do documento relacionado ao número do auto.",
+   "declaredType": "CHAR"
+  },
+  {
+   "name": "SEQ_ACAO_FISCALIZATORIA",
+   "type": "integer",
+   "description": "Identificador da ação fiscalizatória.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "CD_ACAO_FISCALIZATORIA",
+   "type": "string",
+   "description": "Código da ação fiscalizatória.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "SEQ_ORDEM_FISCALIZACAO",
+   "type": "integer",
+   "description": "Identificador da ordem de fiscalização.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "NUM_ORDEM_FISCALIZACAO",
+   "type": "string",
+   "description": "Número da ordem de fiscalização.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "UNID_ORDENADORA",
+   "type": "string",
+   "description": "Unidade responsável pela expedição da ordem.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "SEQ_SOLICITACAO_RECURSO",
+   "type": "integer",
+   "description": "Identificador da solicitação de recurso.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "NUM_SOLICITACAO_RECURSO",
+   "type": "string",
+   "description": "Número da solicitação de recurso.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "OPERACAO_SOL_RECURSO",
+   "type": "string",
+   "description": "Nome da operação vinculada à solicitação.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "description": "Data e horário referente à última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601), no formato YYYY-MM-DD hh24:mi:ss",
+   "declaredType": "DATATIME"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "4d9ade45-f802-443d-b5b7-d4eac667b241",
+   "dictionary_name": "Metadados - Termo de doação",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/6c9f6261-2b0a-4152-b8fa-748930de9bbd/resource/4d9ade45-f802-443d-b5b7-d4eac667b241/download/metadados_termo-de-doacao.csv",
+   "sha256": "79c3e9f3142d14f37a687b2a4a04afbfc0cf0125eea7d06dc21f880434f5f194",
+   "reader": "csv",
+   "part": "",
+   "link_method": "header"
+  }
+ }
+}

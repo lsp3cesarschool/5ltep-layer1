@@ -1,0 +1,59 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "description": "Chave primária que identifica o termo de fiscalização.",
+   "declaredType": "int"
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo, juntamente com a série.",
+   "declaredType": "string"
+  },
+  {
+   "name": "SER_TAD",
+   "type": "string",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo juntamente com o número.",
+   "declaredType": "string"
+  },
+  {
+   "name": "ADMINISTRATIVO",
+   "type": "string",
+   "description": "Indica se o dispositivo legal é de ordem administrativa ou específico da infração relacionada: S (Sim); N (Não).",
+   "declaredType": "string"
+  },
+  {
+   "name": "NU_LEI_COMP",
+   "type": "string",
+   "description": "Norma legal do enquadramento complementar.",
+   "declaredType": "string"
+  },
+  {
+   "name": "NU_ARTIGO_COMP",
+   "type": "string",
+   "description": "Artigo da norma citada no enquadramento complementar.",
+   "declaredType": "string"
+  },
+  {
+   "name": "NU_PAR_INC_AL",
+   "type": "string",
+   "description": "Parágrafo, inciso ou alínea do artigo citado para o enquadramento complementar.",
+   "declaredType": "string"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "27b3fae2-6843-4e14-a3fd-5171161ef964",
+   "dictionary_name": "Metadados - Termo de Suspensão - Enquadramento Complementar",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/47c97994-cd26-4d16-a2d8-4fbc27b1d9a0/resource/27b3fae2-6843-4e14-a3fd-5171161ef964/download/metadados-termo-de-suspensao-enquadramento-complementar.csv",
+   "sha256": "a4e46baebc5df55271cc296ef4c58eead872c4794be8bdc107c9c2f3764775c1",
+   "reader": "csv",
+   "part": "",
+   "link_method": "header"
+  }
+ }
+}

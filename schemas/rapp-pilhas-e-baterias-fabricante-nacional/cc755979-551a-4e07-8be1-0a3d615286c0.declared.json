@@ -1,0 +1,59 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "description": "Número de inscrição da empresa declarante no Cadastro Nacional da Pessoa Jurídica (CNPJ).",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Ano do relatório",
+   "type": "integer",
+   "description": "Ano de referência das informações apresentadas no relatório.",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "Tipo de pilhas ou baterias",
+   "type": "string",
+   "description": "Tipo de pilha ou bateria recebida pela empresa para destinação final ambientalmente adequada.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Modelo de pilhas ou baterias",
+   "type": "string",
+   "description": "Modelo da pilha ou bateria recebida pela empresa para destinação final ambientalmente adequada.",
+   "declaredType": "VARCHAR"
+  },
+  {
+   "name": "Peso unitário (kg)",
+   "type": "number",
+   "description": "Peso unitário da pilha ou bateria recebida, expresso em quilogramas (kg).",
+   "declaredType": "DECIMAL"
+  },
+  {
+   "name": "Quantidade recebida dos consumidores (und)",
+   "type": "integer",
+   "description": "Quantidade de pilhas ou baterias recebidas pela empresa dos consumidores em unidades (un)",
+   "declaredType": "INTEGER"
+  },
+  {
+   "name": "Peso total (kg)",
+   "type": "number",
+   "description": "Peso total das pilhas ou baterias recebidas pela empresa, expresso em quilogramas (kg).",
+   "declaredType": "DECIMAL"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "fe4cfcc9-10f6-488d-a699-fe937ec4b1fe",
+   "dictionary_name": "Metadados - Resíduos/Produtos",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/079831ad-dc14-43c2-9d44-8eed0283c817/resource/fe4cfcc9-10f6-488d-a699-fe937ec4b1fe/download/metadados-residuos-e-produtos.csv",
+   "sha256": "277ece2c4d3c63a01ed217a79493b7dbe7554a6b5855cae23ef3becad7992f4e",
+   "reader": "csv",
+   "part": "",
+   "link_method": "header"
+  }
+ }
+}

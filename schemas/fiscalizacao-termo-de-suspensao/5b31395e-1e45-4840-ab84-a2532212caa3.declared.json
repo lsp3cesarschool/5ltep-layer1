@@ -1,0 +1,77 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "integer",
+   "description": "Chave primária que identifica o termo de fiscalização.",
+   "declaredType": "int"
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo, juntamente com a série.",
+   "declaredType": "string"
+  },
+  {
+   "name": "SER_TAD",
+   "type": "string",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo juntamente com o número.",
+   "declaredType": "string"
+  },
+  {
+   "name": "ADMINISTRATIVO",
+   "type": "string",
+   "description": "Indica se o dispositivo legal é de ordem administrativa ou específico da infração relacionada: S (Sim); N (Não).",
+   "declaredType": "string"
+  },
+  {
+   "name": "NORMA_TIPO",
+   "type": "string",
+   "description": "Tipo de norma legal: Decreto; Lei.",
+   "declaredType": "string"
+  },
+  {
+   "name": "NORMA_NUMERO",
+   "type": "integer",
+   "description": "Número da norma legal citada.",
+   "declaredType": "int"
+  },
+  {
+   "name": "ARTIGO",
+   "type": "integer",
+   "description": "Número do artigo da norma legal.",
+   "declaredType": "int"
+  },
+  {
+   "name": "NU_PARAGRAFO",
+   "type": "integer",
+   "description": "Número do parágrafo do artigo citado.",
+   "declaredType": "int"
+  },
+  {
+   "name": "NU_INCISO",
+   "type": "integer",
+   "description": "Número do inciso do artigo citado.",
+   "declaredType": "int"
+  },
+  {
+   "name": "CD_ALINEA",
+   "type": "string",
+   "description": "Alínea do artigo citado.",
+   "declaredType": "string"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "691ce689-6b05-4040-bc0a-7e298d2b0698",
+   "dictionary_name": "Metadados -  termo de suspensão - Enquadramento",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/47c97994-cd26-4d16-a2d8-4fbc27b1d9a0/resource/691ce689-6b05-4040-bc0a-7e298d2b0698/download/metadados-termo-de-suspensao-enquadramento.csv",
+   "sha256": "a63298ec5465a4402c937873b8edd3f659a874a3189b42fb8cea2d510bc5e6f9",
+   "reader": "csv",
+   "part": "",
+   "link_method": "header"
+  }
+ }
+}

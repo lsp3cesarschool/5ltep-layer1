@@ -1,0 +1,131 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_SOLTURA",
+   "type": "integer",
+   "description": "Chave primária que identifica o termo de soltura.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "NUM_TAD",
+   "type": "string",
+   "description": "Número impresso no formulário que compõe a identificação do termo.",
+   "declaredType": "String"
+  },
+  {
+   "name": "SER_TAD",
+   "type": "string",
+   "description": "Caractere impresso no formulário que compõe a identificação do termojuntamente com o número.",
+   "declaredType": "String"
+  },
+  {
+   "name": "COD_SUBSTITUICAO",
+   "type": "string",
+   "description": "Código original do termo impresso, cadastro manualmentena página da web do Sistema do Auto de Infração Eletrônico (AIe).",
+   "declaredType": "String"
+  },
+  {
+   "name": "SEQ_ESPECIME_APREENDIDO",
+   "type": "integer",
+   "description": "Chave estrangeira que identifica o item do termode apreensão (Termo de apreensão – espécime apreendido) que foi objeto desoltura.",
+   "declaredType": "Integer"
+  },
+  {
+   "name": "CD_ESPECIME",
+   "type": "string",
+   "description": "Código que identifica o espécime apreendido (Termo deapreensão – espécime apreendido) que foi objeto de soltura.",
+   "declaredType": "String"
+  },
+  {
+   "name": "QTD_ESPECIME_APREENDIDO",
+   "type": "number",
+   "description": "Quantidade de espécimes apreendidos",
+   "declaredType": "Decimal"
+  },
+  {
+   "name": "DES_UNIDADE_MEDIDA",
+   "type": "string",
+   "description": "Unidade de medida da quantidade de espécimesapreendidos.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DESCRICAO_PRODUTO",
+   "type": "string",
+   "description": "Descrição do produto originado a partir do espécimeapreendido: Artesanato; Carne; Casca; Couro; Crânio; Dente; Espécime; Essência;Extrato; Garra; Óleo; Ossos; Ovos; Partes; Pele; Sementes; Subproduto; Taxidermia(Empalhado).",
+   "declaredType": "String"
+  },
+  {
+   "name": "SITUACAO_CARACTERISTICA",
+   "type": "string",
+   "description": "Descrição da característica ou situação em que osespécimes foram apreendidos: vivo; morto; abatido; empalhado.",
+   "declaredType": "String"
+  },
+  {
+   "name": "ST_PERECIVEL",
+   "type": "boolean",
+   "description": "Indica se o espécime apreendido é perecível: S - Sim; N - Não.",
+   "declaredType": "Boolean"
+  },
+  {
+   "name": "NOME_CIENTIFICO",
+   "type": "string",
+   "description": "Nome científico do espécime apreendido.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DES_NOME_POPULAR",
+   "type": "string",
+   "description": "Nome popular do espécime apreendido.",
+   "declaredType": "String"
+  },
+  {
+   "name": "CITES",
+   "type": "boolean",
+   "description": "Identifica se a espécie do espécime apreendido consta na lista de espéciesCITES: S – Sim; N – Não.",
+   "declaredType": "Boolean"
+  },
+  {
+   "name": "DAT_SOLTURA",
+   "type": "date",
+   "description": "Data em que o termo de soltura foi lavrado (ISO 8601).",
+   "declaredType": "Date"
+  },
+  {
+   "name": "DS_OBSERVACAO",
+   "type": "string",
+   "description": "Descrição das circunstâncias em que o espécime foiapreendido.",
+   "declaredType": "String"
+  },
+  {
+   "name": "DAT_ALTERACAO",
+   "type": "date",
+   "description": "Data de última alteração do registro do espécime solto (ISO8601).",
+   "declaredType": "Date"
+  },
+  {
+   "name": "NU_VALOR",
+   "type": "number",
+   "description": "Valor do espécime solto.",
+   "declaredType": "Decimal"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "description": "Data e horário referente à última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601), no formato YYYY-MM-DD hh24:mi:ss",
+   "declaredType": "datatime"
+  }
+ ],
+ "x5ltep": {
+  "status": "declared",
+  "source": {
+   "kind": "dictionary",
+   "dictionary_id": "2cf92dc1-6765-4f12-a381-ee3a8dc54ab8",
+   "dictionary_name": "Metadados - Espécime solto",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/4f3a0c94-da69-4bb5-9236-439968e75179/resource/2cf92dc1-6765-4f12-a381-ee3a8dc54ab8/download/metadados-termo-de-soltura-especime-solto.csv",
+   "sha256": "a6b5ac02ca12746c3c6dd21cf5d3ce6ed4f46eadee0d0dcfd22374dd9175b71f",
+   "reader": "csv",
+   "part": "",
+   "link_method": "header"
+  }
+ }
+}

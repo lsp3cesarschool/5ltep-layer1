@@ -1,0 +1,249 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "any",
+   "description": "Chave que identifica o termo de apreensão, em formato numérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "CD_TAD",
+   "type": "any",
+   "description": "Código impresso no formulário que compõe a identificação do termo, junto com a série, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "CD_SERIE_TAD",
+   "type": "any",
+   "description": "Caractere impresso no formulário que compõe a identificação do termo junto com o número, em formato texto. Obs: nos Termos de Apreensão alfanuméricos, emitidos a partir de 08.10.2019 pelo Sistema do Auto de Infração Eletrônico (AIe), esse campo de dado não é preenchido.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ID_BEM_APREENDIDO",
+   "type": "any",
+   "description": "Chave que identifica o bem apreendido, em formato numérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "CD_BEM_APREENDIDO",
+   "type": "any",
+   "description": "Código do bem apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "QT_BEM_APREENDIDO",
+   "type": "any",
+   "description": "Quantidade de bem apreendido, em formato numérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_UNIDADE_MEDIDA",
+   "type": "any",
+   "description": "Unidade de medida da quantidade de bem apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_TIPO_BEM",
+   "type": "any",
+   "description": "Tipo de bem apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_TIPO_INFRACAO",
+   "type": "any",
+   "description": "Tipo da infração associada ao bem apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_BEM_APREENDIDO",
+   "type": "any",
+   "description": "Descrição das características, estado de conservação e demais detalhes do bem apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "TP_VEICULO",
+   "type": "any",
+   "description": "Tipo de veículo. Domínio: AEREO, FLUVIAL ou TERRESTRE",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_MARCA",
+   "type": "any",
+   "description": "Marca do veículo, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_MARCA_MODELO",
+   "type": "any",
+   "description": "Marca e modelo do veículo, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_MODELO",
+   "type": "any",
+   "description": "Modelo do veículo, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_PLACA_VEICULO",
+   "type": "any",
+   "description": "Placa de identificação do veículo, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_COR",
+   "type": "any",
+   "description": "Cor do veículo, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_CHASSI_NUM_MOTOR",
+   "type": "any",
+   "description": "Número do chassi ou número do motor do veículo, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NU_CHASSI_VEICULO",
+   "type": "any",
+   "description": "Número do chassi do veículo relativo ao bem apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NU_MOTOR_VEICULO",
+   "type": "any",
+   "description": "Número do motor do veículo relativo ao bem apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "AN_FABRICACAO_VEICULO",
+   "type": "any",
+   "description": "Ano de fabricação do veículo, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "AN_MODELO_VEICULO",
+   "type": "any",
+   "description": "Ano do modelo do veículo, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_LACRE_VEICULO",
+   "type": "any",
+   "description": "Número do lacre aposto no veículo apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NU_INSCRICAO_MARINHA",
+   "type": "any",
+   "description": "Inscrição ou registro de embarcação na Marinha do Brasil, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NO_MATRICULA",
+   "type": "any",
+   "description": "Denominação ou número de matrícula do veículo, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_LICENCA_NUMERO_SERIE",
+   "type": "any",
+   "description": "Licença ou número de série do veículo, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NU_SERIE_VEICULO",
+   "type": "any",
+   "description": "Número de série do veículo relativo ao bem apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_FABRICANTE",
+   "type": "any",
+   "description": "Fabricante do veículo, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "VL_BEM_APREENDIDO",
+   "type": "any",
+   "description": "Valor do bem apreendido, em formato numérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "CD_TERMO_DESTINO",
+   "type": "any",
+   "description": "Código do termo de fiscalização relativo à destinação do bem apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_TIPO_TERMO_DESTINO",
+   "type": "any",
+   "description": "Tipo de destinação dada para o bem apreendido, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_CATEGORIA",
+   "type": "any",
+   "description": "Categoria do bem apreendido. Domínio: Veículo, Bem",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_RENAVAM",
+   "type": "any",
+   "description": "Renavam do veículo, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DT_APREENSAO",
+   "type": "any",
+   "description": "Data em que o termo de apreensão foi lavrado, no formato YYYY-MM-DD.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "any",
+   "description": "Data e horário referente à última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601), no formato YYYY-MM-DD hh24:mi:ss.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "described",
+  "source": {
+   "kind": "description",
+   "resource_id": "26063153-1102-4cc1-ba71-df8f2bb00727"
+  }
+ }
+}

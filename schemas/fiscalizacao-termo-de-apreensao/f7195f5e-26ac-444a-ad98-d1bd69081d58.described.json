@@ -1,0 +1,95 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_TAD",
+   "type": "any",
+   "description": "Chave que identifica o termo de apreensão registrado no sistema Sifisc após migração, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "CD_TERMO_APREENSAO-",
+   "type": "any",
+   "description": "Código do termo de apreensão, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ID_ENQUADRAMENTO",
+   "type": "any",
+   "description": "Número identificador do enquadramento, em formato numérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ST_ENQUADRAMENTO_ADMINISTRATIVO",
+   "type": "any",
+   "description": "Indica se o dispositivo legal é de ordem administrativa ou específico da infração relacionada, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "TP_NORMA",
+   "type": "any",
+   "description": "Tipo de norma legal, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NU_NORMA",
+   "type": "any",
+   "description": "Número da norma legal citada, em formato numérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DS_NUMERO_ARTIGO_NORMA",
+   "type": "any",
+   "description": "Número do artigo da norma legal, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NU_PARAGRAFO_ARTIGO_NORMA",
+   "type": "any",
+   "description": "Número do parágrafo do artigo citado, em formato numérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "NU_INCISO_ARTIGO_NORMA",
+   "type": "any",
+   "description": "Número do inciso do artigo citado, em formato numérico.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "CD_ALINEA_ARTIGO_NORMA",
+   "type": "any",
+   "description": "Alínea do artigo citado, em formato texto.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "DH_IMPRESSAO_TERMO_APREENSAO",
+   "type": "any",
+   "description": "Data e hora da impressão do termo de apreensão no formato YYYY-MM-DD.",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "any",
+   "description": "Data e horário referente à última atualização do recurso na Plataforma de Dados Abertos (formato ISO 8601). Sysdate no formato YYYY-MM-DD hh24:mi:ss hh24:mi:ss",
+   "declaredType": "",
+   "mappingNote": "type not declared"
+  }
+ ],
+ "x5ltep": {
+  "status": "described",
+  "source": {
+   "kind": "description",
+   "resource_id": "f7195f5e-26ac-444a-ad98-d1bd69081d58"
+  }
+ }
+}
