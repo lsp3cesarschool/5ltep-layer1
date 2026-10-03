@@ -134,9 +134,11 @@ legível por máquina, esquema extraído de PDF (depois de confirmado), lista na
 ## Validação
 
 Cada arquivo é lido em stream: CSV, JSON (uma lista de registros) e XML (elementos repetidos) direto da
-resposta HTTP; zip, Parquet ou XLS a partir de um arquivo temporário, membro por membro, aba por aba ou
-lote por lote. O formato é reconhecido pelos primeiros bytes, não pelo rótulo no portal. Zips dentro
-de zips também são abertos, e um zip maior que o disco do runner é lido em fluxo. Nada é guardado além de contagens. Codificação e delimitador são
+resposta HTTP; um zip também, membro por membro, validado enquanto baixa (cada membro tem o próprio
+cabeçalho no começo, então não é preciso o índice nem intervalo de bytes; as tabelas depois ficam na
+ordem que um zip lido do disco dá, por nome); um Parquet ou uma planilha a partir de um arquivo
+temporário, aba por aba ou lote por lote. O formato é reconhecido pelos primeiros bytes, não pelo rótulo
+no portal. Zips dentro de zips também são abertos. Nada é guardado além de contagens. Codificação e delimitador são
 detectados nos formatos de texto; bytes que não decodificam são contados. Para cada arquivo:
 
 - o **esquema observado** (cabeçalho, delimitador, codificação e o tipo mais estreito em que cabem as
@@ -275,8 +277,12 @@ modelo. Esquemas vindos do modelo só chegam como `suggested`, por pull request.
 
 Todo pedido passa por uma única sessão com conexões reaproveitadas (*keep-alive*) que identifica o projeto
 (User-Agent com o endereço do repositório), com **15 s para abrir uma conexão e 120 s para ler a resposta**,
-e até quatro tentativas com esperas crescentes. O levantamento lê quatro conjuntos ao mesmo tempo; os
-arquivos são baixados um de cada vez.
+e até quatro tentativas com esperas crescentes. O levantamento lê quatro conjuntos ao mesmo tempo; a
+validação lê três arquivos ao mesmo tempo (`VALIDATE_WORKERS`), cada um no seu processo, porque o gargalo
+é a validação, não a rede (medido em 03/10/2026: zips baixados a 6 a 23 MB/s, arquivos validados a 1,4 a
+1,9 MB/s; o runner tem 4 CPUs). O resumo registra, por servidor, a fração do tempo gasta esperando a rede
+(`network_share`). Os vários arquivos ao mesmo tempo rodam num só job: as camadas do 5L-TEP dividem uma
+conta do GitHub, cujo número de jobs simultâneos é limitado.
 
 Um servidor que não responde (sem conexão, tempo esgotado, download cortado, erro 5xx) é um fato daquele
 momento, não da documentação do portal. Uma resposta que é do portal (404, redirecionamento em laço,
@@ -406,6 +412,7 @@ mesmo nome; os valores usados ficam registrados no resumo. Os principais:
 | `L1_PASS_THRESHOLD` | 0,85 | fração de arquivos conformes para a Camada 1 passar |
 | `ROTATION_DAYS` | 28 | um arquivo inalterado é validado de novo depois desse número de dias |
 | `VALIDATE_MAX_MINUTES` | 270 | orçamento de tempo de um lote de validação |
+| `VALIDATE_WORKERS` | 3 | arquivos validados ao mesmo tempo, cada um no seu processo (uma planilha ou Parquet que talvez não caiba no disco junto com outros roda sozinho) |
 | `SURVEY_HEADER_MAX_MINUTES` | 180 | tempo que o levantamento gasta lendo cabeçalhos de arquivos nunca validados |
 | `DELIVERY_PROBES` | 3 | arquivos por servidor pedidos pelos primeiros 100 bytes em cada levantamento (entrega dos arquivos) |
 | `ORACLE_ACCEPT` / `ORACLE_LLM_BELOW` | 1,0 / 0,8 | concordância para aceitar uma extração de PDF / para tentar o LLM |
@@ -432,7 +439,7 @@ dividido em quantos lotes forem precisos. Os únicos limites são o que as máqu
 | O quê | Limite | Por quê |
 |---|---|---|
 | CSV, TXT, JSON, XML | nenhum | lidos em fluxo, registro a registro, nunca inteiros na memória |
-| Zip | nenhum | lido do disco até 12 GB (`MAX_ZIP_BYTES`); um zip maior é lido em fluxo, membro a membro; zips dentro de zips até 5 níveis (`ZIP_MAX_DEPTH`, proteção contra um zip que se aninha em si mesmo) |
+| Zip | nenhum | lido em fluxo, membro a membro, sem o disco (um zip de formato incomum é lido do disco, até 12 GB, `MAX_ZIP_BYTES`); zips dentro de zips até 5 níveis (`ZIP_MAX_DEPTH`, proteção contra um zip que se aninha em si mesmo) |
 | XLSX, ODS | 12 GB por arquivo (o disco) | o arquivo precisa estar em disco (suas partes ficam espalhadas nele); depois as linhas são lidas uma a uma. O XLSX comporta no máximo 1.048.576 linhas por planilha |
 | XLS | nenhum, na prática | o formato comporta no máximo 65.536 linhas por planilha; lido uma planilha por vez |
 | Parquet | 12 GB por arquivo (o disco) | o índice fica no fim, então o arquivo precisa estar em disco; depois as linhas são lidas em lotes |

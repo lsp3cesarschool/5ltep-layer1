@@ -131,9 +131,11 @@ dictionary, schema extracted from a PDF (once confirmed), list in the descriptio
 ## Validation
 
 Every file is read as a stream: CSV, JSON (a list of records) and XML (repeated elements) straight from
-the HTTP response; a zip, Parquet or XLS from a temporary file, member by member, sheet by sheet or
+the HTTP response; a zip too, member by member, validated while it downloads (each member has its own
+header at its start, so no index and no byte range is needed; the tables are then put in the order a
+zip read from disk gives, by name); a Parquet or a spreadsheet from a temporary file, sheet by sheet or
 batch by batch. The format is recognised from the first bytes, not from the label on the portal. Zips
-inside zips are opened too, and a zip larger than the runner's disk is read as it streams. Nothing is kept but counts. Encoding and delimiter are detected
+inside zips are opened too. Nothing is kept but counts. Encoding and delimiter are detected
 for text formats; bytes that do not decode are counted. For each file:
 
 - the **observed schema** (header, delimiter, encoding, and the narrowest type the first 5,000 rows of
@@ -269,7 +271,12 @@ everything it shows. Ollama is a pinned, checksum-verified release.
 
 Every request goes through one keep-alive session that identifies the project (User-Agent with the
 repository's address), with **15 s to open a connection and 120 s to read the answer**, and up to four
-attempts with growing waits. The survey reads four datasets at a time; files are downloaded one at a time.
+attempts with growing waits. The survey reads four datasets at a time; the validation reads three files
+at a time (`VALIDATE_WORKERS`), each in its own process, because the validation, not the network, is the
+bottleneck (measured on 03/10/2026: zips downloaded at 6 to 23 MB/s, files validated at 1.4 to 1.9 MB/s;
+the runner has 4 CPUs). The summary records, per server, the share of the time spent waiting for the
+network (`network_share`). Several files at once run in one job: the layers of 5L-TEP share one GitHub
+account, whose number of jobs at the same time is limited.
 
 A server that does not answer (no connection, a timeout, a download cut short, a 5xx) is a fact about
 that moment, not about the portal's documentation. An answer that is the portal's (404, a redirect
@@ -396,6 +403,7 @@ the same name; the values used are recorded in the summary. The main ones:
 | `L1_PASS_THRESHOLD` | 0.85 | share of conformant files for Layer 1 to pass |
 | `ROTATION_DAYS` | 28 | an unchanged file is validated again after this many days |
 | `VALIDATE_MAX_MINUTES` | 270 | time budget of one validation batch |
+| `VALIDATE_WORKERS` | 3 | files validated at the same time, each in its own process (a spreadsheet or Parquet that may not fit on the disk beside others runs alone) |
 | `SURVEY_HEADER_MAX_MINUTES` | 180 | time the survey spends reading headers of files never validated |
 | `DELIVERY_PROBES` | 3 | files per server asked for their first 100 bytes in each survey (file delivery) |
 | `ORACLE_ACCEPT` / `ORACLE_LLM_BELOW` | 1.0 / 0.8 | agreement to accept a PDF extraction / to try the LLM |
@@ -422,7 +430,7 @@ into as many batches as it takes. The only limits are what GitHub's machines can
 | What | Limit | Why |
 |---|---|---|
 | CSV, TXT, JSON, XML | none | read as they stream, record by record, never held whole |
-| Zip | none | read from disk up to 12 GB (`MAX_ZIP_BYTES`); a larger zip is read as it streams, member by member; zips inside zips up to 5 levels (`ZIP_MAX_DEPTH`, a guard against a zip that nests itself) |
+| Zip | none | read as it streams, member by member, without the disk (a zip of an unusual layout is read from disk, up to 12 GB, `MAX_ZIP_BYTES`); zips inside zips up to 5 levels (`ZIP_MAX_DEPTH`, a guard against a zip that nests itself) |
 | XLSX, ODS | 12 GB per file (the disk) | the file must be on disk (its parts are spread through it); rows are then read one at a time. XLSX holds at most 1,048,576 rows per sheet |
 | XLS | none in practice | the format holds at most 65,536 rows per sheet; read a sheet at a time |
 | Parquet | 12 GB per file (the disk) | its index is at the end, so the file must be on disk; rows are then read in batches |
