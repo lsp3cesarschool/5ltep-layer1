@@ -5,8 +5,8 @@
    "name": "IBAMA",
    "title": "IBAMA open data portal (Dados Abertos IBAMA)"
   },
-  "generated_at": "2026-10-03T00:23:27+00:00",
-  "census_at": "2026-10-02T22:15:46+00:00",
+  "generated_at": "2026-10-03T00:36:36+00:00",
+  "census_at": "2026-10-03T00:33:44+00:00",
   "datasets": {
    "total": 79,
    "with_tables": 77,
@@ -97,7 +97,8 @@
    "other_formats": 168,
    "compared": 164,
    "same_columns": 105,
-   "different_columns": 59,
+   "spelling_only": 25,
+   "different_columns": 34,
    "not_compared": {
     "not-checked": 4
    },
@@ -488,24 +489,18 @@
        "status": "ok",
        "read_as": "json",
        "same_columns": false,
-       "missing": [
-        "ano debito",
-        "data pagamento",
-        "data vencimento",
-        "numero de gru",
-        "ultima atualizacao relatorio",
-        "valor cobrado r",
-        "valor pago r"
-       ],
-       "extra": [
-        "anodebito",
-        "datapagamento",
-        "datavencimento",
-        "numerogru",
-        "ultimaatualizacaorelatorio",
-        "valorcobrado",
-        "valorpago"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "ano debito": "anodebito",
+        "data pagamento": "datapagamento",
+        "data vencimento": "datavencimento",
+        "numero de gru": "numerogru",
+        "ultima atualizacao relatorio": "ultimaatualizacaorelatorio",
+        "valor cobrado r": "valorcobrado",
+        "valor pago r": "valorpago"
+       },
+       "spelling_only": true
       },
       {
        "id": "52b00d0a-c548-41b4-abec-230960350d8f",
@@ -514,24 +509,18 @@
        "status": "ok",
        "read_as": "xml",
        "same_columns": false,
-       "missing": [
-        "ano debito",
-        "data pagamento",
-        "data vencimento",
-        "numero de gru",
-        "ultima atualizacao relatorio",
-        "valor cobrado r",
-        "valor pago r"
-       ],
-       "extra": [
-        "anodebito",
-        "datapagamento",
-        "datavencimento",
-        "numerogru",
-        "ultimaatualizacaorelatorio",
-        "valorcobrado",
-        "valorpago"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "ano debito": "anodebito",
+        "data pagamento": "datapagamento",
+        "data vencimento": "datavencimento",
+        "numero de gru": "numerogru",
+        "ultima atualizacao relatorio": "ultimaatualizacaorelatorio",
+        "valor cobrado r": "valorcobrado",
+        "valor pago r": "valorpago"
+       },
+       "spelling_only": true
       }
      ],
      "schema_files": {
@@ -793,16 +782,15 @@
        "read_as": "json",
        "same_columns": false,
        "missing": [
-        "ano",
-        "classe de risco",
-        "empresa de resposta",
-        "estados de atuacao"
+        "ano"
        ],
-       "extra": [
-        "classe risco",
-        "empresa resposta",
-        "estados atuacao"
-       ]
+       "extra": [],
+       "spelling": {
+        "classe de risco": "classe risco",
+        "empresa de resposta": "empresa resposta",
+        "estados de atuacao": "estados atuacao"
+       },
+       "spelling_only": false
       },
       {
        "id": "18f536f4-f584-48ba-869d-5db9d61dd4cd",
@@ -812,16 +800,15 @@
        "read_as": "xml",
        "same_columns": false,
        "missing": [
-        "ano",
-        "classe de risco",
-        "empresa de resposta",
-        "estados de atuacao"
+        "ano"
        ],
-       "extra": [
-        "classe risco",
-        "empresa resposta",
-        "estados atuacao"
-       ]
+       "extra": [],
+       "spelling": {
+        "classe de risco": "classe risco",
+        "empresa de resposta": "empresa resposta",
+        "estados de atuacao": "estados atuacao"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -874,16 +861,14 @@
        "status": "ok",
        "read_as": "json",
        "same_columns": false,
-       "missing": [
-        "razao social",
-        "situacao cadastral",
-        "tipo certificado"
-       ],
-       "extra": [
-        "razaosocial",
-        "situacaocadastral",
-        "tipocertificado"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "tipo certificado": "tipocertificado"
+       },
+       "spelling_only": true
       },
       {
        "id": "5864bf31-9737-49c9-9ba2-f781c07706d0",
@@ -892,16 +877,14 @@
        "status": "ok",
        "read_as": "xml",
        "same_columns": false,
-       "missing": [
-        "razao social",
-        "situacao cadastral",
-        "tipo certificado"
-       ],
-       "extra": [
-        "razaosocial",
-        "situacaocadastral",
-        "tipocertificado"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "tipo certificado": "tipocertificado"
+       },
+       "spelling_only": true
       }
      ],
      "schema_files": {
@@ -2051,46 +2034,34 @@
        "same_columns": false,
        "missing": [
         "categoria de atividade",
-        "classe do corpo receptor",
-        "codigo da categoria",
         "codigo do detalhe",
-        "compart ambiental da emissao",
-        "corpo receptor",
-        "desc monitoramento utilizado",
         "detalhe",
-        "eficiencia do tratamento",
-        "empresa receptora do efluente",
-        "nivel de tratamento",
-        "nome do corpo hidrico",
-        "razao social",
-        "se outro qual",
-        "situacao cadastral",
-        "tipo corpo receptor",
-        "tipo de emissao",
-        "tipo de emissao para o solo",
-        "tipo de tratamento"
+        "tipo de emissao para o solo"
        ],
        "extra": [
-        "classecorporeceptor",
-        "codcategoria",
         "coddetalhe",
-        "compartambientalemissao",
-        "corporeceptor",
         "descategoria",
         "desdetalhe",
-        "desmonitoramentoutilizado",
-        "eficienciatratamento",
-        "empresareceptoraefluente",
-        "niveltratamento",
-        "nomecorpohidrico",
-        "razaosocial",
-        "seoutroqual",
-        "situacaocadastral",
-        "tipocorporeceptor",
-        "tipoemissao",
-        "tipoemissaosolo",
-        "tipotratamento"
-       ]
+        "tipoemissaosolo"
+       ],
+       "spelling": {
+        "classe do corpo receptor": "classecorporeceptor",
+        "compart ambiental da emissao": "compartambientalemissao",
+        "corpo receptor": "corporeceptor",
+        "eficiencia do tratamento": "eficienciatratamento",
+        "empresa receptora do efluente": "empresareceptoraefluente",
+        "nivel de tratamento": "niveltratamento",
+        "nome do corpo hidrico": "nomecorpohidrico",
+        "razao social": "razaosocial",
+        "se outro qual": "seoutroqual",
+        "situacao cadastral": "situacaocadastral",
+        "tipo corpo receptor": "tipocorporeceptor",
+        "tipo de emissao": "tipoemissao",
+        "tipo de tratamento": "tipotratamento",
+        "codigo da categoria": "codcategoria",
+        "desc monitoramento utilizado": "desmonitoramentoutilizado"
+       },
+       "spelling_only": false
       },
       {
        "id": "67fe00cd-9b62-4ede-a52a-d29e72d05823",
@@ -2101,46 +2072,34 @@
        "same_columns": false,
        "missing": [
         "categoria de atividade",
-        "classe do corpo receptor",
-        "codigo da categoria",
         "codigo do detalhe",
-        "compart ambiental da emissao",
-        "corpo receptor",
-        "desc monitoramento utilizado",
         "detalhe",
-        "eficiencia do tratamento",
-        "empresa receptora do efluente",
-        "nivel de tratamento",
-        "nome do corpo hidrico",
-        "razao social",
-        "se outro qual",
-        "situacao cadastral",
-        "tipo corpo receptor",
-        "tipo de emissao",
-        "tipo de emissao para o solo",
-        "tipo de tratamento"
+        "tipo de emissao para o solo"
        ],
        "extra": [
-        "classecorporeceptor",
-        "codcategoria",
         "coddetalhe",
-        "compartambientalemissao",
-        "corporeceptor",
         "descategoria",
         "desdetalhe",
-        "desmonitoramentoutilizado",
-        "eficienciatratamento",
-        "empresareceptoraefluente",
-        "niveltratamento",
-        "nomecorpohidrico",
-        "razaosocial",
-        "seoutroqual",
-        "situacaocadastral",
-        "tipocorporeceptor",
-        "tipoemissao",
-        "tipoemissaosolo",
-        "tipotratamento"
-       ]
+        "tipoemissaosolo"
+       ],
+       "spelling": {
+        "classe do corpo receptor": "classecorporeceptor",
+        "compart ambiental da emissao": "compartambientalemissao",
+        "corpo receptor": "corporeceptor",
+        "eficiencia do tratamento": "eficienciatratamento",
+        "empresa receptora do efluente": "empresareceptoraefluente",
+        "nivel de tratamento": "niveltratamento",
+        "nome do corpo hidrico": "nomecorpohidrico",
+        "razao social": "razaosocial",
+        "se outro qual": "seoutroqual",
+        "situacao cadastral": "situacaocadastral",
+        "tipo corpo receptor": "tipocorporeceptor",
+        "tipo de emissao": "tipoemissao",
+        "tipo de tratamento": "tipotratamento",
+        "codigo da categoria": "codcategoria",
+        "desc monitoramento utilizado": "desmonitoramentoutilizado"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -2183,24 +2142,18 @@
        "status": "ok",
        "read_as": "json",
        "same_columns": false,
-       "missing": [
-        "categoria de atividade",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "metodologia utilizada",
-        "poluente emitido",
-        "razao social",
-        "situacao cadastral"
-       ],
-       "extra": [
-        "categoriaatividade",
-        "codigocategoria",
-        "codigodetalhe",
-        "metodologiautilizada",
-        "poluenteemitido",
-        "razaosocial",
-        "situacaocadastral"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "categoria de atividade": "categoriaatividade",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "metodologia utilizada": "metodologiautilizada",
+        "poluente emitido": "poluenteemitido",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral"
+       },
+       "spelling_only": true
       },
       {
        "id": "b4f2c7bf-a14f-4f70-bc76-aa7d39d2ee20",
@@ -2209,24 +2162,18 @@
        "status": "ok",
        "read_as": "xml",
        "same_columns": false,
-       "missing": [
-        "categoria de atividade",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "metodologia utilizada",
-        "poluente emitido",
-        "razao social",
-        "situacao cadastral"
-       ],
-       "extra": [
-        "categoriaatividade",
-        "codigocategoria",
-        "codigodetalhe",
-        "metodologiautilizada",
-        "poluenteemitido",
-        "razaosocial",
-        "situacaocadastral"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "categoria de atividade": "categoriaatividade",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "metodologia utilizada": "metodologiautilizada",
+        "poluente emitido": "poluenteemitido",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral"
+       },
+       "spelling_only": true
       }
      ],
      "schema_files": {
@@ -2270,17 +2217,17 @@
        "read_as": "json",
        "same_columns": false,
        "missing": [
-        "codigo da receita",
-        "descricao receita",
-        "ultima atualizacao relatorio",
-        "valor r"
+        "descricao receita"
        ],
        "extra": [
-        "codigoreceita",
-        "receita",
-        "ultimaatualizacaorelatorio",
-        "valor"
-       ]
+        "receita"
+       ],
+       "spelling": {
+        "codigo da receita": "codigoreceita",
+        "ultima atualizacao relatorio": "ultimaatualizacaorelatorio",
+        "valor r": "valor"
+       },
+       "spelling_only": false
       },
       {
        "id": "21180ea9-463b-41b9-8acc-a266b3142768",
@@ -2290,17 +2237,17 @@
        "read_as": "xml",
        "same_columns": false,
        "missing": [
-        "codigo da receita",
-        "descricao receita",
-        "ultima atualizacao relatorio",
-        "valor r"
+        "descricao receita"
        ],
        "extra": [
-        "codigoreceita",
-        "receita",
-        "ultimaatualizacaorelatorio",
-        "valor"
-       ]
+        "receita"
+       ],
+       "spelling": {
+        "codigo da receita": "codigoreceita",
+        "ultima atualizacao relatorio": "ultimaatualizacaorelatorio",
+        "valor r": "valor"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -2346,17 +2293,18 @@
        "missing": [
         "area total explorada ha",
         "lenha estereo ou m3",
-        "razao social",
-        "situacao cadastral",
         "tora m3"
        ],
        "extra": [
         "qtdareatotal",
         "qtdlenha",
-        "qtdtora",
-        "razaosocial",
-        "situacaocadastral"
-       ]
+        "qtdtora"
+       ],
+       "spelling": {
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral"
+       },
+       "spelling_only": false
       },
       {
        "id": "1ed85356-be23-4011-a99c-a7e4c35f2595",
@@ -2368,17 +2316,18 @@
        "missing": [
         "area total explorada ha",
         "lenha estereo ou m3",
-        "razao social",
-        "situacao cadastral",
         "tora m3"
        ],
        "extra": [
         "qtdareatotal",
         "qtdlenha",
-        "qtdtora",
-        "razaosocial",
-        "situacaocadastral"
-       ]
+        "qtdtora"
+       ],
+       "spelling": {
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -2422,33 +2371,25 @@
        "read_as": "json",
        "same_columns": false,
        "missing": [
-        "ano de inicio da exploracao",
-        "ano de termino da exploracao",
-        "data de aprovacao do pra",
-        "data do decreto",
-        "no decreto da lavra",
-        "nome do produto",
-        "proj recup amb pra aprvd por",
-        "quantidade explorada",
-        "razao social",
-        "situacao cadastral",
-        "tamanho da area",
-        "unidade de medida"
+        "quantidade explorada"
        ],
        "extra": [
-        "anoinicioexploracao",
-        "anoterminoexploracao",
-        "dataaprovacao",
-        "datadecreto",
-        "nomeproduto",
-        "numdecretolavra",
-        "projrecupambaprvdpor",
-        "qtdexplorada",
-        "razaosocial",
-        "situacaocadastral",
-        "tamanhoarea",
-        "unidademedida"
-       ]
+        "qtdexplorada"
+       ],
+       "spelling": {
+        "ano de inicio da exploracao": "anoinicioexploracao",
+        "ano de termino da exploracao": "anoterminoexploracao",
+        "data do decreto": "datadecreto",
+        "nome do produto": "nomeproduto",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "tamanho da area": "tamanhoarea",
+        "unidade de medida": "unidademedida",
+        "data de aprovacao do pra": "dataaprovacao",
+        "no decreto da lavra": "numdecretolavra",
+        "proj recup amb pra aprvd por": "projrecupambaprvdpor"
+       },
+       "spelling_only": false
       },
       {
        "id": "c93ecf56-781a-489f-9329-7cd322e0b735",
@@ -2458,33 +2399,25 @@
        "read_as": "xml",
        "same_columns": false,
        "missing": [
-        "ano de inicio da exploracao",
-        "ano de termino da exploracao",
-        "data de aprovacao do pra",
-        "data do decreto",
-        "no decreto da lavra",
-        "nome do produto",
-        "proj recup amb pra aprvd por",
-        "quantidade explorada",
-        "razao social",
-        "situacao cadastral",
-        "tamanho da area",
-        "unidade de medida"
+        "quantidade explorada"
        ],
        "extra": [
-        "anoinicioexploracao",
-        "anoterminoexploracao",
-        "dataaprovacao",
-        "datadecreto",
-        "nomeproduto",
-        "numdecretolavra",
-        "projrecupambaprvdpor",
-        "qtdexplorada",
-        "razaosocial",
-        "situacaocadastral",
-        "tamanhoarea",
-        "unidademedida"
-       ]
+        "qtdexplorada"
+       ],
+       "spelling": {
+        "ano de inicio da exploracao": "anoinicioexploracao",
+        "ano de termino da exploracao": "anoterminoexploracao",
+        "data do decreto": "datadecreto",
+        "nome do produto": "nomeproduto",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "tamanho da area": "tamanhoarea",
+        "unidade de medida": "unidademedida",
+        "data de aprovacao do pra": "dataaprovacao",
+        "no decreto da lavra": "numdecretolavra",
+        "proj recup amb pra aprvd por": "projrecupambaprvdpor"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -2528,33 +2461,29 @@
        "read_as": "json",
        "same_columns": false,
        "missing": [
-        "capacidade de processamento",
-        "nome do produto",
-        "qtd de doc estad recebidos",
-        "qtd de doc estad utilizados",
         "quantidade comercializada",
         "quantidade estocada",
         "quantidade processada",
         "quantidade recebida",
-        "quantidade transportada",
-        "razao social",
-        "situacao cadastral",
-        "unidade de medida"
+        "quantidade transportada"
        ],
        "extra": [
-        "capacidadeprocessamento",
-        "nomeproduto",
         "qtdcomercializada",
-        "qtddocestadrecebidos",
-        "qtddocestadutilizados",
         "qtdestocada",
         "qtdprocessada",
         "qtdrecebida",
-        "qtdtransportada",
-        "razaosocial",
-        "situacaocadastral",
-        "unidademedida"
-       ]
+        "qtdtransportada"
+       ],
+       "spelling": {
+        "capacidade de processamento": "capacidadeprocessamento",
+        "nome do produto": "nomeproduto",
+        "qtd de doc estad recebidos": "qtddocestadrecebidos",
+        "qtd de doc estad utilizados": "qtddocestadutilizados",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "unidade de medida": "unidademedida"
+       },
+       "spelling_only": false
       },
       {
        "id": "ec81ff66-c84d-47db-88c0-447b4fe33c91",
@@ -2564,33 +2493,29 @@
        "read_as": "xml",
        "same_columns": false,
        "missing": [
-        "capacidade de processamento",
-        "nome do produto",
-        "qtd de doc estad recebidos",
-        "qtd de doc estad utilizados",
         "quantidade comercializada",
         "quantidade estocada",
         "quantidade processada",
         "quantidade recebida",
-        "quantidade transportada",
-        "razao social",
-        "situacao cadastral",
-        "unidade de medida"
+        "quantidade transportada"
        ],
        "extra": [
-        "capacidadeprocessamento",
-        "nomeproduto",
         "qtdcomercializada",
-        "qtddocestadrecebidos",
-        "qtddocestadutilizados",
         "qtdestocada",
         "qtdprocessada",
         "qtdrecebida",
-        "qtdtransportada",
-        "razaosocial",
-        "situacaocadastral",
-        "unidademedida"
-       ]
+        "qtdtransportada"
+       ],
+       "spelling": {
+        "capacidade de processamento": "capacidadeprocessamento",
+        "nome do produto": "nomeproduto",
+        "qtd de doc estad recebidos": "qtddocestadrecebidos",
+        "qtd de doc estad utilizados": "qtddocestadutilizados",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "unidade de medida": "unidademedida"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -5142,7 +5067,9 @@
         "qtd doacao bem",
         "seq doacao bem",
         "tipo veiculo"
-       ]
+       ],
+       "spelling": {},
+       "spelling_only": false
       },
       {
        "id": "2b14610a-7bca-4ad2-9043-bdce40496076",
@@ -5190,7 +5117,9 @@
         "qtd doacao bem",
         "seq doacao bem",
         "tipo veiculo"
-       ]
+       ],
+       "spelling": {},
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -6865,14 +6794,13 @@
        "status": "ok",
        "read_as": "json",
        "same_columns": false,
-       "missing": [
-        "razao social",
-        "situacao cadastral"
-       ],
-       "extra": [
-        "razaosocial",
-        "situacaocadastral"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral"
+       },
+       "spelling_only": true
       },
       {
        "id": "3f03c7b9-5b66-4770-8951-6cfd8e6521f2",
@@ -6881,14 +6809,13 @@
        "status": "ok",
        "read_as": "xml",
        "same_columns": false,
-       "missing": [
-        "razao social",
-        "situacao cadastral"
-       ],
-       "extra": [
-        "razaosocial",
-        "situacaocadastral"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral"
+       },
+       "spelling_only": true
       }
      ],
      "schema_files": {
@@ -6932,51 +6859,34 @@
        "read_as": "json",
        "same_columns": false,
        "missing": [
-        "categoria de atividade",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "conteudo de carbono",
-        "densidade",
-        "emissoes de co2",
-        "fator de oxidacao",
-        "justificativa para alteracao da densidade",
-        "justificativa para alteracao do conteudo de carbono",
-        "justificativa para alteracao do fator de oxidacao",
-        "justificativa para alteracao do poder calorifico inferior",
-        "poder calorifico inferior",
-        "quantidade consumida",
-        "razao social",
-        "situacao cadastral",
-        "tipo de fonte energetica",
-        "unidade de medida",
-        "unidade de medida conteudo de carbono",
-        "unidade de medida densidade",
-        "unidade de medida fator de oxidacao",
-        "unidade de medida poder calorifico inferior"
+        "densidade"
        ],
        "extra": [
-        "categoriaatividade",
-        "codigocategoria",
-        "codigodetalhe",
-        "conteudocarbono",
-        "emissoesco2",
-        "fatoroxidacao",
-        "justificativaalteracaoconteudocarbono",
-        "justificativaalteracaodensidade",
-        "justificativaalteracaofatoroxidacao",
-        "justificativaalteracaopodercalorificoinferior",
-        "podercalorificoinferior",
-        "quantidadeconsumida",
-        "razaosocial",
-        "situacaocadastral",
-        "tipofonteenergetica",
-        "unidademedida",
-        "unidademedidaconteudocarbono",
-        "unidademedidadensidade",
-        "unidademedidafatoroxidacao",
-        "unidademedidapodercalorificoinferior",
         "valordensidade"
-       ]
+       ],
+       "spelling": {
+        "categoria de atividade": "categoriaatividade",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "conteudo de carbono": "conteudocarbono",
+        "emissoes de co2": "emissoesco2",
+        "fator de oxidacao": "fatoroxidacao",
+        "poder calorifico inferior": "podercalorificoinferior",
+        "quantidade consumida": "quantidadeconsumida",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de fonte energetica": "tipofonteenergetica",
+        "unidade de medida": "unidademedida",
+        "unidade de medida conteudo de carbono": "unidademedidaconteudocarbono",
+        "unidade de medida densidade": "unidademedidadensidade",
+        "unidade de medida fator de oxidacao": "unidademedidafatoroxidacao",
+        "unidade de medida poder calorifico inferior": "unidademedidapodercalorificoinferior",
+        "justificativa para alteracao da densidade": "justificativaalteracaodensidade",
+        "justificativa para alteracao do conteudo de carbono": "justificativaalteracaoconteudocarbono",
+        "justificativa para alteracao do fator de oxidacao": "justificativaalteracaofatoroxidacao",
+        "justificativa para alteracao do poder calorifico inferior": "justificativaalteracaopodercalorificoinferior"
+       },
+       "spelling_only": false
       },
       {
        "id": "e393d99b-9fb3-4d6e-a367-f32de7c87f52",
@@ -6986,51 +6896,34 @@
        "read_as": "xml",
        "same_columns": false,
        "missing": [
-        "categoria de atividade",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "conteudo de carbono",
-        "densidade",
-        "emissoes de co2",
-        "fator de oxidacao",
-        "justificativa para alteracao da densidade",
-        "justificativa para alteracao do conteudo de carbono",
-        "justificativa para alteracao do fator de oxidacao",
-        "justificativa para alteracao do poder calorifico inferior",
-        "poder calorifico inferior",
-        "quantidade consumida",
-        "razao social",
-        "situacao cadastral",
-        "tipo de fonte energetica",
-        "unidade de medida",
-        "unidade de medida conteudo de carbono",
-        "unidade de medida densidade",
-        "unidade de medida fator de oxidacao",
-        "unidade de medida poder calorifico inferior"
+        "densidade"
        ],
        "extra": [
-        "categoriaatividade",
-        "codigocategoria",
-        "codigodetalhe",
-        "conteudocarbono",
-        "emissoesco2",
-        "fatoroxidacao",
-        "justificativaalteracaoconteudocarbono",
-        "justificativaalteracaodensidade",
-        "justificativaalteracaofatoroxidacao",
-        "justificativaalteracaopodercalorificoinferior",
-        "podercalorificoinferior",
-        "quantidadeconsumida",
-        "razaosocial",
-        "situacaocadastral",
-        "tipofonteenergetica",
-        "unidademedida",
-        "unidademedidaconteudocarbono",
-        "unidademedidadensidade",
-        "unidademedidafatoroxidacao",
-        "unidademedidapodercalorificoinferior",
         "valordensidade"
-       ]
+       ],
+       "spelling": {
+        "categoria de atividade": "categoriaatividade",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "conteudo de carbono": "conteudocarbono",
+        "emissoes de co2": "emissoesco2",
+        "fator de oxidacao": "fatoroxidacao",
+        "poder calorifico inferior": "podercalorificoinferior",
+        "quantidade consumida": "quantidadeconsumida",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de fonte energetica": "tipofonteenergetica",
+        "unidade de medida": "unidademedida",
+        "unidade de medida conteudo de carbono": "unidademedidaconteudocarbono",
+        "unidade de medida densidade": "unidademedidadensidade",
+        "unidade de medida fator de oxidacao": "unidademedidafatoroxidacao",
+        "unidade de medida poder calorifico inferior": "unidademedidapodercalorificoinferior",
+        "justificativa para alteracao da densidade": "justificativaalteracaodensidade",
+        "justificativa para alteracao do conteudo de carbono": "justificativaalteracaoconteudocarbono",
+        "justificativa para alteracao do fator de oxidacao": "justificativaalteracaofatoroxidacao",
+        "justificativa para alteracao do poder calorifico inferior": "justificativaalteracaopodercalorificoinferior"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -7111,30 +7004,28 @@
        "same_columns": false,
        "missing": [
         "categoria de atividade",
-        "codigo da categoria",
         "codigo do detalhe",
         "detalhe",
         "estoque em 31 de dezembro de",
-        "nome do produto",
         "quantidade exportada",
-        "quantidade importada",
-        "razao social",
-        "situacao cadastral",
-        "unidade de medida"
+        "quantidade importada"
        ],
        "extra": [
-        "codcategoria",
         "coddetalhe",
         "descategoria",
         "desdetalhe",
-        "nomeproduto",
         "qtdestoque",
         "qtdexportada",
-        "qtdimportada",
-        "razaosocial",
-        "situacaocadastral",
-        "unidademedida"
-       ]
+        "qtdimportada"
+       ],
+       "spelling": {
+        "nome do produto": "nomeproduto",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "unidade de medida": "unidademedida",
+        "codigo da categoria": "codcategoria"
+       },
+       "spelling_only": false
       },
       {
        "id": "366b3fea-508a-4e3d-8b82-1428714b4585",
@@ -7145,30 +7036,28 @@
        "same_columns": false,
        "missing": [
         "categoria de atividade",
-        "codigo da categoria",
         "codigo do detalhe",
         "detalhe",
         "estoque em 31 de dezembro de",
-        "nome do produto",
         "quantidade exportada",
-        "quantidade importada",
-        "razao social",
-        "situacao cadastral",
-        "unidade de medida"
+        "quantidade importada"
        ],
        "extra": [
-        "codcategoria",
         "coddetalhe",
         "descategoria",
         "desdetalhe",
-        "nomeproduto",
         "qtdestoque",
         "qtdexportada",
-        "qtdimportada",
-        "razaosocial",
-        "situacaocadastral",
-        "unidademedida"
-       ]
+        "qtdimportada"
+       ],
+       "spelling": {
+        "nome do produto": "nomeproduto",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "unidade de medida": "unidademedida",
+        "codigo da categoria": "codcategoria"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -7212,37 +7101,27 @@
        "read_as": "json",
        "same_columns": false,
        "missing": [
-        "cpf cnpj",
-        "data auto",
-        "data julgamento principal",
-        "data julgamento recurso",
-        "data pagamento",
-        "decisao administrativa",
-        "nome ou razao social",
-        "numero ai",
-        "status debito",
-        "tipo auto",
-        "tipo de infracao",
-        "ultima atualizacao relatorio",
-        "valor do auto",
-        "valor pago"
+        "numero ai"
        ],
        "extra": [
-        "cpfcnpj",
-        "dataauto",
-        "datajulgamentoprincipal",
-        "datajulgamentorecurso",
-        "datapagamento",
-        "decisaoadministrativa",
-        "nomerazaosocial",
-        "numai",
-        "statusdebito",
-        "tipoauto",
-        "tipoinfracao",
-        "ultimaatualizacaorelatorio",
-        "valorauto",
-        "valorpago"
-       ]
+        "numai"
+       ],
+       "spelling": {
+        "cpf cnpj": "cpfcnpj",
+        "data auto": "dataauto",
+        "data julgamento principal": "datajulgamentoprincipal",
+        "data julgamento recurso": "datajulgamentorecurso",
+        "data pagamento": "datapagamento",
+        "decisao administrativa": "decisaoadministrativa",
+        "status debito": "statusdebito",
+        "tipo auto": "tipoauto",
+        "tipo de infracao": "tipoinfracao",
+        "ultima atualizacao relatorio": "ultimaatualizacaorelatorio",
+        "valor do auto": "valorauto",
+        "valor pago": "valorpago",
+        "nome ou razao social": "nomerazaosocial"
+       },
+       "spelling_only": false
       },
       {
        "id": "f1073229-9748-44f1-9b88-17ca4c5b04a1",
@@ -7252,37 +7131,27 @@
        "read_as": "xml",
        "same_columns": false,
        "missing": [
-        "cpf cnpj",
-        "data auto",
-        "data julgamento principal",
-        "data julgamento recurso",
-        "data pagamento",
-        "decisao administrativa",
-        "nome ou razao social",
-        "numero ai",
-        "status debito",
-        "tipo auto",
-        "tipo de infracao",
-        "ultima atualizacao relatorio",
-        "valor do auto",
-        "valor pago"
+        "numero ai"
        ],
        "extra": [
-        "cpfcnpj",
-        "dataauto",
-        "datajulgamentoprincipal",
-        "datajulgamentorecurso",
-        "datapagamento",
-        "decisaoadministrativa",
-        "nomerazaosocial",
-        "numai",
-        "statusdebito",
-        "tipoauto",
-        "tipoinfracao",
-        "ultimaatualizacaorelatorio",
-        "valorauto",
-        "valorpago"
-       ]
+        "numai"
+       ],
+       "spelling": {
+        "cpf cnpj": "cpfcnpj",
+        "data auto": "dataauto",
+        "data julgamento principal": "datajulgamentoprincipal",
+        "data julgamento recurso": "datajulgamentorecurso",
+        "data pagamento": "datapagamento",
+        "decisao administrativa": "decisaoadministrativa",
+        "status debito": "statusdebito",
+        "tipo auto": "tipoauto",
+        "tipo de infracao": "tipoinfracao",
+        "ultima atualizacao relatorio": "ultimaatualizacaorelatorio",
+        "valor do auto": "valorauto",
+        "valor pago": "valorpago",
+        "nome ou razao social": "nomerazaosocial"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -7478,23 +7347,20 @@
        "read_as": "json",
        "same_columns": false,
        "missing": [
-        "estado de atuacao",
-        "forma de comercializacao",
-        "nome do produto",
-        "quantidade pescada",
-        "razao social",
-        "situacao cadastral",
-        "unidade de medida"
+        "quantidade pescada"
        ],
        "extra": [
-        "estadoatuacao",
-        "formacomercializacao",
-        "nomeproduto",
-        "qtdpescada",
-        "razaosocial",
-        "situacaocadastral",
-        "unidademedida"
-       ]
+        "qtdpescada"
+       ],
+       "spelling": {
+        "estado de atuacao": "estadoatuacao",
+        "forma de comercializacao": "formacomercializacao",
+        "nome do produto": "nomeproduto",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "unidade de medida": "unidademedida"
+       },
+       "spelling_only": false
       },
       {
        "id": "209d6f00-68bb-46d9-ae15-0773c7b3b920",
@@ -7504,23 +7370,20 @@
        "read_as": "xml",
        "same_columns": false,
        "missing": [
-        "estado de atuacao",
-        "forma de comercializacao",
-        "nome do produto",
-        "quantidade pescada",
-        "razao social",
-        "situacao cadastral",
-        "unidade de medida"
+        "quantidade pescada"
        ],
        "extra": [
-        "estadoatuacao",
-        "formacomercializacao",
-        "nomeproduto",
-        "qtdpescada",
-        "razaosocial",
-        "situacaocadastral",
-        "unidademedida"
-       ]
+        "qtdpescada"
+       ],
+       "spelling": {
+        "estado de atuacao": "estadoatuacao",
+        "forma de comercializacao": "formacomercializacao",
+        "nome do produto": "nomeproduto",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "unidade de medida": "unidademedida"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -7857,27 +7720,23 @@
        "read_as": "json",
        "same_columns": false,
        "missing": [
-        "area ocupada por instalacoes",
-        "area ocupada por veg nativa",
-        "area utilizada em plantacoes",
         "no queimadas ano plantacao",
-        "no queimadas ano veg nativa",
-        "plantacao reflorestamento",
-        "razao social",
-        "situacao cadastral",
-        "vegetacao nativa"
+        "no queimadas ano veg nativa"
        ],
        "extra": [
-        "areaocupadainstalacoes",
-        "areaocupadavegnativa",
-        "areautilizadaplantacoes",
         "numqueimadasplantacao",
-        "numqueimadasvegnativa",
-        "plantacaoreflorestamento",
-        "razaosocial",
-        "situacaocadastral",
-        "vegetacaonativa"
-       ]
+        "numqueimadasvegnativa"
+       ],
+       "spelling": {
+        "plantacao reflorestamento": "plantacaoreflorestamento",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "vegetacao nativa": "vegetacaonativa",
+        "area ocupada por instalacoes": "areaocupadainstalacoes",
+        "area ocupada por veg nativa": "areaocupadavegnativa",
+        "area utilizada em plantacoes": "areautilizadaplantacoes"
+       },
+       "spelling_only": false
       },
       {
        "id": "097ab888-07c6-4b6b-b9c2-a0d44565bb3b",
@@ -7887,27 +7746,23 @@
        "read_as": "xml",
        "same_columns": false,
        "missing": [
-        "area ocupada por instalacoes",
-        "area ocupada por veg nativa",
-        "area utilizada em plantacoes",
         "no queimadas ano plantacao",
-        "no queimadas ano veg nativa",
-        "plantacao reflorestamento",
-        "razao social",
-        "situacao cadastral",
-        "vegetacao nativa"
+        "no queimadas ano veg nativa"
        ],
        "extra": [
-        "areaocupadainstalacoes",
-        "areaocupadavegnativa",
-        "areautilizadaplantacoes",
         "numqueimadasplantacao",
-        "numqueimadasvegnativa",
-        "plantacaoreflorestamento",
-        "razaosocial",
-        "situacaocadastral",
-        "vegetacaonativa"
-       ]
+        "numqueimadasvegnativa"
+       ],
+       "spelling": {
+        "plantacao reflorestamento": "plantacaoreflorestamento",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "vegetacao nativa": "vegetacaonativa",
+        "area ocupada por instalacoes": "areaocupadainstalacoes",
+        "area ocupada por veg nativa": "areaocupadavegnativa",
+        "area utilizada em plantacoes": "areautilizadaplantacoes"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -7950,22 +7805,17 @@
        "status": "ok",
        "read_as": "json",
        "same_columns": false,
-       "missing": [
-        "empresa destinadora do residuo",
-        "metodo de reciclagem",
-        "razao social",
-        "situacao cadastral",
-        "tipo de residuo",
-        "unidade de medida"
-       ],
-       "extra": [
-        "empresadestinresiduo",
-        "metodoreciclagem",
-        "razaosocial",
-        "situacaocadastral",
-        "tiporesiduo",
-        "unidademedida"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "metodo de reciclagem": "metodoreciclagem",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de residuo": "tiporesiduo",
+        "unidade de medida": "unidademedida",
+        "empresa destinadora do residuo": "empresadestinresiduo"
+       },
+       "spelling_only": true
       },
       {
        "id": "c879ce34-f533-4e1a-a836-ef53773eef34",
@@ -7974,22 +7824,17 @@
        "status": "ok",
        "read_as": "xml",
        "same_columns": false,
-       "missing": [
-        "empresa destinadora do residuo",
-        "metodo de reciclagem",
-        "razao social",
-        "situacao cadastral",
-        "tipo de residuo",
-        "unidade de medida"
-       ],
-       "extra": [
-        "empresadestinresiduo",
-        "metodoreciclagem",
-        "razaosocial",
-        "situacaocadastral",
-        "tiporesiduo",
-        "unidademedida"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "metodo de reciclagem": "metodoreciclagem",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de residuo": "tiporesiduo",
+        "unidade de medida": "unidademedida",
+        "empresa destinadora do residuo": "empresadestinresiduo"
+       },
+       "spelling_only": true
       }
      ],
      "schema_files": {
@@ -10022,33 +9867,26 @@
        "read_as": "json",
        "same_columns": false,
        "missing": [
-        "ano da destinacao",
-        "cnpj armazenamento destinacao",
         "cnpj da emp ger do residuo",
-        "cnpj do armazenador",
-        "cod residuo",
-        "desc residuo",
-        "qtd armaz enviada p dest final",
-        "raz soc da emp ger do res",
-        "raz soc empresa armaz dest",
-        "razao social do armazenador",
-        "situacao cadastral",
-        "tipo de armazenamento destin"
+        "raz soc da emp ger do res"
        ],
        "extra": [
-        "anodestinacao",
-        "cnpjarmazenador",
-        "cnpjarmazenamentodestinacao",
-        "codresiduo",
-        "descresiduo",
         "numcnpjempgeradoraresiduo",
-        "qtdarmazenviadadestfinal",
-        "razaosocialarmazenador",
-        "razaosocialempgeradoraresiduo",
-        "razsocempresaarmazdest",
-        "situacaocadastral",
-        "tipoarmazenamentodestin"
-       ]
+        "razaosocialempgeradoraresiduo"
+       ],
+       "spelling": {
+        "ano da destinacao": "anodestinacao",
+        "cnpj armazenamento destinacao": "cnpjarmazenamentodestinacao",
+        "cnpj do armazenador": "cnpjarmazenador",
+        "cod residuo": "codresiduo",
+        "desc residuo": "descresiduo",
+        "qtd armaz enviada p dest final": "qtdarmazenviadadestfinal",
+        "raz soc empresa armaz dest": "razsocempresaarmazdest",
+        "razao social do armazenador": "razaosocialarmazenador",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de armazenamento destin": "tipoarmazenamentodestin"
+       },
+       "spelling_only": false
       },
       {
        "id": "ef42eb2a-512e-46bd-9b60-1f6f25f78931",
@@ -10058,33 +9896,26 @@
        "read_as": "xml",
        "same_columns": false,
        "missing": [
-        "ano da destinacao",
-        "cnpj armazenamento destinacao",
         "cnpj da emp ger do residuo",
-        "cnpj do armazenador",
-        "cod residuo",
-        "desc residuo",
-        "qtd armaz enviada p dest final",
-        "raz soc da emp ger do res",
-        "raz soc empresa armaz dest",
-        "razao social do armazenador",
-        "situacao cadastral",
-        "tipo de armazenamento destin"
+        "raz soc da emp ger do res"
        ],
        "extra": [
-        "anodestinacao",
-        "cnpjarmazenador",
-        "cnpjarmazenamentodestinacao",
-        "codresiduo",
-        "descresiduo",
         "numcnpjempgeradoraresiduo",
-        "qtdarmazenviadadestfinal",
-        "razaosocialarmazenador",
-        "razaosocialempgeradoraresiduo",
-        "razsocempresaarmazdest",
-        "situacaocadastral",
-        "tipoarmazenamentodestin"
-       ]
+        "razaosocialempgeradoraresiduo"
+       ],
+       "spelling": {
+        "ano da destinacao": "anodestinacao",
+        "cnpj armazenamento destinacao": "cnpjarmazenamentodestinacao",
+        "cnpj do armazenador": "cnpjarmazenador",
+        "cod residuo": "codresiduo",
+        "desc residuo": "descresiduo",
+        "qtd armaz enviada p dest final": "qtdarmazenviadadestfinal",
+        "raz soc empresa armaz dest": "razsocempresaarmazdest",
+        "razao social do armazenador": "razaosocialarmazenador",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de armazenamento destin": "tipoarmazenamentodestin"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -10127,36 +9958,24 @@
        "status": "ok",
        "read_as": "json",
        "same_columns": false,
-       "missing": [
-        "ano destinacao",
-        "categoria de atividade",
-        "cnpj do destinador",
-        "cnpj do gerador do residuo",
-        "cod residuo",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "desc residuo",
-        "quant destinada",
-        "raz soc do gerador do residuo",
-        "razao social do destinador",
-        "situacao cadastral",
-        "tipo de destinacao"
-       ],
-       "extra": [
-        "anodestinacao",
-        "categoriaatividade",
-        "cnpjdestinador",
-        "cnpjgeradorresiduo",
-        "codigocategoria",
-        "codigodetalhe",
-        "codresiduo",
-        "descresiduo",
-        "quantdestinada",
-        "razaosocialdestinador",
-        "razaosocialgeradorresiduo",
-        "situacaocadastral",
-        "tipodestinacao"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "ano destinacao": "anodestinacao",
+        "categoria de atividade": "categoriaatividade",
+        "cnpj do destinador": "cnpjdestinador",
+        "cnpj do gerador do residuo": "cnpjgeradorresiduo",
+        "cod residuo": "codresiduo",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "desc residuo": "descresiduo",
+        "quant destinada": "quantdestinada",
+        "razao social do destinador": "razaosocialdestinador",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de destinacao": "tipodestinacao",
+        "raz soc do gerador do residuo": "razaosocialgeradorresiduo"
+       },
+       "spelling_only": true
       },
       {
        "id": "cd4db1a8-4028-41c3-b521-c9ada6d3137e",
@@ -10165,36 +9984,24 @@
        "status": "ok",
        "read_as": "xml",
        "same_columns": false,
-       "missing": [
-        "ano destinacao",
-        "categoria de atividade",
-        "cnpj do destinador",
-        "cnpj do gerador do residuo",
-        "cod residuo",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "desc residuo",
-        "quant destinada",
-        "raz soc do gerador do residuo",
-        "razao social do destinador",
-        "situacao cadastral",
-        "tipo de destinacao"
-       ],
-       "extra": [
-        "anodestinacao",
-        "categoriaatividade",
-        "cnpjdestinador",
-        "cnpjgeradorresiduo",
-        "codigocategoria",
-        "codigodetalhe",
-        "codresiduo",
-        "descresiduo",
-        "quantdestinada",
-        "razaosocialdestinador",
-        "razaosocialgeradorresiduo",
-        "situacaocadastral",
-        "tipodestinacao"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "ano destinacao": "anodestinacao",
+        "categoria de atividade": "categoriaatividade",
+        "cnpj do destinador": "cnpjdestinador",
+        "cnpj do gerador do residuo": "cnpjgeradorresiduo",
+        "cod residuo": "codresiduo",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "desc residuo": "descresiduo",
+        "quant destinada": "quantdestinada",
+        "razao social do destinador": "razaosocialdestinador",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de destinacao": "tipodestinacao",
+        "raz soc do gerador do residuo": "razaosocialgeradorresiduo"
+       },
+       "spelling_only": true
       }
      ],
      "schema_files": {
@@ -10237,32 +10044,22 @@
        "status": "ok",
        "read_as": "json",
        "same_columns": false,
-       "missing": [
-        "ano da geracao",
-        "categoria de atividade",
-        "classificacao residuo",
-        "cnpj do gerador",
-        "cod residuo",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "quantidade gerada",
-        "razao social do gerador",
-        "situacao cadastral",
-        "tipo de residuo"
-       ],
-       "extra": [
-        "anogeracao",
-        "categoriaatividade",
-        "classificacaoresiduo",
-        "cnpjgerador",
-        "codigocategoria",
-        "codigodetalhe",
-        "codresiduo",
-        "quantidadegerada",
-        "razaosocialgerador",
-        "situacaocadastral",
-        "tiporesiduo"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "ano da geracao": "anogeracao",
+        "categoria de atividade": "categoriaatividade",
+        "classificacao residuo": "classificacaoresiduo",
+        "cnpj do gerador": "cnpjgerador",
+        "cod residuo": "codresiduo",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "quantidade gerada": "quantidadegerada",
+        "razao social do gerador": "razaosocialgerador",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de residuo": "tiporesiduo"
+       },
+       "spelling_only": true
       },
       {
        "id": "f3ce8dee-3db9-485e-9a55-0f7f853016b6",
@@ -10271,32 +10068,22 @@
        "status": "ok",
        "read_as": "xml",
        "same_columns": false,
-       "missing": [
-        "ano da geracao",
-        "categoria de atividade",
-        "classificacao residuo",
-        "cnpj do gerador",
-        "cod residuo",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "quantidade gerada",
-        "razao social do gerador",
-        "situacao cadastral",
-        "tipo de residuo"
-       ],
-       "extra": [
-        "anogeracao",
-        "categoriaatividade",
-        "classificacaoresiduo",
-        "cnpjgerador",
-        "codigocategoria",
-        "codigodetalhe",
-        "codresiduo",
-        "quantidadegerada",
-        "razaosocialgerador",
-        "situacaocadastral",
-        "tiporesiduo"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "ano da geracao": "anogeracao",
+        "categoria de atividade": "categoriaatividade",
+        "classificacao residuo": "classificacaoresiduo",
+        "cnpj do gerador": "cnpjgerador",
+        "cod residuo": "codresiduo",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "quantidade gerada": "quantidadegerada",
+        "razao social do gerador": "razaosocialgerador",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de residuo": "tiporesiduo"
+       },
+       "spelling_only": true
       }
      ],
      "schema_files": {
@@ -10340,43 +10127,31 @@
        "read_as": "json",
        "same_columns": false,
        "missing": [
-        "ano da geracao do residuo",
-        "categoria de atividade",
-        "classif do residuo nbr 10 004",
         "cnpj da emp de armazen destin",
-        "cnpj do gerador",
-        "cod residuo",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "efic do sist de tratamento",
-        "finalidade da transferencia",
-        "identif do residuo nbr 10 004",
-        "raz soc emp armazen destin",
-        "razao social do gerador",
-        "situacao cadastral",
-        "tipo de finalidade",
-        "tipo de monit realizado",
-        "tipo de residuo"
+        "raz soc emp armazen destin"
        ],
        "extra": [
-        "anogeracaoresiduo",
-        "categoriaatividade",
-        "classifresiduonbr10004",
         "cnpjemparmazenamantodestinacao",
-        "cnpjgerador",
-        "codigocategoria",
-        "codigodetalhe",
-        "codresiduo",
-        "eficsisttratamento",
-        "finalidadetransferencia",
-        "identifresiduonbr10004",
-        "razaosocialemparmazenamantodestinacao",
-        "razaosocialgerador",
-        "situacaocadastral",
-        "tipofinalidade",
-        "tipomonitrealizado",
-        "tiporesiduo"
-       ]
+        "razaosocialemparmazenamantodestinacao"
+       ],
+       "spelling": {
+        "ano da geracao do residuo": "anogeracaoresiduo",
+        "categoria de atividade": "categoriaatividade",
+        "classif do residuo nbr 10 004": "classifresiduonbr10004",
+        "cnpj do gerador": "cnpjgerador",
+        "cod residuo": "codresiduo",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "efic do sist de tratamento": "eficsisttratamento",
+        "finalidade da transferencia": "finalidadetransferencia",
+        "identif do residuo nbr 10 004": "identifresiduonbr10004",
+        "razao social do gerador": "razaosocialgerador",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de finalidade": "tipofinalidade",
+        "tipo de monit realizado": "tipomonitrealizado",
+        "tipo de residuo": "tiporesiduo"
+       },
+       "spelling_only": false
       },
       {
        "id": "bfbe1484-5db2-47ef-8c0b-f1aaa033c8d3",
@@ -10386,43 +10161,31 @@
        "read_as": "xml",
        "same_columns": false,
        "missing": [
-        "ano da geracao do residuo",
-        "categoria de atividade",
-        "classif do residuo nbr 10 004",
         "cnpj da emp de armazen destin",
-        "cnpj do gerador",
-        "cod residuo",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "efic do sist de tratamento",
-        "finalidade da transferencia",
-        "identif do residuo nbr 10 004",
-        "raz soc emp armazen destin",
-        "razao social do gerador",
-        "situacao cadastral",
-        "tipo de finalidade",
-        "tipo de monit realizado",
-        "tipo de residuo"
+        "raz soc emp armazen destin"
        ],
        "extra": [
-        "anogeracaoresiduo",
-        "categoriaatividade",
-        "classifresiduonbr10004",
         "cnpjemparmazenamantodestinacao",
-        "cnpjgerador",
-        "codigocategoria",
-        "codigodetalhe",
-        "codresiduo",
-        "eficsisttratamento",
-        "finalidadetransferencia",
-        "identifresiduonbr10004",
-        "razaosocialemparmazenamantodestinacao",
-        "razaosocialgerador",
-        "situacaocadastral",
-        "tipofinalidade",
-        "tipomonitrealizado",
-        "tiporesiduo"
-       ]
+        "razaosocialemparmazenamantodestinacao"
+       ],
+       "spelling": {
+        "ano da geracao do residuo": "anogeracaoresiduo",
+        "categoria de atividade": "categoriaatividade",
+        "classif do residuo nbr 10 004": "classifresiduonbr10004",
+        "cnpj do gerador": "cnpjgerador",
+        "cod residuo": "codresiduo",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "efic do sist de tratamento": "eficsisttratamento",
+        "finalidade da transferencia": "finalidadetransferencia",
+        "identif do residuo nbr 10 004": "identifresiduonbr10004",
+        "razao social do gerador": "razaosocialgerador",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de finalidade": "tipofinalidade",
+        "tipo de monit realizado": "tipomonitrealizado",
+        "tipo de residuo": "tiporesiduo"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -10465,20 +10228,16 @@
        "status": "ok",
        "read_as": "json",
        "same_columns": false,
-       "missing": [
-        "cnpj da origem",
-        "cnpj do transportador",
-        "razao social da origem",
-        "razao social do transportador",
-        "situacao cadastral"
-       ],
-       "extra": [
-        "cnpjorigem",
-        "cnpjtransportador",
-        "razaosocialorigem",
-        "razaosocialtransportador",
-        "situacaocadastral"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "cnpj da origem": "cnpjorigem",
+        "cnpj do transportador": "cnpjtransportador",
+        "razao social da origem": "razaosocialorigem",
+        "razao social do transportador": "razaosocialtransportador",
+        "situacao cadastral": "situacaocadastral"
+       },
+       "spelling_only": true
       },
       {
        "id": "8fba5aa8-5bd1-45af-824c-a8d3bdce9ed3",
@@ -10487,20 +10246,16 @@
        "status": "ok",
        "read_as": "xml",
        "same_columns": false,
-       "missing": [
-        "cnpj da origem",
-        "cnpj do transportador",
-        "razao social da origem",
-        "razao social do transportador",
-        "situacao cadastral"
-       ],
-       "extra": [
-        "cnpjorigem",
-        "cnpjtransportador",
-        "razaosocialorigem",
-        "razaosocialtransportador",
-        "situacaocadastral"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "cnpj da origem": "cnpjorigem",
+        "cnpj do transportador": "cnpjtransportador",
+        "razao social da origem": "razaosocialorigem",
+        "razao social do transportador": "razaosocialtransportador",
+        "situacao cadastral": "situacaocadastral"
+       },
+       "spelling_only": true
       }
      ],
      "schema_files": {
@@ -10573,29 +10328,23 @@
        "read_as": "json",
        "same_columns": false,
        "missing": [
-        "ano de corte",
-        "ano do plantio",
-        "area efetivo plantio ha",
-        "no de arvores total",
-        "nome cientifico",
-        "nome popular",
-        "razao social",
-        "situacao cadastral",
-        "unidade de medida",
         "volume quantidade explorado"
        ],
        "extra": [
-        "anocorte",
-        "anoplantio",
-        "areaefetivoplantioha",
-        "nomecientifico",
-        "nomepopular",
-        "numarvorestotal",
-        "razaosocial",
-        "situacaocadastral",
-        "unidademedida",
         "volquantexplorado"
-       ]
+       ],
+       "spelling": {
+        "ano de corte": "anocorte",
+        "ano do plantio": "anoplantio",
+        "area efetivo plantio ha": "areaefetivoplantioha",
+        "nome cientifico": "nomecientifico",
+        "nome popular": "nomepopular",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "unidade de medida": "unidademedida",
+        "no de arvores total": "numarvorestotal"
+       },
+       "spelling_only": false
       },
       {
        "id": "6361293c-6412-4d78-81a8-05b94d5d3ac9",
@@ -10605,28 +10354,23 @@
        "read_as": "xml",
        "same_columns": false,
        "missing": [
-        "ano de corte",
-        "ano do plantio",
-        "area efetivo plantio ha",
         "no de arvores total",
-        "nome cientifico",
-        "nome popular",
-        "razao social",
-        "situacao cadastral",
-        "unidade de medida",
         "volume quantidade explorado"
        ],
        "extra": [
-        "anocorte",
-        "anoplantio",
-        "areaefetivoplantioha",
-        "nomecientifico",
-        "nomepopular",
-        "razaosocial",
-        "situacaocadastral",
-        "unidademedida",
         "volquantexplorado"
-       ]
+       ],
+       "spelling": {
+        "ano de corte": "anocorte",
+        "ano do plantio": "anoplantio",
+        "area efetivo plantio ha": "areaefetivoplantioha",
+        "nome cientifico": "nomecientifico",
+        "nome popular": "nomepopular",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "unidade de medida": "unidademedida"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -12269,34 +12013,23 @@
        "status": "ok",
        "read_as": "json",
        "same_columns": false,
-       "missing": [
-        "categoria de atividade",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "entradas producao",
-        "estoque anterior",
-        "estoque atual",
-        "nome cientifico",
-        "nome popular",
-        "razao social",
-        "saidas comercializacao",
-        "situacao cadastral",
-        "unidade de medida"
-       ],
-       "extra": [
-        "categoriaatividade",
-        "codigocategoria",
-        "codigodetalhe",
-        "entradasproducao",
-        "estoqueanterior",
-        "estoqueatual",
-        "nomecientifico",
-        "nomepopular",
-        "razaosocial",
-        "saidascomercializacao",
-        "situacaocadastral",
-        "unidademedida"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "categoria de atividade": "categoriaatividade",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "entradas producao": "entradasproducao",
+        "estoque anterior": "estoqueanterior",
+        "estoque atual": "estoqueatual",
+        "nome cientifico": "nomecientifico",
+        "nome popular": "nomepopular",
+        "razao social": "razaosocial",
+        "saidas comercializacao": "saidascomercializacao",
+        "situacao cadastral": "situacaocadastral",
+        "unidade de medida": "unidademedida"
+       },
+       "spelling_only": true
       },
       {
        "id": "0380087f-9150-4cd0-9ea4-9ece0fd6a69d",
@@ -12305,34 +12038,23 @@
        "status": "ok",
        "read_as": "xml",
        "same_columns": false,
-       "missing": [
-        "categoria de atividade",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "entradas producao",
-        "estoque anterior",
-        "estoque atual",
-        "nome cientifico",
-        "nome popular",
-        "razao social",
-        "saidas comercializacao",
-        "situacao cadastral",
-        "unidade de medida"
-       ],
-       "extra": [
-        "categoriaatividade",
-        "codigocategoria",
-        "codigodetalhe",
-        "entradasproducao",
-        "estoqueanterior",
-        "estoqueatual",
-        "nomecientifico",
-        "nomepopular",
-        "razaosocial",
-        "saidascomercializacao",
-        "situacaocadastral",
-        "unidademedida"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "categoria de atividade": "categoriaatividade",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "entradas producao": "entradasproducao",
+        "estoque anterior": "estoqueanterior",
+        "estoque atual": "estoqueatual",
+        "nome cientifico": "nomecientifico",
+        "nome popular": "nomepopular",
+        "razao social": "razaosocial",
+        "saidas comercializacao": "saidascomercializacao",
+        "situacao cadastral": "situacaocadastral",
+        "unidade de medida": "unidademedida"
+       },
+       "spelling_only": true
       }
      ],
      "schema_files": {
@@ -12375,46 +12097,29 @@
        "status": "ok",
        "read_as": "json",
        "same_columns": false,
-       "missing": [
-        "abates vendas",
-        "categoria de atividade",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "furtos roubos",
-        "metodo de contagem",
-        "nome cientifico",
-        "nome popular",
-        "ovos coletados",
-        "plantel anterior",
-        "plantel esperado",
-        "plantel est contagem atual",
-        "razao social",
-        "situacao cadastral",
-        "total de entradas",
-        "total de saidas",
-        "trans saidas",
-        "transf entradas"
-       ],
-       "extra": [
-        "abatesvendas",
-        "categoriaatividade",
-        "codigocategoria",
-        "codigodetalhe",
-        "furtosroubos",
-        "metodocontagem",
-        "nomecientifico",
-        "nomepopular",
-        "ovoscoletados",
-        "plantelanterior",
-        "plantelesperado",
-        "plantelestcontagematual",
-        "razaosocial",
-        "situacaocadastral",
-        "totalentradas",
-        "totalsaidas",
-        "transfentradas",
-        "transsaidas"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "abates vendas": "abatesvendas",
+        "categoria de atividade": "categoriaatividade",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "furtos roubos": "furtosroubos",
+        "metodo de contagem": "metodocontagem",
+        "nome cientifico": "nomecientifico",
+        "nome popular": "nomepopular",
+        "ovos coletados": "ovoscoletados",
+        "plantel anterior": "plantelanterior",
+        "plantel esperado": "plantelesperado",
+        "plantel est contagem atual": "plantelestcontagematual",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "total de entradas": "totalentradas",
+        "total de saidas": "totalsaidas",
+        "trans saidas": "transsaidas",
+        "transf entradas": "transfentradas"
+       },
+       "spelling_only": true
       },
       {
        "id": "2f840008-6acf-48bb-a0cd-deda72bafb81",
@@ -12423,46 +12128,29 @@
        "status": "ok",
        "read_as": "xml",
        "same_columns": false,
-       "missing": [
-        "abates vendas",
-        "categoria de atividade",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "furtos roubos",
-        "metodo de contagem",
-        "nome cientifico",
-        "nome popular",
-        "ovos coletados",
-        "plantel anterior",
-        "plantel esperado",
-        "plantel est contagem atual",
-        "razao social",
-        "situacao cadastral",
-        "total de entradas",
-        "total de saidas",
-        "trans saidas",
-        "transf entradas"
-       ],
-       "extra": [
-        "abatesvendas",
-        "categoriaatividade",
-        "codigocategoria",
-        "codigodetalhe",
-        "furtosroubos",
-        "metodocontagem",
-        "nomecientifico",
-        "nomepopular",
-        "ovoscoletados",
-        "plantelanterior",
-        "plantelesperado",
-        "plantelestcontagematual",
-        "razaosocial",
-        "situacaocadastral",
-        "totalentradas",
-        "totalsaidas",
-        "transfentradas",
-        "transsaidas"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "abates vendas": "abatesvendas",
+        "categoria de atividade": "categoriaatividade",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "furtos roubos": "furtosroubos",
+        "metodo de contagem": "metodocontagem",
+        "nome cientifico": "nomecientifico",
+        "nome popular": "nomepopular",
+        "ovos coletados": "ovoscoletados",
+        "plantel anterior": "plantelanterior",
+        "plantel esperado": "plantelesperado",
+        "plantel est contagem atual": "plantelestcontagematual",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "total de entradas": "totalentradas",
+        "total de saidas": "totalsaidas",
+        "trans saidas": "transsaidas",
+        "transf entradas": "transfentradas"
+       },
+       "spelling_only": true
       }
      ],
      "schema_files": {
@@ -12506,49 +12194,33 @@
        "read_as": "json",
        "same_columns": false,
        "missing": [
-        "categoria de atividade",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "femeas plantel anterior",
-        "femeas plantel atual",
-        "furtos roubos",
-        "indet plantel anterior",
-        "indeterminado plantel atual",
-        "machos plantel anterior",
-        "machos plantel atual",
-        "nome cientifico",
-        "nome popular",
-        "razao social",
-        "reint solturas",
-        "situacao cadastral",
-        "total de entradas",
-        "total de saidas",
-        "total geral",
-        "trans saidas",
-        "transf entradas"
+        "indet plantel anterior"
        ],
        "extra": [
-        "categoriaatividade",
-        "codigocategoria",
-        "codigodetalhe",
-        "femeasplantelanterior",
-        "femeasplantelatual",
-        "furtosroubos",
-        "indeterminadoplantelanterior",
-        "indeterminadoplantelatual",
-        "machosplantelanterior",
-        "machosplantelatual",
-        "nomecientifico",
-        "nomepopular",
-        "razaosocial",
-        "reintsolturas",
-        "situacaocadastral",
-        "totalentradas",
-        "totalgeral",
-        "totalsaidas",
-        "transfentradas",
-        "transsaidas"
-       ]
+        "indeterminadoplantelanterior"
+       ],
+       "spelling": {
+        "categoria de atividade": "categoriaatividade",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "femeas plantel anterior": "femeasplantelanterior",
+        "femeas plantel atual": "femeasplantelatual",
+        "furtos roubos": "furtosroubos",
+        "indeterminado plantel atual": "indeterminadoplantelatual",
+        "machos plantel anterior": "machosplantelanterior",
+        "machos plantel atual": "machosplantelatual",
+        "nome cientifico": "nomecientifico",
+        "nome popular": "nomepopular",
+        "razao social": "razaosocial",
+        "reint solturas": "reintsolturas",
+        "situacao cadastral": "situacaocadastral",
+        "total de entradas": "totalentradas",
+        "total de saidas": "totalsaidas",
+        "total geral": "totalgeral",
+        "trans saidas": "transsaidas",
+        "transf entradas": "transfentradas"
+       },
+       "spelling_only": false
       },
       {
        "id": "d72a5680-fcd2-46c8-b9ec-58e0a352c1e1",
@@ -12558,49 +12230,33 @@
        "read_as": "xml",
        "same_columns": false,
        "missing": [
-        "categoria de atividade",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "femeas plantel anterior",
-        "femeas plantel atual",
-        "furtos roubos",
-        "indet plantel anterior",
-        "indeterminado plantel atual",
-        "machos plantel anterior",
-        "machos plantel atual",
-        "nome cientifico",
-        "nome popular",
-        "razao social",
-        "reint solturas",
-        "situacao cadastral",
-        "total de entradas",
-        "total de saidas",
-        "total geral",
-        "trans saidas",
-        "transf entradas"
+        "indet plantel anterior"
        ],
        "extra": [
-        "categoriaatividade",
-        "codigocategoria",
-        "codigodetalhe",
-        "femeasplantelanterior",
-        "femeasplantelatual",
-        "furtosroubos",
-        "indeterminadoplantelanterior",
-        "indeterminadoplantelatual",
-        "machosplantelanterior",
-        "machosplantelatual",
-        "nomecientifico",
-        "nomepopular",
-        "razaosocial",
-        "reintsolturas",
-        "situacaocadastral",
-        "totalentradas",
-        "totalgeral",
-        "totalsaidas",
-        "transfentradas",
-        "transsaidas"
-       ]
+        "indeterminadoplantelanterior"
+       ],
+       "spelling": {
+        "categoria de atividade": "categoriaatividade",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "femeas plantel anterior": "femeasplantelanterior",
+        "femeas plantel atual": "femeasplantelatual",
+        "furtos roubos": "furtosroubos",
+        "indeterminado plantel atual": "indeterminadoplantelatual",
+        "machos plantel anterior": "machosplantelanterior",
+        "machos plantel atual": "machosplantelatual",
+        "nome cientifico": "nomecientifico",
+        "nome popular": "nomepopular",
+        "razao social": "razaosocial",
+        "reint solturas": "reintsolturas",
+        "situacao cadastral": "situacaocadastral",
+        "total de entradas": "totalentradas",
+        "total de saidas": "totalsaidas",
+        "total geral": "totalgeral",
+        "trans saidas": "transsaidas",
+        "transf entradas": "transfentradas"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -12746,12 +12402,12 @@
        "status": "ok",
        "read_as": "xml",
        "same_columns": false,
-       "missing": [
-        "data hora inicio fogo"
-       ],
-       "extra": [
-        "data hota inicio fogo"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "data hora inicio fogo": "data hota inicio fogo"
+       },
+       "spelling_only": true
       }
      ],
      "schema_files": {
@@ -12833,32 +12489,22 @@
        "status": "ok",
        "read_as": "json",
        "same_columns": false,
-       "missing": [
-        "municipio destino",
-        "municipio origem",
-        "plano de emergencia",
-        "quantidade transportada",
-        "razao social",
-        "situacao cadastral",
-        "tipo de armazenamento",
-        "tipo de transporte",
-        "uf destino",
-        "uf origem",
-        "unidade de medida"
-       ],
-       "extra": [
-        "municipiodestino",
-        "municipioorigem",
-        "planoemergencia",
-        "quantidadetransportada",
-        "razaosocial",
-        "situacaocadastral",
-        "tipoarmazenamento",
-        "tipotransporte",
-        "ufdestino",
-        "uforigem",
-        "unidademedida"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "municipio destino": "municipiodestino",
+        "municipio origem": "municipioorigem",
+        "plano de emergencia": "planoemergencia",
+        "quantidade transportada": "quantidadetransportada",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de armazenamento": "tipoarmazenamento",
+        "tipo de transporte": "tipotransporte",
+        "uf destino": "ufdestino",
+        "uf origem": "uforigem",
+        "unidade de medida": "unidademedida"
+       },
+       "spelling_only": true
       },
       {
        "id": "068ad700-fdce-4ea0-8b1b-34f56f37fec8",
@@ -12867,32 +12513,22 @@
        "status": "ok",
        "read_as": "xml",
        "same_columns": false,
-       "missing": [
-        "municipio destino",
-        "municipio origem",
-        "plano de emergencia",
-        "quantidade transportada",
-        "razao social",
-        "situacao cadastral",
-        "tipo de armazenamento",
-        "tipo de transporte",
-        "uf destino",
-        "uf origem",
-        "unidade de medida"
-       ],
-       "extra": [
-        "municipiodestino",
-        "municipioorigem",
-        "planoemergencia",
-        "quantidadetransportada",
-        "razaosocial",
-        "situacaocadastral",
-        "tipoarmazenamento",
-        "tipotransporte",
-        "ufdestino",
-        "uforigem",
-        "unidademedida"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "municipio destino": "municipiodestino",
+        "municipio origem": "municipioorigem",
+        "plano de emergencia": "planoemergencia",
+        "quantidade transportada": "quantidadetransportada",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "tipo de armazenamento": "tipoarmazenamento",
+        "tipo de transporte": "tipotransporte",
+        "uf destino": "ufdestino",
+        "uf origem": "uforigem",
+        "unidade de medida": "unidademedida"
+       },
+       "spelling_only": true
       }
      ],
      "schema_files": {
@@ -12935,30 +12571,21 @@
        "status": "ok",
        "read_as": "json",
        "same_columns": false,
-       "missing": [
-        "capacidade nominal",
-        "categoria de atividade",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "equipamento controle",
-        "fonte poluidora",
-        "funcionamento diario",
-        "possui chamine",
-        "razao social",
-        "situacao cadastral"
-       ],
-       "extra": [
-        "capacidadenominal",
-        "categoriaatividade",
-        "codigocategoria",
-        "codigodetalhe",
-        "equipamentocontrole",
-        "fontepoluidora",
-        "funcionamentodiario",
-        "possuichamine",
-        "razaosocial",
-        "situacaocadastral"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "capacidade nominal": "capacidadenominal",
+        "categoria de atividade": "categoriaatividade",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "equipamento controle": "equipamentocontrole",
+        "fonte poluidora": "fontepoluidora",
+        "funcionamento diario": "funcionamentodiario",
+        "possui chamine": "possuichamine",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral"
+       },
+       "spelling_only": true
       },
       {
        "id": "0f4a25a0-a5e4-431a-8e5e-42bfe60de75a",
@@ -12967,30 +12594,21 @@
        "status": "ok",
        "read_as": "xml",
        "same_columns": false,
-       "missing": [
-        "capacidade nominal",
-        "categoria de atividade",
-        "codigo da categoria",
-        "codigo do detalhe",
-        "equipamento controle",
-        "fonte poluidora",
-        "funcionamento diario",
-        "possui chamine",
-        "razao social",
-        "situacao cadastral"
-       ],
-       "extra": [
-        "capacidadenominal",
-        "categoriaatividade",
-        "codigocategoria",
-        "codigodetalhe",
-        "equipamentocontrole",
-        "fontepoluidora",
-        "funcionamentodiario",
-        "possuichamine",
-        "razaosocial",
-        "situacaocadastral"
-       ]
+       "missing": [],
+       "extra": [],
+       "spelling": {
+        "capacidade nominal": "capacidadenominal",
+        "categoria de atividade": "categoriaatividade",
+        "codigo da categoria": "codigocategoria",
+        "codigo do detalhe": "codigodetalhe",
+        "equipamento controle": "equipamentocontrole",
+        "fonte poluidora": "fontepoluidora",
+        "funcionamento diario": "funcionamentodiario",
+        "possui chamine": "possuichamine",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral"
+       },
+       "spelling_only": true
       }
      ],
      "schema_files": {
@@ -13106,21 +12724,19 @@
        "read_as": "json",
        "same_columns": false,
        "missing": [
-        "freq de irrigacao por dia",
-        "granulom media do sedimento",
-        "no dias que houve irrigacao",
-        "razao social",
-        "situacao cadastral",
-        "vias nao pavim empreendimento"
+        "no dias que houve irrigacao"
        ],
        "extra": [
-        "freqirrigacaopordia",
-        "granulommediasedimento",
-        "numdiashouveirrigacao",
-        "razaosocial",
-        "situacaocadastral",
-        "viasnaopavimeempreendimento"
-       ]
+        "numdiashouveirrigacao"
+       ],
+       "spelling": {
+        "freq de irrigacao por dia": "freqirrigacaopordia",
+        "granulom media do sedimento": "granulommediasedimento",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "vias nao pavim empreendimento": "viasnaopavimeempreendimento"
+       },
+       "spelling_only": false
       },
       {
        "id": "d8e98ba0-640b-44e6-8411-42e1c3aa5a1f",
@@ -13130,21 +12746,19 @@
        "read_as": "xml",
        "same_columns": false,
        "missing": [
-        "freq de irrigacao por dia",
-        "granulom media do sedimento",
-        "no dias que houve irrigacao",
-        "razao social",
-        "situacao cadastral",
-        "vias nao pavim empreendimento"
+        "no dias que houve irrigacao"
        ],
        "extra": [
-        "freqirrigacaopordia",
-        "granulommediasedimento",
-        "numdiashouveirrigacao",
-        "razaosocial",
-        "situacaocadastral",
-        "viasnaopavimeempreendimento"
-       ]
+        "numdiashouveirrigacao"
+       ],
+       "spelling": {
+        "freq de irrigacao por dia": "freqirrigacaopordia",
+        "granulom media do sedimento": "granulommediasedimento",
+        "razao social": "razaosocial",
+        "situacao cadastral": "situacaocadastral",
+        "vias nao pavim empreendimento": "viasnaopavimeempreendimento"
+       },
+       "spelling_only": false
       }
      ],
      "schema_files": {
@@ -15203,6 +14817,38 @@
    "at": "2026-10-02T22:15:46+00:00",
    "report_at": "2026-10-03T00:23:27+00:00",
    "commit": "246cfe2",
+   "files": 195,
+   "read": 172,
+   "checked": 111,
+   "conform": 39,
+   "l1_rate": 0.3514,
+   "not_downloaded": 22,
+   "levels": [
+    71,
+    49,
+    75,
+    0,
+    0
+   ],
+   "dataset_levels": [
+    44,
+    13,
+    20,
+    0,
+    0
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "new_files": 0,
+   "gone_files": 0,
+   "gone_total": 0,
+   "drift_observed": 0,
+   "drift_declared": 0
+  },
+  {
+   "at": "2026-10-03T00:33:44+00:00",
+   "report_at": "2026-10-03T00:36:36+00:00",
+   "commit": "05e05aa",
    "files": 195,
    "read": 172,
    "checked": 111,
