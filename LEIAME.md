@@ -343,6 +343,39 @@ mesmo nome; os valores usados ficam registrados no resumo. Os principais:
 | `ORACLE_ACCEPT` / `ORACLE_LLM_BELOW` | 1,0 / 0,8 | concordância para aceitar uma extração de PDF / para tentar o LLM |
 | `LLM_MODEL` | `auto` | modelo do Ollama para a extração de PDF (`auto` = a escolha do benchmark; reserva `qwen3:8b`) |
 
+## Limites de tamanho e de tempo
+
+Nada fica de fora para economizar tempo: rodar não custa nada num repositório público, e o trabalho é
+dividido em quantos lotes forem precisos. Os únicos limites são o que as máquinas do GitHub comportam.
+
+**O que o GitHub aceita** (repositório público, runner padrão `ubuntu-latest`):
+
+| Recurso | Limite do GitHub | Como este repositório cabe nele |
+|---|---|---|
+| Minutos de Actions | gratuitos e ilimitados | validação completa de todos os arquivos, toda semana |
+| Máquina | 4 CPUs, 16 GB de memória, 14 GB de disco | zips, planilhas e Parquet vão para o disco; o resto é lido em fluxo |
+| Um job | 6 horas | um lote: até 240 minutos de validação (`VALIDATE_MAX_MINUTES`) num job de no máximo 350 |
+| Uma cadeia de lotes | (sem limite; uma execução dura até 35 dias) | até 40 lotes seguidos (`MAX_BATCHES`, cerca de 160 horas); se não bastar, a execução seguinte continua de onde parou |
+| Um arquivo no repositório | aviso acima de 50 MB, recusado acima de 100 MB | cada arquivo de resultado com no máximo 80 MB (verificado antes do commit) |
+| GitHub Pages | site de até 1 GB | o painel lê só os dados de resumo |
+
+**O que o sistema aceita:**
+
+| O quê | Limite | Por quê |
+|---|---|---|
+| CSV, TXT, JSON, XML | nenhum | lidos em fluxo, nunca inteiros na memória |
+| Zip, XLSX, ODS, Parquet, XLS | 12 GB por arquivo (`MAX_ZIP_BYTES`) | precisam estar em disco para serem lidos; o runner tem 14 GB |
+| XLS e ODS | 300 MB por arquivo (`MAX_SHEET_BYTES`) | lidos inteiros na memória, onde ocupam várias vezes o seu tamanho |
+| Dicionários (CSV, JSON, XLSX...) | 2 GB (`MAX_DICTIONARY_BYTES`) | lidos inteiros na memória |
+| Dicionário em PDF para o modelo local | nenhum: partes de 20.000 caracteres (`LLM_MAX_PDF_CHARS`) | cada parte cabe no contexto do modelo; uma resposta cortada pelo limite de tamanho é pedida de novo com a parte dividida ao meio |
+| Modelo local por lote | 60 minutos (`EXTRACT_MAX_MINUTES`) | os PDFs que sobram esperam o lote seguinte |
+
+Um arquivo acima de um limite não some em silêncio: aparece com o motivo (`too-large`) no resumo e no
+painel. O que se guarda *sobre* cada arquivo é limitado de propósito, nunca a leitura: todas as linhas
+são validadas, mas só os 5 primeiros números de linha de cada tipo de erro por campo são guardados
+(`ERROR_ROWS_KEPT`; as contagens são completas), os tipos observados são inferidos das primeiras 5.000
+linhas (`SAMPLE_ROWS`) e as listas longas do resumo guardam os primeiros itens ao lado da contagem total.
+
 ## Limitações
 
 - O mapeamento de tipos e o leitor de descrições são heurísticas, mantidas simples e auditáveis; tipos
@@ -351,11 +384,7 @@ mesmo nome; os valores usados ficam registrados no resumo. Os principais:
 - Os tipos de um DataStore podem ter sido inferidos pelo carregador do portal, não declarados pelo
   publicador; contam para o nível de maturidade, mas são a última opção para a validação.
 - Dicionários em PDF sem camada de texto (digitalizações) não são lidos (sem OCR).
-- Arquivos XLS e ODS são lidos inteiros em memória (limite `MAX_SHEET_BYTES`, a memória do runner);
-  arquivos maiores que isso não são lidos. Arquivos que precisam ir para o disco (zips, planilhas, Parquet)
-  são lidos até `MAX_ZIP_BYTES`, o disco livre do runner. Esses são os únicos limites de tamanho: todo o
-  resto é lido por inteiro, em quantos lotes forem precisos (um PDF longo vai ao modelo em partes, nunca
-  cortado).
+- Arquivos acima do disco ou da memória da máquina não são lidos; ver [Limites de tamanho e de tempo](#limites-de-tamanho-e-de-tempo).
 - Nomes que diferem só na grafia não reprovam a conformidade; são relatados.
 - O oráculo mede *nomes* de campos; os tipos declarados extraídos de um PDF só são verificados por pessoas.
 

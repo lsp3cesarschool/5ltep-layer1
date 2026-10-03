@@ -335,6 +335,39 @@ the same name; the values used are recorded in the summary. The main ones:
 | `ORACLE_ACCEPT` / `ORACLE_LLM_BELOW` | 1.0 / 0.8 | agreement to accept a PDF extraction / to try the LLM |
 | `LLM_MODEL` | `auto` | Ollama model for PDF extraction (`auto` = the benchmark's choice; fallback `qwen3:8b`) |
 
+## Size and time limits
+
+Nothing is left out to save time: running costs nothing on a public repository, so the work is split
+into as many batches as it takes. The only limits are what GitHub's machines can hold.
+
+**What GitHub accepts** (public repository, standard runner `ubuntu-latest`):
+
+| Resource | GitHub limit | How this repository fits in it |
+|---|---|---|
+| Minutes of Actions | free and unlimited | full validation of every file, weekly |
+| Machine | 4 CPUs, 16 GB of memory, 14 GB of disk | zips, spreadsheets and Parquet go to disk; the rest is read as it streams |
+| One job | 6 hours | one batch: up to 240 minutes of validation (`VALIDATE_MAX_MINUTES`) in a job of at most 350 |
+| A chain of batches | (no limit; a run lasts up to 35 days) | up to 40 batches in a row (`MAX_BATCHES`, about 160 hours); if that is not enough, the next run continues where it stopped |
+| One file in the repository | above 50 MB a warning, above 100 MB refused | each result file at most 80 MB (checked before it is committed) |
+| GitHub Pages | site up to 1 GB | the dashboard reads only the summary data |
+
+**What the system accepts:**
+
+| What | Limit | Why |
+|---|---|---|
+| CSV, TXT, JSON, XML | none | read as they stream, never held whole |
+| Zip, XLSX, ODS, Parquet, XLS | 12 GB per file (`MAX_ZIP_BYTES`) | must be on disk to be read; the runner has 14 GB |
+| XLS and ODS | 300 MB per file (`MAX_SHEET_BYTES`) | read whole in memory, which they take many times over |
+| Dictionaries (CSV, JSON, XLSX...) | 2 GB (`MAX_DICTIONARY_BYTES`) | read whole in memory |
+| PDF dictionary to the local model | none: pieces of 20,000 characters (`LLM_MAX_PDF_CHARS`) | each piece fits in the model's context; an answer cut by its length limit is asked again with the piece in halves |
+| Local model per batch | 60 minutes (`EXTRACT_MAX_MINUTES`) | the PDFs left wait for the next batch |
+
+A file above a limit is not dropped silently: it is listed with the reason (`too-large`) in the
+summary and on the dashboard. What is kept *about* each file is bounded on purpose, never the reading:
+every row is validated, but only the first 5 row numbers of each kind of error per field are stored
+(`ERROR_ROWS_KEPT`; the counts are complete), the observed types are inferred from the first 5,000
+rows (`SAMPLE_ROWS`), and long lists in the summary keep their first items next to the full count.
+
 ## Limitations
 
 - Type mapping and the description parser are heuristics, kept simple and auditable; unrecognised
@@ -343,10 +376,7 @@ the same name; the values used are recorded in the summary. The main ones:
 - A DataStore's types may have been inferred by the portal's loader, not declared by the publisher;
   they count for the maturity level but are the last choice for validation.
 - PDF dictionaries without a text layer (scans) are not read (no OCR).
-- XLS and ODS files are read whole in memory (limit `MAX_SHEET_BYTES`, the runner's memory); files larger
-  than that are not read. Files that must go to disk (zips, spreadsheets, Parquet) are read up to
-  `MAX_ZIP_BYTES`, the runner's free disk. These are the only size limits: everything else is read in
-  full, in as many batches as it takes (a long PDF goes to the model in pieces, never cut short).
+- Files above the machine's disk or memory are not read; see [Size and time limits](#size-and-time-limits).
 - Names that differ only in spelling do not fail conformance; they are reported.
 - The oracle measures field *names*; declared types extracted from a PDF are checked only by people.
 
