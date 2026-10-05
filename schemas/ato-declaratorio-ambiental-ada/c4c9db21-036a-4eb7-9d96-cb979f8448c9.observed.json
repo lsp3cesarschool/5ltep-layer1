@@ -68,12 +68,12 @@
   {
    "name": "APP(ha)",
    "type": "number",
-   "sampleEmptyShare": 0.1636
+   "sampleEmptyShare": 0.1676
   },
   {
    "name": "Reserva Legal(ha)",
    "type": "number",
-   "sampleEmptyShare": 0.729
+   "sampleEmptyShare": 0.727
   },
   {
    "name": "Sobreposição ARL (ha)",
@@ -83,7 +83,7 @@
   {
    "name": "Área Líquida ARL (ha)",
    "type": "number",
-   "sampleEmptyShare": 0.729
+   "sampleEmptyShare": 0.727
   },
   {
    "name": "Área RPPN (ha)",
@@ -108,7 +108,7 @@
   {
    "name": "Área AIE (ha)",
    "type": "number",
-   "sampleEmptyShare": 0.9776
+   "sampleEmptyShare": 0.9786
   },
   {
    "name": "Sobreposição AIE (ha)",
@@ -123,7 +123,7 @@
   {
    "name": "Área Líquida AIE (ha)",
    "type": "number",
-   "sampleEmptyShare": 0.9776
+   "sampleEmptyShare": 0.9786
   },
   {
    "name": "Área Servidão Ambiental (ha)",
@@ -188,7 +188,7 @@
   {
    "name": "Reflorestamento (ha)",
    "type": "number",
-   "sampleEmptyShare": 0.916
+   "sampleEmptyShare": 0.9154
   },
   {
    "name": "Pastagens (ha)",
@@ -239,8 +239,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T06:13:22+00:00",
-  "sha256": "cc30881aec61478535bb6fa041d7ce17966a6c6d6da2143d9cdb99c63f6fbc60",
+  "observed_at": "2026-10-05T10:46:26+00:00",
+  "sha256": "34c4a41b380790140d251a22b0ee951bfc9589b0609de974cbc6aad5f36282c5",
   "encoding": "utf-8",
   "delimiter": null,
   "sample_rows": 5000,

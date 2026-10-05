@@ -68,12 +68,12 @@
   {
    "name": "APP_ha",
    "type": "number",
-   "sampleEmptyShare": 0.1636
+   "sampleEmptyShare": 0.1676
   },
   {
    "name": "Reserva_Legal_ha",
    "type": "number",
-   "sampleEmptyShare": 0.729
+   "sampleEmptyShare": 0.727
   },
   {
    "name": "Sobreposicao_ARL_ha",
@@ -83,7 +83,7 @@
   {
    "name": "Area_Liquida_ARL_ha",
    "type": "number",
-   "sampleEmptyShare": 0.729
+   "sampleEmptyShare": 0.727
   },
   {
    "name": "Area_RPPN_ha",
@@ -108,7 +108,7 @@
   {
    "name": "Area_AIE_ha",
    "type": "number",
-   "sampleEmptyShare": 0.9776
+   "sampleEmptyShare": 0.9786
   },
   {
    "name": "Sobreposicao_AIE_ha",
@@ -123,7 +123,7 @@
   {
    "name": "Area_Liquida_AIE_ha",
    "type": "number",
-   "sampleEmptyShare": 0.9776
+   "sampleEmptyShare": 0.9786
   },
   {
    "name": "Area_Servidao_Ambiental_ha",
@@ -188,7 +188,7 @@
   {
    "name": "Reflorestamento_ha",
    "type": "number",
-   "sampleEmptyShare": 0.916
+   "sampleEmptyShare": 0.9154
   },
   {
    "name": "Pastagens_ha",
@@ -239,8 +239,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T06:03:15+00:00",
-  "sha256": "1b2aea2bd49bd4f3f701da7a8d6ce9123e75534bec7e231ee15d0f3fe3ce8499",
+  "observed_at": "2026-10-05T10:45:54+00:00",
+  "sha256": "80f80e94ba32ea818ec2aefa21ff0b9e18ee0a7830209d5e2d7667f678a386a0",
   "encoding": "utf-8",
   "delimiter": null,
   "sample_rows": 5000,

@@ -3,7 +3,7 @@
   {
    "name": "SEQ_TAD",
    "type": "integer",
-   "sampleEmptyShare": 0.0764
+   "sampleEmptyShare": 0.0754
   },
   {
    "name": "SEQ_ANEXO_TAD",
@@ -13,7 +13,7 @@
   {
    "name": "NUM_ANEXO_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.6926
+   "sampleEmptyShare": 0.6922
   },
   {
    "name": "TIPO_ANEXO",
@@ -28,7 +28,7 @@
   {
    "name": "NO_ARQUIVO_EVIDENCIA",
    "type": "string",
-   "sampleEmptyShare": 0.3184
+   "sampleEmptyShare": 0.3188
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -39,8 +39,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T11:02:25+00:00",
-  "sha256": "43fac2828e3068ff17935fb5f04e184b2c2dd40ecc9b30e3dfc9333bed7e28fc",
+  "observed_at": "2026-10-05T11:02:36+00:00",
+  "sha256": "b7363e0548cd43321ab47b072e83aee952ada0e91f55cec2e729938e49ecc396",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

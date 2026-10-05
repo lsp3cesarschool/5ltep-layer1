@@ -38,13 +38,13 @@
   {
    "name": "CNPJ_Aterro",
    "type": "string",
-   "sampleEmptyShare": 0.9606
+   "sampleEmptyShare": 0.9602
   }
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T11:10:14+00:00",
-  "sha256": "ace2ca443bee3bebf67acad6aa73b0917d1fa9f1e2a6c890fda1cc7cbf03d077",
+  "observed_at": "2026-10-05T11:04:13+00:00",
+  "sha256": "f6bb9f8d05224bc5c4b95b4c8388ebe7c344548cfe0029db2eb6a5c6e4d78c61",
   "encoding": "utf-8",
   "delimiter": null,
   "sample_rows": 5000,

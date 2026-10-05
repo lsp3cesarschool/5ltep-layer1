@@ -3,7 +3,7 @@
   {
    "name": "SEQ_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.1876
+   "sampleEmptyShare": 0.186
   },
   {
    "name": "NUM_TAD",
@@ -33,8 +33,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T11:02:34+00:00",
-  "sha256": "96ca62c507e9cb69eea6992e616e5573010ab1ebdf85404f18b9342c0c2ea95a",
+  "observed_at": "2026-10-05T11:02:42+00:00",
+  "sha256": "c959c08c41ea782a0c064c758379537ebc9a6c70f8c6ca7cf8f4adc30bcd73a6",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

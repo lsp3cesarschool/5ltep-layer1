@@ -3,7 +3,7 @@
   {
    "name": "SEQ_NOTIFICACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.177
+   "sampleEmptyShare": 0.1754
   },
   {
    "name": "NUM_NOTIFICACAO",
@@ -34,7 +34,7 @@
    "falseValues": [
     "N"
    ],
-   "sampleEmptyShare": 0.1562
+   "sampleEmptyShare": 0.1546
   },
   {
    "name": "DAT_NOTIFICACAO",
@@ -50,22 +50,22 @@
    "name": "DAT_ALTERACAO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
-   "sampleEmptyShare": 0.177
+   "sampleEmptyShare": 0.1754
   },
   {
    "name": "TIPO_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.177
+   "sampleEmptyShare": 0.1754
   },
   {
    "name": "JUSTIFICATIVA_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.1562
+   "sampleEmptyShare": 0.1546
   },
   {
    "name": "NUM_PESSOA_NOTIFICADO",
    "type": "integer",
-   "sampleEmptyShare": 0.0444
+   "sampleEmptyShare": 0.0436
   },
   {
    "name": "NOME_NOTIFICADO",
@@ -80,7 +80,7 @@
   {
    "name": "NUM_PROCESSO",
    "type": "string",
-   "sampleEmptyShare": 0.1106
+   "sampleEmptyShare": 0.109
   },
   {
    "name": "DES_ATIVIDADE_NOTIFICADO",
@@ -106,7 +106,7 @@
    "falseValues": [
     "N"
    ],
-   "sampleEmptyShare": 0.8954
+   "sampleEmptyShare": 0.8958
   },
   {
    "name": "SIT_CONCLUSAO",
@@ -117,7 +117,7 @@
    "falseValues": [
     "N"
    ],
-   "sampleEmptyShare": 0.898
+   "sampleEmptyShare": 0.8982
   },
   {
    "name": "SIT_AUTO_LAVRADO",
@@ -128,7 +128,7 @@
    "falseValues": [
     "N"
    ],
-   "sampleEmptyShare": 0.907
+   "sampleEmptyShare": 0.9072
   },
   {
    "name": "COD_MUNICIPIO",
@@ -148,7 +148,7 @@
   {
    "name": "DS_REFERENCIA",
    "type": "string",
-   "sampleEmptyShare": 0.2418
+   "sampleEmptyShare": 0.2416
   },
   {
    "name": "NU_LNG",
@@ -165,27 +165,27 @@
   {
    "name": "FORMA_ENTREGA",
    "type": "string",
-   "sampleEmptyShare": 0.177
+   "sampleEmptyShare": 0.1754
   },
   {
    "name": "UNID_NOTIFICANTE",
    "type": "string",
-   "sampleEmptyShare": 0.823
+   "sampleEmptyShare": 0.8246
   },
   {
    "name": "UNID_APRESENTACAO",
    "type": "string",
-   "sampleEmptyShare": 0.177
+   "sampleEmptyShare": 0.1754
   },
   {
    "name": "UNID_CONTROLE",
    "type": "string",
-   "sampleEmptyShare": 0.177
+   "sampleEmptyShare": 0.1754
   },
   {
    "name": "SEQ_ACAO_FISCALIZATORIA",
    "type": "integer",
-   "sampleEmptyShare": 0.1792
+   "sampleEmptyShare": 0.1776
   },
   {
    "name": "CD_ACAO_FISCALIZATORIA",
@@ -195,32 +195,32 @@
   {
    "name": "SEQ_ORDEM_FISCALIZACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.823
+   "sampleEmptyShare": 0.8246
   },
   {
    "name": "NUM_ORDEM_FISCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.823
+   "sampleEmptyShare": 0.8246
   },
   {
    "name": "UNID_ORDENADORA",
    "type": "string",
-   "sampleEmptyShare": 0.823
+   "sampleEmptyShare": 0.8246
   },
   {
    "name": "SEQ_SOLICITACAO_RECURSO",
    "type": "integer",
-   "sampleEmptyShare": 0.823
+   "sampleEmptyShare": 0.8246
   },
   {
    "name": "NUM_SOLICITACAO_RECURSO",
    "type": "string",
-   "sampleEmptyShare": 0.823
+   "sampleEmptyShare": 0.8246
   },
   {
    "name": "OPERACAO_SOL_RECURSO",
    "type": "string",
-   "sampleEmptyShare": 0.823
+   "sampleEmptyShare": 0.8246
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -231,8 +231,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T11:00:12+00:00",
-  "sha256": "291857b276399aaa8b3f760d23e8a7417338b829e0d13b5d098f0e1d008e4a52",
+  "observed_at": "2026-10-05T11:01:29+00:00",
+  "sha256": "6a0dcd24d0c735f4b4d7edd053ba2923909d770cd2d02d0e006fd24c0a6ddace",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

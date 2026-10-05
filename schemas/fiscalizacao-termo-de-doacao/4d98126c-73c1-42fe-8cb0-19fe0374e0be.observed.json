@@ -3,7 +3,7 @@
   {
    "name": "SEQ_DOACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.0424
+   "sampleEmptyShare": 0.0422
   },
   {
    "name": "NUM_DOACAO",
@@ -13,7 +13,7 @@
   {
    "name": "SER_DOACAO",
    "type": "string",
-   "sampleEmptyShare": 0.1584
+   "sampleEmptyShare": 0.1582
   },
   {
    "name": "COD_SUBSTITUICAO",
@@ -23,7 +23,7 @@
   {
    "name": "SEQ_DOACAO_BEM",
    "type": "integer",
-   "sampleEmptyShare": 0.3292
+   "sampleEmptyShare": 0.329
   },
   {
    "name": "DES_BEM_APREENDIDO",
@@ -38,12 +38,12 @@
   {
    "name": "DES_TIPO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0996
+   "sampleEmptyShare": 0.0994
   },
   {
    "name": "QTD_DOACAO_BEM",
    "type": "number",
-   "sampleEmptyShare": 0.3292
+   "sampleEmptyShare": 0.329
   },
   {
    "name": "DES_UNIDADE_MEDIDA",
@@ -53,12 +53,12 @@
   {
    "name": "NU_VALOR",
    "type": "integer",
-   "sampleEmptyShare": 0.9576
+   "sampleEmptyShare": 0.9578
   },
   {
    "name": "OBS_DOACAO_BEM",
    "type": "string",
-   "sampleEmptyShare": 0.3968
+   "sampleEmptyShare": 0.3966
   },
   {
    "name": "TIPO_VEICULO",
@@ -134,8 +134,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T11:01:57+00:00",
-  "sha256": "7038b67a81a9290866e117e745545a520835dd54f5a90024fb2c1cbfaeeec0e4",
+  "observed_at": "2026-10-05T11:02:16+00:00",
+  "sha256": "af56d0b08a159ac1e7edfcb8d25a53a1e68dd2d29d933ee9cbac72ce8e18391f",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

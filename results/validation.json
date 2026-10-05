@@ -1,7 +1,7 @@
 {
  "26307dda-12a0-47e2-ae7e-ca8137d22b13": {
   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
-  "checked_at": "2026-10-03T05:59:55+00:00",
+  "checked_at": "2026-10-05T10:44:47+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -12,11 +12,11 @@
   "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_cerrado_mdbbs_2009_a&outputFormat=csv",
-  "reason": "new"
+  "reason": "error"
  },
  "093b6f72-11c8-431f-a17e-3eaa57026dff": {
   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
-  "checked_at": "2026-10-03T05:59:56+00:00",
+  "checked_at": "2026-10-05T10:44:47+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -27,11 +27,11 @@
   "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_mata_atlantica_mdbbs_2009_a&outputFormat=csv",
-  "reason": "new"
+  "reason": "error"
  },
  "c5b84b15-57f4-4c83-a4be-2a334fa10709": {
   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
-  "checked_at": "2026-10-03T05:59:56+00:00",
+  "checked_at": "2026-10-05T10:44:48+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -42,11 +42,11 @@
   "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_pampa_mdbbs_2009_a&outputFormat=csv",
-  "reason": "new"
+  "reason": "error"
  },
  "90ba133b-0d56-4910-8d79-16cb8ff96428": {
   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
-  "checked_at": "2026-10-03T05:59:56+00:00",
+  "checked_at": "2026-10-05T10:44:48+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -57,11 +57,11 @@
   "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_pantanal_mdbbs_2009_a&outputFormat=csv",
-  "reason": "new"
+  "reason": "error"
  },
  "4b91ca8c-6950-4f43-857b-9d80ec9edfb8": {
   "dataset": "antropizacao-dos-biomas-extra-amazonicos",
-  "checked_at": "2026-10-03T05:59:57+00:00",
+  "checked_at": "2026-10-05T10:44:49+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -72,7 +72,7 @@
   "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_caatinga_mdbbs_2009_a&outputFormat=csv",
-  "reason": "new"
+  "reason": "error"
  },
  "2873d587-4e02-44c9-a9e6-29bb6c7bacea": {
   "dataset": "arrecadacao-com-tcfa",
@@ -204,7 +204,7 @@
  },
  "cd55e477-2f11-43e5-b994-7be34e275561": {
   "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
-  "checked_at": "2026-10-03T06:00:07+00:00",
+  "checked_at": "2026-10-05T10:44:52+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -214,25 +214,32 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.22,
-   "download_s": 1.2
+   "first_byte_s": 0.71,
+   "download_s": 4.84,
+   "network_s": 4.09
+  },
+  "network_failures": {
+   "MissingSchema": 1,
+   "HTTP 404": 10
   },
   "first_seen": "2026-10-03T06:00:07+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T06:00:07+00:00",
-  "seconds": 13.6,
-  "sha256": "7b1b17f2213522a905af2eb91232601821656f396fedb4c1e6b0cadef1a606f3",
-  "bytes": 27929307,
+  "validated_at": "2026-10-05T10:44:52+00:00",
+  "seconds": 14.0,
+  "sha256": "0166931f091d9c6f09d8966129f3be176c0552d80cbedde4a96bed7f0d7fd50b",
+  "bytes": 27931806,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF2065273B3885",
-   "last_modified": "Fri, 02 Oct 2026 09:11:33 GMT",
-   "content_length": 27929307
+   "etag": "0x8DF22C10FC7FB24",
+   "last_modified": "Mon, 05 Oct 2026 09:14:29 GMT",
+   "content_length": 27931806,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 27,
-   "rows": 1587818,
+   "rows": 1587931,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -267,11 +274,11 @@
    "Data Pagamento",
    "Última Atualização Relatório"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "9d371390-73e7-4010-af9f-d8f672697094": {
   "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
-  "checked_at": "2026-10-03T06:00:21+00:00",
+  "checked_at": "2026-10-05T10:44:53+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -282,24 +289,27 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
    "first_byte_s": 0.21,
-   "download_s": 1.69
+   "download_s": 1.69,
+   "network_s": 1.45
   },
   "first_seen": "2026-10-03T06:00:21+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T06:00:21+00:00",
-  "seconds": 46.4,
-  "sha256": "6aaaa929ecf502d8bbb10f94456df662b83982b36afc79b484d09648b4783030",
-  "bytes": 39246574,
+  "validated_at": "2026-10-05T10:44:53+00:00",
+  "seconds": 37.3,
+  "sha256": "a8f32c76a99ff5e455f51f3da794dbc1c2b4c87748c0190cb57e9bbfb26f6b71",
+  "bytes": 39250651,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF206537D5B878",
-   "last_modified": "Fri, 02 Oct 2026 09:12:01 GMT",
-   "content_length": 39246574
+   "etag": "0x8DF22C11EFA7C53",
+   "last_modified": "Mon, 05 Oct 2026 09:14:55 GMT",
+   "content_length": 39250651,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 27,
-   "rows": 1587818,
+   "rows": 1587931,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -332,11 +342,11 @@
    "Data Pagamento",
    "Última Atualização Relatório"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "2d4550a2-6d6b-4e10-8822-7544fdb12099": {
   "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
-  "checked_at": "2026-10-03T06:01:07+00:00",
+  "checked_at": "2026-10-05T10:44:55+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -346,25 +356,28 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.2,
-   "download_s": 1.68
+   "first_byte_s": 0.22,
+   "download_s": 1.7,
+   "network_s": 1.44
   },
   "first_seen": "2026-10-03T06:01:07+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T06:01:07+00:00",
-  "seconds": 66.5,
-  "sha256": "dc86b7a3e594d56d3250aa8b6eda408a675718899ec19aca42124a1ad6294b6b",
-  "bytes": 39021675,
+  "validated_at": "2026-10-05T10:44:55+00:00",
+  "seconds": 58.8,
+  "sha256": "daf10d772bdf3bb0c58d445f65cd3dfd2d59ed172ea241ce0ab4daee280b7fa1",
+  "bytes": 39018842,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF2065BF625859",
-   "last_modified": "Fri, 02 Oct 2026 09:15:48 GMT",
-   "content_length": 39021675
+   "etag": "0x8DF22C19A95C313",
+   "last_modified": "Mon, 05 Oct 2026 09:18:22 GMT",
+   "content_length": 39018842,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 27,
-   "rows": 1587818,
+   "rows": 1587931,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -397,7 +410,7 @@
    "Data_Pagamento",
    "Ultima_Atualizacao_Relatorio"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "aa08a6eb-388e-4c20-bfa5-24cfb979ace9": {
   "dataset": "ato-declaratorio-ambiental-ada",
@@ -418,7 +431,7 @@
  },
  "09494a73-726a-4341-92ca-b97cf35914b2": {
   "dataset": "ato-declaratorio-ambiental-ada",
-  "checked_at": "2026-10-03T06:02:35+00:00",
+  "checked_at": "2026-10-05T10:45:16+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -428,25 +441,28 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.18,
-   "download_s": 15.89
+   "first_byte_s": 0.22,
+   "download_s": 15.76,
+   "network_s": 15.13
   },
   "first_seen": "2026-10-03T06:02:35+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T06:02:35+00:00",
-  "seconds": 40.1,
-  "sha256": "893c45b27f9efaf5d9172633e7ee39884061691e032ac2670184b5a9c7e5a8f8",
-  "bytes": 400754321,
+  "validated_at": "2026-10-05T10:45:16+00:00",
+  "seconds": 39.0,
+  "sha256": "bce13cf9914a7061427a6aad77150dd08ab56053a6952240b43e1615bce7d909",
+  "bytes": 401190660,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF1F2A7AE02517",
-   "last_modified": "Wed, 30 Sep 2026 19:39:02 GMT",
-   "content_length": 400754321
+   "etag": "0x8DF229727A0FF4C",
+   "last_modified": "Mon, 05 Oct 2026 04:14:31 GMT",
+   "content_length": 401190660,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 30,
-   "rows": 6201240,
+   "rows": 6206666,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -510,11 +526,11 @@
    "Outras Áreas (ha)",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "13f44201-5207-4aa9-92d1-69830f642142": {
   "dataset": "ato-declaratorio-ambiental-ada",
-  "checked_at": "2026-10-03T06:03:15+00:00",
+  "checked_at": "2026-10-05T10:45:54+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -525,24 +541,27 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
    "first_byte_s": 0.2,
-   "download_s": 25.4
+   "download_s": 24.53,
+   "network_s": 23.62
   },
   "first_seen": "2026-10-03T06:03:15+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T06:03:15+00:00",
-  "seconds": 606.7,
-  "sha256": "1b2aea2bd49bd4f3f701da7a8d6ce9123e75534bec7e231ee15d0f3fe3ce8499",
-  "bytes": 638215257,
+  "validated_at": "2026-10-05T10:45:54+00:00",
+  "seconds": 750.1,
+  "sha256": "80f80e94ba32ea818ec2aefa21ff0b9e18ee0a7830209d5e2d7667f678a386a0",
+  "bytes": 638834969,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF1F2A9064D278",
-   "last_modified": "Wed, 30 Sep 2026 19:39:38 GMT",
-   "content_length": 638215257
+   "etag": "0x8DF22973D4A7C63",
+   "last_modified": "Mon, 05 Oct 2026 04:15:07 GMT",
+   "content_length": 638834969,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 30,
-   "rows": 6201240,
+   "rows": 6206666,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -604,11 +623,11 @@
    "Outras_Areas_ha",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "c4c9db21-036a-4eb7-9d96-cb979f8448c9": {
   "dataset": "ato-declaratorio-ambiental-ada",
-  "checked_at": "2026-10-03T06:13:22+00:00",
+  "checked_at": "2026-10-05T10:46:26+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -618,25 +637,31 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.71,
-   "download_s": 31.78
+   "first_byte_s": 0.2,
+   "download_s": 31.89,
+   "network_s": 31.06
+  },
+  "network_failures": {
+   "MissingSchema": 1
   },
   "first_seen": "2026-10-03T06:13:22+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T06:13:22+00:00",
-  "seconds": 448.7,
-  "sha256": "cc30881aec61478535bb6fa041d7ce17966a6c6d6da2143d9cdb99c63f6fbc60",
-  "bytes": 662937913,
+  "validated_at": "2026-10-05T10:46:26+00:00",
+  "seconds": 433.9,
+  "sha256": "34c4a41b380790140d251a22b0ee951bfc9589b0609de974cbc6aad5f36282c5",
+  "bytes": 663590655,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF1F2A829C18C1",
-   "last_modified": "Wed, 30 Sep 2026 19:39:15 GMT",
-   "content_length": 662937913
+   "etag": "0x8DF22972F8EDF84",
+   "last_modified": "Mon, 05 Oct 2026 04:14:44 GMT",
+   "content_length": 663590655,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 30,
-   "rows": 6201240,
+   "rows": 6206666,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -698,7 +723,7 @@
    "Outras Áreas (ha)",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "d5c0fa8b-b522-446a-a281-15f587783935": {
   "dataset": "autorizacao-ambiental-para-o-transporte-interestadual-de-produtos-perigosos-aatipp",
@@ -922,7 +947,7 @@
  },
  "edf548f1-1920-4003-8c24-6d33b10701da": {
   "dataset": "dof-autorizacoes-de-exploracao-florestal",
-  "checked_at": "2026-10-03T06:20:59+00:00",
+  "checked_at": "2026-10-05T10:46:27+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -932,21 +957,24 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.72,
-   "download_s": 4.86
+   "first_byte_s": 0.23,
+   "download_s": 1.15,
+   "network_s": 0.91
   },
   "first_seen": "2026-10-03T06:20:59+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T06:20:59+00:00",
-  "seconds": 67.5,
-  "sha256": "432ac1e18a609ff2dae3be093e6e0d3f924ce09fdee2b968958e4e244a87d68b",
-  "bytes": 13528376,
+  "validated_at": "2026-10-05T10:46:27+00:00",
+  "seconds": 75.9,
+  "sha256": "beefee2ee35c127cf6a43a33ba660c2097b90c5e6fbc311719d6be249ad8024b",
+  "bytes": 13528895,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF204060B88C27",
-   "last_modified": "Fri, 02 Oct 2026 04:48:18 GMT",
-   "content_length": 13528376
+   "etag": "0x8DF229C6D622072",
+   "last_modified": "Mon, 05 Oct 2026 04:52:15 GMT",
+   "content_length": 13528895,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 437,
@@ -992,11 +1020,11 @@
    "VOLUME_REMANESCENTE",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "2d3c0058-d466-49d8-b5dd-b92f46b7da63": {
   "dataset": "dof-autorizacoes-de-exploracao-florestal",
-  "checked_at": "2026-10-03T06:22:06+00:00",
+  "checked_at": "2026-10-05T10:47:42+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -1006,21 +1034,24 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.21,
-   "download_s": 1.63
+   "first_byte_s": 0.22,
+   "download_s": 1.61,
+   "network_s": 1.37
   },
   "first_seen": "2026-10-03T06:22:06+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T06:22:06+00:00",
-  "seconds": 87.2,
-  "sha256": "1546877da6e22f1eb34aa1af8c72123a8b4069549ac0f40a57940b74f7913cfa",
-  "bytes": 20867173,
+  "validated_at": "2026-10-05T10:47:42+00:00",
+  "seconds": 105.8,
+  "sha256": "735e2e7a03362cee53afe9536f2295c7ca48aa46b8b70496ea355ad08b6b422a",
+  "bytes": 20868068,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF2040613D6350",
-   "last_modified": "Fri, 02 Oct 2026 04:48:19 GMT",
-   "content_length": 20867173
+   "etag": "0x8DF229C6DDE4DF2",
+   "last_modified": "Mon, 05 Oct 2026 04:52:16 GMT",
+   "content_length": 20868068,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 437,
@@ -1064,11 +1095,11 @@
    "VOLUME_REMANESCENTE",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "9713832d-dd76-457d-926a-d398ca2f716e": {
   "dataset": "dof-autorizacoes-de-exploracao-florestal",
-  "checked_at": "2026-10-03T06:23:34+00:00",
+  "checked_at": "2026-10-05T10:49:26+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -1078,21 +1109,24 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.2,
-   "download_s": 0.87
+   "first_byte_s": 0.21,
+   "download_s": 1.02,
+   "network_s": 0.8
   },
   "first_seen": "2026-10-03T06:23:34+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T06:23:34+00:00",
-  "seconds": 78.3,
-  "sha256": "b8abdce6224392b407ae09e2e4ce50afccddb9831a3707087f4ec7f759644cc6",
-  "bytes": 19958252,
+  "validated_at": "2026-10-05T10:49:26+00:00",
+  "seconds": 58.9,
+  "sha256": "d63aac33cc67185a6d1d1eccbd6daf17c59461be4dab31d65561140a1a60f4d1",
+  "bytes": 19958657,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF204060E11C62",
-   "last_modified": "Fri, 02 Oct 2026 04:48:18 GMT",
-   "content_length": 19958252
+   "etag": "0x8DF229C6D903770",
+   "last_modified": "Mon, 05 Oct 2026 04:52:15 GMT",
+   "content_length": 19958657,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 437,
@@ -1136,11 +1170,11 @@
    "VOLUME_REMANESCENTE",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "5f9d395c-41ec-4b8d-a0c0-3ad1a5b9192a": {
   "dataset": "dof-conversoes-de-produtos-florestais",
-  "checked_at": "2026-10-03T06:24:52+00:00",
+  "checked_at": "2026-10-05T10:50:24+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "39881c34e729dfac",
   "ckan": {
@@ -1150,30 +1184,37 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.23,
-   "download_s": 10.38
+   "first_byte_s": 0.27,
+   "download_s": 10.61,
+   "network_s": 10.08
   },
   "first_seen": "2026-10-03T06:24:52+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T06:24:52+00:00",
-  "seconds": 181.4,
-  "sha256": "d5233ba367674c54dd4b277c652fcbe654c599b365bdf20442d7323502c25706",
-  "bytes": 257868800,
+  "validated_at": "2026-10-05T10:50:24+00:00",
+  "seconds": 128.8,
+  "sha256": "1b15454c91dc51c3789f0f2cb019f887f4232b167af2083e4b7210ac11a89d0d",
+  "bytes": 258063639,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF20374AC7C74B",
-   "last_modified": "Fri, 02 Oct 2026 03:43:15 GMT",
-   "content_length": 257868800
+   "etag": "0x8DF2292C80452C0",
+   "last_modified": "Mon, 05 Oct 2026 03:43:12 GMT",
+   "content_length": 258063639,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 432,
-   "rows": 6017066,
+   "rows": 6024559,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -1263,7 +1304,7 @@
      "Volume do Resíduo Gerado 2": "VOLUME_RESIDUO_GERADO_2",
      "Volume da Perda": "VOLUME_PERDA"
     },
-    "cells_checked": 90255990,
+    "cells_checked": 90368385,
     "cells_with_errors": 0,
     "error_rate": 0.0,
     "errors_by_field": {},
@@ -1308,11 +1349,11 @@
    "SISTEMA_ORIGINARIO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "762ce581-1096-4e83-bceb-dcaea43d7790": {
   "dataset": "dof-conversoes-de-produtos-florestais",
-  "checked_at": "2026-10-03T06:27:53+00:00",
+  "checked_at": "2026-10-05T10:52:22+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "39881c34e729dfac",
   "ckan": {
@@ -1322,30 +1363,37 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.21,
-   "download_s": 18.29
+   "first_byte_s": 0.22,
+   "download_s": 17.23,
+   "network_s": 16.56
   },
   "first_seen": "2026-10-03T06:27:53+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T06:27:53+00:00",
-  "seconds": 578.6,
-  "sha256": "93ab76ae448c247cf6e4c2788a71070b5e4642d90c1f8713e2948df51c3445da",
-  "bytes": 451065504,
+  "validated_at": "2026-10-05T10:52:22+00:00",
+  "seconds": 458.6,
+  "sha256": "83fa0495b98fad40a7d0a7ad634e3a1f546a68784090012b9cff6ef74074ea9f",
+  "bytes": 451481335,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF20374F51702A",
-   "last_modified": "Fri, 02 Oct 2026 03:43:23 GMT",
-   "content_length": 451065504
+   "etag": "0x8DF2292CBF2E84A",
+   "last_modified": "Mon, 05 Oct 2026 03:43:19 GMT",
+   "content_length": 451481335,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 432,
-   "rows": 6017066,
+   "rows": 6024559,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -1433,7 +1481,7 @@
      "Volume do Resíduo Gerado 2": "VOLUME_RESIDUO_GERADO_2",
      "Volume da Perda": "VOLUME_PERDA"
     },
-    "cells_checked": 90255990,
+    "cells_checked": 90368385,
     "cells_with_errors": 0,
     "error_rate": 0.0,
     "errors_by_field": {},
@@ -1478,11 +1526,11 @@
    "SISTEMA_ORIGINARIO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "c1414b9c-b760-45e7-8ad2-3a5f226e2e9b": {
   "dataset": "dof-conversoes-de-produtos-florestais",
-  "checked_at": "2026-10-03T06:37:32+00:00",
+  "checked_at": "2026-10-05T10:53:08+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "39881c34e729dfac",
   "ckan": {
@@ -1492,30 +1540,37 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.72,
-   "download_s": 20.78
+   "first_byte_s": 0.21,
+   "download_s": 24.37,
+   "network_s": 23.75
   },
   "first_seen": "2026-10-03T06:37:32+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T06:37:32+00:00",
-  "seconds": 436.2,
-  "sha256": "5dfc23da52d78b564b413f3df27b909aa8a148fcfa4802d2dd250b47d70bc46b",
-  "bytes": 405239566,
+  "validated_at": "2026-10-05T10:53:08+00:00",
+  "seconds": 525.6,
+  "sha256": "fb5b9f29896680ed43a0e9d7419cf0d8635f22fd50cbc9a7e3b05a391d6343bf",
+  "bytes": 405610301,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF20374C465550",
-   "last_modified": "Fri, 02 Oct 2026 03:43:18 GMT",
-   "content_length": 405239566
+   "etag": "0x8DF2292C968E1F4",
+   "last_modified": "Mon, 05 Oct 2026 03:43:14 GMT",
+   "content_length": 405610301,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 432,
-   "rows": 6017066,
+   "rows": 6024559,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -1603,7 +1658,7 @@
      "Volume do Resíduo Gerado 2": "VOLUME_RESIDUO_GERADO_2",
      "Volume da Perda": "VOLUME_PERDA"
     },
-    "cells_checked": 90255990,
+    "cells_checked": 90368385,
     "cells_with_errors": 0,
     "error_rate": 0.0,
     "errors_by_field": {},
@@ -1648,7 +1703,7 @@
    "SISTEMA_ORIGINARIO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "f89e36de-38a6-41b0-8c46-556cbbb28895": {
   "dataset": "dof-transportes-de-produtos-florestais",
@@ -2401,7 +2456,7 @@
  },
  "21e21d34-b71c-4f41-8ad3-ee5743fb8e00": {
   "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
-  "checked_at": "2026-10-03T10:31:15+00:00",
+  "checked_at": "2026-10-05T10:57:59+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "e38fda1b14f101d8",
   "ckan": {
@@ -2411,30 +2466,37 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.7,
-   "download_s": 37.67
+   "first_byte_s": 0.21,
+   "download_s": 33.09,
+   "network_s": 32.13
   },
   "first_seen": "2026-10-03T10:31:15+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T10:31:15+00:00",
-  "seconds": 154.4,
-  "sha256": "a9cc7548d002c0ec7cf81cb35720fd68c09b19402d7bdf3c287e4165adfac20e",
-  "bytes": 846746229,
+  "validated_at": "2026-10-05T10:57:59+00:00",
+  "seconds": 231.2,
+  "sha256": "44b84d7afc2991bb572482c2452c4ab7e0a1a04fee4a301476310bbe5e4aedb3",
+  "bytes": 846936693,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF203D9C2F823A",
-   "last_modified": "Fri, 02 Oct 2026 04:28:29 GMT",
-   "content_length": 846746229
+   "etag": "0x8DF2299945E5A93",
+   "last_modified": "Mon, 05 Oct 2026 04:31:52 GMT",
+   "content_length": 846936693,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 540,
-   "rows": 30883826,
+   "rows": 30899815,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -2479,7 +2541,7 @@
      "Número do Trecho": "NUMERO_TRECHO",
      "Tipo de Transporte": "TIPO_TRANSPORTE"
     },
-    "cells_checked": 123535304,
+    "cells_checked": 123599260,
     "cells_with_errors": 0,
     "error_rate": 0.0,
     "errors_by_field": {},
@@ -2501,11 +2563,11 @@
    "SISTEMA_ORIGINARIO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "45702319-7f8c-4e22-ade4-607935928c5e": {
   "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
-  "checked_at": "2026-10-03T10:33:49+00:00",
+  "checked_at": "2026-10-05T10:59:44+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "e38fda1b14f101d8",
   "ckan": {
@@ -2515,30 +2577,37 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.22,
-   "download_s": 46.27
+   "first_byte_s": 0.73,
+   "download_s": 48.61,
+   "network_s": 46.86
   },
   "first_seen": "2026-10-03T10:33:49+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T10:33:49+00:00",
-  "seconds": 725.3,
-  "sha256": "1d897b95f8be21cde5e35ebb705946e3f2951f2407d5bac6c39ed263a0cee3ef",
-  "bytes": 1139037803,
+  "validated_at": "2026-10-05T10:59:44+00:00",
+  "seconds": 797.8,
+  "sha256": "369c4e1e875fbe02cadf75e5ef099a219f47d0ff3e4e957e228ecd0a00212839",
+  "bytes": 1139354077,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF203FC38F2E67",
-   "last_modified": "Fri, 02 Oct 2026 04:43:54 GMT",
-   "content_length": 1139037803
+   "etag": "0x8DF229BACF1F4CA",
+   "last_modified": "Mon, 05 Oct 2026 04:46:52 GMT",
+   "content_length": 1139354077,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 540,
-   "rows": 30883826,
+   "rows": 30899815,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -2581,7 +2650,7 @@
      "Número do Trecho": "NUMERO_TRECHO",
      "Tipo de Transporte": "TIPO_TRANSPORTE"
     },
-    "cells_checked": 123535304,
+    "cells_checked": 123599260,
     "cells_with_errors": 0,
     "error_rate": 0.0,
     "errors_by_field": {},
@@ -2603,11 +2672,11 @@
    "SISTEMA_ORIGINARIO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "2b2107f4-8aea-4b27-9c0e-739f9d799026": {
   "dataset": "dof-trechos-e-veiculos-de-transportes-florestais-detalhes",
-  "checked_at": "2026-10-03T10:45:54+00:00",
+  "checked_at": "2026-10-05T11:01:17+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "e38fda1b14f101d8",
   "ckan": {
@@ -2617,30 +2686,37 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.74,
-   "download_s": 54.32
+   "first_byte_s": 0.22,
+   "download_s": 42.29,
+   "network_s": 41.09
   },
   "first_seen": "2026-10-03T10:45:54+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T10:45:54+00:00",
-  "seconds": 492.0,
-  "sha256": "4a2bfdb929e2be45c00a7de711db1f572601fb4104f0e781bc8622d7687294d2",
-  "bytes": 1097942472,
+  "validated_at": "2026-10-05T11:01:17+00:00",
+  "seconds": 566.7,
+  "sha256": "cf52e16ab3aa1cd4a88aae5595d6b138e6d0ef795cac558f57cc3d05ec5c23d0",
+  "bytes": 1098158539,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF203E5AC4164A",
-   "last_modified": "Fri, 02 Oct 2026 04:33:49 GMT",
-   "content_length": 1097942472
+   "etag": "0x8DF229A4EA3849F",
+   "last_modified": "Mon, 05 Oct 2026 04:37:04 GMT",
+   "content_length": 1098158539,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 540,
-   "rows": 30883826,
+   "rows": 30899815,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -2683,7 +2759,7 @@
      "Número do Trecho": "NUMERO_TRECHO",
      "Tipo de Transporte": "TIPO_TRANSPORTE"
     },
-    "cells_checked": 123535304,
+    "cells_checked": 123599260,
     "cells_with_errors": 0,
     "error_rate": 0.0,
     "errors_by_field": {},
@@ -2705,7 +2781,7 @@
    "SISTEMA_ORIGINARIO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "9ae4b7c3-6dd2-4e83-a117-7411c2cad222": {
   "dataset": "efluentes-liquidos",
@@ -4713,7 +4789,7 @@
  },
  "826b90b3-1fff-4ed2-a892-d3bb85370e15": {
   "dataset": "fiscalizacao-notificacao",
-  "checked_at": "2026-10-03T11:00:12+00:00",
+  "checked_at": "2026-10-05T11:01:29+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "4753c99736fa0671",
   "ckan": {
@@ -4723,7 +4799,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.19
+   "first_byte_s": 0.2,
+   "download_s": 7.66,
+   "network_s": 7.36
   },
   "distributions": [
    {
@@ -4752,22 +4830,28 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:00:12+00:00",
-  "seconds": 17.6,
-  "sha256": "291857b276399aaa8b3f760d23e8a7417338b829e0d13b5d098f0e1d008e4a52",
-  "bytes": 114356608,
+  "validated_at": "2026-10-05T11:01:29+00:00",
+  "seconds": 23.3,
+  "sha256": "6a0dcd24d0c735f4b4d7edd053ba2923909d770cd2d02d0e006fd24c0a6ddace",
+  "bytes": 114358796,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF212E4F952BA3",
-   "last_modified": "Sat, 03 Oct 2026 09:11:29 GMT",
-   "content_length": 114356608
+   "etag": "0x8DF22C0C1C6662F",
+   "last_modified": "Mon, 05 Oct 2026 09:12:18 GMT",
+   "content_length": 114358796,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 439784,
+   "rows": 439787,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -4787,13 +4871,13 @@
     "undeclared": [],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 17591360,
-    "cells_with_errors": 467158,
+    "cells_checked": 17591480,
+    "cells_with_errors": 467154,
     "error_rate": 0.026556,
     "errors_by_field": {
      "DAT_NOTIFICACAO": {
       "type": {
-       "count": 354198,
+       "count": 354191,
        "rows": [
         1,
         2,
@@ -4805,7 +4889,7 @@
      },
      "PRAZO_APRESENTACAO": {
       "type": {
-       "count": 89768,
+       "count": 89771,
        "rows": [
         1,
         2,
@@ -4819,11 +4903,11 @@
       "type": {
        "count": 23192,
        "rows": [
-        20372,
-        20373,
-        23703,
-        24911,
-        24919
+        20375,
+        20376,
+        23706,
+        24914,
+        24922
        ]
       }
      }
@@ -4956,7 +5040,7 @@
    "OPERACAO_SOL_RECURSO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "3364a902-067a-469a-bd9a-b865d234eed9": {
   "dataset": "fiscalizacao-termo-de-apreensao",
@@ -6576,7 +6660,7 @@
  },
  "0522b605-5c8e-4d04-a57a-ce217ce9bb61": {
   "dataset": "fiscalizacao-termo-de-demolicao",
-  "checked_at": "2026-10-03T11:01:23+00:00",
+  "checked_at": "2026-10-05T11:01:45+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "6c27dddc8a53379a",
   "ckan": {
@@ -6586,7 +6670,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.65
+   "first_byte_s": 0.18,
+   "download_s": 0.18,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -6615,18 +6701,24 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:01:23+00:00",
-  "seconds": 3.5,
-  "sha256": "cba0b5a4a1edae38c0b2d128ca09fc30a2a37eec2c7094ea45880c76cc77d7de",
+  "validated_at": "2026-10-05T11:01:45+00:00",
+  "seconds": 3.3,
+  "sha256": "d74da72516aaaacbdbe42e41b2bea5f9b76cd738c447ce81af94823e6a0cb13e",
   "bytes": 990549,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2035D06372DE",
-   "last_modified": "Fri, 02 Oct 2026 03:32:41 GMT",
-   "content_length": 990549
+   "etag": "0x8DF22916588148C",
+   "last_modified": "Mon, 05 Oct 2026 03:33:17 GMT",
+   "content_length": 990549,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -6728,11 +6820,11 @@
    "JUSTIFICATIVA_ALTERACAO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "9e715d83-f7eb-4dcc-b686-23252325ebbf": {
   "dataset": "fiscalizacao-termo-de-demolicao",
-  "checked_at": "2026-10-03T11:01:26+00:00",
+  "checked_at": "2026-10-05T11:01:48+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "e2a94c7894024010",
   "ckan": {
@@ -6742,7 +6834,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.19
+   "first_byte_s": 0.19,
+   "download_s": 0.19,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -6771,18 +6865,24 @@
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:01:26+00:00",
-  "seconds": 2.0,
-  "sha256": "83164dc4845f3b1717fc3f3d3b5c91471cd592bece0917b2daa5e69c2e7e5253",
+  "validated_at": "2026-10-05T11:01:48+00:00",
+  "seconds": 2.1,
+  "sha256": "a125c825cd990b2ef077ee431d71a1f8200d0fa781c9c9e8da94e133bb74b2cc",
   "bytes": 214402,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2035D0E46E42",
-   "last_modified": "Fri, 02 Oct 2026 03:32:41 GMT",
-   "content_length": 214402
+   "etag": "0x8DF229165FEFD7C",
+   "last_modified": "Mon, 05 Oct 2026 03:33:18 GMT",
+   "content_length": 214402,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -6845,11 +6945,11 @@
    "CD_ALINEA",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "e62430da-5c2e-4447-94f7-bd2d92496137": {
   "dataset": "fiscalizacao-termo-de-demolicao",
-  "checked_at": "2026-10-03T11:01:28+00:00",
+  "checked_at": "2026-10-05T11:01:50+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "b9248c03438de845",
   "ckan": {
@@ -6859,7 +6959,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.64
+   "first_byte_s": 0.16,
+   "download_s": 0.16,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -6888,18 +6990,24 @@
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:01:28+00:00",
-  "seconds": 1.3,
-  "sha256": "2a41fadb5e3d995380a0d3f2d0a7fffdce6a6af73603541926df1495548553fd",
+  "validated_at": "2026-10-05T11:01:50+00:00",
+  "seconds": 1.5,
+  "sha256": "9fde91cb850805cc8b9ffa403c1e56cca8a08fd827d4eab124b9d4d31b2ed241",
   "bytes": 17079,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2035D1546C33",
-   "last_modified": "Fri, 02 Oct 2026 03:32:42 GMT",
-   "content_length": 17079
+   "etag": "0x8DF229166A5F49B",
+   "last_modified": "Mon, 05 Oct 2026 03:33:19 GMT",
+   "content_length": 17079,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -6946,11 +7054,11 @@
    "NU_PAR_INC_AL",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "e2279c55-804e-409b-aaaf-1b7408d8ca52": {
   "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
-  "checked_at": "2026-10-03T11:01:30+00:00",
+  "checked_at": "2026-10-05T11:01:51+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "e3218c3d71ab37fa",
   "ckan": {
@@ -6960,7 +7068,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.19
+   "first_byte_s": 0.19,
+   "download_s": 0.8,
+   "network_s": 0.6
   },
   "distributions": [
    {
@@ -6989,22 +7099,28 @@
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:01:30+00:00",
-  "seconds": 5.1,
-  "sha256": "b2d4b2d21756b6484fd41fd5530f470e46474615b4081c4157965625fa8edb3c",
-  "bytes": 6657146,
+  "validated_at": "2026-10-05T11:01:51+00:00",
+  "seconds": 5.3,
+  "sha256": "d4f5c4e5bdfb79bb2ed618f6e3c00c794e83fb71018997a5835f85d5f068c428",
+  "bytes": 6660363,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2035FDBF714C",
-   "last_modified": "Fri, 02 Oct 2026 03:33:57 GMT",
-   "content_length": 6657146
+   "etag": "0x8DF2291997E8817",
+   "last_modified": "Mon, 05 Oct 2026 03:34:45 GMT",
+   "content_length": 6660363,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 9415,
+   "rows": 9421,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -7024,9 +7140,9 @@
     "undeclared": [],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 395430,
+    "cells_checked": 395682,
     "cells_with_errors": 3341,
-    "error_rate": 0.008449,
+    "error_rate": 0.008444,
     "errors_by_field": {
      "NOME_PESSOA_AUTUADA": {
       "type": {
@@ -7102,11 +7218,11 @@
    "JUSTIFICATIVA_ALTERACAO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "13f87098-c079-458d-93b6-810b708eb1e3": {
   "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
-  "checked_at": "2026-10-03T11:01:35+00:00",
+  "checked_at": "2026-10-05T11:01:56+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "6a08c861ccf7277b",
   "ckan": {
@@ -7116,7 +7232,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.66
+   "first_byte_s": 0.19,
+   "download_s": 0.34,
+   "network_s": 0.15
   },
   "distributions": [
    {
@@ -7145,22 +7263,28 @@
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:01:35+00:00",
-  "seconds": 4.7,
-  "sha256": "1d174d43c93cbb9abd7335b5434cb2631655c2bd00cccece6c8b6b9e820a735e",
-  "bytes": 3383731,
+  "validated_at": "2026-10-05T11:01:56+00:00",
+  "seconds": 4.9,
+  "sha256": "76704787aeb7accf56012d4b5e136100ebb9e802af937f11e3ca4422488833f3",
+  "bytes": 3385665,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2035F79C45FB",
-   "last_modified": "Fri, 02 Oct 2026 03:33:46 GMT",
-   "content_length": 3383731
+   "etag": "0x8DF229193F98E28",
+   "last_modified": "Mon, 05 Oct 2026 03:34:35 GMT",
+   "content_length": 3385665,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 24448,
+   "rows": 24461,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -7180,7 +7304,7 @@
     "undeclared": [],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 635648,
+    "cells_checked": 635986,
     "cells_with_errors": 0,
     "error_rate": 0.0,
     "errors_by_field": {},
@@ -7216,11 +7340,11 @@
    "NU_VALOR",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "17d20dcb-1848-4f8a-a972-fa7dfe4a1e7f": {
   "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
-  "checked_at": "2026-10-03T11:01:39+00:00",
+  "checked_at": "2026-10-05T11:02:00+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "fbf5d12556e908db",
   "ckan": {
@@ -7230,7 +7354,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.63
+   "first_byte_s": 0.19,
+   "download_s": 0.19,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -7259,22 +7385,28 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:01:39+00:00",
-  "seconds": 3.6,
-  "sha256": "b072d7fd7e1c72785c9d8fe2684cd1879f5d5e0ee2d0f56ca33ec313f0dd7e20",
-  "bytes": 1542037,
+  "validated_at": "2026-10-05T11:02:00+00:00",
+  "seconds": 3.9,
+  "sha256": "2ba42e0b84e7c590f322e3bd62f8c7deeeb90ed8b0eaa98ec9214f29459a8866",
+  "bytes": 1543273,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2035F4ED3693",
-   "last_modified": "Fri, 02 Oct 2026 03:33:42 GMT",
-   "content_length": 1542037
+   "etag": "0x8DF229190BC7B20",
+   "last_modified": "Mon, 05 Oct 2026 03:34:30 GMT",
+   "content_length": 1543273,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 26964,
+   "rows": 26992,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -7294,13 +7426,13 @@
     "undeclared": [],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 323568,
-    "cells_with_errors": 27128,
+    "cells_checked": 323904,
+    "cells_with_errors": 27156,
     "error_rate": 0.08384,
     "errors_by_field": {
      "NORMA_TIPO": {
       "type": {
-       "count": 26964,
+       "count": 26992,
        "rows": [
         1,
         2,
@@ -7316,9 +7448,9 @@
        "rows": [
         145,
         300,
-        2619,
-        2867,
-        3065
+        2620,
+        2869,
+        3067
        ]
       }
      }
@@ -7345,11 +7477,11 @@
    "CD_ALINEA",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "62d099c5-e2b2-4e24-874e-46374cf9fa9e": {
   "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
-  "checked_at": "2026-10-03T11:01:43+00:00",
+  "checked_at": "2026-10-05T11:02:04+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "6284d2c9db35e53a",
   "ckan": {
@@ -7359,7 +7491,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.65
+   "first_byte_s": 0.16,
+   "download_s": 0.16,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -7388,22 +7522,28 @@
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:01:43+00:00",
-  "seconds": 2.0,
-  "sha256": "82ad9387742bf7704932f5ef6573a1eab907c4f6edb90a28f6f1649d12031760",
-  "bytes": 99061,
+  "validated_at": "2026-10-05T11:02:04+00:00",
+  "seconds": 2.3,
+  "sha256": "cbfa1a43712ba8162d7d60851be0446256ef5e97f2434e5a2f47bd9ea291b061",
+  "bytes": 99102,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2035FC944972",
-   "last_modified": "Fri, 02 Oct 2026 03:33:55 GMT",
-   "content_length": 99061
+   "etag": "0x8DF22919843049C",
+   "last_modified": "Mon, 05 Oct 2026 03:34:43 GMT",
+   "content_length": 99102,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 1480,
+   "rows": 1481,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -7423,9 +7563,9 @@
     "undeclared": [],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 10360,
+    "cells_checked": 10367,
     "cells_with_errors": 7,
-    "error_rate": 0.000676,
+    "error_rate": 0.000675,
     "errors_by_field": {
      "COD_SUBSTITUICAO": {
       "type": {
@@ -7455,11 +7595,11 @@
    "NU_PAR_INC_AL",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "0d58b13b-3909-43da-a242-11a3e95100f5": {
   "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao",
-  "checked_at": "2026-10-03T11:01:45+00:00",
+  "checked_at": "2026-10-05T11:02:06+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "05167ff279d27bc0",
   "ckan": {
@@ -7469,7 +7609,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.64
+   "first_byte_s": 0.18,
+   "download_s": 0.18,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -7498,22 +7640,28 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:01:45+00:00",
+  "validated_at": "2026-10-05T11:02:06+00:00",
   "seconds": 4.3,
-  "sha256": "e907851f5dfa62ae3ba35ba8a7c1653436361fe96c7832a87c052730d51c2958",
-  "bytes": 654215,
+  "sha256": "2b3492f94c80fda3c05595d4c574a8434e253e25db06a51cf13c485780446bef",
+  "bytes": 654364,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2035FCC8DA15",
-   "last_modified": "Fri, 02 Oct 2026 03:33:55 GMT",
-   "content_length": 654215
+   "etag": "0x8DF2291988F6F47",
+   "last_modified": "Mon, 05 Oct 2026 03:34:43 GMT",
+   "content_length": 654364,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 3910,
+   "rows": 3911,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -7533,9 +7681,9 @@
     "undeclared": [],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 82110,
+    "cells_checked": 82131,
     "cells_with_errors": 1599,
-    "error_rate": 0.019474,
+    "error_rate": 0.019469,
     "errors_by_field": {
      "DAT_ALTERACAO": {
       "type": {
@@ -7581,7 +7729,7 @@
    "NU_VALOR",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "2f335d4d-6707-4862-995d-f2fb6c7dd052": {
   "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b",
@@ -7828,7 +7976,7 @@
  },
  "2c53046a-664c-4d27-8dd1-159b5f054448": {
   "dataset": "fiscalizacao-termo-de-doacao",
-  "checked_at": "2026-10-03T11:01:51+00:00",
+  "checked_at": "2026-10-05T11:02:10+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "fc9478add1329113",
   "ckan": {
@@ -7838,7 +7986,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.66
+   "first_byte_s": 0.21,
+   "download_s": 0.82,
+   "network_s": 0.6
   },
   "distributions": [
    {
@@ -7867,22 +8017,28 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:01:51+00:00",
-  "seconds": 5.9,
-  "sha256": "3d2fa34e342b9b25eaed33ec93265a035f3b004d8868c256b6e3afe2732af276",
-  "bytes": 9033439,
+  "validated_at": "2026-10-05T11:02:10+00:00",
+  "seconds": 6.7,
+  "sha256": "0625fcea9793c3f2e88c4d5fb13ea8095b583912795ba0df058bc4a631919856",
+  "bytes": 9035473,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF203297097510",
-   "last_modified": "Fri, 02 Oct 2026 03:09:36 GMT",
-   "content_length": 9033439
+   "etag": "0x8DF228DFC7984CD",
+   "last_modified": "Mon, 05 Oct 2026 03:08:53 GMT",
+   "content_length": 9035473,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 21578,
+   "rows": 21581,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -7902,13 +8058,13 @@
     "undeclared": [],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 863120,
-    "cells_with_errors": 39196,
-    "error_rate": 0.045412,
+    "cells_checked": 863240,
+    "cells_with_errors": 39199,
+    "error_rate": 0.045409,
     "errors_by_field": {
      "DES_STATUS_FORMULARIO": {
       "type": {
-       "count": 20219,
+       "count": 20222,
        "rows": [
         1,
         2,
@@ -7999,11 +8155,11 @@
    "OPERACAO_SOL_RECURSO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "4d98126c-73c1-42fe-8cb0-19fe0374e0be": {
   "dataset": "fiscalizacao-termo-de-doacao",
-  "checked_at": "2026-10-03T11:01:57+00:00",
+  "checked_at": "2026-10-05T11:02:16+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "ec573ae2db78ea88",
   "ckan": {
@@ -8013,7 +8169,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.65
+   "first_byte_s": 0.19,
+   "download_s": 0.2,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -8042,22 +8200,28 @@
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:01:57+00:00",
-  "seconds": 4.5,
-  "sha256": "7038b67a81a9290866e117e745545a520835dd54f5a90024fb2c1cbfaeeec0e4",
-  "bytes": 3515035,
+  "validated_at": "2026-10-05T11:02:16+00:00",
+  "seconds": 4.3,
+  "sha256": "af56d0b08a159ac1e7edfcb8d25a53a1e68dd2d29d933ee9cbac72ce8e18391f",
+  "bytes": 3514851,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF20329E56DE44",
-   "last_modified": "Fri, 02 Oct 2026 03:09:48 GMT",
-   "content_length": 3515035
+   "etag": "0x8DF228E03650ABE",
+   "last_modified": "Mon, 05 Oct 2026 03:09:04 GMT",
+   "content_length": 3514851,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 23602,
+   "rows": 23601,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -8077,7 +8241,7 @@
     "undeclared": [],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 613652,
+    "cells_checked": 613626,
     "cells_with_errors": 0,
     "error_rate": 0.0,
     "errors_by_field": {},
@@ -8117,11 +8281,11 @@
    "DES_FABRICANTE",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "7409947a-637a-4ac6-827f-caf439617944": {
   "dataset": "fiscalizacao-termo-de-doacao",
-  "checked_at": "2026-10-03T11:02:02+00:00",
+  "checked_at": "2026-10-05T11:02:20+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "f998b3424e51f22f",
   "ckan": {
@@ -8131,7 +8295,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.65
+   "first_byte_s": 0.2,
+   "download_s": 0.36,
+   "network_s": 0.16
   },
   "distributions": [
    {
@@ -8236,22 +8402,28 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:02:02+00:00",
-  "seconds": 4.9,
-  "sha256": "e147a439abcdf820d1d7093836388b95ae8f8f0d6a86844f806c2e5904de5054",
-  "bytes": 5763704,
+  "validated_at": "2026-10-05T11:02:20+00:00",
+  "seconds": 5.1,
+  "sha256": "7a5cacf85e233d9c22d0656d481bf152fbf532b155175f9e03abd5142ac0765a",
+  "bytes": 5763987,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2032A2858173",
-   "last_modified": "Fri, 02 Oct 2026 03:09:55 GMT",
-   "content_length": 5763704
+   "etag": "0x8DF228E07849756",
+   "last_modified": "Mon, 05 Oct 2026 03:09:11 GMT",
+   "content_length": 5763987,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 33422,
+   "rows": 33424,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -8271,13 +8443,13 @@
     "undeclared": [],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 735284,
-    "cells_with_errors": 11588,
-    "error_rate": 0.01576,
+    "cells_checked": 735328,
+    "cells_with_errors": 11590,
+    "error_rate": 0.015762,
     "errors_by_field": {
      "NUM_DOACAO": {
       "type": {
-       "count": 11588,
+       "count": 11590,
        "rows": [
         1,
         2,
@@ -8320,11 +8492,11 @@
    "DAT_ALTERACAO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "194b9635-bd97-4555-8ea8-48fab4a9c972": {
   "dataset": "fiscalizacao-termo-de-doacao",
-  "checked_at": "2026-10-03T11:02:06+00:00",
+  "checked_at": "2026-10-05T11:02:25+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "ebd3c2ec877a88c7",
   "ckan": {
@@ -8334,7 +8506,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.66
+   "first_byte_s": 0.19,
+   "download_s": 0.19,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -8363,18 +8537,24 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:02:06+00:00",
+  "validated_at": "2026-10-05T11:02:25+00:00",
   "seconds": 4.1,
-  "sha256": "d2b325fe12496877e24e2ecccc2d5085c041dcc4336a1354a6a1140cc6898b00",
+  "sha256": "b3479c1cd9f6c654035b0720e228b30509d5b8881fc161ce881bc0946eadaab0",
   "bytes": 2323665,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2032A80F33F0",
-   "last_modified": "Fri, 02 Oct 2026 03:10:04 GMT",
-   "content_length": 2323665
+   "etag": "0x8DF228E0D87ECDE",
+   "last_modified": "Mon, 05 Oct 2026 03:09:21 GMT",
+   "content_length": 2323665,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -8406,23 +8586,11 @@
       "type": {
        "count": 21016,
        "rows": [
-        3,
+        2,
         4,
         5,
-        8,
-        9
-       ]
-      }
-     },
-     "ARTIGO": {
-      "type": {
-       "count": 8587,
-       "rows": [
-        4,
-        6,
-        9,
-        11,
-        18
+        7,
+        12
        ]
       }
      },
@@ -8432,9 +8600,21 @@
        "rows": [
         5,
         6,
-        7,
+        8,
+        11,
+        13
+       ]
+      }
+     },
+     "ARTIGO": {
+      "type": {
+       "count": 8587,
+       "rows": [
+        13,
         17,
-        18
+        22,
+        28,
+        32
        ]
       }
      },
@@ -8442,11 +8622,11 @@
       "type": {
        "count": 1238,
        "rows": [
-        4648,
-        4688,
-        4690,
-        4696,
-        4698
+        4608,
+        4611,
+        4612,
+        4618,
+        4632
        ]
       }
      }
@@ -8474,11 +8654,11 @@
    "CD_ALINEA",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "d9c1208f-1f35-4708-b9fb-abd022de894c": {
   "dataset": "fiscalizacao-termo-de-doacao",
-  "checked_at": "2026-10-03T11:02:11+00:00",
+  "checked_at": "2026-10-05T11:02:29+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "bfc7dee44ddbf26f",
   "ckan": {
@@ -8488,7 +8668,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.63
+   "first_byte_s": 0.18,
+   "download_s": 0.19,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -8517,18 +8699,24 @@
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:02:11+00:00",
-  "seconds": 3.7,
-  "sha256": "94bd436a739f37293d6cb57c1fd7c399496cc46fd11cd5062b3481d5a823f690",
+  "validated_at": "2026-10-05T11:02:29+00:00",
+  "seconds": 3.8,
+  "sha256": "7b25f81b926c32b9d488fd771900f96994cf1f8d01e03f5ded9e8898865e73f7",
   "bytes": 1848503,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2032AB899779",
-   "last_modified": "Fri, 02 Oct 2026 03:10:10 GMT",
-   "content_length": 1848503
+   "etag": "0x8DF228E11770716",
+   "last_modified": "Mon, 05 Oct 2026 03:09:28 GMT",
+   "content_length": 1848503,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -8560,11 +8748,11 @@
       "type": {
        "count": 1238,
        "rows": [
-        13678,
-        13699,
-        13706,
-        13715,
-        13718
+        27111,
+        27115,
+        27136,
+        27142,
+        27145
        ]
       }
      }
@@ -8590,11 +8778,11 @@
    "NU_PAR_INC_AL",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "8f88b43e-287a-470b-a730-db440f9e37fa": {
   "dataset": "fiscalizacao-termo-de-embargo",
-  "checked_at": "2026-10-03T11:02:14+00:00",
+  "checked_at": "2026-10-05T11:06:59+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "b46b1a08cb858727",
   "ckan": {
@@ -8605,7 +8793,7 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_EMBARGO/termo_de_embargo.csv",
-  "reason": "new"
+  "reason": "error"
  },
  "aba90ea8-e2f3-431e-a0cc-1ae24773843b": {
   "dataset": "fiscalizacao-termo-de-embargo",
@@ -8709,7 +8897,7 @@
  },
  "90d17ce7-6a9b-4bfb-804c-6d52e43af264": {
   "dataset": "fiscalizacao-termo-de-embargo",
-  "checked_at": "2026-10-03T11:02:20+00:00",
+  "checked_at": "2026-10-05T11:02:33+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "cafd508c7061a0af",
   "ckan": {
@@ -8719,7 +8907,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.64
+   "first_byte_s": 0.2,
+   "download_s": 0.87,
+   "network_s": 0.66
   },
   "distributions": [
    {
@@ -8748,18 +8938,24 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:02:20+00:00",
-  "seconds": 5.5,
-  "sha256": "c6ace8684ba2de068956df6dcccb5cf2cff4e3a9218e29f844a87e9bc5654647",
+  "validated_at": "2026-10-05T11:02:33+00:00",
+  "seconds": 4.2,
+  "sha256": "e262836bf7c19e87de0cbf7ab4d2b416a23111735322748a6078767486c0b2f9",
   "bytes": 20374374,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF203584C68EA3",
-   "last_modified": "Fri, 02 Oct 2026 03:30:34 GMT",
-   "content_length": 20374374
+   "etag": "0x8DF22910EC6C3A1",
+   "last_modified": "Mon, 05 Oct 2026 03:30:52 GMT",
+   "content_length": 20374374,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -8808,11 +9004,11 @@
    "WKT",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "3360882c-a038-4129-a1f0-7013af37926a": {
   "dataset": "fiscalizacao-termo-de-embargo",
-  "checked_at": "2026-10-03T11:02:25+00:00",
+  "checked_at": "2026-10-05T11:02:36+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "d6ec8f0932193650",
   "ckan": {
@@ -8822,7 +9018,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.66
+   "first_byte_s": 0.18,
+   "download_s": 0.19,
+   "network_s": 0.01
   },
   "distributions": [
    {
@@ -8851,22 +9049,28 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:02:25+00:00",
-  "seconds": 3.8,
-  "sha256": "43fac2828e3068ff17935fb5f04e184b2c2dd40ecc9b30e3dfc9333bed7e28fc",
-  "bytes": 1603988,
+  "validated_at": "2026-10-05T11:02:36+00:00",
+  "seconds": 3.1,
+  "sha256": "b7363e0548cd43321ab47b072e83aee952ada0e91f55cec2e729938e49ecc396",
+  "bytes": 1603779,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2035372AA5CB",
-   "last_modified": "Fri, 02 Oct 2026 03:28:24 GMT",
-   "content_length": 1603988
+   "etag": "0x8DF2290C01D8751",
+   "last_modified": "Mon, 05 Oct 2026 03:28:40 GMT",
+   "content_length": 1603779,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 15917,
+   "rows": 15915,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -8909,7 +9113,7 @@
    "NO_ARQUIVO_EVIDENCIA",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "0a4284aa-e142-4d6d-823f-9958f26c829e": {
   "dataset": "fiscalizacao-termo-de-embargo",
@@ -9013,7 +9217,7 @@
  },
  "ccdbf737-0fbf-4547-adf6-267204aa4413": {
   "dataset": "fiscalizacao-termo-de-embargo",
-  "checked_at": "2026-10-03T11:02:31+00:00",
+  "checked_at": "2026-10-05T11:02:39+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "d9811d7fbf707254",
   "ckan": {
@@ -9023,7 +9227,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.18
+   "first_byte_s": 0.18,
+   "download_s": 0.51,
+   "network_s": 0.32
   },
   "distributions": [
    {
@@ -9052,22 +9258,28 @@
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:02:31+00:00",
-  "seconds": 3.5,
-  "sha256": "c41602a8d8928b567ae2f297f955060002573daae5c54d8dad38b443381aaa67",
-  "bytes": 11372053,
+  "validated_at": "2026-10-05T11:02:39+00:00",
+  "seconds": 3.6,
+  "sha256": "3c5235254df31e4eeddd8cd0e2647e33ca8f05b879b28db9f8da16ffff213537",
+  "bytes": 11376389,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF20393FF1F9C5",
-   "last_modified": "Fri, 02 Oct 2026 03:57:16 GMT",
-   "content_length": 11372053
+   "etag": "0x8DF2294F3F36A62",
+   "last_modified": "Mon, 05 Oct 2026 03:58:45 GMT",
+   "content_length": 11376389,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 150525,
+   "rows": 150576,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -9107,11 +9319,11 @@
    "CD_ALINEA",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "21347475-cd71-41de-a677-f0fbaa8c02b2": {
   "dataset": "fiscalizacao-termo-de-embargo",
-  "checked_at": "2026-10-03T11:02:34+00:00",
+  "checked_at": "2026-10-05T11:02:42+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "67cf25296e126119",
   "ckan": {
@@ -9121,7 +9333,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.63
+   "first_byte_s": 0.19,
+   "download_s": 0.2,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -9150,22 +9364,28 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:02:34+00:00",
-  "seconds": 3.4,
-  "sha256": "96ca62c507e9cb69eea6992e616e5573010ab1ebdf85404f18b9342c0c2ea95a",
-  "bytes": 1219851,
+  "validated_at": "2026-10-05T11:02:42+00:00",
+  "seconds": 3.0,
+  "sha256": "c959c08c41ea782a0c064c758379537ebc9a6c70f8c6ca7cf8f4adc30bcd73a6",
+  "bytes": 1220235,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF20398F8DF774",
-   "last_modified": "Fri, 02 Oct 2026 03:59:30 GMT",
-   "content_length": 1219851
+   "etag": "0x8DF2295435361D8",
+   "last_modified": "Mon, 05 Oct 2026 04:00:58 GMT",
+   "content_length": 1220235,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 14662,
+   "rows": 14666,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -9203,7 +9423,7 @@
    "NU_PAR_INC_AL",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "04f7998d-58e1-4717-85f5-401dc9994b19": {
   "dataset": "fiscalizacao-termo-de-embargo",
@@ -9341,7 +9561,7 @@
  },
  "f0073116-1642-4e4d-ac1f-153f3fcd21b4": {
   "dataset": "fiscalizacao-termo-de-incineracao",
-  "checked_at": "2026-10-03T11:04:11+00:00",
+  "checked_at": "2026-10-05T11:02:45+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "e4247b03c7f56fdd",
   "ckan": {
@@ -9351,7 +9571,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.64
+   "first_byte_s": 0.17,
+   "download_s": 0.17,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -9380,18 +9602,24 @@
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:04:11+00:00",
-  "seconds": 4.1,
-  "sha256": "d433db6c44a27187a8dfe0f05dff4f15fc9a485683f555820cc7443a616609ee",
+  "validated_at": "2026-10-05T11:02:45+00:00",
+  "seconds": 4.0,
+  "sha256": "a97e2c643810f711260b299b97b0551196245bcc9629f2afa56a27208e27834e",
   "bytes": 375275,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2035E03C815B",
-   "last_modified": "Fri, 02 Oct 2026 03:33:07 GMT",
-   "content_length": 375275
+   "etag": "0x8DF22917618B498",
+   "last_modified": "Mon, 05 Oct 2026 03:33:45 GMT",
+   "content_length": 375275,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -9467,11 +9695,11 @@
    "JUSTIFICATIVA_ALTERACAO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "08a27674-c9f2-4cd9-a4b9-2b2e3cf00948": {
   "dataset": "fiscalizacao-termo-de-incineracao",
-  "checked_at": "2026-10-03T11:04:16+00:00",
+  "checked_at": "2026-10-05T11:02:49+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "baa008835193ba00",
   "ckan": {
@@ -9481,7 +9709,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.59
+   "first_byte_s": 0.2,
+   "download_s": 0.2,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -9510,18 +9740,24 @@
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:04:16+00:00",
-  "seconds": 3.5,
-  "sha256": "2dd9cfd1a0d54f68fa50254772111595b8eb5a20aa76ae6a91fc41eb76a9ed63",
+  "validated_at": "2026-10-05T11:02:49+00:00",
+  "seconds": 3.6,
+  "sha256": "9cd6b9b5d34cf8bf074acfad5961e3f09e87f4053c1817491d521c4f246581ee",
   "bytes": 191309,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2035E09AB27A",
-   "last_modified": "Fri, 02 Oct 2026 03:33:08 GMT",
-   "content_length": 191309
+   "etag": "0x8DF22917683F831",
+   "last_modified": "Mon, 05 Oct 2026 03:33:46 GMT",
+   "content_length": 191309,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -9570,11 +9806,11 @@
    "OBS_INCINERACAO_BEM",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "589ea44c-cc80-4d1c-9797-af3b8646202c": {
   "dataset": "fiscalizacao-termo-de-incineracao",
-  "checked_at": "2026-10-03T11:04:19+00:00",
+  "checked_at": "2026-10-05T11:02:52+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "5eb890458ad9c55a",
   "ckan": {
@@ -9584,7 +9820,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.66
+   "first_byte_s": 0.17,
+   "download_s": 0.17,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -9613,18 +9851,24 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:04:19+00:00",
-  "seconds": 1.1,
-  "sha256": "e232bf90274cfc017577a45fdbc707db561e2261189cb17d1aeea1efc48476fc",
+  "validated_at": "2026-10-05T11:02:52+00:00",
+  "seconds": 1.2,
+  "sha256": "cd89105885582140d2bb8b30db7e2b02b40d5c4379e05f150fa2bdaef47ed0b7",
   "bytes": 13782,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2035E0DD7801",
-   "last_modified": "Fri, 02 Oct 2026 03:33:08 GMT",
-   "content_length": 13782
+   "etag": "0x8DF229176C1CD2A",
+   "last_modified": "Mon, 05 Oct 2026 03:33:46 GMT",
+   "content_length": 13782,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -9692,7 +9936,7 @@
    "OBS_INCIN_ESPECIME",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "24251a10-7e8d-424d-878c-8d2aa908cf7b": {
   "dataset": "fiscalizacao-termo-de-soltura",
@@ -10382,7 +10626,7 @@
  },
  "4822e6fa-c4af-4ab8-8ca6-04014f4b3c45": {
   "dataset": "fiscalizacao-termo-de-suspensao",
-  "checked_at": "2026-10-03T11:04:40+00:00",
+  "checked_at": "2026-10-05T11:02:53+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "c3f85c2f522ff20e",
   "ckan": {
@@ -10392,7 +10636,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.67
+   "first_byte_s": 0.21,
+   "download_s": 0.37,
+   "network_s": 0.15
   },
   "distributions": [
    {
@@ -10421,22 +10667,28 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:04:40+00:00",
-  "seconds": 5.5,
-  "sha256": "7b801bda2826b8265588fb70722ae7b212bf05485cd939b873435ef51a1cccd8",
-  "bytes": 7986120,
+  "validated_at": "2026-10-05T11:02:53+00:00",
+  "seconds": 4.8,
+  "sha256": "ef2e32f2f40b9d394e26f89f0b8370a6f132c557bfb68cc4e2ba3e03cb23641a",
+  "bytes": 7987410,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2036568F6B91",
-   "last_modified": "Fri, 02 Oct 2026 03:36:26 GMT",
-   "content_length": 7986120
+   "etag": "0x8DF2291F22007EA",
+   "last_modified": "Mon, 05 Oct 2026 03:37:13 GMT",
+   "content_length": 7987410,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 10412,
+   "rows": 10414,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -10458,13 +10710,13 @@
     ],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 385244,
-    "cells_with_errors": 9967,
+    "cells_checked": 385318,
+    "cells_with_errors": 9969,
     "error_rate": 0.025872,
     "errors_by_field": {
      "CD_ACAO_FISCALIZATORIA": {
       "type": {
-       "count": 6721,
+       "count": 6723,
        "rows": [
         1,
         2,
@@ -10478,11 +10730,11 @@
       "type": {
        "count": 3246,
        "rows": [
-        256,
-        277,
-        306,
-        510,
-        511
+        258,
+        279,
+        308,
+        512,
+        513
        ]
       }
      }
@@ -10531,11 +10783,11 @@
    "JUSTIFICATIVA_ALTERACAO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "5b31395e-1e45-4840-ab84-a2532212caa3": {
   "dataset": "fiscalizacao-termo-de-suspensao",
-  "checked_at": "2026-10-03T11:04:45+00:00",
+  "checked_at": "2026-10-05T11:02:57+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "06e2c4c16b41bbd3",
   "ckan": {
@@ -10545,7 +10797,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.62
+   "first_byte_s": 0.18,
+   "download_s": 0.18,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -10574,18 +10828,24 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:04:45+00:00",
-  "seconds": 3.3,
-  "sha256": "262302218f1779c7ed05f47cc6afd3e837a86a80805ccf3f2bc48379418a9783",
+  "validated_at": "2026-10-05T11:02:57+00:00",
+  "seconds": 3.4,
+  "sha256": "c28a47555510b8fa308e91f71b7d9117f34bf4fd8879bc1688dd72dd9fb99f19",
   "bytes": 471402,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF20365CE86740",
-   "last_modified": "Fri, 02 Oct 2026 03:36:36 GMT",
-   "content_length": 471402
+   "etag": "0x8DF2291F8D70CF4",
+   "last_modified": "Mon, 05 Oct 2026 03:37:25 GMT",
+   "content_length": 471402,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -10632,10 +10892,10 @@
        "count": 2883,
        "rows": [
         1,
-        4,
         5,
-        7,
-        9
+        6,
+        8,
+        10
        ]
       }
      },
@@ -10644,10 +10904,10 @@
        "count": 3827,
        "rows": [
         2,
-        3,
-        6,
-        8,
-        10
+        4,
+        7,
+        9,
+        11
        ]
       }
      },
@@ -10655,11 +10915,11 @@
       "type": {
        "count": 233,
        "rows": [
-        23,
-        100,
-        143,
-        183,
-        216
+        15,
+        51,
+        138,
+        229,
+        230
        ]
       }
      }
@@ -10681,11 +10941,11 @@
    "CD_ALINEA",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "0c2237c6-bfca-4ab7-8063-03dc8bf72c11": {
   "dataset": "fiscalizacao-termo-de-suspensao",
-  "checked_at": "2026-10-03T11:04:49+00:00",
+  "checked_at": "2026-10-05T11:03:01+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "22d919a94fd8deb3",
   "ckan": {
@@ -10695,7 +10955,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.61
+   "first_byte_s": 0.17,
+   "download_s": 0.17,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -10724,18 +10986,24 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:04:49+00:00",
-  "seconds": 1.7,
-  "sha256": "1b99f40564541e680cec6b4236965181b4c8b60205a2eda693de85210998fe0b",
+  "validated_at": "2026-10-05T11:03:01+00:00",
+  "seconds": 2.2,
+  "sha256": "583b798b5125708b50144eb0b43ba0237cec49a6664f4649a45acb3177a6e769",
   "bytes": 85791,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF20365E262D16",
-   "last_modified": "Fri, 02 Oct 2026 03:36:38 GMT",
-   "content_length": 85791
+   "etag": "0x8DF2291FA53EB41",
+   "last_modified": "Mon, 05 Oct 2026 03:37:27 GMT",
+   "content_length": 85791,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -10779,7 +11047,7 @@
    "NU_PAR_INC_AL",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "98d0aeb5-4843-421a-9e3c-cfb8d8b885e5": {
   "dataset": "fonte-energetica",
@@ -11058,7 +11326,7 @@
  },
  "b0a63e0d-e656-455a-8bff-4672dc37ca44": {
   "dataset": "imagens-aereas-do-desastre-mariana-mg",
-  "checked_at": "2026-10-03T11:04:58+00:00",
+  "checked_at": "2026-10-05T10:44:49+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -11069,7 +11337,7 @@
   "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:img_foto_rio_doce_p&outputFormat=csv",
-  "reason": "new"
+  "reason": "error"
  },
  "9b04fdf7-d6da-4621-a1e7-460b53b399a6": {
   "dataset": "importador-exportador-de-fauna-e-flora-produtos-parte",
@@ -11451,7 +11719,7 @@
  },
  "3d9c4d47-9d44-4971-922c-4a9143d071a6": {
   "dataset": "multas-ambientais-distribuidas-por-bens-tutelados",
-  "checked_at": "2026-10-03T11:05:11+00:00",
+  "checked_at": "2026-10-05T11:03:03+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -11461,25 +11729,28 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.19,
-   "download_s": 1.01
+   "first_byte_s": 0.22,
+   "download_s": 1.25,
+   "network_s": 1.01
   },
   "first_seen": "2026-10-03T11:05:11+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T11:05:11+00:00",
-  "seconds": 6.5,
-  "sha256": "671f71563702aea0ed7ed5fe2a4d689f24b1d29ed83c0d83c0e402c7164e28a4",
-  "bytes": 24608263,
+  "validated_at": "2026-10-05T11:03:03+00:00",
+  "seconds": 10.5,
+  "sha256": "4e043c6fde5f4b3fa844f0b9a5f386212fb4987780fc7f5a3e14ff36d4607d6d",
+  "bytes": 24609085,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF212E8D3D6F8E",
-   "last_modified": "Sat, 03 Oct 2026 09:13:13 GMT",
-   "content_length": 24608263
+   "etag": "0x8DF22C0FEA3E99B",
+   "last_modified": "Mon, 05 Oct 2026 09:14:01 GMT",
+   "content_length": 24609085,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 27,
-   "rows": 724167,
+   "rows": 724187,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -11509,11 +11780,11 @@
    "Situação Débito",
    "Última Atualização Relatório"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "4f9c7227-2bbd-4e88-8599-a3fbe787fb5b": {
   "dataset": "multas-ambientais-distribuidas-por-bens-tutelados",
-  "checked_at": "2026-10-03T11:05:17+00:00",
+  "checked_at": "2026-10-05T11:03:12+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -11524,24 +11795,27 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
    "first_byte_s": 0.22,
-   "download_s": 1.41
+   "download_s": 1.39,
+   "network_s": 1.14
   },
   "first_seen": "2026-10-03T11:05:17+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T11:05:17+00:00",
-  "seconds": 14.7,
-  "sha256": "8a9c2fc044064895f564badcb19882ef4fe9d7b513ed9a4bc3c1d4f41890b532",
-  "bytes": 31388578,
+  "validated_at": "2026-10-05T11:03:12+00:00",
+  "seconds": 23.0,
+  "sha256": "80f8cef7667d816d82c91f75df65edae8ddf8e6da18692a927ccc335a19c254c",
+  "bytes": 31389789,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF212E941D029E",
-   "last_modified": "Sat, 03 Oct 2026 09:13:24 GMT",
-   "content_length": 31388578
+   "etag": "0x8DF22C104C43591",
+   "last_modified": "Mon, 05 Oct 2026 09:14:11 GMT",
+   "content_length": 31389789,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 27,
-   "rows": 724167,
+   "rows": 724187,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -11569,11 +11843,11 @@
    "Situação Débito",
    "Última Atualização Relatório"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "f7db373a-09a3-48c7-a370-fe71da7dcf8b": {
   "dataset": "multas-ambientais-distribuidas-por-bens-tutelados",
-  "checked_at": "2026-10-03T11:05:32+00:00",
+  "checked_at": "2026-10-05T11:03:34+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -11583,25 +11857,28 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.22,
-   "download_s": 1.36
+   "first_byte_s": 0.3,
+   "download_s": 1.48,
+   "network_s": 1.14
   },
   "first_seen": "2026-10-03T11:05:32+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T11:05:32+00:00",
-  "seconds": 19.5,
-  "sha256": "d4c33047bd478d988acd4db6e32d7f1d099ecd72173796180e656ed2e07d30cb",
-  "bytes": 31687033,
+  "validated_at": "2026-10-05T11:03:34+00:00",
+  "seconds": 32.7,
+  "sha256": "21ebd70af70cc5dea4e9cbe763ff89fda018f900f20b7ca8e6fd022e087e1dd6",
+  "bytes": 31686009,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF212ED9F099DB",
-   "last_modified": "Sat, 03 Oct 2026 09:15:21 GMT",
-   "content_length": 31687033
+   "etag": "0x8DF22C1417F49C1",
+   "last_modified": "Mon, 05 Oct 2026 09:15:53 GMT",
+   "content_length": 31686009,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 27,
-   "rows": 724167,
+   "rows": 724187,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -11629,7 +11906,7 @@
    "Situacao_Debito",
    "Ultima_Atualizacao_Relatorio"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "69580d03-480d-4380-a2f7-1ffdd9a4e848": {
   "dataset": "pescador-profissional",
@@ -13012,7 +13289,7 @@
  },
  "6bde1c16-692f-4706-be68-bd2b3c1ac7d4": {
   "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
-  "checked_at": "2026-10-03T11:08:45+00:00",
+  "checked_at": "2026-10-05T10:45:57+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "da14e3e6b789d980",
   "ckan": {
@@ -13023,7 +13300,7 @@
   "host": null,
   "status": "error",
   "error": "MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?",
-  "reason": "new"
+  "reason": "error"
  },
  "4c02546d-c971-44b2-a007-87e2127c02b3": {
   "dataset": "rapp-pilhas-e-baterias-fabricante-nacional",
@@ -13659,7 +13936,7 @@
  },
  "6c96417b-b6bf-4599-bb11-471c14ddbe56": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:02+00:00",
+  "checked_at": "2026-10-05T11:04:05+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "1b756ff437345c2c",
   "ckan": {
@@ -13669,26 +13946,33 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.19,
-   "download_s": 0.19
+   "first_byte_s": 0.17,
+   "download_s": 0.18,
+   "network_s": 0.0
   },
   "first_seen": "2026-10-03T11:10:02+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:02+00:00",
-  "seconds": 0.4,
-  "sha256": "7674064f48928ab8c4ab8e4e624ea9578ed3df0a7049382d0a7fcc008042c5c5",
-  "bytes": 305167,
+  "validated_at": "2026-10-05T11:04:05+00:00",
+  "seconds": 0.5,
+  "sha256": "d7f9135dd60ac8b943cc5e369c2ce2d50dc7fd5019d44de9647c86e32ddc4551",
+  "bytes": 305541,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF1FC87827EFD7",
-   "last_modified": "Thu, 01 Oct 2026 14:29:57 GMT",
-   "content_length": 305167
+   "etag": "0x8DF229063212032",
+   "last_modified": "Mon, 05 Oct 2026 03:26:04 GMT",
+   "content_length": 305541,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -13713,18 +13997,18 @@
     "spelling": {},
     "similar_names": {},
     "cells_checked": 168545,
-    "cells_with_errors": 5394,
-    "error_rate": 0.032003,
+    "cells_with_errors": 5372,
+    "error_rate": 0.031873,
     "errors_by_field": {
      "Quantidade importada (un)": {
       "type": {
-       "count": 5394,
+       "count": 5372,
        "rows": [
         1,
-        2,
         5,
-        6,
-        10
+        8,
+        10,
+        19
        ]
       }
      }
@@ -13773,11 +14057,11 @@
    "Abrangência da comercialização",
    "Laudo"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "0dcf7b76-12fd-498e-9ae2-d3de8e5331cb": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:02+00:00",
+  "checked_at": "2026-10-05T11:04:05+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "1b756ff437345c2c",
   "ckan": {
@@ -13788,25 +14072,32 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
    "first_byte_s": 0.17,
-   "download_s": 0.17
+   "download_s": 0.18,
+   "network_s": 0.0
   },
   "first_seen": "2026-10-03T11:10:02+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:02+00:00",
-  "seconds": 0.6,
-  "sha256": "c16819708eecaa7566bbce826584cfa71d484b5d8ee1de23523ae41c0a521b79",
-  "bytes": 460340,
+  "validated_at": "2026-10-05T11:04:05+00:00",
+  "seconds": 0.9,
+  "sha256": "f840d18c7a83cff55dd26a816c8f0005b45270c7f78afd96b0e0617300531e3f",
+  "bytes": 457732,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF1FC8783DA96B",
-   "last_modified": "Thu, 01 Oct 2026 14:29:58 GMT",
-   "content_length": 460340
+   "etag": "0x8DF22906337C321",
+   "last_modified": "Mon, 05 Oct 2026 03:26:04 GMT",
+   "content_length": 457732,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -13840,18 +14131,18 @@
     },
     "similar_names": {},
     "cells_checked": 168545,
-    "cells_with_errors": 5394,
-    "error_rate": 0.032003,
+    "cells_with_errors": 5372,
+    "error_rate": 0.031873,
     "errors_by_field": {
      "Quantidade importada (un)": {
       "type": {
-       "count": 5394,
+       "count": 5372,
        "rows": [
         1,
-        2,
         5,
-        6,
-        10
+        8,
+        10,
+        19
        ]
       }
      }
@@ -13900,11 +14191,11 @@
    "Abrangencia_da_comercializacao",
    "Laudo"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "8b4cc0cb-f3c6-4fe3-be79-94ab1867df71": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:03+00:00",
+  "checked_at": "2026-10-05T11:04:06+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "1b756ff437345c2c",
   "ckan": {
@@ -13914,26 +14205,33 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.17,
-   "download_s": 0.17
+   "first_byte_s": 0.2,
+   "download_s": 0.21,
+   "network_s": 0.0
   },
   "first_seen": "2026-10-03T11:10:03+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:03+00:00",
-  "seconds": 0.5,
-  "sha256": "149c93ba11b06963dc6a17cfeb36f3f1c1a0672ea5c54ba814f7ea65d84c55ad",
-  "bytes": 449527,
+  "validated_at": "2026-10-05T11:04:06+00:00",
+  "seconds": 0.8,
+  "sha256": "dd41cd4be4f39786805b43065bf01ef81682e01cf4234717d28f14169462410c",
+  "bytes": 447164,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF1FC8782F3AAE",
-   "last_modified": "Thu, 01 Oct 2026 14:29:58 GMT",
-   "content_length": 449527
+   "etag": "0x8DF229063297B48",
+   "last_modified": "Mon, 05 Oct 2026 03:26:04 GMT",
+   "content_length": 447164,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -13956,8 +14254,8 @@
     "spelling": {},
     "similar_names": {},
     "cells_checked": 168545,
-    "cells_with_errors": 18359,
-    "error_rate": 0.108926,
+    "cells_with_errors": 18337,
+    "error_rate": 0.108796,
     "errors_by_field": {
      "Ano do relatório": {
       "type": {
@@ -13973,13 +14271,13 @@
      },
      "Quantidade importada (un)": {
       "type": {
-       "count": 5394,
+       "count": 5372,
        "rows": [
         1,
-        2,
         5,
-        6,
-        10
+        8,
+        10,
+        19
        ]
       }
      }
@@ -14028,11 +14326,11 @@
    "Abrangência da comercialização",
    "Laudo"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "85efc1b6-c4bb-4e1b-96cc-8fb4e39dd811": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:03+00:00",
+  "checked_at": "2026-10-05T11:07:00+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "edf1f955b08f659c",
   "ckan": {
@@ -14043,11 +14341,11 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importados/pilhas_baterias_produtos_consolidado_todos_anos.csv.zip",
-  "reason": "new"
+  "reason": "error"
  },
  "78692bb1-017c-4ba4-a954-ff619bdc53ed": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:03+00:00",
+  "checked_at": "2026-10-05T11:07:01+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "edf1f955b08f659c",
   "ckan": {
@@ -14058,11 +14356,11 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importados/pilhas_baterias_produtos_consolidado_todos_anos.xml.zip",
-  "reason": "new"
+  "reason": "error"
  },
  "c60c95d4-ce2b-4d27-884d-1a572a604576": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:04+00:00",
+  "checked_at": "2026-10-05T11:07:01+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "edf1f955b08f659c",
   "ckan": {
@@ -14073,11 +14371,11 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importados/pilhas_baterias_produtos_consolidado_todos_anos.json.zip",
-  "reason": "new"
+  "reason": "error"
  },
  "4260f6e2-6598-415a-a371-0a8bf7b16bd6": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:05+00:00",
+  "checked_at": "2026-10-05T11:04:07+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "802fa19935973df1",
   "ckan": {
@@ -14087,26 +14385,33 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.64,
-   "download_s": 0.94
+   "first_byte_s": 0.16,
+   "download_s": 0.16,
+   "network_s": 0.0
   },
   "first_seen": "2026-10-03T11:10:05+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:05+00:00",
-  "seconds": 1.0,
-  "sha256": "9497358d47d8a7af0dc9790e017edab968f590c16fc3673f14f395409e0b5bf8",
-  "bytes": 105330,
+  "validated_at": "2026-10-05T11:04:07+00:00",
+  "seconds": 0.3,
+  "sha256": "68c99aea13a081877667587f1b1ab331fe17b0732512c69a17ac16b559a39d3c",
+  "bytes": 105694,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF1D53B52F2352",
-   "last_modified": "Mon, 28 Sep 2026 11:29:06 GMT",
-   "content_length": 105330
+   "etag": "0x8DF2290756493BF",
+   "last_modified": "Mon, 05 Oct 2026 03:26:35 GMT",
+   "content_length": 105694,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -14139,10 +14444,10 @@
        "count": 1795,
        "rows": [
         1,
-        3,
         9,
-        10,
-        13
+        13,
+        18,
+        23
        ]
       }
      }
@@ -14169,11 +14474,11 @@
    "Quantidade recebida (un)",
    "Peso total (kg)"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "7fcc2bcd-fdb0-4be5-b215-37973dc6dd2f": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:06+00:00",
+  "checked_at": "2026-10-05T11:04:07+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "802fa19935973df1",
   "ckan": {
@@ -14183,26 +14488,33 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.16,
-   "download_s": 0.31
+   "first_byte_s": 0.17,
+   "download_s": 0.17,
+   "network_s": 0.0
   },
   "first_seen": "2026-10-03T11:10:06+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:06+00:00",
+  "validated_at": "2026-10-05T11:04:07+00:00",
   "seconds": 0.4,
-  "sha256": "187aead2d97c493d0c24faaac08c8089945aa3f9c9c1db8771c49fbe36330c75",
-  "bytes": 154241,
+  "sha256": "fc04341ae13a51db90f1117dbba783b6ba10ecbb68f946e5062c3a5f527da3d8",
+  "bytes": 158755,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF1D53B541AC27",
-   "last_modified": "Mon, 28 Sep 2026 11:29:07 GMT",
-   "content_length": 154241
+   "etag": "0x8DF229075730282",
+   "last_modified": "Mon, 05 Oct 2026 03:26:35 GMT",
+   "content_length": 158755,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -14240,10 +14552,10 @@
        "count": 1795,
        "rows": [
         1,
-        3,
         9,
-        10,
-        13
+        13,
+        18,
+        23
        ]
       }
      }
@@ -14270,11 +14582,11 @@
    "Quantidade_recebida__un_",
    "Peso_total__kg_"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "ebca9d7f-aceb-4c50-9f48-34f502d2eb55": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:06+00:00",
+  "checked_at": "2026-10-05T11:04:07+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "802fa19935973df1",
   "ckan": {
@@ -14284,26 +14596,33 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.16,
-   "download_s": 0.31
+   "first_byte_s": 0.17,
+   "download_s": 0.17,
+   "network_s": 0.0
   },
   "first_seen": "2026-10-03T11:10:06+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:06+00:00",
+  "validated_at": "2026-10-05T11:04:07+00:00",
   "seconds": 0.4,
-  "sha256": "a5404e9455d289c822886632b2b1a0b4f26fea8ae4bdad266173c513017716f4",
-  "bytes": 152358,
+  "sha256": "19f79b462792bff9343ef1c0b13ba5d20d726fe456cccdd90065f0f76c614a4c",
+  "bytes": 155563,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF1D53B53536FA",
-   "last_modified": "Mon, 28 Sep 2026 11:29:06 GMT",
-   "content_length": 152358
+   "etag": "0x8DF22907569E506",
+   "last_modified": "Mon, 05 Oct 2026 03:26:35 GMT",
+   "content_length": 155563,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -14326,18 +14645,30 @@
     "spelling": {},
     "similar_names": {},
     "cells_checked": 49238,
-    "cells_with_errors": 1795,
-    "error_rate": 0.036456,
+    "cells_with_errors": 8829,
+    "error_rate": 0.179313,
     "errors_by_field": {
+     "Ano do relatório": {
+      "type": {
+       "count": 7034,
+       "rows": [
+        1,
+        2,
+        3,
+        4,
+        5
+       ]
+      }
+     },
      "Quantidade recebida (un)": {
       "type": {
        "count": 1795,
        "rows": [
         1,
-        3,
         9,
-        10,
-        13
+        13,
+        18,
+        23
        ]
       }
      }
@@ -14364,11 +14695,11 @@
    "Quantidade recebida (un)",
    "Peso total (kg)"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "6c1ec9e7-6615-4b99-bd38-a64d1267a3c8": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:07+00:00",
+  "checked_at": "2026-10-05T11:04:08+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "4df13a5a7e3afe2c",
   "ckan": {
@@ -14378,26 +14709,33 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.18,
-   "download_s": 1.09
+   "first_byte_s": 0.24,
+   "download_s": 0.28,
+   "network_s": 0.0
   },
   "first_seen": "2026-10-03T11:10:07+00:00",
   "pass_history": [
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:07+00:00",
-  "seconds": 1.5,
-  "sha256": "6ce3aa250f5b8ff20adf907161b3a4fa4a8ea946b318bd7b082ca33ab24d0be3",
-  "bytes": 3432991,
+  "validated_at": "2026-10-05T11:04:08+00:00",
+  "seconds": 0.9,
+  "sha256": "11597095dfffe3639201ddf25161ea196577b721b27a53fe23e28539aec0b018",
+  "bytes": 3568379,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF1D81DE5F7E85",
-   "last_modified": "Mon, 28 Sep 2026 16:59:32 GMT",
-   "content_length": 3432991
+   "etag": "0x8DF22907B90E6E7",
+   "last_modified": "Mon, 05 Oct 2026 03:26:45 GMT",
+   "content_length": 3568379,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -14444,11 +14782,11 @@
    "Sítio na internet",
    "Acondicionamento"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "d7f3fcc4-4a5d-413e-9213-9f6ede3a1380": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:08+00:00",
+  "checked_at": "2026-10-05T11:04:08+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "4df13a5a7e3afe2c",
   "ckan": {
@@ -14458,26 +14796,33 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.21,
-   "download_s": 0.66
+   "first_byte_s": 0.2,
+   "download_s": 0.38,
+   "network_s": 0.11
   },
   "first_seen": "2026-10-03T11:10:08+00:00",
   "pass_history": [
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:08+00:00",
-  "seconds": 2.1,
-  "sha256": "3ede529acb35bd36177822d5f35ee9aa6750acff6f7ffd1d5bd900c5e49130e4",
-  "bytes": 4700264,
+  "validated_at": "2026-10-05T11:04:08+00:00",
+  "seconds": 2.8,
+  "sha256": "257094968e37e6e0f9436d2dfe6773e370f20e7603648498736cb5e841572e48",
+  "bytes": 4921396,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF1D81DE96A468",
-   "last_modified": "Mon, 28 Sep 2026 16:59:33 GMT",
-   "content_length": 4700264
+   "etag": "0x8DF22907BBEEF11",
+   "last_modified": "Mon, 05 Oct 2026 03:26:45 GMT",
+   "content_length": 4921396,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -14527,11 +14872,11 @@
    "Sitio_na_internet",
    "Acondicionamento"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "a2adba95-0b96-4ccf-9630-13cc1668396a": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:10+00:00",
+  "checked_at": "2026-10-05T11:04:11+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "4df13a5a7e3afe2c",
   "ckan": {
@@ -14541,26 +14886,33 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.2,
-   "download_s": 0.7
+   "first_byte_s": 0.21,
+   "download_s": 0.37,
+   "network_s": 0.1
   },
   "first_seen": "2026-10-03T11:10:10+00:00",
   "pass_history": [
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:10+00:00",
-  "seconds": 1.7,
-  "sha256": "1817eb9916f6f6a66669317a297de6e4c4c8eb5b4eda3cdb96dcb2c7f5a55d6a",
-  "bytes": 4624708,
+  "validated_at": "2026-10-05T11:04:11+00:00",
+  "seconds": 2.2,
+  "sha256": "9de5084380f8c635a41b8752ea4fbf7d6deccf8b26c9ad5cb9b7ea2d3337465a",
+  "bytes": 4839571,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF1D81DE74EA5B",
-   "last_modified": "Mon, 28 Sep 2026 16:59:33 GMT",
-   "content_length": 4624708
+   "etag": "0x8DF22907B9D82DF",
+   "last_modified": "Mon, 05 Oct 2026 03:26:45 GMT",
+   "content_length": 4839571,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -14585,11 +14937,24 @@
     },
     "similar_names": {},
     "cells_checked": 756932,
-    "cells_with_errors": 0,
-    "error_rate": 0.0,
-    "errors_by_field": {},
+    "cells_with_errors": 68812,
+    "error_rate": 0.090909,
+    "errors_by_field": {
+     "Ano do relatório": {
+      "type": {
+       "count": 68812,
+       "rows": [
+        1,
+        2,
+        3,
+        4,
+        5
+       ]
+      }
+     }
+    },
     "inferred_formats": {},
-    "pass": true
+    "pass": false
    }
   },
   "header": [
@@ -14605,11 +14970,11 @@
    "Sítio na internet",
    "Acondicionamento"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "c10fc1fd-3c85-4e12-a9cd-79fe464602c3": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:12+00:00",
+  "checked_at": "2026-10-05T11:07:02+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "01b2e1646ed47cf9",
   "ckan": {
@@ -14620,11 +14985,11 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_consolidado_todos_anos.csv.zip",
-  "reason": "new"
+  "reason": "error"
  },
  "cb9cf40d-f0fa-4304-ae73-3c857c3d59d0": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:12+00:00",
+  "checked_at": "2026-10-05T11:07:02+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "01b2e1646ed47cf9",
   "ckan": {
@@ -14635,11 +15000,11 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_consolidado_todos_anos.xml.zip",
-  "reason": "new"
+  "reason": "error"
  },
  "e6a02e7b-98c0-44e4-aa7c-2f61b9552e04": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:13+00:00",
+  "checked_at": "2026-10-05T11:07:03+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "01b2e1646ed47cf9",
   "ckan": {
@@ -14650,11 +15015,11 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_consolidado_todos_anos.json.zip",
-  "reason": "new"
+  "reason": "error"
  },
  "6cd160bc-baf4-4966-a520-47ac533f8890": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:13+00:00",
+  "checked_at": "2026-10-05T11:04:12+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "b21b3bb92fa75271",
   "ckan": {
@@ -14664,30 +15029,37 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.62,
-   "download_s": 0.92
+   "first_byte_s": 0.16,
+   "download_s": 0.16,
+   "network_s": 0.0
   },
   "first_seen": "2026-10-03T11:10:13+00:00",
   "pass_history": [
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:13+00:00",
-  "seconds": 1.0,
-  "sha256": "1d190e503dba02ad423caf363cef054f04bbfe372313b006ebecd26a87276375",
-  "bytes": 115038,
+  "validated_at": "2026-10-05T11:04:12+00:00",
+  "seconds": 0.4,
+  "sha256": "4920bdddcb3a19605c938b9021d24ff340111087dd068a0ef9185295a40e4ae9",
+  "bytes": 116135,
   "kind": "zip",
   "http": {
-   "etag": "0x8DEF9AFA6EA5E7D",
-   "last_modified": "Fri, 14 Aug 2026 02:56:34 GMT",
-   "content_length": 115038
+   "etag": "0x8DF229073E4529C",
+   "last_modified": "Mon, 05 Oct 2026 03:26:32 GMT",
+   "content_length": 116135,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 7825,
+   "rows": 7828,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -14710,7 +15082,7 @@
      "Método de destinação e/ou tratamento": "Método de Destinação e/ou Tratamento"
     },
     "similar_names": {},
-    "cells_checked": 62600,
+    "cells_checked": 62624,
     "cells_with_errors": 61,
     "error_rate": 0.000974,
     "errors_by_field": {
@@ -14718,11 +15090,11 @@
       "type": {
        "count": 61,
        "rows": [
-        78,
-        204,
-        321,
-        790,
-        879
+        33,
+        110,
+        323,
+        711,
+        737
        ]
       }
      }
@@ -14745,11 +15117,11 @@
    "Método de Destinação e/ou Tratamento",
    "CNPJ Aterro"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "de5ffe29-1873-4b34-87e9-fa5cb7e1a6a7": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:14+00:00",
+  "checked_at": "2026-10-05T11:04:13+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "b21b3bb92fa75271",
   "ckan": {
@@ -14759,30 +15131,37 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.15,
-   "download_s": 0.46
+   "first_byte_s": 0.16,
+   "download_s": 0.16,
+   "network_s": 0.0
   },
   "first_seen": "2026-10-03T11:10:14+00:00",
   "pass_history": [
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    true
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:14+00:00",
-  "seconds": 0.7,
-  "sha256": "ace2ca443bee3bebf67acad6aa73b0917d1fa9f1e2a6c890fda1cc7cbf03d077",
-  "bytes": 229326,
+  "validated_at": "2026-10-05T11:04:13+00:00",
+  "seconds": 0.5,
+  "sha256": "f6bb9f8d05224bc5c4b95b4c8388ebe7c344548cfe0029db2eb6a5c6e4d78c61",
+  "bytes": 204145,
   "kind": "zip",
   "http": {
-   "etag": "0x8DEF9AFA6FF2EA5",
-   "last_modified": "Fri, 14 Aug 2026 02:56:34 GMT",
-   "content_length": 229326
+   "etag": "0x8DF229073F55680",
+   "last_modified": "Mon, 05 Oct 2026 03:26:32 GMT",
+   "content_length": 204145,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 7825,
+   "rows": 7828,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -14808,7 +15187,7 @@
      "CNPJ Aterro": "CNPJ_Aterro"
     },
     "similar_names": {},
-    "cells_checked": 62600,
+    "cells_checked": 62624,
     "cells_with_errors": 61,
     "error_rate": 0.000974,
     "errors_by_field": {
@@ -14816,11 +15195,11 @@
       "type": {
        "count": 61,
        "rows": [
-        78,
-        204,
-        321,
-        790,
-        879
+        33,
+        110,
+        323,
+        711,
+        737
        ]
       }
      }
@@ -14843,11 +15222,11 @@
    "Metodo_de_Destinacao_e_ou_Tratamento",
    "CNPJ_Aterro"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "a262adef-7e05-47fe-b1ab-56cc86980a05": {
   "dataset": "rapp-pilhas-e-baterias-importador",
-  "checked_at": "2026-10-03T11:10:15+00:00",
+  "checked_at": "2026-10-05T11:04:13+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "b21b3bb92fa75271",
   "ckan": {
@@ -14857,30 +15236,37 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.15,
-   "download_s": 0.3
+   "first_byte_s": 0.16,
+   "download_s": 0.17,
+   "network_s": 0.0
   },
   "first_seen": "2026-10-03T11:10:15+00:00",
   "pass_history": [
    [
     "2026-10-03",
     true
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:15+00:00",
+  "validated_at": "2026-10-05T11:04:13+00:00",
   "seconds": 0.4,
-  "sha256": "c086e0c37b87ff1aece1d84a0d03a2aceafc56163ede1d7e280e196223ac870c",
-  "bytes": 212525,
+  "sha256": "f544e3d172dbbbc3e7d228d0cb25c2993fe4f3edc49e35ff230633c00907e977",
+  "bytes": 191536,
   "kind": "zip",
   "http": {
-   "etag": "0x8DEF9AFA6F09901",
-   "last_modified": "Fri, 14 Aug 2026 02:56:34 GMT",
-   "content_length": 212525
+   "etag": "0x8DF229073E9083F",
+   "last_modified": "Mon, 05 Oct 2026 03:26:32 GMT",
+   "content_length": 191536,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 7825,
+   "rows": 7828,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -14901,19 +15287,31 @@
      "Método de destinação e/ou tratamento": "Método de Destinação e/ou Tratamento"
     },
     "similar_names": {},
-    "cells_checked": 62600,
-    "cells_with_errors": 61,
-    "error_rate": 0.000974,
+    "cells_checked": 62624,
+    "cells_with_errors": 7889,
+    "error_rate": 0.125974,
     "errors_by_field": {
+     "Ano do relatório": {
+      "type": {
+       "count": 7828,
+       "rows": [
+        1,
+        2,
+        3,
+        4,
+        5
+       ]
+      }
+     },
      "Validade da licença": {
       "type": {
        "count": 61,
        "rows": [
-        78,
-        204,
-        321,
-        790,
-        879
+        33,
+        110,
+        323,
+        711,
+        737
        ]
       }
      }
@@ -14923,7 +15321,7 @@
       "format": "%d/%m/%Y"
      }
     },
-    "pass": true
+    "pass": false
    }
   },
   "header": [
@@ -14936,11 +15334,11 @@
    "Método de Destinação e/ou Tratamento",
    "CNPJ Aterro"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "3cf1fc83-c401-4b9f-b2fd-3ffddb35ddcb": {
   "dataset": "rapp-pilhas-e-baterias-reciclador",
-  "checked_at": "2026-10-03T11:10:16+00:00",
+  "checked_at": "2026-10-05T11:04:14+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "7118dd25ca0581e9",
   "ckan": {
@@ -14950,7 +15348,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.16
+   "first_byte_s": 0.18,
+   "download_s": 0.18,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -14979,18 +15379,24 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:16+00:00",
-  "seconds": 2.3,
+  "validated_at": "2026-10-05T11:04:14+00:00",
+  "seconds": 2.5,
   "sha256": "c74d922aab07aa37c1afcf0220f71c1cce19fce9998715c01e07c8d38a62f90c",
   "bytes": 878005,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF1D0FBC64B87C",
-   "last_modified": "Mon, 28 Sep 2026 03:22:33 GMT",
-   "content_length": 878005
+   "etag": "0x8DF2290245695E8",
+   "last_modified": "Mon, 05 Oct 2026 03:24:19 GMT",
+   "content_length": 878005,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -15067,11 +15473,11 @@
    "TIPO_DE_DESTINAÇÃO",
    "EMPRESA_FORNECEDORA"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "5baa8719-cbc7-4a31-956c-d8d016ab5672": {
   "dataset": "relatorios-de-comercializacao-de-agrotoxicos",
-  "checked_at": "2026-10-03T11:10:18+00:00",
+  "checked_at": "2026-10-05T11:04:16+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -15081,20 +15487,24 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.71
+   "first_byte_s": 0.19,
+   "download_s": 0.68,
+   "network_s": 0.47
   },
   "first_seen": "2026-10-03T11:10:18+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:18+00:00",
-  "seconds": 3.8,
+  "validated_at": "2026-10-05T11:04:16+00:00",
+  "seconds": 1.2,
   "sha256": "0efac6e2388075f1f371f660a25cdd8dc72389f47327d190dff412396d10f398",
   "bytes": 13575582,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF203873BF37B2",
-   "last_modified": "Fri, 02 Oct 2026 03:51:34 GMT",
-   "content_length": 13575582
+   "etag": "0x8DF22942096044C",
+   "last_modified": "Mon, 05 Oct 2026 03:52:50 GMT",
+   "content_length": 13575582,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -15148,7 +15558,7 @@
    "Qtd. Vendas - São Paulo",
    "Qtd. Vendas - Tocantins"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "1fb9c97f-13b8-4385-95e9-8249b974746c": {
   "dataset": "relatorios-de-comercializacao-de-agrotoxicos",
@@ -15231,7 +15641,7 @@
  },
  "570e4b24-e728-4887-bd6c-864cc8c9f587": {
   "dataset": "relatorios-de-comercializacao-de-agrotoxicos",
-  "checked_at": "2026-10-03T11:10:32+00:00",
+  "checked_at": "2026-10-05T11:04:22+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -15241,20 +15651,24 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.19
+   "first_byte_s": 0.19,
+   "download_s": 6.45,
+   "network_s": 6.13
   },
   "first_seen": "2026-10-03T11:10:32+00:00",
   "pass_history": [],
   "status": "ok",
-  "validated_at": "2026-10-03T11:10:32+00:00",
-  "seconds": 7.0,
+  "validated_at": "2026-10-05T11:04:22+00:00",
+  "seconds": 13.2,
   "sha256": "d6ac79eee73284dc788f8ebebda98b96b0c4d99ac0138cbd5c1c2a8978828130",
   "bytes": 166083573,
   "kind": "json",
   "http": {
-   "etag": "0x8DF20387596F46D",
-   "last_modified": "Fri, 02 Oct 2026 03:51:37 GMT",
-   "content_length": 166083573
+   "etag": "0x8DF22942244B48A",
+   "last_modified": "Mon, 05 Oct 2026 03:52:53 GMT",
+   "content_length": 166083573,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -15306,7 +15720,7 @@
    "Qtd. Vendas - São Paulo",
    "Qtd. Vendas - Tocantins"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "4f1236db-ec33-465a-80c7-d31ac05338ee": {
   "dataset": "residuos-solidos-armazenador",
@@ -15992,7 +16406,7 @@
  },
  "b213035b-e0b7-4765-9113-ad596322aceb": {
   "dataset": "siema-comunicado-de-acidente-ambiental",
-  "checked_at": "2026-10-03T11:11:02+00:00",
+  "checked_at": "2026-10-05T10:44:49+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -16003,7 +16417,7 @@
   "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:adm_comunicacidente_p&outputFormat=csv",
-  "reason": "new"
+  "reason": "error"
  },
  "dada25a0-4e75-4a5e-8b8a-a9f5767127f3": {
   "dataset": "silvicultura",
@@ -16975,7 +17389,7 @@
  },
  "26694091-a6ec-45c0-a619-622382f7f7ad": {
   "dataset": "sinaflor-corte-de-arvores-isoladas",
-  "checked_at": "2026-10-03T11:11:44+00:00",
+  "checked_at": "2026-10-05T11:07:52+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "64087568f4e55b0b",
   "ckan": {
@@ -16986,11 +17400,11 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "IncompleteJSONError: lexical error: invalid char in json text.",
-  "reason": "new"
+  "reason": "error"
  },
  "3d6fb0d5-4efd-4f22-8321-a075d1d48c38": {
   "dataset": "sinaflor-empreendimentos-de-base-florestal",
-  "checked_at": "2026-10-03T11:11:44+00:00",
+  "checked_at": "2026-10-05T11:07:52+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "9f6de35b3184299d",
   "ckan": {
@@ -17001,11 +17415,11 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBaseFlorestal_csv.zip",
-  "reason": "new"
+  "reason": "error"
  },
  "68dd6c57-9a91-4913-b2ab-dfaac2cbdd8d": {
   "dataset": "sinaflor-empreendimentos-de-base-florestal",
-  "checked_at": "2026-10-03T11:11:44+00:00",
+  "checked_at": "2026-10-05T11:07:53+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "9f6de35b3184299d",
   "ckan": {
@@ -17016,11 +17430,11 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBaseFlorestal_xml.zip",
-  "reason": "new"
+  "reason": "error"
  },
  "d20eb3a0-7463-462a-b9b7-f289510eda1c": {
   "dataset": "sinaflor-empreendimentos-de-base-florestal",
-  "checked_at": "2026-10-03T11:11:45+00:00",
+  "checked_at": "2026-10-05T11:07:53+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "9f6de35b3184299d",
   "ckan": {
@@ -17031,7 +17445,7 @@
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "status": "error",
   "error": "HTTPError: 404 Client Error: The specified blob does not exist. for url: https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBaseFlorestal_json.zip",
-  "reason": "new"
+  "reason": "error"
  },
  "402741a2-8072-4365-b5d8-4dcb915be169": {
   "dataset": "sinaflor-exploracao-de-floresta-plantada",
@@ -17374,7 +17788,7 @@
  },
  "b36eeee5-f885-45e3-8926-3b822be5735a": {
   "dataset": "sinaflor-pmfs-outros-biomas",
-  "checked_at": "2026-10-03T11:11:57+00:00",
+  "checked_at": "2026-10-05T11:04:29+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "29283f3b118a7f4f",
   "ckan": {
@@ -17384,7 +17798,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.63
+   "first_byte_s": 0.18,
+   "download_s": 0.18,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -17413,18 +17829,24 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:11:57+00:00",
-  "seconds": 5.0,
-  "sha256": "31d17fdc2b6c413cb3bad7597a7970559a08d2559594cdb0b6bf973b3681aef9",
+  "validated_at": "2026-10-05T11:04:29+00:00",
+  "seconds": 5.3,
+  "sha256": "7e9c7f2d5048573dbac4869a92281a1e4ce072ef6ff36b7372da41c48579b8a6",
   "bytes": 1135778,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF20361434FC18",
-   "last_modified": "Fri, 02 Oct 2026 03:34:34 GMT",
-   "content_length": 1135778
+   "etag": "0x8DF2291B4394B64",
+   "last_modified": "Mon, 05 Oct 2026 03:35:29 GMT",
+   "content_length": 1135778,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
@@ -17582,7 +18004,7 @@
    "DATA_DO_TRAMITE",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "a913bfaa-61c1-43da-a98e-5a5a366eaeec": {
   "dataset": "sinaflor-poa-amazonia-legal",
@@ -18101,7 +18523,7 @@
  },
  "09a00f90-3eba-4a57-a557-dfdf6030c188": {
   "dataset": "sinaflor-uso-alternativo-do-solo",
-  "checked_at": "2026-10-03T11:12:21+00:00",
+  "checked_at": "2026-10-05T11:04:34+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "26b7c0199676459a",
   "ckan": {
@@ -18111,7 +18533,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.64
+   "first_byte_s": 0.18,
+   "download_s": 4.91,
+   "network_s": 4.62
   },
   "distributions": [
    {
@@ -18140,22 +18564,28 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:12:21+00:00",
-  "seconds": 14.3,
-  "sha256": "e692a4c07270649da0ab0ba54f59ea7b4e6657790a0cad23884fac7a52697b4f",
-  "bytes": 123922331,
+  "validated_at": "2026-10-05T11:04:34+00:00",
+  "seconds": 16.8,
+  "sha256": "4fb72745ce4f563f360fda3632b8674edede0f2554eaefbc0066ed3f99094034",
+  "bytes": 124047147,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2033479E2891",
-   "last_modified": "Fri, 02 Oct 2026 03:14:32 GMT",
-   "content_length": 123922331
+   "etag": "0x8DF228EB3718D0E",
+   "last_modified": "Mon, 05 Oct 2026 03:14:00 GMT",
+   "content_length": 124047147,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 245503,
+   "rows": 245772,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -18213,13 +18643,13 @@
      "ultima_atualizacao_relatorio": "ULTIMA_ATUALIZACAO_RELATORIO"
     },
     "similar_names": {},
-    "cells_checked": 9083611,
-    "cells_with_errors": 862224,
-    "error_rate": 0.094921,
+    "cells_checked": 9093564,
+    "cells_with_errors": 863108,
+    "error_rate": 0.094914,
     "errors_by_field": {
      "data_de_emissao": {
       "type": {
-       "count": 245503,
+       "count": 245772,
        "rows": [
         1,
         2,
@@ -18231,7 +18661,7 @@
      },
      "data_de_validade": {
       "type": {
-       "count": 245503,
+       "count": 245772,
        "rows": [
         1,
         2,
@@ -18243,7 +18673,7 @@
      },
      "data_da_situacao": {
       "type": {
-       "count": 125715,
+       "count": 125792,
        "rows": [
         1,
         2,
@@ -18255,7 +18685,7 @@
      },
      "ultima_atualizacao_relatorio": {
       "type": {
-       "count": 245503,
+       "count": 245772,
        "rows": [
         1,
         2,
@@ -18309,11 +18739,11 @@
    "DATA_DO_TRAMITE",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "eeb2d948-dcdd-44c8-916a-1dd131deacfb": {
   "dataset": "sinaflor-uso-alternativo-do-solo-agricultor-familiar",
-  "checked_at": "2026-10-03T11:12:35+00:00",
+  "checked_at": "2026-10-05T11:04:46+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "c36c3717b687a87c",
   "ckan": {
@@ -18323,7 +18753,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.59
+   "first_byte_s": 0.19,
+   "download_s": 0.19,
+   "network_s": 0.0
   },
   "distributions": [
    {
@@ -18352,22 +18784,28 @@
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:12:35+00:00",
-  "seconds": 4.3,
-  "sha256": "a96ed61b1444cfe9a8aab990e6370631a0607ca583f5ca57a58ba3d2e3f28cc5",
-  "bytes": 563281,
+  "validated_at": "2026-10-05T11:04:46+00:00",
+  "seconds": 5.0,
+  "sha256": "66935afaa857a9df3f859cd95a54dde2c71510b2b0ae7970e44df305121c164f",
+  "bytes": 564858,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF203852AFBC98",
-   "last_modified": "Fri, 02 Oct 2026 03:50:38 GMT",
-   "content_length": 563281
+   "etag": "0x8DF2293FBD6410A",
+   "last_modified": "Mon, 05 Oct 2026 03:51:49 GMT",
+   "content_length": 564858,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 1397,
+   "rows": 1401,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -18387,13 +18825,13 @@
     "undeclared": [],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 37719,
-    "cells_with_errors": 7876,
-    "error_rate": 0.208807,
+    "cells_checked": 37827,
+    "cells_with_errors": 7898,
+    "error_rate": 0.208793,
     "errors_by_field": {
      "DATA_DE_EMISSAO": {
       "type": {
-       "count": 1397,
+       "count": 1401,
        "rows": [
         1,
         2,
@@ -18405,7 +18843,7 @@
      },
      "DATA_DE_VALIDADE": {
       "type": {
-       "count": 1397,
+       "count": 1401,
        "rows": [
         1,
         2,
@@ -18417,7 +18855,7 @@
      },
      "AREA_A_SER_SUPRIMIDA": {
       "type": {
-       "count": 887,
+       "count": 889,
        "rows": [
         1,
         2,
@@ -18440,7 +18878,7 @@
      },
      "DATA_DA_SITUACAO": {
       "type": {
-       "count": 1397,
+       "count": 1401,
        "rows": [
         1,
         2,
@@ -18452,7 +18890,7 @@
      },
      "DATA_DO_TRAMITE": {
       "type": {
-       "count": 1397,
+       "count": 1401,
        "rows": [
         1,
         2,
@@ -18464,7 +18902,7 @@
      },
      "ULTIMA_ATUALIZACAO_RELATORIO": {
       "type": {
-       "count": 1397,
+       "count": 1401,
        "rows": [
         1,
         2,
@@ -18509,7 +18947,7 @@
    "DATA_DO_TRAMITE",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "dddd819f-275a-4653-9104-772dd7519e6a": {
   "dataset": "siscites-licencas-de-fauna-e-flora-emitidas",
@@ -19321,7 +19759,7 @@
  },
  "a46eb190-35b8-40a2-b726-2c537ef480c2": {
   "dataset": "supressao-de-vegetacao-nao-florestal-no-bioma-amazonia",
-  "checked_at": "2026-10-03T11:13:16+00:00",
+  "checked_at": "2026-10-05T10:44:50+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -19332,7 +19770,7 @@
   "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_naofloresta_aml_a&outputFormat=csv",
-  "reason": "new"
+  "reason": "error"
  },
  "b922cba7-1e20-4087-9e7d-41e8d3c12598": {
   "dataset": "transporte-de-produtos-quimicos-perigosos-ou-combustiveis",
@@ -19599,7 +20037,7 @@
  },
  "93829d42-5811-47c3-8ea6-7d3912cc84b6": {
   "dataset": "unidades-ibama",
-  "checked_at": "2026-10-03T11:13:30+00:00",
+  "checked_at": "2026-10-05T10:44:50+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -19610,11 +20048,11 @@
   "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:adm_edif_pub_civil_ibama_p&outputFormat=csv",
-  "reason": "new"
+  "reason": "error"
  },
  "0727c17c-a3a8-4ebc-ae97-345235522391": {
   "dataset": "vegetacao-de-mangue-brasileira",
-  "checked_at": "2026-10-03T11:13:31+00:00",
+  "checked_at": "2026-10-05T10:44:50+00:00",
   "schema_kind": null,
   "schema_fingerprint": null,
   "ckan": {
@@ -19625,7 +20063,7 @@
   "host": "siscom.ibama.gov.br",
   "status": "error",
   "error": "HTTPError: 404 Client Error: Not Found for url: https://siscom.ibama.gov.br/geoserver/publica/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=publica:veg_mangue_a&outputFormat=csv",
-  "reason": "new"
+  "reason": "error"
  },
  "f7120b1d-e413-4520-a921-b1976be1900d": {
   "dataset": "vias-despavimentadas",
@@ -20180,7 +20618,7 @@
  },
  "8b868981-3062-414c-9bd9-e6a896c050fb": {
   "dataset": "volumes-explorados-inventario-amostral",
-  "checked_at": "2026-10-03T11:17:05+00:00",
+  "checked_at": "2026-10-05T11:04:51+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "a66c1f8cd9438676",
   "ckan": {
@@ -20190,30 +20628,37 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.68,
-   "download_s": 5.92
+   "first_byte_s": 0.23,
+   "download_s": 1.22,
+   "network_s": 0.94
   },
   "first_seen": "2026-10-03T11:17:05+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:17:05+00:00",
-  "seconds": 32.0,
-  "sha256": "575fb9f7f8a9a1f580fd9c3ef9c684ac283b037f2d5af6fbb32688799afe6666",
-  "bytes": 26712522,
+  "validated_at": "2026-10-05T11:04:51+00:00",
+  "seconds": 46.2,
+  "sha256": "39cb81c179f54c7461a7d35d8ee9f3873e9cab316896861a223a064ac5460607",
+  "bytes": 26748639,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF20381855F225",
-   "last_modified": "Fri, 02 Oct 2026 03:49:00 GMT",
-   "content_length": 26712522
+   "etag": "0x8DF2293BC1E5BD4",
+   "last_modified": "Mon, 05 Oct 2026 03:50:02 GMT",
+   "content_length": 26748639,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 9,
-   "rows": 1536155,
+   "rows": 1538013,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -20237,13 +20682,13 @@
     ],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 27650790,
-    "cells_with_errors": 1536155,
+    "cells_checked": 27684234,
+    "cells_with_errors": 1538013,
     "error_rate": 0.055556,
     "errors_by_field": {
      "ULTIMA_ATUALIZACAO_RELATORIO": {
       "type": {
-       "count": 1536155,
+       "count": 1538013,
        "rows": [
         1,
         2,
@@ -20279,11 +20724,11 @@
    "DATA_DA_SITUACAO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "86a438d0-d599-462e-b771-28f69bcf2395": {
   "dataset": "volumes-explorados-inventario-amostral",
-  "checked_at": "2026-10-03T11:17:37+00:00",
+  "checked_at": "2026-10-05T11:05:36+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "a66c1f8cd9438676",
   "ckan": {
@@ -20293,30 +20738,37 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.2,
-   "download_s": 3.88
+   "first_byte_s": 0.24,
+   "download_s": 2.08,
+   "network_s": 1.72
   },
   "first_seen": "2026-10-03T11:17:37+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:17:37+00:00",
-  "seconds": 76.9,
-  "sha256": "aa8cb933bbf52ae4b868e6c954f969b25004874713de6c9648cc71c6650aed9e",
-  "bytes": 47194815,
+  "validated_at": "2026-10-05T11:05:36+00:00",
+  "seconds": 85.1,
+  "sha256": "a3a762de68e9fd3a97296e9bb2593d5a04176875fe42e3ddee2bb09c2d7d38d2",
+  "bytes": 47261783,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF203819EBFF98",
-   "last_modified": "Fri, 02 Oct 2026 03:49:03 GMT",
-   "content_length": 47194815
+   "etag": "0x8DF2293BD4D3E6A",
+   "last_modified": "Mon, 05 Oct 2026 03:50:04 GMT",
+   "content_length": 47261783,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 9,
-   "rows": 1536155,
+   "rows": 1538013,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -20338,13 +20790,13 @@
     ],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 27650790,
-    "cells_with_errors": 1536155,
+    "cells_checked": 27684234,
+    "cells_with_errors": 1538013,
     "error_rate": 0.055556,
     "errors_by_field": {
      "ULTIMA_ATUALIZACAO_RELATORIO": {
       "type": {
-       "count": 1536155,
+       "count": 1538013,
        "rows": [
         1,
         2,
@@ -20380,11 +20832,11 @@
    "DATA_DA_SITUACAO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  },
  "5d6f99ec-b9e1-4a62-ba03-231ff9f7234d": {
   "dataset": "volumes-explorados-inventario-amostral",
-  "checked_at": "2026-10-03T11:18:54+00:00",
+  "checked_at": "2026-10-05T11:06:59+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "a66c1f8cd9438676",
   "ckan": {
@@ -20394,30 +20846,37 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.23,
-   "download_s": 2.0
+   "first_byte_s": 0.22,
+   "download_s": 1.92,
+   "network_s": 1.59
   },
   "first_seen": "2026-10-03T11:18:54+00:00",
   "pass_history": [
    [
     "2026-10-03",
     false
+   ],
+   [
+    "2026-10-05",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-03T11:18:54+00:00",
-  "seconds": 54.1,
-  "sha256": "78c4bf070d092f829b079b711a6cbb02ddb5deacf7b47dacb2ff41fab2a9f48f",
-  "bytes": 45571992,
+  "validated_at": "2026-10-05T11:06:59+00:00",
+  "seconds": 54.7,
+  "sha256": "a8ab9a1905540a0d6485857e957dbfc9b4248bb01a49cf78664984e7533236b6",
+  "bytes": 45631135,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF203818D43186",
-   "last_modified": "Fri, 02 Oct 2026 03:49:01 GMT",
-   "content_length": 45571992
+   "etag": "0x8DF2293BC77896D",
+   "last_modified": "Mon, 05 Oct 2026 03:50:02 GMT",
+   "content_length": 45631135,
+   "content_type": "application/octet-stream",
+   "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 9,
-   "rows": 1536155,
+   "rows": 1538013,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -20439,13 +20898,13 @@
     ],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 27650790,
-    "cells_with_errors": 1536155,
+    "cells_checked": 27684234,
+    "cells_with_errors": 1538013,
     "error_rate": 0.055556,
     "errors_by_field": {
      "ULTIMA_ATUALIZACAO_RELATORIO": {
       "type": {
-       "count": 1536155,
+       "count": 1538013,
        "rows": [
         1,
         2,
@@ -20481,6 +20940,6 @@
    "DATA_DA_SITUACAO",
    "ULTIMA_ATUALIZACAO_RELATORIO"
   ],
-  "reason": "new"
+  "reason": "changed"
  }
 }
