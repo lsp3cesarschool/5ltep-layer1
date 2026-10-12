@@ -5,7 +5,7 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-12T15:17:30+00:00",
+ "generated_at": "2026-10-12T15:21:48+00:00",
  "census_at": "2026-10-12T11:09:52+00:00",
  "method": {
   "rotation_days": 28,
@@ -48,7 +48,7 @@
   "validated": 184,
   "validation_coverage": 0.9436,
   "errors": 11,
-  "queue_remaining": 6,
+  "queue_remaining": 0,
   "declared_gb": 0.0,
   "size_unknown": 194,
   "by_format": {
@@ -101,7 +101,7 @@
   "declared": 2,
   "files_with_baseline": 183,
   "first_baseline_at": "2026-10-03T06:20:51+00:00",
-  "last_observed_at": "2026-10-12T15:10:51+00:00"
+  "last_observed_at": "2026-10-12T15:18:35+00:00"
  },
  "coverage": {
   "files": 195,
@@ -174,12 +174,12 @@
    "files": 195,
    "failed_files": 11,
    "gb": 36.82,
-   "minutes": 338.5,
-   "end_to_end_mb_s": 1.81,
-   "zip_download_mb_s": 25.6,
+   "minutes": 342.3,
+   "end_to_end_mb_s": 1.79,
+   "zip_download_mb_s": 25.85,
    "first_byte_s_median": 0.19,
    "network_share": 0.022,
-   "network_mb_s": 75.62,
+   "network_mb_s": 76.39,
    "request_failures": {}
   },
   "by_host": {
@@ -187,12 +187,12 @@
     "files": 136,
     "failed_files": 1,
     "gb": 33.51,
-    "minutes": 335.7,
-    "end_to_end_mb_s": 1.66,
-    "zip_download_mb_s": 25.46,
+    "minutes": 339.5,
+    "end_to_end_mb_s": 1.64,
+    "zip_download_mb_s": 25.72,
     "first_byte_s_median": 0.18,
     "network_share": 0.022,
-    "network_mb_s": 75.62,
+    "network_mb_s": 76.39,
     "request_failures": {}
    },
    "dadosabertos.ibama.gov.br": {

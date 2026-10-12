@@ -2,8 +2,8 @@
  "fields": [
   {
    "name": "NRO_REGISTRO",
-   "type": "integer",
-   "sampleEmptyShare": 0.2857
+   "type": "string",
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "NRO_AUTORIZACAO",
@@ -60,12 +60,12 @@
   {
    "name": "NOME_CIENTIFICO",
    "type": "string",
-   "sampleEmptyShare": 0.5714
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "NOME_POPULAR",
    "type": "string",
-   "sampleEmptyShare": 0.5714
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "VOLUME_AUTORIZADO",
@@ -90,9 +90,8 @@
   },
   {
    "name": "DATA_DA_SITUACAO",
-   "type": "date",
-   "format": "%d/%m/%y",
-   "sampleEmptyShare": 0.2857
+   "type": "string",
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -103,8 +102,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-05T11:06:59+00:00",
-  "sha256": "a8ab9a1905540a0d6485857e957dbfc9b4248bb01a49cf78664984e7533236b6",
+  "observed_at": "2026-10-12T15:18:35+00:00",
+  "sha256": "91bf7114f912bd93fc823366695c4b31bda346aa8ed20e5d019f85a32a0ce41e",
   "encoding": "utf-8",
   "delimiter": null,
   "sample_rows": 7,

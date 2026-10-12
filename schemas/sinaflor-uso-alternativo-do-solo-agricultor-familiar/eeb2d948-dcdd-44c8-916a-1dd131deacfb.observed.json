@@ -109,23 +109,23 @@
   {
    "name": "PRODUTO_FLORESTAL",
    "type": "string",
-   "sampleEmptyShare": 0.9971
+   "sampleEmptyShare": 0.9972
   },
   {
    "name": "NOME_CIENTIFICO",
    "type": "string",
-   "sampleEmptyShare": 0.9971
+   "sampleEmptyShare": 0.9972
   },
   {
    "name": "NOME_POPULAR",
    "type": "string",
-   "sampleEmptyShare": 0.9971
+   "sampleEmptyShare": 0.9972
   },
   {
    "name": "VOLUME",
    "type": "number",
    "decimalChar": ",",
-   "sampleEmptyShare": 0.9971
+   "sampleEmptyShare": 0.9972
   },
   {
    "name": "SITUACAO",
@@ -158,11 +158,11 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-05T11:04:46+00:00",
-  "sha256": "66935afaa857a9df3f859cd95a54dde2c71510b2b0ae7970e44df305121c164f",
+  "observed_at": "2026-10-12T15:18:23+00:00",
+  "sha256": "36791fc55a4970a5683fc44ff0e3598f763a3ce5d75ff2bdc8810ae2ae6f3e01",
   "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 1401,
+  "sample_rows": 1433,
   "tables": 1,
   "distinct_headers": 1
  }

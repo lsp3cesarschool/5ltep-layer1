@@ -5,7 +5,7 @@
    "name": "IBAMA",
    "title": "IBAMA open data portal (Dados Abertos IBAMA)"
   },
-  "generated_at": "2026-10-12T15:17:30+00:00",
+  "generated_at": "2026-10-12T15:21:48+00:00",
   "census_at": "2026-10-12T11:09:52+00:00",
   "datasets": {
    "total": 79,
@@ -30,7 +30,7 @@
    "validated": 184,
    "validation_coverage": 0.9436,
    "errors": 11,
-   "queue_remaining": 6,
+   "queue_remaining": 0,
    "declared_gb": 0.0,
    "size_unknown": 194,
    "by_format": {
@@ -67,7 +67,7 @@
    "declared": 2,
    "files_with_baseline": 183,
    "first_baseline_at": "2026-10-03T06:20:51+00:00",
-   "last_observed_at": "2026-10-12T15:10:51+00:00"
+   "last_observed_at": "2026-10-12T15:18:35+00:00"
   },
   "coverage": {
    "files": 195,
@@ -140,12 +140,12 @@
     "files": 195,
     "failed_files": 11,
     "gb": 36.82,
-    "minutes": 338.5,
-    "end_to_end_mb_s": 1.81,
-    "zip_download_mb_s": 25.6,
+    "minutes": 342.3,
+    "end_to_end_mb_s": 1.79,
+    "zip_download_mb_s": 25.85,
     "first_byte_s_median": 0.19,
     "network_share": 0.022,
-    "network_mb_s": 75.62,
+    "network_mb_s": 76.39,
     "request_failures": {}
    },
    "by_host": {
@@ -153,12 +153,12 @@
      "files": 136,
      "failed_files": 1,
      "gb": 33.51,
-     "minutes": 335.7,
-     "end_to_end_mb_s": 1.66,
-     "zip_download_mb_s": 25.46,
+     "minutes": 339.5,
+     "end_to_end_mb_s": 1.64,
+     "zip_download_mb_s": 25.72,
      "first_byte_s_median": 0.18,
      "network_share": 0.022,
-     "network_mb_s": 75.62,
+     "network_mb_s": 76.39,
      "request_failures": {}
     },
     "dadosabertos.ibama.gov.br": {
@@ -12139,7 +12139,7 @@
      "level": 2,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/CortesdeArvoresIsoladas/sinaflor-corte-de-arvores-isoladas.json.zip",
      "size": null,
-     "queued": true,
+     "queued": false,
      "copy_of": null,
      "copy_failed": false,
      "sampled": false,
@@ -13039,7 +13039,7 @@
      "level": 2,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/usoAlternativoDoSolo/uso-alternativo-do-solo.csv",
      "size": null,
-     "queued": true,
+     "queued": false,
      "copy_of": null,
      "copy_failed": false,
      "sampled": false,
@@ -13053,8 +13053,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-uso-alternativo-do-solo/resource/1400b471-62bc-4328-a7fb-047923b28781"
      },
      "status": "ok",
-     "validated_at": "2026-10-05T11:04:34+00:00",
-     "rows": 245772,
+     "validated_at": "2026-10-12T15:18:23+00:00",
+     "rows": 246838,
      "schema_kind": "declared",
      "error": null,
      "encodings": [
@@ -13063,7 +13063,7 @@
      "distinct_headers": 1,
      "conformance": {
       "pass": false,
-      "error_rate": 0.094914,
+      "error_rate": 0.094935,
       "missing": [],
       "undeclared": [],
       "spelling": {
@@ -13110,16 +13110,16 @@
       "inferred_formats": {},
       "errors_by_field": {
        "data_de_emissao": {
-        "type": 245772
+        "type": 246838
        },
        "data_de_validade": {
-        "type": 245772
+        "type": 246838
        },
        "data_da_situacao": {
-        "type": 125792
+        "type": 126524
        },
        "ultima_atualizacao_relatorio": {
-        "type": 245772
+        "type": 246838
        }
       }
      },
@@ -13168,7 +13168,7 @@
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/usoAlternativoDoSoloAgriculturaFamiliar/uso-alternativo-do-solo-agricultura-familiar.csv",
      "size": null,
-     "queued": true,
+     "queued": false,
      "copy_of": null,
      "copy_failed": false,
      "sampled": false,
@@ -13179,8 +13179,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-uso-alternativo-do-solo-agricultor-familiar/resource/eeb2d948-dcdd-44c8-916a-1dd131deacfb"
      },
      "status": "ok",
-     "validated_at": "2026-10-05T11:04:46+00:00",
-     "rows": 1401,
+     "validated_at": "2026-10-12T15:18:23+00:00",
+     "rows": 1433,
      "schema_kind": "described",
      "error": null,
      "encodings": [
@@ -13189,7 +13189,7 @@
      "distinct_headers": 1,
      "conformance": {
       "pass": false,
-      "error_rate": 0.208793,
+      "error_rate": 0.208808,
       "missing": [],
       "undeclared": [],
       "spelling": {},
@@ -13198,25 +13198,25 @@
       "inferred_formats": {},
       "errors_by_field": {
        "DATA_DE_EMISSAO": {
-        "type": 1401
+        "type": 1433
        },
        "DATA_DE_VALIDADE": {
-        "type": 1401
+        "type": 1433
        },
        "AREA_A_SER_SUPRIMIDA": {
-        "type": 889
+        "type": 910
        },
        "VOLUME": {
         "type": 4
        },
        "DATA_DA_SITUACAO": {
-        "type": 1401
+        "type": 1433
        },
        "DATA_DO_TRAMITE": {
-        "type": 1401
+        "type": 1433
        },
        "ULTIMA_ATUALIZACAO_RELATORIO": {
-        "type": 1401
+        "type": 1433
        }
       }
      },
@@ -14316,7 +14316,7 @@
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/VolumeExpAmostral/VolumeExpAmostral_TODOS_ANOS_CSV.zip",
      "size": null,
-     "queued": true,
+     "queued": false,
      "copy_of": null,
      "copy_failed": false,
      "sampled": false,
@@ -14327,8 +14327,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/volumes-explorados-inventario-amostral/resource/8b868981-3062-414c-9bd9-e6a896c050fb"
      },
      "status": "ok",
-     "validated_at": "2026-10-05T11:04:51+00:00",
-     "rows": 1538013,
+     "validated_at": "2026-10-12T15:18:24+00:00",
+     "rows": 1543681,
      "schema_kind": "described",
      "error": null,
      "encodings": [
@@ -14337,7 +14337,7 @@
      "distinct_headers": 1,
      "conformance": {
       "pass": false,
-      "error_rate": 0.055556,
+      "error_rate": 0.061196,
       "missing": [
        "CPF_CNPJ_DETENTOR"
       ],
@@ -14350,7 +14350,10 @@
       "inferred_formats": {},
       "errors_by_field": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
-        "type": 1538013
+        "type": 1543681
+       },
+       "DATA_DA_SITUACAO": {
+        "type": 156726
        }
       }
      },
@@ -14368,7 +14371,7 @@
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/VolumeExpAmostral/VolumeExpAmostral_TODOS_ANOS_XML.zip",
      "size": null,
-     "queued": true,
+     "queued": false,
      "copy_of": null,
      "copy_failed": false,
      "sampled": false,
@@ -14379,8 +14382,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/volumes-explorados-inventario-amostral/resource/86a438d0-d599-462e-b771-28f69bcf2395"
      },
      "status": "ok",
-     "validated_at": "2026-10-05T11:05:36+00:00",
-     "rows": 1538013,
+     "validated_at": "2026-10-12T15:18:26+00:00",
+     "rows": 1543681,
      "schema_kind": "described",
      "error": null,
      "encodings": [
@@ -14389,7 +14392,7 @@
      "distinct_headers": 1,
      "conformance": {
       "pass": false,
-      "error_rate": 0.055556,
+      "error_rate": 0.061196,
       "missing": [
        "CPF_CNPJ_DETENTOR"
       ],
@@ -14402,7 +14405,10 @@
       "inferred_formats": {},
       "errors_by_field": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
-        "type": 1538013
+        "type": 1543681
+       },
+       "DATA_DA_SITUACAO": {
+        "type": 156726
        }
       }
      },
@@ -14420,7 +14426,7 @@
      "level": 1,
      "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/VolumeExpAmostral/VolumeExpAmostral_TODOS_ANOS_JSON.zip",
      "size": null,
-     "queued": true,
+     "queued": false,
      "copy_of": null,
      "copy_failed": false,
      "sampled": false,
@@ -14431,8 +14437,8 @@
       "page": "https://dadosabertos.ibama.gov.br/dataset/volumes-explorados-inventario-amostral/resource/5d6f99ec-b9e1-4a62-ba03-231ff9f7234d"
      },
      "status": "ok",
-     "validated_at": "2026-10-05T11:06:59+00:00",
-     "rows": 1538013,
+     "validated_at": "2026-10-12T15:18:35+00:00",
+     "rows": 1543681,
      "schema_kind": "described",
      "error": null,
      "encodings": [
@@ -14441,7 +14447,7 @@
      "distinct_headers": 1,
      "conformance": {
       "pass": false,
-      "error_rate": 0.055556,
+      "error_rate": 0.061196,
       "missing": [
        "CPF_CNPJ_DETENTOR"
       ],
@@ -14454,7 +14460,10 @@
       "inferred_formats": {},
       "errors_by_field": {
        "ULTIMA_ATUALIZACAO_RELATORIO": {
-        "type": 1538013
+        "type": 1543681
+       },
+       "DATA_DA_SITUACAO": {
+        "type": 156726
        }
       }
      },
@@ -16098,6 +16107,38 @@
    "gone_total": 0,
    "drift_observed": 0,
    "drift_declared": 0
+  },
+  {
+   "at": "2026-10-12T11:09:52+00:00",
+   "report_at": "2026-10-12T15:21:48+00:00",
+   "commit": "58ab7d3",
+   "files": 195,
+   "read": 183,
+   "checked": 120,
+   "conform": 40,
+   "l1_rate": 0.3333,
+   "not_downloaded": 11,
+   "levels": [
+    73,
+    49,
+    73,
+    0,
+    0
+   ],
+   "dataset_levels": [
+    44,
+    13,
+    20,
+    0,
+    0
+   ],
+   "fixed": 2,
+   "broken": 0,
+   "new_files": 2,
+   "gone_files": 2,
+   "gone_total": 2,
+   "drift_observed": 3,
+   "drift_declared": 2
   }
  ]
 }

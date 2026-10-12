@@ -18464,7 +18464,7 @@
  },
  "26694091-a6ec-45c0-a619-622382f7f7ad": {
   "dataset": "sinaflor-corte-de-arvores-isoladas",
-  "checked_at": "2026-10-05T11:07:52+00:00",
+  "checked_at": "2026-10-12T15:20:13+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "64087568f4e55b0b",
   "ckan": {
@@ -19779,7 +19779,7 @@
  },
  "09a00f90-3eba-4a57-a557-dfdf6030c188": {
   "dataset": "sinaflor-uso-alternativo-do-solo",
-  "checked_at": "2026-10-05T11:04:34+00:00",
+  "checked_at": "2026-10-12T15:18:23+00:00",
   "schema_kind": "declared",
   "schema_fingerprint": "26b7c0199676459a",
   "ckan": {
@@ -19789,9 +19789,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.18,
-   "download_s": 4.91,
-   "network_s": 4.62
+   "first_byte_s": 0.28,
+   "download_s": 3.4,
+   "network_s": 3.0
   },
   "distributions": [
    {
@@ -19824,24 +19824,28 @@
    [
     "2026-10-05",
     false
+   ],
+   [
+    "2026-10-12",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-05T11:04:34+00:00",
-  "seconds": 16.8,
-  "sha256": "4fb72745ce4f563f360fda3632b8674edede0f2554eaefbc0066ed3f99094034",
-  "bytes": 124047147,
+  "validated_at": "2026-10-12T15:18:23+00:00",
+  "seconds": 15.0,
+  "sha256": "0f207e873a1da3be1c63cef0349ab277d8fbb8e230940db529bcb0c397e8dedc",
+  "bytes": 124612907,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF228EB3718D0E",
-   "last_modified": "Mon, 05 Oct 2026 03:14:00 GMT",
-   "content_length": 124047147,
+   "etag": "0x8DF2810106E8D6B",
+   "last_modified": "Mon, 12 Oct 2026 03:22:37 GMT",
+   "content_length": 124612907,
    "content_type": "application/octet-stream",
    "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 245772,
+   "rows": 246838,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -19899,13 +19903,13 @@
      "ultima_atualizacao_relatorio": "ULTIMA_ATUALIZACAO_RELATORIO"
     },
     "similar_names": {},
-    "cells_checked": 9093564,
-    "cells_with_errors": 863108,
-    "error_rate": 0.094914,
+    "cells_checked": 9133006,
+    "cells_with_errors": 867038,
+    "error_rate": 0.094935,
     "errors_by_field": {
      "data_de_emissao": {
       "type": {
-       "count": 245772,
+       "count": 246838,
        "rows": [
         1,
         2,
@@ -19917,7 +19921,7 @@
      },
      "data_de_validade": {
       "type": {
-       "count": 245772,
+       "count": 246838,
        "rows": [
         1,
         2,
@@ -19929,7 +19933,7 @@
      },
      "data_da_situacao": {
       "type": {
-       "count": 125792,
+       "count": 126524,
        "rows": [
         1,
         2,
@@ -19941,7 +19945,7 @@
      },
      "ultima_atualizacao_relatorio": {
       "type": {
-       "count": 245772,
+       "count": 246838,
        "rows": [
         1,
         2,
@@ -19999,7 +20003,7 @@
  },
  "eeb2d948-dcdd-44c8-916a-1dd131deacfb": {
   "dataset": "sinaflor-uso-alternativo-do-solo-agricultor-familiar",
-  "checked_at": "2026-10-05T11:04:46+00:00",
+  "checked_at": "2026-10-12T15:18:23+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "c36c3717b687a87c",
   "ckan": {
@@ -20009,8 +20013,8 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.19,
-   "download_s": 0.19,
+   "first_byte_s": 0.08,
+   "download_s": 0.08,
    "network_s": 0.0
   },
   "distributions": [
@@ -20044,24 +20048,28 @@
    [
     "2026-10-05",
     false
+   ],
+   [
+    "2026-10-12",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-05T11:04:46+00:00",
-  "seconds": 5.0,
-  "sha256": "66935afaa857a9df3f859cd95a54dde2c71510b2b0ae7970e44df305121c164f",
-  "bytes": 564858,
+  "validated_at": "2026-10-12T15:18:23+00:00",
+  "seconds": 2.9,
+  "sha256": "36791fc55a4970a5683fc44ff0e3598f763a3ce5d75ff2bdc8810ae2ae6f3e01",
+  "bytes": 577694,
   "kind": "csv",
   "http": {
-   "etag": "0x8DF2293FBD6410A",
-   "last_modified": "Mon, 05 Oct 2026 03:51:49 GMT",
-   "content_length": 564858,
+   "etag": "0x8DF281B8F3B8D4F",
+   "last_modified": "Mon, 12 Oct 2026 04:44:54 GMT",
+   "content_length": 577694,
    "content_type": "application/octet-stream",
    "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 1,
-   "rows": 1401,
+   "rows": 1433,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -20081,13 +20089,13 @@
     "undeclared": [],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 37827,
-    "cells_with_errors": 7898,
-    "error_rate": 0.208793,
+    "cells_checked": 38691,
+    "cells_with_errors": 8079,
+    "error_rate": 0.208808,
     "errors_by_field": {
      "DATA_DE_EMISSAO": {
       "type": {
-       "count": 1401,
+       "count": 1433,
        "rows": [
         1,
         2,
@@ -20099,7 +20107,7 @@
      },
      "DATA_DE_VALIDADE": {
       "type": {
-       "count": 1401,
+       "count": 1433,
        "rows": [
         1,
         2,
@@ -20111,7 +20119,7 @@
      },
      "AREA_A_SER_SUPRIMIDA": {
       "type": {
-       "count": 889,
+       "count": 910,
        "rows": [
         1,
         2,
@@ -20134,7 +20142,7 @@
      },
      "DATA_DA_SITUACAO": {
       "type": {
-       "count": 1401,
+       "count": 1433,
        "rows": [
         1,
         2,
@@ -20146,7 +20154,7 @@
      },
      "DATA_DO_TRAMITE": {
       "type": {
-       "count": 1401,
+       "count": 1433,
        "rows": [
         1,
         2,
@@ -20158,7 +20166,7 @@
      },
      "ULTIMA_ATUALIZACAO_RELATORIO": {
       "type": {
-       "count": 1401,
+       "count": 1433,
        "rows": [
         1,
         2,
@@ -21755,7 +21763,7 @@
  },
  "8b868981-3062-414c-9bd9-e6a896c050fb": {
   "dataset": "volumes-explorados-inventario-amostral",
-  "checked_at": "2026-10-05T11:04:51+00:00",
+  "checked_at": "2026-10-12T15:18:24+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "a66c1f8cd9438676",
   "ckan": {
@@ -21765,9 +21773,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.23,
-   "download_s": 1.22,
-   "network_s": 0.94
+   "first_byte_s": 0.11,
+   "download_s": 0.6,
+   "network_s": 0.31
   },
   "first_seen": "2026-10-03T11:17:05+00:00",
   "pass_history": [
@@ -21778,24 +21786,28 @@
    [
     "2026-10-05",
     false
+   ],
+   [
+    "2026-10-12",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-05T11:04:51+00:00",
-  "seconds": 46.2,
-  "sha256": "39cb81c179f54c7461a7d35d8ee9f3873e9cab316896861a223a064ac5460607",
-  "bytes": 26748639,
+  "validated_at": "2026-10-12T15:18:24+00:00",
+  "seconds": 109.9,
+  "sha256": "74d695400a108dff7551261a205d730b54d2f6d7ac6383f2f7389d15351bd58b",
+  "bytes": 26871063,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF2293BC1E5BD4",
-   "last_modified": "Mon, 05 Oct 2026 03:50:02 GMT",
-   "content_length": 26748639,
+   "etag": "0x8DF2818E3A3EC2E",
+   "last_modified": "Mon, 12 Oct 2026 04:25:47 GMT",
+   "content_length": 26871063,
    "content_type": "application/octet-stream",
    "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 9,
-   "rows": 1538013,
+   "rows": 1543681,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -21819,19 +21831,31 @@
     ],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 27684234,
-    "cells_with_errors": 1538013,
-    "error_rate": 0.055556,
+    "cells_checked": 27786258,
+    "cells_with_errors": 1700407,
+    "error_rate": 0.061196,
     "errors_by_field": {
      "ULTIMA_ATUALIZACAO_RELATORIO": {
       "type": {
-       "count": 1538013,
+       "count": 1543681,
        "rows": [
         1,
         2,
         3,
         4,
         5
+       ]
+      }
+     },
+     "DATA_DA_SITUACAO": {
+      "type": {
+       "count": 156726,
+       "rows": [
+        6,
+        7,
+        182,
+        183,
+        184
        ]
       }
      }
@@ -21865,7 +21889,7 @@
  },
  "86a438d0-d599-462e-b771-28f69bcf2395": {
   "dataset": "volumes-explorados-inventario-amostral",
-  "checked_at": "2026-10-05T11:05:36+00:00",
+  "checked_at": "2026-10-12T15:18:26+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "a66c1f8cd9438676",
   "ckan": {
@@ -21875,9 +21899,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.24,
-   "download_s": 2.08,
-   "network_s": 1.72
+   "first_byte_s": 0.12,
+   "download_s": 0.91,
+   "network_s": 0.57
   },
   "first_seen": "2026-10-03T11:17:37+00:00",
   "pass_history": [
@@ -21888,24 +21912,28 @@
    [
     "2026-10-05",
     false
+   ],
+   [
+    "2026-10-12",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-05T11:05:36+00:00",
-  "seconds": 85.1,
-  "sha256": "a3a762de68e9fd3a97296e9bb2593d5a04176875fe42e3ddee2bb09c2d7d38d2",
-  "bytes": 47261783,
+  "validated_at": "2026-10-12T15:18:26+00:00",
+  "seconds": 150.1,
+  "sha256": "b6b5af9168e14f22e4b679ac07a9554616ad5d55acf12464c529d90f2939de24",
+  "bytes": 47495062,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF2293BD4D3E6A",
-   "last_modified": "Mon, 05 Oct 2026 03:50:04 GMT",
-   "content_length": 47261783,
+   "etag": "0x8DF2818E4ABA8C0",
+   "last_modified": "Mon, 12 Oct 2026 04:25:49 GMT",
+   "content_length": 47495062,
    "content_type": "application/octet-stream",
    "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 9,
-   "rows": 1538013,
+   "rows": 1543681,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -21927,19 +21955,31 @@
     ],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 27684234,
-    "cells_with_errors": 1538013,
-    "error_rate": 0.055556,
+    "cells_checked": 27786258,
+    "cells_with_errors": 1700407,
+    "error_rate": 0.061196,
     "errors_by_field": {
      "ULTIMA_ATUALIZACAO_RELATORIO": {
       "type": {
-       "count": 1538013,
+       "count": 1543681,
        "rows": [
         1,
         2,
         3,
         4,
         5
+       ]
+      }
+     },
+     "DATA_DA_SITUACAO": {
+      "type": {
+       "count": 156726,
+       "rows": [
+        6,
+        7,
+        182,
+        183,
+        184
        ]
       }
      }
@@ -21973,7 +22013,7 @@
  },
  "5d6f99ec-b9e1-4a62-ba03-231ff9f7234d": {
   "dataset": "volumes-explorados-inventario-amostral",
-  "checked_at": "2026-10-05T11:06:59+00:00",
+  "checked_at": "2026-10-12T15:18:35+00:00",
   "schema_kind": "described",
   "schema_fingerprint": "a66c1f8cd9438676",
   "ckan": {
@@ -21983,9 +22023,9 @@
   },
   "host": "stibamadadosabertosprd.blob.core.windows.net",
   "timing": {
-   "first_byte_s": 0.22,
-   "download_s": 1.92,
-   "network_s": 1.59
+   "first_byte_s": 0.11,
+   "download_s": 0.82,
+   "network_s": 0.53
   },
   "first_seen": "2026-10-03T11:18:54+00:00",
   "pass_history": [
@@ -21996,24 +22036,28 @@
    [
     "2026-10-05",
     false
+   ],
+   [
+    "2026-10-12",
+    false
    ]
   ],
   "status": "ok",
-  "validated_at": "2026-10-05T11:06:59+00:00",
-  "seconds": 54.7,
-  "sha256": "a8ab9a1905540a0d6485857e957dbfc9b4248bb01a49cf78664984e7533236b6",
-  "bytes": 45631135,
+  "validated_at": "2026-10-12T15:18:35+00:00",
+  "seconds": 159.6,
+  "sha256": "91bf7114f912bd93fc823366695c4b31bda346aa8ed20e5d019f85a32a0ce41e",
+  "bytes": 45825159,
   "kind": "zip",
   "http": {
-   "etag": "0x8DF2293BC77896D",
-   "last_modified": "Mon, 05 Oct 2026 03:50:02 GMT",
-   "content_length": 45631135,
+   "etag": "0x8DF2818E3ED4CFA",
+   "last_modified": "Mon, 12 Oct 2026 04:25:47 GMT",
+   "content_length": 45825159,
    "content_type": "application/octet-stream",
    "served_by": "stibamadadosabertosprd.blob.core.windows.net"
   },
   "summary": {
    "tables": 9,
-   "rows": 1538013,
+   "rows": 1543681,
    "ragged_rows": 0,
    "decode_errors": 0,
    "distinct_headers": 1,
@@ -22035,19 +22079,31 @@
     ],
     "spelling": {},
     "similar_names": {},
-    "cells_checked": 27684234,
-    "cells_with_errors": 1538013,
-    "error_rate": 0.055556,
+    "cells_checked": 27786258,
+    "cells_with_errors": 1700407,
+    "error_rate": 0.061196,
     "errors_by_field": {
      "ULTIMA_ATUALIZACAO_RELATORIO": {
       "type": {
-       "count": 1538013,
+       "count": 1543681,
        "rows": [
         1,
         2,
         3,
         4,
         5
+       ]
+      }
+     },
+     "DATA_DA_SITUACAO": {
+      "type": {
+       "count": 156726,
+       "rows": [
+        6,
+        7,
+        182,
+        183,
+        184
        ]
       }
      }
