@@ -13,13 +13,13 @@
   {
    "name": "DATA_DE_EMISSAO",
    "type": "date",
-   "format": "%Y-%m-%d",
+   "format": "%d/%m/%y",
    "sampleEmptyShare": 0.0
   },
   {
    "name": "DATA_DE_VALIDADE",
    "type": "date",
-   "format": "%Y-%m-%d",
+   "format": "%d/%m/%y",
    "sampleEmptyShare": 0.0
   },
   {
@@ -92,7 +92,7 @@
   {
    "name": "DATA_DA_EXPLORACAO",
    "type": "date",
-   "format": "%Y-%m-%d",
+   "format": "%d/%m/%y",
    "sampleEmptyShare": 0.0
   },
   {
@@ -103,20 +103,20 @@
   {
    "name": "DATA_DA_SITUACAO",
    "type": "date",
-   "format": "%Y-%m-%d",
+   "format": "%d/%m/%y",
    "sampleEmptyShare": 0.0
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
    "type": "datetime",
-   "format": "%Y-%m-%d %H:%M",
+   "format": "%Y-%m-%d %H:%M:%S",
    "sampleEmptyShare": 0.0
   }
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T11:14:10+00:00",
-  "sha256": "52d9807bb5fd959234f87a8cbd2a58c1f66274ac95e4b2c745bc853a42d4cee2",
+  "observed_at": "2026-10-12T14:39:45+00:00",
+  "sha256": "e94b2c41736bb884a0379c29bfec151913f0f5000cf228fcb423b26d416bcfd3",
   "encoding": "utf-8",
   "delimiter": null,
   "sample_rows": 3222,

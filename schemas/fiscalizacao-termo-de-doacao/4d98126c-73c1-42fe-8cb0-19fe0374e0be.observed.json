@@ -3,7 +3,7 @@
   {
    "name": "SEQ_DOACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.0422
+   "sampleEmptyShare": 0.042
   },
   {
    "name": "NUM_DOACAO",
@@ -13,7 +13,7 @@
   {
    "name": "SER_DOACAO",
    "type": "string",
-   "sampleEmptyShare": 0.1582
+   "sampleEmptyShare": 0.1594
   },
   {
    "name": "COD_SUBSTITUICAO",
@@ -23,7 +23,7 @@
   {
    "name": "SEQ_DOACAO_BEM",
    "type": "integer",
-   "sampleEmptyShare": 0.329
+   "sampleEmptyShare": 0.3292
   },
   {
    "name": "DES_BEM_APREENDIDO",
@@ -38,12 +38,12 @@
   {
    "name": "DES_TIPO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0994
+   "sampleEmptyShare": 0.1004
   },
   {
    "name": "QTD_DOACAO_BEM",
    "type": "number",
-   "sampleEmptyShare": 0.329
+   "sampleEmptyShare": 0.3292
   },
   {
    "name": "DES_UNIDADE_MEDIDA",
@@ -53,12 +53,12 @@
   {
    "name": "NU_VALOR",
    "type": "integer",
-   "sampleEmptyShare": 0.9578
+   "sampleEmptyShare": 0.958
   },
   {
    "name": "OBS_DOACAO_BEM",
    "type": "string",
-   "sampleEmptyShare": 0.3966
+   "sampleEmptyShare": 0.3972
   },
   {
    "name": "TIPO_VEICULO",
@@ -68,32 +68,32 @@
   {
    "name": "DES_MARCA",
    "type": "string",
-   "sampleEmptyShare": 0.9718
+   "sampleEmptyShare": 0.9712
   },
   {
    "name": "DES_MODELO",
    "type": "string",
-   "sampleEmptyShare": 0.9544
+   "sampleEmptyShare": 0.9538
   },
   {
    "name": "DES_PLACA_VEICULO",
    "type": "string",
-   "sampleEmptyShare": 0.9578
+   "sampleEmptyShare": 0.9572
   },
   {
    "name": "DES_COR",
    "type": "string",
-   "sampleEmptyShare": 0.982
+   "sampleEmptyShare": 0.9818
   },
   {
    "name": "CHASSI_NUM_MOTOR",
    "type": "string",
-   "sampleEmptyShare": 0.9648
+   "sampleEmptyShare": 0.9644
   },
   {
    "name": "DES_ANO_VEICULO",
    "type": "integer",
-   "sampleEmptyShare": 0.9572
+   "sampleEmptyShare": 0.9568
   },
   {
    "name": "NU_ANO_MOD",
@@ -134,8 +134,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-05T11:02:16+00:00",
-  "sha256": "af56d0b08a159ac1e7edfcb8d25a53a1e68dd2d29d933ee9cbac72ce8e18391f",
+  "observed_at": "2026-10-12T15:07:55+00:00",
+  "sha256": "1c67d6c17acc9908942fd491dd409ac40efc1cff0b4c82a1c3cf2da3026ca1cf",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

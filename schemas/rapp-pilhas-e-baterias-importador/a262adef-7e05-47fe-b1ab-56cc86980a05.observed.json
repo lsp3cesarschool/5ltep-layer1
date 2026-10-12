@@ -7,7 +7,7 @@
   },
   {
    "name": "Ano do relatório",
-   "type": "number",
+   "type": "integer",
    "sampleEmptyShare": 0.0
   },
   {
@@ -43,8 +43,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-05T11:04:13+00:00",
-  "sha256": "f544e3d172dbbbc3e7d228d0cb25c2993fe4f3edc49e35ff230633c00907e977",
+  "observed_at": "2026-10-12T15:10:32+00:00",
+  "sha256": "712a94ebc45ea0175b88b96785561e0855c0bd8f7a23c8c1789dfe21c3b4e174",
   "encoding": "utf-8",
   "delimiter": null,
   "sample_rows": 5000,

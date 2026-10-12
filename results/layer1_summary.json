@@ -5,8 +5,8 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-05T11:12:51+00:00",
- "census_at": "2026-10-05T10:43:47+00:00",
+ "generated_at": "2026-10-12T15:17:30+00:00",
+ "census_at": "2026-10-12T11:09:52+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -23,7 +23,7 @@
   "copies_once": 0
  },
  "environment": {
-  "python": "3.11.16"
+  "python": "3.11.17"
  },
  "datasets": {
   "total": 79,
@@ -39,28 +39,28 @@
  "tables": {
   "total": 195,
   "by_level": {
-   "0": 71,
+   "0": 73,
    "1": 49,
-   "2": 75,
+   "2": 73,
    "3": 0,
    "4": 0
   },
-  "validated": 173,
-  "validation_coverage": 0.8872,
-  "errors": 22,
-  "queue_remaining": 0,
+  "validated": 184,
+  "validation_coverage": 0.9436,
+  "errors": 11,
+  "queue_remaining": 6,
   "declared_gb": 0.0,
   "size_unknown": 194,
   "by_format": {
    "csv": {
-    "files": 98,
+    "files": 97,
     "gb": 0.0,
-    "size_unknown": 97
+    "size_unknown": 96
    },
    "zip": {
-    "files": 95,
+    "files": 96,
     "gb": 0.0,
-    "size_unknown": 95
+    "size_unknown": 96
    },
    "json": {
     "files": 1,
@@ -77,62 +77,65 @@
   "queue_largest": []
  },
  "schema_sources": {
-  "described": 47,
-  "declared": 64
+  "described": 48,
+  "declared": 72
  },
  "conformance_by_source": {
   "described": {
-   "verifiable": 47,
+   "verifiable": 48,
    "conformant": 20,
-   "l1_rate": 0.4255
+   "l1_rate": 0.4167
   },
   "declared": {
-   "verifiable": 64,
-   "conformant": 17,
-   "l1_rate": 0.2656
+   "verifiable": 72,
+   "conformant": 20,
+   "l1_rate": 0.2778
   }
  },
- "verifiable": 111,
- "conformant": 37,
+ "verifiable": 120,
+ "conformant": 40,
  "l1_rate": 0.3333,
  "l1_pass": false,
  "drift": {
-  "observed": 0,
-  "declared": 0,
-  "files_with_baseline": 172,
-  "first_baseline_at": "2026-10-03T05:59:58+00:00",
-  "last_observed_at": "2026-10-05T11:06:59+00:00"
+  "observed": 3,
+  "declared": 2,
+  "files_with_baseline": 183,
+  "first_baseline_at": "2026-10-03T06:20:51+00:00",
+  "last_observed_at": "2026-10-12T15:10:51+00:00"
  },
  "coverage": {
   "files": 195,
-  "read": 172,
+  "read": 183,
   "empty": 1,
   "not_tabular": 0,
   "too_large": 0,
-  "not_downloaded": 22,
+  "not_downloaded": 11,
   "pending": 0,
   "not_downloaded_by_reason": {
-   "HTTP 404": 20,
-   "no URL": 1,
+   "HTTP 404": 10,
    "other": 1
   },
   "not_downloaded_by_host": {
    "HTTP 404 · siscom.ibama.gov.br": 10,
-   "HTTP 404 · stibamadadosabertosprd.blob.core.windows.net": 10,
-   "no URL · —": 1,
    "other · stibamadadosabertosprd.blob.core.windows.net": 1
   },
-  "read_without_schema": 61,
-  "checked": 111,
-  "conform": 37,
-  "fail_missing_fields": 39,
-  "fail_undeclared_columns": 44,
-  "fail_cells_over_limit": 41,
-  "fail_only_cells": 28
+  "read_without_schema": 63,
+  "checked": 120,
+  "conform": 40,
+  "fail_missing_fields": 42,
+  "fail_undeclared_columns": 48,
+  "fail_cells_over_limit": 43,
+  "fail_only_cells": 30
  },
  "not_tables": {
-  "count": 3,
+  "count": 4,
   "resources": [
+   {
+    "dataset": "arrecadacao-com-tcfa",
+    "id": "26417789-b10d-4528-b8aa-13ae8ba2139f",
+    "name": "Arrecadação com TCFA",
+    "contents": "zip without tables (first entries: ['arrecadacao_com_tcfa_AC.html', 'arrecadacao_com_tcfa_AL.html', 'arrecadacao_com_tcfa_AM.html', 'arrecadacao_com_tcfa_AP.html', 'arrecadacao_com_tcfa_BA.html'])"
+   },
    {
     "dataset": "arrecadacao-de-multas-ambientais-bens-tutelados",
     "id": "9f200e1a-dd01-4328-9e44-127b7e7ee966",
@@ -155,56 +158,50 @@
  },
  "distributions": {
   "tables_with_other_formats": 94,
-  "other_formats": 168,
-  "compared": 168,
-  "same_columns": 109,
-  "spelling_only": 25,
+  "other_formats": 170,
+  "compared": 170,
+  "same_columns": 113,
+  "spelling_only": 23,
   "different_columns": 34,
   "not_compared": {},
   "by_format": {
-   "json": 84,
-   "xml": 84
+   "json": 85,
+   "xml": 85
   }
  },
  "network": {
   "total": {
    "files": 195,
-   "failed_files": 22,
-   "gb": 36.42,
-   "minutes": 322.1,
-   "end_to_end_mb_s": 1.88,
-   "zip_download_mb_s": 23.8,
-   "first_byte_s_median": 0.21,
-   "network_share": 0.059,
-   "network_mb_s": 24.3,
-   "request_failures": {
-    "MissingSchema": 2,
-    "HTTP 404": 10
-   }
+   "failed_files": 11,
+   "gb": 36.82,
+   "minutes": 338.5,
+   "end_to_end_mb_s": 1.81,
+   "zip_download_mb_s": 25.6,
+   "first_byte_s_median": 0.19,
+   "network_share": 0.022,
+   "network_mb_s": 75.62,
+   "request_failures": {}
   },
   "by_host": {
    "stibamadadosabertosprd.blob.core.windows.net": {
-    "files": 131,
-    "failed_files": 11,
-    "gb": 32.94,
-    "minutes": 315.8,
-    "end_to_end_mb_s": 1.74,
-    "zip_download_mb_s": 23.67,
-    "first_byte_s_median": 0.2,
-    "network_share": 0.059,
-    "network_mb_s": 24.3,
-    "request_failures": {
-     "MissingSchema": 2,
-     "HTTP 404": 10
-    }
+    "files": 136,
+    "failed_files": 1,
+    "gb": 33.51,
+    "minutes": 335.7,
+    "end_to_end_mb_s": 1.66,
+    "zip_download_mb_s": 25.46,
+    "first_byte_s_median": 0.18,
+    "network_share": 0.022,
+    "network_mb_s": 75.62,
+    "request_failures": {}
    },
    "dadosabertos.ibama.gov.br": {
-    "files": 53,
+    "files": 49,
     "failed_files": 0,
-    "gb": 3.48,
-    "minutes": 6.4,
-    "end_to_end_mb_s": 9.07,
-    "zip_download_mb_s": 52.66,
+    "gb": 3.31,
+    "minutes": 2.8,
+    "end_to_end_mb_s": 19.72,
+    "zip_download_mb_s": 34.71,
     "first_byte_s_median": 0.21,
     "network_share": null,
     "network_mb_s": null,
@@ -213,18 +210,6 @@
    "siscom.ibama.gov.br": {
     "files": 10,
     "failed_files": 10,
-    "gb": 0.0,
-    "minutes": 0.0,
-    "end_to_end_mb_s": null,
-    "zip_download_mb_s": null,
-    "first_byte_s_median": null,
-    "network_share": null,
-    "network_mb_s": null,
-    "request_failures": {}
-   },
-   "—": {
-    "files": 1,
-    "failed_files": 1,
     "gb": 0.0,
     "minutes": 0.0,
     "end_to_end_mb_s": null,
@@ -254,12 +239,12 @@
    "naming_another_dataset": 0
   },
   "links": {
-   "tables": 198,
+   "tables": 199,
    "by_method": {
-    "none": 74,
-    "header": 61,
+    "none": 77,
+    "header": 68,
     "description": 49,
-    "name": 14
+    "name": 5
    },
    "fields_listed_in_description": 49
   },
@@ -291,20 +276,20 @@
    "date_fields_with_declared_format": 0.3913
   },
   "files_vs_dictionaries": {
-   "checked": 111,
-   "with_declared_fields_missing": 39,
-   "with_undeclared_columns": 44,
-   "with_spelling_differences": 40,
+   "checked": 120,
+   "with_declared_fields_missing": 42,
+   "with_undeclared_columns": 48,
+   "with_spelling_differences": 46,
    "with_similar_names": 21,
    "similar_names": 133,
-   "declared_fields_missing": 280,
+   "declared_fields_missing": 283,
    "formats_inferred_from_data": {
-    "trueValues": 13,
-    "falseValues": 13,
+    "trueValues": 16,
+    "falseValues": 16,
     "type": 11,
-    "format": 58,
-    "decimalChar": 19,
-    "groupChar": 14
+    "format": 59,
+    "decimalChar": 25,
+    "groupChar": 20
    }
   },
   "copies": {
@@ -317,28 +302,27 @@
    "results_copied": 0
   },
   "files": {
-   "validated": 172,
+   "validated": 183,
    "encodings": {
-    "utf-8": 105,
-    "utf-8-sig": 67
+    "utf-8-sig": 74,
+    "utf-8": 109
    },
    "delimiters": {
-    ";": 113
+    ";": 118
    },
    "with_decode_errors": 0,
    "with_ragged_rows": 2,
    "zips_with_several_headers": 0,
    "with_columns_without_name": 0,
    "not_tabular": 0,
-   "not_tables": 3,
+   "not_tables": 4,
    "formats": {
-    "csv": 113,
-    "json": 29,
-    "xml": 30
+    "csv": 118,
+    "json": 32,
+    "xml": 33
    },
    "unreachable_by_reason": {
-    "HTTP 404": 20,
-    "no URL": 1,
+    "HTTP 404": 10,
     "other": 1
    }
   },
@@ -363,11 +347,11 @@
    }
   },
   "delivery": {
-   "probed_at": "2026-10-05T10:43:47+00:00",
+   "probed_at": "2026-10-12T11:09:52+00:00",
    "hosts": {
     "dadosabertos.ibama.gov.br": {
-     "linked": 53,
-     "files": 53,
+     "linked": 49,
+     "files": 49,
      "served_by": [
       "dadosabertos.ibama.gov.br"
      ],
@@ -376,11 +360,11 @@
      ],
      "probes": 3,
      "range": "honoured",
-     "with_etag": 53,
-     "with_last_modified": 53,
+     "with_etag": 49,
+     "with_last_modified": 49,
      "without_validator": 0,
      "without_length": 0,
-     "of": 53,
+     "of": 49,
      "generic_type": 0,
      "typed": 3,
      "content_types": {},
@@ -406,8 +390,8 @@
      "redirect_loops": 0
     },
     "stibamadadosabertosprd.blob.core.windows.net": {
-     "linked": 131,
-     "files": 120,
+     "linked": 136,
+     "files": 135,
      "served_by": [
       "stibamadadosabertosprd.blob.core.windows.net"
      ],
@@ -416,17 +400,17 @@
      ],
      "probes": 3,
      "range": "honoured",
-     "with_etag": 120,
-     "with_last_modified": 120,
+     "with_etag": 135,
+     "with_last_modified": 135,
      "without_validator": 0,
      "without_length": 0,
-     "of": 120,
-     "generic_type": 63,
-     "typed": 63,
+     "of": 135,
+     "generic_type": 135,
+     "typed": 135,
      "content_types": {
-      "application/octet-stream": 63
+      "application/octet-stream": 135
      },
-     "broken_links": 10,
+     "broken_links": 0,
      "redirect_loops": 0
     }
    },
@@ -438,16 +422,10 @@
      "of": 10
     },
     {
-     "id": "broken-links",
-     "host": "stibamadadosabertosprd.blob.core.windows.net",
-     "n": 10,
-     "of": 131
-    },
-    {
      "id": "media-type",
      "host": "stibamadadosabertosprd.blob.core.windows.net",
-     "n": 63,
-     "of": 63,
+     "n": 135,
+     "of": 135,
      "types": [
       "application/octet-stream"
      ]
@@ -467,7 +445,7 @@
   {
    "name": "arrecadacao-com-tcfa",
    "level": 0,
-   "tables": 1,
+   "tables": 3,
    "verifiable": 0,
    "conformant": 0,
    "l1_rate": null
@@ -660,9 +638,9 @@
    "name": "fiscalizacao-termo-de-embargo",
    "level": 1,
    "tables": 8,
-   "verifiable": 7,
+   "verifiable": 8,
    "conformant": 3,
-   "l1_rate": 0.4286
+   "l1_rate": 0.375
   },
   {
    "name": "fiscalizacao-termo-de-incineracao",
@@ -788,16 +766,16 @@
    "name": "rapp-pilhas-e-baterias-fabricante-nacional",
    "level": 2,
    "tables": 15,
-   "verifiable": 14,
-   "conformant": 2,
-   "l1_rate": 0.1429
+   "verifiable": 15,
+   "conformant": 3,
+   "l1_rate": 0.2
   },
   {
    "name": "rapp-pilhas-e-baterias-importador",
    "level": 2,
    "tables": 18,
-   "verifiable": 12,
-   "conformant": 4,
+   "verifiable": 18,
+   "conformant": 6,
    "l1_rate": 0.3333
   },
   {
@@ -907,10 +885,10 @@
   {
    "name": "sinaflor-empreendimentos-de-base-florestal",
    "level": 2,
-   "tables": 3,
-   "verifiable": 0,
+   "tables": 1,
+   "verifiable": 1,
    "conformant": 0,
-   "l1_rate": null
+   "l1_rate": 0.0
   },
   {
    "name": "sinaflor-exploracao-de-floresta-plantada",

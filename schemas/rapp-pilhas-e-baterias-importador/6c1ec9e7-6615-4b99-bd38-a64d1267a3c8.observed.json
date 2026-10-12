@@ -18,7 +18,7 @@
   {
    "name": "CNPJ do ponto de coleta",
    "type": "string",
-   "sampleEmptyShare": 0.3342
+   "sampleEmptyShare": 0.3444
   },
   {
    "name": "CEP",
@@ -48,7 +48,7 @@
   {
    "name": "Sítio na internet",
    "type": "string",
-   "sampleEmptyShare": 0.934
+   "sampleEmptyShare": 0.9396
   },
   {
    "name": "Acondicionamento",
@@ -58,8 +58,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-05T11:04:08+00:00",
-  "sha256": "11597095dfffe3639201ddf25161ea196577b721b27a53fe23e28539aec0b018",
+  "observed_at": "2026-10-12T15:10:24+00:00",
+  "sha256": "8dce7e4a874c608fe37b60ab564aa73bd2148f58277dc3fba726d942acba0877",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

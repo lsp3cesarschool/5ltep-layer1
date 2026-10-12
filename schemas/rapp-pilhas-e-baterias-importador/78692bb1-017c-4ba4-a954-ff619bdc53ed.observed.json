@@ -1,0 +1,69 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano_do_relatorio",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo_de_pilhas_ou_baterias",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Modelo_de_pilhas_ou_baterias",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Peso_unitario__kg_",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Quantidade_importada__un_",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Peso_total_importado__kg_",
+   "type": "number",
+   "decimalChar": ",",
+   "groupChar": ".",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NCM",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Laudo",
+   "type": "boolean",
+   "trueValues": [
+    "Sim"
+   ],
+   "falseValues": [
+    "Não"
+   ],
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-12T11:11:18+00:00",
+  "sha256": "4317185b6dff55a49a57a0f232aedc028ecf65c9bf048f477aa03f3a27d2a9e2",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

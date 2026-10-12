@@ -61,7 +61,7 @@
   {
    "name": "CPF_CNPJ_PESSOA_AUTUADA",
    "type": "string",
-   "sampleEmptyShare": 0.7844
+   "sampleEmptyShare": 0.7846
   },
   {
    "name": "NUM_PROCESSO",
@@ -71,12 +71,12 @@
   {
    "name": "DES_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.065
+   "sampleEmptyShare": 0.0652
   },
   {
    "name": "DS_INFORMACOES_COMPLEMENTARES",
    "type": "string",
-   "sampleEmptyShare": 0.7872
+   "sampleEmptyShare": 0.7868
   },
   {
    "name": "COD_MUNICIPIO",
@@ -96,17 +96,17 @@
   {
    "name": "DES_LOCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0432
+   "sampleEmptyShare": 0.0434
   },
   {
    "name": "NUM_LONGITUDE_TAD",
    "type": "number",
-   "sampleEmptyShare": 0.0232
+   "sampleEmptyShare": 0.0234
   },
   {
    "name": "NUM_LATITUDE_TAD",
    "type": "number",
-   "sampleEmptyShare": 0.0232
+   "sampleEmptyShare": 0.0234
   },
   {
    "name": "DES_JUSTIFICATIVA",
@@ -141,12 +141,12 @@
   {
    "name": "SEQ_AUTO_INFRACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.4814
+   "sampleEmptyShare": 0.4816
   },
   {
    "name": "NUM_AUTO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.4814
+   "sampleEmptyShare": 0.4816
   },
   {
    "name": "SER_AUTO_INFRACAO",
@@ -223,8 +223,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-05T11:01:51+00:00",
-  "sha256": "d4f5c4e5bdfb79bb2ed618f6e3c00c794e83fb71018997a5835f85d5f068c428",
+  "observed_at": "2026-10-12T15:07:29+00:00",
+  "sha256": "1cc229d8f858317411e4b3e183b1e65d249d9444f32868345669956a7b62662f",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

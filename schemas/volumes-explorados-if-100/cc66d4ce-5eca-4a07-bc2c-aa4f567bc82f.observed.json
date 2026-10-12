@@ -1,51 +1,29 @@
 {
  "fields": [
   {
-   "name": "PRODUTO",
-   "type": "string",
+   "name": "NRO_REGISTRO",
+   "type": "integer",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
-   "type": "datetime",
-   "format": "%Y-%m-%d %H:%M",
+   "name": "NRO_AUTORIZACAO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DATA_DE_EMISSAO",
+   "type": "date",
+   "format": "%d/%m/%y",
    "sampleEmptyShare": 0.0
   },
   {
    "name": "DATA_DE_VALIDADE",
    "type": "date",
-   "format": "%Y-%m-%d",
+   "format": "%d/%m/%y",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "NRO_ARVORE_EXPLORADA",
-   "type": "integer",
-   "sampleEmptyShare": 0.0
-  },
-  {
-   "name": "LONGITUDE_ARVORE",
-   "type": "number",
-   "decimalChar": ",",
-   "sampleEmptyShare": 0.0
-  },
-  {
-   "name": "ATIVIDADE",
-   "type": "string",
-   "sampleEmptyShare": 0.0
-  },
-  {
-   "name": "VOLUME_EXPLORADO",
-   "type": "number",
-   "sampleEmptyShare": 0.0
-  },
-  {
-   "name": "DATA_DA_EXPLORACAO",
-   "type": "date",
-   "format": "%Y-%m-%d",
-   "sampleEmptyShare": 0.0
-  },
-  {
-   "name": "SITUACAO",
+   "name": "UF",
    "type": "string",
    "sampleEmptyShare": 0.0
   },
@@ -55,7 +33,44 @@
    "sampleEmptyShare": 0.0
   },
   {
+   "name": "NOME_DETENTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
    "name": "CPF_CNPJ_DETENTOR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "ATIVIDADE",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "PRODUTO",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NRO_ARVORE_EXPLORADA",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LATITUDE_ARVORE",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "LONGITUDE_ARVORE",
+   "type": "number",
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "NOME_CIENTIFICO",
    "type": "string",
    "sampleEmptyShare": 0.0
   },
@@ -70,53 +85,38 @@
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "UF",
-   "type": "string",
+   "name": "VOLUME_EXPLORADO",
+   "type": "number",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "DATA_DE_EMISSAO",
+   "name": "DATA_DA_EXPLORACAO",
    "type": "date",
-   "format": "%Y-%m-%d",
+   "format": "%d/%m/%y",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "NRO_REGISTRO",
-   "type": "integer",
+   "name": "SITUACAO",
+   "type": "string",
    "sampleEmptyShare": 0.0
   },
   {
    "name": "DATA_DA_SITUACAO",
    "type": "date",
-   "format": "%Y-%m-%d",
+   "format": "%d/%m/%y",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "NRO_AUTORIZACAO",
-   "type": "integer",
-   "sampleEmptyShare": 0.0
-  },
-  {
-   "name": "LATITUDE_ARVORE",
-   "type": "number",
-   "decimalChar": ",",
-   "sampleEmptyShare": 0.0
-  },
-  {
-   "name": "NOME_CIENTIFICO",
-   "type": "string",
-   "sampleEmptyShare": 0.0
-  },
-  {
-   "name": "NOME_DETENTOR",
-   "type": "string",
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
    "sampleEmptyShare": 0.0
   }
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T11:15:52+00:00",
-  "sha256": "787a5523652e55e51a7dbd5e1c63d119d9d39e56ae26cb7217f396babdb38a8e",
+  "observed_at": "2026-10-12T14:39:47+00:00",
+  "sha256": "4aca3c50044e44f88e497a416b74eb5b74020893070ef83eaa484eeef2052948",
   "encoding": "utf-8",
   "delimiter": null,
   "sample_rows": 3222,

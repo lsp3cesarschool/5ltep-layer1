@@ -1,0 +1,69 @@
+{
+ "fields": [
+  {
+   "name": "CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano do relatório",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CNPJ do ponto de coleta",
+   "type": "string",
+   "sampleEmptyShare": 0.8134
+  },
+  {
+   "name": "Ponto de coleta",
+   "type": "string",
+   "sampleEmptyShare": 0.0002
+  },
+  {
+   "name": "CEP",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Endereço",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Bairro",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Sítio na internet",
+   "type": "string",
+   "sampleEmptyShare": 0.9904
+  },
+  {
+   "name": "Acondicionamento",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-12T11:11:16+00:00",
+  "sha256": "176c87dd57f6e7b39744146cae83718489ae43a67b10c319f985ad58d2eabebc",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 5000,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

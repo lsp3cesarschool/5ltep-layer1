@@ -1,0 +1,62 @@
+{
+ "fields": [
+  {
+   "name": "Número de GRU",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Valor Cobrado (R$)",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Valor Pago (R$)",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data Vencimento",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data Pagamento",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano Débito",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Trimestre",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Última Atualização Relatório",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-12T11:10:55+00:00",
+  "sha256": "9d97bab655626aac6e601deca0c137b30b15858b77fd2ac190bbcc3c10b320e4",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 27,
+  "distinct_headers": 1
+ }
+}

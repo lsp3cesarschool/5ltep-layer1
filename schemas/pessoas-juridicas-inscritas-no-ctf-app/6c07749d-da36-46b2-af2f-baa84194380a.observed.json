@@ -45,7 +45,7 @@
    "name": "Data de término da atividade",
    "type": "date",
    "format": "%d/%m/%Y",
-   "sampleEmptyShare": 0.4544
+   "sampleEmptyShare": 0.4538
   },
   {
    "name": "Potenc. de Pol. da atividade",
@@ -86,7 +86,7 @@
    "name": "Data de última emissão do CR",
    "type": "datetime",
    "format": "%d/%m/%Y %H:%M:%S",
-   "sampleEmptyShare": 0.131
+   "sampleEmptyShare": 0.1308
   },
   {
    "name": "Situação atual do último CR emitido",
@@ -102,8 +102,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T11:05:55+00:00",
-  "sha256": "93ab08c50543782273d9baa95214f39ca9aced92f22f94f8b325c3c9938e02d6",
+  "observed_at": "2026-10-12T14:37:22+00:00",
+  "sha256": "3842c8cc5d03ca9675ff52aabd5681c928f92f67154b9496a3ff7f3c0cac64ef",
   "encoding": "utf-8",
   "delimiter": ";",
   "sample_rows": 5000,

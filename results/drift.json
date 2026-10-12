@@ -54,5 +54,50 @@
    ],
    "schema_removed": true
   }
+ },
+ {
+  "id": "1f584369bb2855da",
+  "kind": "observed",
+  "dataset": "arrecadacao-com-tcfa",
+  "resource_id": "2873d587-4e02-44c9-a9e6-29bb6c7bacea",
+  "resource_name": "Arrecadação com TCFA",
+  "at": "2026-10-12T11:11:31+00:00",
+  "before_sha256": "ed053f48fb2de0a0b38cc8b9760ea4a50cc0a2e35c072fe842ff7f03a39d00ce",
+  "after_sha256": "84c1972fbf7e1c6a8b7bab3bb4ae55fbda4365803520bb592bf458b991175d6a",
+  "changes": {
+   "encoding": {
+    "before": "utf-8",
+    "after": "utf-8-sig"
+   }
+  }
+ },
+ {
+  "id": "7b25cdc58fc49c0f",
+  "kind": "observed",
+  "dataset": "volumes-explorados-if-100",
+  "resource_id": "ac345e77-863b-472c-a06a-4f171263bc70",
+  "resource_name": "Volumes Explorados - IF 100%",
+  "at": "2026-10-12T14:39:42+00:00",
+  "before_sha256": "1e17340652fd51e1c6a85712612c87bd3acca5e644a22763862c677b1134d81c",
+  "after_sha256": "d9a4e8c1b3f1a6cff872600571868365d0f65c62dbb399c66e4da305e6965705",
+  "changes": {
+   "encoding": {
+    "before": "utf-8",
+    "after": "utf-8-sig"
+   }
+  }
+ },
+ {
+  "id": "a943396d9b6ad6e9",
+  "kind": "observed",
+  "dataset": "volumes-explorados-if-100",
+  "resource_id": "cc66d4ce-5eca-4a07-bc2c-aa4f567bc82f",
+  "resource_name": "Volumes Explorados - IF 100%",
+  "at": "2026-10-12T14:39:47+00:00",
+  "before_sha256": "787a5523652e55e51a7dbd5e1c63d119d9d39e56ae26cb7217f396babdb38a8e",
+  "after_sha256": "4aca3c50044e44f88e497a416b74eb5b74020893070ef83eaa484eeef2052948",
+  "changes": {
+   "columns_reordered": true
+  }
  }
 ]

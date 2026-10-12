@@ -1,0 +1,62 @@
+{
+ "fields": [
+  {
+   "name": "Numero_de_GRU",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Valor_Cobrado__R__",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Valor_Pago__R__",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data_Vencimento",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data_Pagamento",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ano_Debito",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Trimestre",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Ultima_Atualizacao_Relatorio",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-10-12T11:10:58+00:00",
+  "sha256": "a0da57bc348ff6ae4d491e8e274a558faea2dd8568b34ac9e26b584a3f46e050",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 5000,
+  "tables": 27,
+  "distinct_headers": 1
+ }
+}
