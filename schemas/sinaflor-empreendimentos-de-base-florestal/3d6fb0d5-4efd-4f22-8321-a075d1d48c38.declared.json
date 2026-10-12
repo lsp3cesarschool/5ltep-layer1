@@ -99,7 +99,7 @@
    "kind": "dictionary",
    "dictionary_id": "27303f72-d183-475d-a535-f6b3b7feef7e",
    "dictionary_name": "Metadados - Empreendimento de Base Florestal",
-   "url": "https://dadosabertos.ibama.gov.br/dataset/d7986b0b-9bd0-4c95-a0b8-99fad6b188e0/resource/27303f72-d183-475d-a535-f6b3b7feef7e/download/sinaflor-empreendimentos-de-base-florestal.csv",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/d7986b0b-9bd0-4c95-a0b8-99fad6b188e0/resource/27303f72-d183-475d-a535-f6b3b7feef7e/download/sinaflor-empreendimentos-de-base-florestal.csv",
    "sha256": "d9d34c745f22218e582acf129f481120a9383e7ba2278975c0ae17eb23fa4ee6",
    "reader": "csv",
    "part": "",

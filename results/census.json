@@ -4,7 +4,7 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-05T10:43:47+00:00",
+ "generated_at": "2026-10-12T11:09:52+00:00",
  "datasets": [
   {
    "name": "antropizacao-dos-biomas-extra-amazonicos",
@@ -133,35 +133,63 @@
    "title": "Arrecadação com TCFA",
    "organization": "Dados Abertos",
    "url": "https://dadosabertos.ibama.gov.br/dataset/arrecadacao-com-tcfa",
-   "metadata_modified": "2024-10-24T14:29:27.082885",
+   "metadata_modified": "2026-10-08T18:42:42.346305",
    "resources_total": 4,
    "dictionaries": [],
    "tables": [
     {
-     "id": "2873d587-4e02-44c9-a9e6-29bb6c7bacea",
+     "id": "26417789-b10d-4528-b8aa-13ae8ba2139f",
      "name": "Arrecadação com TCFA",
-     "format": "CSV",
-     "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/AC/Arrecadacao/arrecadacaoTCFA.csv",
-     "candidate": "csv",
-     "last_modified": "2021-09-16T19:54:36.439993",
+     "format": "HTML",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ARRECADA%C3%87%C3%83O_COM_TCFA/arrecadacao_com_tcfa_html.zip",
+     "candidate": "zip",
+     "last_modified": "2026-10-08T18:28:32.267311",
      "size": null,
      "attached": false,
      "datastore": null,
      "described": 0,
-     "distributions": [
-      {
-       "id": "d8876290-bd5f-427b-a8c7-f3777ab376d7",
-       "name": "Arrecadação com TCFA",
-       "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/AC/Arrecadacao/arrecadacaoTCFA.json"
-      },
-      {
-       "id": "52b00d0a-c548-41b4-abec-230960350d8f",
-       "name": "Arrecadação com TCFA",
-       "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/AC/Arrecadacao/arrecadacaoTCFA.xml"
-      }
-     ],
+     "link": null,
+     "level": 0
+    },
+    {
+     "id": "2873d587-4e02-44c9-a9e6-29bb6c7bacea",
+     "name": "Arrecadação com TCFA",
+     "format": "CSV",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ARRECADA%C3%87%C3%83O_COM_TCFA/arrecadacao_com_tcfa_csv.zip",
+     "candidate": "zip",
+     "last_modified": "2026-10-08T18:28:42.356263",
+     "size": null,
+     "attached": false,
+     "datastore": null,
+     "described": 0,
+     "link": null,
+     "level": 0
+    },
+    {
+     "id": "d8876290-bd5f-427b-a8c7-f3777ab376d7",
+     "name": "Arrecadação com TCFA",
+     "format": "JSON",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ARRECADA%C3%87%C3%83O_COM_TCFA/arrecadacao_com_tcfa_json.zip",
+     "candidate": "zip",
+     "last_modified": "2026-10-08T18:28:52.861903",
+     "size": null,
+     "attached": false,
+     "datastore": null,
+     "described": 0,
+     "link": null,
+     "level": 0
+    },
+    {
+     "id": "52b00d0a-c548-41b4-abec-230960350d8f",
+     "name": "Arrecadação com TCFA",
+     "format": "XML",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ARRECADA%C3%87%C3%83O_COM_TCFA/arrecadacao_com_tcfa_xml.zip",
+     "candidate": "zip",
+     "last_modified": "2026-10-08T18:42:42.354384",
+     "size": null,
+     "attached": false,
+     "datastore": null,
+     "described": 0,
      "link": null,
      "level": 0
     }
@@ -2742,7 +2770,7 @@
    "title": "Fiscalização - termo de embargo",
    "organization": "Dados Abertos",
    "url": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-embargo",
-   "metadata_modified": "2026-09-22T14:03:01.895563",
+   "metadata_modified": "2026-10-07T19:32:21.034682",
    "resources_total": 24,
    "dictionaries": [],
    "tables": [
@@ -2750,9 +2778,9 @@
      "id": "8f88b43e-287a-470b-a730-db440f9e37fa",
      "name": "Termos de embargo",
      "format": "CSV",
-     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_EMBARGO/termo_de_embargo.csv",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO/termo_de_embargo.csv",
      "candidate": "csv",
-     "last_modified": "2026-08-14T17:21:30.309299",
+     "last_modified": "2026-10-07T19:31:48.206513",
      "size": null,
      "attached": false,
      "datastore": null,
@@ -2763,13 +2791,13 @@
        "id": "4d867509-74b9-4a94-ae70-59fee95083f3",
        "name": "Termos de embargo",
        "format": "json",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_EMBARGO/termo_de_embargo.json"
+       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO/termo_de_embargo.json"
       },
       {
        "id": "a01ac729-39f0-425e-9b81-df9bbd51c295",
        "name": "Termos de embargo",
        "format": "xml",
-       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_EMBARGO/termo_de_embargo.xml"
+       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO/termo_de_embargo.xml"
       }
      ],
      "link": {
@@ -4367,7 +4395,7 @@
    "title": "Rapp Pilhas e Baterias - Fabricante Nacional",
    "organization": "Dados Abertos",
    "url": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-fabricante-nacional",
-   "metadata_modified": "2026-08-18T17:57:11.823795",
+   "metadata_modified": "2026-10-06T14:55:39.032888",
    "resources_total": 20,
    "dictionaries": [
     {
@@ -4662,17 +4690,30 @@
      "id": "6bde1c16-692f-4706-be68-bd2b3c1ac7d4",
      "name": "Pontos de Coleta",
      "format": "CSV",
-     "url": "",
-     "candidate": "csv",
-     "last_modified": "2026-08-18T17:52:13.545718",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_FABRICANTES/pilhas_baterias_pontos_de_coleta_fabricantes/pilhas_baterias_pontos_de_coleta_fabricantes_todos_anos.csv.zip",
+     "candidate": "zip",
+     "last_modified": "2026-10-06T14:55:39.042460",
      "size": null,
      "attached": false,
      "datastore": null,
      "described": 0,
+     "header_peeked": [
+      "CNPJ",
+      "Ano do relatório",
+      "CNPJ do ponto de coleta",
+      "Ponto de coleta",
+      "CEP",
+      "Endereço",
+      "Bairro",
+      "UF",
+      "Município",
+      "Sítio na internet",
+      "Acondicionamento"
+     ],
      "link": {
       "dictionary": "933f121d-14ca-4f41-88fb-19906c7303ed",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -4837,7 +4878,7 @@
    "title": "Rapp Pilhas e baterias - Importador",
    "organization": "Dados Abertos",
    "url": "https://dadosabertos.ibama.gov.br/dataset/rapp-pilhas-e-baterias-importador",
-   "metadata_modified": "2026-08-10T14:03:01.880308",
+   "metadata_modified": "2026-10-07T19:57:48.508810",
    "resources_total": 24,
    "dictionaries": [
     {
@@ -5111,17 +5152,28 @@
      "id": "85efc1b6-c4bb-4e1b-96cc-8fb4e39dd811",
      "name": "Pilhas e baterias contidas em produtos importados",
      "format": "CSV",
-     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importados/pilhas_baterias_produtos_consolidado_todos_anos.csv.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importadores/pilhas_baterias_produtos_importadores_todos_anos.csv.zip",
      "candidate": "zip",
-     "last_modified": "2026-08-10T13:51:45.298913",
+     "last_modified": "2026-10-07T19:56:30.372750",
      "size": null,
      "attached": false,
      "datastore": null,
      "described": 0,
+     "header_peeked": [
+      "CNPJ",
+      "Ano do relatório",
+      "Tipo de pilhas ou baterias",
+      "Modelo de pilhas ou baterias",
+      "Peso unitário (kg)",
+      "Quantidade importada (un)",
+      "Peso total importado (kg)",
+      "NCM",
+      "Laudo"
+     ],
      "link": {
       "dictionary": "be344f38-bdfa-4ab5-aeab-e17a47dcf921",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -5130,17 +5182,28 @@
      "id": "78692bb1-017c-4ba4-a954-ff619bdc53ed",
      "name": "Pilhas e baterias contidas em produtos importados",
      "format": "XML",
-     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importados/pilhas_baterias_produtos_consolidado_todos_anos.xml.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importadores/pilhas_baterias_produtos_importadores_todos_anos.xml.zip",
      "candidate": "zip",
-     "last_modified": "2026-08-10T13:52:19.933928",
+     "last_modified": "2026-10-07T19:56:46.937987",
      "size": null,
      "attached": false,
      "datastore": null,
      "described": 0,
+     "header_peeked": [
+      "CNPJ",
+      "Ano_do_relatorio",
+      "Tipo_de_pilhas_ou_baterias",
+      "Modelo_de_pilhas_ou_baterias",
+      "Peso_unitario__kg_",
+      "Quantidade_importada__un_",
+      "Peso_total_importado__kg_",
+      "NCM",
+      "Laudo"
+     ],
      "link": {
       "dictionary": "be344f38-bdfa-4ab5-aeab-e17a47dcf921",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -5149,17 +5212,28 @@
      "id": "c60c95d4-ce2b-4d27-884d-1a572a604576",
      "name": "Pilhas e baterias contidas em produtos importados",
      "format": "JSON",
-     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importados/pilhas_baterias_produtos_consolidado_todos_anos.json.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_contidas_em_produtos_importadores/pilhas_baterias_produtos_importadores_todos_anos.json.zip",
      "candidate": "zip",
-     "last_modified": "2026-08-10T13:52:41.653043",
+     "last_modified": "2026-10-07T19:56:57.943164",
      "size": null,
      "attached": false,
      "datastore": null,
      "described": 0,
+     "header_peeked": [
+      "CNPJ",
+      "Ano do relatório",
+      "Tipo de pilhas ou baterias",
+      "Modelo de pilhas ou baterias",
+      "Peso unitário (kg)",
+      "Quantidade importada (un)",
+      "Peso total importado (kg)",
+      "NCM",
+      "Laudo"
+     ],
      "link": {
       "dictionary": "be344f38-bdfa-4ab5-aeab-e17a47dcf921",
       "part": 0,
-      "method": "name",
+      "method": "header",
       "score": 1.0
      },
      "level": 2
@@ -5282,18 +5356,24 @@
      "id": "c10fc1fd-3c85-4e12-a9cd-79fe464602c3",
      "name": "Transporte",
      "format": "CSV",
-     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_consolidado_todos_anos.csv.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_importadores_todos_anos.csv.zip",
      "candidate": "zip",
-     "last_modified": "2026-08-10T13:57:47.655340",
+     "last_modified": "2026-10-07T19:57:21.615370",
      "size": null,
      "attached": false,
      "datastore": null,
      "described": 0,
+     "header_peeked": [
+      "CNPJ",
+      "Ano do relatório",
+      "CPF/CNPJ Transportador",
+      "Frequência de Recolhimento"
+     ],
      "link": {
       "dictionary": "7f7bb05d-1e89-45fb-b6d0-49decfad20a4",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.6
      },
      "level": 2
     },
@@ -5301,18 +5381,24 @@
      "id": "cb9cf40d-f0fa-4304-ae73-3c857c3d59d0",
      "name": "Transporte",
      "format": "XML",
-     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_consolidado_todos_anos.xml.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_importadores_todos_anos.xml.zip",
      "candidate": "zip",
-     "last_modified": "2026-08-10T13:58:11.699992",
+     "last_modified": "2026-10-07T19:57:37.328212",
      "size": null,
      "attached": false,
      "datastore": null,
      "described": 0,
+     "header_peeked": [
+      "CNPJ",
+      "Ano_do_relatorio",
+      "CPF_CNPJ_Transportador",
+      "Frequencia_de_Recolhimento"
+     ],
      "link": {
       "dictionary": "7f7bb05d-1e89-45fb-b6d0-49decfad20a4",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.6
      },
      "level": 2
     },
@@ -5320,18 +5406,24 @@
      "id": "e6a02e7b-98c0-44e4-aa7c-2f61b9552e04",
      "name": "Transporte",
      "format": "JSON",
-     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_consolidado_todos_anos.json.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/PILHAS_BATERIAS_IMPORTADORES/pilhas_baterias_transportes_importadores/pilhas_baterias_transportes_importadores_todos_anos.json.zip",
      "candidate": "zip",
-     "last_modified": "2026-08-10T14:00:39.981200",
+     "last_modified": "2026-10-07T19:57:48.514568",
      "size": null,
      "attached": false,
      "datastore": null,
      "described": 0,
+     "header_peeked": [
+      "CNPJ",
+      "Ano do relatório",
+      "CPF/CNPJ Transportador",
+      "Frequência de Recolhimento"
+     ],
      "link": {
       "dictionary": "7f7bb05d-1e89-45fb-b6d0-49decfad20a4",
       "part": 0,
-      "method": "name",
-      "score": 1.0
+      "method": "header",
+      "score": 0.6
      },
      "level": 2
     },
@@ -6073,14 +6165,14 @@
    "title": "Sinaflor - Empreendimentos de Base Florestal",
    "organization": "Dados Abertos",
    "url": "https://dadosabertos.ibama.gov.br/dataset/sinaflor-empreendimentos-de-base-florestal",
-   "metadata_modified": "2026-03-16T14:31:08.666833",
+   "metadata_modified": "2026-10-07T19:59:02.219034",
    "resources_total": 4,
    "dictionaries": [
     {
      "id": "27303f72-d183-475d-a535-f6b3b7feef7e",
      "name": "Metadados - Empreendimento de Base Florestal",
      "format": "CSV",
-     "url": "https://dadosabertos.ibama.gov.br/dataset/d7986b0b-9bd0-4c95-a0b8-99fad6b188e0/resource/27303f72-d183-475d-a535-f6b3b7feef7e/download/sinaflor-empreendimentos-de-base-florestal.csv",
+     "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/d7986b0b-9bd0-4c95-a0b8-99fad6b188e0/resource/27303f72-d183-475d-a535-f6b3b7feef7e/download/sinaflor-empreendimentos-de-base-florestal.csv",
      "kind": "machine",
      "sha256": "d9d34c745f22218e582acf129f481120a9383e7ba2278975c0ae17eb23fa4ee6",
      "bytes": 2077,
@@ -6105,9 +6197,7 @@
      "date_fields": 3,
      "date_fields_with_format": 2,
      "linked_resources": [
-      "3d6fb0d5-4efd-4f22-8321-a075d1d48c38",
-      "68dd6c57-9a91-4913-b2ab-dfaac2cbdd8d",
-      "d20eb3a0-7463-462a-b9b7-f289510eda1c"
+      "3d6fb0d5-4efd-4f22-8321-a075d1d48c38"
      ]
     }
    ],
@@ -6116,51 +6206,27 @@
      "id": "3d6fb0d5-4efd-4f22-8321-a075d1d48c38",
      "name": "Empreendimentos de base florestal",
      "format": "CSV",
-     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBaseFlorestal_csv.zip",
-     "candidate": "zip",
-     "last_modified": "2026-03-16T14:30:32.031236",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimemtoBaseFlorestal/sinaflor-empreendimentos-de-base-florestal.csv",
+     "candidate": "csv",
+     "last_modified": "2026-10-07T19:58:34.471537",
      "size": null,
      "attached": false,
      "datastore": null,
      "described": 0,
-     "link": {
-      "dictionary": "27303f72-d183-475d-a535-f6b3b7feef7e",
-      "part": 0,
-      "method": "name",
-      "score": 0.5
-     },
-     "level": 2
-    },
-    {
-     "id": "68dd6c57-9a91-4913-b2ab-dfaac2cbdd8d",
-     "name": "Empreendimentos de base florestal",
-     "format": "XML",
-     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBaseFlorestal_xml.zip",
-     "candidate": "zip",
-     "last_modified": "2026-03-16T14:30:50.319304",
-     "size": null,
-     "attached": false,
-     "datastore": null,
-     "described": 0,
-     "link": {
-      "dictionary": "27303f72-d183-475d-a535-f6b3b7feef7e",
-      "part": 0,
-      "method": "name",
-      "score": 0.5
-     },
-     "level": 2
-    },
-    {
-     "id": "d20eb3a0-7463-462a-b9b7-f289510eda1c",
-     "name": "Empreendimentos de base florestal",
-     "format": "JSON",
-     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimentoBaseFlorestal/EmpreendimentoBaseFlorestal_json.zip",
-     "candidate": "zip",
-     "last_modified": "2026-03-16T14:31:08.670851",
-     "size": null,
-     "attached": false,
-     "datastore": null,
-     "described": 0,
+     "distributions": [
+      {
+       "id": "d20eb3a0-7463-462a-b9b7-f289510eda1c",
+       "name": "Empreendimentos de base florestal",
+       "format": "json",
+       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimemtoBaseFlorestal/sinaflor-empreendimentos-de-base-florestal.json"
+      },
+      {
+       "id": "68dd6c57-9a91-4913-b2ab-dfaac2cbdd8d",
+       "name": "Empreendimentos de base florestal",
+       "format": "xml",
+       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/EmpreendimemtoBaseFlorestal/sinaflor-empreendimentos-de-base-florestal.xml"
+      }
+     ],
      "link": {
       "dictionary": "27303f72-d183-475d-a535-f6b3b7feef7e",
       "part": 0,
@@ -7199,7 +7265,7 @@
    "title": "Volumes Explorados - IF 100%",
    "organization": "Dados Abertos",
    "url": "https://dadosabertos.ibama.gov.br/dataset/volumes-explorados-if-100",
-   "metadata_modified": "2025-01-24T12:33:11.303923",
+   "metadata_modified": "2026-10-08T18:26:13.316334",
    "resources_total": 3,
    "dictionaries": [],
    "tables": [
@@ -7207,9 +7273,9 @@
      "id": "ac345e77-863b-472c-a06a-4f171263bc70",
      "name": "Volumes Explorados - IF 100%",
      "format": "CSV",
-     "url": "https://dadosabertos.ibama.gov.br/dados/SINAFLOR/VolumeExpIF100/VolumeExpIF100_csv.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/VolumesExploradosIf100/volumes_explorados_if_100_csv.zip",
      "candidate": "zip",
-     "last_modified": "2024-12-16T13:08:56.959835",
+     "last_modified": "2026-10-08T18:25:45.623139",
      "size": null,
      "attached": false,
      "datastore": null,
@@ -7228,9 +7294,9 @@
      "id": "f27715d9-8f23-4c01-8440-5cc0c2567b00",
      "name": "Volumes Explorados - IF 100%",
      "format": "XML",
-     "url": "https://dadosabertos.ibama.gov.br/dados/SINAFLOR/VolumeExpIF100/VolumeExpIF100_xml.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/VolumesExploradosIf100/volumes_explorados_if_100_xml.zip",
      "candidate": "zip",
-     "last_modified": "2024-12-16T13:09:06.041092",
+     "last_modified": "2026-10-08T18:26:02.701902",
      "size": null,
      "attached": false,
      "datastore": null,
@@ -7249,9 +7315,9 @@
      "id": "cc66d4ce-5eca-4a07-bc2c-aa4f567bc82f",
      "name": "Volumes Explorados - IF 100%",
      "format": "JSON",
-     "url": "https://dadosabertos.ibama.gov.br/dados/SINAFLOR/VolumeExpIF100/VolumeExpIF100_json.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/VolumesExploradosIf100/volumes_explorados_if_100_json.zip",
      "candidate": "zip",
-     "last_modified": "2024-12-16T13:09:24.776443",
+     "last_modified": "2026-10-08T18:26:13.320801",
      "size": null,
      "attached": false,
      "datastore": null,
@@ -7346,21 +7412,9 @@
   }
  ],
  "delivery": {
-  "probed_at": "2026-10-05T10:43:47+00:00",
+  "probed_at": "2026-10-12T11:09:52+00:00",
   "by_host": {
    "dadosabertos.ibama.gov.br": [
-    {
-     "id": "2873d587-4e02-44c9-a9e6-29bb6c7bacea",
-     "candidate": "csv",
-     "status": 206,
-     "served_by": "dadosabertos.ibama.gov.br",
-     "server": "cloudflare",
-     "accept_ranges": null,
-     "etag": true,
-     "last_modified": true,
-     "content_length": true,
-     "content_type": "text/csv"
-    },
     {
      "id": "d5c0fa8b-b522-446a-a281-15f587783935",
      "candidate": "csv",
@@ -7375,6 +7429,18 @@
     },
     {
      "id": "4aed5817-45fd-49b9-ad42-e5d8addc8621",
+     "candidate": "csv",
+     "status": 206,
+     "served_by": "dadosabertos.ibama.gov.br",
+     "server": "cloudflare",
+     "accept_ranges": null,
+     "etag": true,
+     "last_modified": true,
+     "content_length": true,
+     "content_type": "text/csv"
+    },
+    {
+     "id": "9ae4b7c3-6dd2-4e83-a117-7411c2cad222",
      "candidate": "csv",
      "status": 206,
      "served_by": "dadosabertos.ibama.gov.br",
@@ -7426,6 +7492,18 @@
    ],
    "stibamadadosabertosprd.blob.core.windows.net": [
     {
+     "id": "26417789-b10d-4528-b8aa-13ae8ba2139f",
+     "candidate": "zip",
+     "status": 206,
+     "served_by": "stibamadadosabertosprd.blob.core.windows.net",
+     "server": "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+     "accept_ranges": null,
+     "etag": true,
+     "last_modified": true,
+     "content_length": true,
+     "content_type": "application/octet-stream"
+    },
+    {
      "id": "9f200e1a-dd01-4328-9e44-127b7e7ee966",
      "candidate": "zip",
      "status": 206,
@@ -7439,18 +7517,6 @@
     },
     {
      "id": "aa08a6eb-388e-4c20-bfa5-24cfb979ace9",
-     "candidate": "zip",
-     "status": 206,
-     "served_by": "stibamadadosabertosprd.blob.core.windows.net",
-     "server": "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
-     "accept_ranges": null,
-     "etag": true,
-     "last_modified": true,
-     "content_length": true,
-     "content_type": "application/octet-stream"
-    },
-    {
-     "id": "edf548f1-1920-4003-8c24-6d33b10701da",
      "candidate": "zip",
      "status": 206,
      "served_by": "stibamadadosabertosprd.blob.core.windows.net",

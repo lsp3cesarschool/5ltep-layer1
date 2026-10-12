@@ -1,1 +1,58 @@
-[]
+[
+ {
+  "id": "5263be90fd84f0f8",
+  "kind": "declared",
+  "schema_kind": "declared",
+  "dataset": "sinaflor-empreendimentos-de-base-florestal",
+  "resource_id": "d20eb3a0-7463-462a-b9b7-f289510eda1c",
+  "resource_name": null,
+  "changes": {
+   "fields_removed": [
+    "nome_empreendimento",
+    "cpf_cnpj_empreendedor",
+    "inscricao_estadual",
+    "uf",
+    "municipio",
+    "orgao_ambiental",
+    "competencia_homologacao",
+    "tipo_de_empreendimento",
+    "latitude_empreendimento",
+    "longitude_empreendimento",
+    "atividade",
+    "data_de_homologacao",
+    "situacao_empreendimento",
+    "data_da_situacao",
+    "ultima_atualizacao_relatorio"
+   ],
+   "schema_removed": true
+  }
+ },
+ {
+  "id": "07bd184c74d222c7",
+  "kind": "declared",
+  "schema_kind": "declared",
+  "dataset": "sinaflor-empreendimentos-de-base-florestal",
+  "resource_id": "68dd6c57-9a91-4913-b2ab-dfaac2cbdd8d",
+  "resource_name": null,
+  "changes": {
+   "fields_removed": [
+    "nome_empreendimento",
+    "cpf_cnpj_empreendedor",
+    "inscricao_estadual",
+    "uf",
+    "municipio",
+    "orgao_ambiental",
+    "competencia_homologacao",
+    "tipo_de_empreendimento",
+    "latitude_empreendimento",
+    "longitude_empreendimento",
+    "atividade",
+    "data_de_homologacao",
+    "situacao_empreendimento",
+    "data_da_situacao",
+    "ultima_atualizacao_relatorio"
+   ],
+   "schema_removed": true
+  }
+ }
+]
