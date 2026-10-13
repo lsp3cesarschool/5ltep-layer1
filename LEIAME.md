@@ -16,7 +16,7 @@ Table Schema do Frictionless.
 | 🔀 **Deriva de esquema** | [![issues de deriva](https://img.shields.io/github/issues/lsp3cesarschool/5ltep-layer1/layer1?label=issues%20de%20deriva&color=0366d6)](https://github.com/lsp3cesarschool/5ltep-layer1/issues?q=is%3Aissue+label%3Alayer1): uma issue a cada vez que um arquivo, ou o esquema declarado para ele, muda de estrutura |
 | 🧑‍⚖️ **Esquemas sugeridos** | [pull requests](https://github.com/lsp3cesarschool/5ltep-layer1/pulls?q=is%3Apr+schemas+suggested) com esquemas extraídos de dicionários em PDF, aguardando uma pessoa |
 | 🧪 **Escolha do modelo** | [5ltep-layer1-modeltest](https://github.com/lsp3cesarschool/5ltep-layer1-modeltest): o benchmark que escolhe o LLM para os dicionários em PDF |
-| 🔁 **Experimentos de controle** | [5ltep-layer1-aneel](https://github.com/lsp3cesarschool/5ltep-layer1-aneel) e [5ltep-layer1-recife](https://github.com/lsp3cesarschool/5ltep-layer1-recife): o mesmo código em outros dois portais |
+| 🔁 **Aplicações em outros contextos** | [5ltep-layer1-aneel](https://github.com/lsp3cesarschool/5ltep-layer1-aneel) e [5ltep-layer1-recife](https://github.com/lsp3cesarschool/5ltep-layer1-recife): o mesmo código em outros dois portais |
 
 > **Situação: demonstração de pesquisa.** Esta ferramenta faz parte de um projeto de mestrado e é
 > mantida pelo autor. Não é um serviço oficial do IBAMA (nem da ANEEL, nem do Recife) e não pressupõe

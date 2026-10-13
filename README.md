@@ -15,7 +15,7 @@ and validation of every published file against its declared schema with the Fric
 | 🔀 **Schema drift** | [![drift issues](https://img.shields.io/github/issues/lsp3cesarschool/5ltep-layer1/layer1?label=drift%20issues&color=0366d6)](https://github.com/lsp3cesarschool/5ltep-layer1/issues?q=is%3Aissue+label%3Alayer1): one issue each time a file, or the schema declared for it, changes structure |
 | 🧑‍⚖️ **Suggested schemas** | [pull requests](https://github.com/lsp3cesarschool/5ltep-layer1/pulls?q=is%3Apr+schemas+suggested) with schemas extracted from PDF dictionaries, waiting for a person |
 | 🧪 **Model choice** | [5ltep-layer1-modeltest](https://github.com/lsp3cesarschool/5ltep-layer1-modeltest): the benchmark that picks the LLM for PDF dictionaries |
-| 🔁 **Control experiments** | [5ltep-layer1-aneel](https://github.com/lsp3cesarschool/5ltep-layer1-aneel) and [5ltep-layer1-recife](https://github.com/lsp3cesarschool/5ltep-layer1-recife): the same code on two other portals |
+| 🔁 **Applications in other contexts** | [5ltep-layer1-aneel](https://github.com/lsp3cesarschool/5ltep-layer1-aneel) and [5ltep-layer1-recife](https://github.com/lsp3cesarschool/5ltep-layer1-recife): the same code on two other portals |
 
 > **Status: research demonstration.** This toolkit is part of a master's research project and is
 > maintained by its author. It is not an official IBAMA (or ANEEL, or Recife) service, and it does not
