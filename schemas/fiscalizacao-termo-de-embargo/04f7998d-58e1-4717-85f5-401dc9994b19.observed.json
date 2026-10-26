@@ -40,69 +40,69 @@
   {
    "name": "SER_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.6244
+   "sampleEmptyShare": 0.608
   },
   {
    "name": "DAT_EMBARGO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
-   "sampleEmptyShare": 0.0142
+   "sampleEmptyShare": 0.0118
   },
   {
    "name": "DAT_IMPRESSAO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
-   "sampleEmptyShare": 0.877
+   "sampleEmptyShare": 0.8634
   },
   {
    "name": "FORMA_ENTREGA",
    "type": "string",
-   "sampleEmptyShare": 0.1354
+   "sampleEmptyShare": 0.1376
   },
   {
    "name": "NUM_PROCESSO",
    "type": "string",
-   "sampleEmptyShare": 0.5046
+   "sampleEmptyShare": 0.491
   },
   {
    "name": "DES_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.0288
+   "sampleEmptyShare": 0.025
   },
   {
    "name": "COD_MUNICIPIO",
    "type": "integer",
-   "sampleEmptyShare": 0.0088
+   "sampleEmptyShare": 0.0074
   },
   {
    "name": "MUNICIPIO",
    "type": "string",
-   "sampleEmptyShare": 0.0088
+   "sampleEmptyShare": 0.0074
   },
   {
    "name": "UF",
    "type": "string",
-   "sampleEmptyShare": 0.0088
+   "sampleEmptyShare": 0.0074
   },
   {
    "name": "DES_LOCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.3206
+   "sampleEmptyShare": 0.3016
   },
   {
    "name": "NUM_LONGITUDE_TAD",
    "type": "number",
-   "sampleEmptyShare": 0.057
+   "sampleEmptyShare": 0.0514
   },
   {
    "name": "NUM_LATITUDE_TAD",
    "type": "number",
-   "sampleEmptyShare": 0.055
+   "sampleEmptyShare": 0.0488
   },
   {
    "name": "DETER_PRODES",
    "type": "string",
-   "sampleEmptyShare": 0.9954
+   "sampleEmptyShare": 0.9952
   },
   {
    "name": "ID_POLIGONO",
@@ -124,27 +124,27 @@
    "name": "QTD_AREA_EMBARGADA",
    "type": "number",
    "decimalChar": ",",
-   "sampleEmptyShare": 0.3644
+   "sampleEmptyShare": 0.3702
   },
   {
    "name": "NOME_IMOVEL",
    "type": "string",
-   "sampleEmptyShare": 0.956
+   "sampleEmptyShare": 0.9538
   },
   {
    "name": "TIPO_AREA",
    "type": "string",
-   "sampleEmptyShare": 0.32
+   "sampleEmptyShare": 0.3332
   },
   {
    "name": "GEOM_AREA_EMBARGADA",
    "type": "string",
-   "sampleEmptyShare": 0.2438
+   "sampleEmptyShare": 0.2566
   },
   {
    "name": "UNID_APRESENTACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0142
+   "sampleEmptyShare": 0.0118
   },
   {
    "name": "UNID_CONTROLE",
@@ -154,68 +154,68 @@
   {
    "name": "SIT_DESEMBARGO",
    "type": "string",
-   "sampleEmptyShare": 0.9528
+   "sampleEmptyShare": 0.9508
   },
   {
    "name": "DAT_DESEMBARGO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
-   "sampleEmptyShare": 0.9528
+   "sampleEmptyShare": 0.9508
   },
   {
    "name": "DES_DESEMBARGO",
    "type": "string",
-   "sampleEmptyShare": 0.9528
+   "sampleEmptyShare": 0.9508
   },
   {
    "name": "SEQ_AUTO_INFRACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.3312
+   "sampleEmptyShare": 0.3194
   },
   {
    "name": "SEQ_NOTIFICACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.98
+   "sampleEmptyShare": 0.9764
   },
   {
    "name": "SEQ_ACAO_FISCALIZATORIA",
    "type": "integer",
-   "sampleEmptyShare": 0.2776
+   "sampleEmptyShare": 0.279
   },
   {
    "name": "OPERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.947
+   "sampleEmptyShare": 0.9504
   },
   {
    "name": "SEQ_ORDEM_FISCALIZACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.2606
+   "sampleEmptyShare": 0.2626
   },
   {
    "name": "ORDEM_FISCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.2606
+   "sampleEmptyShare": 0.2626
   },
   {
    "name": "UNID_ORDENADORA",
    "type": "string",
-   "sampleEmptyShare": 0.2606
+   "sampleEmptyShare": 0.2626
   },
   {
    "name": "SEQ_SOLICITACAO_RECURSO",
    "type": "integer",
-   "sampleEmptyShare": 0.3712
+   "sampleEmptyShare": 0.3852
   },
   {
    "name": "SOLICITACAO_RECURSO",
    "type": "number",
-   "sampleEmptyShare": 0.3712
+   "sampleEmptyShare": 0.3852
   },
   {
    "name": "OPERACAO_SOL_RECURSO",
    "type": "string",
-   "sampleEmptyShare": 0.3712
+   "sampleEmptyShare": 0.3852
   },
   {
    "name": "DAT_ULT_ALTERACAO",
@@ -226,12 +226,12 @@
   {
    "name": "TIPO_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.3348
+   "sampleEmptyShare": 0.3552
   },
   {
    "name": "JUSTIFICATIVA_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.3348
+   "sampleEmptyShare": 0.3552
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -242,8 +242,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-12T14:37:07+00:00",
-  "sha256": "6d7e3f494194339606de49cc215eb2365d3c712f7cfb489379d0d0b894559711",
+  "observed_at": "2026-10-26T09:19:30+00:00",
+  "sha256": "f9e35f50aab587e86e1f399aecfbd10077b5e229016a0e08e3eb6a27adcb4a22",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

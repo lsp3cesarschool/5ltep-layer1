@@ -3,7 +3,7 @@
   {
    "name": "SEQ_DOACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.042
+   "sampleEmptyShare": 0.0428
   },
   {
    "name": "NUM_DOACAO",
@@ -13,7 +13,7 @@
   {
    "name": "SER_DOACAO",
    "type": "string",
-   "sampleEmptyShare": 0.1594
+   "sampleEmptyShare": 0.1602
   },
   {
    "name": "COD_SUBSTITUICAO",
@@ -23,12 +23,12 @@
   {
    "name": "SEQ_DOACAO_BEM",
    "type": "integer",
-   "sampleEmptyShare": 0.3292
+   "sampleEmptyShare": 0.3294
   },
   {
    "name": "DES_BEM_APREENDIDO",
    "type": "string",
-   "sampleEmptyShare": 0.0684
+   "sampleEmptyShare": 0.0678
   },
   {
    "name": "DES_TIPO_BEM",
@@ -38,12 +38,12 @@
   {
    "name": "DES_TIPO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.1004
+   "sampleEmptyShare": 0.1012
   },
   {
    "name": "QTD_DOACAO_BEM",
    "type": "number",
-   "sampleEmptyShare": 0.3292
+   "sampleEmptyShare": 0.3294
   },
   {
    "name": "DES_UNIDADE_MEDIDA",
@@ -53,7 +53,7 @@
   {
    "name": "NU_VALOR",
    "type": "integer",
-   "sampleEmptyShare": 0.958
+   "sampleEmptyShare": 0.9572
   },
   {
    "name": "OBS_DOACAO_BEM",
@@ -134,8 +134,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-12T15:07:55+00:00",
-  "sha256": "1c67d6c17acc9908942fd491dd409ac40efc1cff0b4c82a1c3cf2da3026ca1cf",
+  "observed_at": "2026-10-26T12:31:17+00:00",
+  "sha256": "dae9bb646f65df53c5d7d80dbe73edead8b50febd5124a434a25949da4e2fa5c",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

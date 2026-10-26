@@ -5,8 +5,8 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-12T15:21:48+00:00",
- "census_at": "2026-10-12T11:09:52+00:00",
+ "generated_at": "2026-10-26T12:52:44+00:00",
+ "census_at": "2026-10-26T09:13:42+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -97,11 +97,11 @@
  "l1_rate": 0.3333,
  "l1_pass": false,
  "drift": {
-  "observed": 3,
+  "observed": 7,
   "declared": 2,
   "files_with_baseline": 183,
   "first_baseline_at": "2026-10-03T06:20:51+00:00",
-  "last_observed_at": "2026-10-12T15:18:35+00:00"
+  "last_observed_at": "2026-10-26T12:39:55+00:00"
  },
  "coverage": {
   "files": 195,
@@ -160,9 +160,9 @@
   "tables_with_other_formats": 94,
   "other_formats": 170,
   "compared": 170,
-  "same_columns": 113,
+  "same_columns": 115,
   "spelling_only": 23,
-  "different_columns": 34,
+  "different_columns": 32,
   "not_compared": {},
   "by_format": {
    "json": 85,
@@ -173,34 +173,38 @@
   "total": {
    "files": 195,
    "failed_files": 11,
-   "gb": 36.82,
-   "minutes": 342.3,
-   "end_to_end_mb_s": 1.79,
-   "zip_download_mb_s": 25.85,
-   "first_byte_s_median": 0.19,
-   "network_share": 0.022,
-   "network_mb_s": 76.39,
-   "request_failures": {}
+   "gb": 26.01,
+   "minutes": 342.0,
+   "end_to_end_mb_s": 1.27,
+   "zip_download_mb_s": 30.24,
+   "first_byte_s_median": 0.18,
+   "network_share": 0.015,
+   "network_mb_s": 75.38,
+   "request_failures": {
+    "HTTP 404": 9
+   }
   },
   "by_host": {
    "stibamadadosabertosprd.blob.core.windows.net": {
-    "files": 136,
+    "files": 138,
     "failed_files": 1,
-    "gb": 33.51,
-    "minutes": 339.5,
-    "end_to_end_mb_s": 1.64,
-    "zip_download_mb_s": 25.72,
-    "first_byte_s_median": 0.18,
-    "network_share": 0.022,
-    "network_mb_s": 76.39,
-    "request_failures": {}
+    "gb": 22.7,
+    "minutes": 339.3,
+    "end_to_end_mb_s": 1.12,
+    "zip_download_mb_s": 30.16,
+    "first_byte_s_median": 0.16,
+    "network_share": 0.015,
+    "network_mb_s": 75.38,
+    "request_failures": {
+     "HTTP 404": 9
+    }
    },
    "dadosabertos.ibama.gov.br": {
-    "files": 49,
+    "files": 47,
     "failed_files": 0,
     "gb": 3.31,
     "minutes": 2.8,
-    "end_to_end_mb_s": 19.72,
+    "end_to_end_mb_s": 19.99,
     "zip_download_mb_s": 34.71,
     "first_byte_s_median": 0.21,
     "network_share": null,
@@ -242,9 +246,9 @@
    "tables": 199,
    "by_method": {
     "none": 77,
-    "header": 68,
+    "header": 69,
     "description": 49,
-    "name": 5
+    "name": 4
    },
    "fields_listed_in_description": 49
   },
@@ -282,7 +286,7 @@
    "with_spelling_differences": 46,
    "with_similar_names": 21,
    "similar_names": 133,
-   "declared_fields_missing": 283,
+   "declared_fields_missing": 301,
    "formats_inferred_from_data": {
     "trueValues": 16,
     "falseValues": 16,
@@ -304,15 +308,15 @@
   "files": {
    "validated": 183,
    "encodings": {
-    "utf-8-sig": 74,
-    "utf-8": 109
+    "utf-8-sig": 76,
+    "utf-8": 107
    },
    "delimiters": {
     ";": 118
    },
    "with_decode_errors": 0,
    "with_ragged_rows": 2,
-   "zips_with_several_headers": 0,
+   "zips_with_several_headers": 2,
    "with_columns_without_name": 0,
    "not_tabular": 0,
    "not_tables": 4,
@@ -347,11 +351,11 @@
    }
   },
   "delivery": {
-   "probed_at": "2026-10-12T11:09:52+00:00",
+   "probed_at": "2026-10-26T09:13:42+00:00",
    "hosts": {
     "dadosabertos.ibama.gov.br": {
-     "linked": 49,
-     "files": 49,
+     "linked": 47,
+     "files": 47,
      "served_by": [
       "dadosabertos.ibama.gov.br"
      ],
@@ -360,11 +364,11 @@
      ],
      "probes": 3,
      "range": "honoured",
-     "with_etag": 49,
-     "with_last_modified": 49,
+     "with_etag": 47,
+     "with_last_modified": 47,
      "without_validator": 0,
      "without_length": 0,
-     "of": 49,
+     "of": 47,
      "generic_type": 0,
      "typed": 3,
      "content_types": {},
@@ -390,8 +394,8 @@
      "redirect_loops": 0
     },
     "stibamadadosabertosprd.blob.core.windows.net": {
-     "linked": 136,
-     "files": 135,
+     "linked": 138,
+     "files": 137,
      "served_by": [
       "stibamadadosabertosprd.blob.core.windows.net"
      ],
@@ -400,15 +404,15 @@
      ],
      "probes": 3,
      "range": "honoured",
-     "with_etag": 135,
-     "with_last_modified": 135,
+     "with_etag": 137,
+     "with_last_modified": 137,
      "without_validator": 0,
      "without_length": 0,
-     "of": 135,
-     "generic_type": 135,
-     "typed": 135,
+     "of": 137,
+     "generic_type": 137,
+     "typed": 137,
      "content_types": {
-      "application/octet-stream": 135
+      "application/octet-stream": 137
      },
      "broken_links": 0,
      "redirect_loops": 0
@@ -424,8 +428,8 @@
     {
      "id": "media-type",
      "host": "stibamadadosabertosprd.blob.core.windows.net",
-     "n": 135,
-     "of": 135,
+     "n": 137,
+     "of": 137,
      "types": [
       "application/octet-stream"
      ]

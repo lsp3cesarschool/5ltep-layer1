@@ -40,7 +40,7 @@
    "name": "data_de_termino_da_atividade",
    "type": "date",
    "format": "%d/%m/%Y",
-   "sampleEmptyShare": 0.8824
+   "sampleEmptyShare": 0.8834
   },
   {
    "name": "municipio",
@@ -81,8 +81,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-12T14:37:20+00:00",
-  "sha256": "480c1d46450ded9f35ba2c64b3ae530b028ebdf3b7cfaa3939e810b2f44fb945",
+  "observed_at": "2026-10-26T11:52:27+00:00",
+  "sha256": "ce9b4e220de2dc0f263f794aa09116beee53d211f76f78470e2714c345e375f8",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

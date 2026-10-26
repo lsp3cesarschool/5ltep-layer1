@@ -19,7 +19,7 @@
   {
    "name": "CPF_CNPJ",
    "type": "string",
-   "sampleEmptyShare": 0.0088
+   "sampleEmptyShare": 0.009
   },
   {
    "name": "UF",
@@ -70,8 +70,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-12T15:09:34+00:00",
-  "sha256": "5fc26fee1569a6ea18c184af248d373d36b36b298088304b2d9d2a760c94272f",
+  "observed_at": "2026-10-26T12:33:02+00:00",
+  "sha256": "42aa49b81a71f007e077292d48d19cedcaa3f2b8d6ec9cbd0913a5fa8d15b6a1",
   "encoding": "utf-8",
   "delimiter": null,
   "sample_rows": 5000,

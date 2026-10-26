@@ -8,7 +8,7 @@
   {
    "name": "SER_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.3012
+   "sampleEmptyShare": 0.2782
   },
   {
    "name": "NUM_TAD",
@@ -28,7 +28,7 @@
   {
    "name": "NORMA_NUMERO",
    "type": "string",
-   "sampleEmptyShare": 0.4954
+   "sampleEmptyShare": 0.492
   },
   {
    "name": "ARTIGO",
@@ -38,12 +38,12 @@
   {
    "name": "NU_PARAGRAFO",
    "type": "string",
-   "sampleEmptyShare": 0.0062
+   "sampleEmptyShare": 0.0064
   },
   {
    "name": "NU_INCISO",
    "type": "string",
-   "sampleEmptyShare": 0.6446
+   "sampleEmptyShare": 0.6342
   },
   {
    "name": "CD_ALINEA",
@@ -59,8 +59,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-12T15:08:40+00:00",
-  "sha256": "afcc568e02e276b8ad2fd90ff6d918d1d61ff7851408bee909b6af4e9e0828cb",
+  "observed_at": "2026-10-26T12:31:54+00:00",
+  "sha256": "9883557b6b4c108aa906ced51f03081a72b29f45c7383db5b9abf3c49b0309db",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

@@ -60,13 +60,11 @@
   {
    "name": "NUM_LONGITUDE",
    "type": "number",
-   "decimalChar": ",",
    "sampleEmptyShare": 0.7971
   },
   {
    "name": "NUM_LATITUDE",
    "type": "number",
-   "decimalChar": ",",
    "sampleEmptyShare": 0.7971
   },
   {
@@ -119,9 +117,9 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T11:01:49+00:00",
-  "sha256": "04729b34721bdd1af13b0eaf36c1d6a613d7543786a4d9f16bff92275206cb1f",
-  "encoding": "utf-8",
+  "observed_at": "2026-10-26T09:14:48+00:00",
+  "sha256": "4cd2b9eb580cff5d25b80d86bbc9f8a576bc35f0c8361a03e6417a1117d78951",
+  "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 69,
   "tables": 1,

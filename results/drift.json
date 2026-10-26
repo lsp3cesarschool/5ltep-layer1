@@ -99,5 +99,69 @@
   "changes": {
    "columns_reordered": true
   }
+ },
+ {
+  "id": "406881a7cb619267",
+  "kind": "observed",
+  "dataset": "fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b",
+  "resource_id": "2f335d4d-6707-4862-995d-f2fb6c7dd052",
+  "resource_name": "Termo de destruição ou inutilização (série A e B)",
+  "at": "2026-10-26T09:14:48+00:00",
+  "before_sha256": "04729b34721bdd1af13b0eaf36c1d6a613d7543786a4d9f16bff92275206cb1f",
+  "after_sha256": "4cd2b9eb580cff5d25b80d86bbc9f8a576bc35f0c8361a03e6417a1117d78951",
+  "changes": {
+   "encoding": {
+    "before": "utf-8",
+    "after": "utf-8-sig"
+   }
+  }
+ },
+ {
+  "id": "9cec3e8e52d560de",
+  "kind": "observed",
+  "dataset": "evolucao-das-receitas-arrecadadas",
+  "resource_id": "e6a5c7ff-4dea-4b34-bd2e-9486cc6fcd56",
+  "resource_name": "Evolução das Receitas Arrecadadas pelo Ibama",
+  "at": "2026-10-26T09:14:47+00:00",
+  "before_sha256": "34abb820895284fa72869c8f5151235f87b5e8300aaa0b3d47962000d48f0702",
+  "after_sha256": "e8237fc6594e57866ce1c57f5961f24acd86acc46778654ac4d34eda33bf985e",
+  "changes": {
+   "encoding": {
+    "before": "utf-8",
+    "after": "utf-8-sig"
+   }
+  }
+ },
+ {
+  "id": "4e45d1c980261711",
+  "kind": "observed",
+  "dataset": "dof-transportes-de-produtos-florestais",
+  "resource_id": "992f4336-5392-448a-bef1-fff7e7c45d3d",
+  "resource_name": "DOF - Transportes de Produtos Florestais",
+  "at": "2026-10-26T09:29:35+00:00",
+  "before_sha256": "b1d19146f17a8ea94f90bcb3c0c3861ee420e8735ab53de69c343da80c067d2f",
+  "after_sha256": "09b7731df791e0c531fd639e5d6e4a7936cbea350e5b23c5640e6ff135a24bc4",
+  "changes": {
+   "distinct_headers": {
+    "before": 1,
+    "after": 2
+   }
+  }
+ },
+ {
+  "id": "a0831117970b52be",
+  "kind": "observed",
+  "dataset": "dof-transportes-de-produtos-florestais",
+  "resource_id": "a7fe3ed9-8981-495a-9f26-63351422e700",
+  "resource_name": "DOF - Transportes de Produtos Florestais",
+  "at": "2026-10-26T10:55:24+00:00",
+  "before_sha256": "ce04db87137f3701bf4950280dd87b2a1c0198701d73388733305b651c0c945c",
+  "after_sha256": "13a705badba99bb9d4e7f512a2d34682bfa1dbc6d0318e361d085e068b50d1a1",
+  "changes": {
+   "distinct_headers": {
+    "before": 1,
+    "after": 2
+   }
+  }
  }
 ]

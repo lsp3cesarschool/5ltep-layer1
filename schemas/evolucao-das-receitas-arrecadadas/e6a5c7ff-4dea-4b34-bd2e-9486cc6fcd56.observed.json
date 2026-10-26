@@ -12,7 +12,7 @@
   },
   {
    "name": "Valor (R$)",
-   "type": "string",
+   "type": "number",
    "sampleEmptyShare": 0.0
   },
   {
@@ -34,9 +34,9 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-03T10:54:15+00:00",
-  "sha256": "34abb820895284fa72869c8f5151235f87b5e8300aaa0b3d47962000d48f0702",
-  "encoding": "utf-8",
+  "observed_at": "2026-10-26T09:14:47+00:00",
+  "sha256": "e8237fc6594e57866ce1c57f5961f24acd86acc46778654ac4d34eda33bf985e",
+  "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 1081,
   "tables": 1,
