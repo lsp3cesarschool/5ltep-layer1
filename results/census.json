@@ -4,7 +4,7 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-12T11:09:52+00:00",
+ "generated_at": "2026-10-26T09:13:42+00:00",
  "datasets": [
   {
    "name": "antropizacao-dos-biomas-extra-amazonicos",
@@ -794,7 +794,7 @@
    "title": "Evolução das Receitas Arrecadadas",
    "organization": "Dados Abertos",
    "url": "https://dadosabertos.ibama.gov.br/dataset/evolucao-das-receitas-arrecadadas",
-   "metadata_modified": "2021-09-18T12:55:57.443609",
+   "metadata_modified": "2026-10-14T14:59:36.468469",
    "resources_total": 4,
    "dictionaries": [],
    "tables": [
@@ -802,9 +802,9 @@
      "id": "e6a5c7ff-4dea-4b34-bd2e-9486cc6fcd56",
      "name": "Evolução das Receitas Arrecadadas pelo Ibama",
      "format": "CSV",
-     "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/receitas/receitasArrecadadas.csv",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/EVOLUCAO_DAS_RECEITAS_ARRECADADAS/evolucao_das_receitas_arrecadadas.csv",
      "candidate": "csv",
-     "last_modified": "2021-09-16T19:40:35.253892",
+     "last_modified": "2026-10-14T14:58:58.239083",
      "size": null,
      "attached": false,
      "datastore": null,
@@ -814,13 +814,13 @@
        "id": "a36563d7-170b-4e15-a5bb-3888ae7f6e57",
        "name": "Evolução das Receitas Arrecadadas pelo Ibama",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/receitas/receitasArrecadadas.json"
+       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/EVOLUCAO_DAS_RECEITAS_ARRECADADAS/evolucao_das_receitas_arrecadadas.json"
       },
       {
        "id": "21180ea9-463b-41b9-8acc-a266b3142768",
        "name": "Evolução das Receitas Arrecadadas pelo Ibama",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/receitas/receitasArrecadadas.xml"
+       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/EVOLUCAO_DAS_RECEITAS_ARRECADADAS/evolucao_das_receitas_arrecadadas.xml"
       }
      ],
      "link": null,
@@ -2298,7 +2298,7 @@
    "title": "Fiscalização – termo de destruição ou inutilização (série A e B)",
    "organization": "Dados Abertos",
    "url": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b",
-   "metadata_modified": "2025-10-20T12:48:20.118870",
+   "metadata_modified": "2026-10-14T15:04:55.161659",
    "resources_total": 12,
    "dictionaries": [],
    "tables": [
@@ -2306,9 +2306,9 @@
      "id": "2f335d4d-6707-4862-995d-f2fb6c7dd052",
      "name": "Termo de destruição ou inutilização (série A e B)",
      "format": "CSV",
-     "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_destruicao_a_b/destruicao.csv",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/FISCALIZACAO_TERMO_DE_DESTRUICAO_OU_INUTILIZACAO_SERIES_A_e_B/fiscalizacao_termo_de_destruicao_ou_inutilizacao_series_a_e_b.csv",
      "candidate": "csv",
-     "last_modified": "2022-09-28T19:59:36.223850",
+     "last_modified": "2026-10-14T15:04:02.925903",
      "size": null,
      "attached": false,
      "datastore": null,
@@ -2319,13 +2319,13 @@
        "id": "4d751570-70f0-4e50-9abd-53c98b336778",
        "name": "Termo de destruição ou inutilização (série A e B)",
        "format": "json",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_destruicao_a_b/destruicao.json"
+       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/FISCALIZACAO_TERMO_DE_DESTRUICAO_OU_INUTILIZACAO_SERIES_A_e_B/fiscalizacao_termo_de_destruicao_ou_inutilizacao_series_a_e_b.json"
       },
       {
        "id": "04266352-891c-4884-8196-7344dd55ff19",
        "name": "Termo de destruição ou inutilização (série A e B)",
        "format": "xml",
-       "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_destruicao_a_b/destruicao.xml"
+       "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/FISCALIZACAO_TERMO_DE_DESTRUICAO_OU_INUTILIZACAO_SERIES_A_e_B/fiscalizacao_termo_de_destruicao_ou_inutilizacao_series_a_e_b.xml"
       }
      ],
      "link": {
@@ -4697,19 +4697,6 @@
      "attached": false,
      "datastore": null,
      "described": 0,
-     "header_peeked": [
-      "CNPJ",
-      "Ano do relatório",
-      "CNPJ do ponto de coleta",
-      "Ponto de coleta",
-      "CEP",
-      "Endereço",
-      "Bairro",
-      "UF",
-      "Município",
-      "Sítio na internet",
-      "Acondicionamento"
-     ],
      "link": {
       "dictionary": "933f121d-14ca-4f41-88fb-19906c7303ed",
       "part": 0,
@@ -5159,17 +5146,6 @@
      "attached": false,
      "datastore": null,
      "described": 0,
-     "header_peeked": [
-      "CNPJ",
-      "Ano do relatório",
-      "Tipo de pilhas ou baterias",
-      "Modelo de pilhas ou baterias",
-      "Peso unitário (kg)",
-      "Quantidade importada (un)",
-      "Peso total importado (kg)",
-      "NCM",
-      "Laudo"
-     ],
      "link": {
       "dictionary": "be344f38-bdfa-4ab5-aeab-e17a47dcf921",
       "part": 0,
@@ -5189,17 +5165,6 @@
      "attached": false,
      "datastore": null,
      "described": 0,
-     "header_peeked": [
-      "CNPJ",
-      "Ano_do_relatorio",
-      "Tipo_de_pilhas_ou_baterias",
-      "Modelo_de_pilhas_ou_baterias",
-      "Peso_unitario__kg_",
-      "Quantidade_importada__un_",
-      "Peso_total_importado__kg_",
-      "NCM",
-      "Laudo"
-     ],
      "link": {
       "dictionary": "be344f38-bdfa-4ab5-aeab-e17a47dcf921",
       "part": 0,
@@ -5219,17 +5184,6 @@
      "attached": false,
      "datastore": null,
      "described": 0,
-     "header_peeked": [
-      "CNPJ",
-      "Ano do relatório",
-      "Tipo de pilhas ou baterias",
-      "Modelo de pilhas ou baterias",
-      "Peso unitário (kg)",
-      "Quantidade importada (un)",
-      "Peso total importado (kg)",
-      "NCM",
-      "Laudo"
-     ],
      "link": {
       "dictionary": "be344f38-bdfa-4ab5-aeab-e17a47dcf921",
       "part": 0,
@@ -5363,12 +5317,6 @@
      "attached": false,
      "datastore": null,
      "described": 0,
-     "header_peeked": [
-      "CNPJ",
-      "Ano do relatório",
-      "CPF/CNPJ Transportador",
-      "Frequência de Recolhimento"
-     ],
      "link": {
       "dictionary": "7f7bb05d-1e89-45fb-b6d0-49decfad20a4",
       "part": 0,
@@ -5388,12 +5336,6 @@
      "attached": false,
      "datastore": null,
      "described": 0,
-     "header_peeked": [
-      "CNPJ",
-      "Ano_do_relatorio",
-      "CPF_CNPJ_Transportador",
-      "Frequencia_de_Recolhimento"
-     ],
      "link": {
       "dictionary": "7f7bb05d-1e89-45fb-b6d0-49decfad20a4",
       "part": 0,
@@ -5413,12 +5355,6 @@
      "attached": false,
      "datastore": null,
      "described": 0,
-     "header_peeked": [
-      "CNPJ",
-      "Ano do relatório",
-      "CPF/CNPJ Transportador",
-      "Frequência de Recolhimento"
-     ],
      "link": {
       "dictionary": "7f7bb05d-1e89-45fb-b6d0-49decfad20a4",
       "part": 0,
@@ -6230,8 +6166,8 @@
      "link": {
       "dictionary": "27303f72-d183-475d-a535-f6b3b7feef7e",
       "part": 0,
-      "method": "name",
-      "score": 0.5
+      "method": "header",
+      "score": 1.0
      },
      "level": 2
     }
@@ -7412,7 +7348,7 @@
   }
  ],
  "delivery": {
-  "probed_at": "2026-10-12T11:09:52+00:00",
+  "probed_at": "2026-10-26T09:13:42+00:00",
   "by_host": {
    "dadosabertos.ibama.gov.br": [
     {
