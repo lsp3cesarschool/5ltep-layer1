@@ -33,7 +33,7 @@
   {
    "name": "Código do Imóvel no Incra",
    "type": "string",
-   "sampleEmptyShare": 0.0
+   "sampleEmptyShare": 0.0002
   },
   {
    "name": "Nome do Imóvel",
@@ -63,17 +63,17 @@
   {
    "name": "Área Total do Imóvel(ATI)",
    "type": "number",
-   "sampleEmptyShare": 0.0052
+   "sampleEmptyShare": 0.0044
   },
   {
    "name": "APP(ha)",
    "type": "number",
-   "sampleEmptyShare": 0.1684
+   "sampleEmptyShare": 0.162
   },
   {
    "name": "Reserva Legal(ha)",
    "type": "number",
-   "sampleEmptyShare": 0.7274
+   "sampleEmptyShare": 0.7314
   },
   {
    "name": "Sobreposição ARL (ha)",
@@ -83,7 +83,7 @@
   {
    "name": "Área Líquida ARL (ha)",
    "type": "number",
-   "sampleEmptyShare": 0.7274
+   "sampleEmptyShare": 0.7314
   },
   {
    "name": "Área RPPN (ha)",
@@ -108,7 +108,7 @@
   {
    "name": "Área AIE (ha)",
    "type": "number",
-   "sampleEmptyShare": 0.9778
+   "sampleEmptyShare": 0.9762
   },
   {
    "name": "Sobreposição AIE (ha)",
@@ -123,7 +123,7 @@
   {
    "name": "Área Líquida AIE (ha)",
    "type": "number",
-   "sampleEmptyShare": 0.9778
+   "sampleEmptyShare": 0.9762
   },
   {
    "name": "Área Servidão Ambiental (ha)",
@@ -188,7 +188,7 @@
   {
    "name": "Reflorestamento (ha)",
    "type": "number",
-   "sampleEmptyShare": 0.9148
+   "sampleEmptyShare": 0.913
   },
   {
    "name": "Pastagens (ha)",
@@ -239,8 +239,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-26T12:00:37+00:00",
-  "sha256": "b3bbdafd2e48611af1eb7e96ea82c959d3560fee94a9494da1e6eb061340a30a",
+  "observed_at": "2026-11-02T11:45:00+00:00",
+  "sha256": "b06f9ec11595f8cff6af08fc9a88ed90c2bdc20e9e7fb66c5da4dbc9b706360f",
   "encoding": "utf-8",
   "delimiter": ";",
   "sample_rows": 5000,

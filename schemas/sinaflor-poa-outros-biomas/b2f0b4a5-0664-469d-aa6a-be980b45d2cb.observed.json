@@ -55,12 +55,12 @@
   {
    "name": "IMOVEL_RURAL_VINCULADO",
    "type": "string",
-   "sampleEmptyShare": 0.2397
+   "sampleEmptyShare": 0.2395
   },
   {
    "name": "NRO_CAR_IMOVEL_RURAL",
    "type": "string",
-   "sampleEmptyShare": 0.2397
+   "sampleEmptyShare": 0.2395
   },
   {
    "name": "NOME_EMPREENDIMENTO_VINC",
@@ -122,7 +122,7 @@
   {
    "name": "AREA_MANEJO_FLORESTAL",
    "type": "string",
-   "sampleEmptyShare": 0.0572
+   "sampleEmptyShare": 0.0571
   },
   {
    "name": "NRO_UPA",
@@ -209,11 +209,11 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-26T11:55:31+00:00",
-  "sha256": "92c80ca70df890c833df5657158989b4a94798420297911912442479fc41635d",
+  "observed_at": "2026-11-02T11:40:32+00:00",
+  "sha256": "30e01c8e3829213a9e1ec61e7b38582ae08e70253234694e7c2e6de15e9fe5ee",
   "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 2833,
+  "sample_rows": 2835,
   "tables": 1,
   "distinct_headers": 1
  }

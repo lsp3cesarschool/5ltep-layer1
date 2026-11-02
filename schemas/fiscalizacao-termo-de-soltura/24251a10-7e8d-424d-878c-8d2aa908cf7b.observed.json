@@ -3,7 +3,7 @@
   {
    "name": "SEQ_SOLTURA",
    "type": "string",
-   "sampleEmptyShare": 0.9216
+   "sampleEmptyShare": 0.9218
   },
   {
    "name": "NUM_SOLTURA",
@@ -18,7 +18,7 @@
   {
    "name": "COD_SUBSTITUICAO",
    "type": "string",
-   "sampleEmptyShare": 0.9841
+   "sampleEmptyShare": 0.9842
   },
   {
    "name": "DES_STATUS_FORMULARIO",
@@ -75,24 +75,24 @@
   {
    "name": "DES_LOCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0671
+   "sampleEmptyShare": 0.0669
   },
   {
    "name": "NUM_LONGITUDE",
    "type": "number",
    "decimalChar": ",",
-   "sampleEmptyShare": 0.065
+   "sampleEmptyShare": 0.0648
   },
   {
    "name": "NUM_LATITUDE",
    "type": "number",
    "decimalChar": ",",
-   "sampleEmptyShare": 0.065
+   "sampleEmptyShare": 0.0648
   },
   {
    "name": "FORMA_ENTREGA",
    "type": "string",
-   "sampleEmptyShare": 0.9216
+   "sampleEmptyShare": 0.9218
   },
   {
    "name": "UNID_APRESENTACAO",
@@ -107,28 +107,28 @@
   {
    "name": "DES_JUSTIFICATIVA",
    "type": "string",
-   "sampleEmptyShare": 0.3293
+   "sampleEmptyShare": 0.3291
   },
   {
    "name": "DAT_ALTERACAO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
-   "sampleEmptyShare": 0.9216
+   "sampleEmptyShare": 0.9218
   },
   {
    "name": "TIPO_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.9216
+   "sampleEmptyShare": 0.9218
   },
   {
    "name": "JUSTIFICATIVA_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.8941
+   "sampleEmptyShare": 0.8945
   },
   {
    "name": "DES_OBSERVACAO",
    "type": "string",
-   "sampleEmptyShare": 0.5319
+   "sampleEmptyShare": 0.5313
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -139,11 +139,11 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-26T11:52:21+00:00",
-  "sha256": "b4dbcd4e13d21597476630b40ba169106f3eb98062353aea7e48b2027d1855bd",
+  "observed_at": "2026-11-02T11:37:07+00:00",
+  "sha256": "d6edafd6f48928a23546408ec02cee3fbd6a92ef973f3a121c29966063a56495",
   "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 3277,
+  "sample_rows": 3288,
   "tables": 1,
   "distinct_headers": 1
  }

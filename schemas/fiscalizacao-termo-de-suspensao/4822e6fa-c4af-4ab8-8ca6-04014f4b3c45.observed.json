@@ -105,7 +105,7 @@
   {
    "name": "DES_JUSTIFICATIVA",
    "type": "string",
-   "sampleEmptyShare": 0.1802
+   "sampleEmptyShare": 0.177
   },
   {
    "name": "FORMA_ENTREGA",
@@ -125,12 +125,12 @@
   {
    "name": "SEQ_AUTO_INFRACAO",
    "type": "number",
-   "sampleEmptyShare": 0.6404
+   "sampleEmptyShare": 0.6462
   },
   {
    "name": "NUM_AUTO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.6404
+   "sampleEmptyShare": 0.6462
   },
   {
    "name": "SEQ_NOTIFICACAO",
@@ -186,12 +186,12 @@
   {
    "name": "TIPO_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.04
+   "sampleEmptyShare": 0.0354
   },
   {
    "name": "JUSTIFICATIVA_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.04
+   "sampleEmptyShare": 0.0354
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -202,8 +202,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-26T12:31:50+00:00",
-  "sha256": "65a56453f92b18d6a502799e23130759acca6d9038bf1dcb200539c6983112a8",
+  "observed_at": "2026-11-02T12:21:07+00:00",
+  "sha256": "108b7808d13f8eeaf5871ea43daed757e8c6eed0e9b558f6819b274435644b5f",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

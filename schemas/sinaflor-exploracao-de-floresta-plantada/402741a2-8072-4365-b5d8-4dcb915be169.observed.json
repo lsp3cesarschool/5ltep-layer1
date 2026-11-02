@@ -77,17 +77,17 @@
   {
    "name": "NOME_DO_RT",
    "type": "string",
-   "sampleEmptyShare": 0.2202
+   "sampleEmptyShare": 0.22
   },
   {
    "name": "NRO_ART",
    "type": "integer",
-   "sampleEmptyShare": 0.2202
+   "sampleEmptyShare": 0.22
   },
   {
    "name": "ATIVIDADE_RT",
    "type": "string",
-   "sampleEmptyShare": 0.2202
+   "sampleEmptyShare": 0.22
   },
   {
    "name": "ATIVIDADE",
@@ -220,8 +220,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-26T11:55:20+00:00",
-  "sha256": "70eb3c8ab51aed02cd5790bdd590c70b1b7bd08515950dcd81b68227bf397023",
+  "observed_at": "2026-11-02T11:40:14+00:00",
+  "sha256": "ada21c137cd43bffba7857039e7bab51bb18997123c4c9f46da90fea609c2e7b",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

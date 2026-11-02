@@ -33,7 +33,7 @@
   {
    "name": "Codigo_do_Imovel_no_Incra",
    "type": "string",
-   "sampleEmptyShare": 0.0
+   "sampleEmptyShare": 0.0002
   },
   {
    "name": "Nome_do_Imovel",
@@ -63,17 +63,17 @@
   {
    "name": "Area_Total_do_Imovel_ATI",
    "type": "number",
-   "sampleEmptyShare": 0.0052
+   "sampleEmptyShare": 0.0044
   },
   {
    "name": "APP_ha",
    "type": "number",
-   "sampleEmptyShare": 0.1684
+   "sampleEmptyShare": 0.162
   },
   {
    "name": "Reserva_Legal_ha",
    "type": "number",
-   "sampleEmptyShare": 0.7274
+   "sampleEmptyShare": 0.7314
   },
   {
    "name": "Sobreposicao_ARL_ha",
@@ -83,7 +83,7 @@
   {
    "name": "Area_Liquida_ARL_ha",
    "type": "number",
-   "sampleEmptyShare": 0.7274
+   "sampleEmptyShare": 0.7314
   },
   {
    "name": "Area_RPPN_ha",
@@ -108,7 +108,7 @@
   {
    "name": "Area_AIE_ha",
    "type": "number",
-   "sampleEmptyShare": 0.9778
+   "sampleEmptyShare": 0.9762
   },
   {
    "name": "Sobreposicao_AIE_ha",
@@ -123,7 +123,7 @@
   {
    "name": "Area_Liquida_AIE_ha",
    "type": "number",
-   "sampleEmptyShare": 0.9778
+   "sampleEmptyShare": 0.9762
   },
   {
    "name": "Area_Servidao_Ambiental_ha",
@@ -188,7 +188,7 @@
   {
    "name": "Reflorestamento_ha",
    "type": "number",
-   "sampleEmptyShare": 0.9148
+   "sampleEmptyShare": 0.913
   },
   {
    "name": "Pastagens_ha",
@@ -239,8 +239,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-26T12:00:56+00:00",
-  "sha256": "5f9053fd38ecbcb014f43db67913f4e2acf63d1b4b8dde8848080aafb6969501",
+  "observed_at": "2026-11-02T11:45:38+00:00",
+  "sha256": "cb834b793ce66e14d5328e1c61cdf6a0d41a5318d023ba6b7235319eb21da9f6",
   "encoding": "utf-8",
   "delimiter": null,
   "sample_rows": 5000,

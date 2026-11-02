@@ -5,8 +5,8 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-10-26T12:52:44+00:00",
- "census_at": "2026-10-26T09:13:42+00:00",
+ "generated_at": "2026-11-02T12:37:26+00:00",
+ "census_at": "2026-11-02T11:31:17+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -100,8 +100,8 @@
   "observed": 7,
   "declared": 2,
   "files_with_baseline": 183,
-  "first_baseline_at": "2026-10-03T06:20:51+00:00",
-  "last_observed_at": "2026-10-26T12:39:55+00:00"
+  "first_baseline_at": "2026-10-12T11:10:55+00:00",
+  "last_observed_at": "2026-11-02T12:33:20+00:00"
  },
  "coverage": {
   "files": 195,
@@ -173,28 +173,28 @@
   "total": {
    "files": 195,
    "failed_files": 11,
-   "gb": 26.01,
-   "minutes": 342.0,
-   "end_to_end_mb_s": 1.27,
-   "zip_download_mb_s": 30.24,
-   "first_byte_s_median": 0.18,
+   "gb": 26.02,
+   "minutes": 351.3,
+   "end_to_end_mb_s": 1.23,
+   "zip_download_mb_s": 30.56,
+   "first_byte_s_median": 0.16,
    "network_share": 0.015,
-   "network_mb_s": 75.38,
+   "network_mb_s": 81.54,
    "request_failures": {
-    "HTTP 404": 9
+    "HTTP 404": 15
    }
   },
   "by_host": {
    "stibamadadosabertosprd.blob.core.windows.net": {
     "files": 138,
     "failed_files": 1,
-    "gb": 22.7,
-    "minutes": 339.3,
-    "end_to_end_mb_s": 1.12,
-    "zip_download_mb_s": 30.16,
+    "gb": 22.72,
+    "minutes": 345.7,
+    "end_to_end_mb_s": 1.1,
+    "zip_download_mb_s": 30.58,
     "first_byte_s_median": 0.16,
-    "network_share": 0.015,
-    "network_mb_s": 75.38,
+    "network_share": 0.014,
+    "network_mb_s": 75.91,
     "request_failures": {
      "HTTP 404": 9
     }
@@ -203,13 +203,15 @@
     "files": 47,
     "failed_files": 0,
     "gb": 3.31,
-    "minutes": 2.8,
-    "end_to_end_mb_s": 19.99,
-    "zip_download_mb_s": 34.71,
-    "first_byte_s_median": 0.21,
-    "network_share": null,
-    "network_mb_s": null,
-    "request_failures": {}
+    "minutes": 5.6,
+    "end_to_end_mb_s": 9.79,
+    "zip_download_mb_s": 29.37,
+    "first_byte_s_median": 0.05,
+    "network_share": 0.059,
+    "network_mb_s": 166.35,
+    "request_failures": {
+     "HTTP 404": 6
+    }
    },
    "siscom.ibama.gov.br": {
     "files": 10,
@@ -351,7 +353,7 @@
    }
   },
   "delivery": {
-   "probed_at": "2026-10-26T09:13:42+00:00",
+   "probed_at": "2026-11-02T11:31:17+00:00",
    "hosts": {
     "dadosabertos.ibama.gov.br": {
      "linked": 47,
@@ -370,8 +372,11 @@
      "without_length": 0,
      "of": 47,
      "generic_type": 0,
-     "typed": 3,
-     "content_types": {},
+     "typed": 47,
+     "content_types": {
+      "text/csv": 29,
+      "application/zip": 18
+     },
      "broken_links": 0,
      "redirect_loops": 0
     },

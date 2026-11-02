@@ -45,7 +45,7 @@
    "name": "Data de término da atividade",
    "type": "date",
    "format": "%d/%m/%Y",
-   "sampleEmptyShare": 0.4538
+   "sampleEmptyShare": 0.4546
   },
   {
    "name": "Potenc. de Pol. da atividade",
@@ -102,8 +102,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-26T11:52:29+00:00",
-  "sha256": "8a7bd805da745abbba6303e58215f9498d0b5e74e532a4c15d124a2d264a2822",
+  "observed_at": "2026-11-02T11:37:23+00:00",
+  "sha256": "ae1b92de94c618f70a6d5a891fe62260a3e0fb8f687ea2d1c177055e5925db78",
   "encoding": "utf-8",
   "delimiter": ";",
   "sample_rows": 5000,

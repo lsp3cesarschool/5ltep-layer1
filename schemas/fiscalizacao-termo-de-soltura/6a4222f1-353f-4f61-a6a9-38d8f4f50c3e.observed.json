@@ -28,7 +28,7 @@
   {
    "name": "SQ_ENQUADRAMENTO",
    "type": "integer",
-   "sampleEmptyShare": 0.019
+   "sampleEmptyShare": 0.0164
   },
   {
    "name": "ADMINISTRATIVO",
@@ -38,27 +38,27 @@
   {
    "name": "NORMA_TIPO",
    "type": "string",
-   "sampleEmptyShare": 0.019
+   "sampleEmptyShare": 0.0164
   },
   {
    "name": "NORMA_NUMERO",
    "type": "string",
-   "sampleEmptyShare": 0.565
+   "sampleEmptyShare": 0.589
   },
   {
    "name": "ARTIGO",
    "type": "string",
-   "sampleEmptyShare": 0.0202
+   "sampleEmptyShare": 0.0172
   },
   {
    "name": "NU_PARAGRAFO",
    "type": "string",
-   "sampleEmptyShare": 0.7638
+   "sampleEmptyShare": 0.786
   },
   {
    "name": "NU_INCISO",
    "type": "string",
-   "sampleEmptyShare": 0.9712
+   "sampleEmptyShare": 0.9734
   },
   {
    "name": "CD_ALINEA",
@@ -74,8 +74,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-10-26T11:52:23+00:00",
-  "sha256": "7428e1927604d038515e6951a39dac29540103de71b3a38e3393a43c9b8588fa",
+  "observed_at": "2026-11-02T11:37:12+00:00",
+  "sha256": "58b1506a822e8577d7f4265ca3b09ef248f5a53c45930846f96ceaf8e13e3e5f",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,
