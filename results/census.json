@@ -4,7 +4,7 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-11-02T11:31:17+00:00",
+ "generated_at": "2026-11-09T11:54:33+00:00",
  "datasets": [
   {
    "name": "antropizacao-dos-biomas-extra-amazonicos",
@@ -7348,7 +7348,7 @@
   }
  ],
  "delivery": {
-  "probed_at": "2026-11-02T11:31:17+00:00",
+  "probed_at": "2026-11-09T11:54:33+00:00",
   "by_host": {
    "dadosabertos.ibama.gov.br": [
     {
