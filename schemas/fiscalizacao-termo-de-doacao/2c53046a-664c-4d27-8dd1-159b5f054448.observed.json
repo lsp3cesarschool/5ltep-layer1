@@ -8,17 +8,17 @@
   {
    "name": "SEQ_DOACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.8738
+   "sampleEmptyShare": 0.8748
   },
   {
    "name": "NUM_DOACAO",
    "type": "string",
-   "sampleEmptyShare": 0.8738
+   "sampleEmptyShare": 0.8748
   },
   {
    "name": "SER_DOACAO",
    "type": "string",
-   "sampleEmptyShare": 0.9568
+   "sampleEmptyShare": 0.958
   },
   {
    "name": "COD_SUBSTITUICAO",
@@ -44,58 +44,58 @@
   {
    "name": "DAT_DOACAO",
    "type": "string",
-   "sampleEmptyShare": 0.8738
+   "sampleEmptyShare": 0.8748
   },
   {
    "name": "DAT_ALTERACAO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
-   "sampleEmptyShare": 0.8738
+   "sampleEmptyShare": 0.8748
   },
   {
    "name": "TIPO_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.9146
+   "sampleEmptyShare": 0.9158
   },
   {
    "name": "JUSTIFICATIVA_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.8658
+   "sampleEmptyShare": 0.8668
   },
   {
    "name": "NUM_PESSOA_RECEBEDOR",
    "type": "integer",
-   "sampleEmptyShare": 0.2454
+   "sampleEmptyShare": 0.2444
   },
   {
    "name": "NOME_RECEBEDOR",
    "type": "string",
-   "sampleEmptyShare": 0.0972
+   "sampleEmptyShare": 0.096
   },
   {
    "name": "NUM_CPF_CNPJ_RECEBEDOR",
    "type": "string",
-   "sampleEmptyShare": 0.102
+   "sampleEmptyShare": 0.1008
   },
   {
    "name": "NUM_PROCESSO",
    "type": "string",
-   "sampleEmptyShare": 0.0608
+   "sampleEmptyShare": 0.0598
   },
   {
    "name": "DES_JUSTIFICATIVA",
    "type": "string",
-   "sampleEmptyShare": 0.0786
+   "sampleEmptyShare": 0.0774
   },
   {
    "name": "DES_OBSERVACAO",
    "type": "string",
-   "sampleEmptyShare": 0.9496
+   "sampleEmptyShare": 0.9494
   },
   {
    "name": "VALOR_DOACAO",
    "type": "number",
-   "sampleEmptyShare": 0.9282
+   "sampleEmptyShare": 0.928
   },
   {
    "name": "COD_MUNICIPIO",
@@ -120,87 +120,87 @@
   {
    "name": "NUM_LONGITUDE",
    "type": "number",
-   "sampleEmptyShare": 0.066
+   "sampleEmptyShare": 0.0648
   },
   {
    "name": "NUM_LATITUDE",
    "type": "number",
-   "sampleEmptyShare": 0.066
+   "sampleEmptyShare": 0.0648
   },
   {
    "name": "FORMA_ENTREGA",
    "type": "string",
-   "sampleEmptyShare": 0.907
+   "sampleEmptyShare": 0.9068
   },
   {
    "name": "UNID_APRESENTACAO",
    "type": "string",
-   "sampleEmptyShare": 0.1262
+   "sampleEmptyShare": 0.1252
   },
   {
    "name": "UNID_CONTROLE",
    "type": "string",
-   "sampleEmptyShare": 0.8746
+   "sampleEmptyShare": 0.8756
   },
   {
    "name": "DS_COMPLEMENTAR",
    "type": "string",
-   "sampleEmptyShare": 0.5332
+   "sampleEmptyShare": 0.5326
   },
   {
    "name": "SEQ_AUTO_INFRACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.5188
+   "sampleEmptyShare": 0.52
   },
   {
    "name": "NUM_AUTO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.507
+   "sampleEmptyShare": 0.5082
   },
   {
    "name": "SER_AUTO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.9634
+   "sampleEmptyShare": 0.9646
   },
   {
    "name": "SEQ_ACAO_FISCALIZATORIA",
    "type": "integer",
-   "sampleEmptyShare": 0.1512
+   "sampleEmptyShare": 0.149
   },
   {
    "name": "CD_ACAO_FISCALIZATORIA",
    "type": "string",
-   "sampleEmptyShare": 0.075
+   "sampleEmptyShare": 0.0738
   },
   {
    "name": "SEQ_ORDEM_FISCALIZACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.0612
+   "sampleEmptyShare": 0.06
   },
   {
    "name": "NUM_ORDEM_FISCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0612
+   "sampleEmptyShare": 0.06
   },
   {
    "name": "UNID_ORDENADORA",
    "type": "string",
-   "sampleEmptyShare": 0.0612
+   "sampleEmptyShare": 0.06
   },
   {
    "name": "SEQ_SOLICITACAO_RECURSO",
    "type": "integer",
-   "sampleEmptyShare": 0.0786
+   "sampleEmptyShare": 0.0774
   },
   {
    "name": "NUM_SOLICITACAO_RECURSO",
    "type": "number",
-   "sampleEmptyShare": 0.0786
+   "sampleEmptyShare": 0.0774
   },
   {
    "name": "OPERACAO_SOL_RECURSO",
    "type": "string",
-   "sampleEmptyShare": 0.0786
+   "sampleEmptyShare": 0.0774
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -211,8 +211,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T12:20:27+00:00",
-  "sha256": "e23ba87f5efc92de0175183ec3d137ddbd0ac12c591d5468d3d3b259f6940573",
+  "observed_at": "2026-11-09T13:45:00+00:00",
+  "sha256": "17e6f63e5989e5139da6cf9b0b276174264532a25878cf6b7a35904a2105e242",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

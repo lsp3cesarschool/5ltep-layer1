@@ -5,8 +5,8 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-11-02T12:37:26+00:00",
- "census_at": "2026-11-02T11:31:17+00:00",
+ "generated_at": "2026-11-09T13:53:57+00:00",
+ "census_at": "2026-11-09T11:54:33+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -23,7 +23,7 @@
   "copies_once": 0
  },
  "environment": {
-  "python": "3.11.17"
+  "python": "3.11.18"
  },
  "datasets": {
   "total": 79,
@@ -100,8 +100,8 @@
   "observed": 7,
   "declared": 2,
   "files_with_baseline": 183,
-  "first_baseline_at": "2026-10-12T11:10:55+00:00",
-  "last_observed_at": "2026-11-02T12:33:20+00:00"
+  "first_baseline_at": "2026-11-02T11:32:15+00:00",
+  "last_observed_at": "2026-11-09T13:51:55+00:00"
  },
  "coverage": {
   "files": 195,
@@ -173,30 +173,30 @@
   "total": {
    "files": 195,
    "failed_files": 11,
-   "gb": 26.02,
-   "minutes": 351.3,
-   "end_to_end_mb_s": 1.23,
-   "zip_download_mb_s": 30.56,
-   "first_byte_s_median": 0.16,
-   "network_share": 0.015,
-   "network_mb_s": 81.54,
+   "gb": 23.37,
+   "minutes": 195.5,
+   "end_to_end_mb_s": 1.99,
+   "zip_download_mb_s": 26.31,
+   "first_byte_s_median": 0.18,
+   "network_share": 0.039,
+   "network_mb_s": 51.23,
    "request_failures": {
-    "HTTP 404": 15
+    "HTTP 404": 16
    }
   },
   "by_host": {
    "stibamadadosabertosprd.blob.core.windows.net": {
     "files": 138,
     "failed_files": 1,
-    "gb": 22.72,
-    "minutes": 345.7,
-    "end_to_end_mb_s": 1.1,
-    "zip_download_mb_s": 30.58,
-    "first_byte_s_median": 0.16,
-    "network_share": 0.014,
-    "network_mb_s": 75.91,
+    "gb": 20.06,
+    "minutes": 189.9,
+    "end_to_end_mb_s": 1.76,
+    "zip_download_mb_s": 26.27,
+    "first_byte_s_median": 0.19,
+    "network_share": 0.038,
+    "network_mb_s": 45.98,
     "request_failures": {
-     "HTTP 404": 9
+     "HTTP 404": 10
     }
    },
    "dadosabertos.ibama.gov.br": {
@@ -353,7 +353,7 @@
    }
   },
   "delivery": {
-   "probed_at": "2026-11-02T11:31:17+00:00",
+   "probed_at": "2026-11-09T11:54:33+00:00",
    "hosts": {
     "dadosabertos.ibama.gov.br": {
      "linked": 47,

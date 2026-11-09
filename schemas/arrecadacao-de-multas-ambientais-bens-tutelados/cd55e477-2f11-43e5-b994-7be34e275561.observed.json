@@ -43,7 +43,7 @@
   {
    "name": "Enquadramento Legal",
    "type": "string",
-   "sampleEmptyShare": 0.6638
+   "sampleEmptyShare": 0.664
   },
   {
    "name": "Data Auto",
@@ -96,8 +96,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T11:42:39+00:00",
-  "sha256": "9bb4fce9c547f4ce8d68283b443abb5225818603ae8bee50fc2ec4fd8adfe217",
+  "observed_at": "2026-11-09T13:26:10+00:00",
+  "sha256": "3fe2d58c6e2bfe60250bd69ca3c2fd200e6d13c6fd8787cd0a67cbe357ebb54e",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

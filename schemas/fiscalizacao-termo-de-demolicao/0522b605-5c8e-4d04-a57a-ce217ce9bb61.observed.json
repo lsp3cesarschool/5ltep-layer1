@@ -66,7 +66,7 @@
   {
    "name": "NUM_PROCESSO",
    "type": "string",
-   "sampleEmptyShare": 0.1186
+   "sampleEmptyShare": 0.1176
   },
   {
    "name": "DES_TAD",
@@ -151,7 +151,7 @@
   {
    "name": "SEQ_ACAO_FISCALIZATORIA",
    "type": "integer",
-   "sampleEmptyShare": 0.0978
+   "sampleEmptyShare": 0.0968
   },
   {
    "name": "CD_ACAO_FISCALIZATORIA",
@@ -213,8 +213,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T12:20:03+00:00",
-  "sha256": "026739bd04d1c1dfab002f04103c2c827f1e8eec4273a904a49759e0a01c75cf",
+  "observed_at": "2026-11-09T13:44:39+00:00",
+  "sha256": "76e44629b33eb096811048eff37d89bc01e7f4e68436750a9a813562c1caffb5",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 1012,

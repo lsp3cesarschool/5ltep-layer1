@@ -3,7 +3,7 @@
   {
    "name": "NRO_REGISTRO",
    "type": "integer",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "DATA_DE_EMISSAO",
@@ -19,7 +19,7 @@
   {
    "name": "NRO_AUTORIZACAO_ORIGINAL",
    "type": "string",
-   "sampleEmptyShare": 0.6938
+   "sampleEmptyShare": 0.6942
   },
   {
    "name": "DATA_DE_VALIDADE",
@@ -87,7 +87,7 @@
   {
    "name": "ATIVIDADE_RT",
    "type": "string",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "ATIVIDADE",
@@ -97,12 +97,12 @@
   {
    "name": "TIPO_DE_EMPREENDIMENTO",
    "type": "string",
-   "sampleEmptyShare": 0.5404
+   "sampleEmptyShare": 0.5394
   },
   {
    "name": "NATUREZA_JURIDICA",
    "type": "string",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "COMPETENCIA_AVALIACAO",
@@ -117,77 +117,77 @@
   {
    "name": "MODALIDADE_PMFS",
    "type": "string",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "CLIMA",
    "type": "string",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "SOLO",
    "type": "string",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "BIOMA",
    "type": "string",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "FITOFISIONOMIA",
    "type": "string",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "METODO_EXTRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "SISTEMA_SILVICULTURAL",
    "type": "string",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "CICLO_CORTE",
    "type": "number",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "AREA_TOTAL_PROPRIEDADE",
    "type": "number",
-   "sampleEmptyShare": 0.537
+   "sampleEmptyShare": 0.536
   },
   {
    "name": "AREA_MANEJO_FLORESTAL",
    "type": "number",
-   "sampleEmptyShare": 0.539
+   "sampleEmptyShare": 0.538
   },
   {
    "name": "AREA_EFETIVO_MANEJO",
    "type": "number",
-   "sampleEmptyShare": 0.5378
+   "sampleEmptyShare": 0.5368
   },
   {
    "name": "CAPACIDADE_PRODUTIVA",
    "type": "number",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "ESTIMATIVA_PRODUTIVA_ANUAL",
    "type": "number",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "INTENSIDADE_CORTE",
    "type": "number",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "EQUACAO_VOLUME",
    "type": "string",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "AREA_AUTORIZADA",
@@ -203,18 +203,18 @@
    "name": "DATA_DA_SITUACAO",
    "type": "date",
    "format": "%d/%m/%y",
-   "sampleEmptyShare": 0.5358
+   "sampleEmptyShare": 0.5348
   },
   {
    "name": "ULTIMO_TRAMITE",
    "type": "string",
-   "sampleEmptyShare": 0.5784
+   "sampleEmptyShare": 0.5774
   },
   {
    "name": "DATA_DO_TRAMITE",
    "type": "date",
    "format": "%d/%m/%y",
-   "sampleEmptyShare": 0.5784
+   "sampleEmptyShare": 0.5774
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -225,8 +225,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T11:40:19+00:00",
-  "sha256": "96b660b12d6dbac6a396431e7999cf1b80e17fb0e8454597e81352382ebec9cc",
+  "observed_at": "2026-11-09T13:25:10+00:00",
+  "sha256": "29c99d6d4a97adcc96b0bf02f71b32a1a417aa5d63965c11ea21240be1a447d6",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

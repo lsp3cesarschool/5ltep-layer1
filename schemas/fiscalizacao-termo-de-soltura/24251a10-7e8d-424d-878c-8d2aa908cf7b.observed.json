@@ -3,7 +3,7 @@
   {
    "name": "SEQ_SOLTURA",
    "type": "string",
-   "sampleEmptyShare": 0.9218
+   "sampleEmptyShare": 0.9221
   },
   {
    "name": "NUM_SOLTURA",
@@ -75,24 +75,24 @@
   {
    "name": "DES_LOCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0669
+   "sampleEmptyShare": 0.0673
   },
   {
    "name": "NUM_LONGITUDE",
    "type": "number",
    "decimalChar": ",",
-   "sampleEmptyShare": 0.0648
+   "sampleEmptyShare": 0.0651
   },
   {
    "name": "NUM_LATITUDE",
    "type": "number",
    "decimalChar": ",",
-   "sampleEmptyShare": 0.0648
+   "sampleEmptyShare": 0.0651
   },
   {
    "name": "FORMA_ENTREGA",
    "type": "string",
-   "sampleEmptyShare": 0.9218
+   "sampleEmptyShare": 0.9221
   },
   {
    "name": "UNID_APRESENTACAO",
@@ -107,28 +107,28 @@
   {
    "name": "DES_JUSTIFICATIVA",
    "type": "string",
-   "sampleEmptyShare": 0.3291
+   "sampleEmptyShare": 0.3281
   },
   {
    "name": "DAT_ALTERACAO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
-   "sampleEmptyShare": 0.9218
+   "sampleEmptyShare": 0.9221
   },
   {
    "name": "TIPO_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.9218
+   "sampleEmptyShare": 0.9221
   },
   {
    "name": "JUSTIFICATIVA_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.8945
+   "sampleEmptyShare": 0.8949
   },
   {
    "name": "DES_OBSERVACAO",
    "type": "string",
-   "sampleEmptyShare": 0.5313
+   "sampleEmptyShare": 0.5301
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -139,11 +139,11 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T11:37:07+00:00",
-  "sha256": "d6edafd6f48928a23546408ec02cee3fbd6a92ef973f3a121c29966063a56495",
+  "observed_at": "2026-11-09T13:23:39+00:00",
+  "sha256": "eb47420c845a5b162ff697b10a320f67d363eec6ae35b22a11ece9838751180e",
   "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 3288,
+  "sample_rows": 3301,
   "tables": 1,
   "distinct_headers": 1
  }

@@ -63,7 +63,7 @@
   {
    "name": "SITUACAO_CARACTERISTICA",
    "type": "string",
-   "sampleEmptyShare": 0.8916
+   "sampleEmptyShare": 0.8918
   },
   {
    "name": "ST_PERECIVEL",
@@ -110,7 +110,7 @@
   {
    "name": "OBS_DOACAO_ESPECIME",
    "type": "string",
-   "sampleEmptyShare": 0.2762
+   "sampleEmptyShare": 0.276
   },
   {
    "name": "DAT_ALTERACAO",
@@ -126,8 +126,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T12:20:37+00:00",
-  "sha256": "469584d02696ef32ce513e9bd02999d82c0c60947742a89f301dad94175fc792",
+  "observed_at": "2026-11-09T13:45:09+00:00",
+  "sha256": "7d7d126f9b34634c6c4016f8bac8d4f670d5aac0a3fde25137f15fe87d5356f6",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

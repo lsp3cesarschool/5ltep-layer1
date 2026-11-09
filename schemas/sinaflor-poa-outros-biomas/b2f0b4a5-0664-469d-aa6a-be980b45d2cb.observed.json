@@ -55,12 +55,12 @@
   {
    "name": "IMOVEL_RURAL_VINCULADO",
    "type": "string",
-   "sampleEmptyShare": 0.2395
+   "sampleEmptyShare": 0.239
   },
   {
    "name": "NRO_CAR_IMOVEL_RURAL",
    "type": "string",
-   "sampleEmptyShare": 0.2395
+   "sampleEmptyShare": 0.239
   },
   {
    "name": "NOME_EMPREENDIMENTO_VINC",
@@ -122,7 +122,7 @@
   {
    "name": "AREA_MANEJO_FLORESTAL",
    "type": "string",
-   "sampleEmptyShare": 0.0571
+   "sampleEmptyShare": 0.057
   },
   {
    "name": "NRO_UPA",
@@ -156,27 +156,27 @@
   {
    "name": "PRODUTO",
    "type": "string",
-   "sampleEmptyShare": 0.0021
+   "sampleEmptyShare": 0.0025
   },
   {
    "name": "NOME_CIENTIFICO",
    "type": "string",
-   "sampleEmptyShare": 0.0035
+   "sampleEmptyShare": 0.0039
   },
   {
    "name": "NOME_POPULAR",
    "type": "string",
-   "sampleEmptyShare": 0.0035
+   "sampleEmptyShare": 0.0039
   },
   {
    "name": "VOLUME",
    "type": "string",
-   "sampleEmptyShare": 0.0021
+   "sampleEmptyShare": 0.0025
   },
   {
    "name": "EQUACAO_VOLUME",
    "type": "string",
-   "sampleEmptyShare": 0.0607
+   "sampleEmptyShare": 0.0605
   },
   {
    "name": "SITUACAO",
@@ -192,13 +192,13 @@
   {
    "name": "ULTIMO_TRAMITE",
    "type": "string",
-   "sampleEmptyShare": 0.0159
+   "sampleEmptyShare": 0.0158
   },
   {
    "name": "DATA_DO_TRAMITE",
    "type": "date",
    "format": "%d/%m/%y",
-   "sampleEmptyShare": 0.0159
+   "sampleEmptyShare": 0.0158
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -209,11 +209,11 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T11:40:32+00:00",
-  "sha256": "30e01c8e3829213a9e1ec61e7b38582ae08e70253234694e7c2e6de15e9fe5ee",
+  "observed_at": "2026-11-09T13:25:20+00:00",
+  "sha256": "08a28c16a729b99cca7bf282df70eabf22dcee6ccd7111641f0285d2db584f02",
   "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 2835,
+  "sample_rows": 2841,
   "tables": 1,
   "distinct_headers": 1
  }

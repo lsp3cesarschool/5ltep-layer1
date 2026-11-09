@@ -105,7 +105,7 @@
   {
    "name": "DES_JUSTIFICATIVA",
    "type": "string",
-   "sampleEmptyShare": 0.177
+   "sampleEmptyShare": 0.1744
   },
   {
    "name": "FORMA_ENTREGA",
@@ -125,37 +125,37 @@
   {
    "name": "SEQ_AUTO_INFRACAO",
    "type": "number",
-   "sampleEmptyShare": 0.6462
+   "sampleEmptyShare": 0.65
   },
   {
    "name": "NUM_AUTO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.6462
+   "sampleEmptyShare": 0.65
   },
   {
    "name": "SEQ_NOTIFICACAO",
    "type": "number",
-   "sampleEmptyShare": 0.996
+   "sampleEmptyShare": 0.9954
   },
   {
    "name": "SEQ_ACAO_FISCALIZATORIA",
    "type": "integer",
-   "sampleEmptyShare": 0.0146
+   "sampleEmptyShare": 0.0144
   },
   {
    "name": "CD_ACAO_FISCALIZATORIA",
    "type": "string",
-   "sampleEmptyShare": 0.0166
+   "sampleEmptyShare": 0.0164
   },
   {
    "name": "SEQ_ORDEM_FISCALIZACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.0124
+   "sampleEmptyShare": 0.0122
   },
   {
    "name": "NUM_ORDEM_FISCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0124
+   "sampleEmptyShare": 0.0122
   },
   {
    "name": "UNID_ORDENADORA",
@@ -165,17 +165,17 @@
   {
    "name": "SEQ_SOLICITACAO_RECURSO",
    "type": "integer",
-   "sampleEmptyShare": 0.0124
+   "sampleEmptyShare": 0.0122
   },
   {
    "name": "NUM_SOLICITACAO_RECURSO",
    "type": "number",
-   "sampleEmptyShare": 0.0124
+   "sampleEmptyShare": 0.0122
   },
   {
    "name": "OPERACAO_SOL_RECURSO",
    "type": "string",
-   "sampleEmptyShare": 0.0124
+   "sampleEmptyShare": 0.0122
   },
   {
    "name": "DAT_ALTERACAO",
@@ -186,12 +186,12 @@
   {
    "name": "TIPO_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0354
+   "sampleEmptyShare": 0.0326
   },
   {
    "name": "JUSTIFICATIVA_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0354
+   "sampleEmptyShare": 0.0326
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -202,8 +202,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T12:21:07+00:00",
-  "sha256": "108b7808d13f8eeaf5871ea43daed757e8c6eed0e9b558f6819b274435644b5f",
+  "observed_at": "2026-11-09T13:45:37+00:00",
+  "sha256": "f953a0e35e930a9a1dc0f0b60396d944d1044e7606f828cc90ecd1efe4abcf3a",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

@@ -28,7 +28,7 @@
   {
    "name": "SQ_ENQUADRAMENTO",
    "type": "integer",
-   "sampleEmptyShare": 0.0166
+   "sampleEmptyShare": 0.0168
   },
   {
    "name": "ADMINISTRATIVO",
@@ -48,12 +48,12 @@
   {
    "name": "NU_ARTIGO_COMP",
    "type": "string",
-   "sampleEmptyShare": 0.017
+   "sampleEmptyShare": 0.0178
   },
   {
    "name": "NU_PAR_INC_AL",
    "type": "string",
-   "sampleEmptyShare": 0.7766
+   "sampleEmptyShare": 0.778
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -64,8 +64,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T11:37:14+00:00",
-  "sha256": "4b3c91ce51433585cc61273995b999fa920b4d5f0a43d9577b5d12769cdfe718",
+  "observed_at": "2026-11-09T13:23:43+00:00",
+  "sha256": "3ac87a699e0b2f63a135ea0da022b11e4cc17056a83c79dcc2df826bd0a4a969",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,
