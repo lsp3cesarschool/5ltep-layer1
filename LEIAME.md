@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/lsp3cesarschool/5ltep-layer1/actions/workflows/tests.yml/badge.svg)](https://github.com/lsp3cesarschool/5ltep-layer1/actions/workflows/tests.yml) [![Camada 1](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flsp3cesarschool%2F5ltep-layer1%2Fmain%2Fdocs%2Fdata%2Fstatus.pt.json)](https://github.com/lsp3cesarschool/5ltep-layer1/actions/workflows/layer1.yml) [![Licença: MIT](https://img.shields.io/badge/Licen%C3%A7a-MIT-blue.svg)](LICENSE)
 
-[English](README.md) · **Português**
+[← Plataforma CUPIM](https://5ltep-cupim.github.io/?lang=pt) · [English](README.md) · **Português**
 
 **Verifica se um portal de dados abertos diz como seus arquivos deveriam ser, e se os arquivos são
 assim.** Um levantamento de todos os conjuntos de dados de um portal CKAN numa escala de maturidade de

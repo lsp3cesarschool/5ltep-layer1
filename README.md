@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/lsp3cesarschool/5ltep-layer1/actions/workflows/tests.yml/badge.svg)](https://github.com/lsp3cesarschool/5ltep-layer1/actions/workflows/tests.yml) [![Layer 1](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flsp3cesarschool%2F5ltep-layer1%2Fmain%2Fdocs%2Fdata%2Fstatus.json)](https://github.com/lsp3cesarschool/5ltep-layer1/actions/workflows/layer1.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**English** · [Português](LEIAME.md)
+[← CUPIM platform](https://5ltep-cupim.github.io/?lang=en) · **English** · [Português](LEIAME.md)
 
 **Checks whether an open data portal says what its files should look like, and whether the files
 look like that.** A survey of every dataset of a CKAN portal on a schema maturity scale, readers for
