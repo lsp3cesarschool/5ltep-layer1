@@ -4,7 +4,7 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-11-09T11:54:33+00:00",
+ "generated_at": "2026-11-16T11:55:21+00:00",
  "datasets": [
   {
    "name": "antropizacao-dos-biomas-extra-amazonicos",
@@ -2298,7 +2298,7 @@
    "title": "Fiscalização – termo de destruição ou inutilização (série A e B)",
    "organization": "Dados Abertos",
    "url": "https://dadosabertos.ibama.gov.br/dataset/fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b",
-   "metadata_modified": "2026-10-14T15:04:55.161659",
+   "metadata_modified": "2026-11-12T18:20:11.172922",
    "resources_total": 12,
    "dictionaries": [],
    "tables": [
@@ -2376,9 +2376,9 @@
      "id": "0224f6a5-1f51-4a64-a8c4-f34729f04285",
      "name": "Espécime destruído",
      "format": "CSV",
-     "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_destruicao_a_b/especime.csv",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS/TERMO_DE_DESTRUICAO_SERIES_A_B_ESPECIME_DESTRUIDO/fiscalizacao_termo_de_destruicao_series_A_B_especime_destruido.csv",
      "candidate": "csv",
-     "last_modified": "2021-09-15T13:10:35.299957",
+     "last_modified": "2026-11-12T18:20:11.181451",
      "size": null,
      "attached": false,
      "datastore": null,
@@ -7348,7 +7348,7 @@
   }
  ],
  "delivery": {
-  "probed_at": "2026-11-09T11:54:33+00:00",
+  "probed_at": "2026-11-16T11:55:21+00:00",
   "by_host": {
    "dadosabertos.ibama.gov.br": [
     {
