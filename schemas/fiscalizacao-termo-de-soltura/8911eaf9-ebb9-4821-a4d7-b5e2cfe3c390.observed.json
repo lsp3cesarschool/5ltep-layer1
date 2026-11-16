@@ -48,7 +48,7 @@
   {
    "name": "SITUACAO_CARACTERISTICA",
    "type": "string",
-   "sampleEmptyShare": 0.9566
+   "sampleEmptyShare": 0.958
   },
   {
    "name": "ST_PERECIVEL",
@@ -91,7 +91,7 @@
   {
    "name": "DS_OBSERVACAO",
    "type": "string",
-   "sampleEmptyShare": 0.654
+   "sampleEmptyShare": 0.658
   },
   {
    "name": "DAT_ALTERACAO",
@@ -112,8 +112,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-09T13:23:39+00:00",
-  "sha256": "f7f8b8493e3ee76145c46d46e3f705448f71a777d03fadec0828b95888cff17e",
+  "observed_at": "2026-11-16T13:53:22+00:00",
+  "sha256": "edf7513a2a94f377b4aeb83d4a114a61a518d6e3f252ade43eb9e1cedfde33db",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

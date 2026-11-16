@@ -43,33 +43,33 @@
   {
    "name": "NOME_PATIO_ORIGEM",
    "type": "string",
-   "sampleEmptyShare": 0.1632
+   "sampleEmptyShare": 0.1628
   },
   {
    "name": "NUM_SERIE_AUTEX",
    "type": "string",
-   "sampleEmptyShare": 0.2448
+   "sampleEmptyShare": 0.233
   },
   {
    "name": "NUM_AUTORIZACAO_ORIGINAL",
    "type": "string",
-   "sampleEmptyShare": 0.2464
+   "sampleEmptyShare": 0.2342
   },
   {
    "name": "TIPO_AUTEX",
    "type": "string",
-   "sampleEmptyShare": 0.2448
+   "sampleEmptyShare": 0.233
   },
   {
    "name": "ORGAO_EMISSOR_AUTEX",
    "type": "string",
-   "sampleEmptyShare": 0.4096
+   "sampleEmptyShare": 0.397
   },
   {
    "name": "DATA_VALIDADE_AUTEX",
    "type": "date",
    "format": "%d/%m/%Y",
-   "sampleEmptyShare": 0.2448
+   "sampleEmptyShare": 0.233
   },
   {
    "name": "NUM_DI",
@@ -154,12 +154,12 @@
   {
    "name": "LATITUDE_DESTINO",
    "type": "number",
-   "sampleEmptyShare": 0.6966
+   "sampleEmptyShare": 0.6658
   },
   {
    "name": "LONGITUDE_DESTINO",
    "type": "number",
-   "sampleEmptyShare": 0.697
+   "sampleEmptyShare": 0.6658
   },
   {
    "name": "NOME_PORTO_SAIDA",
@@ -253,7 +253,7 @@
   {
    "name": "NOME_POPULAR",
    "type": "string",
-   "sampleEmptyShare": 0.0044
+   "sampleEmptyShare": 0.0046
   },
   {
    "name": "UNIDADE",
@@ -268,7 +268,7 @@
   {
    "name": "VALOR_UNITARIO",
    "type": "number",
-   "sampleEmptyShare": 0.0292
+   "sampleEmptyShare": 0.0364
   },
   {
    "name": "VALOR_CONSOLIDADO",
@@ -289,8 +289,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-09T11:57:09+00:00",
-  "sha256": "7e4fe38fbfeebf0aca19bbd1ed45760a0b09dfcc27ccacc0157262ffbb46ed35",
+  "observed_at": "2026-11-16T11:58:29+00:00",
+  "sha256": "8600af9ac4b79382ffc77e8f02837a811897ed751197e6156dbd47b1a49adfb4",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

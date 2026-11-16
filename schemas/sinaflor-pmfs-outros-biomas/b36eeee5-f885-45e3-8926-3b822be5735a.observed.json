@@ -50,12 +50,12 @@
   {
    "name": "IMOVEL_RURAL_VINCULADO",
    "type": "string",
-   "sampleEmptyShare": 0.2278
+   "sampleEmptyShare": 0.2286
   },
   {
    "name": "NRO_CAR_IMOVEL_RURAL",
    "type": "string",
-   "sampleEmptyShare": 0.2278
+   "sampleEmptyShare": 0.2286
   },
   {
    "name": "NOME_EMPREENDIMENTO_VINC",
@@ -142,7 +142,7 @@
   {
    "name": "CICLO_CORTE",
    "type": "integer",
-   "sampleEmptyShare": 0.0979
+   "sampleEmptyShare": 0.0978
   },
   {
    "name": "AREA_TOTAL_PROPRIEDADE",
@@ -157,7 +157,7 @@
   {
    "name": "AREA_EFETIVO_MANEJO",
    "type": "number",
-   "sampleEmptyShare": 0.0671
+   "sampleEmptyShare": 0.067
   },
   {
    "name": "CAPACIDADE_PRODUTIVA",
@@ -198,13 +198,13 @@
   {
    "name": "ULTIMO_TRAMITE",
    "type": "string",
-   "sampleEmptyShare": 0.1981
+   "sampleEmptyShare": 0.1978
   },
   {
    "name": "DATA_DO_TRAMITE",
    "type": "date",
    "format": "%d/%m/%y",
-   "sampleEmptyShare": 0.1981
+   "sampleEmptyShare": 0.1978
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -215,11 +215,11 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-09T13:46:49+00:00",
-  "sha256": "110c0351fb15b5b98944a14d0d24b15f0adad96682be3d4a66a9446398fd7eb5",
+  "observed_at": "2026-11-16T14:24:35+00:00",
+  "sha256": "eecf22d4b7801d0381a4b44f64a2b6a356448b2a65777960f7bae86ee7a8876e",
   "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 1848,
+  "sample_rows": 1850,
   "tables": 1,
   "distinct_headers": 1
  }

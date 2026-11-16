@@ -1,27 +1,22 @@
 {
  "fields": [
   {
-   "name": "SEQ_AUTO_INFRACAO",
+   "name": "SEQ_TAD",
    "type": "integer",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "NUM_AUTO_INFRACAO",
+   "name": "CD_TAD",
    "type": "string",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "CD_SERIE_AUTO_INFRACAO",
+   "name": "CD_SERIE_TAD",
    "type": "string",
    "sampleEmptyShare": 0.019
   },
   {
-   "name": "SEQ_TAXONOMIA",
-   "type": "integer",
-   "sampleEmptyShare": 0.7974
-  },
-  {
-   "name": "SEQ_ESPECIME",
+   "name": "ID_ESPECIME",
    "type": "integer",
    "sampleEmptyShare": 0.0
   },
@@ -31,22 +26,22 @@
    "sampleEmptyShare": 1.0
   },
   {
-   "name": "QUANTIDADE",
+   "name": "QT_ESPECIME",
    "type": "number",
    "sampleEmptyShare": 0.0046
   },
   {
-   "name": "UNIDADE_MEDIDA",
+   "name": "DS_UNIDADE_MEDIDA",
    "type": "string",
    "sampleEmptyShare": 0.0412
   },
   {
-   "name": "DESCRICAO",
+   "name": "DS_PRODUTO",
    "type": "string",
    "sampleEmptyShare": 0.9502
   },
   {
-   "name": "CARACTERISTICA",
+   "name": "ST_CARACTERISTICA",
    "type": "string",
    "sampleEmptyShare": 0.0
   },
@@ -56,27 +51,32 @@
    "sampleEmptyShare": 1.0
   },
   {
-   "name": "TIPO",
+   "name": "TP_INFRACAO",
    "type": "string",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "GRUPO",
+   "name": "DS_GRUPO",
    "type": "string",
    "sampleEmptyShare": 0.107
   },
   {
-   "name": "NOME_CIENTIFICO",
+   "name": "ID_TAXONOMIA",
+   "type": "integer",
+   "sampleEmptyShare": 0.7974
+  },
+  {
+   "name": "NO_CIENTIFICO",
    "type": "string",
    "sampleEmptyShare": 0.0938
   },
   {
-   "name": "NOME_POPULAR",
+   "name": "NO_POPULAR",
    "type": "string",
    "sampleEmptyShare": 0.0082
   },
   {
-   "name": "CITES",
+   "name": "ST_CITES",
    "type": "boolean",
    "trueValues": [
     "S"
@@ -87,18 +87,33 @@
    "sampleEmptyShare": 0.0022
   },
   {
-   "name": "SITUACAO",
+   "name": "DS_OBSERVACAO",
    "type": "string",
    "sampleEmptyShare": 0.9792
   },
   {
-   "name": "DAT_ALTERACAO",
+   "name": "DT_ALTERACAO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
    "sampleEmptyShare": 0.2154
   },
   {
-   "name": "NU_VALOR",
+   "name": "VL_ESPECIME_APREENDIDO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "CD_TERMO_DESTINO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "DS_TIPO_TERMO_DESTINO",
+   "type": "any",
+   "sampleEmptyShare": 1.0
+  },
+  {
+   "name": "DT_APREENSAO",
    "type": "any",
    "sampleEmptyShare": 1.0
   },
@@ -111,8 +126,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-09T13:22:37+00:00",
-  "sha256": "6b2a8ca615ec97cda33f359a79146a1bab0a2572238d202ea3aae28d9683145e",
+  "observed_at": "2026-11-16T13:52:20+00:00",
+  "sha256": "91603a81ca216db9fe88984c8a0078e29778e53292059b8044f0a575a1576602",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

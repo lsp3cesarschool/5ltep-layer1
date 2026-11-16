@@ -86,7 +86,7 @@
    "name": "Data de última emissão do CR",
    "type": "datetime",
    "format": "%d/%m/%Y %H:%M:%S",
-   "sampleEmptyShare": 0.1308
+   "sampleEmptyShare": 0.131
   },
   {
    "name": "Situação atual do último CR emitido",
@@ -102,8 +102,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-09T13:23:50+00:00",
-  "sha256": "485ce7477d26f1dd40bbfac5793685ff8c189aa322067fe9aa8939f5412b0a79",
+  "observed_at": "2026-11-16T13:53:34+00:00",
+  "sha256": "b5e98e96df017b385fa7d922b92af17521d1624eab68ed90886dcdccf9531b6b",
   "encoding": "utf-8",
   "delimiter": ";",
   "sample_rows": 5000,

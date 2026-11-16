@@ -5,8 +5,8 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-11-09T13:53:57+00:00",
- "census_at": "2026-11-09T11:54:33+00:00",
+ "generated_at": "2026-11-16T14:36:05+00:00",
+ "census_at": "2026-11-16T11:55:21+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -77,14 +77,14 @@
   "queue_largest": []
  },
  "schema_sources": {
-  "described": 48,
+  "described": 49,
   "declared": 72
  },
  "conformance_by_source": {
   "described": {
-   "verifiable": 48,
-   "conformant": 20,
-   "l1_rate": 0.4167
+   "verifiable": 49,
+   "conformant": 21,
+   "l1_rate": 0.4286
   },
   "declared": {
    "verifiable": 72,
@@ -92,21 +92,21 @@
    "l1_rate": 0.2778
   }
  },
- "verifiable": 120,
- "conformant": 40,
- "l1_rate": 0.3333,
+ "verifiable": 121,
+ "conformant": 41,
+ "l1_rate": 0.3388,
  "l1_pass": false,
  "drift": {
-  "observed": 7,
+  "observed": 9,
   "declared": 2,
-  "files_with_baseline": 183,
+  "files_with_baseline": 184,
   "first_baseline_at": "2026-11-02T11:32:15+00:00",
-  "last_observed_at": "2026-11-09T13:51:55+00:00"
+  "last_observed_at": "2026-11-16T14:28:58+00:00"
  },
  "coverage": {
   "files": 195,
-  "read": 183,
-  "empty": 1,
+  "read": 184,
+  "empty": 0,
   "not_tabular": 0,
   "too_large": 0,
   "not_downloaded": 11,
@@ -120,10 +120,10 @@
    "other · stibamadadosabertosprd.blob.core.windows.net": 1
   },
   "read_without_schema": 63,
-  "checked": 120,
-  "conform": 40,
+  "checked": 121,
+  "conform": 41,
   "fail_missing_fields": 42,
-  "fail_undeclared_columns": 48,
+  "fail_undeclared_columns": 49,
   "fail_cells_over_limit": 43,
   "fail_only_cells": 30
  },
@@ -158,49 +158,49 @@
  },
  "distributions": {
   "tables_with_other_formats": 94,
-  "other_formats": 170,
-  "compared": 170,
+  "other_formats": 172,
+  "compared": 172,
   "same_columns": 115,
   "spelling_only": 23,
-  "different_columns": 32,
+  "different_columns": 34,
   "not_compared": {},
   "by_format": {
-   "json": 85,
-   "xml": 85
+   "json": 86,
+   "xml": 86
   }
  },
  "network": {
   "total": {
    "files": 195,
    "failed_files": 11,
-   "gb": 23.37,
-   "minutes": 195.5,
-   "end_to_end_mb_s": 1.99,
-   "zip_download_mb_s": 26.31,
-   "first_byte_s_median": 0.18,
-   "network_share": 0.039,
-   "network_mb_s": 51.23,
+   "gb": 23.3,
+   "minutes": 263.7,
+   "end_to_end_mb_s": 1.47,
+   "zip_download_mb_s": 31.25,
+   "first_byte_s_median": 0.16,
+   "network_share": 0.024,
+   "network_mb_s": 60.54,
    "request_failures": {
     "HTTP 404": 16
    }
   },
   "by_host": {
    "stibamadadosabertosprd.blob.core.windows.net": {
-    "files": 138,
+    "files": 139,
     "failed_files": 1,
-    "gb": 20.06,
-    "minutes": 189.9,
-    "end_to_end_mb_s": 1.76,
-    "zip_download_mb_s": 26.27,
-    "first_byte_s_median": 0.19,
-    "network_share": 0.038,
-    "network_mb_s": 45.98,
+    "gb": 19.99,
+    "minutes": 258.1,
+    "end_to_end_mb_s": 1.29,
+    "zip_download_mb_s": 31.28,
+    "first_byte_s_median": 0.17,
+    "network_share": 0.024,
+    "network_mb_s": 54.77,
     "request_failures": {
      "HTTP 404": 10
     }
    },
    "dadosabertos.ibama.gov.br": {
-    "files": 47,
+    "files": 46,
     "failed_files": 0,
     "gb": 3.31,
     "minutes": 5.6,
@@ -282,13 +282,13 @@
    "date_fields_with_declared_format": 0.3913
   },
   "files_vs_dictionaries": {
-   "checked": 120,
+   "checked": 121,
    "with_declared_fields_missing": 42,
-   "with_undeclared_columns": 48,
+   "with_undeclared_columns": 49,
    "with_spelling_differences": 46,
    "with_similar_names": 21,
    "similar_names": 133,
-   "declared_fields_missing": 301,
+   "declared_fields_missing": 305,
    "formats_inferred_from_data": {
     "trueValues": 16,
     "falseValues": 16,
@@ -308,13 +308,13 @@
    "results_copied": 0
   },
   "files": {
-   "validated": 183,
+   "validated": 184,
    "encodings": {
-    "utf-8-sig": 76,
+    "utf-8-sig": 77,
     "utf-8": 107
    },
    "delimiters": {
-    ";": 118
+    ";": 119
    },
    "with_decode_errors": 0,
    "with_ragged_rows": 2,
@@ -323,7 +323,7 @@
    "not_tabular": 0,
    "not_tables": 4,
    "formats": {
-    "csv": 118,
+    "csv": 119,
     "json": 32,
     "xml": 33
    },
@@ -353,11 +353,11 @@
    }
   },
   "delivery": {
-   "probed_at": "2026-11-09T11:54:33+00:00",
+   "probed_at": "2026-11-16T11:55:21+00:00",
    "hosts": {
     "dadosabertos.ibama.gov.br": {
-     "linked": 47,
-     "files": 47,
+     "linked": 46,
+     "files": 46,
      "served_by": [
       "dadosabertos.ibama.gov.br"
      ],
@@ -366,15 +366,15 @@
      ],
      "probes": 3,
      "range": "honoured",
-     "with_etag": 47,
-     "with_last_modified": 47,
+     "with_etag": 46,
+     "with_last_modified": 46,
      "without_validator": 0,
      "without_length": 0,
-     "of": 47,
+     "of": 46,
      "generic_type": 0,
-     "typed": 47,
+     "typed": 46,
      "content_types": {
-      "text/csv": 29,
+      "text/csv": 28,
       "application/zip": 18
      },
      "broken_links": 0,
@@ -399,8 +399,8 @@
      "redirect_loops": 0
     },
     "stibamadadosabertosprd.blob.core.windows.net": {
-     "linked": 138,
-     "files": 137,
+     "linked": 139,
+     "files": 138,
      "served_by": [
       "stibamadadosabertosprd.blob.core.windows.net"
      ],
@@ -409,15 +409,15 @@
      ],
      "probes": 3,
      "range": "honoured",
-     "with_etag": 137,
-     "with_last_modified": 137,
+     "with_etag": 138,
+     "with_last_modified": 138,
      "without_validator": 0,
      "without_length": 0,
-     "of": 137,
-     "generic_type": 137,
-     "typed": 137,
+     "of": 138,
+     "generic_type": 138,
+     "typed": 138,
      "content_types": {
-      "application/octet-stream": 137
+      "application/octet-stream": 138
      },
      "broken_links": 0,
      "redirect_loops": 0
@@ -433,8 +433,8 @@
     {
      "id": "media-type",
      "host": "stibamadadosabertosprd.blob.core.windows.net",
-     "n": 137,
-     "of": 137,
+     "n": 138,
+     "of": 138,
      "types": [
       "application/octet-stream"
      ]
@@ -631,8 +631,8 @@
    "name": "fiscalizacao-termo-de-destruicao-ou-inutilizacao-serie-a-e-b",
    "level": 1,
    "tables": 3,
-   "verifiable": 2,
-   "conformant": 2,
+   "verifiable": 3,
+   "conformant": 3,
    "l1_rate": 1.0
   },
   {

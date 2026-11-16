@@ -13,7 +13,7 @@
   {
    "name": "CNPJ do ponto de coleta",
    "type": "string",
-   "sampleEmptyShare": 0.8134
+   "sampleEmptyShare": 0.8494
   },
   {
    "name": "Ponto de coleta",
@@ -38,17 +38,17 @@
   {
    "name": "UF",
    "type": "string",
-   "sampleEmptyShare": 0.0
+   "sampleEmptyShare": 0.0002
   },
   {
    "name": "Município",
    "type": "string",
-   "sampleEmptyShare": 0.0
+   "sampleEmptyShare": 0.0002
   },
   {
    "name": "Sítio na internet",
    "type": "string",
-   "sampleEmptyShare": 0.9904
+   "sampleEmptyShare": 0.9912
   },
   {
    "name": "Acondicionamento",
@@ -58,8 +58,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-09T13:20:57+00:00",
-  "sha256": "dace946b1f321bbb101c7a9035be4ab545fe585afdcc49a69508261994a1bc96",
+  "observed_at": "2026-11-16T13:49:52+00:00",
+  "sha256": "065a3550333e41c466108f77379e89d5c6fe8fe3321ac16f849688b84322a5fc",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

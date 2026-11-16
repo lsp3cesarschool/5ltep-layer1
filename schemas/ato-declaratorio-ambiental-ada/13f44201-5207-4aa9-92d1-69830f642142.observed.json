@@ -73,7 +73,7 @@
   {
    "name": "Reserva_Legal_ha",
    "type": "number",
-   "sampleEmptyShare": 0.7288
+   "sampleEmptyShare": 0.7296
   },
   {
    "name": "Sobreposicao_ARL_ha",
@@ -83,7 +83,7 @@
   {
    "name": "Area_Liquida_ARL_ha",
    "type": "number",
-   "sampleEmptyShare": 0.7288
+   "sampleEmptyShare": 0.7296
   },
   {
    "name": "Area_RPPN_ha",
@@ -188,7 +188,7 @@
   {
    "name": "Reflorestamento_ha",
    "type": "number",
-   "sampleEmptyShare": 0.9148
+   "sampleEmptyShare": 0.916
   },
   {
    "name": "Pastagens_ha",
@@ -239,8 +239,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-09T13:27:58+00:00",
-  "sha256": "f07a4ece04d597374fffdffd056c9a003d91870d7f1a3fc524d38b7c27fa96b9",
+  "observed_at": "2026-11-16T13:59:30+00:00",
+  "sha256": "4ed123273c35ab8d19762f1835f2ad5c1b5814472a2a4f515fb401d40bbd92a7",
   "encoding": "utf-8",
   "delimiter": null,
   "sample_rows": 5000,

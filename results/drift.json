@@ -163,5 +163,84 @@
     "after": 2
    }
   }
+ },
+ {
+  "id": "7e0bd0b84e87208d",
+  "kind": "observed",
+  "dataset": "fiscalizacao-auto-de-infracao",
+  "resource_id": "160b14e2-d7d8-40aa-b06c-295575a5fb9c",
+  "resource_name": "Autos de infração - espécimes",
+  "at": "2026-11-16T13:52:20+00:00",
+  "before_sha256": "6b2a8ca615ec97cda33f359a79146a1bab0a2572238d202ea3aae28d9683145e",
+  "after_sha256": "91603a81ca216db9fe88984c8a0078e29778e53292059b8044f0a575a1576602",
+  "changes": {
+   "columns_added": [
+    "SEQ_TAD",
+    "CD_TAD",
+    "CD_SERIE_TAD",
+    "ID_ESPECIME",
+    "QT_ESPECIME",
+    "DS_UNIDADE_MEDIDA",
+    "DS_PRODUTO",
+    "ST_CARACTERISTICA",
+    "TP_INFRACAO",
+    "DS_GRUPO",
+    "ID_TAXONOMIA",
+    "NO_CIENTIFICO",
+    "NO_POPULAR",
+    "ST_CITES",
+    "DS_OBSERVACAO",
+    "DT_ALTERACAO",
+    "VL_ESPECIME_APREENDIDO",
+    "CD_TERMO_DESTINO",
+    "DS_TIPO_TERMO_DESTINO",
+    "DT_APREENSAO"
+   ],
+   "columns_removed": [
+    "SEQ_AUTO_INFRACAO",
+    "NUM_AUTO_INFRACAO",
+    "CD_SERIE_AUTO_INFRACAO",
+    "SEQ_TAXONOMIA",
+    "SEQ_ESPECIME",
+    "QUANTIDADE",
+    "UNIDADE_MEDIDA",
+    "DESCRICAO",
+    "CARACTERISTICA",
+    "TIPO",
+    "GRUPO",
+    "NOME_CIENTIFICO",
+    "NOME_POPULAR",
+    "CITES",
+    "SITUACAO",
+    "DAT_ALTERACAO",
+    "NU_VALOR"
+   ]
+  }
+ },
+ {
+  "id": "e498bf9c0808c50d",
+  "kind": "observed",
+  "dataset": "fiscalizacao-termo-de-embargo",
+  "resource_id": "21347475-cd71-41de-a677-f0fbaa8c02b2",
+  "resource_name": "Termos de embargo - enquadramento complementar",
+  "at": "2026-11-16T14:22:18+00:00",
+  "before_sha256": "5e6fb3fd346574b66b1861cf5cda75185d2f78b04f95f93d72971d4c1ab4ea57",
+  "after_sha256": "f1d4bc06f3d887db02467890f524d8cafe3cfbb8aa6249865b027ecf264b6672",
+  "changes": {
+   "columns_added": [
+    "CD_TERMO_APREENSAO",
+    "ID_ENQUADRAMENTO",
+    "DS_DISPOSITIVO_LEGAL_COMPLEMENTAR",
+    "DS_ARTIGO_DISP_COMPLEMENTAR",
+    "DS_PAR_INC_AL_DISP_COMPLEMENTAR",
+    "DH_IMPRESSAO_TERMO_APREENSAO"
+   ],
+   "columns_removed": [
+    "NUM_TAD",
+    "NU_LEI_COMP",
+    "NU_ARTIGO_COMP",
+    "NU_PAR_INC_AL"
+   ]
+  }
  }
 ]

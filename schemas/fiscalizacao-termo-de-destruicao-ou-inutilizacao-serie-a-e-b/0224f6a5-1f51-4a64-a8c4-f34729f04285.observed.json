@@ -1,0 +1,45 @@
+{
+ "fields": [
+  {
+   "name": "SEQ_DESTR",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEQ_DESTR_ESPECIME",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "SEQ_ESPECIME_APREENDIDO",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "QTD_DESTR_ESPECIME",
+   "type": "integer",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "OBS_DESTR_ESPECIME",
+   "type": "string",
+   "sampleEmptyShare": 0.0364
+  },
+  {
+   "name": "ULTIMA_ATUALIZACAO_RELATORIO",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-11-16T11:57:14+00:00",
+  "sha256": "f4ef6e6b25adb4f7aa96b4031057050053306fe86aac4bcc5452e2efe821e3db",
+  "encoding": "utf-8-sig",
+  "delimiter": ";",
+  "sample_rows": 55,
+  "tables": 1,
+  "distinct_headers": 1
+ }
+}

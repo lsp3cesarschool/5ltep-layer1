@@ -50,12 +50,12 @@
   {
    "name": "IMOVEL_RURAL_VINCULADO",
    "type": "string",
-   "sampleEmptyShare": 0.6956
+   "sampleEmptyShare": 0.6954
   },
   {
    "name": "NRO_CAR_IMOVEL_RURAL",
    "type": "string",
-   "sampleEmptyShare": 0.6956
+   "sampleEmptyShare": 0.6954
   },
   {
    "name": "NOME_EMPREENDIMENTO_VINC",
@@ -77,17 +77,17 @@
   {
    "name": "NOME_DO_RT",
    "type": "string",
-   "sampleEmptyShare": 0.1646
+   "sampleEmptyShare": 0.1642
   },
   {
    "name": "NRO_CONSELHO_DE_CLASSE_RT",
    "type": "string",
-   "sampleEmptyShare": 0.1646
+   "sampleEmptyShare": 0.1642
   },
   {
    "name": "ATIVIDADE_RT",
    "type": "string",
-   "sampleEmptyShare": 0.1646
+   "sampleEmptyShare": 0.1642
   },
   {
    "name": "ATIVIDADE",
@@ -165,8 +165,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-09T13:24:47+00:00",
-  "sha256": "233b144e11e5c648b32b1513daace5f0b2c22593590c6d08f0c2f6a11a3b31b8",
+  "observed_at": "2026-11-16T13:54:44+00:00",
+  "sha256": "4f689cd5c8855458c5d21f23702ad8c46c3a2a8008aa58fac9b9a648e01d297d",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

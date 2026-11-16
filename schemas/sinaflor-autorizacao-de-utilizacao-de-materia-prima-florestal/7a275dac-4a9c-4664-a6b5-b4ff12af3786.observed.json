@@ -3,7 +3,7 @@
   {
    "name": "NRO_REGISTRO",
    "type": "integer",
-   "sampleEmptyShare": 0.637
+   "sampleEmptyShare": 0.6366
   },
   {
    "name": "DATA_DE_EMISSAO",
@@ -24,7 +24,7 @@
   {
    "name": "NRO_AUTORIZACAO_VINCULADA",
    "type": "string",
-   "sampleEmptyShare": 0.6278
+   "sampleEmptyShare": 0.6274
   },
   {
    "name": "DATA_DE_VALIDADE",
@@ -55,12 +55,12 @@
   {
    "name": "IMOVEL_RURAL_VINCULADO",
    "type": "string",
-   "sampleEmptyShare": 0.8356
+   "sampleEmptyShare": 0.8352
   },
   {
    "name": "NRO_CAR_IMOVEL_RURAL",
    "type": "string",
-   "sampleEmptyShare": 0.8356
+   "sampleEmptyShare": 0.8352
   },
   {
    "name": "NOME_EMPREENDIMENTO_VINC",
@@ -82,12 +82,12 @@
   {
    "name": "NOME_DO_RT",
    "type": "string",
-   "sampleEmptyShare": 0.011
+   "sampleEmptyShare": 0.0114
   },
   {
    "name": "NRO_ART",
    "type": "integer",
-   "sampleEmptyShare": 0.011
+   "sampleEmptyShare": 0.0114
   },
   {
    "name": "ATIVIDADE_RT",
@@ -102,12 +102,12 @@
   {
    "name": "TIPO_DE_EMPREENDIMENTO",
    "type": "string",
-   "sampleEmptyShare": 0.6372
+   "sampleEmptyShare": 0.6368
   },
   {
    "name": "NATUREZA_JURIDICA",
    "type": "string",
-   "sampleEmptyShare": 0.637
+   "sampleEmptyShare": 0.6366
   },
   {
    "name": "COMPETENCIA_DA_AVALIACAO",
@@ -122,19 +122,19 @@
   {
    "name": "NRO_PATIO",
    "type": "number",
-   "sampleEmptyShare": 0.637
+   "sampleEmptyShare": 0.6366
   },
   {
    "name": "LATITUDE_PATIO",
    "type": "number",
    "decimalChar": ",",
-   "sampleEmptyShare": 0.637
+   "sampleEmptyShare": 0.6366
   },
   {
    "name": "LONGITUDE_PATIO",
    "type": "number",
    "decimalChar": ",",
-   "sampleEmptyShare": 0.637
+   "sampleEmptyShare": 0.6366
   },
   {
    "name": "PRODUTO",
@@ -144,12 +144,12 @@
   {
    "name": "NOME_CIENTIFICO",
    "type": "string",
-   "sampleEmptyShare": 0.084
+   "sampleEmptyShare": 0.0838
   },
   {
    "name": "NOME_POPULAR",
    "type": "string",
-   "sampleEmptyShare": 0.0908
+   "sampleEmptyShare": 0.0906
   },
   {
    "name": "VOLUME",
@@ -170,18 +170,18 @@
    "name": "DATA_DA_SITUACAO",
    "type": "date",
    "format": "%d/%m/%y",
-   "sampleEmptyShare": 0.637
+   "sampleEmptyShare": 0.6366
   },
   {
    "name": "ULTIMO_TRAMITE",
    "type": "string",
-   "sampleEmptyShare": 0.637
+   "sampleEmptyShare": 0.6366
   },
   {
    "name": "DATA_DO_TRAMITE",
    "type": "date",
    "format": "%d/%m/%y",
-   "sampleEmptyShare": 0.637
+   "sampleEmptyShare": 0.6366
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -192,8 +192,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-09T13:24:51+00:00",
-  "sha256": "f14f9968194d1850c1a99baa6711ee71da282fbd90bcb9dc6fe62e4948c4f6d1",
+  "observed_at": "2026-11-16T13:54:49+00:00",
+  "sha256": "dad434bbeea4a9737e4d42c80e0d114a10acd683907e9d4de8666b7d50e4de3f",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

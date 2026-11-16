@@ -3,26 +3,37 @@
   {
    "name": "SEQ_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.1808
+   "sampleEmptyShare": 0.0
   },
   {
-   "name": "NUM_TAD",
+   "name": "CD_TERMO_APREENSAO",
    "type": "string",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "NU_LEI_COMP",
+   "name": "ID_ENQUADRAMENTO",
    "type": "string",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "NU_ARTIGO_COMP",
+   "name": "DS_DISPOSITIVO_LEGAL_COMPLEMENTAR",
    "type": "string",
    "sampleEmptyShare": 0.0
   },
   {
-   "name": "NU_PAR_INC_AL",
+   "name": "DS_ARTIGO_DISP_COMPLEMENTAR",
    "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DS_PAR_INC_AL_DISP_COMPLEMENTAR",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "DH_IMPRESSAO_TERMO_APREENSAO",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
    "sampleEmptyShare": 0.0
   },
   {
@@ -33,8 +44,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-09T13:45:27+00:00",
-  "sha256": "5e6fb3fd346574b66b1861cf5cda75185d2f78b04f95f93d72971d4c1ab4ea57",
+  "observed_at": "2026-11-16T14:22:18+00:00",
+  "sha256": "f1d4bc06f3d887db02467890f524d8cafe3cfbb8aa6249865b027ecf264b6672",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,
