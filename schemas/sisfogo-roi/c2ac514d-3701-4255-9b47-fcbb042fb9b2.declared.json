@@ -235,7 +235,7 @@
    "kind": "dictionary",
    "dictionary_id": "a3f02639-ee4d-4db6-8fe5-c49193ded2f0",
    "dictionary_name": "Metadados - Sisfogo ROI",
-   "url": "https://dadosabertos.ibama.gov.br/dataset/d2eb0087-6500-4315-92ec-e66fe2c56ec1/resource/a3f02639-ee4d-4db6-8fe5-c49193ded2f0/download/metadados_sisfogo_roi.csv",
+   "url": "https://dadosabertos.ibama.gov.br/pt_BR/dataset/d2eb0087-6500-4315-92ec-e66fe2c56ec1/resource/a3f02639-ee4d-4db6-8fe5-c49193ded2f0/download/metadados_sisfogo_roi.csv",
    "sha256": "cfb890332341caf85b391766c69ed211e1fe43b98ab9b6cf48077b80d9abc45f",
    "reader": "csv",
    "part": "",
