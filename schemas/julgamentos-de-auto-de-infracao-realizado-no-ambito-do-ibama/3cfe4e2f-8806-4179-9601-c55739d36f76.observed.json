@@ -1,0 +1,109 @@
+{
+ "fields": [
+  {
+   "name": "Número AI",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Nome ou Razão Social",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "CPF/CNPJ",
+   "type": "string",
+   "sampleEmptyShare": 0.0102
+  },
+  {
+   "name": "UF",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Município",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Status Débito",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Decisão Administrativa",
+   "type": "string",
+   "sampleEmptyShare": 0.9085
+  },
+  {
+   "name": "Tipo Auto",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Tipo de Infração",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Enquadramento",
+   "type": "string",
+   "sampleEmptyShare": 0.5708
+  },
+  {
+   "name": "Data Julgamento Principal",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.4502
+  },
+  {
+   "name": "Data Julgamento Recurso",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.7578
+  },
+  {
+   "name": "Data Auto",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Valor do Auto",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Moeda",
+   "type": "string",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Valor Pago",
+   "type": "number",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Data Pagamento",
+   "type": "date",
+   "format": "%d/%m/%Y",
+   "sampleEmptyShare": 0.0
+  },
+  {
+   "name": "Última Atualização Relatório",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
+   "sampleEmptyShare": 0.0
+  }
+ ],
+ "x5ltep": {
+  "status": "observed",
+  "observed_at": "2026-11-23T13:26:57+00:00",
+  "sha256": "a3a3fb3d4582a0f4ec6a089ed545fa62df98842df743af5607befd95cedffe30",
+  "encoding": "utf-8",
+  "delimiter": null,
+  "sample_rows": 2952,
+  "tables": 27,
+  "distinct_headers": 1
+ }
+}

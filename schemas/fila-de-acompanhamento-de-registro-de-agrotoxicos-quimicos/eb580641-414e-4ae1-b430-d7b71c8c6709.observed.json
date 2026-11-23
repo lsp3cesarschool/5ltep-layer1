@@ -18,7 +18,7 @@
   {
    "name": "I.A.",
    "type": "string",
-   "sampleEmptyShare": 0.0119
+   "sampleEmptyShare": 0.0118
   },
   {
    "name": "DETENTOR",
@@ -44,11 +44,11 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-16T13:49:54+00:00",
-  "sha256": "a0571a4f4afa217f265bc56287eae979e5ae31e5354052e8ff7cf82dcb2166b8",
+  "observed_at": "2026-11-23T14:10:02+00:00",
+  "sha256": "6ceca2276719d56c3319296612e74450d2f7ea46cd78b2b350f778dad2028db1",
   "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 1851,
+  "sample_rows": 1860,
   "tables": 1,
   "distinct_headers": 1
  }

@@ -13,7 +13,7 @@
   {
    "name": "CPF/CNPJ",
    "type": "string",
-   "sampleEmptyShare": 0.0103
+   "sampleEmptyShare": 0.0102
   },
   {
    "name": "UF",
@@ -33,7 +33,7 @@
   {
    "name": "Decisão Administrativa",
    "type": "string",
-   "sampleEmptyShare": 0.9102
+   "sampleEmptyShare": 0.9085
   },
   {
    "name": "Tipo Auto",
@@ -48,19 +48,19 @@
   {
    "name": "Enquadramento",
    "type": "string",
-   "sampleEmptyShare": 0.5773
+   "sampleEmptyShare": 0.5708
   },
   {
    "name": "Data Julgamento Principal",
    "type": "date",
    "format": "%d/%m/%Y",
-   "sampleEmptyShare": 0.458
+   "sampleEmptyShare": 0.4502
   },
   {
    "name": "Data Julgamento Recurso",
    "type": "date",
    "format": "%d/%m/%Y",
-   "sampleEmptyShare": 0.7683
+   "sampleEmptyShare": 0.7578
   },
   {
    "name": "Data Auto",
@@ -98,12 +98,12 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T12:30:48+00:00",
-  "sha256": "7780312127223a853a01ced2be76b9631850ce282fc32af0e72dbf8eae81004d",
-  "encoding": "utf-8",
+  "observed_at": "2026-11-23T13:47:09+00:00",
+  "sha256": "2b77fb536e3a606918d33bc89d841f6e058c7bee4360e00e2384f7247177a9eb",
+  "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 2917,
-  "tables": 1,
+  "sample_rows": 2952,
+  "tables": 27,
   "distinct_headers": 1
  }
 }

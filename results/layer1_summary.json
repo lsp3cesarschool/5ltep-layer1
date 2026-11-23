@@ -5,8 +5,8 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-11-16T14:36:05+00:00",
- "census_at": "2026-11-16T11:55:21+00:00",
+ "generated_at": "2026-11-23T17:43:13+00:00",
+ "census_at": "2026-11-23T13:22:07+00:00",
  "method": {
   "rotation_days": 28,
   "sample_rows": 5000,
@@ -37,30 +37,30 @@
   }
  },
  "tables": {
-  "total": 195,
+  "total": 193,
   "by_level": {
-   "0": 73,
-   "1": 49,
+   "0": 75,
+   "1": 45,
    "2": 73,
    "3": 0,
    "4": 0
   },
-  "validated": 184,
-  "validation_coverage": 0.9436,
+  "validated": 182,
+  "validation_coverage": 0.943,
   "errors": 11,
-  "queue_remaining": 0,
+  "queue_remaining": 49,
   "declared_gb": 0.0,
-  "size_unknown": 194,
+  "size_unknown": 192,
   "by_format": {
    "csv": {
-    "files": 97,
+    "files": 98,
     "gb": 0.0,
-    "size_unknown": 96
+    "size_unknown": 97
    },
    "zip": {
-    "files": 96,
+    "files": 93,
     "gb": 0.0,
-    "size_unknown": 96
+    "size_unknown": 93
    },
    "json": {
     "files": 1,
@@ -74,17 +74,23 @@
    }
   },
   "queue_gb": 0.0,
-  "queue_largest": []
+  "queue_largest": [
+   {
+    "id": "13f87098-c079-458d-93b6-810b708eb1e3",
+    "name": "Bem destruído",
+    "gb": 0.0
+   }
+  ]
  },
  "schema_sources": {
-  "described": 49,
+  "described": 45,
   "declared": 72
  },
  "conformance_by_source": {
   "described": {
-   "verifiable": 49,
-   "conformant": 21,
-   "l1_rate": 0.4286
+   "verifiable": 45,
+   "conformant": 18,
+   "l1_rate": 0.4
   },
   "declared": {
    "verifiable": 72,
@@ -92,20 +98,20 @@
    "l1_rate": 0.2778
   }
  },
- "verifiable": 121,
- "conformant": 41,
- "l1_rate": 0.3388,
+ "verifiable": 117,
+ "conformant": 38,
+ "l1_rate": 0.3248,
  "l1_pass": false,
  "drift": {
-  "observed": 9,
-  "declared": 2,
-  "files_with_baseline": 184,
+  "observed": 16,
+  "declared": 8,
+  "files_with_baseline": 188,
   "first_baseline_at": "2026-11-02T11:32:15+00:00",
-  "last_observed_at": "2026-11-16T14:28:58+00:00"
+  "last_observed_at": "2026-11-23T17:23:02+00:00"
  },
  "coverage": {
-  "files": 195,
-  "read": 184,
+  "files": 193,
+  "read": 182,
   "empty": 0,
   "not_tabular": 0,
   "too_large": 0,
@@ -119,16 +125,16 @@
    "HTTP 404 · siscom.ibama.gov.br": 10,
    "other · stibamadadosabertosprd.blob.core.windows.net": 1
   },
-  "read_without_schema": 63,
-  "checked": 121,
-  "conform": 41,
-  "fail_missing_fields": 42,
-  "fail_undeclared_columns": 49,
+  "read_without_schema": 65,
+  "checked": 117,
+  "conform": 38,
+  "fail_missing_fields": 40,
+  "fail_undeclared_columns": 48,
   "fail_cells_over_limit": 43,
   "fail_only_cells": 30
  },
  "not_tables": {
-  "count": 4,
+  "count": 6,
   "resources": [
    {
     "dataset": "arrecadacao-com-tcfa",
@@ -149,6 +155,18 @@
     "contents": "zip without tables (first entries: ['ADA_atoDeclaratorio_2026.html', 'ADA_atoDeclaratorio_2025.html', 'ADA_atoDeclaratorio_2024.html', 'ADA_atoDeclaratorio_2023.html', 'ADA_atoDeclaratorio_2022.html']"
    },
    {
+    "dataset": "autorizacao-ambiental-para-o-transporte-interestadual-de-produtos-perigosos-aatipp",
+    "id": "b27270d8-720d-4828-b663-d1687e1d49ba",
+    "name": "Autorização Ambiental para o Transporte ...",
+    "contents": "zip without tables (first entries: ['AATIPP_ano_2026_uf_AC.html', 'AATIPP_ano_2026_uf_AL.html', 'AATIPP_ano_2026_uf_AM.html', 'AATIPP_ano_2026_uf_AP.html', 'AATIPP_ano_2026_uf_BA.html'])"
+   },
+   {
+    "dataset": "julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama",
+    "id": "5b528448-8225-44ef-bb8a-f5bd26abc4d3",
+    "name": "Volume de Julgamento de Auto de Infração",
+    "contents": "zip without tables (first entries: ['julgamentos_auto_infracao_realizado_ambito_ibama_AC.html', 'julgamentos_auto_infracao_realizado_ambito_ibama_AL.html', 'julgamentos_auto_infracao_realizado_ambito_"
+   },
+   {
     "dataset": "multas-ambientais-distribuidas-por-bens-tutelados",
     "id": "45afa8f4-25ec-414d-8ea6-34a70814fc36",
     "name": "Quantidade de Multas Ambientais Distribuídas ...",
@@ -157,61 +175,57 @@
   ]
  },
  "distributions": {
-  "tables_with_other_formats": 94,
-  "other_formats": 172,
-  "compared": 172,
-  "same_columns": 115,
-  "spelling_only": 23,
-  "different_columns": 34,
-  "not_compared": {},
+  "tables_with_other_formats": 95,
+  "other_formats": 174,
+  "compared": 173,
+  "same_columns": 123,
+  "spelling_only": 22,
+  "different_columns": 28,
+  "not_compared": {
+   "error": 1
+  },
   "by_format": {
-   "json": 86,
-   "xml": 86
+   "json": 87,
+   "xml": 87
   }
  },
  "network": {
   "total": {
-   "files": 195,
+   "files": 193,
    "failed_files": 11,
-   "gb": 23.3,
-   "minutes": 263.7,
-   "end_to_end_mb_s": 1.47,
-   "zip_download_mb_s": 31.25,
-   "first_byte_s_median": 0.16,
-   "network_share": 0.024,
-   "network_mb_s": 60.54,
-   "request_failures": {
-    "HTTP 404": 16
-   }
+   "gb": 28.2,
+   "minutes": 524.6,
+   "end_to_end_mb_s": 0.9,
+   "zip_download_mb_s": 21.17,
+   "first_byte_s_median": 0.19,
+   "network_share": 0.025,
+   "network_mb_s": 36.4,
+   "request_failures": {}
   },
   "by_host": {
    "stibamadadosabertosprd.blob.core.windows.net": {
-    "files": 139,
+    "files": 149,
     "failed_files": 1,
-    "gb": 19.99,
-    "minutes": 258.1,
-    "end_to_end_mb_s": 1.29,
-    "zip_download_mb_s": 31.28,
-    "first_byte_s_median": 0.17,
+    "gb": 25.42,
+    "minutes": 521.6,
+    "end_to_end_mb_s": 0.81,
+    "zip_download_mb_s": 21.18,
+    "first_byte_s_median": 0.19,
     "network_share": 0.024,
-    "network_mb_s": 54.77,
-    "request_failures": {
-     "HTTP 404": 10
-    }
+    "network_mb_s": 33.4,
+    "request_failures": {}
    },
    "dadosabertos.ibama.gov.br": {
-    "files": 46,
+    "files": 34,
     "failed_files": 0,
-    "gb": 3.31,
-    "minutes": 5.6,
-    "end_to_end_mb_s": 9.79,
-    "zip_download_mb_s": 29.37,
-    "first_byte_s_median": 0.05,
-    "network_share": 0.059,
-    "network_mb_s": 166.35,
-    "request_failures": {
-     "HTTP 404": 6
-    }
+    "gb": 2.78,
+    "minutes": 3.0,
+    "end_to_end_mb_s": 15.34,
+    "zip_download_mb_s": 14.97,
+    "first_byte_s_median": 0.17,
+    "network_share": 0.076,
+    "network_mb_s": 202.9,
+    "request_failures": {}
    },
    "siscom.ibama.gov.br": {
     "files": 10,
@@ -247,12 +261,12 @@
   "links": {
    "tables": 199,
    "by_method": {
-    "none": 77,
+    "none": 80,
     "header": 69,
-    "description": 49,
+    "description": 46,
     "name": 4
    },
-   "fields_listed_in_description": 49
+   "fields_listed_in_description": 46
   },
   "types": {
    "fields_declared": 949,
@@ -282,19 +296,19 @@
    "date_fields_with_declared_format": 0.3913
   },
   "files_vs_dictionaries": {
-   "checked": 121,
-   "with_declared_fields_missing": 42,
-   "with_undeclared_columns": 49,
-   "with_spelling_differences": 46,
-   "with_similar_names": 21,
-   "similar_names": 133,
-   "declared_fields_missing": 305,
+   "checked": 117,
+   "with_declared_fields_missing": 40,
+   "with_undeclared_columns": 48,
+   "with_spelling_differences": 48,
+   "with_similar_names": 19,
+   "similar_names": 131,
+   "declared_fields_missing": 303,
    "formats_inferred_from_data": {
     "trueValues": 16,
     "falseValues": 16,
     "type": 11,
     "format": 59,
-    "decimalChar": 25,
+    "decimalChar": 24,
     "groupChar": 20
    }
   },
@@ -308,10 +322,10 @@
    "results_copied": 0
   },
   "files": {
-   "validated": 184,
+   "validated": 182,
    "encodings": {
-    "utf-8-sig": 77,
-    "utf-8": 107
+    "utf-8-sig": 83,
+    "utf-8": 99
    },
    "delimiters": {
     ";": 119
@@ -321,11 +335,11 @@
    "zips_with_several_headers": 2,
    "with_columns_without_name": 0,
    "not_tabular": 0,
-   "not_tables": 4,
+   "not_tables": 6,
    "formats": {
     "csv": 119,
-    "json": 32,
-    "xml": 33
+    "json": 31,
+    "xml": 32
    },
    "unreachable_by_reason": {
     "HTTP 404": 10,
@@ -353,11 +367,11 @@
    }
   },
   "delivery": {
-   "probed_at": "2026-11-16T11:55:21+00:00",
+   "probed_at": "2026-11-23T13:22:07+00:00",
    "hosts": {
     "dadosabertos.ibama.gov.br": {
-     "linked": 46,
-     "files": 46,
+     "linked": 34,
+     "files": 34,
      "served_by": [
       "dadosabertos.ibama.gov.br"
      ],
@@ -366,16 +380,16 @@
      ],
      "probes": 3,
      "range": "honoured",
-     "with_etag": 46,
-     "with_last_modified": 46,
+     "with_etag": 34,
+     "with_last_modified": 34,
      "without_validator": 0,
      "without_length": 0,
-     "of": 46,
+     "of": 34,
      "generic_type": 0,
-     "typed": 46,
+     "typed": 34,
      "content_types": {
-      "text/csv": 28,
-      "application/zip": 18
+      "text/csv": 25,
+      "application/zip": 9
      },
      "broken_links": 0,
      "redirect_loops": 0
@@ -399,8 +413,8 @@
      "redirect_loops": 0
     },
     "stibamadadosabertosprd.blob.core.windows.net": {
-     "linked": 139,
-     "files": 138,
+     "linked": 149,
+     "files": 148,
      "served_by": [
       "stibamadadosabertosprd.blob.core.windows.net"
      ],
@@ -409,15 +423,15 @@
      ],
      "probes": 3,
      "range": "honoured",
-     "with_etag": 138,
-     "with_last_modified": 138,
+     "with_etag": 148,
+     "with_last_modified": 148,
      "without_validator": 0,
      "without_length": 0,
-     "of": 138,
-     "generic_type": 138,
-     "typed": 138,
+     "of": 148,
+     "generic_type": 148,
+     "typed": 148,
      "content_types": {
-      "application/octet-stream": 138
+      "application/octet-stream": 148
      },
      "broken_links": 0,
      "redirect_loops": 0
@@ -433,8 +447,8 @@
     {
      "id": "media-type",
      "host": "stibamadadosabertosprd.blob.core.windows.net",
-     "n": 138,
-     "of": 138,
+     "n": 148,
+     "of": 148,
      "types": [
       "application/octet-stream"
      ]
@@ -478,8 +492,8 @@
   {
    "name": "autorizacao-ambiental-para-o-transporte-interestadual-de-produtos-perigosos-aatipp",
    "level": 1,
-   "tables": 1,
-   "verifiable": 1,
+   "tables": 3,
+   "verifiable": 3,
    "conformant": 0,
    "l1_rate": 0.0
   },
@@ -606,10 +620,10 @@
   {
    "name": "fiscalizacao-termo-de-apreensao",
    "level": 1,
-   "tables": 18,
-   "verifiable": 18,
-   "conformant": 14,
-   "l1_rate": 0.7778
+   "tables": 12,
+   "verifiable": 12,
+   "conformant": 11,
+   "l1_rate": 0.9167
   },
   {
    "name": "fiscalizacao-termo-de-demolicao",
@@ -710,7 +724,7 @@
   {
    "name": "julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama",
    "level": 0,
-   "tables": 1,
+   "tables": 3,
    "verifiable": 0,
    "conformant": 0,
    "l1_rate": null

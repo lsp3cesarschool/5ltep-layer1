@@ -63,17 +63,17 @@
   {
    "name": "Area_Total_do_Imovel_ATI",
    "type": "number",
-   "sampleEmptyShare": 0.0052
+   "sampleEmptyShare": 0.0056
   },
   {
    "name": "APP_ha",
    "type": "number",
-   "sampleEmptyShare": 0.1656
+   "sampleEmptyShare": 0.1658
   },
   {
    "name": "Reserva_Legal_ha",
    "type": "number",
-   "sampleEmptyShare": 0.7296
+   "sampleEmptyShare": 0.7298
   },
   {
    "name": "Sobreposicao_ARL_ha",
@@ -83,7 +83,7 @@
   {
    "name": "Area_Liquida_ARL_ha",
    "type": "number",
-   "sampleEmptyShare": 0.7296
+   "sampleEmptyShare": 0.7298
   },
   {
    "name": "Area_RPPN_ha",
@@ -188,7 +188,7 @@
   {
    "name": "Reflorestamento_ha",
    "type": "number",
-   "sampleEmptyShare": 0.916
+   "sampleEmptyShare": 0.9166
   },
   {
    "name": "Pastagens_ha",
@@ -239,8 +239,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-16T13:59:30+00:00",
-  "sha256": "4ed123273c35ab8d19762f1835f2ad5c1b5814472a2a4f515fb401d40bbd92a7",
+  "observed_at": "2026-11-23T16:56:21+00:00",
+  "sha256": "fb6656f3099d31836269baf1b262deac49bb83c06247af9fd5b93174a4fb5fe3",
   "encoding": "utf-8",
   "delimiter": null,
   "sample_rows": 5000,

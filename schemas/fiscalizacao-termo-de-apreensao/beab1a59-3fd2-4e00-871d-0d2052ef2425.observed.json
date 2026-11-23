@@ -3,37 +3,38 @@
   {
    "name": "SEQ_TAD",
    "type": "integer",
-   "sampleEmptyShare": 0.0344
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "CD_TAD",
-   "type": "string",
+   "type": "integer",
    "sampleEmptyShare": 0.0
   },
   {
    "name": "CD_SERIE_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.2106
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "ID_BEM_APREENDIDO",
    "type": "integer",
-   "sampleEmptyShare": 0.2018
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "CD_BEM_APREENDIDO",
-   "type": "string",
-   "sampleEmptyShare": 0.7982
+   "type": "any",
+   "sampleEmptyShare": 1.0
   },
   {
    "name": "QT_BEM_APREENDIDO",
    "type": "number",
-   "sampleEmptyShare": 0.002
+   "decimalChar": ",",
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "DS_UNIDADE_MEDIDA",
    "type": "string",
-   "sampleEmptyShare": 0.0404
+   "sampleEmptyShare": 0.0002
   },
   {
    "name": "DS_TIPO_BEM",
@@ -43,112 +44,112 @@
   {
    "name": "DS_TIPO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.3592
+   "sampleEmptyShare": 0.0002
   },
   {
    "name": "DS_BEM_APREENDIDO",
    "type": "string",
-   "sampleEmptyShare": 0.3008
+   "sampleEmptyShare": 0.111
   },
   {
    "name": "TP_VEICULO",
-   "type": "string",
-   "sampleEmptyShare": 0.7982
+   "type": "any",
+   "sampleEmptyShare": 1.0
   },
   {
    "name": "DS_MARCA",
-   "type": "string",
-   "sampleEmptyShare": 0.9222
+   "type": "any",
+   "sampleEmptyShare": 1.0
   },
   {
    "name": "DS_MARCA_MODELO",
    "type": "string",
-   "sampleEmptyShare": 0.812
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "DS_MODELO",
-   "type": "string",
-   "sampleEmptyShare": 0.9262
+   "type": "any",
+   "sampleEmptyShare": 1.0
   },
   {
    "name": "DS_PLACA_VEICULO",
    "type": "string",
-   "sampleEmptyShare": 0.8468
+   "sampleEmptyShare": 0.9998
   },
   {
    "name": "DS_COR",
    "type": "string",
-   "sampleEmptyShare": 0.903
+   "sampleEmptyShare": 0.9998
   },
   {
    "name": "DS_CHASSI_NUM_MOTOR",
    "type": "string",
-   "sampleEmptyShare": 0.8698
+   "sampleEmptyShare": 0.9998
   },
   {
    "name": "NU_CHASSI_VEICULO",
    "type": "string",
-   "sampleEmptyShare": 0.8732
+   "sampleEmptyShare": 0.9998
   },
   {
    "name": "NU_MOTOR_VEICULO",
-   "type": "string",
-   "sampleEmptyShare": 0.9966
+   "type": "any",
+   "sampleEmptyShare": 1.0
   },
   {
    "name": "AN_FABRICACAO_VEICULO",
    "type": "integer",
-   "sampleEmptyShare": 0.921
+   "sampleEmptyShare": 0.9998
   },
   {
    "name": "AN_MODELO_VEICULO",
-   "type": "integer",
-   "sampleEmptyShare": 0.9624
+   "type": "any",
+   "sampleEmptyShare": 1.0
   },
   {
    "name": "DS_LACRE_VEICULO",
-   "type": "string",
-   "sampleEmptyShare": 0.9958
+   "type": "any",
+   "sampleEmptyShare": 1.0
   },
   {
    "name": "NU_INSCRICAO_MARINHA",
-   "type": "string",
-   "sampleEmptyShare": 0.9942
+   "type": "any",
+   "sampleEmptyShare": 1.0
   },
   {
    "name": "NO_MATRICULA",
    "type": "string",
-   "sampleEmptyShare": 0.9972
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "DS_LICENCA_NUMERO_SERIE",
-   "type": "string",
-   "sampleEmptyShare": 0.9996
+   "type": "any",
+   "sampleEmptyShare": 1.0
   },
   {
    "name": "NU_SERIE_VEICULO",
-   "type": "integer",
-   "sampleEmptyShare": 0.9998
+   "type": "any",
+   "sampleEmptyShare": 1.0
   },
   {
    "name": "DS_FABRICANTE",
-   "type": "string",
-   "sampleEmptyShare": 0.9998
+   "type": "any",
+   "sampleEmptyShare": 1.0
   },
   {
    "name": "VL_BEM_APREENDIDO",
-   "type": "number",
-   "sampleEmptyShare": 0.7982
+   "type": "any",
+   "sampleEmptyShare": 1.0
   },
   {
    "name": "CD_TERMO_DESTINO",
    "type": "string",
-   "sampleEmptyShare": 0.5914
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "DS_TIPO_TERMO_DESTINO",
    "type": "string",
-   "sampleEmptyShare": 0.5914
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "DS_CATEGORIA",
@@ -157,27 +158,27 @@
   },
   {
    "name": "DS_RENAVAM",
-   "type": "string",
-   "sampleEmptyShare": 0.9114
+   "type": "integer",
+   "sampleEmptyShare": 0.9998
   },
   {
    "name": "DT_APREENSAO",
-   "type": "date",
-   "format": "%Y-%m-%d",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
    "sampleEmptyShare": 0.0
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
    "type": "datetime",
-   "format": "%Y-%m-%d %H:%M",
+   "format": "%Y-%m-%d %H:%M:%S",
    "sampleEmptyShare": 0.0
   }
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T11:36:42+00:00",
-  "sha256": "ea3ba089c36c6a51aa16a8fe1e34e538251590d190d8be0057c7b645c5b6557c",
-  "encoding": "utf-8",
+  "observed_at": "2026-11-23T13:47:01+00:00",
+  "sha256": "5bc38e6e65846e02e3af932b96953aef00d4787b3d12474a1bce576f606596d0",
+  "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,
   "tables": 1,

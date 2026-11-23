@@ -3,7 +3,7 @@
   {
    "name": "SEQ_TAD",
    "type": "integer",
-   "sampleEmptyShare": 0.0146
+   "sampleEmptyShare": 0.0228
   },
   {
    "name": "DS_SIT_APREENSAO",
@@ -12,13 +12,7 @@
   },
   {
    "name": "ST_CANCELADO",
-   "type": "boolean",
-   "trueValues": [
-    "S"
-   ],
-   "falseValues": [
-    "N"
-   ],
+   "type": "string",
    "sampleEmptyShare": 0.0
   },
   {
@@ -29,53 +23,53 @@
   {
    "name": "CD_SERIE_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.1678
+   "sampleEmptyShare": 0.1872
   },
   {
    "name": "DT_APREENSAO",
-   "type": "date",
-   "format": "%Y-%m-%d",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
    "sampleEmptyShare": 0.0
   },
   {
    "name": "DT_IMPRESSAO",
-   "type": "date",
-   "format": "%Y-%m-%d",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
    "sampleEmptyShare": 0.8412
   },
   {
    "name": "NU_PESSOA_APREENSAO",
    "type": "integer",
-   "sampleEmptyShare": 0.1186
+   "sampleEmptyShare": 0.122
   },
   {
    "name": "NO_PESSOA_APREENSAO",
    "type": "string",
-   "sampleEmptyShare": 0.1164
+   "sampleEmptyShare": 0.1174
   },
   {
    "name": "NU_CPF_CNPJ_PESSOA_APREENSAO",
    "type": "string",
-   "sampleEmptyShare": 0.1338
+   "sampleEmptyShare": 0.136
   },
   {
    "name": "NU_PROCESSO_FORMATADO",
    "type": "string",
-   "sampleEmptyShare": 0.0946
+   "sampleEmptyShare": 0.0988
   },
   {
    "name": "DS_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.0436
+   "sampleEmptyShare": 0.0434
   },
   {
    "name": "DS_COMPLEMENTAR",
    "type": "string",
-   "sampleEmptyShare": 0.9018
+   "sampleEmptyShare": 0.893
   },
   {
    "name": "CD_MUNICIPIO",
-   "type": "integer",
+   "type": "string",
    "sampleEmptyShare": 0.0
   },
   {
@@ -91,22 +85,22 @@
   {
    "name": "DS_LOCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0926
+   "sampleEmptyShare": 0.0918
   },
   {
    "name": "NU_LONGITUDE_TAD",
    "type": "number",
-   "sampleEmptyShare": 0.5936
+   "sampleEmptyShare": 0.5742
   },
   {
    "name": "NU_LATITUDE_TAD",
    "type": "number",
-   "sampleEmptyShare": 0.5926
+   "sampleEmptyShare": 0.5732
   },
   {
    "name": "DS_FORMA_ENTREGA",
    "type": "string",
-   "sampleEmptyShare": 0.6328
+   "sampleEmptyShare": 0.6208
   },
   {
    "name": "SG_UNIDADE_APRESENTACAO",
@@ -121,153 +115,151 @@
   {
    "name": "VL_TAD",
    "type": "number",
-   "decimalChar": ",",
-   "sampleEmptyShare": 0.4126
+   "sampleEmptyShare": 0.4034
   },
   {
    "name": "SEQ_AUTO_INFRACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.2064
+   "sampleEmptyShare": 0.2222
   },
   {
    "name": "CD_AUTO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.197
+   "sampleEmptyShare": 0.206
   },
   {
    "name": "SER_AUTO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.2882
+   "sampleEmptyShare": 0.3042
   },
   {
    "name": "SEQ_NOTIFICACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.9772
+   "sampleEmptyShare": 0.978
   },
   {
    "name": "SEQ_ACAO_FISCALIZATORIA",
    "type": "integer",
-   "sampleEmptyShare": 0.6958
+   "sampleEmptyShare": 0.6848
   },
   {
    "name": "CD_ACAO_FISCALIZATORIA",
    "type": "string",
-   "sampleEmptyShare": 0.8398
+   "sampleEmptyShare": 0.8206
   },
   {
    "name": "NO_OPERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.9198
+   "sampleEmptyShare": 0.9232
   },
   {
    "name": "SEQ_ORDEM_FISCALIZACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.6584
+   "sampleEmptyShare": 0.6416
   },
   {
    "name": "NU_ORDEM_FISCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.658
+   "sampleEmptyShare": 0.6404
   },
   {
    "name": "SG_UNIDADE_ORDENADORA",
    "type": "string",
-   "sampleEmptyShare": 0.658
+   "sampleEmptyShare": 0.6404
   },
   {
    "name": "SEQ_SOLICITACAO_RECURSO",
    "type": "integer",
-   "sampleEmptyShare": 0.8028
+   "sampleEmptyShare": 0.7848
   },
   {
    "name": "NU_SOLICITACAO_RECURSO",
    "type": "number",
-   "sampleEmptyShare": 0.8028
+   "sampleEmptyShare": 0.7848
   },
   {
    "name": "NO_OPERACAO_SOL_RECURSO",
    "type": "string",
-   "sampleEmptyShare": 0.8028
+   "sampleEmptyShare": 0.7848
   },
   {
    "name": "DT_ALTERACAO",
-   "type": "date",
-   "format": "%Y-%m-%d",
+   "type": "datetime",
+   "format": "%d/%m/%Y %H:%M",
    "sampleEmptyShare": 0.0
   },
   {
    "name": "TP_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0154
+   "sampleEmptyShare": 0.0166
   },
   {
    "name": "DS_JUSTIFICATIVA_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0264
+   "sampleEmptyShare": 0.0352
   },
   {
    "name": "DS_WKT_LOCAL_APREENSAO",
    "type": "string",
-   "sampleEmptyShare": 0.5936
+   "sampleEmptyShare": 0.5742
   },
   {
    "name": "DS_ENQUADRAMENTO_ADMINISTRATIVO",
    "type": "string",
-   "sampleEmptyShare": 0.8402
+   "sampleEmptyShare": 0.821
   },
   {
    "name": "VL_MULTA",
    "type": "number",
-   "decimalChar": ",",
-   "sampleEmptyShare": 0.2064
+   "sampleEmptyShare": 0.2154
   },
   {
    "name": "DS_AUTO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.198
+   "sampleEmptyShare": 0.207
   },
   {
    "name": "DS_JUSTIFICATIVA_CANCELAMENTO",
    "type": "string",
-   "sampleEmptyShare": 0.9936
+   "sampleEmptyShare": 0.9918
   },
   {
    "name": "CD_ORIGINAL_APREENSAO",
    "type": "string",
-   "sampleEmptyShare": 0.9958
+   "sampleEmptyShare": 0.9956
   },
   {
    "name": "DS_COORDENADA_APREENSAO",
    "type": "string",
-   "sampleEmptyShare": 0.8406
+   "sampleEmptyShare": 0.8214
   },
   {
    "name": "DS_ENQUADRAMENTO_NAO_ADMINISTRATIVO",
    "type": "string",
-   "sampleEmptyShare": 0.8458
+   "sampleEmptyShare": 0.8266
   },
   {
    "name": "DS_ENQUADRAMENTO_COMPLEMENTAR",
    "type": "string",
-   "sampleEmptyShare": 0.9734
+   "sampleEmptyShare": 0.9688
   },
   {
    "name": "TP_ORIGEM_REGISTRO_APREENSAO",
    "type": "string",
-   "sampleEmptyShare": 0.84
+   "sampleEmptyShare": 0.8208
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
    "type": "datetime",
-   "format": "%Y-%m-%d %H:%M",
+   "format": "%d/%m/%Y %H:%M",
    "sampleEmptyShare": 0.0
   }
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T11:32:27+00:00",
-  "sha256": "afd442f6d8af42303c6015154b26bd227eb240a778928e71063dfcf6a86db2dc",
-  "encoding": "utf-8",
+  "observed_at": "2026-11-23T13:46:52+00:00",
+  "sha256": "f92db55212b73e4be92a3e9777f3d7b3415a77bb0f029da9ea7404b11c96a8ec",
+  "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,
   "tables": 1,

@@ -150,7 +150,7 @@
   },
   {
    "name": "HORA VOO",
-   "type": "string",
+   "type": "integer",
    "sampleEmptyShare": 0.9906
   },
   {
@@ -181,7 +181,6 @@
   {
    "name": "QTD AREA ATINGIDA",
    "type": "number",
-   "decimalChar": ",",
    "sampleEmptyShare": 0.26
   },
   {
@@ -207,9 +206,9 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T12:32:03+00:00",
-  "sha256": "252aa380626d9377c0e24b9fbcc8a0c7572e5e7ee8acab0c152b1888ad0ebc91",
-  "encoding": "utf-8",
+  "observed_at": "2026-11-23T13:47:29+00:00",
+  "sha256": "1e26d497b332bf3dde1663524c92522343c1c6a3c1ed94444f678128dbd791a1",
+  "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,
   "tables": 1,

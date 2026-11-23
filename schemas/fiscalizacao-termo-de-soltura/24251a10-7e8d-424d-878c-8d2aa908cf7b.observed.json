@@ -3,7 +3,7 @@
   {
    "name": "SEQ_SOLTURA",
    "type": "string",
-   "sampleEmptyShare": 0.9231
+   "sampleEmptyShare": 0.9236
   },
   {
    "name": "NUM_SOLTURA",
@@ -18,7 +18,7 @@
   {
    "name": "COD_SUBSTITUICAO",
    "type": "string",
-   "sampleEmptyShare": 0.9844
+   "sampleEmptyShare": 0.9842
   },
   {
    "name": "DES_STATUS_FORMULARIO",
@@ -75,24 +75,24 @@
   {
    "name": "DES_LOCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0664
+   "sampleEmptyShare": 0.0663
   },
   {
    "name": "NUM_LONGITUDE",
    "type": "number",
    "decimalChar": ",",
-   "sampleEmptyShare": 0.0643
+   "sampleEmptyShare": 0.0642
   },
   {
    "name": "NUM_LATITUDE",
    "type": "number",
    "decimalChar": ",",
-   "sampleEmptyShare": 0.0643
+   "sampleEmptyShare": 0.0642
   },
   {
    "name": "FORMA_ENTREGA",
    "type": "string",
-   "sampleEmptyShare": 0.9231
+   "sampleEmptyShare": 0.9236
   },
   {
    "name": "UNID_APRESENTACAO",
@@ -107,28 +107,28 @@
   {
    "name": "DES_JUSTIFICATIVA",
    "type": "string",
-   "sampleEmptyShare": 0.3241
+   "sampleEmptyShare": 0.3224
   },
   {
    "name": "DAT_ALTERACAO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
-   "sampleEmptyShare": 0.9231
+   "sampleEmptyShare": 0.9236
   },
   {
    "name": "TIPO_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.9231
+   "sampleEmptyShare": 0.9236
   },
   {
    "name": "JUSTIFICATIVA_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.8953
+   "sampleEmptyShare": 0.896
   },
   {
    "name": "DES_OBSERVACAO",
    "type": "string",
-   "sampleEmptyShare": 0.5257
+   "sampleEmptyShare": 0.5248
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -139,11 +139,11 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-16T13:53:22+00:00",
-  "sha256": "7d4c0f1da0e021011824471f99e520abde87655f8cef67d87a2f281ced78a79b",
+  "observed_at": "2026-11-23T14:21:51+00:00",
+  "sha256": "83cf9dae252047acea5b5922b648b6f20d6800cd2d790db740f75921b05d9112",
   "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 3342,
+  "sample_rows": 3365,
   "tables": 1,
   "distinct_headers": 1
  }

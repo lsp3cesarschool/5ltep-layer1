@@ -503,5 +503,154 @@
    ],
    "schema_removed": true
   }
+ },
+ {
+  "id": "0c840bb32a58d96b",
+  "kind": "observed",
+  "dataset": "autorizacao-ambiental-para-o-transporte-interestadual-de-produtos-perigosos-aatipp",
+  "resource_id": "d5c0fa8b-b522-446a-a281-15f587783935",
+  "resource_name": "Autorização Ambiental para o Transporte ...",
+  "at": "2026-11-23T13:28:18+00:00",
+  "before_sha256": "2afe2fccb08df1318886ce9160dde73f5c0893e5911d8433eda81f4a16e07d27",
+  "after_sha256": "6fd4ea7db59af596fc4839a8d337f923d938921081b01a24ce4d35e17996f00c",
+  "changes": {
+   "encoding": {
+    "before": "utf-8",
+    "after": "utf-8-sig"
+   }
+  }
+ },
+ {
+  "id": "542a870f2e93913b",
+  "kind": "observed",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "resource_id": "3364a902-067a-469a-bd9a-b865d234eed9",
+  "resource_name": "Termo de apreensão",
+  "at": "2026-11-23T13:46:52+00:00",
+  "before_sha256": "afd442f6d8af42303c6015154b26bd227eb240a778928e71063dfcf6a86db2dc",
+  "after_sha256": "f92db55212b73e4be92a3e9777f3d7b3415a77bb0f029da9ea7404b11c96a8ec",
+  "changes": {
+   "encoding": {
+    "before": "utf-8",
+    "after": "utf-8-sig"
+   }
+  }
+ },
+ {
+  "id": "b66bc4f76150c979",
+  "kind": "observed",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "resource_id": "beab1a59-3fd2-4e00-871d-0d2052ef2425",
+  "resource_name": "Termo de apreensão – bem apreendido",
+  "at": "2026-11-23T13:47:01+00:00",
+  "before_sha256": "ea3ba089c36c6a51aa16a8fe1e34e538251590d190d8be0057c7b645c5b6557c",
+  "after_sha256": "5bc38e6e65846e02e3af932b96953aef00d4787b3d12474a1bce576f606596d0",
+  "changes": {
+   "encoding": {
+    "before": "utf-8",
+    "after": "utf-8-sig"
+   }
+  }
+ },
+ {
+  "id": "fd481a1801d500c7",
+  "kind": "observed",
+  "dataset": "fiscalizacao-termo-de-apreensao",
+  "resource_id": "497ac942-f584-415c-bed8-a5bb09f97463",
+  "resource_name": "Termo de apreensão - enquadramento complementar",
+  "at": "2026-11-23T13:47:06+00:00",
+  "before_sha256": "3b6088202510e50cb0a5044345219cb16a79ea71e696c38dd4cfb5a6b6f2ab2a",
+  "after_sha256": "20d85fd6787710ee15ac8e7d2983f6d1eeb0c46d40198f53f62d0e973cac8f44",
+  "changes": {
+   "encoding": {
+    "before": "utf-8",
+    "after": "utf-8-sig"
+   }
+  }
+ },
+ {
+  "id": "50c801d3af1c4db8",
+  "kind": "observed",
+  "dataset": "julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama",
+  "resource_id": "6fe07a2f-718a-4d04-a386-2a1cd3e96afb",
+  "resource_name": "Volume de Julgamento de Auto de Infração",
+  "at": "2026-11-23T13:47:09+00:00",
+  "before_sha256": "7780312127223a853a01ced2be76b9631850ce282fc32af0e72dbf8eae81004d",
+  "after_sha256": "2b77fb536e3a606918d33bc89d841f6e058c7bee4360e00e2384f7247177a9eb",
+  "changes": {
+   "encoding": {
+    "before": "utf-8",
+    "after": "utf-8-sig"
+   }
+  }
+ },
+ {
+  "id": "1aae6604abca6db4",
+  "kind": "observed",
+  "dataset": "sisfogo-roi",
+  "resource_id": "c2ac514d-3701-4255-9b47-fcbb042fb9b2",
+  "resource_name": "ROI formato csv",
+  "at": "2026-11-23T13:47:29+00:00",
+  "before_sha256": "252aa380626d9377c0e24b9fbcc8a0c7572e5e7ee8acab0c152b1888ad0ebc91",
+  "after_sha256": "1e26d497b332bf3dde1663524c92522343c1c6a3c1ed94444f678128dbd791a1",
+  "changes": {
+   "encoding": {
+    "before": "utf-8",
+    "after": "utf-8-sig"
+   }
+  }
+ },
+ {
+  "id": "b1657f4928624d5c",
+  "kind": "observed",
+  "dataset": "fiscalizacao-auto-de-infracao",
+  "resource_id": "160b14e2-d7d8-40aa-b06c-295575a5fb9c",
+  "resource_name": "Autos de infração - espécimes",
+  "at": "2026-11-23T14:19:49+00:00",
+  "before_sha256": "91603a81ca216db9fe88984c8a0078e29778e53292059b8044f0a575a1576602",
+  "after_sha256": "b87bd604539fbc8ca7e26a4d40e989c59c4a2148a6e4d83690f4c5131ea410ee",
+  "changes": {
+   "columns_added": [
+    "SEQ_AUTO_INFRACAO",
+    "NUM_AUTO_INFRACAO",
+    "CD_SERIE_AUTO_INFRACAO",
+    "SEQ_TAXONOMIA",
+    "SEQ_ESPECIME",
+    "QUANTIDADE",
+    "UNIDADE_MEDIDA",
+    "DESCRICAO",
+    "CARACTERISTICA",
+    "TIPO",
+    "GRUPO",
+    "NOME_CIENTIFICO",
+    "NOME_POPULAR",
+    "CITES",
+    "SITUACAO",
+    "DAT_ALTERACAO",
+    "NU_VALOR"
+   ],
+   "columns_removed": [
+    "SEQ_TAD",
+    "CD_TAD",
+    "CD_SERIE_TAD",
+    "ID_ESPECIME",
+    "QT_ESPECIME",
+    "DS_UNIDADE_MEDIDA",
+    "DS_PRODUTO",
+    "ST_CARACTERISTICA",
+    "TP_INFRACAO",
+    "DS_GRUPO",
+    "ID_TAXONOMIA",
+    "NO_CIENTIFICO",
+    "NO_POPULAR",
+    "ST_CITES",
+    "DS_OBSERVACAO",
+    "DT_ALTERACAO",
+    "VL_ESPECIME_APREENDIDO",
+    "CD_TERMO_DESTINO",
+    "DS_TIPO_TERMO_DESTINO",
+    "DT_APREENSAO"
+   ]
+  }
  }
 ]

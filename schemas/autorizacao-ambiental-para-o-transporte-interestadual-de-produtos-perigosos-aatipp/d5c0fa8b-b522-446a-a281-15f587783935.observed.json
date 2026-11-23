@@ -55,18 +55,18 @@
   {
    "name": "Última Atualização Relatório",
    "type": "datetime",
-   "format": "%d/%m/%Y %H:%M",
+   "format": "%Y-%m-%d %H:%M:%S",
    "sampleEmptyShare": 0.0
   }
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T11:32:15+00:00",
-  "sha256": "2afe2fccb08df1318886ce9160dde73f5c0893e5911d8433eda81f4a16e07d27",
-  "encoding": "utf-8",
+  "observed_at": "2026-11-23T13:28:18+00:00",
+  "sha256": "6fd4ea7db59af596fc4839a8d337f923d938921081b01a24ce4d35e17996f00c",
+  "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,
-  "tables": 1,
+  "tables": 405,
   "distinct_headers": 1
  }
 }

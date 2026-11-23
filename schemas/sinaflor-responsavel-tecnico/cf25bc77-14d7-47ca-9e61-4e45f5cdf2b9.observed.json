@@ -39,7 +39,7 @@
    "name": "DATA_DE_HOMOLOGACAO",
    "type": "date",
    "format": "%d/%m/%Y",
-   "sampleEmptyShare": 0.1442
+   "sampleEmptyShare": 0.146
   },
   {
    "name": "SITUACAO_ORGAO",
@@ -61,8 +61,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-16T13:55:42+00:00",
-  "sha256": "621d007114d87767d2fc17b74eee6872ed933b78ff9a4e9834d4ae0653357621",
+  "observed_at": "2026-11-23T16:51:00+00:00",
+  "sha256": "2e90a64a260023cc3697bbe766f92616ef02421aa562ddf24e52c7c04093f38a",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

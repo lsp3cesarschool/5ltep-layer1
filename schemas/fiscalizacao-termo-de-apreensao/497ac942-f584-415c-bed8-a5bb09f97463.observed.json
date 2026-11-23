@@ -2,8 +2,8 @@
  "fields": [
   {
    "name": "SEQ_TAD",
-   "type": "integer",
-   "sampleEmptyShare": 0.1474
+   "type": "string",
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "CD_TERMO_APREENSAO",
@@ -12,7 +12,7 @@
   },
   {
    "name": "ID_ENQUADRAMENTO",
-   "type": "integer",
+   "type": "string",
    "sampleEmptyShare": 0.0
   },
   {
@@ -23,31 +23,30 @@
   {
    "name": "DS_ARTIGO_DISP_COMPLEMENTAR",
    "type": "string",
-   "sampleEmptyShare": 0.0018
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "DS_PAR_INC_AL_DISP_COMPLEMENTAR",
    "type": "string",
-   "sampleEmptyShare": 0.0298
+   "sampleEmptyShare": 0.0
   },
   {
    "name": "DH_IMPRESSAO_TERMO_APREENSAO",
-   "type": "date",
-   "format": "%Y-%m-%d",
+   "type": "datetime",
+   "format": "%Y-%m-%d %H:%M:%S",
    "sampleEmptyShare": 0.0
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
-   "type": "datetime",
-   "format": "%Y-%m-%d %H:%M",
+   "type": "string",
    "sampleEmptyShare": 0.0
   }
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-02T11:40:38+00:00",
-  "sha256": "3b6088202510e50cb0a5044345219cb16a79ea71e696c38dd4cfb5a6b6f2ab2a",
-  "encoding": "utf-8",
+  "observed_at": "2026-11-23T13:47:06+00:00",
+  "sha256": "20d85fd6787710ee15ac8e7d2983f6d1eeb0c46d40198f53f62d0e973cac8f44",
+  "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,
   "tables": 1,
