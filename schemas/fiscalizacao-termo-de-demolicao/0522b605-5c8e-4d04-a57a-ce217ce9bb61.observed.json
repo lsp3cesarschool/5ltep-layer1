@@ -3,7 +3,7 @@
   {
    "name": "SEQ_TAD",
    "type": "integer",
-   "sampleEmptyShare": 0.7974
+   "sampleEmptyShare": 0.7988
   },
   {
    "name": "STATUS_FORMULARIO",
@@ -29,12 +29,12 @@
   {
    "name": "SER_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.8192
+   "sampleEmptyShare": 0.8204
   },
   {
    "name": "COD_SUBSTITUICAO",
    "type": "string",
-   "sampleEmptyShare": 0.9911
+   "sampleEmptyShare": 0.9912
   },
   {
    "name": "DAT_TAD",
@@ -46,12 +46,12 @@
    "name": "DAT_IMPRESSAO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
-   "sampleEmptyShare": 0.8192
+   "sampleEmptyShare": 0.8204
   },
   {
    "name": "NUM_PESSOA_AUTUADA",
    "type": "integer",
-   "sampleEmptyShare": 0.5455
+   "sampleEmptyShare": 0.5447
   },
   {
    "name": "NOME_PESSOA_AUTUADA",
@@ -61,12 +61,12 @@
   {
    "name": "CPF_CNPJ_PESSOA_AUTUADA",
    "type": "string",
-   "sampleEmptyShare": 0.5178
+   "sampleEmptyShare": 0.5172
   },
   {
    "name": "NUM_PROCESSO",
    "type": "string",
-   "sampleEmptyShare": 0.1176
+   "sampleEmptyShare": 0.1158
   },
   {
    "name": "DES_TAD",
@@ -76,7 +76,7 @@
   {
    "name": "DS_COMPLEMENTAR",
    "type": "string",
-   "sampleEmptyShare": 0.4516
+   "sampleEmptyShare": 0.4485
   },
   {
    "name": "COD_MUNICIPIO",
@@ -96,7 +96,7 @@
   {
    "name": "DES_LOCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0217
+   "sampleEmptyShare": 0.0216
   },
   {
    "name": "NUM_LONGITUDE_TAD",
@@ -116,7 +116,7 @@
   {
    "name": "FORMA_ENTREGA",
    "type": "string",
-   "sampleEmptyShare": 0.9773
+   "sampleEmptyShare": 0.9774
   },
   {
    "name": "UNID_APRESENTACAO",
@@ -126,22 +126,22 @@
   {
    "name": "UNID_CONTROLE",
    "type": "string",
-   "sampleEmptyShare": 0.7974
+   "sampleEmptyShare": 0.7988
   },
   {
    "name": "VALOR_TAD",
    "type": "integer",
-   "sampleEmptyShare": 0.7984
+   "sampleEmptyShare": 0.7998
   },
   {
    "name": "SEQ_AUTO_INFRACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.6374
+   "sampleEmptyShare": 0.6398
   },
   {
    "name": "NUM_AUTO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.6215
+   "sampleEmptyShare": 0.6241
   },
   {
    "name": "SEQ_NOTIFICACAO",
@@ -151,58 +151,58 @@
   {
    "name": "SEQ_ACAO_FISCALIZATORIA",
    "type": "integer",
-   "sampleEmptyShare": 0.0968
+   "sampleEmptyShare": 0.0952
   },
   {
    "name": "CD_ACAO_FISCALIZATORIA",
    "type": "string",
-   "sampleEmptyShare": 0.1808
+   "sampleEmptyShare": 0.1796
   },
   {
    "name": "SEQ_ORDEM_FISCALIZACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.0435
+   "sampleEmptyShare": 0.0432
   },
   {
    "name": "NUM_ORDEM_FISCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0435
+   "sampleEmptyShare": 0.0432
   },
   {
    "name": "UNID_ORDENADORA",
    "type": "string",
-   "sampleEmptyShare": 0.0435
+   "sampleEmptyShare": 0.0432
   },
   {
    "name": "SEQ_SOLICITACAO_RECURSO",
    "type": "integer",
-   "sampleEmptyShare": 0.1334
+   "sampleEmptyShare": 0.1325
   },
   {
    "name": "NUM_SOLICITACAO_RECURSO",
    "type": "number",
-   "sampleEmptyShare": 0.1334
+   "sampleEmptyShare": 0.1325
   },
   {
    "name": "OPERACAO_SOL_RECURSO",
    "type": "string",
-   "sampleEmptyShare": 0.1334
+   "sampleEmptyShare": 0.1325
   },
   {
    "name": "DAT_ALTERACAO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
-   "sampleEmptyShare": 0.7974
+   "sampleEmptyShare": 0.7988
   },
   {
    "name": "TIPO_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.8053
+   "sampleEmptyShare": 0.8067
   },
   {
    "name": "JUSTIFICATIVA_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.7638
+   "sampleEmptyShare": 0.7655
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -213,11 +213,11 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-16T14:21:30+00:00",
-  "sha256": "584fa0ca5217d80fa5dbaf8ad298adc2a45f6c09bc3a6566ba8745227ce43220",
+  "observed_at": "2026-11-23T17:44:03+00:00",
+  "sha256": "c9cbc6985f969e62fb8ee40cb6d7d1e200c44a9a1128764cd7005ea83fb2dad3",
   "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 1012,
+  "sample_rows": 1019,
   "tables": 1,
   "distinct_headers": 1
  }

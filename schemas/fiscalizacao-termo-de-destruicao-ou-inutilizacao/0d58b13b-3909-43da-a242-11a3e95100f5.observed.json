@@ -3,7 +3,7 @@
   {
    "name": "SEQ_TAD",
    "type": "integer",
-   "sampleEmptyShare": 0.0978
+   "sampleEmptyShare": 0.0977
   },
   {
    "name": "NUM_TAD",
@@ -13,7 +13,7 @@
   {
    "name": "SER_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.6584
+   "sampleEmptyShare": 0.6586
   },
   {
    "name": "COD_SUBSTITUICAO",
@@ -23,12 +23,12 @@
   {
    "name": "SEQ_ESPECIME_APREENDIDO",
    "type": "integer",
-   "sampleEmptyShare": 0.4404
+   "sampleEmptyShare": 0.4408
   },
   {
    "name": "CD_ESPECIME",
    "type": "string",
-   "sampleEmptyShare": 0.5596
+   "sampleEmptyShare": 0.5592
   },
   {
    "name": "QTD_ESPECIME_APREENDIDO",
@@ -43,42 +43,42 @@
   {
    "name": "DESCRICAO_PRODUTO",
    "type": "string",
-   "sampleEmptyShare": 0.227
+   "sampleEmptyShare": 0.2268
   },
   {
    "name": "SITUACAO_CARACTERISTICA",
    "type": "string",
-   "sampleEmptyShare": 0.3961
+   "sampleEmptyShare": 0.3965
   },
   {
    "name": "ST_PERECIVEL",
    "type": "string",
-   "sampleEmptyShare": 0.5596
+   "sampleEmptyShare": 0.5592
   },
   {
    "name": "TIPO",
    "type": "string",
-   "sampleEmptyShare": 0.5918
+   "sampleEmptyShare": 0.5921
   },
   {
    "name": "GRUPO",
    "type": "string",
-   "sampleEmptyShare": 0.7042
+   "sampleEmptyShare": 0.7044
   },
   {
    "name": "SEQ_TAXONOMIA",
    "type": "integer",
-   "sampleEmptyShare": 0.8256
+   "sampleEmptyShare": 0.8258
   },
   {
    "name": "NOME_CIENTIFICO",
    "type": "string",
-   "sampleEmptyShare": 0.1207
+   "sampleEmptyShare": 0.1206
   },
   {
    "name": "NOME_POPULAR",
    "type": "string",
-   "sampleEmptyShare": 0.2114
+   "sampleEmptyShare": 0.2112
   },
   {
    "name": "CITES",
@@ -94,18 +94,18 @@
   {
    "name": "OBSERVACAO",
    "type": "string",
-   "sampleEmptyShare": 0.6987
+   "sampleEmptyShare": 0.6986
   },
   {
    "name": "DAT_ALTERACAO",
    "type": "datetime",
    "format": "%Y-%m-%d %H:%M:%S",
-   "sampleEmptyShare": 0.5926
+   "sampleEmptyShare": 0.5929
   },
   {
    "name": "NU_VALOR",
    "type": "integer",
-   "sampleEmptyShare": 0.5603
+   "sampleEmptyShare": 0.5599
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -116,11 +116,11 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-16T14:21:49+00:00",
-  "sha256": "11d539e80119c72a4b2cc967e28e57af4c368c89d8a7c4e228ded65bec610d09",
+  "observed_at": "2026-11-23T17:44:11+00:00",
+  "sha256": "6803b3bfca177de1664cd7b662023af518a5dc299820feef60264682bb17144c",
   "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 3969,
+  "sample_rows": 3972,
   "tables": 1,
   "distinct_headers": 1
  }

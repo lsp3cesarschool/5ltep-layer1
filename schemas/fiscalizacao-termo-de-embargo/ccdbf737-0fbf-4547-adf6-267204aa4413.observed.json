@@ -3,7 +3,7 @@
   {
    "name": "SEQ_TAD",
    "type": "integer",
-   "sampleEmptyShare": 0.6652
+   "sampleEmptyShare": 0.6758
   },
   {
    "name": "NUM_TAD",
@@ -39,12 +39,12 @@
   {
    "name": "NU_PARAGRAFO",
    "type": "integer",
-   "sampleEmptyShare": 0.7196
+   "sampleEmptyShare": 0.7232
   },
   {
    "name": "NU_INCISO",
    "type": "integer",
-   "sampleEmptyShare": 0.7052
+   "sampleEmptyShare": 0.7016
   },
   {
    "name": "CD_ALINEA",
@@ -60,8 +60,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-16T14:22:15+00:00",
-  "sha256": "0f8c2dce617b8b40696b34073627109baefbdd5b59d1ce0c97a3276ca4c3f2cb",
+  "observed_at": "2026-11-23T17:44:23+00:00",
+  "sha256": "46cc440637c33ea02965b3931e045b1f9f4dcb83263079c6b079cbb5f328dcbe",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

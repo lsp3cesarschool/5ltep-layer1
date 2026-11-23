@@ -3,12 +3,12 @@
   {
    "name": "SEQ_TAD",
    "type": "integer",
-   "sampleEmptyShare": 0.0985
+   "sampleEmptyShare": 0.1001
   },
   {
    "name": "NUM_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.0985
+   "sampleEmptyShare": 0.1001
   },
   {
    "name": "SER_TAD",
@@ -49,11 +49,11 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-16T14:21:47+00:00",
-  "sha256": "d8fac84b0993d8fd0101d53e1e00a2fd10ba47cb9d06db14750457a5870398ce",
+  "observed_at": "2026-11-23T17:44:09+00:00",
+  "sha256": "c93fd5b94096bd74ae8dd6f269d2f431a9a333efb3f5c7178b8d78cf90d69aeb",
   "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 1513,
+  "sample_rows": 1518,
   "tables": 1,
   "distinct_headers": 1
  }

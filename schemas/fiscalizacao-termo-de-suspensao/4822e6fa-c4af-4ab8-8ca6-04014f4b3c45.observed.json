@@ -65,7 +65,7 @@
   {
    "name": "DES_TAD",
    "type": "string",
-   "sampleEmptyShare": 0.002
+   "sampleEmptyShare": 0.0022
   },
   {
    "name": "DS_COMPLEMENTAR",
@@ -105,7 +105,7 @@
   {
    "name": "DES_JUSTIFICATIVA",
    "type": "string",
-   "sampleEmptyShare": 0.1736
+   "sampleEmptyShare": 0.1742
   },
   {
    "name": "FORMA_ENTREGA",
@@ -125,12 +125,12 @@
   {
    "name": "SEQ_AUTO_INFRACAO",
    "type": "number",
-   "sampleEmptyShare": 0.653
+   "sampleEmptyShare": 0.6554
   },
   {
    "name": "NUM_AUTO_INFRACAO",
    "type": "string",
-   "sampleEmptyShare": 0.653
+   "sampleEmptyShare": 0.6554
   },
   {
    "name": "SEQ_NOTIFICACAO",
@@ -140,22 +140,22 @@
   {
    "name": "SEQ_ACAO_FISCALIZATORIA",
    "type": "integer",
-   "sampleEmptyShare": 0.0146
+   "sampleEmptyShare": 0.0148
   },
   {
    "name": "CD_ACAO_FISCALIZATORIA",
    "type": "string",
-   "sampleEmptyShare": 0.0166
+   "sampleEmptyShare": 0.0168
   },
   {
    "name": "SEQ_ORDEM_FISCALIZACAO",
    "type": "integer",
-   "sampleEmptyShare": 0.0124
+   "sampleEmptyShare": 0.0126
   },
   {
    "name": "NUM_ORDEM_FISCALIZACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0124
+   "sampleEmptyShare": 0.0126
   },
   {
    "name": "UNID_ORDENADORA",
@@ -165,17 +165,17 @@
   {
    "name": "SEQ_SOLICITACAO_RECURSO",
    "type": "integer",
-   "sampleEmptyShare": 0.0124
+   "sampleEmptyShare": 0.0126
   },
   {
    "name": "NUM_SOLICITACAO_RECURSO",
    "type": "number",
-   "sampleEmptyShare": 0.0124
+   "sampleEmptyShare": 0.0126
   },
   {
    "name": "OPERACAO_SOL_RECURSO",
    "type": "string",
-   "sampleEmptyShare": 0.0124
+   "sampleEmptyShare": 0.0126
   },
   {
    "name": "DAT_ALTERACAO",
@@ -186,12 +186,12 @@
   {
    "name": "TIPO_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0302
+   "sampleEmptyShare": 0.029
   },
   {
    "name": "JUSTIFICATIVA_ALTERACAO",
    "type": "string",
-   "sampleEmptyShare": 0.0302
+   "sampleEmptyShare": 0.029
   },
   {
    "name": "ULTIMA_ATUALIZACAO_RELATORIO",
@@ -202,8 +202,8 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-16T14:22:28+00:00",
-  "sha256": "6275bc2033168e7691f85d10872b012c7a7816d5825b18c9ca8d554b800b36bc",
+  "observed_at": "2026-11-23T17:44:27+00:00",
+  "sha256": "5e697b84c21cec4be75e0eafaa091fb5e2b29e63bc5d44a48667f47130d1fe10",
   "encoding": "utf-8-sig",
   "delimiter": ";",
   "sample_rows": 5000,

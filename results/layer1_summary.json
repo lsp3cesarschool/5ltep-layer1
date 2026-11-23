@@ -5,7 +5,7 @@
   "name": "IBAMA",
   "title": "IBAMA open data portal (Dados Abertos IBAMA)"
  },
- "generated_at": "2026-11-23T17:43:13+00:00",
+ "generated_at": "2026-11-23T17:48:44+00:00",
  "census_at": "2026-11-23T13:22:07+00:00",
  "method": {
   "rotation_days": 28,
@@ -48,7 +48,7 @@
   "validated": 182,
   "validation_coverage": 0.943,
   "errors": 11,
-  "queue_remaining": 49,
+  "queue_remaining": 0,
   "declared_gb": 0.0,
   "size_unknown": 192,
   "by_format": {
@@ -74,13 +74,7 @@
    }
   },
   "queue_gb": 0.0,
-  "queue_largest": [
-   {
-    "id": "13f87098-c079-458d-93b6-810b708eb1e3",
-    "name": "Bem destruído",
-    "gb": 0.0
-   }
-  ]
+  "queue_largest": []
  },
  "schema_sources": {
   "described": 45,
@@ -107,7 +101,7 @@
   "declared": 8,
   "files_with_baseline": 188,
   "first_baseline_at": "2026-11-02T11:32:15+00:00",
-  "last_observed_at": "2026-11-23T17:23:02+00:00"
+  "last_observed_at": "2026-11-23T17:45:30+00:00"
  },
  "coverage": {
   "files": 193,
@@ -194,12 +188,12 @@
    "files": 193,
    "failed_files": 11,
    "gb": 28.2,
-   "minutes": 524.6,
+   "minutes": 524.7,
    "end_to_end_mb_s": 0.9,
    "zip_download_mb_s": 21.17,
-   "first_byte_s_median": 0.19,
+   "first_byte_s_median": 0.18,
    "network_share": 0.025,
-   "network_mb_s": 36.4,
+   "network_mb_s": 36.28,
    "request_failures": {}
   },
   "by_host": {
@@ -207,12 +201,12 @@
     "files": 149,
     "failed_files": 1,
     "gb": 25.42,
-    "minutes": 521.6,
+    "minutes": 521.7,
     "end_to_end_mb_s": 0.81,
-    "zip_download_mb_s": 21.18,
+    "zip_download_mb_s": 21.19,
     "first_byte_s_median": 0.19,
     "network_share": 0.024,
-    "network_mb_s": 33.4,
+    "network_mb_s": 33.29,
     "request_failures": {}
    },
    "dadosabertos.ibama.gov.br": {

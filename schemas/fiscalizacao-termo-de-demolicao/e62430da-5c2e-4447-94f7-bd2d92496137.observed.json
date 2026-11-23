@@ -3,7 +3,7 @@
   {
    "name": "SEQ_TAD",
    "type": "integer",
-   "sampleEmptyShare": 0.963
+   "sampleEmptyShare": 0.9638
   },
   {
    "name": "NUM_TAD",
@@ -18,7 +18,7 @@
   {
    "name": "COD_SUBSTITUICAO",
    "type": "string",
-   "sampleEmptyShare": 0.9926
+   "sampleEmptyShare": 0.9928
   },
   {
    "name": "ADMINISTRATIVO",
@@ -49,11 +49,11 @@
  ],
  "x5ltep": {
   "status": "observed",
-  "observed_at": "2026-11-16T14:21:35+00:00",
-  "sha256": "0b3024cda12aac14e0912aee00da10337e1fde6862a6c68043afc1073eea8757",
+  "observed_at": "2026-11-23T17:44:05+00:00",
+  "sha256": "449e522cb4bdecd1d91bcce2b687ada2c28f767b1dffb89ede156b3e8b5ab912",
   "encoding": "utf-8-sig",
   "delimiter": ";",
-  "sample_rows": 270,
+  "sample_rows": 276,
   "tables": 1,
   "distinct_headers": 1
  }
